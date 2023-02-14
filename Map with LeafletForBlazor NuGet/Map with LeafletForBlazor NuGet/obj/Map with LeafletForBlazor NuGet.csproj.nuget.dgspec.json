@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\Blazor2\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj": {}
+    "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj": {}
   },
   "projects": {
-    "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\Blazor2\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj": {
+    "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\Blazor2\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj",
+        "projectUniqueName": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj",
         "projectName": "Map with LeafletForBlazor NuGet",
-        "projectPath": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\Blazor2\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj",
+        "projectPath": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj",
         "packagesPath": "C:\\Users\\lichi\\.nuget\\packages\\",
-        "outputPath": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\Blazor2\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\obj\\",
+        "outputPath": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -49,7 +49,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.0.4, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",

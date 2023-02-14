@@ -15,9 +15,9 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)leafletforblazor\1.0.3\contentFiles\any\net7.0\map_color.ico" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\1.0.3\contentFiles\any\net7.0\map_color.ico')">
+    <Content Include="$(NuGetPackageRoot)leafletforblazor\1.0.4\contentFiles\any\net7.0\map_color.ico" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\1.0.4\contentFiles\any\net7.0\map_color.ico')">
       <NuGetPackageId>LeafletForBlazor</NuGetPackageId>
-      <NuGetPackageVersion>1.0.3</NuGetPackageVersion>
+      <NuGetPackageVersion>1.0.4</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
       <Pack>false</Pack>
       <Private>False</Private>
@@ -26,7 +26,7 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\7.0.0\build\net7.0\Microsoft.AspNetCore.Components.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\7.0.0\build\net7.0\Microsoft.AspNetCore.Components.WebAssembly.props')" />
-    <Import Project="$(NuGetPackageRoot)leafletforblazor\1.0.3\buildTransitive\LeafletForBlazor.props" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\1.0.3\buildTransitive\LeafletForBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)leafletforblazor\1.0.4\buildTransitive\LeafletForBlazor.props" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\1.0.4\buildTransitive\LeafletForBlazor.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer)' == '' ">C:\Users\lichi\.nuget\packages\microsoft.aspnetcore.components.webassembly.devserver\7.0.0</PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer>

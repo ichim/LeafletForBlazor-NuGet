@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "LeafletForBlazor/1.0.3": {
+      "LeafletForBlazor/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0"
@@ -503,7 +503,7 @@
       }
     },
     "net7.0/browser-wasm": {
-      "LeafletForBlazor/1.0.3": {
+      "LeafletForBlazor/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0"
@@ -999,10 +999,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/1.0.3": {
-      "sha512": "dTyMZ+cJIA3dKA4UIqp9VyeOLUz9xdGQGoUoGmdUHKWY1g5Lba9aMQWvD5q/BizaOZIWqabBD7f3udwdrj1ktQ==",
+    "LeafletForBlazor/1.0.4": {
+      "sha512": "3hz3xxcTKVKAb4PRYSw2ttbOMP1086Mh+FcA9T+kbTTH74Yi1qJIB0iIosyiZ4wg/r1NK3TL39M57S0u2JuNpg==",
       "type": "package",
-      "path": "leafletforblazor/1.0.3",
+      "path": "leafletforblazor/1.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1014,7 +1014,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net7.0/map_color.ico",
-        "leafletforblazor.1.0.3.nupkg.sha512",
+        "leafletforblazor.1.0.4.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net7.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -1870,7 +1870,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "LeafletForBlazor >= 1.0.3",
+      "LeafletForBlazor >= 1.0.4",
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.0"
     ]
@@ -1883,11 +1883,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\Blazor2\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj",
+      "projectUniqueName": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj",
       "projectName": "Map with LeafletForBlazor NuGet",
-      "projectPath": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\Blazor2\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj",
+      "projectPath": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet.csproj",
       "packagesPath": "C:\\Users\\lichi\\.nuget\\packages\\",
-      "outputPath": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\Blazor2\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\obj\\",
+      "outputPath": "D:\\~~INSTRUIRE\\C#\\Blazor\\repo\\LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\Map with LeafletForBlazor NuGet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1925,7 +1925,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[1.0.3, )"
+            "version": "[1.0.4, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
