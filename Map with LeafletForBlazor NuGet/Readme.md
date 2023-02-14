@@ -1,6 +1,6 @@
-**Map with LeafletForBlazor Nuget package
+# Map with LeafletForBlazor Nuget package
 
-***Configuring Blazor project
+## Configuring Blazor project
 
 Install package
 
