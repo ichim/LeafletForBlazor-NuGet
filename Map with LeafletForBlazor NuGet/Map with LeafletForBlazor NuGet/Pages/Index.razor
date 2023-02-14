@@ -1,0 +1,36 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>LeafletForBlazor NuGet Package version 1.0.3</h1>
+
+Thank you for using!
+
+<SurveyPrompt Title="Start working with LeafletForBlazor NuGet package" />
+
+<Map
+ width="800px"
+ height="400px"
+ Parameters="@parameters"
+>
+</Map>
+@code{
+    	Map.LoadParameters parameters = new Map.LoadParameters()
+	{
+		location = new Map.Location()
+		{
+			longitude = 26.097133,
+			latitude = 44.446165
+		},
+		zoom_level = 12
+	};
+
+	Map.MapOptions map_options = new Map.MapOptions()
+	{
+		interaction_options = new Map.InteractionOptions()
+		{
+			doubleClickZoom = false
+		}
+
+	};
+}
