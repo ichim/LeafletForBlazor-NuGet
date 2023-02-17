@@ -1,0 +1,30 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Leaflet NuGet package</h1>
+
+
+<SurveyPrompt Title="Working with JSON data files" />
+<Map 
+    width="600px"
+    height="600px"
+    Parameters="@parameters"
+    GeoJSON_urls="@files_urls.ToArray()"
+></Map>
+
+@code{
+    Map.LoadParameters parameters = new Map.LoadParameters()
+    {
+        location = new Map.Location()
+        {
+            longitude = 26.097133,
+            latitude = 44.446165
+        },
+        zoom_level = 16
+    };
+        List<string> files_urls = new List<string>() { 
+        "http://localhost:5196/polylines.json", 
+        "http://localhost:5196/polygons.json"
+    };
+}
