@@ -1,0 +1,32 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>LeafletForBlazor NuGet package</h1>
+
+
+
+<SurveyPrompt Title="How to use the symbolization of polygons" />
+
+<Map
+    width="800px"
+    height="600px"
+    Parameters="@parameters"
+    GeoJSON_urls="@urls.ToArray()"
+    ></Map>
+
+       @code{
+         Map.LoadParameters parameters = new Map.LoadParameters()
+        {
+            location = new Map.Location()
+            {
+                longitude = 26.097133,
+                latitude = 44.446165
+            },
+            zoom_level = 16
+        };
+
+         List<string> urls = new List<string>() { 
+         "http://localhost:5044/polygons_and_symbology.json"
+        };
+    }
