@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GeoJSON Leaflet format.props" />
+</Project>

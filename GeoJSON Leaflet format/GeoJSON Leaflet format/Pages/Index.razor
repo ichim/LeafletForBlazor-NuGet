@@ -1,0 +1,33 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>LeafletForBlazor and GeoJSON data!</h1>
+
+
+<SurveyPrompt Title="How to use Leaflet GeoJSON format data" />
+
+<Map
+    width="800px"
+    height="600px"
+    Parameters="@parameters"
+    GeoJSON_urls="@urls.ToArray()"
+></Map>
+
+       @code{
+         Map.LoadParameters parameters = new Map.LoadParameters()
+        {
+            location = new Map.Location()
+            {
+                longitude = 26.097133,
+                latitude = 44.446165
+            },
+            zoom_level = 16
+        };
+
+         List<string> urls = new List<string>() { 
+           "http://localhost:5002/points.json",
+           "http://localhost:5002/polygons.json",
+           "http://localhost:5002/polylines.json"
+        };
+    }
