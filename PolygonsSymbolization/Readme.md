@@ -13,3 +13,6 @@ The new format is:
 		"symbology": ...
 	}
 	
+Result of Map Symbolization:
+
+![PolygonsSymbolization](https://user-images.githubusercontent.com/8348463/221033035-2f11654e-010c-4c64-b1c9-ae9cbe4737bf.png)
