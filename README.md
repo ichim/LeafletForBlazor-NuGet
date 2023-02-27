@@ -4,11 +4,17 @@
  - Map tooltips scaling. Configured using improved format:
 
    "tooltip":{
+   
    ...
+   
        "scaling": {
-        "start_with": 16,
-        "stop_with": 18
-        }
+       
+          "start_with": 16,
+
+          "stop_with": 18
+        
+          }
+          
        }
 
  - Map GeoJSON layer scaling. Configured using improved format:
