@@ -1,7 +1,7 @@
 # LeafletForBlazor-NuGet
  Using LeafletForBlazor NuGet Package
 
-## Wat's new?
+## What's new?
 
  - Map tooltips scaling. Configured using improved format:
 
