@@ -3,9 +3,9 @@
 
  - Map tooltips scaling. Configured using improved format:
 
-   "tooltip":{
+     "tooltip":{
    
-   ...
+     ...
    
        "scaling": {
        
