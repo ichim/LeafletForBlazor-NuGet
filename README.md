@@ -19,7 +19,7 @@
 
  - Map GeoJSON layer scaling. Configured using improved format:
 
-     "symbology":{
+      "symbology":{
    
        ...
 
