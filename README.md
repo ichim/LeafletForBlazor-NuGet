@@ -45,5 +45,8 @@ New Load Map boolean parmeter (anyway_overlay_layers_control), which forces the 
      {
             anyway_overlay_layers_control = true
      }
+     
+![Overlay Layers](https://user-images.githubusercontent.com/8348463/222403645-808e878c-79d1-425f-a302-38ab09718f78.gif)
+
 
 The names of the files will be displayed in the Layers Control, the overlay layers section.
