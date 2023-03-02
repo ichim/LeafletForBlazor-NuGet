@@ -15,7 +15,7 @@
                    }
               }
 
- - Map <span>GeoJSON layer</span> scaling. Configured using improved format:
+ - Map <span style="font-weight:bold;color:white;background-color:gray;">GeoJSON layer</span> scaling. Configured using improved format:
 
        "symbology":
              {
