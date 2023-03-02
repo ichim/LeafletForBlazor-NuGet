@@ -20,10 +20,10 @@ You can find more information:
 New Load Map boolean parmeter (anyway_overlay_layers_control), which forces the display of GeoJSON layers in the Layers Control.
 
 
-		Map.LoadParameters parameters = new Map.LoadParameters()
+	Map.LoadParameters parameters = new Map.LoadParameters()
         {
             anyway_overlay_layers_control = true
-		}
+	}
 
 
 ![Overlay Layers](https://user-images.githubusercontent.com/8348463/222403645-808e878c-79d1-425f-a302-38ab09718f78.gif)
@@ -73,17 +73,17 @@ The names of the files will be displayed in the Layers Control, the overlay laye
 #### Blazor code block:
 
 	@code {
-		//map initialization parameters
-		Map.LoadParameters parameters = new Map.LoadParameters()
-		{
-			map_scale = new Map.MapScale()
+			//map initialization parameters
+			Map.LoadParameters parameters = new Map.LoadParameters()
 			{
-				has = true,
-				meters = true,
-				miles = false
-			}
-		};
-	}
+				map_scale = new Map.MapScale()
+				{
+					has = true,
+					meters = true,
+					miles = false
+				}
+			};
+		}
 
 ## Basemaps ##
 
@@ -97,30 +97,30 @@ The user of the application, created by you, will be able to change the basemap.
 		width="800px"
 		height="700px"
 		Parameters="@parameters"
-		></Map>
+	></Map>
 
 #### Blazor code block ####
 
-		Map.LoadParameters parameters = new Map.LoadParameters()
+	Map.LoadParameters parameters = new Map.LoadParameters()
+	{
+		....
+		basemap_layers = new List<Map.BasemapConfigLayer>
 		{
-			....
-			basemap_layers = new List<Map.BasemapConfigLayer>
+			new Map.BasemapConfigLayer()
 			{
-				new Map.BasemapConfigLayer()
-				{
-					url = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-					attribution = "©Open Street Map",
-					title = "Open Street Map",
-					detect_retina = true
-				},
-				new Map.BasemapConfigLayer()
-				{
-					url = "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=[your API Key]",
-					attribution = "©Open Cycle Map",
-					title = "Open Cycle Map"
-				}
+				url = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+				attribution = "©Open Street Map",
+				title = "Open Street Map",
+				detect_retina = true
+			},
+			new Map.BasemapConfigLayer()
+			{
+				url = "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=[your API Key]",
+				attribution = "©Open Cycle Map",
+				title = "Open Cycle Map"
 			}
-		};
+		}
+	};
 
 ![basemap](https://user-images.githubusercontent.com/8348463/221944717-b77efc27-c695-4768-9f4d-aa1e35aeef0d.gif)
 
@@ -172,16 +172,17 @@ LeafletForBlazor Map provide some events:
 #### Blazor Code:
 
 	@code {
-		//working with GEOJson file
-		/*	
+			//working with GEOJson file
+			/*	
 			GeoJSON_urls <Map> parameter expects an array of JSON url
 			1. The JSON data complies with the Leaflet documentation
 			2. A improved format that allows custom symbolization
 			3. The simultaneous use of the two types of format (RFC 7946 format and improved format)
-		*/
-		List<string> urls = new List<string>() { 
-			"http://localhost:5078/polygonsfile.json", 
-			"http://localhost:5078/pointsfile.json"  
+			*/
+			List<string> urls = new List<string>() 
+			{ 
+				"http://localhost:5078/polygonsfile.json", 
+				"http://localhost:5078/pointsfile.json"  
 			};
 		}
 
@@ -220,12 +221,12 @@ _Is an leaflet format in which symbolization has been added_ to the leaflet data
 - Also, changing tooltips configuration will be done without changing the code;
 - Several applications (web, mobile, etc.) will display the same map, the same symbols;
 
-			{
-				  "data": [...GeoJSON specification (RFC 7946)...],
-				  "symbology": { ... },
-				  "tooltip": { ... }
-			}
-			
+	{
+		  "data": [...GeoJSON specification (RFC 7946)...],
+		  "symbology": { ... },
+		  "tooltip": { ... }
+	}
+
 
 Meaning of JSON (improved format) parameters:
 
