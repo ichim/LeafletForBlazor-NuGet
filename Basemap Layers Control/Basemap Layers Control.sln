@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33209.295
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basemap Layers Control", "Basemap Layers Control\Basemap Layers Control.csproj", "{56E3E947-045D-4B32-A68D-7528AD220EB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56E3E947-045D-4B32-A68D-7528AD220EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E3E947-045D-4B32-A68D-7528AD220EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E3E947-045D-4B32-A68D-7528AD220EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E3E947-045D-4B32-A68D-7528AD220EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59D338B2-0CCA-4105-AE34-44EEEBFA1B57}
+	EndGlobalSection
+EndGlobal

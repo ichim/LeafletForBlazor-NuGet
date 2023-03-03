@@ -1,0 +1,52 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>LeafletForBlazor NuGet package</h1>
+
+<SurveyPrompt Title="How to configure Basemap Layers Control?" />
+
+<Map
+    width="800px"
+    height="600px"
+	Parameters="@parameters"
+></Map>
+
+@code{
+
+    Map.LoadParameters parameters = new Map.LoadParameters()
+    {
+        location = new Map.Location()
+		{
+			longitude = 26.097133,
+			latitude = 44.446165
+		},
+		zoom_level = 12,
+		//configuring Basemap Layers Control
+        basemap = new Map.Basemap()
+            {
+                 basemap_layers = new List<Map.BasemapConfigLayer>
+                {
+                        new Map.BasemapConfigLayer()
+                        {
+                            url = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                            attribution = "©Open Street Map",
+                            title = "Open Street Map",
+                            detect_retina = true
+                        },
+                        new Map.BasemapConfigLayer()
+                        {
+                            url = "http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+                            attribution = "©Carto",
+                            title = "Carto"
+                        },
+                        new Map.BasemapConfigLayer()
+                        {
+                            url = "http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                            attribution = "©Toner",
+                            title = "Toner"
+                        }
+                } 
+            }
+    };
+}
