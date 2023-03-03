@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 26.097369, 44.444941 ]
+      },
+      "properties": {
+        "name": "Beautiful Memories Store"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 26.095369, 44.444639 ]
+      },
+      "properties": {
+        "name": "Amzei Market"
+      }
+    }
+  ],
+  "symbology": {
+    "default": {
+      "radius": 16,
+      "fillColor": "#ff7800",
+      "color": "#000",
+      "weight": 1,
+      "opacity": 1,
+      "fillOpacity": 0.8
+    },
+    "case": {
+      "field_name": "name",
+      "classes": [
+        {
+          "value": "Amzei Market",
+          "symbol": {
+            "radius": 16,
+            "fillColor": "green",
+            "color": "#000",
+            "weight": 1,
+            "opacity": 1,
+            "fillOpacity": 0.8
+          }
+        }
+      ]
+    },
+    "scaling": {
+      "start_with": 16,
+      "stop_with": 18
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [ 26.0931846, 44.4432512 ],
+            [ 26.0945783, 44.4435381 ],
+            [ 26.0959206, 44.4438006 ],
+            [ 26.0965448, 44.4439288 ],
+            [ 26.0979042, 44.4444598 ],
+            [ 26.0981265, 44.4439044 ],
+            [ 26.0976905, 44.4436419 ],
+            [ 26.0972459, 44.4431657 ],
+            [ 26.0963396, 44.4427384 ],
+            [ 26.0941508, 44.4420181 ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "commercial",
+        "population": 2446,
+        "number_of_buiding": 224
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [ 26.0970492, 44.4467488 ],
+            [ 26.0983403, 44.4440387 ],
+            [ 26.0995886, 44.4451984 ],
+            [ 26.0997425, 44.4454121 ],
+            [ 26.0996313, 44.4459920 ],
+            [ 26.0993663, 44.4468892 ],
+            [ 26.0971433, 44.4469198 ],
+            [ 26.0970834, 44.4468099 ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "residential",
+        "population": 8842,
+        "number_of_buiding": 648
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [ 26.0966294, 44.4472485 ],
+            [ 26.0965200, 44.4482360 ],
+            [ 26.0977589, 44.4481766 ],
+            [ 26.0977589, 44.4469453 ],
+            [ 26.0971285, 44.4469610 ],
+            [ 26.0970628, 44.4471047 ],
+            [ 26.0968702, 44.4472360 ],
+            [ 26.0966907, 44.4472547 ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "unknown",
+        "population": 0,
+        "number_of_buiding": 0
+      }
+    }
+  ],
+  "symbology": {
+    "default": {
+      "color": "red",
+      "weight": 5,
+      "opacity": 0.4
+    },
+    "case": {
+      "field_name": "name",
+      "classes": [
+        {
+          "value": "commercial",
+          "symbol": {
+            "color": "blue",
+            "weight": 8,
+            "opacity": 0
+          }
+        },
+        {
+          "value": "residential",
+          "symbol": {
+            "color": "green",
+            "weight": 10,
+            "opacity": 0
+          }
+        }
+      ]
+    },
+    "scaling": {
+      "start_with": 15,
+      "stop_with": 18
+    }
+  }
+
+  
+}

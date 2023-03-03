@@ -1,0 +1,34 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>LeafletForBlazor NuGet Package</h1>
+
+
+<SurveyPrompt Title="How forcing to add file names in Layers Control?" />
+
+<Map
+    width="800px"
+    height="700px"
+    Parameters="@parameters"
+    GeoJSON_urls="@urls.ToArray()"
+    ></Map>
+
+@code{
+    Map.LoadParameters parameters = new Map.LoadParameters()
+        {
+            location = new Map.Location()
+		    {
+			    longitude = 26.097133,
+			    latitude = 44.446165
+		    },
+		    zoom_level = 16,
+            //Force to add file names in Layers Control
+            anyway_overlay_layers_control = true
+        };
+
+        List<string> urls = new List<string>() { 
+            "http://localhost:5220/polygons_case.json",
+            "http://localhost:5220/points_case.json"
+        };
+}
