@@ -1,0 +1,34 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>LeafletForBlazor Map Scale</h1>
+
+
+
+<SurveyPrompt Title="How to configuring Map Scale?" />
+
+<Map
+    width="800px"
+    height="600px"
+	Parameters="@parameters"
+></Map>
+
+@code{
+    Map.LoadParameters parameters = new Map.LoadParameters()
+    {
+        location = new Map.Location()
+		{
+			longitude = 26.097133,
+			latitude = 44.446165
+		},
+		zoom_level = 12,
+		//configuring Map Scale
+        map_scale = new Map.MapScale()
+		{
+			has = true,
+			meters = true,
+			miles = false
+		}
+    };
+}
