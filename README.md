@@ -24,15 +24,25 @@ These plugins will be adapted for use in Blazor. For this version, it started wi
 
 _The configuration parameters have the same names as those in the Leaflet documentation:_
 
+#### Blazor page ####
+
+	<Map
+	    width="800px"
+	    height="700px"
+	    Plugins="@plugins"
+	></Map>
+
+#### Blazor code block ####
+
     Map.PluginsConfig plugins = new Map.PluginsConfig()
-        {
-            display_all = true,
-            plugins = new List<Map.Plugin>() { 
-                new Map.Plugin() { 
-                    name = "Geolet",
-                    config = "{\"title\": \"Locatia mea\", \"position\": \"topleft\", \"popupContent\": \"`latitudine ${latlng.lat}<br>longitudine ${latlng.lng}`\"}" 
-                } 
-            }
+	{
+	    display_all = true,
+	    plugins = new List<Map.Plugin>() { 
+		new Map.Plugin() { 
+		    name = "Geolet",
+		    config = "{\"title\": \"Locatia mea\", \"position\": \"topleft\", \"popupContent\": \"`latitudine ${latlng.lat}<br>longitudine ${latlng.lng}`\"}" 
+		} 
+	    }
     };
 
 The "config" parameter is a string json object.
