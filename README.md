@@ -17,18 +17,37 @@ You can find more information:
 
 ## What's New? ##
 
-New Load Map boolean parmeter (anyway_overlay_layers_control), which forces the display of GeoJSON layers in the Layers Control.
+Starting with this release, Leaflet For Blazor will be able to implement Leaflet plugins.
+These plugins will be adapted for use in Blazor. For this version, it started with Geolet plugin.
 
+### Configuring the Geolet plugin ###
 
-	Map.LoadParameters parameters = new Map.LoadParameters()
-        {
-            anyway_overlay_layers_control = true
-	}
+_The configuration parameters have the same names as those in the Leaflet documentation:_
 
+#### Blazor page ####
 
-![Overlay Layers](https://user-images.githubusercontent.com/8348463/222403645-808e878c-79d1-425f-a302-38ab09718f78.gif)
+	<Map
+	    width="800px"
+	    height="700px"
+	    Plugins="@plugins"
+	></Map>
 
-The names of the files will be displayed in the Layers Control, the overlay layers section.
+#### Blazor code block ####
+
+    Map.PluginsConfig plugins = new Map.PluginsConfig()
+	{
+	    display_all = true,
+	    plugins = new List<Map.Plugin>() { 
+		new Map.Plugin() { 
+		    name = "Geolet",
+		    config = "{\"title\": \"Locatia mea\", \"position\": \"topleft\", \"popupContent\": \"`latitudine ${latlng.lat}<br>longitudine ${latlng.lng}`\"}" 
+		} 
+	    }
+    };
+
+The "config" parameter is a string json object.
+
+![Geolet](https://user-images.githubusercontent.com/8348463/223373865-41c29b8e-fa2f-4df2-a2ef-8d3b52a87c1f.gif)
  _____________
 
 ## Basic map configuration:
@@ -73,17 +92,17 @@ The names of the files will be displayed in the Layers Control, the overlay laye
 #### Blazor code block:
 
 	@code {
-			//map initialization parameters
-			Map.LoadParameters parameters = new Map.LoadParameters()
+		//map initialization parameters
+		Map.LoadParameters parameters = new Map.LoadParameters()
+		{
+			map_scale = new Map.MapScale()
 			{
-				map_scale = new Map.MapScale()
-				{
-					has = true,
-					meters = true,
-					miles = false
-				}
-			};
-		}
+				has = true,
+				meters = true,
+				miles = false
+			}
+		};
+	}
 
 ## Basemaps ##
 
@@ -97,30 +116,30 @@ The user of the application, created by you, will be able to change the basemap.
 		width="800px"
 		height="700px"
 		Parameters="@parameters"
-	></Map>
+		></Map>
 
 #### Blazor code block ####
 
-	Map.LoadParameters parameters = new Map.LoadParameters()
-	{
-		....
-		basemap_layers = new List<Map.BasemapConfigLayer>
+		Map.LoadParameters parameters = new Map.LoadParameters()
 		{
-			new Map.BasemapConfigLayer()
+			....
+			basemap_layers = new List<Map.BasemapConfigLayer>
 			{
-				url = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-				attribution = "©Open Street Map",
-				title = "Open Street Map",
-				detect_retina = true
-			},
-			new Map.BasemapConfigLayer()
-			{
-				url = "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=[your API Key]",
-				attribution = "©Open Cycle Map",
-				title = "Open Cycle Map"
+				new Map.BasemapConfigLayer()
+				{
+					url = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+					attribution = "©Open Street Map",
+					title = "Open Street Map",
+					detect_retina = true
+				},
+				new Map.BasemapConfigLayer()
+				{
+					url = "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=[your API Key]",
+					attribution = "©Open Cycle Map",
+					title = "Open Cycle Map"
+				}
 			}
-		}
-	};
+		};
 
 ![basemap](https://user-images.githubusercontent.com/8348463/221944717-b77efc27-c695-4768-9f4d-aa1e35aeef0d.gif)
 
@@ -172,17 +191,16 @@ LeafletForBlazor Map provide some events:
 #### Blazor Code:
 
 	@code {
-			//working with GEOJson file
-			/*	
+		//working with GEOJson file
+		/*	
 			GeoJSON_urls <Map> parameter expects an array of JSON url
 			1. The JSON data complies with the Leaflet documentation
 			2. A improved format that allows custom symbolization
 			3. The simultaneous use of the two types of format (RFC 7946 format and improved format)
-			*/
-			List<string> urls = new List<string>() 
-			{ 
-				"http://localhost:5078/polygonsfile.json", 
-				"http://localhost:5078/pointsfile.json"  
+		*/
+		List<string> urls = new List<string>() { 
+			"http://localhost:5078/polygonsfile.json", 
+			"http://localhost:5078/pointsfile.json"  
 			};
 		}
 
@@ -212,7 +230,7 @@ _Is the format shown in the Leaflet documentation_
 
 ### 2. Improved Leaflet Format. This format allows configuring the symbolization of map elements
 
-_Is an leaflet format in which symbolization has been added_ to the leaflet data
+_Is an leaflet format in which symbolization (with scaling) and tooltip configuration (with scaling) has been added_ to the leaflet data [(RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946).
 
 ### Advantages ###
 	
@@ -221,12 +239,12 @@ _Is an leaflet format in which symbolization has been added_ to the leaflet data
 - Also, changing tooltips configuration will be done without changing the code;
 - Several applications (web, mobile, etc.) will display the same map, the same symbols;
 
-	{
-		  "data": [...GeoJSON specification (RFC 7946)...],
-		  "symbology": { ... },
-		  "tooltip": { ... }
-	}
-
+			{
+				  "data": [...GeoJSON specification (RFC 7946)...],
+				  "symbology": { ... },
+				  "tooltip": { ... }
+			}
+			
 
 Meaning of JSON (improved format) parameters:
 
@@ -318,6 +336,20 @@ _In the case of the GeoJSON layer, scaling will only work when we have defined a
 					}
 		}
 
+### GeoJSON files and working with Layers Control ###
+
+The Load Map boolean parmeter (anyway_overlay_layers_control) forces the display of GeoJSON layers in the Layers Control.
+
+
+		Map.LoadParameters parameters = new Map.LoadParameters()
+        {
+            anyway_overlay_layers_control = true
+		}
+
+
+![Overlay Layers](https://user-images.githubusercontent.com/8348463/222403645-808e878c-79d1-425f-a302-38ab09718f78.gif)
+
+The names of the files will be displayed in the Layers Control, the overlay layers section.
 
 O-L I
 
