@@ -8,49 +8,74 @@ This package is under development, but I will keep the code compatible from one 
 You can find more information:
 
  - [LeafletForBlazor GitHub](https://github.com/ichim/LeafletForBlazor-NuGet)
-
  - [Youtube channel](https://www.youtube.com/@step-by-step-cs)
-
  - [Youtube LeafletForBlazor playlist](https://youtube.com/playlist?list=PLDpzfV5MtMji-wml7dm5S80hOc1Nzywtc)
 
  _____________
 
 ## What's New? ##
 
-Starting with this release, Leaflet For Blazor will be able to implement Leaflet plugins.
-These plugins will be adapted for use in Blazor. For this version, it started with Geolet plugin.
+Starting with version 1.1.9, LeafletForBlazor can work with Esri plugins.
 
-### Configuring the Geolet plugin ###
+### Using Esri plugins ###
 
-_The configuration parameters have the same names as those in the Leaflet documentation:_
+Esri is the most important player in the GIS market. Esri software solutions are complete and guarantee high performance. 
+In addition, Esri offers users many open and/or freely used software solutions.
 
-#### Blazor page ####
+### Extending the Leaflet API with esri Basemaps plugin ###
+
+Adding Esri basemaps is done on the PluginsConfig interface and the Plugins parameter of the LeafletForBlazor package.
+
+First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account.
+
+ [Here you will find a guide for generating an Esri API Key code](https://developers.arcgis.com/esri-leaflet/get-started/)
+
+#### Add in your Blazor Page:
 
 	<Map
-	    width="800px"
-	    height="700px"
-	    Plugins="@plugins"
+		width="800px"
+		height="700px"
+		Plugins="@plugins"
 	></Map>
 
-#### Blazor code block ####
+#### Blazor code block:
 
-    Map.PluginsConfig plugins = new Map.PluginsConfig()
-	{
-	    display_all = true,
-	    plugins = new List<Map.Plugin>() { 
-		new Map.Plugin() { 
-		    name = "Geolet",
-		    config = "{\"title\": \"Locatia mea\", \"position\": \"topleft\", \"popupContent\": \"`latitudine ${latlng.lat}<br>longitudine ${latlng.lng}`\"}" 
-		} 
-	    }
-    };
+	@code{
+		Map.PluginsConfig plugins = new Map.PluginsConfig()
+		{
+			display_all = true,
+			plugins = new List<Map.Plugin>() 
+			{ 
+				new Map.Plugin()
+				{
+					name = "Esri",
+					config =  new Map.EsriPlugin()
+						{
+							apiKey = "[your Esri API Key code]",
+							esri_plugins_config = new List<object>()
+							{
+								new Map.EsriBasemapConfig()
+								{
+								enable = true,
+								esri_basemap_layers = new List<Map.EsriBasemapLayer>()
+									{
+										new Map.EsriBasemapLayer(){basemap_id ="ArcGIS:Imagery"},
+										new Map.EsriBasemapLayer(){basemap_id = "ArcGIS:Imagery:Standard"},
+										new Map.EsriBasemapLayer(){basemap_id = "ArcGIS:Imagery:Labels"}
+									}
+								}
+							}
+						}
+				}
+			}
+		};
+	};
 
-The "config" parameter is a string json object.
+![Esri Basemaps](https://user-images.githubusercontent.com/8348463/224008704-316fb063-202f-4350-96f1-a1acb209a0de.gif)
 
-![Geolet](https://user-images.githubusercontent.com/8348463/223373865-41c29b8e-fa2f-4df2-a2ef-8d3b52a87c1f.gif)
  _____________
 
-## Basic map configuration:
+## Basic Map configuration ##
 
 #### Add in __Imports.razor_ project file
 
@@ -350,6 +375,40 @@ The Load Map boolean parmeter (anyway_overlay_layers_control) forces the display
 ![Overlay Layers](https://user-images.githubusercontent.com/8348463/222403645-808e878c-79d1-425f-a302-38ab09718f78.gif)
 
 The names of the files will be displayed in the Layers Control, the overlay layers section.
+
+## Working with Leaflet Plungins ##
+
+Starting with 1.1.8 version, LeafletForBlazor NuGet is able to implement Leaflet plugins.
+These plugins will be adapted for use in Blazor.
+
+### Configuring the Geolet plugin ###
+
+_The configuration parameters have the same names as those in the Leaflet documentation:_
+
+#### Blazor page ####
+
+	<Map
+	    width="800px"
+	    height="700px"
+	    Plugins="@plugins"
+	></Map>
+
+#### Blazor code block ####
+
+    Map.PluginsConfig plugins = new Map.PluginsConfig()
+	{
+	    display_all = true,
+	    plugins = new List<Map.Plugin>() { 
+		new Map.Plugin() { 
+		    name = "Geolet",
+		    config = "{\"title\": \"Locatia mea\", \"position\": \"topleft\", \"popupContent\": \"`latitudine ${latlng.lat}<br>longitudine ${latlng.lng}`\"}" 
+			} 
+	    }
+    };
+
+The "config" parameter is a string json object.
+
+![Geolet](https://user-images.githubusercontent.com/8348463/223373865-41c29b8e-fa2f-4df2-a2ef-8d3b52a87c1f.gif)
 
 O-L I
 
