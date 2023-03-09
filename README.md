@@ -19,7 +19,7 @@ Starting with version 1.1.9, LeafletForBlazor can work with Esri plugins.
 
 ### Using Esri plugins ###
 
-Esri is the most important player in the GIS market. Esri software solutions are complete and guarantee high performance. 
+Esri is the most important player of the GIS market. Esri software solutions are complete and guarantee high performance. 
 In addition, Esri offers users many open and/or freely used software solutions. You can freely use the power of esri tools, only on the basis of an _Esri API Key code_
 
 ### Extending the Leaflet API with esri Basemaps plugin ###
