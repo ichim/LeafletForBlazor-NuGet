@@ -20,7 +20,7 @@ Starting with version 1.1.9, LeafletForBlazor can work with Esri plugins.
 ### Using Esri plugins ###
 
 Esri is the most important player in the GIS market. Esri software solutions are complete and guarantee high performance. 
-In addition, Esri offers users many open and/or freely used software solutions.
+In addition, Esri offers users many open and/or freely used software solutions. You can freely use the power of esri tools, only on the basis of an _Esri API Key code_
 
 ### Extending the Leaflet API with esri Basemaps plugin ###
 
@@ -28,7 +28,7 @@ Adding Esri basemaps is done on the PluginsConfig interface and the Plugins para
 
 First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account.
 
- [Here you will find a guide for generating an Esri API Key code](https://developers.arcgis.com/esri-leaflet/get-started/)
+ [Here you will find a guide for generating an _Esri API Key code_](https://developers.arcgis.com/esri-leaflet/get-started/)
 
 #### Add in your Blazor Page:
 
