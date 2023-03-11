@@ -15,6 +15,8 @@ You can find more information:
 
 ## What's New? ##
 
+![GeocodingSearch](https://user-images.githubusercontent.com/8348463/224486025-eb7d3eb2-907f-48e1-ad97-6a57f734c9e6.gif)
+
 Starting with version 1.1.9, LeafletForBlazor can work with Esri plugins.
 
 ### Using Esri plugins ###
