@@ -15,18 +15,7 @@ You can find more information:
 
 ## What's New? ##
 
-![GeocodingSearch](https://user-images.githubusercontent.com/8348463/224486025-eb7d3eb2-907f-48e1-ad97-6a57f734c9e6.gif)
-
-Starting with version 1.1.9, LeafletForBlazor can work with Esri plugins.
-
-### Using Esri plugins ###
-
-Esri is the most important player of the GIS market. Esri software solutions are complete and guarantee high performance. 
-In addition, Esri offers users many open and/or freely used software solutions. You can freely use the power of esri tools, only on the basis of an _Esri API Key code_
-
-### Extending the Leaflet API with esri Basemaps plugin ###
-
-Adding Esri basemaps is done on the PluginsConfig interface and the Plugins parameter of the LeafletForBlazor package.
+### Extending the Leaflet API with Esri Geocoding Search plugin ###
 
 First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account.
 
@@ -36,44 +25,39 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 
 	<Map
 		width="800px"
-		height="700px"
+		height="800px"
 		Plugins="@plugins"
 	></Map>
 
 #### Blazor code block:
 
-	@code{
-		Map.PluginsConfig plugins = new Map.PluginsConfig()
-		{
-			display_all = true,
-			plugins = new List<Map.Plugin>() 
-			{ 
+	Map.PluginsConfig plugins = new Map.PluginsConfig()
+	{
+		display_all = true,
+		plugins = new List<Map.Plugin>() { 
 				new Map.Plugin()
 				{
 					name = "Esri",
 					config =  new Map.EsriPlugin()
+					{
+						apiKey = "[your Esri API Key code]",
+						esri_plugins_config = new List<object>()
 						{
-							apiKey = "[your Esri API Key code]",
-							esri_plugins_config = new List<object>()
+
+							new Map.EsriGeocodingSearchParameters()
 							{
-								new Map.EsriBasemapConfig()
-								{
 								enable = true,
-								esri_basemap_layers = new List<Map.EsriBasemapLayer>()
-									{
-										new Map.EsriBasemapLayer(){basemap_id ="ArcGIS:Imagery"},
-										new Map.EsriBasemapLayer(){basemap_id = "ArcGIS:Imagery:Standard"},
-										new Map.EsriBasemapLayer(){basemap_id = "ArcGIS:Imagery:Labels"}
-									}
-								}
+								placeholder = "Your address",
+								position = "topleft",
+								nearby = new Map.EsriNearby(){lat = 0,lng = 0}
 							}
 						}
+					}
 				}
 			}
-		};
 	};
 
-![Esri Basemaps](https://user-images.githubusercontent.com/8348463/224008704-316fb063-202f-4350-96f1-a1acb209a0de.gif)
+![GeocodingSearch](https://user-images.githubusercontent.com/8348463/224486025-eb7d3eb2-907f-48e1-ad97-6a57f734c9e6.gif)
 
  _____________
 
@@ -235,25 +219,24 @@ LeafletForBlazor Map provide some events:
 
 _Is the format shown in the Leaflet documentation_
 
-[Leaflet GeoJSON page](https://geojson.org/)
+- [Leaflet GeoJSON page](https://geojson.org/)
+- [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
 
-[GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
-
-	[
-		{
-		  "type": "Feature",
-		  "geometry": {
-			"type": "Polygon",
-			"coordinates": [
-			  [
-				[ 26.0931846, 44.4432512 ],
-				[ 26.0945783, 44.4435381 ],
-				[ 26.0959206, 44.4438006 ],
-				...
-			  ]
-			]
-		  }
-	]
+		[
+			{
+			  "type": "Feature",
+			  "geometry": {
+				"type": "Polygon",
+				"coordinates": [
+				  [
+					[ 26.0931846, 44.4432512 ],
+					[ 26.0945783, 44.4435381 ],
+					[ 26.0959206, 44.4438006 ],
+					...
+				  ]
+				]
+			  }
+		]
 
 ### 2. Improved Leaflet Format. This format allows configuring the symbolization of map elements
 
@@ -411,6 +394,64 @@ _The configuration parameters have the same names as those in the Leaflet docume
 The "config" parameter is a string json object.
 
 ![Geolet](https://user-images.githubusercontent.com/8348463/223373865-41c29b8e-fa2f-4df2-a2ef-8d3b52a87c1f.gif)
+
+
+### Using Esri plugins ###
+
+Esri is the most important player of the GIS market. Esri software solutions are complete and guarantee high performance. 
+In addition, Esri offers users many open and/or freely used software solutions. You can freely use the power of Esri tools, only on the basis of an _Esri API Key code_
+
+### Extending the Leaflet API with Esri Basemaps plugin ###
+
+Adding Esri basemaps is done on the PluginsConfig interface and the Plugins parameter of the LeafletForBlazor package.
+
+First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account.
+
+ [Here you will find a guide for generating an _Esri API Key code_](https://developers.arcgis.com/esri-leaflet/get-started/)
+
+#### Add in your Blazor Page:
+
+	<Map
+		width="800px"
+		height="700px"
+		Plugins="@plugins"
+	></Map>
+
+#### Blazor code block:
+
+	@code{
+		Map.PluginsConfig plugins = new Map.PluginsConfig()
+		{
+			display_all = true,
+			plugins = new List<Map.Plugin>() 
+			{ 
+				new Map.Plugin()
+				{
+					name = "Esri",
+					config =  new Map.EsriPlugin()
+						{
+							apiKey = "[your Esri API Key code]",
+							esri_plugins_config = new List<object>()
+							{
+								new Map.EsriBasemapConfig()
+								{
+								enable = true,
+								esri_basemap_layers = new List<Map.EsriBasemapLayer>()
+									{
+										new Map.EsriBasemapLayer(){basemap_id ="ArcGIS:Imagery"},
+										new Map.EsriBasemapLayer(){basemap_id = "ArcGIS:Imagery:Standard"},
+										new Map.EsriBasemapLayer(){basemap_id = "ArcGIS:Imagery:Labels"}
+									}
+								}
+							}
+						}
+				}
+			}
+		};
+	};
+
+![Esri Basemaps](https://user-images.githubusercontent.com/8348463/224008704-316fb063-202f-4350-96f1-a1acb209a0de.gif)
+
 
 O-L I
 
