@@ -1,0 +1,41 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>LeafletForBlazor NuGet package!</h1>
+
+
+<SurveyPrompt Title="How to use Esri Reverse Geocoding plugin?" />
+
+<Map
+    width="800px"
+    height="700px"
+    Plugins="@plugins"
+    ></Map>
+
+@code{
+
+     Map.PluginsConfig plugins = new Map.PluginsConfig()
+        {
+            display_all = true,
+            plugins = new List<Map.Plugin>() {
+                    new Map.Plugin()
+                    {
+                        name = "Esri",
+                        config =  new Map.EsriPlugin()
+                            {
+                                apiKey = "[your Esri API Key code]",
+                                esri_plugins_config = new List<object>()
+                                {
+                                    new Map.EsriReverseGeocodingParameters()
+                                    {
+                                        enable = true,
+                                        remove_last_result = true
+                                    }
+                                }
+                            }
+                    }
+                
+                }
+                };
+}
