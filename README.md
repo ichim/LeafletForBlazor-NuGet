@@ -1,5 +1,4 @@
-# ![map_color](https://user-images.githubusercontent.com/8348463/224653644-efa05d9f-a034-43de-bea7-bba74b202d75.png)
-Leaflet Map for Blazor
+# Leaflet Map for Blazor
 
  > You can quickly add a map to the blazor page. 
  > In addition, you can add GeoJSON data in the map, symbolize Map items, add tooltips to map items, working with basemap and overlay layers and others 
