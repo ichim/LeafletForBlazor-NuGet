@@ -1,4 +1,4 @@
-# Leaflet Map for Blazor
+# ![LealletForBlazor32](https://user-images.githubusercontent.com/8348463/224698821-8768d8af-46ea-462a-a603-a7adf9095594.png) Leaflet Map for Blazor
 
  > You can quickly add a map to the blazor page. 
  > In addition, you can add GeoJSON data in the map, symbolize Map items, add tooltips to map items, working with basemap and overlay layers and others 
