@@ -3,6 +3,8 @@
  > You can quickly add a map to the blazor page. 
  > In addition, you can add GeoJSON data in the map, symbolize Map items, add tooltips to map items, working with basemap and overlay layers and others 
 
+[NuGet Package](https://www.nuget.org/packages/LeafletForBlazor#versions-body-tab)
+
 This package is under development, but I will keep the code compatible from one version to another.
 
 You can find more information:
