@@ -17,7 +17,7 @@ You can find more information:
 
 ## What's New? ##
 
-### Working with GeoJOSN string array
+### Working with GeoJSON string array
 
 GeoJSON data can be loaded as strings.
 
