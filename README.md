@@ -37,6 +37,22 @@ GeoJSON data can be loaded as strings.
        "[{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[26.097369,44.444941]},\"properties\":{\"name\":\"Beautiful Memories Store\"}}]"
     };
 
+And optional parameters:
+
+	Map.LoadParameters parameters = new Map.LoadParameters()
+	{
+		location = new Map.Location()
+		{
+			longitude = 26.1107672,
+			latitude = 44.4501715
+		},
+		zoom_level = 14,
+		map_scale = new Map.MapScale()
+		{
+			has = false,
+			meters = true
+		}
+	};
 
  _____________
 
