@@ -17,48 +17,26 @@ You can find more information:
 
 ## What's New? ##
 
-### Extending the Leaflet API with Esri Reverse Geocoding plugin ###
+### Working with GeoJOSN string array
 
-First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account.
-
- [Here you will find a guide for generating an _Esri API Key code_](https://developers.arcgis.com/esri-leaflet/get-started/)
+GeoJSON data can be loaded as strings.
 
 #### Add in your Blazor Page:
 
 	<Map
 		width="800px"
-		height="800px"
-		Plugins="@plugins"
+		height="600px"
+		Parameters="@parameters"
+		GeoJSON_strings="@date_geojson.ToArray()"
 	></Map>
 
 #### Blazor code block:
 
-	   Map.PluginsConfig plugins = new Map.PluginsConfig()
-	   {
-			display_all = true,
-			plugins = new List<Map.Plugin>() 
-			{
-				new Map.Plugin()
-				{
-					name = "Esri",
-					config =  new Map.EsriPlugin()
-					{
-						apiKey = "[your Esri API Key code]",
-						esri_plugins_config = new List<object>()
-						{
-							new Map.EsriReverseGeocodingParameters()
-							{
-								enable = true,
-								remove_last_result = true
-							}
-						}
-					}
-				}
-			
-			}
-		};
+    List<string> date_geojson = new List<string>()
+    {
+       "[{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[26.097369,44.444941]},\"properties\":{\"name\":\"Beautiful Memories Store\"}}]"
+    };
 
-![ReverseGeoconding](https://user-images.githubusercontent.com/8348463/224543709-034fbb0e-8a2d-4875-9a17-a240342f518f.gif)
 
  _____________
 
@@ -91,6 +69,8 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 		};
 	}
 
+[Basic Map configuration - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Map%20with%20LeafletForBlazor%20NuGet)
+
 ## Map scale
 
 #### Blazor Page:
@@ -115,6 +95,8 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 			}
 		};
 	}
+
+[Map Scale - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Map%20Scale)
 
 ## Basemaps ##
 
@@ -154,6 +136,8 @@ The user of the application, created by you, will be able to change the basemap.
 		};
 
 ![basemap](https://user-images.githubusercontent.com/8348463/221944717-b77efc27-c695-4768-9f4d-aa1e35aeef0d.gif)
+
+[Basemap - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Basemap%20Layers%20Control)
 
 ## Map events ##
 
@@ -308,6 +292,8 @@ for example:
 
 ![PolygonsSymbolization](https://user-images.githubusercontent.com/8348463/221033035-2f11654e-010c-4c64-b1c9-ae9cbe4737bf.png)
 
+[Working with JSON file - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Basemap%20Layers%20Control)
+
 ### Symbology and tooltip scaling ###
 
 > Map elements (with symbology) and tooltips will be displayed in the map only for zoom levels between start_with and stop_with.
@@ -453,6 +439,8 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 
 ![Esri Basemaps](https://user-images.githubusercontent.com/8348463/224008704-316fb063-202f-4350-96f1-a1acb209a0de.gif)
 
+[Esri Basemap - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet%20plugins%20Basemap)
+
 
 ### Extending the Leaflet API with Esri Geocoding Search plugin ###
 
@@ -498,10 +486,55 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 
 ![GeocodingSearch](https://user-images.githubusercontent.com/8348463/224486025-eb7d3eb2-907f-48e1-ad97-6a57f734c9e6.gif)
 
+
+[Esri Geocoding Search - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet%20plugins%20Geocoding%20Search)
+
+### Extending the Leaflet API with Esri Reverse Geocoding plugin ###
+
+First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account.
+
+ [Here you will find a guide for generating an _Esri API Key code_](https://developers.arcgis.com/esri-leaflet/get-started/)
+
+#### Add in your Blazor Page:
+
+	<Map
+		width="800px"
+		height="800px"
+		Plugins="@plugins"
+	></Map>
+
+#### Blazor code block:
+
+	   Map.PluginsConfig plugins = new Map.PluginsConfig()
+	   {
+			display_all = true,
+			plugins = new List<Map.Plugin>() 
+			{
+				new Map.Plugin()
+				{
+					name = "Esri",
+					config =  new Map.EsriPlugin()
+					{
+						apiKey = "[your Esri API Key code]",
+						esri_plugins_config = new List<object>()
+						{
+							new Map.EsriReverseGeocodingParameters()
+							{
+								enable = true,
+								remove_last_result = true
+							}
+						}
+					}
+				}
+			
+			}
+		};
+
+![ReverseGeoconding](https://user-images.githubusercontent.com/8348463/224543709-034fbb0e-8a2d-4875-9a17-a240342f518f.gif)
+
+[Reverse Geocoding - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet%20plugins%20ReverseGeocoding)
+
 O-L I
-
-
-
 
 Thank you for choosing this package!
 
