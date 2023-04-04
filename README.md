@@ -17,43 +17,107 @@ You can find more information:
 
 ## What's New? ##
 
-### Working with GeoJSON string array
+### Map Events (Update Map Events definitions and add more event methods)
 
-GeoJSON data can be loaded as strings.
+Click on Map method trigger:
 
-#### Add in your Blazor Page:
+>	onMapClick return Map.CurrentMapState object
+
+Double Click on Map method trigger:
+
+>	onMapDblClick return Map.CurrentMapState object
+
+Recomandation! Use _doubleClickZoom = false_ to disable zoom on double click, as can be seen below (below is an example).
+
+Code Block:
+
+	Map.MapOptions map_options = new Map.MapOptions()
+	{
+		interaction_options = new Map.InteractionOptions()
+		{
+			doubleClickZoom = false
+		}
+	};
+Blazor page:
 
 	<Map
 		width="800px"
 		height="600px"
 		Parameters="@parameters"
-		GeoJSON_strings="@date_geojson.ToArray()"
+		Options="@map_options"
+		onMapDblClick="@OnMapDoubleClick"
 	></Map>
 
-#### Blazor code block:
+Load Map method trigger:
 
-    List<string> date_geojson = new List<string>()
-    {
-       "[{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[26.097369,44.444941]},\"properties\":{\"name\":\"Beautiful Memories Store\"}}]"
-    };
+>	onLoadMap return Map.CurrentMapState object
 
-... and optional parameters:
+Zoom on Map method trigger:
 
-	Map.LoadParameters parameters = new Map.LoadParameters()
-	{
-		location = new Map.Location()
+>	onZoomChange return Map.CurrentMapState object
+
+Pan or Zoom on Map method trigger:
+
+>	onMoveChange return Map.CurrentMapState object
+
+Events parameter (blue print) of all methods trigger:
+
+	#region CurrentMapState and Location blue print
+		public class CurrentMapState	//current state (bound, center and zoom level) of the Map
 		{
-			longitude = 26.1107672,
-			latitude = 44.4501715
-		},
-		zoom_level = 14,
-		map_scale = new Map.MapScale()
-		{
-			has = false,
-			meters = true
+			public Location location { get; set; } = new Location();
+			public int zoom_level { get; set; }
+			public MapBounds map_bounds { get; set; } = new MapBounds();
 		}
-	};
+		public class MapBounds		//Map bound coordinates
+		{
+			public Location _southWest { get; set; } = new Location();
+			public Location _northEast { get; set; } = new Location();
+		}
+		public class Location		//center Map location
+		{
+			public double longitude { get; set; }
+			public double latitude { get; set; }
+		}
+    #endregion
 
+### Map event example code
+Below will be presented a simple example with the Double Click on Map event
+
+#### Blazor Page:
+
+	<Map
+		width="800px"
+		height="600px"
+		Parameters="@parameters"
+		Options="@map_options"
+		onMapDblClick="@OnMapDblClick"
+	></Map>
+#### Blazor code block:
+	@code{
+		public void OnMapDblClick(Map.CurrentMapState evt_parameters)
+		{
+
+		}
+
+		Map.MapOptions map_options = new Map.MapOptions()
+			{
+				interaction_options = new Map.InteractionOptions()
+				{
+					doubleClickZoom = false //here we will disable navigation in the map on double click. Is not mandatory!
+				}
+			};
+
+		Map.LoadParameters parameters = new Map.LoadParameters()
+			{
+				location = new Map.Location()
+				{
+					longitude = 26.1107672,
+					latitude = 44.4501715
+				},
+				zoom_level = 14
+			};
+	}
  _____________
 
 ## Basic Map configuration ##
@@ -62,7 +126,7 @@ GeoJSON data can be loaded as strings.
 
 	@using LeafletForBlazor
 
-#### Add in your Blazor Page:
+#### Blazor Page:
 
 	<Map 
 		width="600px" 
@@ -363,6 +427,45 @@ The Load Map boolean parmeter (anyway_overlay_layers_control) forces the display
 ![Overlay Layers](https://user-images.githubusercontent.com/8348463/222403645-808e878c-79d1-425f-a302-38ab09718f78.gif)
 
 The names of the files will be displayed in the Layers Control, the overlay layers section.
+
+### Working with GeoJSON string array
+
+GeoJSON data can be loaded as strings.
+
+#### Add in your Blazor Page:
+
+	<Map
+		width="800px"
+		height="600px"
+		Parameters="@parameters"
+		GeoJSON_strings="@date_geojson.ToArray()"
+	></Map>
+
+#### Blazor code block:
+
+    List<string> date_geojson = new List<string>()
+    {
+       "[{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[26.097369,44.444941]},\"properties\":{\"name\":\"Beautiful Memories Store\"}}]"
+    };
+
+... and optional parameters:
+
+	Map.LoadParameters parameters = new Map.LoadParameters()
+	{
+		location = new Map.Location()
+		{
+			longitude = 26.1107672,
+			latitude = 44.4501715
+		},
+		zoom_level = 14,
+		map_scale = new Map.MapScale()
+		{
+			has = false,
+			meters = true
+		}
+	};
+
+
 
 ## Working with Leaflet Plungins ##
 
