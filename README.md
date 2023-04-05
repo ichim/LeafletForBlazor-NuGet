@@ -17,49 +17,107 @@ You can find more information:
 
 ## What's New? ##
 
-### Extending the Leaflet API with Esri Reverse Geocoding plugin ###
+### Map Events (Update Map Events definitions and add more event methods)
 
-First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account.
+Click on Map method trigger:
 
- [Here you will find a guide for generating an _Esri API Key code_](https://developers.arcgis.com/esri-leaflet/get-started/)
+>	onMapClick return Map.CurrentMapState object
 
-#### Add in your Blazor Page:
+Double Click on Map method trigger:
+
+>	onMapDblClick return Map.CurrentMapState object
+
+Recomandation! Use _doubleClickZoom = false_ to disable zoom on double click, as can be seen below (below is an example).
+
+Code Block:
+
+	Map.MapOptions map_options = new Map.MapOptions()
+	{
+		interaction_options = new Map.InteractionOptions()
+		{
+			doubleClickZoom = false
+		}
+	};
+Blazor page:
 
 	<Map
 		width="800px"
-		height="800px"
-		Plugins="@plugins"
+		height="600px"
+		Parameters="@parameters"
+		Options="@map_options"
+		onMapDblClick="@OnMapDoubleClick"
 	></Map>
 
+Load Map method trigger:
+
+>	onLoadMap return Map.CurrentMapState object
+
+Zoom on Map method trigger:
+
+>	onZoomChange return Map.CurrentMapState object
+
+Pan or Zoom on Map method trigger:
+
+>	onMoveChange return Map.CurrentMapState object
+
+Events parameter (blue print) of all methods trigger:
+
+	#region CurrentMapState and Location blue print
+		public class CurrentMapState	//current state (bound, center and zoom level) of the Map
+		{
+			public Location location { get; set; } = new Location();
+			public int zoom_level { get; set; }
+			public MapBounds map_bounds { get; set; } = new MapBounds();
+		}
+		public class MapBounds		//Map bound coordinates
+		{
+			public Location _southWest { get; set; } = new Location();
+			public Location _northEast { get; set; } = new Location();
+		}
+		public class Location		//center Map location
+		{
+			public double longitude { get; set; }
+			public double latitude { get; set; }
+		}
+    #endregion
+
+### Map event example code
+Below will be presented a simple example with the Double Click on Map event
+
+#### Blazor Page:
+
+	<Map
+		width="800px"
+		height="600px"
+		Parameters="@parameters"
+		Options="@map_options"
+		onMapDblClick="@OnMapDblClick"
+	></Map>
 #### Blazor code block:
+	@code{
+		public void OnMapDblClick(Map.CurrentMapState evt_parameters)
+		{
 
-	   Map.PluginsConfig plugins = new Map.PluginsConfig()
-	   {
-			display_all = true,
-			plugins = new List<Map.Plugin>() 
+		}
+
+		Map.MapOptions map_options = new Map.MapOptions()
 			{
-				new Map.Plugin()
+				interaction_options = new Map.InteractionOptions()
 				{
-					name = "Esri",
-					config =  new Map.EsriPlugin()
-					{
-						apiKey = "[your Esri API Key code]",
-						esri_plugins_config = new List<object>()
-						{
-							new Map.EsriReverseGeocodingParameters()
-							{
-								enable = true,
-								remove_last_result = true
-							}
-						}
-					}
+					doubleClickZoom = false //here we will disable navigation in the map on double click. Is not mandatory!
 				}
-			
-			}
-		};
+			};
 
-![ReverseGeoconding](https://user-images.githubusercontent.com/8348463/224543709-034fbb0e-8a2d-4875-9a17-a240342f518f.gif)
-
+		Map.LoadParameters parameters = new Map.LoadParameters()
+			{
+				location = new Map.Location()
+				{
+					longitude = 26.1107672,
+					latitude = 44.4501715
+				},
+				zoom_level = 14
+			};
+	}
  _____________
 
 ## Basic Map configuration ##
@@ -68,7 +126,7 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 
 	@using LeafletForBlazor
 
-#### Add in your Blazor Page:
+#### Blazor Page:
 
 	<Map 
 		width="600px" 
@@ -90,6 +148,8 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 			zoom_level = 12
 		};
 	}
+
+[Basic Map configuration - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Map%20with%20LeafletForBlazor%20NuGet)
 
 ## Map scale
 
@@ -115,6 +175,8 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 			}
 		};
 	}
+
+[Map Scale - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Map%20Scale)
 
 ## Basemaps ##
 
@@ -154,6 +216,8 @@ The user of the application, created by you, will be able to change the basemap.
 		};
 
 ![basemap](https://user-images.githubusercontent.com/8348463/221944717-b77efc27-c695-4768-9f4d-aa1e35aeef0d.gif)
+
+[Basemap - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Basemap%20Layers%20Control)
 
 ## Map events ##
 
@@ -308,6 +372,8 @@ for example:
 
 ![PolygonsSymbolization](https://user-images.githubusercontent.com/8348463/221033035-2f11654e-010c-4c64-b1c9-ae9cbe4737bf.png)
 
+[Working with JSON file - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Basemap%20Layers%20Control)
+
 ### Symbology and tooltip scaling ###
 
 > Map elements (with symbology) and tooltips will be displayed in the map only for zoom levels between start_with and stop_with.
@@ -361,6 +427,45 @@ The Load Map boolean parmeter (anyway_overlay_layers_control) forces the display
 ![Overlay Layers](https://user-images.githubusercontent.com/8348463/222403645-808e878c-79d1-425f-a302-38ab09718f78.gif)
 
 The names of the files will be displayed in the Layers Control, the overlay layers section.
+
+### Working with GeoJSON string array
+
+GeoJSON data can be loaded as strings.
+
+#### Add in your Blazor Page:
+
+	<Map
+		width="800px"
+		height="600px"
+		Parameters="@parameters"
+		GeoJSON_strings="@date_geojson.ToArray()"
+	></Map>
+
+#### Blazor code block:
+
+    List<string> date_geojson = new List<string>()
+    {
+       "[{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[26.097369,44.444941]},\"properties\":{\"name\":\"Beautiful Memories Store\"}}]"
+    };
+
+... and optional parameters:
+
+	Map.LoadParameters parameters = new Map.LoadParameters()
+	{
+		location = new Map.Location()
+		{
+			longitude = 26.1107672,
+			latitude = 44.4501715
+		},
+		zoom_level = 14,
+		map_scale = new Map.MapScale()
+		{
+			has = false,
+			meters = true
+		}
+	};
+
+
 
 ## Working with Leaflet Plungins ##
 
@@ -453,6 +558,8 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 
 ![Esri Basemaps](https://user-images.githubusercontent.com/8348463/224008704-316fb063-202f-4350-96f1-a1acb209a0de.gif)
 
+[Esri Basemap - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet%20plugins%20Basemap)
+
 
 ### Extending the Leaflet API with Esri Geocoding Search plugin ###
 
@@ -498,10 +605,55 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 
 ![GeocodingSearch](https://user-images.githubusercontent.com/8348463/224486025-eb7d3eb2-907f-48e1-ad97-6a57f734c9e6.gif)
 
+
+[Esri Geocoding Search - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet%20plugins%20Geocoding%20Search)
+
+### Extending the Leaflet API with Esri Reverse Geocoding plugin ###
+
+First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account.
+
+ [Here you will find a guide for generating an _Esri API Key code_](https://developers.arcgis.com/esri-leaflet/get-started/)
+
+#### Add in your Blazor Page:
+
+	<Map
+		width="800px"
+		height="800px"
+		Plugins="@plugins"
+	></Map>
+
+#### Blazor code block:
+
+	   Map.PluginsConfig plugins = new Map.PluginsConfig()
+	   {
+			display_all = true,
+			plugins = new List<Map.Plugin>() 
+			{
+				new Map.Plugin()
+				{
+					name = "Esri",
+					config =  new Map.EsriPlugin()
+					{
+						apiKey = "[your Esri API Key code]",
+						esri_plugins_config = new List<object>()
+						{
+							new Map.EsriReverseGeocodingParameters()
+							{
+								enable = true,
+								remove_last_result = true
+							}
+						}
+					}
+				}
+			
+			}
+		};
+
+![ReverseGeoconding](https://user-images.githubusercontent.com/8348463/224543709-034fbb0e-8a2d-4875-9a17-a240342f518f.gif)
+
+[Reverse Geocoding - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet%20plugins%20ReverseGeocoding)
+
 O-L I
-
-
-
 
 Thank you for choosing this package!
 
