@@ -1,0 +1,107 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>LeafletForBlazor NuGet package</h1>
+
+
+<SurveyPrompt Title="How to use onLoadMap Event?" />
+<table >
+<tr>
+    <td>
+        <Map
+            width="800px"
+            height="600px"
+            Parameters="parameters"
+            onLoadMap="@OnLoadMap"
+        ></Map>
+    </td>
+    <td>
+        <h4>On Load Map properties</h4>
+<table >
+    <tr>
+        <td>Current zoom</td>
+        <td>@zoom_level</td>
+    </tr>
+</table>
+<h5>Map center coordinates</h5>
+<table>
+    <tr>
+        <td>Latitude</td>
+        <td>@center_latitude</td>
+    </tr>
+        <tr>
+        <td>Longitude</td>
+        <td>@center_longitude</td>
+    </tr>
+</table>
+<h5>Map Bounds coordinates</h5>
+<table>
+    <tr>
+        <td colspan="2">
+           <b> North East corner:</b>
+        </td>
+    </tr>
+    <tr>
+        <td>Latitude</td>
+        <td>@_northEast_latitude</td>
+    </tr>
+        <tr>
+        <td>Longitude</td>
+        <td>@_northEast_longitude</td>
+    </tr>
+        <tr>
+        <td colspan="2">
+           <b> South East corner:</b>
+        </td>
+    </tr>
+    <tr>
+        <td>Latitude</td>
+        <td>@_southWest_latitude</td>
+    </tr>
+        <tr>
+        <td>Longitude</td>
+        <td>@_southWest_longitude</td>
+    </tr>
+</table>
+    </td>
+</tr>
+</table>
+
+
+@code
+{
+    private int zoom_level = 0;
+    private double center_latitude = 0;
+    private double center_longitude = 0;
+
+    private double _northEast_latitude = 0;
+    private double _northEast_longitude = 0;
+
+    private double _southWest_latitude = 0;
+    private double _southWest_longitude = 0;
+
+    private void OnLoadMap(Map.CurrentMapState current_state)
+    {
+        zoom_level = current_state.zoom_level;
+
+        center_latitude = current_state.location.latitude;
+        center_longitude = current_state.location.longitude;
+
+        _northEast_latitude = current_state.map_bounds._northEast.latitude;
+        _northEast_longitude= current_state.map_bounds._northEast.longitude;
+
+        _southWest_latitude =  current_state.map_bounds._southWest.latitude;
+       _southWest_longitude =  current_state.map_bounds._southWest.longitude;
+    }
+
+    Map.LoadParameters parameters = new Map.LoadParameters()
+        {
+            location = new Map.Location()
+            {
+                longitude = 26.1107672,
+                latitude = 44.4501715
+            },
+            zoom_level = 14
+        };
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33209.295
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Map Events", "Map Events\Map Events.csproj", "{78D68CA5-5F32-4E96-89BE-6F7ADE38501A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78D68CA5-5F32-4E96-89BE-6F7ADE38501A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D68CA5-5F32-4E96-89BE-6F7ADE38501A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D68CA5-5F32-4E96-89BE-6F7ADE38501A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D68CA5-5F32-4E96-89BE-6F7ADE38501A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DE8C5A0-C0EE-41F8-AA5E-A454478F8D1E}
+	EndGlobalSection
+EndGlobal
