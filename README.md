@@ -17,6 +17,8 @@ You can find more information:
 
 ## What's New? ##
 
+
+
 ### Map Events (Update Map Events definitions and add more event methods)
 
 Click on Map method trigger:
