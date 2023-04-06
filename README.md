@@ -18,6 +18,8 @@ You can find more information:
 ## What's New? ##
 
 
+![ImagesOverlay3](https://user-images.githubusercontent.com/8348463/230477893-8966306e-2cae-44bf-b3ad-8ef7870f1111.gif)
+
 
 ### Map Events (Update Map Events definitions and add more event methods)
 
