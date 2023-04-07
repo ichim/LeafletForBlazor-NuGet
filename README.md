@@ -17,111 +17,69 @@ You can find more information:
 
 ## What's New? ##
 
+### Images Overlay
+
+Load and display images over specific bounds of the map.
 
 ![ImagesOverlay3](https://user-images.githubusercontent.com/8348463/230477893-8966306e-2cae-44bf-b3ad-8ef7870f1111.gif)
-
-
-### Map Events (Update Map Events definitions and add more event methods)
-
-Click on Map method trigger:
-
->	onMapClick return Map.CurrentMapState object
-
-Double Click on Map method trigger:
-
->	onMapDblClick return Map.CurrentMapState object
-
-Recomandation! Use _doubleClickZoom = false_ to disable zoom on double click, as can be seen below (below is an example).
-
-Code Block:
-
-	Map.MapOptions map_options = new Map.MapOptions()
-	{
-		interaction_options = new Map.InteractionOptions()
-		{
-			doubleClickZoom = false
-		}
-	};
-Blazor page:
-
-	<Map
-		width="800px"
-		height="600px"
-		Parameters="@parameters"
-		Options="@map_options"
-		onMapDblClick="@OnMapDoubleClick"
-	></Map>
-
-Load Map method trigger:
-
->	onLoadMap return Map.CurrentMapState object
-
-Zoom on Map method trigger:
-
->	onZoomChange return Map.CurrentMapState object
-
-Pan or Zoom on Map method trigger:
-
->	onMoveChange return Map.CurrentMapState object
-
-Events parameter (blue print) of all methods trigger:
-
-	#region CurrentMapState and Location blue print
-		public class CurrentMapState	//current state (bound, center and zoom level) of the Map
-		{
-			public Location location { get; set; } = new Location();
-			public int zoom_level { get; set; }
-			public MapBounds map_bounds { get; set; } = new MapBounds();
-		}
-		public class MapBounds		//Map bound coordinates
-		{
-			public Location _southWest { get; set; } = new Location();
-			public Location _northEast { get; set; } = new Location();
-		}
-		public class Location		//center Map location
-		{
-			public double longitude { get; set; }
-			public double latitude { get; set; }
-		}
-    #endregion
-
-### Map event example code
-Below will be presented a simple example with the Double Click on Map event
 
 #### Blazor Page:
 
 	<Map
-		width="800px"
-		height="600px"
-		Parameters="@parameters"
-		Options="@map_options"
-		onMapDblClick="@OnMapDblClick"
+		width="750px"
+		height="650px"
+		MapOverlays="@overlays"
 	></Map>
+
 #### Blazor code block:
+
 	@code{
-		public void OnMapDblClick(Map.CurrentMapState evt_parameters)
+		Map.Overlays overlays = new Map.Overlays()
 		{
-
-		}
-
-		Map.MapOptions map_options = new Map.MapOptions()
+			images = new Map.ImageOverlay()
 			{
-				interaction_options = new Map.InteractionOptions()
+				images_and_bounds = new List<Map.ImagesAndBoundsCoordinates>()
 				{
-					doubleClickZoom = false //here we will disable navigation in the map on double click. Is not mandatory!
+					new Map.ImagesAndBoundsCoordinates()
+					{
+						url = "http://localhost:5116/atene.png",
+						map_bounds = new Map.MapBounds()
+						{
+							_southWest = new Map.Location()
+							{
+								longitude = 26.0970904,
+								latitude=44.4409802
+							},
+							_northEast = new Map.Location()
+							{
+								longitude = 26.0985575,
+								latitude=44.4418393
+							}
+						}
+					},
+				new Map.ImagesAndBoundsCoordinates()
+					{
+						url = "http://localhost:5116/romana.png",
+						map_bounds = new Map.MapBounds()
+						{   
+							_southWest = new Map.Location()
+							{
+								longitude = 26.0964848,
+								latitude=44.4465985
+							},
+							_northEast = new Map.Location()
+							{
+								longitude = 26.0983148,
+								latitude=44.4475250
+							}
+						}
+					}
 				}
-			};
-
-		Map.LoadParameters parameters = new Map.LoadParameters()
-			{
-				location = new Map.Location()
-				{
-					longitude = 26.1107672,
-					latitude = 44.4501715
-				},
-				zoom_level = 14
-			};
+			}    
+		};
 	}
+
+
  _____________
 
 ## Basic Map configuration ##
@@ -223,39 +181,108 @@ The user of the application, created by you, will be able to change the basemap.
 
 [Basemap - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Basemap%20Layers%20Control)
 
-## Map events ##
+## Map Events
 
-LeafletForBlazor Map provide some events:
- - OnLoadMap();
- - OnMapClick();
- - OnZoomChange();
+Click on Map method trigger:
 
- #### Blazor page: ####
+>	onMapClick return Map.CurrentMapState object
 
- 	<Map 
-		width="600px" 
+Double Click on Map method trigger:
+
+>	onMapDblClick return Map.CurrentMapState object
+
+Recomandation! Use _doubleClickZoom = false_ to disable zoom on double click, as can be seen below (below is an example).
+
+Code Block:
+
+	Map.MapOptions map_options = new Map.MapOptions()
+	{
+		interaction_options = new Map.InteractionOptions()
+		{
+			doubleClickZoom = false
+		}
+	};
+Blazor page:
+
+	<Map
+		width="800px"
 		height="600px"
-		onLoadMap="@OnLoadMap"
-		onMapClick="@OnMapClick"
-		onZoomChange="@OnZoomChange">
-	</Map>
+		Parameters="@parameters"
+		Options="@map_options"
+		onMapDblClick="@OnMapDoubleClick"
+	></Map>
 
+Load Map method trigger:
+
+>	onLoadMap return Map.CurrentMapState object
+
+[Working onLoadMap event - GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Map%20Events%20onLoadMap)
+
+Zoom on Map method trigger:
+
+>	onZoomChange return Map.CurrentMapState object
+
+Pan or Zoom on Map method trigger:
+
+>	onMoveChange return Map.CurrentMapState object
+
+Events parameter (blue print) of all methods trigger:
+
+	#region CurrentMapState and Location blue print
+		public class CurrentMapState	//current state (bound, center and zoom level) of the Map
+		{
+			public Location location { get; set; } = new Location();
+			public int zoom_level { get; set; }
+			public MapBounds map_bounds { get; set; } = new MapBounds();
+		}
+		public class MapBounds		//Map bound coordinates
+		{
+			public Location _southWest { get; set; } = new Location();
+			public Location _northEast { get; set; } = new Location();
+		}
+		public class Location		//center Map location
+		{
+			public double longitude { get; set; }
+			public double latitude { get; set; }
+		}
+    #endregion
+
+### Map event example code
+Below will be presented a simple example with the Double Click on Map event
+
+#### Blazor Page:
+
+	<Map
+		width="800px"
+		height="600px"
+		Parameters="@parameters"
+		Options="@map_options"
+		onMapDblClick="@OnMapDblClick"
+	></Map>
 #### Blazor code block:
-
-	@code {
-		//Map events
-		public void OnLoadMap(Map.OnLoadEventParameters event_args)
+	@code{
+		public void OnMapDblClick(Map.CurrentMapState evt_parameters)
 		{
 
 		}
-		public void OnZoomChange(int zoom_level)
-		{
-        
-		}
-		public void OnMapClick(Map.Location event_args)
-		{
-        
-		}
+
+		Map.MapOptions map_options = new Map.MapOptions()
+			{
+				interaction_options = new Map.InteractionOptions()
+				{
+					doubleClickZoom = false //here we will disable navigation in the map on double click. Is not mandatory!
+				}
+			};
+
+		Map.LoadParameters parameters = new Map.LoadParameters()
+			{
+				location = new Map.Location()
+				{
+					longitude = 26.1107672,
+					latitude = 44.4501715
+				},
+				zoom_level = 14
+			};
 	}
 
 ## JSON file example (GeoJSON_urls Map parameter)
