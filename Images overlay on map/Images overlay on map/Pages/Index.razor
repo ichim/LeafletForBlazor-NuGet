@@ -1,0 +1,74 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>LeafletForBlazor NuGet package</h1>
+
+
+<SurveyPrompt Title="How to Image overlay on the Map?" />
+
+
+    <Map
+    width="750px"
+    height="650px"
+    Parameters="@parameters"
+    MapOverlays="@overlays"
+    ></Map>
+
+@code{
+    Map.Overlays overlays = new Map.Overlays()
+    {
+        images = new Map.ImageOverlay()
+        {
+            images_and_bounds = new List<Map.ImagesAndBoundsCoordinates>()
+            {
+                new Map.ImagesAndBoundsCoordinates()
+                {
+                    url = "http://localhost:5186/atene.png",
+                    map_bounds = new Map.MapBounds()
+                    {
+                        _southWest = new Map.Location()
+                        {
+                            longitude = 26.0970904,
+                            latitude=44.4409802
+                        },
+                        _northEast = new Map.Location()
+                        {
+                            longitude = 26.0985575,
+                            latitude=44.4418393
+                        }
+                    }
+                },
+                            new Map.ImagesAndBoundsCoordinates()
+                {
+                    url = "http://localhost:5186/romana.png",
+                    map_bounds = new Map.MapBounds()
+                    {   
+                        _southWest = new Map.Location()
+                        {
+                            longitude = 26.0964848,
+                            latitude=44.4465985
+                        },
+                        _northEast = new Map.Location()
+                        {
+                            longitude = 26.0983148,
+                            latitude=44.4475250
+                        }
+                    }
+                }
+            }
+        }    
+    };
+
+   
+
+    Map.LoadParameters parameters = new Map.LoadParameters()
+        {
+            location = new Map.Location()
+            {
+                longitude = 26.0986576,
+                latitude = 44.4444138
+            },
+            zoom_level = 16
+        };
+}
