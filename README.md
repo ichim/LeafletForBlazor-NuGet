@@ -42,7 +42,7 @@ PointTooltip
 
     public class PointTooltip
     {
-        public string? content { get; set; }
+        public string? content { get; set; }        //accept html content
         public bool permanent { get; set; } = true;
         public double opacity { get; set; } = 0.9;
     }
@@ -63,8 +63,8 @@ PointIcon
 
     public class PointIcon
     {
-        public string iconUrl{get; set;}      
-        public int[] iconSize{get; set;}      
+        public string iconUrl{get; set;}      //icon url (ex. *.png file)
+        public int[] iconSize{get; set;}      //pixels
         public int[] iconAnchor{get; set;}    
         public int[] popupAnchor{get; set;}   
         public string shadowUrl{get; set;}     
