@@ -36,6 +36,12 @@ The movePoint() method accepts from one argument to three arguments:
 
 ![movePoint](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/4ddf32b1-abcb-463c-988e-1633e0224f2a)
 
+    public class PointTooltip
+    {
+        public string? content { get; set; }
+        public bool permanent { get; set; } = true;
+        public double opacity { get; set; } = 0.9;
+    }
 ####Add in __Imports.razor_ project file
 
     @using LeafletForBlazor
