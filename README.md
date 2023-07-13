@@ -36,11 +36,40 @@ The movePoint() method accepts from one argument to three arguments:
 
 ![movePoint](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/4ddf32b1-abcb-463c-988e-1633e0224f2a)
 
+The blue print definitions of the classes used by the movePoint() method:
+
+PointTooltip
+
     public class PointTooltip
     {
         public string? content { get; set; }
         public bool permanent { get; set; } = true;
         public double opacity { get; set; } = 0.9;
+    }
+
+PointSymbol
+
+     public class PointSymbol
+    {
+        public int radius { get; set; } = 4;
+        public string? fillColor {get;set;} 
+        public string? color {get;set;} 
+        public int weight{get;set;} 
+        public double opacity{get;set;}
+        public double fillOpacity { get; set; } = 1;
+    }
+    
+PointIcon
+
+    public class PointIcon
+    {
+        public string iconUrl{get; set;}      
+        public int[] iconSize{get; set;}      
+        public int[] iconAnchor{get; set;}    
+        public int[] popupAnchor{get; set;}   
+        public string shadowUrl{get; set;}     
+        public int[] shadowSize{get; set;}    
+        public int[] shadowAnchor{get; set;}  
     }
 ####Add in __Imports.razor_ project file
 
