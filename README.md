@@ -34,6 +34,7 @@ The movePoint() method accepts from one argument to three arguments:
  - symbol (PointSymbol/PointIcon): the point can be displayed with a circle (PointSymbol) or an icon/*.png (PointIcon);
  - tooltip (PointTooltip): configuring a tooltip with various information;
 
+![movePoint](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/27d9e6da-dbf5-4676-933f-262830ebb25c)
 
 
 The blue print definitions of the classes used by the movePoint() method:
