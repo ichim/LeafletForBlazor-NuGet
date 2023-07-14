@@ -21,11 +21,11 @@ You can find more information:
 > Eventually, the Map control will become deprecated and replaced by RealTimeMap.
 > In future versions (2 +), functionality will be added to track updated data in real time.
 
-###RealTimeMap
+### RealTimeMap
 
 > Starting with current version, LeafletForBlazor provide a new map control named RealTimeMap. This new control is optimized for working with streaming data.
 
-####Working with a single point (ex. my position)
+#### Working with a single point (ex. my position)
 
 > A first method added to the control is movePoint(args...) which allows displaying the position of a single point. The method can be used to monitor one's own position.
 
@@ -35,7 +35,6 @@ The movePoint() method accepts from one argument to three arguments:
  - tooltip (PointTooltip): configuring a tooltip with various information;
 
 ![movePoint](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/27d9e6da-dbf5-4676-933f-262830ebb25c)
-
 
 The blue print definitions of the classes used by the movePoint() method:
 
