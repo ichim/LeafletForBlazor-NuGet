@@ -1,7 +1,7 @@
 # ![LealletForBlazor32](https://user-images.githubusercontent.com/8348463/224698821-8768d8af-46ea-462a-a603-a7adf9095594.png) Leaflet Map for Blazor
 
  > You can quickly add a map to the blazor page. 
- > In addition, you can add GeoJSON data in the map, symbolize Map items, add tooltips to map items, working with basemap and overlay layers and others 
+ > Starting with version 2.0.0, LeafletForBlazor provide you a new control (RealTimeMap) for real time data displaying and analysis. Data can come from various (provided by various) tracking devices: router (static) and mobile phone, GPS of the fleet (dynamic) etc. 
 
 [NuGet Package](https://www.nuget.org/packages/LeafletForBlazor#versions-body-tab)
 
@@ -15,17 +15,264 @@ You can find more information:
 
  _____________
 
-## What's New? ##
+# What's New?
 
-> Starting with version 2.0, the Map component will be replaced with RealTimeMap. The RealTimeMap component is designed to update the position of a single point (my position) or to update large collections of points.
-> Eventually, the Map control will become deprecated and replaced by RealTimeMap.
-> In future versions (2 +), functionality will be added to track updated data in real time.
+## Geometric class
 
-### RealTimeMap
+ > Geometric is a new class that will provide functionalities for working with data.
 
-> Starting with current version, LeafletForBlazor provide a new map control named RealTimeMap. This new control is optimized for working with streaming data.
+ > This class will be a parent class (more precisely, host class - there is no inheritance) for the geometric shapes (ex. Points), geometric map shapes appearance, geometric analisys and so one supported by RealTimeMap.
 
-#### Working with a single point (ex. my position)
+
+### Points class
+
+> The Points class is hosted by the Geometric class.
+
+ > This class will work with RealTimeMap points. 
+ > The points displayed in the map will be defined by the StreamPoint class, whose structure is predefined but which can be extended (value property is of type object).
+
+ >Also, this class will provide methods to control the display of points (Appearance()), analysis (points collection) and so one.
+
+#### StreamPoint
+
+Class has the following structure:
+
+       public interface IStreamPoint
+        {
+            public Guid guid { get; set; }              //globally unique identifier
+            public DateTime timestamp { get; set; }     //Date and Time
+            public double latitude { get; set; }        //EPSG latitude coordionate
+            public double longitude { get; set; }       //EPSG longitude coordionate
+            public string type { get; set; }            //StreamPoint type
+            public object value { get; set; }           //StreamPoint value (object)
+        }
+_latitude and longitude properties are Web Mercator coordinate values._
+
+_The value property can be string or object defined by customn Data Structure Class._
+
+#### Working with Points collection
+
+The class provides the following methods:
+
+- Upload stream points
+
+      Geometric.Points.upload(StreamPoint[] points, bool newCollection = false);
+
+- Add single points
+
+      Geometric.Points.add(StreamPoint point);
+
+- Add more points
+
+      Geometric.Points.add(StreamPoint[] point);
+
+ 
+- Delete stream points
+
+      //delete all points from Geometric.Points collection
+      Geometric.Points.delete(); 
+      
+      //delete point, from Geometric.Points collection, with specified id (guid)
+      Geometric.Points.delete(string id); 
+
+      //delete points, from Geometric.Points collection, with speciefied ids (guids)
+      Geometric.Points.delete(string[] ids); 
+      
+
+ - Move single point
+ 
+        //move single point from Geometric.Points collection
+        Geometric.Points.moveTo(StreamPoint point); 
+
+ - Move more stream points
+
+        //move one ore more ponts from Geometric.Points collection
+        Geometric.Points.moveTo(StreamPoint[] points); 
+    
+- Get all stream points
+
+        //return List<StreamPoint> from Geometric.Points
+        Geometric.Points.getItems(); 
+
+- Get the points that match a criteria
+
+        //return IEnumerable<StreamPoint> from Geometric.Points
+        Geometric.Points.getItems(item=>item.timestamp == DateTime.Now); 
+
+#### Change appearance of Map points collection
+
+ - change the appearance of some of the points from collection
+
+        Geometric.Points.Appearance(item=>item.type == "type 1").pattern = new PointSymbol(){ 
+                                                                                                radius = 18, 
+                                                                                                color = "#28ffff", 
+                                                                                                opacity = 0.68, 
+                                                                                                fillColor = "blue", 
+                                                                                                weight = 2, 
+                                                                                                fillOpacity = 0.68 
+                                                                                             }
+
+
+## Code Example
+
+ > Code example for Points collection.
+
+ #### Add in __Imports.razor_ project file
+
+        @using LeafletForBlazor
+
+#### Blazor Page:
+
+        <RealTimeMap 
+            width="600px" 
+            height="600px"
+            @ref="realTimeMap" 
+        ></RealTimeMap>
+
+#### Blazor code block:
+
+##### Reference to RealTimeMap control (from Blazor Page):
+
+        @code {
+            RealTimeMap? realTimeMap;	//reference to control
+              }
+
+##### Stream points collection
+
+
+       List<RealTimeMap.StreamPoint> points = new List<RealTimeMap.StreamPoint> {
+                new RealTimeMap.StreamPoint()
+                {
+                    guid = Guid.Parse("15366d7f-0689-4b8e-a2ee-29e5cb27f76e"),
+                    latitude = 44.4502578,
+                    longitude = 26.1108199,
+                    type = "type 1",
+                    value = "a point-specific value",
+                }
+        }
+
+
+
+_latitude and longitude properties are Web Mercator coordinate values._
+
+_In this previous, the value property is of string type_
+
+_If the timestamp is missing, LeafletForBlazor will assign the current date_
+
+_This collection has a static behavior._
+
+
+
+##### Upload points collection
+
+            if(realTimeMap !=null)
+                await realTimeMap.Geometric.Points.upload(points, true);
+
+where, the last parameter is newCollection:
+ - if it's missing, it means it's _false_. That is, the previous collection is kept;
+
+            if(realTimeMap !=null)
+                await realTimeMap.Geometric.Points.upload(points);
+
+ - if it's _true_, a new collection will be created;
+
+##### Add point(s) to Geometric.Points
+
+Add single point to Geometric.Points
+
+        if (realTimeMap!=null)
+            await realTimeMap.Geometric.Points.add(point);
+
+Add more points to Geometric.Points
+
+       if (realTimeMap!=null)
+                await realTimeMap.Geometric.Points.add(points.ToArray());
+
+
+##### Delete
+
+Delete all points from Geometric.Points:
+
+        if(realTimeMap!=null)
+            await realTimeMap.Geometric.Points.delete(); //delete all points from Geometric.Points
+
+Delete single points from Geometric.Points:
+
+        if(realTimeMap!=null)
+            await realTimeMap.Geometric.Points.delete("15366d7f-0689-4b8e-a2ee-29e5cb27f76e"); //delete point by guid
+
+Delete multiple points from Geometric.Points:
+
+        string[] ids = new string[2] {  "15366d7f-0689-4b8e-a2ee-28e5cb22f26e",
+                                        "46246d6f-0684-4b8e-a2ee-26e2cb28f86f" };
+        if(realTimeMap!=null)
+            await realTimeMap.Geometric.Points.delete(ids); //delete points by guid
+
+##### Moving points on the map
+
+Moving single point from Geometric.Points
+
+        var point = new RealTimeMap.StreamPoint()
+            {
+                latitude = 44.4504845,
+                longitude = 26.1128922,
+                type = "type1",
+                value = "type 1",
+                guid = Guid.Parse("15366d7f-0689-4b8e-a2ee-29e5cb27f76e") //existing guide in the Geometric.Points collection 
+            };
+        if (realTimeMap != null)
+            await realTimeMap.Geometric.Points.moveTo(point);
+
+_during the move you cannot change the attributes (type, value, timestamp)_
+
+Moving multiple points from Geometric.Points
+
+        var point = new RealTimeMap.StreamPoint()
+            {
+                latitude = 44.4504845,
+                longitude = 26.1128922,
+                type = "type1",
+                value = "type 1",
+                guid = Guid.Parse("15366d7f-0689-4b8e-a2ee-29e5cb27f76e") //existing guide in the Geometric.Points collection
+            };
+        var points = new List<RealTimeMap.StreamPoint>();
+        points.Add(point);
+        if (realTimeMap != null)
+            await realTimeMap.Geometric.Points.moveTo(points.ToArray());
+
+_during the move you cannot change the attributes (type, value, timestamp). A warning will appear in the console_
+
+##### Change appearance of the points collection
+
+Change appearance of all points from points collection
+
+    realTimeMap.Geometric.Points.Appearance(item => true).pattern = new RealTimeMap.PointSymbol() { 
+                                                                                                        radius = 8,    
+                                                                                                        color = "gray", 
+                                                                                                        opacity = 0.68, 
+                                                                                                        fillColor = "gray", 
+                                                                                                        weight = 4, 
+                                                                                                        fillOpacity = 0.68 
+                                                                                               };
+
+You can use predicate of Appearance method to filter points
+
+    realTimeMap.Geometric.Points.Appearance(item => item.type == "points of type 1").pattern = new RealTimeMap.PointSymbol() { 
+                                                                                                                                radius = 16,    
+                                                                                                                                color = "rgb(200,100,0)", 
+                                                                                                                                opacity = 0.68, 
+                                                                                                                                fillColor = "red", 
+                                                                                                                                weight = 4, 
+                                                                                                                                fillOpacity = 0.68 
+                                                                                                                             };
+
+
+
+## RealTimeMap Blazor control
+
+> This new control is optimized for working with streaming data.
+
+### Working with a single point (ex. my position)
 
 > A first method added to the control is movePoint(args...) which allows displaying the position of a single point. The method can be used to monitor one's own position.
 
@@ -34,7 +281,7 @@ The movePoint() method accepts from one argument to three arguments:
  - symbol (PointSymbol/PointIcon): the point can be displayed with a circle (PointSymbol) or an icon/*.png (PointIcon);
  - tooltip (PointTooltip): configuring a tooltip with various information;
 
-![movePoint](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/27d9e6da-dbf5-4676-933f-262830ebb25c)
+![movePoint](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/4ddf32b1-abcb-463c-988e-1633e0224f2a)
 
 The blue print definitions of the classes used by the movePoint() method:
 
@@ -71,11 +318,11 @@ PointIcon
         public int[] shadowSize{get; set;}    
         public int[] shadowAnchor{get; set;}  
     }
-####Add in __Imports.razor_ project file
+### Add in __Imports.razor_ project file
 
     @using LeafletForBlazor
 
-####Blazor Page:
+### Blazor Page:
 
     <button @onclick="onClickRun">Run</button> //launch moving points
     <RealTimeMap
@@ -85,7 +332,7 @@ PointIcon
         Parameters="@parameters"
     ></RealTimeMap>
 
-####Blazor code block:
+### Blazor code block:
 
     @code {
         RealTimeMap? realTimeMap;	//reference to map control
@@ -137,6 +384,8 @@ PointIcon
         }
 
     }
+
+[RealTimeMap movePoint() method GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20movePoint)
 
  _____________
 
