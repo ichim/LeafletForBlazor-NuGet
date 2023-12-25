@@ -17,6 +17,305 @@ You can find more information:
 
 # What's New?
 
+## More for Appearance() method
+
+Now, to change the appearance of all points you can use:
+
+    realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointSymbol()
+    {
+        color = "green",
+        fillColor = "green",
+        fillOpacity = 0.5,
+        radius = 10
+    };
+
+The appearance of the points is preserved in the map view. To reset the stored appearance, the Appearance method provide reset boolean parameter:
+
+    realTimeMap.Geometric.Points.Appearance(item=>item.type=="emergency vehicles", true).pattern = new RealTimeMap.PointSymbol()
+    {
+        color = "blue",
+        fillColor = "blue",
+        fillOpacity = 0.5,
+        radius = 10
+    };
+
+## Nearby Points Analysis
+
+> You can get the nearby points.
+
+The configuration of nearby points analysis is done by:
+
+    public class NearbyAnalysis
+    {
+        public double threshold { get; set; } = 0;
+    }
+
+...and filtering the points subject to analysis:
+
+    realTimeMap.Geometric.Points.Analysis(item => item.value == "alpha crew")
+
+Obtaining the points that meet the _nearby points_ condition (threshold) is done using the event method:
+
+    analysis.OnNearbyThresholdFired += onNearbyThresholdTrigger;
+
+    public async void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
+    {
+  
+    }
+
+Closing the nearby points condition will trigger the method:
+
+    analysis.OnNearbyThresholdClosed += nearbyThresholdTriggerClosed;
+
+    public async void nearbyThresholdTriggerClosed(object sender)
+    {
+      
+    }
+
+## Code Example
+
+Add using LeafletForBlazor reference into _Imports.razor
+
+    @using LeafletForBlazor
+
+Add <RealTimeMap/> Blazor control in your page:
+
+    <RealTimeMap @ref="realTimeMap" height="800px" width="800px"></RealTimeMap>
+
+Define block clode block and declare RealTimeMap object:
+
+    @code{
+        RealTimeMap? realTimeMap;
+    }
+
+Upload List<StreamPoint> data into RealTimeMap:
+
+    public async Task upload()
+    {
+        if(realTimeMap!=null)
+            await realTimeMap.Geometric.Points.upload(new InputData().input);
+    }
+
+
+Change the default appearance (Geometric.Points.Appearance()) of the points displayed on the map:
+
+    public async Task upload()
+    {
+        if(realTimeMap!=null)
+            await realTimeMap.Geometric.Points.upload(new InputData().input);
+        //change points appearance
+        if(realTimeMap !=null)
+        {
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "emergency vehicles").pattern = new RealTimeMap.PointSymbol()
+            {
+                    color = "green",
+                    fillColor = "green",
+                    fillOpacity = 0.5,
+                    radius = 10
+            };
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
+            {
+                color = "blue",
+                fillColor = "blue",
+                fillOpacity = 0.5,
+                radius = 10
+            };
+    }
+
+Set up nearby point analysis:
+
+    var analysis = realTimeMap.Geometric.Points.Analysis(item => true);
+    analysis.nearby = new RealTimeMap.NearbyAnalysis()
+    {
+        threshold = 30 //meters
+    };
+
+_add into upload() method_
+
+Define the methods that will be triggered when the condition NearbyAnalysis() is reached
+
+    analysis.OnNearbyThresholdFired += onNearbyThresholdTrigger;
+    analysis.OnNearbyThresholdClosed += nearbyThresholdTriggerClosed;
+
+_add into upload() method_
+
+Define _onNearbyThresholdTrigger_ and _nearbyThresholdTriggerClosed_ methods:
+
+_onNearbyThresholdTrigger_:
+
+    public void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
+    {
+
+    }
+
+_onNearbyThresholdTrigger_:
+
+    public void nearbyThresholdTriggerClosed(object sender)
+    {
+ 
+    }
+
+Use the _onNearbyThresholdTrigger_ method to change the appearance or display nearby points:
+
+    public void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
+    {
+        foreach(var item in args.tuples)
+        {
+            var guid = item.tuple.Item1.guid;
+            realTimeMap.Geometric.Points.Appearance(item => item.guid == guid).pattern = new RealTimeMap.PointSymbol()
+                {
+                    color = "red",
+                    fillColor = "red",
+                    fillOpacity = 0.5,
+                    radius = 10
+                };
+        }
+    }
+
+Use the _nearbyThresholdTriggerClosed_ method to return to the initial appearance of the points. Careful! Appearance must contain the parameter reset = true . Appearance(predicate, reset):
+
+    public  void nearbyThresholdTriggerClosed(object sender)
+    {
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "anti-terrorist vehicles", true).pattern = new RealTimeMap.PointSymbol()
+            {
+                color = "green",
+                fillColor = "green",
+                fillOpacity = 0.5,
+                radius = 10
+            };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "ambulance", true).pattern = new RealTimeMap.PointSymbol()
+            {
+                color = "blue",
+                fillColor = "blue",
+                fillOpacity = 0.5,
+                radius = 10
+            };
+    }
+
+![Uploading nearby01.gif…]()
+
+-------------------------
+
+## RealTimeMap Blazor control
+
+> This new control is optimized for working with streaming data.
+
+### Working with a single point (ex. my position)
+
+> A first method added to the control is movePoint(args...) which allows displaying the position of a single point. The method can be used to monitor one's own position.
+
+The movePoint() method accepts from one argument to three arguments:
+ - coordinate (double[2]): point coordinate. For example: realTimeMap.movePoint([44.4502578, 26.1108199]). Latitude and Longitude in degrees, geographical coordinates;
+ - symbol (PointSymbol/PointIcon): the point can be displayed with a circle (PointSymbol) or an icon/*.png (PointIcon);
+ - tooltip (PointTooltip): configuring a tooltip with various information;
+
+![movePoint](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/4ddf32b1-abcb-463c-988e-1633e0224f2a)
+
+The blue print definitions of the classes used by the movePoint() method:
+
+PointTooltip
+
+    public class PointTooltip
+    {
+        public string? content { get; set; }        //accept html content
+        public bool permanent { get; set; } = true;
+        public double opacity { get; set; } = 0.9;
+    }
+
+PointSymbol
+
+     public class PointSymbol
+    {
+        public int radius { get; set; } = 4;
+        public string? fillColor {get;set;} 
+        public string? color {get;set;} 
+        public int weight{get;set;} 
+        public double opacity{get;set;}
+        public double fillOpacity { get; set; } = 1;
+    }
+    
+PointIcon
+
+    public class PointIcon
+    {
+        public string iconUrl{get; set;}      //icon url (ex. *.png file)
+        public int[] iconSize{get; set;}      //pixels
+        public int[] iconAnchor{get; set;}    
+        public int[] popupAnchor{get; set;}   
+        public string shadowUrl{get; set;}     
+        public int[] shadowSize{get; set;}    
+        public int[] shadowAnchor{get; set;}  
+    }
+### Add in __Imports.razor_ project file
+
+    @using LeafletForBlazor
+
+### Blazor Page:
+
+    <button @onclick="onClickRun">Run</button> //launch moving points
+    <RealTimeMap
+        @ref="realTimeMap"
+        width="600px" 
+        height="600px"
+        Parameters="@parameters"
+    ></RealTimeMap>
+
+### Blazor code block:
+
+    @code {
+        RealTimeMap? realTimeMap;	//reference to map control
+        RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()  //general map settings
+        {
+            zoom_level = 18,
+            location = new RealTimeMap.Location()
+            {
+                latitude = 44.4501715,
+                longitude = 26.1107672,
+            }
+        }
+        
+        //points (coordonate) on the route. For simulation...
+        List<List<double>> coordinates = new List<List<double>>() {
+        new List<double>() { 44.4502578, 26.1108199 },
+        new List<double>() { 44.4500215, 26.1105407 },
+        new List<double>() { 44.4497369, 26.1093086 },
+        new List<double>() { 44.4496145 , 26.1088460 },
+        new List<double>() {  44.4491875, 26.1079328 }
+        };
+
+        RealTimeMap.PointSymbol symbol = new RealTimeMap.PointSymbol()
+        {
+            color = "red",
+            fillColor = "yellow",
+            radius = 10,
+            weight = 3,
+            opacity = 1,
+            fillOpacity = 1
+        };
+        bool run = false;
+        private async Task onClickRun() //Button onclick event
+        {
+            run = !run;
+            for(var i=0;i<1000;i++)
+            {
+                pas = i % coordinates.Count;
+                RealTimeMap.PointTooltip tooltip = new RealTimeMap.PointTooltip() { 
+                    content=$"{Math.Round( coordinates[pas][0],3)},{Math.Round( coordinates[pas][1],3)}", 
+                    opacity = 0.6 
+                };
+
+                await  realTimeMap.movePoint(coordinates[pas].ToArray(),  symbol, tooltip);
+                await Task.Delay(1000);
+                if (run == false)
+                    return;
+            }
+        }
+
+    }
+
+[RealTimeMap movePoint() method GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20movePoint)
+
+
 ## Geometric class
 
  > Geometric is a new class that will provide functionalities for working with data.
@@ -100,6 +399,41 @@ The class provides the following methods:
         Geometric.Points.getItems(item=>item.timestamp == DateTime.Now); 
 
 #### Change appearance of Map points collection
+
+ - change the appearance of all points from collection
+
+         Geometric.Points.Appearance(item=>true).pattern = new PointSymbol(){ 
+                                                                                radius = 18, 
+                                                                                color = "#28ffff", 
+                                                                                opacity = 0.68, 
+                                                                                fillColor = "blue", 
+                                                                                weight = 2, 
+                                                                                fillOpacity = 0.68 
+                                                                             }
+                                                                                             
+  or more simply
+
+         Geometric.Points.Appearance().pattern = new PointSymbol(){ 
+                                                                    radius = 18, 
+                                                                    color = "#28ffff", 
+                                                                    opacity = 0.68, 
+                                                                    fillColor = "blue", 
+                                                                    weight = 2, 
+                                                                    fillOpacity = 0.68 
+                                                                   }
+
+The appearance of the points on the map is stored in the map view. 
+Resetting the storage is done using the reset parameter of the Appearance() method:
+
+         Geometric.Points.Appearance(item=>true, true).pattern = new PointSymbol(){ 
+                                                                                radius = 18, 
+                                                                                color = "#28ffff", 
+                                                                                opacity = 0.68, 
+                                                                                fillColor = "blue", 
+                                                                                weight = 2, 
+                                                                                fillOpacity = 0.68 
+                                                                             }
+
 
  - change the appearance of some of the points from collection
 
@@ -242,6 +576,8 @@ Moving multiple points from Geometric.Points
 
 _during the move you cannot change the attributes (type, value, timestamp). A warning will appear in the console_
 
+[Working with Geometric.Points collection - code example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20Geometric.Points%20collection)
+
 ##### Change appearance of the points collection
 
 Change appearance of all points from points collection
@@ -266,126 +602,9 @@ You can use predicate of Appearance method to filter points
                                                                                                                                 fillOpacity = 0.68 
                                                                                                                              };
 
+[Working with Geometric.Points Appearance](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20Geometric.Points%20Appearance)
 
 
-## RealTimeMap Blazor control
-
-> This new control is optimized for working with streaming data.
-
-### Working with a single point (ex. my position)
-
-> A first method added to the control is movePoint(args...) which allows displaying the position of a single point. The method can be used to monitor one's own position.
-
-The movePoint() method accepts from one argument to three arguments:
- - coordinate (double[2]): point coordinate. For example: realTimeMap.movePoint([44.4502578, 26.1108199]). Latitude and Longitude in degrees, geographical coordinates;
- - symbol (PointSymbol/PointIcon): the point can be displayed with a circle (PointSymbol) or an icon/*.png (PointIcon);
- - tooltip (PointTooltip): configuring a tooltip with various information;
-
-![movePoint](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/4ddf32b1-abcb-463c-988e-1633e0224f2a)
-
-The blue print definitions of the classes used by the movePoint() method:
-
-PointTooltip
-
-    public class PointTooltip
-    {
-        public string? content { get; set; }        //accept html content
-        public bool permanent { get; set; } = true;
-        public double opacity { get; set; } = 0.9;
-    }
-
-PointSymbol
-
-     public class PointSymbol
-    {
-        public int radius { get; set; } = 4;
-        public string? fillColor {get;set;} 
-        public string? color {get;set;} 
-        public int weight{get;set;} 
-        public double opacity{get;set;}
-        public double fillOpacity { get; set; } = 1;
-    }
-    
-PointIcon
-
-    public class PointIcon
-    {
-        public string iconUrl{get; set;}      //icon url (ex. *.png file)
-        public int[] iconSize{get; set;}      //pixels
-        public int[] iconAnchor{get; set;}    
-        public int[] popupAnchor{get; set;}   
-        public string shadowUrl{get; set;}     
-        public int[] shadowSize{get; set;}    
-        public int[] shadowAnchor{get; set;}  
-    }
-### Add in __Imports.razor_ project file
-
-    @using LeafletForBlazor
-
-### Blazor Page:
-
-    <button @onclick="onClickRun">Run</button> //launch moving points
-    <RealTimeMap
-        @ref="realTimeMap"
-        width="600px" 
-        height="600px"
-        Parameters="@parameters"
-    ></RealTimeMap>
-
-### Blazor code block:
-
-    @code {
-        RealTimeMap? realTimeMap;	//reference to map control
-        RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()  //general map settings
-        {
-            zoom_level = 18,
-            location = new RealTimeMap.Location()
-            {
-                latitude = 44.4501715,
-                longitude = 26.1107672,
-            }
-        }
-        
-        //points (coordonate) on the route. For simulation...
-        List<List<double>> coordinates = new List<List<double>>() {
-        new List<double>() { 44.4502578, 26.1108199 },
-        new List<double>() { 44.4500215, 26.1105407 },
-        new List<double>() { 44.4497369, 26.1093086 },
-        new List<double>() { 44.4496145 , 26.1088460 },
-        new List<double>() {  44.4491875, 26.1079328 }
-        };
-
-        RealTimeMap.PointSymbol symbol = new RealTimeMap.PointSymbol()
-        {
-            color = "red",
-            fillColor = "yellow",
-            radius = 10,
-            weight = 3,
-            opacity = 1,
-            fillOpacity = 1
-        };
-        bool run = false;
-        private async Task onClickRun() //Button onclick event
-        {
-            run = !run;
-            for(var i=0;i<1000;i++)
-            {
-                pas = i % coordinates.Count;
-                RealTimeMap.PointTooltip tooltip = new RealTimeMap.PointTooltip() { 
-                    content=$"{Math.Round( coordinates[pas][0],3)},{Math.Round( coordinates[pas][1],3)}", 
-                    opacity = 0.6 
-                };
-
-                await  realTimeMap.movePoint(coordinates[pas].ToArray(),  symbol, tooltip);
-                await Task.Delay(1000);
-                if (run == false)
-                    return;
-            }
-        }
-
-    }
-
-[RealTimeMap movePoint() method GitHub example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20movePoint)
 
  _____________
 
