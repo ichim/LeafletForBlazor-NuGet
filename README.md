@@ -192,7 +192,8 @@ Use the _nearbyThresholdTriggerClosed_ method to return to the initial appearanc
             };
     }
 
-![Uploading nearby01.gif…]()
+![nearby01](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/83dd91db-a566-4cd4-9c0f-c405c66ebd8b)
+
 
 -------------------------
 
