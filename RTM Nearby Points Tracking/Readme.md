@@ -15,6 +15,15 @@ In this example, it was chosen that all points participate in the Nearby Points 
 
          var analysis = realTimeMap.Geometric.Points.Analysis(item => true);
 
+Configuring the threshold that make event methods to fire:
+
+
+            analysis.nearby = new RealTimeMap.NearbyAnalysis()
+                {
+                    threshold = 30,
+                    unit = RealTimeMap.UnitOfMeasure.meters
+                };
+
 ## Points map appearance
 The points will be displayed with distinct symbols depending on the type property. There will be two distinct situations:
  - 1 the points are not close (distance > 30 m);
