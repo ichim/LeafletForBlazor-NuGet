@@ -4,11 +4,17 @@
 In this example, a simulator for moving points on the map is used. 4 distinct points will move on the map (each point represents something distinct - type property).
 ## Configuring the analysis of Nearby Points Tracking
 The configuration is done on the Analysis class hosted by Points. All or part of the points can participate in the Nearby Points Tracking type analysis.
+
 If we choose to participate only a part of the points:
 
          var analysis = realTimeMap.Geometric.Points.Analysis(item => 
                                                              item.type == "intervention crew" || 
                                                              item.type == "suspicious vehicle");
+
+In this example, it was chosen that all points participate in the Nearby Points Tracking analysis:
+
+         var analysis = realTimeMap.Geometric.Points.Analysis(item => true);
+
 ## Points map appearance
 The points will be displayed with distinct symbols depending on the type property. There will be two distinct situations:
  - 1 the points are not close (distance > 30 m);
