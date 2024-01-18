@@ -26,7 +26,22 @@ Configuring the threshold that make event methods to fire:
 
 Adding the event methods of Nearby Points type analysis:
 
+           analysis.OnNearbyThresholdFired += onNearbyThresholdTrigger;
+           analysis.OnNearbyThresholdClosed += nearbyThresholdTriggerClosed;
 
+The method that is triggered when the points are close:
+
+          public void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
+          {
+         
+          }
+
+The method that is triggered when the proximity condition is no longer satisfied:
+
+         public void nearbyThresholdTriggerClosed(object sender)
+         {
+         
+         }
 
 ## Points map appearance
 The points will be displayed with distinct symbols depending on the type property. There will be two distinct situations:
