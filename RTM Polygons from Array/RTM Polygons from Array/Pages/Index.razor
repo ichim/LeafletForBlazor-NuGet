@@ -1,0 +1,65 @@
+﻿@page "/"
+
+<button @onclick="upload">display polygons from coordinates array</button>
+<RealTimeMap @ref="realTimeMap" height="620px" width="680px"></RealTimeMap>
+
+@code {
+    RealTimeMap? realTimeMap;
+
+    public async Task upload()
+    {
+        if (realTimeMap != null)
+        {
+            //add a single ring polygon with a default symbol
+            await realTimeMap.Geometric.DisplayPolygonsFromArray.add(new List<double[]>
+                {
+                    new double[] { 43.97149268019458, 25.330015325563252 },
+                    new double[] { 43.971377899269875, 25.33024179432496},
+                    new double[] {43.97123098208709, 25.330085496846856 },
+                    new double[] {43.971288372488374, 25.32996109873491},
+                    new double[] {43.97135035326271, 25.330028083175293 },
+                    new double[] {43.97140544793293, 25.329926012764908 },
+             });
+            //add a single ring polygon with a custom symbol
+            await realTimeMap.Geometric.DisplayPolygonsFromArray.add(new List<double[]>
+                {
+                    new double[] { 43.97209871008421, 25.328761772135064 },
+                    new double[] { 43.972004589576606, 25.329119019038004},
+                    new double[] {43.97191506364906, 25.32894358371036 },
+                    new double[] {43.97174519194365, 25.328889356767974},
+                    new double[] {43.97186226638604, 25.328803236079175 },
+                    new double[] {43.97183242466567, 25.32865650950876 },
+             },
+             new RealTimeMap.PolygonSymbol()
+                 {
+                     color = "orange" ,
+                     fillColor = "yellow",
+                     weight = 2,
+                     opacity = 0.4,
+                     fillOpacity = 0.4
+                 });
+
+            //add a multiple rings polygon with custom symbol
+            await realTimeMap.Geometric.DisplayPolygonsFromArray.add(
+            new List<List<double[]>>()
+                   {
+              new List<double[]>()
+              {
+                    new double[] { 43.97210330030072, 25.32749864474909 },
+                    new double[] { 43.97225480945234, 25.32786227149752 },
+                    new double[] { 43.972075754976515, 25.327814426891795 },
+                    new double[] { 43.97200459174678, 25.327661321265364 },
+                    new double[] { 43.97206657135934, 25.327524162930942 },
+                    new double[] { 43.972034432820756, 25.32743166160524},
+              }
+            }, new RealTimeMap.PolygonSymbol()
+            {
+                // color = "08CD05",
+                fillColor = "#04FE00",
+                // weight = 2,
+                // opacity = 0.4,
+                fillOpacity = 0.4
+            });
+        }
+    }
+}
