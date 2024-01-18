@@ -96,3 +96,37 @@ The defaultAppearace method is used to display points when they are not nearby:
          }
      }
 ### The points are nearby
+
+**onNearbyThresholdTrigger** method will be used to highlight nearby points:
+
+    public void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
+    {
+        //when the points are close, we will symbolize them distinctly (red and orange)
+        if (args.tuples == null)
+            return;
+        foreach (var item in args.tuples)
+        {
+            if(item.tuple !=null)
+            {
+                var guid = item.tuple.Item1.guid;
+                appointmentInformation = $"{item.tuple.Item1.value} / {item.tuple.Item2.value}";
+                distanceBetween = $"{Math.Round(item.distance, 0)} meters";
+                StateHasChanged();
+                if(realTimeMap !=null)
+                {
+                    realTimeMap.Geometric.Points.Appearance(item => item.guid == guid).pattern = new RealTimeMap.PointSymbol()
+                        {
+                            color = "red",
+                            opacity = 0.8,
+                            fillColor = "orange",
+                            fillOpacity = 0.5,
+                            weight = 2,
+                            radius = 10
+                        };
+                }
+            }
+        }
+        pas++;
+    }
+
+
