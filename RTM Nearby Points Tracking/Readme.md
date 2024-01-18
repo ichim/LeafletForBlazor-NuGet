@@ -95,6 +95,14 @@ The defaultAppearace method is used to display points when they are not nearby:
                  };
          }
      }
+
+The defaultAppearance() method will also be called on the triggered method when the proximity condition is no longer satisfied:
+
+    public void nearbyThresholdTriggerClosed(object sender)
+    {
+            defaultAppearace();             //we return to the default appearance
+    }
+
 ### The points are nearby
 
 **onNearbyThresholdTrigger** method will be used to highlight nearby points:
