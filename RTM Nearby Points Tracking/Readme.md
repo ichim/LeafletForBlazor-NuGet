@@ -7,5 +7,50 @@ The points will be displayed with distinct symbols depending on the type propert
  - 1 the points are not close (distance > 30 m);
  - 2 the points are close (distance < 30 m);
 ### Points are not close
+When the points are not nearby, they will be displayed with separate symbols according to the **type** property.
+The defaultAppearace method is used to display points when they are not nearby:
 
-
+     public void defaultAppearace()
+     {
+         //the default appearance of the points depending on the type, ex:
+         // - police crew -> fillColor "#d8bfd8"
+         if (realTimeMap != null)
+         {
+             realTimeMap.Geometric.Points.Appearance(item => item.type == "intervention crew").pattern = new RealTimeMap.PointSymbol()
+                 {
+                     color = "#800080",
+                     fillColor = "#9932cc",
+                     fillOpacity = 0.5,
+                     weight = 2,
+                     opacity = 1,
+                     radius = 10
+                 };
+             realTimeMap.Geometric.Points.Appearance(item => item.type == "suspicious vehicle").pattern = new RealTimeMap.PointSymbol()
+                 {
+                     color = "blue",
+                     fillColor = "#4682b4",
+                     fillOpacity = 0.5,
+                     weight = 2,
+                     opacity = 1,
+                     radius = 10
+                 };
+             realTimeMap.Geometric.Points.Appearance(item => item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
+                 {
+                     color = "#648c11",
+                     fillColor = "#bfff00",
+                     fillOpacity = 0.5,
+                     weight = 2,
+                     opacity = 1,
+                     radius = 10
+                 };
+             realTimeMap.Geometric.Points.Appearance(item => item.type == "police crew").pattern = new RealTimeMap.PointSymbol()
+                 {
+                     color = "#000080",
+                     fillColor = "#d8bfd8",
+                     fillOpacity = 0.5,
+                     weight = 2,
+                     opacity = 1,
+                     radius = 10
+                 };
+         }
+     }
