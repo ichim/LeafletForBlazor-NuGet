@@ -24,6 +24,10 @@ Configuring the threshold that make event methods to fire:
                     unit = RealTimeMap.UnitOfMeasure.meters
                 };
 
+Adding the event methods of Nearby Points type analysis:
+
+
+
 ## Points map appearance
 The points will be displayed with distinct symbols depending on the type property. There will be two distinct situations:
  - 1 the points are not close (distance > 30 m);
