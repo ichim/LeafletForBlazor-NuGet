@@ -5,6 +5,7 @@ In this example, a simulator for moving points on the map is used. 4 distinct po
 ## Configuring the analysis of Nearby Points Tracking
 The configuration is done on the Analysis class hosted by Points. All or part of the points can participate in the Nearby Points Tracking type analysis.
 If we choose to participate only a part of the points:
+
          var analysis = realTimeMap.Geometric.Points.Analysis(item => 
                                                              item.type == "intervention crew" || 
                                                              item.type == "suspicious vehicle");
