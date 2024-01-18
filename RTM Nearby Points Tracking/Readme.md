@@ -2,6 +2,12 @@
 ![NearbyPointsTracking](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/9449f6f7-d980-40b5-97aa-55930376b739)
 ## About example
 In this example, a simulator for moving points on the map is used. 4 distinct points will move on the map (each point represents something distinct - type property).
+## Configuring the analysis of Nearby Points Tracking
+The configuration is done on the Analysis class hosted by Points. All or part of the points can participate in the Nearby Points Tracking type analysis.
+If we choose to participate only a part of the points:
+   var analysis = realTimeMap.Geometric.Points.Analysis(item => 
+                                                       item.type == "intervention crew" || 
+                                                       item.type == "suspicious vehicle");
 ## Points map appearance
 The points will be displayed with distinct symbols depending on the type property. There will be two distinct situations:
  - 1 the points are not close (distance > 30 m);
@@ -54,3 +60,4 @@ The defaultAppearace method is used to display points when they are not nearby:
                  };
          }
      }
+### The points are nearby
