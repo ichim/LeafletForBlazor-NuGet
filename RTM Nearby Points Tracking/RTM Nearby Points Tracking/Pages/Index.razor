@@ -1,0 +1,145 @@
+﻿@page "/"
+@using DataPositionSimulator.data
+<button @onclick="upload">1. upload data</button>
+<button @onclick="move">2. move</button><label style="width:8px;"></label><label style="width:80px;background-color:indianred;color:aliceblue">@distanceBetween</label><label style="width:8px;"></label><label style="background-color:aliceblue;color:green">@appointmentInformation</label>
+<RealTimeMap @ref="realTimeMap" height="620px" width="1000px"></RealTimeMap>
+@code {
+    RealTimeMap? realTimeMap;
+    string appointmentInformation = "";
+    string distanceBetween = "";
+
+    public async Task upload()
+    {
+        //upload data in the map
+        defaultAppearace();
+        if (realTimeMap != null)
+        {
+            await realTimeMap.Geometric.Points.upload(new InputData().input);
+
+            var analysis = realTimeMap.Geometric.Points.Analysis(item => true);
+            analysis.nearby = new RealTimeMap.NearbyAnalysis()
+                {
+                    threshold = 30,
+                    unit = RealTimeMap.UnitOfMeasure.meters
+                };
+            analysis.OnNearbyThresholdFired += onNearbyThresholdTrigger;
+            analysis.OnNearbyThresholdClosed += nearbyThresholdTriggerClosed;
+        }
+        appointmentInformation = "";
+    }
+
+
+    public void defaultAppearace()
+    {
+        //the default appearance of the points depending on the type, ex:
+        // - police crew -> fillColor "#d8bfd8"
+        if (realTimeMap != null)
+        {
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "intervention crew").pattern = new RealTimeMap.PointSymbol()
+                {
+                    color = "#800080",
+                    fillColor = "#9932cc",
+                    fillOpacity = 0.5,
+                    weight = 2,
+                    opacity = 1,
+                    radius = 10
+                };
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "suspicious vehicle").pattern = new RealTimeMap.PointSymbol()
+                {
+                    color = "blue",
+                    fillColor = "#4682b4",
+                    fillOpacity = 0.5,
+                    weight = 2,
+                    opacity = 1,
+                    radius = 10
+                };
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
+                {
+                    color = "#648c11",
+                    fillColor = "#bfff00",
+                    fillOpacity = 0.5,
+                    weight = 2,
+                    opacity = 1,
+                    radius = 10
+                };
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "police crew").pattern = new RealTimeMap.PointSymbol()
+                {
+                    color = "#000080",
+                    fillColor = "#d8bfd8",
+                    fillOpacity = 0.5,
+                    weight = 2,
+                    opacity = 1,
+                    radius = 10
+                };
+        }
+    }
+
+    public void nearbyThresholdTriggerClosed(object sender)
+    {
+        //when the approach (nearby) between two or more points has closed
+        if (realTimeMap != null)
+        {
+            defaultAppearace();             //we return to the default appearance
+            appointmentInformation = "";
+            distanceBetween = "";
+            StateHasChanged();
+        }
+    }
+    int pas = 0;
+    public void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
+    {
+        //when the points are close, we will symbolize them distinctly (red and orange)
+        if (args.tuples == null)
+            return;
+        foreach (var item in args.tuples)
+        {
+            if(item.tuple !=null)
+            {
+                var guid = item.tuple.Item1.guid;
+                appointmentInformation = $"{item.tuple.Item1.value} / {item.tuple.Item2.value}";
+                distanceBetween = $"{Math.Round(item.distance, 0)} meters";
+                StateHasChanged();
+                if(realTimeMap !=null)
+                {
+                    realTimeMap.Geometric.Points.Appearance(item => item.guid == guid).pattern = new RealTimeMap.PointSymbol()
+                        {
+                            color = "red",
+                            opacity = 0.8,
+                            fillColor = "orange",
+                            fillOpacity = 0.5,
+                            weight = 2,
+                            radius = 10
+                        };
+                }
+            }
+        }
+        pas++;
+    }
+    public async Task move()
+    {
+        if(realTimeMap!=null)
+            if(realTimeMap.Geometric.Points.getItems().Count()==0)
+            {
+                appointmentInformation = "upload the data first";
+                return;
+            }
+        //the points movement simulator
+        for (int i = 0; i < new InputData().move1.Count(); i++)
+        {
+            var pct1 = new InputData().move1[i];
+            var pct2 = new InputData().move2[i];
+            var pct3 = new InputData().move3[i];
+            var pct4 = new InputData().move4[i];
+            if (realTimeMap != null)
+            {
+                await realTimeMap.Geometric.Points.moveTo((new List<RealTimeMap.StreamPoint>() { pct1, pct3, pct4 }).ToArray());
+            }
+            var timeDelay = 600;
+            if (i > 2 && i < 8 )
+                timeDelay = 3000;
+
+            await Task.Delay(timeDelay);
+
+        }
+    }
+}
