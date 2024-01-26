@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "LeafletForBlazor/2.0.0.8": {
+      "LeafletForBlazor/2.0.2.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0"
@@ -503,7 +503,7 @@
       }
     },
     "net7.0/browser-wasm": {
-      "LeafletForBlazor/2.0.0.8": {
+      "LeafletForBlazor/2.0.2.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0"
@@ -999,10 +999,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/2.0.0.8": {
-      "sha512": "vs/TdjMk9LrNJU41P1EvMtP8XZ3ocSOv5wZt3EOXf6s97EDpZBT7Im3tznQ/SGdncIkYtJ8/gj4+gA/aR3i6ww==",
+    "LeafletForBlazor/2.0.2.2": {
+      "sha512": "ikFHsqmY0Gl4dn8rPSWwRp+W3kBDo7lfxjiEt2/9HyMaUM097OBAhegKQBFZXG/iIgw6krzhAz6rAz7dY/74CQ==",
       "type": "package",
-      "path": "leafletforblazor/2.0.0.8",
+      "path": "leafletforblazor/2.0.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1014,7 +1014,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net7.0/map_color.ico",
-        "leafletforblazor.2.0.0.8.nupkg.sha512",
+        "leafletforblazor.2.0.2.2.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net7.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -1024,6 +1024,7 @@
         "staticwebassets/RealTime/geometry/point.js",
         "staticwebassets/RealTime/geometry/points.js",
         "staticwebassets/RealTime/geometry/polygons.js",
+        "staticwebassets/RealTime/geometry/polylines.js",
         "staticwebassets/RealTime/layers/basemap.js",
         "staticwebassets/background.png",
         "staticwebassets/basemap_layers.js",
@@ -1888,7 +1889,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "LeafletForBlazor >= 2.0.0.8",
+      "LeafletForBlazor >= 2.0.2.2",
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.13",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.13"
     ]
@@ -1940,7 +1941,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[2.0.0.8, )"
+            "version": "[2.0.2.2, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",

@@ -79,41 +79,57 @@
         //when the approach (nearby) between two or more points has closed
         if (realTimeMap != null)
         {
-            defaultAppearace();             //we return to the default appearance
+            Task.Run(async () =>
+            {
+                await realTimeMap.Geometric.DisplayPointsFromArray.deleteAll();
+            });
+
+            Task.Run(async () =>
+            {//we delete the measurement lines
+                await realTimeMap.Geometric.DisplayPolylinesFromArray.deleteMeasure();
+            });
             appointmentInformation = "";
             distanceBetween = "";
             StateHasChanged();
         }
     }
-    int pas = 0;
-    public void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
+   
+    public async void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
     {
-        //when the points are close, we will symbolize them distinctly (red and orange)
+        if (realTimeMap == null)
+            return;
+        await realTimeMap.Geometric.DisplayPolylinesFromArray.deleteMeasure();
+        await realTimeMap.Geometric.DisplayPointsFromArray.deleteAll();
         if (args.tuples == null)
             return;
         foreach (var item in args.tuples)
         {
-            if(item.tuple !=null)
-            {
-                var guid = item.tuple.Item1.guid;
-                appointmentInformation = $"{item.tuple.Item1.value} / {item.tuple.Item2.value}";
-                distanceBetween = $"{Math.Round(item.distance, 0)} meters";
-                StateHasChanged();
-                if(realTimeMap !=null)
+            if (item.tuple == null)
+                return;
+            //we highlight the points that are close (to each other)
+            await realTimeMap.Geometric.DisplayPointsFromArray.add(new double[2] { item.tuple.Item1.latitude, item.tuple.Item1.longitude }, new RealTimeMap.PointSymbol()
                 {
-                    realTimeMap.Geometric.Points.Appearance(item => item.guid == guid).pattern = new RealTimeMap.PointSymbol()
-                        {
-                            color = "red",
-                            opacity = 0.8,
-                            fillColor = "orange",
-                            fillOpacity = 0.5,
-                            weight = 2,
-                            radius = 10
-                        };
-                }
-            }
+                    color = "yellow",
+                    fillColor = "yellow",
+                    opacity = 0.8,
+                    fillOpacity = 0,
+                    radius = 12,
+                    weight = 2
+
+                });
+            //we add a measuring line with the distance
+            await realTimeMap.Geometric.DisplayPolylinesFromArray.addMeasure(new RealTimeMap.MeasureLine()
+                {
+                    start = new double[2] { item.tuple.Item1.latitude, item.tuple.Item1.longitude },
+                    end = new double[2] { item.tuple.Item2.latitude, item.tuple.Item2.longitude },
+                    text = $"{Math.Round(item.distance, 1).ToString()} m",
+                    textAnchor = new double[2] { -2, 8 },
+                    labelStyle = "min-width:40px;height:100%;background-color:#084886;border-radius:6px;color:#d2efff;text-align:center;font-size:10px;"
+
+                });
+
         }
-        pas++;
+        
     }
     public async Task move()
     {
