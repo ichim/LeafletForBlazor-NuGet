@@ -1,5 +1,7 @@
 # Nearby Points Tracking 
-![NearbyPointsTracking](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/9449f6f7-d980-40b5-97aa-55930376b739)
+
+![nearbyTrackingIoT222](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/be040992-8318-4270-98bd-4b5615de9577)
+
 ## About example
 In this example, a simulator for moving points on the map is used. 4 distinct points will move on the map (each point represents something distinct - type property).
 ## Configuring the analysis of Nearby Points Tracking
