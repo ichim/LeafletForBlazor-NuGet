@@ -39,7 +39,7 @@ First of all, you will need an _Esri API Key code_. Generating an Esri API Key c
 				}
 			}
 	};
-
+ 
 ![GeocodingSearch](https://user-images.githubusercontent.com/8348463/224486025-eb7d3eb2-907f-48e1-ad97-6a57f734c9e6.gif)
 
 
