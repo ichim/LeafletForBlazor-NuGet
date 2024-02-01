@@ -1,6 +1,6 @@
 ### Extending the Leaflet API with Esri Geocoding Search plugin ###
 
-First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account.
+First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account:
 
  [Here you will find a guide for generating an _Esri API Key code_](https://developers.arcgis.com/esri-leaflet/get-started/)
 
