@@ -2,7 +2,7 @@
 
 Adding Esri basemaps is done on the PluginsConfig interface and the Plugins parameter of the LeafletForBlazor package.
 
-First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account.
+First of all, you will need an _Esri API Key code_. Generating an Esri API Key code is free, but you need an Esri developer account:
 
  [Here you will find a guide for generating an _Esri API Key code_](https://developers.arcgis.com/esri-leaflet/get-started/)
 
