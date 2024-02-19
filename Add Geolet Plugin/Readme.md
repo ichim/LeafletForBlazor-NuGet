@@ -26,4 +26,3 @@ _The configuration parameters have the same names as those in the Leaflet docume
 The "config" parameter is a string json object.
 
 ![Geolet](https://user-images.githubusercontent.com/8348463/223373865-41c29b8e-fa2f-4df2-a2ef-8d3b52a87c1f.gif)
-
