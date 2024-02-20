@@ -46,6 +46,8 @@ In addition, the **pattern** property of the **AppearanceOnType()** method accep
                minZoomLevel = 15
             };
 
+[AppearanceOnType example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20AppearanceOnType)
+
 ## Geometric.DisplayPointsFromArray
 
 ### Obsolete methods
