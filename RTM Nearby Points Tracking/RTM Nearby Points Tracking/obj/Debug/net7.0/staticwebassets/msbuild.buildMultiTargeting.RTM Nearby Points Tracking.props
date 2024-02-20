@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RTM Nearby Points Tracking.props" />
+</Project>

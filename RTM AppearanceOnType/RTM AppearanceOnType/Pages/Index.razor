@@ -1,0 +1,49 @@
+﻿@page "/"
+
+@using AppearanceOnTypeData.data;
+
+
+<button @onclick="upload">upload data</button>
+
+<RealTimeMap @ref="realTimeMap" height="620px" width="820px"></RealTimeMap>
+@code{
+    RealTimeMap? realTimeMap;
+        public async Task upload()
+        {
+        if (realTimeMap != null)
+        {
+            #region Points Appearance on points Type
+            //settings appearance of points displayed on map
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
+                {
+                    radius = 10,
+                    fillColor = "green"
+                };
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention crew").pattern = new RealTimeMap.PointSymbol()
+                {
+                    radius = 10,
+                    fillColor = "blue"
+                };
+
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "suspicious vehicle").pattern = new RealTimeMap.PointSymbol()
+                {
+                    radius = 10,
+                    fillColor = "red"
+                };
+            #endregion
+            #region Zoom level visibility
+            //hide or show points based on zoom level
+            // ... only green and blue points
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention crew" || item.type == "ambulance").pattern = new RealTimeMap.VisibilityZoomLevel()
+                {
+                    maxZoomLevel = 18,
+                    minZoomLevel = 15
+                };
+            #endregion
+            #region upload data
+            //upload data from \RTM AppearanceOnType\data\data.cs
+            await realTimeMap.Geometric.Points.upload(new InputData().input);
+            #endregion
+        }
+        }
+ }
