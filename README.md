@@ -17,192 +17,86 @@ You can find more information:
 
 # What's New?
 
-## More for Appearance() method
+## Geometric.Points
 
-Now, to change the appearance of all points you can use:
+The **changeExtentWhenAddPoints** property of the Geometric.Points class allows changing or not the current view of the map at the same time as add one or more points:
 
-    realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointSymbol()
-    {
-        color = "green",
-        fillColor = "green",
-        fillOpacity = 0.5,
-        radius = 10
-    };
+    realTimeMap.Geometric.Points.changeExtentWhenAddPoints = true;
 
-The appearance of the points is preserved in the map view. To reset the stored appearance, the Appearance method provide reset boolean parameter:
+or
 
-    realTimeMap.Geometric.Points.Appearance(item=>item.type=="emergency vehicles", true).pattern = new RealTimeMap.PointSymbol()
-    {
-        color = "blue",
-        fillColor = "blue",
-        fillOpacity = 0.5,
-        radius = 10
-    };
+    realTimeMap.Geometric.Points.changeExtentWhenAddPoints = false;
 
-## Nearby Points Analysis
+## Change appearance of Map points collection
 
-> You can get the nearby points.
+To simplify the written code, a new form of the Appearance() method has been added that restricts the selection to the type of StreamPoint points.
+This method is AppearanceOnType() and the predicate of this method is limited to the type attribute of points:
 
-The configuration of nearby points analysis is done by:
-
-    public class NearbyAnalysis
-    {
-        public double threshold { get; set; } = 0;
-    }
-
-...and filtering the points subject to analysis:
-
-    realTimeMap.Geometric.Points.Analysis(item => item.value == "alpha crew")
-
-Obtaining the points that meet the _nearby points_ condition (threshold) is done using the event method:
-
-    analysis.OnNearbyThresholdFired += onNearbyThresholdTrigger;
-
-    public async void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
-    {
-  
-    }
-
-Closing the nearby points condition will trigger the method:
-
-    analysis.OnNearbyThresholdClosed += nearbyThresholdTriggerClosed;
-
-    public async void nearbyThresholdTriggerClosed(object sender)
-    {
-      
-    }
-
-## Code Example
-
-Add using LeafletForBlazor reference into _Imports.razor
-
-    @using LeafletForBlazor
-
-Add <RealTimeMap/> Blazor control in your page:
-
-    <RealTimeMap @ref="realTimeMap" height="800px" width="800px"></RealTimeMap>
-
-Define block clode block and declare RealTimeMap object:
-
-    @code{
-        RealTimeMap? realTimeMap;
-    }
-
-Upload List<StreamPoint> data into RealTimeMap:
-
-    public async Task upload()
-    {
-        if(realTimeMap!=null)
-            await realTimeMap.Geometric.Points.upload(new InputData().input);
-    }
-
-
-Change the default appearance (Geometric.Points.Appearance()) of the points displayed on the map:
-
-    public async Task upload()
-    {
-        if(realTimeMap!=null)
-            await realTimeMap.Geometric.Points.upload(new InputData().input);
-        //change points appearance
-        if(realTimeMap !=null)
-        {
-            realTimeMap.Geometric.Points.Appearance(item => item.type == "emergency vehicles").pattern = new RealTimeMap.PointSymbol()
+           realTimeMap.Geometric.Points.AppearanceOnType(item=>item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
             {
-                    color = "green",
-                    fillColor = "green",
-                    fillOpacity = 0.5,
-                    radius = 10
+                radius = 6,
+                fillColor = "green"
             };
-            realTimeMap.Geometric.Points.Appearance(item => item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
+
+In addition, the **pattern** property of the **AppearanceOnType()** method accepts the configuration of the scales (min, max) between which the points on the map are displayed:
+
+           realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention crew").pattern = new RealTimeMap.VisibilityZoomLevel()
             {
-                color = "blue",
-                fillColor = "blue",
-                fillOpacity = 0.5,
-                radius = 10
+               maxZoomLevel = 18,
+               minZoomLevel = 15
             };
-    }
 
-Set up nearby point analysis:
+## Geometric.DisplayPointsFromArray
 
-    var analysis = realTimeMap.Geometric.Points.Analysis(item => true);
-    analysis.nearby = new RealTimeMap.NearbyAnalysis()
-    {
-        threshold = 30 //meters
-    };
+### Obsolete methods
 
-_add into upload() method_
+The **add()** method for adding points is **obsolete/deprecated**. The **add()** method is replaced by the **addPoint()** method:
 
-Define the methods that will be triggered when the condition NearbyAnalysis() is reached
+    await realTimeMap.Geometric.DisplayPointsFromArray.addPoint(
+            new double[2] { 43.97248976827578, 25.326675905214792 });
 
-    analysis.OnNearbyThresholdFired += onNearbyThresholdTrigger;
-    analysis.OnNearbyThresholdClosed += nearbyThresholdTriggerClosed;
+or customizing the appearance of the point dispalayed in the map:
 
-_add into upload() method_
-
-Define _onNearbyThresholdTrigger_ and _nearbyThresholdTriggerClosed_ methods:
-
-_onNearbyThresholdTrigger_:
-
-    public void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
-    {
-
-    }
-
-_onNearbyThresholdTrigger_:
-
-    public void nearbyThresholdTriggerClosed(object sender)
-    {
- 
-    }
-
-Use the _onNearbyThresholdTrigger_ method to change the appearance or display nearby points:
-
-    public void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
-    {
-        foreach(var item in args.tuples)
-        {
-            var guid = item.tuple.Item1.guid;
-            realTimeMap.Geometric.Points.Appearance(item => item.guid == guid).pattern = new RealTimeMap.PointSymbol()
-                {
-                    color = "red",
-                    fillColor = "red",
-                    fillOpacity = 0.5,
-                    radius = 10
-                };
-        }
-    }
-
-Use the _nearbyThresholdTriggerClosed_ method to return to the initial appearance of the points. Careful! Appearance must contain the parameter reset = true . Appearance(predicate, reset):
-
-    public  void nearbyThresholdTriggerClosed(object sender)
-    {
-        realTimeMap.Geometric.Points.Appearance(item => item.type == "anti-terrorist vehicles", true).pattern = new RealTimeMap.PointSymbol()
+    await realTimeMap.Geometric.DisplayPointsFromArray.addPoint(
+            new double[2] { 43.97248976827578, 25.326675905214792 }, 
+            new RealTimeMap.PointSymbol()
             {
-                color = "green",
-                fillColor = "green",
-                fillOpacity = 0.5,
-                radius = 10
-            };
-        realTimeMap.Geometric.Points.Appearance(item => item.type == "ambulance", true).pattern = new RealTimeMap.PointSymbol()
-            {
-                color = "blue",
-                fillColor = "blue",
-                fillOpacity = 0.5,
-                radius = 10
-            };
-    }
+                color = "yellow",
+                fillColor = "yellow",
+                opacity = 0.8,
+                fillOpacity = 0,
+                radius = 12,
+                weight = 2
+            });
 
-![nearby02](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/d40f7adf-87fa-4dfa-8415-4996fb79d9c4)
+The **deleteAll()** method for deleting points is **obsolete/deprecated**. The **deleteAllPoints()** method is replaced by the **deleteAll()** method:
+
+    await realTimeMap.Geometric.DisplayPointsFromArray.deleteAllPoints();
+
+
+### addLabel() method
+
+The **addLabel()** method on the **DisplayPointsFromArray** class will allow you to display a text in the map:
+
+    await realTimeMap.Geometric.DisplayPointsFromArray.addLabel( new RealTimeMap.LabelInfo()
+    {
+            coordinates = new double[2] { 43.97248976827578, 25.326675905214792 },
+            textAnchor = new double[2] { 0, 16 },
+            text = "text displayed on the map",
+            labelStyle = "min-width:40px;height:100%;background-color:#920202;border-radius:6px;color:white;text-align:center;font-size:11px;opacity:0.6"
+    });
+
+The **labelStyle** property allows you to formating label displayed in the map.
 
 
 
 -------------------------
 
-## RealTimeMap Blazor control
+# RealTimeMap Blazor control
 
 > This new control is optimized for working with streaming data.
 
-### Working with a single point (ex. my position)
+## Working with a single point (ex. my position)
 
 > A first method added to the control is movePoint(args...) which allows displaying the position of a single point. The method can be used to monitor one's own position.
 
@@ -334,7 +228,7 @@ PointIcon
 
  >Also, this class will provide methods to control the display of points (Appearance()), analysis (points collection) and so one.
 
-#### StreamPoint
+### StreamPoint
 
 Class has the following structure:
 
@@ -389,6 +283,14 @@ The class provides the following methods:
 
         //move one ore more ponts from Geometric.Points collection
         Geometric.Points.moveTo(StreamPoint[] points); 
+
+The **changeExtentWhenMovingPoints** property of the Geometric.Points class allows changing or not the current view of the map at the same time as moving the points:
+
+    realTimeMap.Geometric.Points.changeExtentWhenMovingPoints = false; //the current view will be static
+
+or
+
+    realTimeMap.Geometric.Points.changeExtentWhenMovingPoints = true; //the current view will be expanded to display all the moving points
     
 - Get all stream points
 
@@ -400,7 +302,52 @@ The class provides the following methods:
         //return IEnumerable<StreamPoint> from Geometric.Points
         Geometric.Points.getItems(item=>item.timestamp == DateTime.Now); 
 
-#### Change appearance of Map points collection
+### Change appearance of the points collection (Points class)
+
+To change the appearance of all points you can use:
+
+    realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointSymbol()
+    {
+        color = "green",
+        fillColor = "green",
+        fillOpacity = 0.5,
+        radius = 10
+    };
+
+Change appearance of all points from points collection
+
+    realTimeMap.Geometric.Points.Appearance(item => true).pattern = new RealTimeMap.PointSymbol() { 
+                                                                                                        radius = 8,    
+                                                                                                        color = "gray", 
+                                                                                                        opacity = 0.68, 
+                                                                                                        fillColor = "gray", 
+                                                                                                        weight = 4, 
+                                                                                                        fillOpacity = 0.68 
+                                                                                               };
+
+You can use predicate of Appearance method to filter points
+
+    realTimeMap.Geometric.Points.Appearance(item => item.type == "points of type 1").pattern = new RealTimeMap.PointSymbol() { 
+                                                                                                                                radius = 16,    
+                                                                                                                                color = "rgb(200,100,0)", 
+                                                                                                                                opacity = 0.68, 
+                                                                                                                                fillColor = "red", 
+                                                                                                                                weight = 4, 
+                                                                                                                                fillOpacity = 0.68 
+                                                                                                                             };
+
+The appearance of the points is preserved in the map view. To reset the stored appearance, the Appearance method provide reset boolean parameter:
+
+    realTimeMap.Geometric.Points.Appearance(item=>item.type=="emergency vehicles", true).pattern = new RealTimeMap.PointSymbol()
+    {
+        color = "blue",
+        fillColor = "blue",
+        fillOpacity = 0.5,
+        radius = 10
+    };
+
+[Working with Geometric.Points Appearance](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20Geometric.Points%20Appearance)
+
 
  - change the appearance of all points from collection
 
@@ -498,7 +445,6 @@ _If the timestamp is missing, LeafletForBlazor will assign the current date_
 _This collection has a static behavior._
 
 
-
 ##### Upload points collection
 
             if(realTimeMap !=null)
@@ -580,32 +526,261 @@ _during the move you cannot change the attributes (type, value, timestamp). A wa
 
 [Working with Geometric.Points collection - code example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20Geometric.Points%20collection)
 
-##### Change appearance of the points collection
 
-Change appearance of all points from points collection
+### Geometric class for displaying different static shapes
 
-    realTimeMap.Geometric.Points.Appearance(item => true).pattern = new RealTimeMap.PointSymbol() { 
-                                                                                                        radius = 8,    
-                                                                                                        color = "gray", 
-                                                                                                        opacity = 0.68, 
-                                                                                                        fillColor = "gray", 
-                                                                                                        weight = 4, 
-                                                                                                        fillOpacity = 0.68 
-                                                                                               };
+#### DisplayPolygonsFromArray
 
-You can use predicate of Appearance method to filter points
+**DisplayPolygonsFromArray** is a new class that allows displaying polygons starting from point arrays.
+This class allows the display of simple polygons or polygons with several rings.
 
-    realTimeMap.Geometric.Points.Appearance(item => item.type == "points of type 1").pattern = new RealTimeMap.PointSymbol() { 
-                                                                                                                                radius = 16,    
-                                                                                                                                color = "rgb(200,100,0)", 
-                                                                                                                                opacity = 0.68, 
-                                                                                                                                fillColor = "red", 
-                                                                                                                                weight = 4, 
-                                                                                                                                fillOpacity = 0.68 
-                                                                                                                             };
+Display of simple polygons (single ring):
 
-[Working with Geometric.Points Appearance](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20Geometric.Points%20Appearance)
+    await realTimeMap.Geometric.DisplayPolygonsFromArray.add(new List<double[]>
+        {
+            new double[] { 43.97209871008421, 25.328761772135064 },
+            new double[] { 43.972004589576606, 25.329119019038004},
+           ...
+        });
 
+Display polygons with multiple rings:
+
+    await realTimeMap.Geometric.DisplayPolygonsFromArray.add(
+        new List<List<double[]>>()
+            {
+                new List<double[]>()
+                {
+                    new double[] { 43.97210330030072, 25.32749864474909 },
+                    ...
+                },
+        new List<double[]>()
+                {
+                    new double[] { 43.972004589576606, 25.329119019038004},
+                    ...
+                }
+        });
+
+        
+Also, the add() method allows customizing the symbolization of the displayed polygons:
+
+           await realTimeMap.Geometric.DisplayPolygonsFromArray.add(new List<double[]>
+                {
+                    new double[] { 43.97209871008421, 25.328761772135064 },
+                    new double[] { 43.972004589576606, 25.329119019038004},
+                    ...
+             }, 
+             new RealTimeMap.PolygonSymbol()
+             {
+                    color = "yellow",
+                    fillColor = "orange",
+                    weight = 4,
+                    opacity = 0.4,
+                    fillOpacity = 0.4
+             });
+
+ >In the future, this class will be used only for displaying polygons.
+
+ #### DisplayPointsFromArray
+
+The **DisplayPointsFromArray** class hosted by the Geometric class allows displaying static points using coordinate arrays (new double[2]{}) as input data:
+
+           await realTimeMap.Geometric.DisplayPointsFromArray.add(
+                                                                    new double[2] 
+                                                                   { 
+                                                                       43.97131525439987, 
+                                                                       25.328501463100153 
+                                                                   }, 
+                                                                    new RealTimeMap.PointSymbol()
+                                                                    {
+                                                                        color = "yellow",
+                                                                        fillColor = "yellow",
+                                                                        opacity = 0.8,
+                                                                        fillOpacity = 0,
+                                                                        radius = 12,
+                                                                        weight = 2
+               
+                                                                    });
+
+#### DisplayPolylinesFromArray
+
+The **DisplayPolylinesFromArray** class hosted by the Geometric class, allows you to display measurement lines with addMeasure() method:
+
+            await realTimeMap.Geometric.DisplayPolylinesFromArray.addMeasure(
+                                                                new RealTimeMap.MeasureLine()
+                                                                {
+                                                                    start = new double[2] { 43.971312524467095, 25.328505256329578},    //start point of measure line
+                                                                    end = new double[2] { 43.970933062429864, 25.329087513345627},      //end point of measure line
+                                                                    text = "20 meters",
+                                                                    textAnchor = new double[2] {- 2, 8 },                               //the anchor point (text) from the middle of the line 
+                                                                    labelStyle = "min-width:40px;height:100%;background-color:#084886;border-radius:6px;color:#d2efff;text-align:center;font-size:10px;"
+
+                                                            });
+
+
+                                                            
+# Tracking and Monitoring points position
+
+**RealTimeMap** will provide the necessary tools for monitoring, tracking and analyzing shapes (ex. points position) in motion. These tools will be able to be integrated in the final IoT applications (possible integration with Arduino and/or  Raspberry pi).
+
+[LeafletForBlazorTracking GitHub repository](https://github.com/ichim/LeafletForBlazorTracking)
+
+
+## Nearby Points Analysis
+
+> You can get the nearby points.
+
+The configuration of nearby points analysis is done by:
+
+    public class NearbyAnalysis
+    {
+        public double threshold { get; set; } = 0; // > 0
+        public UnitOfMeasure unit { get; set; } =   UnitOfMeasure.meters; // UnitOfMeasure.kilometers | UnitOfMeasure.miles | UnitOfMeasure.nauticalMiles | UnitOfMeasure.feets 
+    }
+
+...and filtering the points subject to analysis:
+
+    realTimeMap.Geometric.Points.Analysis(item => item.value == "alpha crew")
+
+Obtaining the points that meet the _nearby points_ condition (threshold) is done using the event method:
+
+    analysis.OnNearbyThresholdFired += onNearbyThresholdTrigger;
+
+    public async void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
+    {
+  
+    }
+
+Closing the nearby points condition will trigger the method:
+
+    analysis.OnNearbyThresholdClosed += nearbyThresholdTriggerClosed;
+
+    public async void nearbyThresholdTriggerClosed(object sender)
+    {
+      
+    }
+
+## Code Example
+
+Add using LeafletForBlazor reference into _Imports.razor
+
+    @using LeafletForBlazor
+
+Add <RealTimeMap/> Blazor control in your page:
+
+    <RealTimeMap @ref="realTimeMap" height="800px" width="800px"></RealTimeMap>
+
+Define block clode block and declare RealTimeMap object:
+
+    @code{
+        RealTimeMap? realTimeMap;
+    }
+
+Upload List<StreamPoint> data into RealTimeMap:
+
+    public async Task upload()
+    {
+        if(realTimeMap!=null)
+            await realTimeMap.Geometric.Points.upload(new InputData().input);
+    }
+
+
+Change the default appearance (Geometric.Points.Appearance()) of the points displayed on the map:
+
+    public async Task upload()
+    {
+        if(realTimeMap!=null)
+            await realTimeMap.Geometric.Points.upload(new InputData().input);
+        //change points appearance
+        if(realTimeMap !=null)
+        {
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "emergency vehicles").pattern = new RealTimeMap.PointSymbol()
+            {
+                    color = "green",
+                    fillColor = "green",
+                    fillOpacity = 0.5,
+                    radius = 10
+            };
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
+            {
+                color = "blue",
+                fillColor = "blue",
+                fillOpacity = 0.5,
+                radius = 10
+            };
+    }
+
+Set up nearby point analysis. The threshold value can be given in various units of measure:
+
+            var analysis = realTimeMap.Geometric.Points.Analysis(item => true);
+            analysis.nearby = new RealTimeMap.NearbyAnalysis()
+                {
+                    threshold = 0.2,
+                    unit=RealTimeMap.UnitOfMeasure.nauticalMiles
+                };
+
+If the unit of measure (unit) is missing, it will be in meters.
+
+_add into upload() method_
+
+Define the methods that will be triggered when the condition NearbyAnalysis() is reached
+
+    analysis.OnNearbyThresholdFired += onNearbyThresholdTrigger;
+    analysis.OnNearbyThresholdClosed += nearbyThresholdTriggerClosed;
+
+_add into upload() method_
+
+Define _onNearbyThresholdTrigger_ and _nearbyThresholdTriggerClosed_ methods:
+
+_onNearbyThresholdTrigger_:
+
+    public void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
+    {
+
+    }
+
+_onNearbyThresholdTrigger_:
+
+    public void nearbyThresholdTriggerClosed(object sender)
+    {
+ 
+    }
+
+Use the _onNearbyThresholdTrigger_ method to change the appearance or display nearby points:
+
+    public void onNearbyThresholdTrigger(object sender, RealTimeMap.NearbyThresholdArgs args)
+    {
+        foreach(var item in args.tuples)
+        {
+            var guid = item.tuple.Item1.guid;
+            realTimeMap.Geometric.Points.Appearance(item => item.guid == guid).pattern = new RealTimeMap.PointSymbol()
+                {
+                    color = "red",
+                    fillColor = "red",
+                    fillOpacity = 0.5,
+                    radius = 10
+                };
+        }
+    }
+
+Use the _nearbyThresholdTriggerClosed_ method to return to the initial appearance of the points. Careful! Appearance must contain the parameter reset = true . Appearance(predicate, reset):
+
+    public  void nearbyThresholdTriggerClosed(object sender)
+    {
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "anti-terrorist vehicles", true).pattern = new RealTimeMap.PointSymbol()
+            {
+                color = "green",
+                fillColor = "green",
+                fillOpacity = 0.5,
+                radius = 10
+            };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "ambulance", true).pattern = new RealTimeMap.PointSymbol()
+            {
+                color = "blue",
+                fillColor = "blue",
+                fillOpacity = 0.5,
+                radius = 10
+            };
+    }
 
 
  _____________
