@@ -17,80 +17,22 @@ You can find more information:
 
 # What's New?
 
-## Geometric.Points
+## RealTimeMap control events
 
-The **changeExtentWhenAddPoints** property of the Geometric.Points class allows changing or not the current view of the map at the same time as add one or more points:
+### OnAfterMapLoaded
 
-    realTimeMap.Geometric.Points.changeExtentWhenAddPoints = true;
+> **OnAfterMapLoaded** event is triggered after the map has been completely loaded on the page. This event can be used when loading geometric elements (e.g. points), setting the appearance, configuring analyzes, etc.
 
-or
-
-    realTimeMap.Geometric.Points.changeExtentWhenAddPoints = false;
-
-## Change appearance of Map points collection
-
-To simplify the written code, a new form of the Appearance() method has been added that restricts the selection to the type of StreamPoint points.
-This method is AppearanceOnType() and the predicate of this method is limited to the type attribute of points:
-
-           realTimeMap.Geometric.Points.AppearanceOnType(item=>item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
-            {
-                radius = 6,
-                fillColor = "green"
-            };
-
-In addition, the **pattern** property of the **AppearanceOnType()** method accepts the configuration of the scales (min, max) between which the points on the map are displayed:
-
-           realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention crew").pattern = new RealTimeMap.VisibilityZoomLevel()
-            {
-               maxZoomLevel = 18,
-               minZoomLevel = 15
-            };
-
-[AppearanceOnType example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20AppearanceOnType)
-
-## Geometric.DisplayPointsFromArray
-
-### Obsolete methods
-
-The **add()** method for adding points is **obsolete/deprecated**. The **add()** method is replaced by the **addPoint()** method:
-
-    await realTimeMap.Geometric.DisplayPointsFromArray.addPoint(
-            new double[2] { 43.97248976827578, 25.326675905214792 });
-
-or customizing the appearance of the point dispalayed in the map:
-
-    await realTimeMap.Geometric.DisplayPointsFromArray.addPoint(
-            new double[2] { 43.97248976827578, 25.326675905214792 }, 
-            new RealTimeMap.PointSymbol()
-            {
-                color = "yellow",
-                fillColor = "yellow",
-                opacity = 0.8,
-                fillOpacity = 0,
-                radius = 12,
-                weight = 2
-            });
-
-The **deleteAll()** method for deleting points is **obsolete/deprecated**. The **deleteAllPoints()** method is replaced by the **deleteAll()** method:
-
-    await realTimeMap.Geometric.DisplayPointsFromArray.deleteAllPoints();
-
-
-### addLabel() method
-
-The **addLabel()** method on the **DisplayPointsFromArray** class will allow you to display a text in the map:
-
-    await realTimeMap.Geometric.DisplayPointsFromArray.addLabel( new RealTimeMap.LabelInfo()
-    {
-            coordinates = new double[2] { 43.97248976827578, 25.326675905214792 },
-            textAnchor = new double[2] { 0, 16 },
-            text = "text displayed on the map",
-            labelStyle = "min-width:40px;height:100%;background-color:#920202;border-radius:6px;color:white;text-align:center;font-size:11px;opacity:0.6"
-    });
-
-The **labelStyle** property allows you to formating label displayed in the map.
-
-
+        //Blazor Page
+        <RealTimeMap @ref="realTimeMap" height="620px" width="820px" OnAfterMapLoaded="onLoadControl" ></RealTimeMap>
+        //Code block
+        @code{
+                RealTimeMap? realTimeMap;
+                public async Task onLoadControl(RealTimeMap.MapEventArgs value)
+                {
+                    //where value.sender is RealTimeMap control reference
+                }
+            }
 
 -------------------------
 
@@ -263,6 +205,14 @@ The class provides the following methods:
 
       Geometric.Points.add(StreamPoint[] point);
 
+The **changeExtentWhenAddPoints** property of the Geometric.Points class allows changing or not the current view of the map at the same time as add one or more points:
+
+    realTimeMap.Geometric.Points.changeExtentWhenAddPoints = true;
+
+or
+
+    realTimeMap.Geometric.Points.changeExtentWhenAddPoints = false;
+
  
 - Delete stream points
 
@@ -397,6 +347,24 @@ Resetting the storage is done using the reset parameter of the Appearance() meth
                                                                                                 fillOpacity = 0.68 
                                                                                              }
 
+
+To simplify the written code, a new form of the Appearance() method has been added that restricts the selection to the type of StreamPoint points. This method is AppearanceOnType() and the predicate of this method is limited to the type attribute of points:
+
+           realTimeMap.Geometric.Points.AppearanceOnType(item=>item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
+            {
+                radius = 6,
+                fillColor = "green"
+            };
+
+In addition, the **pattern** property of the **AppearanceOnType()** method accepts the configuration of the scales (min, max) between which the points on the map are displayed:
+
+           realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention crew").pattern = new RealTimeMap.VisibilityZoomLevel()
+            {
+               maxZoomLevel = 18,
+               minZoomLevel = 15
+            };
+
+[AppearanceOnType example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20AppearanceOnType)
 
 ## Code Example
 
@@ -586,22 +554,46 @@ Also, the add() method allows customizing the symbolization of the displayed pol
 
 The **DisplayPointsFromArray** class hosted by the Geometric class allows displaying static points using coordinate arrays (new double[2]{}) as input data:
 
-           await realTimeMap.Geometric.DisplayPointsFromArray.add(
-                                                                    new double[2] 
-                                                                   { 
-                                                                       43.97131525439987, 
-                                                                       25.328501463100153 
-                                                                   }, 
-                                                                    new RealTimeMap.PointSymbol()
-                                                                    {
-                                                                        color = "yellow",
-                                                                        fillColor = "yellow",
-                                                                        opacity = 0.8,
-                                                                        fillOpacity = 0,
-                                                                        radius = 12,
-                                                                        weight = 2
-               
-                                                                    });
+
+    await realTimeMap.Geometric.DisplayPointsFromArray.addPoint(
+            new double[2] { 43.97248976827578, 25.326675905214792 });
+
+or customizing the appearance of the point dispalayed in the map:
+
+    await realTimeMap.Geometric.DisplayPointsFromArray.addPoint(
+            new double[2] { 43.97248976827578, 25.326675905214792 }, 
+            new RealTimeMap.PointSymbol()
+            {
+                color = "yellow",
+                fillColor = "yellow",
+                opacity = 0.8,
+                fillOpacity = 0,
+                radius = 12,
+                weight = 2
+            });
+
+### Obsolete methods
+
+The **add()** method for adding points is **obsolete/deprecated**. The **add()** method is replaced by the **addPoint()** method.
+
+The **deleteAll()** method for deleting points is **obsolete/deprecated**. The **deleteAllPoints()** method is replaced by the **deleteAll()** method:
+
+    await realTimeMap.Geometric.DisplayPointsFromArray.deleteAllPoints();
+
+
+### addLabel() method
+
+The **addLabel()** method on the **DisplayPointsFromArray** class will allow you to display a text in the map:
+
+    await realTimeMap.Geometric.DisplayPointsFromArray.addLabel( new RealTimeMap.LabelInfo()
+    {
+            coordinates = new double[2] { 43.97248976827578, 25.326675905214792 },
+            textAnchor = new double[2] { 0, 16 },
+            text = "text displayed on the map",
+            labelStyle = "min-width:40px;height:100%;background-color:#920202;border-radius:6px;color:white;text-align:center;font-size:11px;opacity:0.6"
+    });
+
+The **labelStyle** property allows you to formating label displayed in the map.
 
 #### DisplayPolylinesFromArray
 
