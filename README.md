@@ -19,18 +19,68 @@ You can find more information:
 
 ## RealTimeMap control events
 
-### OnAfterMapLoaded
+### OnClickMap
 
-> **OnAfterMapLoaded** event is triggered after the map has been completely loaded on the page. This event can be used when loading geometric elements (e.g. points), setting the appearance, configuring analyzes, etc.
+> **OnClickMap** event is triggered after the user clicks left on the map. This control will return the **location** of the clicked point.
 
         //Blazor Page
-        <RealTimeMap @ref="realTimeMap" height="620px" width="820px" OnAfterMapLoaded="onLoadControl" ></RealTimeMap>
+        <RealTimeMap height="620px" width="820px" OnClickMap="onClickMap"></RealTimeMap>
         //Code block
         @code{
-                RealTimeMap? realTimeMap;
-                public async Task onLoadControl(RealTimeMap.MapEventArgs value)
+                public void onClickMap(RealTimeMap.ClicksMapArgs value)
                 {
                     //where value.sender is RealTimeMap control reference
+                    Console.WriteLine(value.location.latitude);
+                    Console.WriteLine(value.location.longitude);
+                }
+            }
+
+### OnDoubleClickMap
+
+> **OnDoubleClickMap** event is triggered after the user double clicks (left) on the map. This control will return the **location** of the double clicked point.
+
+        //Blazor Page
+        <RealTimeMap height="620px" width="820px" OnDoubleClickMap="onDoubleClickMap"></RealTimeMap>
+        //Code block
+        @code{
+                public void onDoubleClickMap(RealTimeMap.ClicksMapArgs value)
+                {
+                    //where value.sender is RealTimeMap control reference
+                    Console.WriteLine(value.location.latitude);
+                    Console.WriteLine(value.location.longitude);
+                }
+            }
+
+
+### OnMouseDownMap
+
+> **OnMouseDownMap** event is triggered when the left button is pressed (contact open). This control will return the **location** of the clicked down (left pressed) point.
+
+        //Blazor Page
+        <RealTimeMap height="620px" width="820px" OnMouseDownMap="onMouseDownMap"></RealTimeMap>
+        //Code block
+        @code{
+                public void onMouseDownMap(RealTimeMap.ClicksMapArgs value)
+                {
+                    //where value.sender is RealTimeMap control reference
+                    Console.WriteLine(value.location.latitude);
+                    Console.WriteLine(value.location.longitude);
+                }
+            }
+
+### OnMouseUpMap
+
+> **OnMouseUpMap** event is triggered after the left button is released (contact close). This control will return the **location** of the clicked up (left released) point.
+
+        //Blazor Page
+        <RealTimeMap height="620px" width="820px" OnMouseUpMap="onMouseUpMap"></RealTimeMap>
+        //Code block
+        @code{
+                public void onMouseUpMap(RealTimeMap.ClicksMapArgs value)
+                {
+                    //where value.sender is RealTimeMap control reference
+                    Console.WriteLine(value.location.latitude);
+                    Console.WriteLine(value.location.longitude);
                 }
             }
 
@@ -38,11 +88,97 @@ You can find more information:
 
 # RealTimeMap Blazor control
 
-> This new control is optimized for working with streaming data.
+> RealTimeMap control is optimized for working with streaming data. This control will load data using multiple concurrent calls (separate threads of execution).
+
+
+## Basic configuration
+
+1. add LeafletForBlazor NuGet package:
+ - Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution...
+ 
+ > Search and add LeafletForBlazor
+
+ - Tools -> NuGet Package Manager -> Package Manager Console
+
+       NuGet\Install-Package LeafletForBlazor
+
+2. add the LeafletForBlazor namespace to the project, using the @using directive
+
+For this, add
+
+        @using LeafletForBlazor
+
+in the **_Imports.razor** file of the project.
+
+3. add RealTimeMap control into Blazor Page:
+
+        <RealTimeMap height="460px" width="620px"></RealTimeMap>
+
+## Working with loading parameters
+
+Map loading parameters can be defined using the **LoadParameters** class. This class allows you to define: the location of the center of the view (default) of the map, the zoom level and others.
+
+1. add in code block loading parameters:
+
+
+        @code{
+            RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()  //general map settings
+                {
+                    location = new RealTimeMap.Location()
+                    {
+                        latitude = 44.4501715,      
+                        longitude = 26.1107672,
+                    },
+                    zoom_level = 18
+                };
+            }
+
+2. set the loading parameters (default map parameters) to the **RealTimeMap** control:
+
+       <RealTimeMap Parameters="parameters" height="460px" width="620px"></RealTimeMap>
+
+## RealTimeMap control events
+
+* **OnAfterMapLoaded** _triggered after the map has been completely loaded on the Blazor page_
+
+
+### OnAfterMapLoaded
+
+> **OnAfterMapLoaded (MapEventArgs value)** event is triggered after the map has been completely loaded on the blazor page. This event can be used when loading geometric elements (e.g. points), setting the appearance, configuring analyzes, etc.
+
+#### **OnAfterMapLoaded** event arguments
+
+1. **value._sender_**: is the reference to the RealTimeMap control
+1. **value._zoomLevel_**: is the value of the zoom level of the loaded **RealTimeMap**
+1. **value._centerOfView_**: is the location of the center of the current view in coordinates (latitude, longitude)
+1. **value._bounds_**: the coordinates of the northeast (upper right) and southwest (lower left) corners of the displayed map extent
+
+
+       public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs value)
+        {
+            Console.WriteLine(value.bounds.northEast.latitude);
+            Console.WriteLine(value.bounds.northEast.longitude);
+            Console.WriteLine(value.bounds.southWest.latitude);
+            Console.WriteLine(value.bounds.southWest.longitude);
+        }
+
+
+#### Example code
+
+        //Blazor Page
+        <RealTimeMap height="620px" width="820px" OnAfterMapLoaded="onLoadControl" ></RealTimeMap>
+        //Code block
+        @code{
+                public async Task onLoadControl(RealTimeMap.MapEventArgs value)
+                {
+                    //where value.sender is RealTimeMap control reference
+                }
+            }
+
 
 ## Working with a single point (ex. my position)
 
-> A first method added to the control is movePoint(args...) which allows displaying the position of a single point. The method can be used to monitor one's own position.
+> movePoint(args...) method allows displaying the position of a single point. The method can be used to monitor one's own position.
 
 The movePoint() method accepts from one argument to three arguments:
  - coordinate (double[2]): point coordinate. For example: realTimeMap.movePoint([44.4502578, 26.1108199]). Latitude and Longitude in degrees, geographical coordinates;
@@ -609,6 +745,7 @@ The **DisplayPolylinesFromArray** class hosted by the Geometric class, allows yo
                                                                     labelStyle = "min-width:40px;height:100%;background-color:#084886;border-radius:6px;color:#d2efff;text-align:center;font-size:10px;"
 
                                                             });
+
 
 
                                                             
