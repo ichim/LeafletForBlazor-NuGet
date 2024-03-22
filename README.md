@@ -17,72 +17,98 @@ You can find more information:
 
 # What's New?
 
-## RealTimeMap control events
+## RealTimeMap tooltip items
 
-### OnClickMap
+Tooltips can be associated with StreamPoint collection displayed on the map (map items). Tooltips can be configured using both **AppearanceOnType()** and **Appearance()** methodes and the **pattern** property:
+The definition of the tooltip is done using the class **PointTooltip**:
 
-> **OnClickMap** event is triggered after the user clicks left on the map. This control will return the **location** of the clicked point.
+Using AppearanceOnType() method:
 
-        //Blazor Page
-        <RealTimeMap height="620px" width="820px" OnClickMap="onClickMap"></RealTimeMap>
-        //Code block
-        @code{
-                public void onClickMap(RealTimeMap.ClicksMapArgs value)
-                {
-                    //where value.sender is RealTimeMap control reference
-                    Console.WriteLine(value.location.latitude);
-                    Console.WriteLine(value.location.longitude);
-                }
+    realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention vehicle").pattern = new RealTimeMap.PointTooltip()
+        {
+            content = "<h6>${value}</h6>${type}</br>${guid}",
+            opacity = 0.8,
+            permanent = true
+        };
+
+or using Appearance() method:
+
+    realTimeMap.Geometric.Points.Appearance(item => item.value == "B 42 DCI").pattern = new RealTimeMap.PointTooltip()
+        {
+            content = "<h6>${value}</h6>${type}</br>${guid}",
+            opacity = 0.8,
+            permanent = false
+        };
+
+where:
+
+1. **content** - can be a string, html components or JavaScript string template without "`" (without the intended JavaScript string template character);
+   - **value** is current StreamPoint value property;
+   - **type** is current StreamPoint type property;
+   - **guid** is current StreamPoint guid property;
+1. **opacity** - the opacity of the tooltip displayed in the map;
+1. **pemanent** - true - the display is permanent, false - the display is done when the mouse passes over the point;
+
+Also, the Appearance() and AppearanceOnType() methods can be used without predicate conditions:
+
+For example:
+
+    realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointTooltip()
+        {
+            content = "<h6>${value}</h6>${type}</br>${guid}",
+            opacity = 0.8,
+            permanent = false
+        };
+
+in this case, the tooltips will be displayed for all elements in the map.
+
+## Geometric.Computations class
+
+The **Geometric.Computations** class will provide a set of functions various geometric calculations.
+
+### Distance calculation
+
+Computing distance distance between two points:
+
+- working with double values:
+
+      Geometric.Computations.distance(double latitudeOfPoint1, double longitudeOfPoint1, double latitudeOfPoint2, double longitudeOfPoint2, UnitOfMeasure unitOfMeasure);
+
+- working with double array:
+
+      Geometric.Computations.distance(double[2] coordinate1, double[2] coordinate2, UnitOfMeasure unitOfMeasure);
+
+- working with StreamPoint(s):
+
+      Geometric.Computations.distance(StreamPoint point1, StreamPoint point2, UnitOfMeasure unitOfMeasure);
+    
+Code example:
+    
+    Console.WriteLine(realTimeMap.Geometric.Computations.distance(pct1, pct6, RealTimeMap.UnitOfMeasure.meters))
+
+#### Searching points on click, distance() condition example
+
+In order to be able to find the points in the neighborhood of a point (click on the map), you can use Geometric.Points.getItems() with predicate distance condition
+
+Blazor page:
+
+    <RealTimeMap height="620px" width="820px" OnClickMap="onClickingMap"></RealTimeMap>
+
+Code block:
+
+    @code{
+         public  void onClickingMap(RealTimeMap.ClicksMapArgs value)
+            {
+                List<RealTimeMap.StreamPoint> findedPoints = new List<RealTimeMap.StreamPoint>();
+                    findedPoints = (value.sender as RealTimeMap).Geometric.Points.getItems(point => (value.sender as RealTimeMap).Geometric.Computations.distance(
+                        point, 
+                        new RealTimeMap.StreamPoint() { latitude = value.location.latitude, longitude = value.location.longitude }, 
+                        RealTimeMap.UnitOfMeasure.meters
+                        ) <= 10
+                    );
             }
+        }
 
-### OnDoubleClickMap
-
-> **OnDoubleClickMap** event is triggered after the user double clicks (left) on the map. This control will return the **location** of the double clicked point.
-
-        //Blazor Page
-        <RealTimeMap height="620px" width="820px" OnDoubleClickMap="onDoubleClickMap"></RealTimeMap>
-        //Code block
-        @code{
-                public void onDoubleClickMap(RealTimeMap.ClicksMapArgs value)
-                {
-                    //where value.sender is RealTimeMap control reference
-                    Console.WriteLine(value.location.latitude);
-                    Console.WriteLine(value.location.longitude);
-                }
-            }
-
-
-### OnMouseDownMap
-
-> **OnMouseDownMap** event is triggered when the left button is pressed (contact open). This control will return the **location** of the clicked down (left pressed) point.
-
-        //Blazor Page
-        <RealTimeMap height="620px" width="820px" OnMouseDownMap="onMouseDownMap"></RealTimeMap>
-        //Code block
-        @code{
-                public void onMouseDownMap(RealTimeMap.ClicksMapArgs value)
-                {
-                    //where value.sender is RealTimeMap control reference
-                    Console.WriteLine(value.location.latitude);
-                    Console.WriteLine(value.location.longitude);
-                }
-            }
-
-### OnMouseUpMap
-
-> **OnMouseUpMap** event is triggered after the left button is released (contact close). This control will return the **location** of the clicked up (left released) point.
-
-        //Blazor Page
-        <RealTimeMap height="620px" width="820px" OnMouseUpMap="onMouseUpMap"></RealTimeMap>
-        //Code block
-        @code{
-                public void onMouseUpMap(RealTimeMap.ClicksMapArgs value)
-                {
-                    //where value.sender is RealTimeMap control reference
-                    Console.WriteLine(value.location.latitude);
-                    Console.WriteLine(value.location.longitude);
-                }
-            }
 
 -------------------------
 
@@ -94,9 +120,14 @@ You can find more information:
 ## Basic configuration
 
 1. add LeafletForBlazor NuGet package:
+
+Using Visual Studio _interface_:
+
  - Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution...
  
- > Search and add LeafletForBlazor
+ > Search for "LeafletForBlazor" and add the package to the project or solution.
+
+ Or using Visual Studio _console_:
 
  - Tools -> NuGet Package Manager -> Package Manager Console
 
@@ -148,7 +179,7 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
 
 #### **OnAfterMapLoaded** event arguments
 
-1. **value._sender_**: is the reference to the RealTimeMap control
+1. **value._sender_**: is the reference to the **RealTimeMap** control
 1. **value._zoomLevel_**: is the value of the zoom level of the loaded **RealTimeMap**
 1. **value._centerOfView_**: is the location of the center of the current view in coordinates (latitude, longitude)
 1. **value._bounds_**: the coordinates of the northeast (upper right) and southwest (lower left) corners of the displayed map extent
@@ -175,6 +206,91 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
                 }
             }
 
+
+### OnClickMap
+
+> **OnClickMap** event is triggered after the user clicks left on the map. This control will return the **location** of the clicked point.
+
+1. **value._sender_**: is the reference to the **RealTimeMap** control
+1. **value._location_**: location of point
+
+#### Example code
+
+        //Blazor Page
+        <RealTimeMap height="620px" width="820px" OnClickMap="onClickMap"></RealTimeMap>
+        //Code block
+        @code{
+                public void onClickMap(RealTimeMap.ClicksMapArgs value)
+                {
+                    //where value.sender is RealTimeMap control reference
+                    Console.WriteLine(value.location.latitude);
+                    Console.WriteLine(value.location.longitude);
+                }
+            }
+
+### OnDoubleClickMap
+
+> **OnDoubleClickMap** event is triggered after the user double clicks (left) on the map. This control will return the **location** of the double clicked point.
+
+1. **value._sender_**: is the reference to the **RealTimeMap** control
+1. **value._location_**: location of point
+
+#### Example code
+
+        //Blazor Page
+        <RealTimeMap height="620px" width="820px" OnDoubleClickMap="onDoubleClickMap"></RealTimeMap>
+        //Code block
+        @code{
+                public void onDoubleClickMap(RealTimeMap.ClicksMapArgs value)
+                {
+                    //where value.sender is RealTimeMap control reference
+                    Console.WriteLine(value.location.latitude);
+                    Console.WriteLine(value.location.longitude);
+                }
+            }
+
+
+### OnMouseDownMap
+
+> **OnMouseDownMap** event is triggered when the left button is pressed (contact open). This control will return the **location** of the clicked down (left pressed) point.
+
+1. **value._sender_**: is the reference to the **RealTimeMap** control
+1. **value._location_**: location of point
+
+#### Example code
+
+        //Blazor Page
+        <RealTimeMap height="620px" width="820px" OnMouseDownMap="onMouseDownMap"></RealTimeMap>
+        //Code block
+        @code{
+                public void onMouseDownMap(RealTimeMap.ClicksMapArgs value)
+                {
+                    //where value.sender is RealTimeMap control reference
+                    Console.WriteLine(value.location.latitude);
+                    Console.WriteLine(value.location.longitude);
+                }
+            }
+
+### OnMouseUpMap
+
+> **OnMouseUpMap** event is triggered after the left button is released (contact close). This control will return the **location** of the clicked up (left released) point.
+
+1. **value._sender_**: is the reference to the **RealTimeMap** control
+1. **value._location_**: location of point
+
+#### Example code
+
+        //Blazor Page
+        <RealTimeMap height="620px" width="820px" OnMouseUpMap="onMouseUpMap"></RealTimeMap>
+        //Code block
+        @code{
+                public void onMouseUpMap(RealTimeMap.ClicksMapArgs value)
+                {
+                    //where value.sender is RealTimeMap control reference
+                    Console.WriteLine(value.location.latitude);
+                    Console.WriteLine(value.location.longitude);
+                }
+            }
 
 ## Working with a single point (ex. my position)
 
@@ -349,8 +465,9 @@ or
 
     realTimeMap.Geometric.Points.changeExtentWhenAddPoints = false;
 
+> Default value for **changeExtentWhenAddPoints** is _true_.
  
-- Delete stream points
+- Delete stream points 
 
       //delete all points from Geometric.Points collection
       Geometric.Points.delete(); 
@@ -379,7 +496,9 @@ The **changeExtentWhenMovingPoints** property of the Geometric.Points class allo
 or
 
     realTimeMap.Geometric.Points.changeExtentWhenMovingPoints = true; //the current view will be expanded to display all the moving points
-    
+ 
+> Default value for **changeExtentWhenAddPoints** is _true_. 
+ 
 - Get all stream points
 
         //return List<StreamPoint> from Geometric.Points
