@@ -10,6 +10,8 @@ In this example, each point was associated with a set of data with the following
         public string? description { get; set; }
     }
     
+### Points Attributes
+
 A point from the collection of points, will have a data set similar to:
 
     new RealTimeMap.StreamPoint()
@@ -19,6 +21,12 @@ A point from the collection of points, will have a data set similar to:
           longitude = 25.328737648076636,
           type = "asked for help",
           value = new Attributes() { registrationNumber = "B 24 AAD", vehicleType = "5 seats", description="black color, two occupants in the car" }
-     },
+     }
 
-### Points Attributes
+This is a **StreamPoint** whose structure is predefined and which has been extended with a new structure using the value property:
+
+        value = new Attributes() { 
+            registrationNumber = "B 24 AAD", 
+            vehicleType = "5 seats", 
+            description="black color, two occupants in the car" 
+        }
