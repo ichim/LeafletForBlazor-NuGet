@@ -68,19 +68,19 @@ The configuration of the tooltips was done on the onAfterMapLoaded event of the 
 
 Code example:
 
-   public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
-   {
-       var realTimeMap = args.sender as RealTimeMap;
-       realTimeMap.Geometric.Points.Appearance(item => item.type != "asked for help").pattern = new RealTimeMap.PointTooltip()
+           public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
            {
-               content = "<b>${type}</b><br><b>Vehicle type: </b>${value.vehicleType}"
-           };
-       realTimeMap.Geometric.Points.Appearance(item => item.type == "asked for help").pattern = new RealTimeMap.PointTooltip()
-           {
-               content = "<b>Registration number: </b>${value.registrationNumber}</br><b>Vehicle type: </b>${value.vehicleType}</br>${value.description}</br><b>Number of occupants: </b>${value.occupants.length}</br><b>Names: </b>${value.occupants.map(occupant=>occupant.firstName)}"
-           };
-
-       await realTimeMap.Geometric.Points.upload(new tooltips.data.InputData().input);
-   }
+               var realTimeMap = args.sender as RealTimeMap;
+               realTimeMap.Geometric.Points.Appearance(item => item.type != "asked for help").pattern = new RealTimeMap.PointTooltip()
+                   {
+                       content = "<b>${type}</b><br><b>Vehicle type: </b>${value.vehicleType}"
+                   };
+               realTimeMap.Geometric.Points.Appearance(item => item.type == "asked for help").pattern = new RealTimeMap.PointTooltip()
+                   {
+                       content = "<b>Registration number: </b>${value.registrationNumber}</br><b>Vehicle type: </b>${value.vehicleType}</br>${value.description}</br><b>Number of occupants: </b>${value.occupants.length}</br><b>Names: </b>${value.occupants.map(occupant=>occupant.firstName)}"
+                   };
+        
+               await realTimeMap.Geometric.Points.upload(new tooltips.data.InputData().input);
+           }
 
 
