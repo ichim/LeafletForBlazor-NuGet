@@ -2,12 +2,14 @@
 This project is an example of how you can display the attributes of the points (StreamPoint) in the map.
 ## Input data
 In this example, each point was associated with a set of data with the following structure:
+
     public class Attributes
     {
         public string? registrationNumber { get; set; }
         public string? vehicleType { get; set; }
         public string? description { get; set; }
     }
+    
 A point from the collection of points, will have a data set similar to:
 
     new RealTimeMap.StreamPoint()
