@@ -53,3 +53,4 @@ Code example:
         await realTimeMap.Geometric.Points.upload(new tooltips.data.InputData().input);
     }
 
+
