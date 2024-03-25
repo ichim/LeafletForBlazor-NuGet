@@ -79,7 +79,6 @@ Code example:
                    {
                        content = "<b>Registration number: </b>${value.registrationNumber}</br><b>Vehicle type: </b>${value.vehicleType}</br>${value.description}</br><b>Number of occupants: </b>${value.occupants.length}</br><b>Names: </b>${value.occupants.map(occupant=>occupant.firstName)}"
                    };
-        
                await realTimeMap.Geometric.Points.upload(new tooltips.data.InputData().input);
            }
 
