@@ -30,3 +30,12 @@ This is a **StreamPoint** whose structure is predefined and which has been exten
             vehicleType = "5 seats", 
             description="black color, two occupants in the car" 
         }
+
+## Configuring tooltips
+
+The configuration of the tooltips was done on the onAfterMapLoaded event of the RealTimeMap control. Two categories of tooltips have been configured:
+- a category that only displays **registrationNumber** and **vehicleType**
+- and a second category that displays **registrationNumber**, **vehicleType** and **description**
+
+
+
