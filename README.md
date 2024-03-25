@@ -62,7 +62,8 @@ For example:
 
 in this case, the tooltips will be displayed for all elements in the map.
 
-[Configuring StremPoint (custom attributes) tooltips example code](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/RTM%20Points%20Tooltips/README.md)
+[Configuring StremPoint (custom attributes) tooltips - example code](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/RTM%20Points%20Tooltips/README.md)
+[Configuring StremPoint (custom attributes with hierchical data) tooltips - example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20tooltip%20hierarchical%20attr#readme)
 
 ## Geometric.Computations class
 
