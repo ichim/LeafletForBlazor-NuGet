@@ -37,5 +37,19 @@ The configuration of the tooltips was done on the onAfterMapLoaded event of the 
 - a category that only displays **registrationNumber** and **vehicleType**
 - and a second category that displays **registrationNumber**, **vehicleType** and **description**
 
+Code example:
 
+    public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        var realTimeMap = args.sender as RealTimeMap;
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "asked for help").pattern = new RealTimeMap.PointTooltip()
+            {
+                content = "<b>Registration number: </b>${value.registrationNumber}</br><b>Vehicle type: </b>${value.vehicleType}</br>${value.description}"
+            };
+        realTimeMap.Geometric.Points.Appearance(item => item.type != "asked for help").pattern = new RealTimeMap.PointTooltip()
+            {
+                content = "<b>${type}</b><br><b>Vehicle type: </b>${value.vehicleType}"
+            };
+        await realTimeMap.Geometric.Points.upload(new tooltips.data.InputData().input);
+    }
 
