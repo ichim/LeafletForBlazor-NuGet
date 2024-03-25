@@ -1,5 +1,8 @@
 # Using RealTimeMap tooltips
 This project is an example of how you can display the attributes of the points (StreamPoint) in the map.
+
+![image](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/90730278-eec0-4b82-921f-08c271291541)
+
 ## Input data
 In this example, each point was associated with a set of data with the following structure:
 
