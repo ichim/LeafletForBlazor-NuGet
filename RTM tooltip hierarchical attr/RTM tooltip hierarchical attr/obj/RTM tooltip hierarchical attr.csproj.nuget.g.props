@@ -14,9 +14,9 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)leafletforblazor\2.0.4.2\contentFiles\any\net7.0\map_color.ico" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.0.4.2\contentFiles\any\net7.0\map_color.ico')">
+    <Content Include="$(NuGetPackageRoot)leafletforblazor\2.0.4.4\contentFiles\any\net7.0\map_color.ico" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.0.4.4\contentFiles\any\net7.0\map_color.ico')">
       <NuGetPackageId>LeafletForBlazor</NuGetPackageId>
-      <NuGetPackageVersion>2.0.4.2</NuGetPackageVersion>
+      <NuGetPackageVersion>2.0.4.4</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
       <Pack>false</Pack>
       <Private>False</Private>
@@ -25,7 +25,7 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\7.0.13\build\net7.0\Microsoft.AspNetCore.Components.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\7.0.13\build\net7.0\Microsoft.AspNetCore.Components.WebAssembly.props')" />
-    <Import Project="$(NuGetPackageRoot)leafletforblazor\2.0.4.2\buildTransitive\LeafletForBlazor.props" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.0.4.2\buildTransitive\LeafletForBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)leafletforblazor\2.0.4.4\buildTransitive\LeafletForBlazor.props" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.0.4.4\buildTransitive\LeafletForBlazor.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer)' == '' ">C:\Users\LaurențiuIchim\.nuget\packages\microsoft.aspnetcore.components.webassembly.devserver\7.0.13</PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer>
