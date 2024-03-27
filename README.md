@@ -17,6 +17,10 @@ You can find more information:
 
 # What's New?
 
+> bug #26 reported by **JohannAtExp**
+
+[Tooltip content don't format with point attributes when tooltip is not permanent](https://github.com/ichim/LeafletForBlazor-NuGet/issues/26)
+
 ## RealTimeMap tooltip items
 
 Tooltips can be associated with StreamPoint collection displayed on the map (map items). Tooltips can be configured using both **AppearanceOnType()** and **Appearance()** methodes and the **pattern** property:
@@ -62,9 +66,11 @@ For example:
 
 in this case, the tooltips will be displayed for all elements in the map.
 
-[Configuring StremPoint (custom attributes) tooltips - example code](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/RTM%20Points%20Tooltips/README.md)
+In addition, the pattern property allows the use of _custom attributes_ defined for **StreamPoint**. For more details, you can access the following examples:
 
-[Configuring StremPoint (custom attributes with hierchical data) tooltips - example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20tooltip%20hierarchical%20attr#readme)
+[Configuring StreamPoint Tooltips with custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/RTM%20Points%20Tooltips/README.md)
+
+[Configuring StreamPoint Tooltips with hierarchical custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20tooltip%20hierarchical%20attr#readme)
 
 ## Geometric.Computations class
 
