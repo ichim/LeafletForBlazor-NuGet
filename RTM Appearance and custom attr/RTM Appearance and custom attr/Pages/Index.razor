@@ -1,0 +1,27 @@
+﻿@page "/"
+
+@using customAttr.data;
+
+<RealTimeMap @ref="realTimeMap" height="620px" width="820px" OnAfterMapLoaded="onAfterMapLoaded"></RealTimeMap>
+
+@code {
+    RealTimeMap? realTimeMap;
+
+
+    public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        var realTimeMap = args.sender as RealTimeMap;
+
+        realTimeMap.Geometric.Points.Appearance(item => (item.value as Attributes)!.vehicleType == "bus").pattern = new RealTimeMap.PointSymbol()
+            {
+                fillColor = "red",
+                radius = 8
+            };
+
+        await realTimeMap.Geometric.Points.upload(new InputData().input);
+
+
+
+
+    }
+}
