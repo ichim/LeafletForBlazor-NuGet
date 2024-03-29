@@ -631,13 +631,6 @@ In addition, the **pattern** property of the **AppearanceOnType()** method accep
 [AppearanceOnType example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20AppearanceOnType)
 
 
-### Configuring points Appearance based on custom attributes
-
-The value property of the **StreamPoint** object allows to use custom attributes. These custom attributes can be used for various purposes.
-The Appearance of the points in the map can be configured based on the custom attributes defined on the StreamPoint value property:
-
-[Appearance of points based on custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Appearance%20and%20custom%20attr)
-
 ## Code Example
 
  > Code example for Points collection.
@@ -767,6 +760,13 @@ Moving multiple points from Geometric.Points
 _during the move you cannot change the attributes (type, value, timestamp). A warning will appear in the console_
 
 [Working with Geometric.Points collection - code example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20Geometric.Points%20collection)
+
+## Configuring points Appearance based on custom attributes
+
+The value property of the **StreamPoint** object allows to use custom attributes. These custom attributes can be used for various purposes.
+The Appearance of the points in the map can be configured based on the custom attributes defined on the StreamPoint value property:
+
+[Appearance of points based on custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Appearance%20and%20custom%20attr)
 
 
 ### Geometric class for displaying different static shapes
