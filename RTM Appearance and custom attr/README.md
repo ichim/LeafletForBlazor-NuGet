@@ -21,5 +21,14 @@ Populating the StreamPoint collection will be similar to:
                    value = new Attributes() { registrationNumber = "B 24 AAB", vehicleType = "bus" }
             },
         };
+# Upload data on map
+
+     await realTimeMap.Geometric.Points.upload(new InputData().input);
 
 # Appearance based on custom attributes 
+
+       realTimeMap.Geometric.Points.Appearance(item => (item.value as Attributes)!.vehicleType == "bus").pattern = new RealTimeMap.PointSymbol()
+           {
+               fillColor = "red",
+               radius = 8
+           };
