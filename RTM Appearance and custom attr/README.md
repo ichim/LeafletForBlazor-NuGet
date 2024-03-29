@@ -27,6 +27,8 @@ Populating the StreamPoint collection will be similar to:
 
 # Appearance based on custom attributes 
 
+he appearance of the points on the map will be determined by a custom property. In the case of this example, it was chosen that the appearance should be established based on **vehicleType** property:
+
        realTimeMap.Geometric.Points.Appearance(item => (item.value as Attributes)!.vehicleType == "bus").pattern = new RealTimeMap.PointSymbol()
            {
                fillColor = "red",
