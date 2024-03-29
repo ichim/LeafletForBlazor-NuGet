@@ -15,11 +15,7 @@ You can find more information:
 
  _____________
 
-# What's New?
-
-> bug #26 reported by **JohannAtExp**
-
-[Tooltip content don't format with point attributes when tooltip is not permanent](https://github.com/ichim/LeafletForBlazor-NuGet/issues/26)
+# What's New
 
 ## RealTimeMap tooltip items
 
@@ -66,7 +62,10 @@ For example:
 
 in this case, the tooltips will be displayed for all elements in the map.
 
-In addition, the pattern property allows the use of _custom attributes_ defined for **StreamPoint**. For more details, you can access the following examples:
+### Configuring tooltips based on custom attributes
+
+The value property of the **StreamPoint** object allows to use custom attributes. These custom attributes can be used for various purposes.
+The pattern property allows the use of _custom attributes_ defined for **StreamPoint** to configuring RealTimeMap items tooltips. For more details, you can access the following examples:
 
 [Configuring StreamPoint Tooltips with custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/RTM%20Points%20Tooltips/README.md)
 
@@ -630,6 +629,14 @@ In addition, the **pattern** property of the **AppearanceOnType()** method accep
             };
 
 [AppearanceOnType example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20AppearanceOnType)
+
+
+### Configuring points Appearance based on custom attributes
+
+The value property of the **StreamPoint** object allows to use custom attributes. These custom attributes can be used for various purposes.
+The Appearance of the points in the map can be configured based on the custom attributes defined on the StreamPoint value property:
+
+[Appearance of points based on custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Appearance%20and%20custom%20attr)
 
 ## Code Example
 
