@@ -769,9 +769,9 @@ The Appearance of the points in the map can be configured based on the custom at
 [Appearance of points based on custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Appearance%20and%20custom%20attr)
 
 
-### Geometric class for displaying different static shapes
+## Geometric class for displaying different static shapes
 
-#### DisplayPolygonsFromArray
+### DisplayPolygonsFromArray
 
 **DisplayPolygonsFromArray** is a new class that allows displaying polygons starting from point arrays.
 This class allows the display of simple polygons or polygons with several rings.
@@ -822,7 +822,7 @@ Also, the add() method allows customizing the symbolization of the displayed pol
 
  >In the future, this class will be used only for displaying polygons.
 
- #### DisplayPointsFromArray
+ ### DisplayPointsFromArray
 
 The **DisplayPointsFromArray** class hosted by the Geometric class allows displaying static points using coordinate arrays (new double[2]{}) as input data:
 
