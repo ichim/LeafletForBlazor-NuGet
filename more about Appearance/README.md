@@ -7,7 +7,7 @@ The **value** property of a **StreamPoint** supports the configuration of custom
 
 **Answer**: Yes, very simple to do!
 
-## The data used in the example
+## The data used in the code example
 
 The **value** property of the **StreamPoint** object will be extended with the following data structure:
 
@@ -32,3 +32,28 @@ A **StreamPoint** from the collection will have the following values, as an exam
                                           description = "without description" 
                                           }
          }
+
+## Configuring Appearance
+
+In this code example, the appearance of the displayed points was made based on the custom **vechicleType** attribute:
+
+                realTimeMap!.Geometric.Points.Appearance(item => (item.value as Attributes)!.vehicleType == "bus").pattern = new RealTimeMap.PointSymbol()
+                    {
+                        fillColor = "red",
+                        fillOpacity= 0.6,
+                        color = "yellow",
+                        opacity = 1,
+                        weight = 2,
+                        radius = 12,
+                    };
+                realTimeMap!.Geometric.Points.Appearance(item => (item.value as Attributes)!.vehicleType == "5 seats").pattern = new RealTimeMap.PointSymbol()
+                    {
+                        fillColor = "blue",
+                        fillOpacity = 0.6,
+                        color = "green",
+                        opacity = 1,
+                        weight = 2,
+                        radius = 8,
+                    };
+
+
