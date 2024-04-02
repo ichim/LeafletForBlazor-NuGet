@@ -1,2 +1,2 @@
-# Apeearance on StreamPoint custom attributes
+# Apearance on StreamPoint custom attributes
 
