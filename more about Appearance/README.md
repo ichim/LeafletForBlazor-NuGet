@@ -33,7 +33,7 @@ A **StreamPoint** from the collection will have the following values, as an exam
                                           }
          }
 
-## Configuring Appearance
+## Configuring Appearance on custom attributes
 
 In this code example, the appearance of the displayed points was made based on the custom **vechicleType** attribute:
 
