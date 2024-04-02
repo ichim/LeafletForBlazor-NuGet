@@ -1,0 +1,32 @@
+﻿@page "/"
+@using customAttributes.data;
+
+<RealTimeMap @ref="realTimeMap" height="620px" width="820px" OnAfterMapLoaded="onAfterMapLoaded"></RealTimeMap>
+
+@code {
+    RealTimeMap? realTimeMap;
+   
+
+    public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        realTimeMap!.Geometric.Points.Appearance(item => (item.value as Attributes)!.vehicleType == "bus").pattern = new RealTimeMap.PointSymbol()
+            {
+                fillColor = "red",
+                fillOpacity= 0.6,
+                color = "yellow",
+                opacity = 1,
+                weight = 2,
+                radius = 12,
+            };
+        realTimeMap!.Geometric.Points.Appearance(item => (item.value as Attributes)!.vehicleType == "5 seats").pattern = new RealTimeMap.PointSymbol()
+            {
+                fillColor = "blue",
+                fillOpacity = 0.6,
+                color = "green",
+                opacity = 1,
+                weight = 2,
+                radius = 8,
+            };
+        await realTimeMap.Geometric.Points.upload(new InputData().input);
+    }
+}
