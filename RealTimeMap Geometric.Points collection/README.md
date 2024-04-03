@@ -11,7 +11,7 @@ The Geometric.Points collection allows update operations:
 
 The project has a list of StreamPoint items.
 
-       public List<RealTimeMap.StreamPoint> points = new List<RealTimeMap.StreamPoint> {
+       public List<RealTimeMap.StreamPoint> pointsStart = new List<RealTimeMap.StreamPoint> {
           new RealTimeMap.StreamPoint()
             {
                 guid = Guid.NewGuid(),
@@ -21,3 +21,8 @@ The project has a list of StreamPoint items.
                 longitude =  26.10629452317551
             }
         };
+
+## Upload data
+
+        if (realTimeMap != null)
+            await realTimeMap.Geometric.Points.upload(dataSource.pointsStart, true);
