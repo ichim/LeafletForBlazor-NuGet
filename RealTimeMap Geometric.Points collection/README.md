@@ -15,8 +15,8 @@ The project has a list of StreamPoint items.
           new RealTimeMap.StreamPoint()
             {
                 guid = Guid.NewGuid(),
-                type = "Ambulance",
-                value = "with a doctor",
+                type = "Intervention crew",
+                value = "5 seats",
                 latitude = 44.45028925827577,
                 longitude =  26.10629452317551
             }
