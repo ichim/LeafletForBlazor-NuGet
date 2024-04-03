@@ -30,9 +30,15 @@ Uploading a list of StreamPoint list:
             await realTimeMap.Geometric.Points.upload(dataSource.pointsStart, true);
 
 
-where, the last parameter is newCollection:
+where:
+
+- dataSource is:
+
+       DataSource dataSource = new DataSource();
+
+- the last parameter is newCollection:
   
-if it's missing, it means it's _false_. That is, the previous collection is kept;
+  if it's missing, it means it's _false_. That is, the previous collection is kept;
 
             if(realTimeMap !=null)
                 await realTimeMap.Geometric.Points.upload(dataSource.pointsStart);
