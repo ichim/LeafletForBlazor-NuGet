@@ -24,5 +24,7 @@ The project has a list of StreamPoint items.
 
 ## Upload data
 
+Uploading a list of StreamPoint list:
+
         if (realTimeMap != null)
             await realTimeMap.Geometric.Points.upload(dataSource.pointsStart, true);
