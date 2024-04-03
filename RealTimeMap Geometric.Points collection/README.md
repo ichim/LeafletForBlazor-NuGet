@@ -45,3 +45,7 @@ where:
 
 ## Add data
 
+Expanding the existing collection:
+
+        if (realTimeMap != null)
+            await realTimeMap.Geometric.Points.add(dataSource.pointsMore.ToArray());
