@@ -53,7 +53,7 @@ Expanding the existing collection:
 ## Delete some points
 
 
-        string[] guids = new string[4] { "18466d7f-0689-4b8e-a2ee-28e5cb27f86e", "28466d7f-0689-4b8e-a2ee-28e5cb28f86f"};
+        string[] guids = new string[2] { "18466d7f-0689-4b8e-a2ee-28e5cb27f86e", "28466d7f-0689-4b8e-a2ee-28e5cb28f86f"};
         if (realTimeMap != null)
             await realTimeMap.Geometric.Points.delete(guids);
     
