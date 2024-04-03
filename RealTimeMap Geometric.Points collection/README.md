@@ -49,3 +49,9 @@ Expanding the existing collection:
 
         if (realTimeMap != null)
             await realTimeMap.Geometric.Points.add(dataSource.pointsMore.ToArray());
+
+## Delete some points
+
+## Delete all points
+
+
