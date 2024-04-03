@@ -10,3 +10,14 @@ The Geometric.Points collection allows update operations:
 ## Input data source
 
 The project has a list of StreamPoint items.
+
+       public List<RealTimeMap.StreamPoint> points = new List<RealTimeMap.StreamPoint> {
+          new RealTimeMap.StreamPoint()
+            {
+                guid = Guid.NewGuid(),
+                type = "Ambulance",
+                value = "with a doctor",
+                latitude = 44.45028925827577,
+                longitude =  26.10629452317551
+            }
+        };
