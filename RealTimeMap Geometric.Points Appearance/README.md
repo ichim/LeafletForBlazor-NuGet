@@ -1,8 +1,8 @@
 # Appearance render
 
-Configuring the "appearance render" of the StreamPoint collection from the map.
+Configuring the "appearance render" of the **StreamPoint** collection from the map.
 
-Configuring StreamPoint Appearance example code:
+Configuring **StreamPoint** appearance example code:
 
         if (realTimeMap != null)
         {
@@ -20,7 +20,7 @@ Configuring StreamPoint Appearance example code:
 
 ## Input data source
 
-The project has a list of StreamPoint items.
+The sample project working with a list of **StreamPoint** items. Example code:
 
        public List<RealTimeMap.StreamPoint> pointsStart = new List<RealTimeMap.StreamPoint> {
           new RealTimeMap.StreamPoint()
@@ -34,6 +34,8 @@ The project has a list of StreamPoint items.
         };
 
 ## Appearance render
+
+Configuring of a render class is done using the **Appearance()** method and an object defined by the **PointSymbol** class
 
         if (realTimeMap != null)
         {
