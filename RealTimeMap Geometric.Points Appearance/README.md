@@ -1,7 +1,8 @@
 # Appearance render
 
 Configuring the "appearance render" of the StreamPoint collection from the map.
-Configuring StreamPoint Appearance:
+
+Configuring StreamPoint Appearance example code:
 
         if (realTimeMap != null)
         {
