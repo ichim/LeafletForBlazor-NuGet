@@ -37,6 +37,11 @@ The sample project working with a list of **StreamPoint** items. Example code:
 
 Configuring of a render class is done using the **Appearance()** method and an object defined by the **PointSymbol** class:
 
+
+        realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointSymbol(){}
+
+Example code:
+
         if (realTimeMap != null)
         {
                     realTimeMap.Geometric.Points.Appearance(item => !(item.type == "red" || item.type == "green" || item.type == "blue")).pattern = new RealTimeMap.PointSymbol() { radius = 8, color = "#28ffff", opacity = 0.68, fillColor = "orange", weight = 2, fillOpacity = 0.68 };
