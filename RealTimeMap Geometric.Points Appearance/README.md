@@ -3,7 +3,19 @@
 Configuring the "appearance render" of the StreamPoint collection from the map.
 Configuring StreamPoint Appearance:
 
-
+        if (realTimeMap != null)
+        {
+                   realTimeMap.Geometric.Points.Appearance(item => item.type == "intervention crew").pattern = 
+                          new RealTimeMap.PointSymbol() 
+                                 { 
+                                        radius = 8, 
+                                        color = "#28ffff", 
+                                        opacity = 0.68, 
+                                        fillColor = "orange", 
+                                        weight = 2, 
+                                        fillOpacity = 0.68 
+                                   };
+       }
 
 ## Input data source
 
