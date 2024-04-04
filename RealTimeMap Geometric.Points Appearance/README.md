@@ -32,3 +32,6 @@ The project has a list of StreamPoint items.
                 longitude =  26.10629452317551
             }
         };
+
+## Appearance render
+
