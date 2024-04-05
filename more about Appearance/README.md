@@ -33,6 +33,14 @@ A **StreamPoint** from the collection will have the following values, as an exam
                                           }
          }
 
+_**latitude** and **longitude** properties are Web Mercator coordinate values._
+
+_The **value** property supports objects defined by custom classes.In this example, the **value** property is used to define custom attributes from StreamPoint_
+
+_If the **timestamp** is missing, LeafletForBlazor will assign the current date_
+
+_This collection has a static behavior._
+
 ## Configuring Appearance on custom attributes
 
 In this code example, the appearance of the displayed points was made based on the custom **vechicleType** attribute:
