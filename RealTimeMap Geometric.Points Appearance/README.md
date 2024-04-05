@@ -33,11 +33,11 @@ The sample project working with a list of **StreamPoint** items. Example code:
             }
         };
 
-_latitude and longitude properties are Web Mercator coordinate values._
+_**latitude** and **longitude** properties are Web Mercator coordinate values._
 
-_In this previous, the value property is of string type_
+_In this previous, the **value** property is of string type. The **value** property also supports objects defined by custom classes, if we have customized attributes._
 
-_If the timestamp is missing, LeafletForBlazor will assign the current date_
+_If the **timestamp** is missing, LeafletForBlazor will assign the current date_
 
 _This collection has a static behavior._
 
