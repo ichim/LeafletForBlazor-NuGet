@@ -59,7 +59,7 @@ Example code:
                     realTimeMap.Geometric.Points.Appearance(item => item.type == "blue").pattern = new RealTimeMap.PointSymbol() { radius = 12, color = "#28ffff", opacity = 0.68, fillColor = "blue", weight = 2, fillOpacity = 0.68 };
         }
 
-The appearance of the points is preserved in the map view. To reset the stored appearance, the Appearance method provide reset boolean parameter:
+The appearance of the points is preserved in the map view. To reset the stored appearance, the **Appearance** method provide reset boolean parameter:
 
         realTimeMap.Geometric.Points.Appearance(item=>item.type=="emergency vehicles", true).pattern = new RealTimeMap.PointSymbol()
         {
