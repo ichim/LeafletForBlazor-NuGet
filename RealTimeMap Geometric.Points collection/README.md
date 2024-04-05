@@ -31,7 +31,6 @@ _If the **timestamp** is missing, LeafletForBlazor will assign the current date_
 
 _This collection has a static behavior._
 
-
 ## Upload data
 
 Uploading a list of StreamPoint list:
