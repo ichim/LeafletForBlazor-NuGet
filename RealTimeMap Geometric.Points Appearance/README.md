@@ -43,7 +43,11 @@ For example, change appearance render for all points:
 
 or
 
-        realTimeMap.Geometric.Points.Appearance(item=>true).pattern = new RealTimeMap.PointSymbol(){}
+        realTimeMap.Geometric.Points.Appearance(item => true).pattern = new RealTimeMap.PointSymbol(){}
+
+Change the "appearance render" of the StreamPoint collection for a class based on the type property:
+
+       realTimeMap.Geometric.Points.Appearance(item => item.type == "a certain type").pattern = new RealTimeMap.PointSymbol(){}
 
 Example code:
 
