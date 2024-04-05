@@ -35,9 +35,9 @@ The sample project working with a list of **StreamPoint** items. Example code:
 
 ## Appearance render
 
-Configuring of a render class is done using the **Appearance()** method and an object defined by the **PointSymbol** class.
+Configuring of a render class is done using the **Appearance()** method and an object defined by the **PointSymbol** class. Assign **PointSymbol** to the **pattern** property.
 
-Change appearance render for all points:
+For example, change appearance render for all points:
 
         realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointSymbol(){}
 
