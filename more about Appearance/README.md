@@ -64,3 +64,6 @@ In this code example, the appearance of the displayed points was made based on t
                     };
 
 
+#Appearance and update() custom attribute
+
+
