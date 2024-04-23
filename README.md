@@ -17,107 +17,48 @@ You can find more information:
 
 # What's New
 
-## RealTimeMap tooltip items
+>bug [#28](https://github.com/ichim/LeafletForBlazor-NuGet/issues/28) reported by [groehm](https://github.com/groehm)
 
-Tooltips can be associated with StreamPoint collection displayed on the map (map items). Tooltips can be configured using both **AppearanceOnType()** and **Appearance()** methodes and the **pattern** property:
-The definition of the tooltip is done using the class **PointTooltip**:
+[realTimeMap.Geometric.DisplayPolygonsFromArray Delete Method missing](https://github.com/ichim/LeafletForBlazor-NuGet/issues)
 
-Using AppearanceOnType() method:
 
-    realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention vehicle").pattern = new RealTimeMap.PointTooltip()
-        {
-            content = "<h6>${value}</h6>${type}</br>${guid}",
-            opacity = 0.8,
-            permanent = true
-        };
+## Geometric.Points class and update() method
 
-or using Appearance() method:
+The **update()** method on Geometric.Points allows updating attributes (without location):
+- **type** property;
+- **timestamp** property;
+- **value** property;
 
-    realTimeMap.Geometric.Points.Appearance(item => item.value == "B 42 DCI").pattern = new RealTimeMap.PointTooltip()
-        {
-            content = "<h6>${value}</h6>${type}</br>${guid}",
-            opacity = 0.8,
-            permanent = false
-        };
+>The **value** property of StreamPoint allows you to set string, number or custom object.
 
-where:
-
-1. **content** - can be a string, html components or JavaScript string template without "`" (without the intended JavaScript string template character);
-   - **value** is current StreamPoint value property;
-   - **type** is current StreamPoint type property;
-   - **guid** is current StreamPoint guid property;
-1. **opacity** - the opacity of the tooltip displayed in the map;
-1. **pemanent** - true - the display is permanent, false - the display is done when the mouse passes over the point;
-
-Also, the Appearance() and AppearanceOnType() methods can be used without predicate conditions:
-
-For example:
-
-    realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointTooltip()
-        {
-            content = "<h6>${value}</h6>${type}</br>${guid}",
-            opacity = 0.8,
-            permanent = false
-        };
-
-in this case, the tooltips will be displayed for all elements in the map.
-
-### Configuring tooltips based on custom attributes
-
-The value property of the **StreamPoint** object allows to use custom attributes. These custom attributes can be used for various purposes.
-The pattern property allows the use of _custom attributes_ defined for **StreamPoint** to configuring RealTimeMap items tooltips. For more details, you can access the following examples:
-
-[Configuring StreamPoint Tooltips with custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/RTM%20Points%20Tooltips/README.md)
-
-[Configuring StreamPoint Tooltips with hierarchical custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20tooltip%20hierarchical%20attr#readme)
-
-## Geometric.Computations class
-
-The **Geometric.Computations** class will provide a set of functions various geometric calculations.
-
-### Distance calculation
-
-Computing distance distance between two points:
-
-- working with double values:
-
-      Geometric.Computations.distance(double latitudeOfPoint1, double longitudeOfPoint1, double latitudeOfPoint2, double longitudeOfPoint2, UnitOfMeasure unitOfMeasure);
-
-- working with double array:
-
-      Geometric.Computations.distance(double[2] coordinate1, double[2] coordinate2, UnitOfMeasure unitOfMeasure);
-
-- working with StreamPoint(s):
-
-      Geometric.Computations.distance(StreamPoint point1, StreamPoint point2, UnitOfMeasure unitOfMeasure);
-    
 Code example:
-    
-    Console.WriteLine(realTimeMap.Geometric.Computations.distance(pct1, pct6, RealTimeMap.UnitOfMeasure.meters))
 
-#### Searching points on click, distance() condition example
+       //StreamPoint to be updated
+       var point = new RealTimeMap.StreamPoint()
+        {
+                guid = Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb27f86f"),  //existing guide
+                type = "intervention crew 2",                               //new type
+                value = new Attributes() { 
+                                            registrationNumber = "B 28 AAB", //new registration number 
+                                            vehicleType = "5 seats"          //new vechicle type
+                                        }
+        };
 
-In order to be able to find the points in the neighborhood of a point (click on the map), you can use Geometric.Points.getItems() with predicate distance condition
-
-Blazor page:
-
-    <RealTimeMap height="620px" width="820px" OnClickMap="onClickingMap"></RealTimeMap>
-
-Code block:
-
-    @code{
-         public  void onClickingMap(RealTimeMap.ClicksMapArgs value)
-            {
-                List<RealTimeMap.StreamPoint> findedPoints = new List<RealTimeMap.StreamPoint>();
-                    findedPoints = (value.sender as RealTimeMap).Geometric.Points.getItems(point => (value.sender as RealTimeMap).Geometric.Computations.distance(
-                        point, 
-                        new RealTimeMap.StreamPoint() { latitude = value.location.latitude, longitude = value.location.longitude }, 
-                        RealTimeMap.UnitOfMeasure.meters
-                        ) <= 10
-                    );
-            }
+        if (realTimeMap != null)
+        {
+            //update properties value (attributes)
+            await realTimeMap.Geometric.Points.update(point);
+            //check the update
+            var result = realTimeMap.Geometric.Points.getItems(item => item.guid == Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb27f86f"));
         }
 
+Once the **StreamPoint** properties have been updated, the **Appearance** and/or **AppearanceOnType** will also updated:
+
+| **StreamPoint Appearance type** | **Description** |
+| :---- | :----- |
+|  [rendering](#appearance-render-configuring-display-symbol)     | _symbol_ of **StreamPoint** collection in the **RealTimeMap**    |
+|  [zoom levels](#appearance-zoom-levels-configuring-zoom-levels-between-are-displayed)  | _min. and max. levels_ between which **StreamPoint** collection are displayed on the map. Working only with **AppearanceOnType()** method    |
+|  [tooltips](#appearance-tooltips-configuring-streampoint-tooltip)  | _text info_ displayed on the **StreamPoint**   |
 
 -------------------------
 
@@ -179,7 +120,14 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
 
 ## RealTimeMap control events
 
-* **OnAfterMapLoaded** _triggered after the map has been completely loaded on the Blazor page_
+| **Events**   | **Description**                                              |
+| ---------------- | ---------------------------------------------------- |
+| [**OnAfterMapLoaded**](#onaftermaploaded) | triggered after the _map has been completely loaded_ on the Blazor page|
+| [**OnClickMap**](#onclickmap) |event is triggered after the user clicks left on the map. This control will return the **location** of the clicked point|
+| [**OnDoubleClickMap**](#ondoubleclickmap) | event is triggered after the user double clicks (left) on the map. This control will return the **location** of the double clicked point|
+| [**OnMouseDownMap**](#onmousedownmap) | event is triggered when the left button is pressed (contact open). This control will return the **location** of the clicked down (left pressed) point|
+| [**OnMouseUpMap**](#onmouseupmap) | event is triggered after the left button is released (contact close). This control will return the **location** of the clicked up (left released) point|
+ 
 
 
 ### OnAfterMapLoaded
@@ -307,23 +255,30 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
 
 The movePoint() method accepts from one argument to three arguments:
  - coordinate (double[2]): point coordinate. For example: realTimeMap.movePoint([44.4502578, 26.1108199]). Latitude and Longitude in degrees, geographical coordinates;
- - symbol (PointSymbol/PointIcon): the point can be displayed with a circle (PointSymbol) or an icon/*.png (PointIcon);
+ - render symbol (PointSymbol/PointIcon): the point can be displayed with a circle (PointSymbol) or an icon/*.png (PointIcon);
  - tooltip (PointTooltip): configuring a tooltip with various information;
 
-![movePoint](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/4ddf32b1-abcb-463c-988e-1633e0224f2a)
+ |**Method**|**Description**|**Map Results**|
+ |:---|:---|:---|
+ |mapPoint(double[])|The point is given by coordinate: latitude and longitude|The default **Leaflet** marker will displayed on the map|
+ |mapPoint(double[],[PointTooltip](#pointtooltip))|The point is given by coordinate: latitude and longitude. **movePoint** allows the definition of tooltip|The default **Leaflet** marker will be displayed on the map. The point will display a tooltip whose content is defined by **PointTooltip**|
+ |mapPoint(double[],[PointSymbol](#pointsymbol))|The point is given by coordinate: latitude and longitude. **movePoint** allows a custom symbol to be displayed|The point will be displayed with a symbol defined by **PointSymbol**|
+ |mapPoint(double[],[PointIcon](#pointicon))|The point is given by coordinate: latitude and longitude.**movePoint** allows a custom icon (ex. *.png file) to displayed in the map|The point will be displayed with an icon defined by **PointIcon**|
+ |mapPoint(double[],[PointSymbol](#pointsymbol), [PointTooltip](#pointtooltip))|The point is given by coordinate: latitude and longitude. **movePoint** allows a custom symbol to be displayed and a tooltip|The point will be displayed with a symbol defined by **PointSymbol** and will display a tooltip whose content is defined by **PointTooltip**|
+ |mapPoint(double[],[PointIcon](#pointicon), [PointTooltip](#pointtooltip))|The point is given by coordinate: latitude and longitude.**movePoint** allows a custom icon (ex. *.png file) to be displayed and a tooltip.|The point will by displayed with an icon defined by **PointIcon** and will display a tooltip whose content is defined by **PointTooltip**|
 
-The blue print definitions of the classes used by the movePoint() method:
+ where:
 
-PointTooltip
+### PointTooltip
 
     public class PointTooltip
     {
-        public string? content { get; set; }        //accept html content
+        public string? content { get; set; }        //accept html content or JavaScript template literals without "`"
         public bool permanent { get; set; } = true;
         public double opacity { get; set; } = 0.9;
     }
 
-PointSymbol
+### PointSymbol
 
      public class PointSymbol
     {
@@ -335,7 +290,7 @@ PointSymbol
         public double fillOpacity { get; set; } = 1;
     }
     
-PointIcon
+### PointIcon
 
     public class PointIcon
     {
@@ -450,13 +405,24 @@ _latitude and longitude properties are Web Mercator coordinate values._
 
 _The value property can be string or object defined by customn Data Structure Class._
 
-#### Working with Points collection
+### Working with Points collection
+
+#### Upload points collection
+
+            if(realTimeMap !=null)
+                await realTimeMap.Geometric.Points.upload(points, true);
+
+where, the last parameter is newCollection:
+ - if it's missing, it means it's _false_. That is, the previous collection is kept;
+
+            if(realTimeMap !=null)
+                await realTimeMap.Geometric.Points.upload(points);
+
+ - if it's _true_, a new collection will be created;
+
+#### Add point(s) to collection
 
 The class provides the following methods:
-
-- Upload stream points
-
-      Geometric.Points.upload(StreamPoint[] points, bool newCollection = false);
 
 - Add single points
 
@@ -476,27 +442,54 @@ or
 
 > Default value for **changeExtentWhenAddPoints** is _true_.
  
-- Delete stream points 
+ #### Delete point(s) from collection
 
-      //delete all points from Geometric.Points collection
-      Geometric.Points.delete(); 
-      
-      //delete point, from Geometric.Points collection, with specified id (guid)
-      Geometric.Points.delete(string id); 
+Delete all points from Geometric.Points:
 
-      //delete points, from Geometric.Points collection, with speciefied ids (guids)
-      Geometric.Points.delete(string[] ids); 
-      
+        if(realTimeMap!=null)
+            await realTimeMap.Geometric.Points.delete(); //delete all points from Geometric.Points
 
- - Move single point
- 
-        //move single point from Geometric.Points collection
-        Geometric.Points.moveTo(StreamPoint point); 
+Delete single points from Geometric.Points:
 
- - Move more stream points
+        if(realTimeMap!=null)
+            await realTimeMap.Geometric.Points.delete("15366d7f-0689-4b8e-a2ee-29e5cb27f76e"); //delete point by guid
 
-        //move one ore more ponts from Geometric.Points collection
-        Geometric.Points.moveTo(StreamPoint[] points); 
+Delete multiple points from Geometric.Points:
+
+        string[] ids = new string[2] {  "15366d7f-0689-4b8e-a2ee-28e5cb22f26e",
+                                        "46246d6f-0684-4b8e-a2ee-26e2cb28f86f" };
+        if(realTimeMap!=null)
+            await realTimeMap.Geometric.Points.delete(ids); //delete points by guid
+
+
+#### Moving point(s) on the map
+
+Moving single point from Geometric.Points
+
+        var point = new RealTimeMap.StreamPoint()
+            {
+                latitude = 44.4504845,
+                longitude = 26.1128922,
+                guid = Guid.Parse("15366d7f-0689-4b8e-a2ee-29e5cb27f76e") //existing guide in the Geometric.Points collection 
+            };
+        if (realTimeMap != null)
+            await realTimeMap.Geometric.Points.moveTo(point);
+
+_during the move you cannot change the attributes (type, value, timestamp)_
+
+Moving multiple points from Geometric.Points
+
+        var point = new RealTimeMap.StreamPoint()
+            {
+                latitude = 44.4504845,
+                longitude = 26.1128922,
+                guid = Guid.Parse("15366d7f-0689-4b8e-a2ee-29e5cb27f76e") //existing guide in the Geometric.Points collection
+            };
+
+        if (realTimeMap != null)
+            await realTimeMap.Geometric.Points.moveTo(points.ToArray());
+
+_during the move you cannot change the attributes (type, value, timestamp). A warning will appear in the console_
 
 The **changeExtentWhenMovingPoints** property of the Geometric.Points class allows changing or not the current view of the map at the same time as moving the points:
 
@@ -508,6 +501,8 @@ or
  
 > Default value for **changeExtentWhenAddPoints** is _true_. 
  
+ #### Getting points from the RealTimeMap
+
 - Get all stream points
 
         //return List<StreamPoint> from Geometric.Points
@@ -518,17 +513,23 @@ or
         //return IEnumerable<StreamPoint> from Geometric.Points
         Geometric.Points.getItems(item=>item.timestamp == DateTime.Now); 
 
-### Change appearance of the points collection (Points class)
 
-To change the appearance of all points you can use:
+[Working with Geometric.Points collection - code example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20Geometric.Points%20collection)
 
-    realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointSymbol()
-    {
-        color = "green",
-        fillColor = "green",
-        fillOpacity = 0.5,
-        radius = 10
-    };
+
+### Appearance of **StreamPoint** collection
+
+The Appearance of the points displayed in **RealTimeMap**, refers to:
+
+| **Appearance type**         | **What it is?**                                                   |
+| ---------------------------------- | ---------------------------------------------------------------- |
+|  [rendering](#appearance-render-configuring-display-symbol)     | configuring _display symbol_ of **StreamPoint** collection in the **RealTimeMap**    |
+|  [zoom levels](#appearance-zoom-levels-configuring-zoom-levels-between-are-displayed)  | _min. and max. levels_ between which **StreamPoint** collection are displayed on the map    |
+|  [tooltips](#appearance-tooltips-configuring-streampoint-tooltip)  | _text info_ displayed on the **StreamPoint**   |
+
+
+ #### Appearance render - configuring display symbol 
+
 
 Change appearance of all points from points collection
 
@@ -540,6 +541,17 @@ Change appearance of all points from points collection
                                                                                                         weight = 4, 
                                                                                                         fillOpacity = 0.68 
                                                                                                };
+
+
+...or much more simple:
+
+    realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointSymbol()
+    {
+        color = "green",
+        fillColor = "green",
+        fillOpacity = 0.5,
+        radius = 10
+    };
 
 You can use predicate of Appearance method to filter points
 
@@ -564,61 +576,18 @@ The appearance of the points is preserved in the map view. To reset the stored a
 
 [Working with Geometric.Points Appearance](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20Geometric.Points%20Appearance)
 
+#### _Configuring points Appearance render based on custom attributes_
 
- - change the appearance of all points from collection
+The value property of the **StreamPoint** object allows to use custom attributes. These custom attributes can be used for various purposes.
+The Appearance of the points in the map can be configured based on the custom attributes defined on the StreamPoint value property:
 
-         Geometric.Points.Appearance(item=>true).pattern = new PointSymbol(){ 
-                                                                                radius = 18, 
-                                                                                color = "#28ffff", 
-                                                                                opacity = 0.68, 
-                                                                                fillColor = "blue", 
-                                                                                weight = 2, 
-                                                                                fillOpacity = 0.68 
-                                                                             }
-                                                                                             
-  or more simply
+[Appearance render of points based on custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Appearance%20and%20custom%20attr)
 
-         Geometric.Points.Appearance().pattern = new PointSymbol(){ 
-                                                                    radius = 18, 
-                                                                    color = "#28ffff", 
-                                                                    opacity = 0.68, 
-                                                                    fillColor = "blue", 
-                                                                    weight = 2, 
-                                                                    fillOpacity = 0.68 
-                                                                   }
-
-The appearance of the points on the map is stored in the map view. 
-Resetting the storage is done using the reset parameter of the Appearance() method:
-
-         Geometric.Points.Appearance(item=>true, true).pattern = new PointSymbol(){ 
-                                                                                radius = 18, 
-                                                                                color = "#28ffff", 
-                                                                                opacity = 0.68, 
-                                                                                fillColor = "blue", 
-                                                                                weight = 2, 
-                                                                                fillOpacity = 0.68 
-                                                                             }
+[...more about Appearance render](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/more%20about%20Appearance/README.md)
 
 
- - change the appearance of some of the points from collection
 
-        Geometric.Points.Appearance(item=>item.type == "type 1").pattern = new PointSymbol(){ 
-                                                                                                radius = 18, 
-                                                                                                color = "#28ffff", 
-                                                                                                opacity = 0.68, 
-                                                                                                fillColor = "blue", 
-                                                                                                weight = 2, 
-                                                                                                fillOpacity = 0.68 
-                                                                                             }
-
-
-To simplify the written code, a new form of the Appearance() method has been added that restricts the selection to the type of StreamPoint points. This method is AppearanceOnType() and the predicate of this method is limited to the type attribute of points:
-
-           realTimeMap.Geometric.Points.AppearanceOnType(item=>item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
-            {
-                radius = 6,
-                fillColor = "green"
-            };
+#### Appearance zoom levels - configuring zoom levels between are displayed
 
 In addition, the **pattern** property of the **AppearanceOnType()** method accepts the configuration of the scales (min, max) between which the points on the map are displayed:
 
@@ -629,6 +598,62 @@ In addition, the **pattern** property of the **AppearanceOnType()** method accep
             };
 
 [AppearanceOnType example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20AppearanceOnType)
+
+#### Appearance tooltips - configuring StreamPoint tooltip
+
+Tooltips can be associated with StreamPoint collection displayed on the map (map items). Tooltips can be configured using both **AppearanceOnType()** and **Appearance()** methodes and the **pattern** property:
+The definition of the tooltip is done using the class **PointTooltip**:
+
+Using AppearanceOnType() method:
+
+    realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention vehicle").pattern = new RealTimeMap.PointTooltip()
+        {
+            content = "<h6>${value}</h6>${type}</br>${guid}",
+            opacity = 0.8,
+            permanent = true
+        };
+
+or using Appearance() method:
+
+    realTimeMap.Geometric.Points.Appearance(item => item.value == "B 42 DCI").pattern = new RealTimeMap.PointTooltip()
+        {
+            content = "<h6>${value}</h6>${type}</br>${guid}",
+            opacity = 0.8,
+            permanent = false
+        };
+
+where:
+
+1. **content** - can be a string, html components or JavaScript string template without "`" (without the intended JavaScript string template character);
+   - **value** is current StreamPoint value property;
+   - **type** is current StreamPoint type property;
+   - **guid** is current StreamPoint guid property;
+1. **opacity** - the opacity of the tooltip displayed in the map;
+1. **pemanent** - true - the display is permanent, false - the display is done when the mouse passes over the point;
+
+Also, the Appearance() and AppearanceOnType() methods can be used without predicate conditions:
+
+For example:
+
+    realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointTooltip()
+        {
+            content = "<h6>${value}</h6>${type}</br>${guid}",
+            opacity = 0.8,
+            permanent = false
+        };
+
+in this case, the tooltips will be displayed for all elements in the map.
+
+
+
+#### _Configuring tooltips based on custom attributes_
+
+The value property of the **StreamPoint** object allows to use custom attributes. These custom attributes can be used for various purposes.
+The pattern property allows the use of _custom attributes_ defined for **StreamPoint** to configuring RealTimeMap items tooltips. For more details, you can access the following examples:
+
+[Configuring StreamPoint Tooltips with custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/RTM%20Points%20Tooltips/README.md)
+
+[Configuring StreamPoint Tooltips with hierarchical custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20tooltip%20hierarchical%20attr#readme)
 
 
 ## Code Example
@@ -680,98 +705,10 @@ _If the timestamp is missing, LeafletForBlazor will assign the current date_
 _This collection has a static behavior._
 
 
-##### Upload points collection
 
-            if(realTimeMap !=null)
-                await realTimeMap.Geometric.Points.upload(points, true);
+# Geometric class for displaying different static shapes
 
-where, the last parameter is newCollection:
- - if it's missing, it means it's _false_. That is, the previous collection is kept;
-
-            if(realTimeMap !=null)
-                await realTimeMap.Geometric.Points.upload(points);
-
- - if it's _true_, a new collection will be created;
-
-##### Add point(s) to Geometric.Points
-
-Add single point to Geometric.Points
-
-        if (realTimeMap!=null)
-            await realTimeMap.Geometric.Points.add(point);
-
-Add more points to Geometric.Points
-
-       if (realTimeMap!=null)
-                await realTimeMap.Geometric.Points.add(points.ToArray());
-
-
-##### Delete
-
-Delete all points from Geometric.Points:
-
-        if(realTimeMap!=null)
-            await realTimeMap.Geometric.Points.delete(); //delete all points from Geometric.Points
-
-Delete single points from Geometric.Points:
-
-        if(realTimeMap!=null)
-            await realTimeMap.Geometric.Points.delete("15366d7f-0689-4b8e-a2ee-29e5cb27f76e"); //delete point by guid
-
-Delete multiple points from Geometric.Points:
-
-        string[] ids = new string[2] {  "15366d7f-0689-4b8e-a2ee-28e5cb22f26e",
-                                        "46246d6f-0684-4b8e-a2ee-26e2cb28f86f" };
-        if(realTimeMap!=null)
-            await realTimeMap.Geometric.Points.delete(ids); //delete points by guid
-
-##### Moving points on the map
-
-Moving single point from Geometric.Points
-
-        var point = new RealTimeMap.StreamPoint()
-            {
-                latitude = 44.4504845,
-                longitude = 26.1128922,
-                type = "type1",
-                value = "type 1",
-                guid = Guid.Parse("15366d7f-0689-4b8e-a2ee-29e5cb27f76e") //existing guide in the Geometric.Points collection 
-            };
-        if (realTimeMap != null)
-            await realTimeMap.Geometric.Points.moveTo(point);
-
-_during the move you cannot change the attributes (type, value, timestamp)_
-
-Moving multiple points from Geometric.Points
-
-        var point = new RealTimeMap.StreamPoint()
-            {
-                latitude = 44.4504845,
-                longitude = 26.1128922,
-                type = "type1",
-                value = "type 1",
-                guid = Guid.Parse("15366d7f-0689-4b8e-a2ee-29e5cb27f76e") //existing guide in the Geometric.Points collection
-            };
-        var points = new List<RealTimeMap.StreamPoint>();
-        points.Add(point);
-        if (realTimeMap != null)
-            await realTimeMap.Geometric.Points.moveTo(points.ToArray());
-
-_during the move you cannot change the attributes (type, value, timestamp). A warning will appear in the console_
-
-[Working with Geometric.Points collection - code example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RealTimeMap%20Geometric.Points%20collection)
-
-## Configuring points Appearance based on custom attributes
-
-The value property of the **StreamPoint** object allows to use custom attributes. These custom attributes can be used for various purposes.
-The Appearance of the points in the map can be configured based on the custom attributes defined on the StreamPoint value property:
-
-[Appearance of points based on custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Appearance%20and%20custom%20attr)
-
-
-## Geometric class for displaying different static shapes
-
-### DisplayPolygonsFromArray
+## DisplayPolygonsFromArray
 
 **DisplayPolygonsFromArray** is a new class that allows displaying polygons starting from point arrays.
 This class allows the display of simple polygons or polygons with several rings.
@@ -822,7 +759,7 @@ Also, the add() method allows customizing the symbolization of the displayed pol
 
  >In the future, this class will be used only for displaying polygons.
 
- ### DisplayPointsFromArray
+ ## DisplayPointsFromArray
 
 The **DisplayPointsFromArray** class hosted by the Geometric class allows displaying static points using coordinate arrays (new double[2]{}) as input data:
 
@@ -867,7 +804,7 @@ The **addLabel()** method on the **DisplayPointsFromArray** class will allow you
 
 The **labelStyle** property allows you to formating label displayed in the map.
 
-#### DisplayPolylinesFromArray
+## DisplayPolylinesFromArray
 
 The **DisplayPolylinesFromArray** class hosted by the Geometric class, allows you to display measurement lines with addMeasure() method:
 
@@ -883,6 +820,61 @@ The **DisplayPolylinesFromArray** class hosted by the Geometric class, allows yo
                                                             });
 
 
+
+
+
+
+# Geometric.Computations class
+
+The **Geometric.Computations** class will provide a set of functions various geometric calculations.
+
+## Distance calculation
+
+Computing distance distance between two points:
+
+- working with double values:
+
+      Geometric.Computations.distance(double latitudeOfPoint1, double longitudeOfPoint1, double latitudeOfPoint2, double longitudeOfPoint2, UnitOfMeasure unitOfMeasure);
+
+- working with double array:
+
+      Geometric.Computations.distance(double[2] coordinate1, double[2] coordinate2, UnitOfMeasure unitOfMeasure);
+
+- working with StreamPoint(s):
+
+      Geometric.Computations.distance(StreamPoint point1, StreamPoint point2, UnitOfMeasure unitOfMeasure);
+    
+Code example:
+    
+    Console.WriteLine(realTimeMap.Geometric.Computations.distance(pct1, pct6, RealTimeMap.UnitOfMeasure.meters))
+
+### Searching points on click, distance() condition example
+
+In order to be able to find the points in the neighborhood of a point (click on the map), you can use Geometric.Points.getItems() with predicate distance condition
+
+Blazor page:
+
+    <RealTimeMap height="620px" width="820px" OnClickMap="onClickingMap"></RealTimeMap>
+
+Code block:
+
+    @code{
+         public  void onClickingMap(RealTimeMap.ClicksMapArgs value)
+            {
+                List<RealTimeMap.StreamPoint> findedPoints = new List<RealTimeMap.StreamPoint>();
+                    findedPoints = (value.sender as RealTimeMap).Geometric.Points.getItems(point => (value.sender as RealTimeMap).Geometric.Computations.distance(
+                        point, 
+                        new RealTimeMap.StreamPoint() { latitude = value.location.latitude, longitude = value.location.longitude }, 
+                        RealTimeMap.UnitOfMeasure.meters
+                        ) <= 10
+                    );
+            }
+        }
+
+
+
+
+------------
 
                                                             
 # Tracking and Monitoring points position
