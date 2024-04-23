@@ -68,3 +68,70 @@ In this code example, the appearance of the displayed points was made based on t
 
 In this example, it will be shown that updating a custom attribute will have the effect of changing the render symbology in the map.
 
+## The data used in the code example
+
+The **value** property of the **StreamPoint** object will be extended with the following data structure:
+
+        public class Attributes
+        {
+            public string? registrationNumber { get; set; }
+            public string? vehicleType { get; set; }
+            public string? description { get; set; }
+        }
+
+A **StreamPoint** from the collection will have the following values, as an example:
+
+         var streamPoint = new RealTimeMap.StreamPoint()
+         {
+                guid = Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb27f86f"),
+                latitude=43.972801938829356,
+                longitude = 25.326177627532893,
+                type = "intervention crew",
+                value = new Attributes() { 
+                                          registrationNumber = "B 24 AAB", 
+                                          vehicleType = "bus", 
+                                          description = "without description" 
+                                          }
+         }
+
+_**latitude** and **longitude** properties are Web Mercator coordinate values._
+
+_The **value** property supports objects defined by custom classes.In this example, the **value** property is used to define custom attributes from **StreamPoint**_
+
+_If the **timestamp** is missing, LeafletForBlazor will assign the current date_
+
+_This collection has a static behavior._
+
+## Configuring Appearance on custom attributes
+
+In this code example, the appearance of the displayed points was made based on the custom **vechicleType** attribute. The configuration of the appearance of the rendering will be done on the OnAfterMapLoaded event of the RealTimeMap.
+
+
+           public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+           {
+               //default render symbology. This render symbology will NOT change!!
+               realTimeMap!.Geometric.Points.Appearance(item =>  (item.value as Attributes ?? new Attributes()).vehicleType == "bus").pattern = new RealTimeMap.PointSymbol()
+               {
+                   radius = 10,
+                   fillColor = "red",
+                   fillOpacity = 0.4
+               };
+          }
+
+## Update custom attribute
+
+on the onClick event of a button, the custom vehicleType attribute will be updated:
+
+
+            public async Task onUpdate()
+            {//here we will change the attributes. vehicleType will become "car"
+                var pointAttributes = new RealTimeMap.StreamPoint()
+                {
+                        guid = Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb27f86f"),
+                        type = "intervention crew",
+                        value = new Attributes() { registrationNumber = "B 24 AAB", vehicleType = "car" }
+                };
+               await realTimeMap!.Geometric.Points.update(pointAttributes);
+            }
+
+
