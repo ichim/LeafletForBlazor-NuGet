@@ -64,3 +64,7 @@ In this code example, the appearance of the displayed points was made based on t
                     };
 
 
+# Appearance and update() custom attribute
+
+In this example, it will be shown that updating a custom attribute will have the effect of changing the render symbology in the map.
+
