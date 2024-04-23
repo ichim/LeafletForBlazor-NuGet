@@ -1881,28 +1881,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lichi\\.nuget\\packages\\": {},
-    "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\~~INSTRUIRE\\C#\\Blazor\\(NuGet dev)\\LeafletForBlazor\\github\\Forcing File Names - Layers Control\\Forcing File Names - Layers Control\\Forcing File Names - Layers Control.csproj",
+      "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Forcing File Names - Layers Control\\Forcing File Names - Layers Control\\Forcing File Names - Layers Control.csproj",
       "projectName": "Forcing File Names - Layers Control",
-      "projectPath": "D:\\~~INSTRUIRE\\C#\\Blazor\\(NuGet dev)\\LeafletForBlazor\\github\\Forcing File Names - Layers Control\\Forcing File Names - Layers Control\\Forcing File Names - Layers Control.csproj",
-      "packagesPath": "C:\\Users\\lichi\\.nuget\\packages\\",
-      "outputPath": "D:\\~~INSTRUIRE\\C#\\Blazor\\(NuGet dev)\\LeafletForBlazor\\github\\Forcing File Names - Layers Control\\Forcing File Names - Layers Control\\obj\\",
+      "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Forcing File Names - Layers Control\\Forcing File Names - Layers Control\\Forcing File Names - Layers Control.csproj",
+      "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
+      "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Forcing File Names - Layers Control\\Forcing File Names - Layers Control\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lichi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LaurențiuIchim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1956,7 +1953,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[7.0.0, 7.0.0]"
+            "version": "[7.0.12, 7.0.12]"
           }
         ],
         "frameworkReferences": {
@@ -1964,7 +1961,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

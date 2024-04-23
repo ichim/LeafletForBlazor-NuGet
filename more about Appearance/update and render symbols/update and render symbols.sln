@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "update and render symbols", "update and render symbols\update and render symbols.csproj", "{BBAE983B-229F-4950-AA26-D9B5E7F8DC0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBAE983B-229F-4950-AA26-D9B5E7F8DC0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBAE983B-229F-4950-AA26-D9B5E7F8DC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBAE983B-229F-4950-AA26-D9B5E7F8DC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBAE983B-229F-4950-AA26-D9B5E7F8DC0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CDC960D-9CCA-470E-8145-88CF61102639}
+	EndGlobalSection
+EndGlobal

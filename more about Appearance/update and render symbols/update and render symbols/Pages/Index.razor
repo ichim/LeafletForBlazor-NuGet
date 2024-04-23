@@ -1,0 +1,44 @@
+﻿@page "/"
+@using update.data;
+
+<button @onclick="onUpdate">Delete Polygon</button>
+<RealTimeMap @ref="realTimeMap" height="620px" width="820px" OnAfterMapLoaded="onAfterMapLoaded"></RealTimeMap>
+
+@code {
+    RealTimeMap? realTimeMap;
+    public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        //default render symbology. This render symbology will NOT change!!
+        realTimeMap!.Geometric.Points.Appearance(item =>  (item.value as Attributes ?? new Attributes()).vehicleType == "bus").pattern = new RealTimeMap.PointSymbol()
+        {
+            radius = 10,
+            fillColor = "red",
+            fillOpacity = 0.4
+        };
+        realTimeMap!.Geometric.Points.Appearance(item => (item.value as Attributes ?? new Attributes()).vehicleType == "special car").pattern = new RealTimeMap.PointSymbol()
+            {
+                radius = 10,
+                fillColor = "blue",
+                fillOpacity = 0.4
+            };
+        //this attribute (vehicletType) does not yet exist in the collection of points
+        realTimeMap!.Geometric.Points.Appearance(item => (item.value as Attributes ?? new Attributes()).vehicleType == "car").pattern = new RealTimeMap.PointSymbol()
+            {
+                radius = 10,
+                fillColor = "green",
+                fillOpacity = 0.4
+            };
+
+        await realTimeMap!.Geometric.Points.upload(new InputData().input);
+    }
+    public async Task onUpdate()
+    {//here we will change the attributes. vehicleType will become "car"
+        var pointAttributes = new RealTimeMap.StreamPoint()
+        {
+                guid = Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb27f86f"),
+                type = "intervention crew",
+                value = new Attributes() { registrationNumber = "B 24 AAB", vehicleType = "car" }
+        };
+       await realTimeMap!.Geometric.Points.update(pointAttributes);
+    }
+   }
