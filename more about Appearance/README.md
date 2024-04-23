@@ -135,3 +135,5 @@ on the onClick event of a button, the custom vehicleType attribute will be updat
             }
 
 The rendering symbol of this StreamPoint will be made in accordance with the Appearance configured when loading the map (onAfterMapLoaded event).
+
+
