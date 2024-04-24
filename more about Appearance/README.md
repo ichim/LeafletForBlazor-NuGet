@@ -110,10 +110,10 @@ In this code example, the appearance of the displayed points was made based on t
            public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
            {
                //default render symbology. This render symbology will NOT change!!
-               realTimeMap!.Geometric.Points.Appearance(item =>  (item.value as Attributes ?? new Attributes()).vehicleType == "bus").pattern = new RealTimeMap.PointSymbol()
+               realTimeMap!.Geometric.Points.Appearance(item =>  (item.value as Attributes ?? new Attributes()).vehicleType == "car").pattern = new RealTimeMap.PointSymbol()
                {
                    radius = 10,
-                   fillColor = "red",
+                   fillColor = "green",
                    fillOpacity = 0.4
                };
           }
@@ -135,5 +135,8 @@ on the onClick event of a button, the custom vehicleType attribute will be updat
             }
 
 The rendering symbol of this StreamPoint will be made in accordance with the Appearance configured when loading the map (onAfterMapLoaded event).
+
+![update@appearance@render](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/581ec7bc-4f87-4082-9bc8-56af7f8cc0a2)
+
 
 
