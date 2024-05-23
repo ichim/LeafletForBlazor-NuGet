@@ -55,3 +55,10 @@ In order to create a GeoJSON array, it is necessary to define the classes:
 		public string? type { get; set; }
 		public PointGeometry? geometry { get; set; }   
 	}
+
+### GeoJSON array
+
+   	List<GeoJSONItem> inputPointArray = new();
+
+
+
