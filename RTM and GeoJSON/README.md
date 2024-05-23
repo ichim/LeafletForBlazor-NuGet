@@ -61,6 +61,8 @@ In order to create a GeoJSON array, it is necessary to define the classes:
    	List<GeoJSONItem> inputPointsList = new();
     	await args.sender.Geometric.DataFromGeoJSON.addObject(inputPointsList.ToArray());
 
+[Working with GeoJSON Array example and documentation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
+
 ### Example code
 
 #### Blazor page
