@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\RTM GeoJSON data object\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{13EC28A9-6C55-423E-99A1-4AA720F4E3D3}|RTM GeoJSON data object\\RTM GeoJSON data object.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\test\\rtm geojson data object\\rtm geojson data object\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13EC28A9-6C55-423E-99A1-4AA720F4E3D3}|RTM GeoJSON data object\\RTM GeoJSON data object.csproj|solutionrelative:rtm geojson data object\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13EC28A9-6C55-423E-99A1-4AA720F4E3D3}|RTM GeoJSON data object\\RTM GeoJSON data object.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\test\\rtm geojson data object\\rtm geojson data object\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13EC28A9-6C55-423E-99A1-4AA720F4E3D3}|RTM GeoJSON data object\\RTM GeoJSON data object.csproj|solutionrelative:rtm geojson data object\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\RTM GeoJSON data object\\RTM GeoJSON data object\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "RTM GeoJSON data object\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\RTM GeoJSON data object\\RTM GeoJSON data object\\Pages\\Home.razor",
+              "RelativeToolTip": "RTM GeoJSON data object\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T05:03:01.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\RTM GeoJSON data object\\RTM GeoJSON data object\\_Imports.razor",
+              "RelativeDocumentMoniker": "RTM GeoJSON data object\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\RTM GeoJSON data object\\RTM GeoJSON data object\\_Imports.razor",
+              "RelativeToolTip": "RTM GeoJSON data object\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T05:01:52.203Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
