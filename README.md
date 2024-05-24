@@ -17,48 +17,45 @@ You can find more information:
 
 # What's New
 
->bug [#28](https://github.com/ichim/LeafletForBlazor-NuGet/issues/28) reported by [groehm](https://github.com/groehm)
+## **DataFromGeoJSON** class
 
-[realTimeMap.Geometric.DisplayPolygonsFromArray Delete Method missing](https://github.com/ichim/LeafletForBlazor-NuGet/issues)
+It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats.
+
+Two formats are used, both complying with: [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946):
+
+1. The first format is an array that exactly respects the format [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
+
+[Working with GeoJSON Array - documentation and example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
+
+1. And another JSON format, which for the "data" property we have the same array [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946). In addition, this format accepts customization of symbolization, tooltips, etc 
 
 
-## Geometric.Points class and update() method
-
-The **update()** method on Geometric.Points allows updating attributes (without location):
-- **type** property;
-- **timestamp** property;
-- **value** property;
-
->The **value** property of StreamPoint allows you to set string, number or custom object.
-
-Code example:
-
-       //StreamPoint to be updated
-       var point = new RealTimeMap.StreamPoint()
-        {
-                guid = Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb27f86f"),  //existing guide
-                type = "intervention crew 2",                               //new type
-                value = new Attributes() { 
-                                            registrationNumber = "B 28 AAB", //new registration number 
-                                            vehicleType = "5 seats"          //new vechicle type
-                                        }
-        };
-
-        if (realTimeMap != null)
-        {
-            //update properties value (attributes)
-            await realTimeMap.Geometric.Points.update(point);
-            //check the update
-            var result = realTimeMap.Geometric.Points.getItems(item => item.guid == Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb27f86f"));
+        <RealTimeMap OnAfterMapLoaded="@OnAfterMapLoaded" width="460px" height="462px" />
+        @code{
+            public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+             {
+                await args.sender.Geometric.DataFromGeoJSON.addObject(geojsonObject);
+             }
         }
 
-Once the **StreamPoint** properties have been updated, the **Appearance** and/or **AppearanceOnType** will also updated:
+[Working with GeoJSON Object - documentation and example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Object)
 
-| **StreamPoint Appearance type** | **Description** |
-| :---- | :----- |
-|  [rendering](#appearance-render-configuring-display-symbol)     | _symbol_ of **StreamPoint** collection in the **RealTimeMap**    |
-|  [zoom levels](#appearance-zoom-levels-configuring-zoom-levels-between-are-displayed)  | _min. and max. levels_ between which **StreamPoint** collection are displayed on the map. Working only with **AppearanceOnType()** method    |
-|  [tooltips](#appearance-tooltips-configuring-streampoint-tooltip)  | _text info_ displayed on the **StreamPoint**   |
+For more information:
+
+[RTM and GeoJSON documentation and example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
+
+## OnZoomLevelEndChange
+
+> **OnZoomLevelEndChange (MapZoomEventArgs value)** event is triggered after the map has been zoom change ended. 
+
+### **OnZoomLevelEndChange** event arguments
+
+1. **value._sender_**: is the reference to the **RealTimeMap** control
+1. **value._zoomLevel_**: is the value of the zoom level of the loaded **RealTimeMap**
+1. **value._centerOfView_**: is the location of the center of the current view in coordinates (latitude, longitude)
+
+
+
 
 -------------------------
 
@@ -127,7 +124,7 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
 | [**OnDoubleClickMap**](#ondoubleclickmap) | event is triggered after the user double clicks (left) on the map. This control will return the **location** of the double clicked point|
 | [**OnMouseDownMap**](#onmousedownmap) | event is triggered when the left button is pressed (contact open). This control will return the **location** of the clicked down (left pressed) point|
 | [**OnMouseUpMap**](#onmouseupmap) | event is triggered after the left button is released (contact close). This control will return the **location** of the clicked up (left released) point|
- 
+| [**OnZoomLevelEndChange**](#onzoomlevelendchange) | event is triggered after the map has been zoom change ended|
 
 
 ### OnAfterMapLoaded
@@ -248,6 +245,29 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
                     Console.WriteLine(value.location.longitude);
                 }
             }
+
+### OnZoomLevelEndChange
+
+> **OnZoomLevelEndChange (MapZoomEventArgs value)** event is triggered after the map has been zoom change ended. 
+
+**OnZoomLevelEndChange** event arguments
+
+1. **value._sender_**: is the reference to the **RealTimeMap** control
+1. **value._zoomLevel_**: is the value of the zoom level of the loaded **RealTimeMap**
+1. **value._centerOfView_**: is the location of the center of the current view in coordinates (latitude, longitude)
+
+#### Example code
+
+
+    //Blazor Page
+    <RealTimeMap  OnZoomLevelEndChange="@OnZoomLevel" width="460px" height="462px" />
+    //Code block
+    @code{
+        public async Task OnZoomLevel(RealTimeMap.MapZoomEventArgs args)
+        {
+            Console.WriteLine(args.zoomLevel);
+        }
+    }
 
 ## Working with a single point (ex. my position)
 
@@ -501,6 +521,47 @@ or
  
 > Default value for **changeExtentWhenAddPoints** is _true_. 
  
+
+ #### update() method
+
+The **update()** method on Geometric.Points allows updating attributes (without location):
+- **type** property;
+- **timestamp** property;
+- **value** property;
+
+>The **value** property of StreamPoint allows you to set string, number or custom object.
+
+Code example:
+
+       //StreamPoint to be updated
+       var point = new RealTimeMap.StreamPoint()
+        {
+                guid = Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb27f86f"),  //existing guide
+                type = "intervention crew 2",                               //new type
+                value = new Attributes() { 
+                                            registrationNumber = "B 28 AAB", //new registration number 
+                                            vehicleType = "5 seats"          //new vechicle type
+                                        }
+        };
+
+        if (realTimeMap != null)
+        {
+            //update properties value (attributes)
+            await realTimeMap.Geometric.Points.update(point);
+            //check the update
+            var result = realTimeMap.Geometric.Points.getItems(item => item.guid == Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb27f86f"));
+        }
+
+Once the **StreamPoint** properties have been updated, the **Appearance** and/or **AppearanceOnType** will also updated:
+
+| **StreamPoint Appearance type** | **Description** |
+| :---- | :----- |
+|  [rendering](#appearance-render-configuring-display-symbol)     | _symbol_ of **StreamPoint** collection in the **RealTimeMap**    |
+|  [zoom levels](#appearance-zoom-levels-configuring-zoom-levels-between-are-displayed)  | _min. and max. levels_ between which **StreamPoint** collection are displayed on the map. Working only with **AppearanceOnType()** method    |
+|  [tooltips](#appearance-tooltips-configuring-streampoint-tooltip)  | _text info_ displayed on the **StreamPoint**   |
+
+
+
  #### Getting points from the RealTimeMap
 
 - Get all stream points
