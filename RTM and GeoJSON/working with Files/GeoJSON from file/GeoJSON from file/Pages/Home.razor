@@ -1,0 +1,28 @@
+﻿@page "/"
+
+<RealTimeMap width="620px" height="620px" Parameters = "@parameters" OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+@code{
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 44.44643179834759,
+                longitude = 26.096934450120933
+            },
+            zoom_level = 16
+
+        };
+    public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        var path = "http://localhost:5168/";
+
+        await args.sender.Geometric.DataFromGeoJSON.addFromFiles(new string[3]
+           {
+            $"{path}sample-data/polygonSymbol.json",
+            $"{path}sample-data/polylineSymbol.json",
+            $"{path}sample-data/pointIconTooltip.json"
+           }
+       );
+    }
+}

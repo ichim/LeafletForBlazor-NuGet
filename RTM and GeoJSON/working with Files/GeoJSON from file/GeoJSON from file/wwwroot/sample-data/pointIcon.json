@@ -1,0 +1,35 @@
+{
+  "name": "Points of Interes",
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 44.44695351120105, 26.096702416100246 ]
+      },
+      "properties": {
+        "name": "Piata Romana"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 44.444433971415684, 26.093844322972007 ]
+      },
+      "properties": {
+        "name": "Biserica Amzei"
+      }
+    }
+  ],
+  "symbology": {
+    "iconUrl": "http://localhost:5141/favicon.png",
+    "iconSize": [ 20, 20 ],
+    "iconAnchor": [10,10],
+    "visibilityZoomLevels": {
+      "minZoomLevel": 12,
+      "maxZoomLevel": 16
+    }
+  }
+
+}
