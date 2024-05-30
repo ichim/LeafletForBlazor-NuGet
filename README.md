@@ -17,45 +17,25 @@ You can find more information:
 
 # What's New
 
-## **DataFromGeoJSON** class
+The **DataFromGeoJSON** class provides new functionalities:
 
-It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats.
+Geometries (shapes - points, polylines, polygons) can be displayed in the map only between certain scales. Their visibility can be limited between a minimum scale and a maximum scale.
 
-Two formats are used, both complying with: [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946):
+                data = polygonsList.ToArray(),
+                name = "Polygon",
+                symbology = new PolygonSymbol()
+                {
+                    color = "blue",
+                    opacity = 0.6,
+                    weight = 8,
+                    visibilityZoomLevels = new VisibilityZoomLevel()
+                    {
+                        minZoomLevel = 12,
+                        maxZoomLevel = 16
+                    }
+                },
 
-1. The first format is an array that exactly respects the format [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
-
-[Working with GeoJSON Array - documentation and example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
-
-1. And another JSON format, which for the "data" property we have the same array [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946). In addition, this format accepts customization of symbolization, tooltips, etc 
-
-
-        <RealTimeMap OnAfterMapLoaded="@OnAfterMapLoaded" width="460px" height="462px" />
-        @code{
-            public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
-             {
-                await args.sender.Geometric.DataFromGeoJSON.addObject(geojsonObject);
-             }
-        }
-
-[Working with GeoJSON Object - documentation and example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Object)
-
-For more information:
-
-[RTM and GeoJSON documentation and example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
-
-## OnZoomLevelEndChange
-
-> **OnZoomLevelEndChange (MapZoomEventArgs value)** event is triggered after the map has been zoom change ended. 
-
-### **OnZoomLevelEndChange** event arguments
-
-1. **value._sender_**: is the reference to the **RealTimeMap** control
-1. **value._zoomLevel_**: is the value of the zoom level of the loaded **RealTimeMap**
-1. **value._centerOfView_**: is the location of the center of the current view in coordinates (latitude, longitude)
-
-
-
+Where, the **data** property accepts an array of GeoJSON geometries.
 
 -------------------------
 
@@ -769,7 +749,35 @@ _This collection has a static behavior._
 
 # Geometric class for displaying different static shapes
 
-## DisplayPolygonsFromArray
+## **DataFromGeoJSON** class
+
+It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats.
+
+Two formats are used, both complying with: [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946):
+
+1. The first format is an array that exactly respects the format [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
+
+[Working with GeoJSON Array - documentation and example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
+
+1. And another JSON format, which for the "data" property we have the same array [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946). In addition, this format accepts customization of symbolization, tooltips, etc 
+
+
+        <RealTimeMap OnAfterMapLoaded="@OnAfterMapLoaded" width="460px" height="462px" />
+        @code{
+            public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+             {
+                await args.sender.Geometric.DataFromGeoJSON.addObject(geojsonObject);
+             }
+        }
+
+[Working with GeoJSON Object - documentation and example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Object)
+
+For more information:
+
+[RTM and GeoJSON documentation and example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
+
+
+## **DisplayPolygonsFromArray** class
 
 **DisplayPolygonsFromArray** is a new class that allows displaying polygons starting from point arrays.
 This class allows the display of simple polygons or polygons with several rings.

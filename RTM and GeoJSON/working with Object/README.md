@@ -26,3 +26,6 @@ Two formats are used, both complying with: [GeoJSON specification (RFC 7946)](ht
 				await args.sender.Geometric.DataFromGeoJSON.addObject(geojsonObject);
 			 }
 		}
+
+
+![GeoJSON@tooltips06](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/58d443ae-8979-4a9c-a59a-aaaf92c5592a)
