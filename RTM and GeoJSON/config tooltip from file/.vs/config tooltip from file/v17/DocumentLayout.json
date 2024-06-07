@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A1917AE-118C-49B9-90A4-0A00F78E4201}|config tooltip from file\\config tooltip from file.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\test\\config tooltip from file\\config tooltip from file\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A1917AE-118C-49B9-90A4-0A00F78E4201}|config tooltip from file\\config tooltip from file.csproj|solutionrelative:config tooltip from file\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A1917AE-118C-49B9-90A4-0A00F78E4201}|config tooltip from file\\config tooltip from file.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\test\\config tooltip from file\\config tooltip from file\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A1917AE-118C-49B9-90A4-0A00F78E4201}|config tooltip from file\\config tooltip from file.csproj|solutionrelative:config tooltip from file\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "config tooltip from file\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\Pages\\Home.razor",
+              "RelativeToolTip": "config tooltip from file\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T09:17:05.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\_Imports.razor",
+              "RelativeDocumentMoniker": "config tooltip from file\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\_Imports.razor",
+              "RelativeToolTip": "config tooltip from file\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T09:16:10.904Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
