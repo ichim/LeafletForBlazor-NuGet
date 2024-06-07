@@ -17,25 +17,14 @@ You can find more information:
 
 # What's New
 
-The **DataFromGeoJSON** class provides new functionalities:
+This version will add the possibility of customizing the tooltips using the data stored at the level of geojson records (properties).
 
-Geometries (shapes - points, polylines, polygons) can be displayed in the map only between certain scales. Their visibility can be limited between a minimum scale and a maximum scale.
 
-                data = polygonsList.ToArray(),
-                name = "Polygon",
-                symbology = new PolygonSymbol()
-                {
-                    color = "blue",
-                    opacity = 0.6,
-                    weight = 8,
-                    visibilityZoomLevels = new VisibilityZoomLevel()
-                    {
-                        minZoomLevel = 12,
-                        maxZoomLevel = 16
-                    }
-                },
+![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
 
-Where, the **data** property accepts an array of GeoJSON geometries.
+
+
+[more about configuring tooltips and data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
 
 -------------------------
 
@@ -749,11 +738,19 @@ _This collection has a static behavior._
 
 # Geometric class for displaying different static shapes
 
-## **DataFromGeoJSON** class
+## Add GeoJSON data to RealTimeMap
 
-It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats.
+The **DataFromGeoJSON** class offers the possibility of adding data (GeoJSON format) to the RealTimeMap control.
 
-Two formats are used, both complying with: [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946):
+This class is hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats.
+
+Two formats are used, both complying with: [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946).
+
+### Add from object
+
+**DataFromGeoJSON** provides **addObject()** method:
+
+This method allows adding GeoJSON data programmatically, using custom classes (according to [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946))
 
 1. The first format is an array that exactly respects the format [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
 
@@ -775,6 +772,66 @@ Two formats are used, both complying with: [GeoJSON specification (RFC 7946)](ht
 For more information:
 
 [RTM and GeoJSON documentation and example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
+
+
+## Add from file(s)
+
+**DataFromGeoJSON** provides **addFromFiles()** method:
+
+       await args.sender.Geometric.DataFromGeoJSON.addFromFiles(new string[1] 
+            { 
+                "http://localhost:5141/sample-data/pointIconTooltip.json"
+            }
+        );
+
+
+[more about data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
+
+Both for objects added with **addObject()** and the content of files added with **addFromFiles()**, we have the following properties:
+
+1. for graphic (circleMarker) symbol:
+
+| Property | Type | Descriotion |
+|----|----|----|
+| radius | int | circle radius |
+| fillColor | string | fill color of circle |
+| fillOpacity | double | fill opacity of circle |
+| color | string | margin (line) color of cricle |
+| opacity | double | margin (line) opacity |
+| weight | int | margin (line) weight |
+
+
+_similar with leaflet documentation_
+
+
+2. for icon symbol:
+
+| Property | Type | Descriotion |
+|---|---|---|
+| iconUrl | string | url of image icon |
+| iconSize | int[2] | screen pixels of icon dimension |
+| iconAnchor | int[2] | screen pixels of icon anchor |
+| popupAnchor| int[2] | screen pixels of popup anchor |
+| shadowUrl| string | screen pixels of shadow icon anchor |
+| shadowSize| int[2] | screen pixels of shadow icon dimension |
+| shadowAnchor| int[2] | url of shadow icon |
+
+_similar with leaflet documentation_
+
+
+3. symbol for polygon shape:
+
+
+| Property | Type | Descriotion |
+|----|----|----|
+| fillColor | string | fill color of circle |
+| fillOpacity | double | fill opacity of circle |
+| color | string | margin (line) color of cricle |
+| opacity | double | margin (line) opacity |
+| weight | int | margin (line) weight |
+
+
+_similar with leaflet documentation_
 
 
 ## **DisplayPolygonsFromArray** class
