@@ -63,6 +63,34 @@ In order to create a GeoJSON array, it is necessary to define the classes:
 
 [Working with GeoJSON Array example and documentation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
 
+
+## Configuring Appearance from files
+
+GeoJSON data can be loaded from files hosted on the Internet (https protocol). Once with loading data, the programmer can configure the appearance, the visibility scales and the content of the tools.
+
+Blazor page:
+
+		<RealTimeMap OnAfterMapLoaded="@OnAfterMapLoaded"  width="1000px" height="620px" />
+
+Code block:
+
+		@code {
+		    string path = "http://localhost:5278/";
+		    
+		    public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+		    {
+		        await args.sender.Geometric.DataFromGeoJSON.addFromFiles(new string[2]
+		            {
+		                $"{path}sample-data/otherPolygonsAppearance.json",
+		                 $"{path}sample-data/pointIconTooltip.json"
+		            }
+		        );
+		
+		    }
+		}
+ 
+
+
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
 
 
