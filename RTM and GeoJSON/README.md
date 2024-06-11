@@ -126,6 +126,52 @@ Appearance can contain Leaflet specifications regarding marker icon, circleMarke
 		      "maxZoomLevel": 16
 		    }
 
+Leaflet documantation specifications:
+
+1. for graphic (circleMarker) symbol:
+
+| Property | Type | Descriotion |
+|----|----|----|
+| radius | int | circle radius |
+| fillColor | string | fill color of circle |
+| fillOpacity | double | fill opacity of circle |
+| color | string | margin (line) color of cricle |
+| opacity | double | margin (line) opacity |
+| weight | int | margin (line) weight |
+
+
+_similar with leaflet documentation_
+
+
+2. for icon symbol:
+
+| Property | Type | Descriotion |
+|---|---|---|
+| iconUrl | string | url of image icon |
+| iconSize | int[2] | screen pixels of icon dimension |
+| iconAnchor | int[2] | screen pixels of icon anchor |
+| popupAnchor| int[2] | screen pixels of popup anchor |
+| shadowUrl| string | screen pixels of shadow icon anchor |
+| shadowSize| int[2] | screen pixels of shadow icon dimension |
+| shadowAnchor| int[2] | url of shadow icon |
+
+_similar with leaflet documentation_
+
+
+3. symbol for polygon shape:
+
+
+| Property | Type | Descriotion |
+|----|----|----|
+| fillColor | string | fill color of circle |
+| fillOpacity | double | fill opacity of circle |
+| color | string | margin (line) color of cricle |
+| opacity | double | margin (line) opacity |
+| weight | int | margin (line) weight |
+
+
+_similar with leaflet documentation_
+
 
 Example of JSON format:
 
