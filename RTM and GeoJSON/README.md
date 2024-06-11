@@ -172,6 +172,7 @@ _similar with leaflet documentation_
 
 _similar with leaflet documentation_
 
+### JSON example
 
 Example of JSON format:
 
