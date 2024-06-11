@@ -119,7 +119,7 @@ In addition, RealTimeMap supports a JSON format that allows customizing the appe
 
 #### About appearance 
 
-Appearance can contain Leaflet specifications regarding Markers, CircleMarkers, etc. to which visibility can be added:
+Appearance can contain Leaflet specifications regarding marker icon, circleMarker symbol, polyline symbol, polygon symbol etc (Leaflet documentation). to which visibility can be added:
 
 		    "visibilityZoomLevels": {
 		      "minZoomLevel": 12,
