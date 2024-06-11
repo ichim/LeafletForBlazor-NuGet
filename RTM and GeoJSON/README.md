@@ -93,6 +93,48 @@ Code block:
 
 The GeoJSON data in the files must comply with [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946). This format is an array of JSON items. Also, RealTimeMap supports a format that allows customizing the appearance of the map items. This format is based on: [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
 
+Example RFC 7946 format:
+		[
+		    {
+		      "type": "Feature",
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [ 44.44695351120105, 26.096702416100246 ]
+		      },
+		      "properties": {
+		        "name": "Piata Romana"
+		      }
+		    }
+		]
+
+In addition, RealTimeMap supports a JSON format that allows customizing the appearance of the map items. This format is based on RFC 7946.
+
+Example of JSON format:
+
+		{
+		  "name": "Points of Interes",
+		  "data": [
+		    {
+		      "type": "Feature",
+		      "geometry": {
+		        "type": "Point",
+		        "coordinates": [ 44.44695351120105, 26.096702416100246 ]
+		      },
+		      "properties": {
+		        "name": "Piata Romana"
+		      }
+		    }
+		  ],
+		  "appearance": {
+		    "iconUrl": "http://localhost:5236/favicon.png",
+		    "iconSize": [ 20, 20 ],
+		    "iconAnchor": [ 10, 10 ],
+		    "visibilityZoomLevels": {
+		      "minZoomLevel": 12,
+		      "maxZoomLevel": 16
+		    }
+		  }
+		}
 
 [example loading and config. from files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/config%20tooltip%20from%20file)
 
