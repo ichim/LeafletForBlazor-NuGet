@@ -108,7 +108,13 @@ Example RFC 7946 format:
 		    }
 		]
 
-In addition, RealTimeMap supports a JSON format that allows customizing the appearance of the map items. This format is based on RFC 7946.
+In addition, RealTimeMap supports a JSON format that allows customizing the appearance of the map items. This format is based on RFC 7946. This format complies with the following template:
+
+		{
+			"name": "Name of Group Layer",
+		 	"data": [], //RFC 7946 array
+		  	"appearance": {} //appearance of RealTimeMap items
+		}
 
 Example of JSON format:
 
