@@ -117,6 +117,16 @@ In addition, RealTimeMap supports a JSON format that allows customizing the appe
 		  	"appearance": {} //appearance of RealTimeMap items
 		}
 
+#### About appearance 
+
+Appearance can contain Leaflet specifications regarding Markers, CircleMarkers, etc. to which visibility can be added:
+
+		    "visibilityZoomLevels": {
+		      "minZoomLevel": 12,
+		      "maxZoomLevel": 16
+		    }
+
+
 Example of JSON format:
 
 		{
