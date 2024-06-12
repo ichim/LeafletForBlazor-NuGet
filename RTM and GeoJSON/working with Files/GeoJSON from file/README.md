@@ -1,4 +1,4 @@
-## Configuring Appearance from files
+# Upload data from GeoJSON files
 
 GeoJSON data can be loaded from files hosted on the Internet (https protocol). Once with loading data, the programmer can configure the appearance, the visibility scales and the content of the tools.
 
@@ -24,7 +24,7 @@ Code block:
 		}
  
 
-### GeoJSON format - basic specifications
+## GeoJSON format - basic specifications
 
 The GeoJSON data in the files must comply with [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946). This format is an array of JSON items. Also, RealTimeMap supports a format that allows customizing the appearance of the map items. This format is based on: [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
 
@@ -51,7 +51,7 @@ In addition, RealTimeMap supports a JSON format that allows customizing the appe
 		  	"appearance": {} //appearance of RealTimeMap items
 		}
 
-#### About appearance 
+### About appearance 
 
 Appearance can contain Leaflet specifications regarding marker icon, circleMarker symbol, polyline symbol, polygon symbol etc (Leaflet documentation). to which visibility can be added:
 
@@ -106,7 +106,7 @@ _similar with leaflet documentation_
 
 _similar with leaflet documentation_
 
-### JSON example
+## JSON example
 
 Example of JSON format:
 
