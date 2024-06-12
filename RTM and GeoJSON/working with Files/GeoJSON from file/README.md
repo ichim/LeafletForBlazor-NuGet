@@ -116,9 +116,11 @@ _similar with leaflet documentation_
 
 _similar with leaflet documentation_
 
-## JSON example
+# JSON example
 
-Example of JSON format:
+## For geometric points
+
+Example of JSON format for geometric points:
 
 		{
 		  "name": "Points of Interes",
