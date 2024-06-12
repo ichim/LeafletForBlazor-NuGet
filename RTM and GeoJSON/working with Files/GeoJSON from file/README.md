@@ -22,7 +22,8 @@ Code block:
 		
 		    }
 		}
- 
+
+ ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
 
 ## GeoJSON format - basic specifications
 
