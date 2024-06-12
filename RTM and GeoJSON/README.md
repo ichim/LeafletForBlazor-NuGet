@@ -66,6 +66,8 @@ In order to create a GeoJSON array, it is necessary to define the classes:
 
 ## Configuring Appearance from files
 
+[more about upload data from GeoJSON files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/GeoJSON%20from%20file)
+
 GeoJSON data can be loaded from files hosted on the Internet (https protocol). Once with loading data, the programmer can configure the appearance, the visibility scales and the content of the tools.
 
 Blazor page:
