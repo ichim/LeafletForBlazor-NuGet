@@ -203,6 +203,51 @@ Example of JSON format:
 		  }
 		}
 
+
+### JSON example for polygon(s)
+
+Example of JSON format:
+
+		{
+		  "name": "Rezidential",
+		  "data": [
+		    {
+		      "type": "Feature",
+		      "geometry": {
+		        "type": "Polygon",
+		        "coordinates": [
+		          [
+		            [ 44.4432512, 26.0931846 ],
+		            [ 44.4435381, 26.0945783 ],
+		            [ 44.4438006, 26.0959206 ],
+		            [ 44.4439288, 26.0965448 ],
+		            [ 44.4444598, 26.0979042 ],
+		            [ 44.4439044, 26.0981265 ],
+		            [ 44.4436419, 26.0976905 ],
+		            [ 44.4431657, 26.0972459 ],
+		            [ 44.4427384, 26.0963396 ],
+		            [ 44.4420181, 26.0941508 ]
+		          ]
+		        ]
+		      },
+		      "properties": {
+		        "name": "commercial",
+		        "population": 542
+		
+		      }
+		    }
+		  ],
+		  "appearance": {
+		    "color": "orange",
+		    "opacity": 0.6,
+		    "weight": 2,
+		    "visibilityZoomLevels": {
+		      "minZoomLevel": 14,
+		      "maxZoomLevel": 18
+		    }
+		  }
+		}
+
 [example loading and config. from files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/config%20tooltip%20from%20file)
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
