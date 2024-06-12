@@ -57,7 +57,7 @@ Also, the format also supports symbology (old format) instead of appearance.
 		{
 			"name": "Name of Group Layer",
 		 	"data": [], //RFC 7946 array
-		  	"symbology": {} //appearance of RealTimeMap items
+		  	"symbology": {} //old format - appearance of RealTimeMap items
 		}
 
 
