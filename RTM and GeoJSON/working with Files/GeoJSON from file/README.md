@@ -116,7 +116,9 @@ _similar with leaflet documentation_
 
 _similar with leaflet documentation_
 
-# JSON example
+# JSON formats of data files
+
+Below I will show you several examples of files that can be loaded by RealTimeMap.
 
 ## For geometric points
 
