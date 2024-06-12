@@ -176,7 +176,7 @@ _similar with leaflet documentation_
 
 ### JSON example
 
-Example of JSON format:
+Example of JSON format for point(s):
 
 		{
 		  "name": "Points of Interes",
