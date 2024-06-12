@@ -52,6 +52,15 @@ In addition, RealTimeMap supports a JSON format that allows customizing the appe
 		  	"appearance": {} //appearance of RealTimeMap items
 		}
 
+Also, the format also supports symbology (old format) instead of appearance.
+
+		{
+			"name": "Name of Group Layer",
+		 	"data": [], //RFC 7946 array
+		  	"symbology": {} //appearance of RealTimeMap items
+		}
+
+
 ### About appearance 
 
 Appearance can contain Leaflet specifications regarding marker icon, circleMarker symbol, polyline symbol, polygon symbol etc (Leaflet documentation). to which visibility can be added:
