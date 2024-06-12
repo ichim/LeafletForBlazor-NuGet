@@ -148,3 +148,6 @@ Example of JSON format for geometric points:
 		    }
 		  }
 		}
+
+
+Points will be displayed using the default icon from a Blazor application. The display will only be between the scales level 12 and 16
