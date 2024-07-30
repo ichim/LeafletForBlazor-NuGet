@@ -17,12 +17,76 @@ You can find more information:
 
 # What's New
 
-This version will add the possibility of customizing the tooltips using the data stored at the level of geojson records (properties).
+> bug moveTo(), map extent does not work correctly (Thanks Marek (Foriero) Ledvina via LinkedIn.com)
+
+## RealTimeMap and basemap
+
+You can add various basemaps to the list of map layers.
+
+Blazor page
+
+    <RealTimeMap height="462px" width="462px" Parameters="@parameters"></RealTimeMap>
+
+Code block
+
+    @code{
+        static string openCycleMapAPIKey = "";
+        RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+            {
+                basemap = new RealTimeMap.Basemap()
+                {
+                    basemapLayers = new List<RealTimeMap.BasemapLayer>()
+                    {
+                        new RealTimeMap.BasemapLayer()
+                        {
+                            url = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                            attribution = "©Open Street Map",
+                            title = "Open Street Map",
+                            detectRetina = true
+                        },
+                        new RealTimeMap.BasemapLayer()
+                        {
+                            url = "https://tile.opentopomap.org/{z}/{x}/{y}.png",
+                            attribution = "Open Topo",
+                            title = "Open Topo",
+                            detectRetina = true
+                        },
+                        new RealTimeMap.BasemapLayer()
+                        {
+                            url = "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=" + openCycleMapAPIKey,
+                            attribution = "©Open Cycle Map",
+                            title = "Open Cycle Map"
+                        },
+
+                    }
+
+                },
+           }
+
+## RealTimeMap and interaction options
+
+You can change the behavior of the map to various mouse actions:
+
+Blazor page
+
+    <RealTimeMap height="462px" width="462px" Parameters="@parameters" Options="options"></RealTimeMap>
+
+Code block
+
+    @code{
+        RealTimeMap.MapOptions options = new RealTimeMap.MapOptions()
+            {
+                interactionOptions = new RealTimeMap.InteractionOptions()
+                {
+                    doubleClickZoom = true,
+                    shiftBoxZoom = false
+                }
+            };
+        }
+
 
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
-
-
 
 [more about configuring tooltips and data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
 
@@ -832,6 +896,27 @@ _similar with leaflet documentation_
 
 
 _similar with leaflet documentation_
+
+### Custom tooltip
+
+You can display customized tooltips based on the attributes stored in the files:
+
+    "tooltip": {
+        "content": "<b>${name}</b><br/><i><font size='4' face='verdana' color='blue' >${description}</font></i><br/><img width='100%' height='100%' src = '${url}'></img>",
+        "opacity": 0.8,
+        "visibilityZoomLevels": {
+              "minZoomLevel": 15,
+              "maxZoomLevel": 18
+    }
+
+
+![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
+
+
+
+[more about configuring tooltips and data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
+
+
 
 
 ## **DisplayPolygonsFromArray** class
