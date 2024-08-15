@@ -17,7 +17,124 @@ You can find more information:
 
 # What's New
 
-> bug moveTo(), map extent does not work correctly (Thanks Marek (Foriero) Ledvina via LinkedIn.com)
+## MouseMove event
+
+| **Events**   | **Description**                                              |
+| ---------------- | ---------------------------------------------------- |
+| [**OnMouseMove**](#onmousemove) |event is triggered when mouse move and return the **location** of pointer in map|
+
+
+## View class
+
+This class allows you to modify and read the RealTimeMap loading parameters:
+
+| **Property** | **Direction** | **Description** |
+| --------- | ----------- | -------- |
+| setZoomLevel | to | set RealTimeMap zoom level |
+| setMinZoomLevel | to | set RealTimeMap minimum zoom level |
+| setMaxZoomLevel | to | set RealTimeMap maximum zoom level |
+| setCenter | to | set RealTimeMap center of map view (location) |
+| setBounds | to | set maxim bounds (extent) of map view |
+
+
+### Exemple code
+
+Blazor page
+
+    <RealTimeMap @ref="realTimeMap" height="460px" width="460px"></RealTimeMap>
+
+Code block
+
+    @code{
+        RealTimeMap realTimeMap = new RealTimeMap();
+        public void onZoomLevel()
+        {
+            realTimeMap.View.setZoomLevel = 10;
+        }
+
+        public void onLocation()
+        {
+            realTimeMap.View.setCenter = new RealTimeMap.Location()
+            {
+                    latitude = 40.712,
+                    longitude = -74.227
+            };
+        }
+
+        public void onBounds()
+        {
+            realTimeMap.View.setBounds = new RealTimeMap.Bounds()
+                {
+                    northEast = new RealTimeMap.Location() { latitude = 44.119016922388475, longitude = 25.5423343754357 },
+                    southWest = new RealTimeMap.Location() { latitude = 44.06574292386291, longitude = 25.67686807545283 }
+                };
+        }
+   
+    }
+
+
+![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
+
+[more about configuring tooltips and data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
+
+-------------------------
+
+# RealTimeMap Blazor control
+
+> RealTimeMap control is optimized for working with streaming data. This control will load data using multiple concurrent calls (separate threads of execution).
+
+
+## Basic configuration
+
+1. add LeafletForBlazor NuGet package:
+
+Using Visual Studio _interface_:
+
+ - Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution...
+ 
+ > Search for "LeafletForBlazor" and add the package to the project or solution.
+
+ Or using Visual Studio _console_:
+
+ - Tools -> NuGet Package Manager -> Package Manager Console
+
+       NuGet\Install-Package LeafletForBlazor
+
+2. add the LeafletForBlazor namespace to the project, using the @using directive
+
+For this, add
+
+        @using LeafletForBlazor
+
+in the **_Imports.razor** file of the project.
+
+3. add RealTimeMap control into Blazor Page:
+
+        <RealTimeMap height="460px" width="620px"></RealTimeMap>
+
+## Working with loading parameters
+
+Map loading parameters can be defined using the **LoadParameters** class. This class allows you to define: the location of the center of the view (default) of the map, the zoom level and others.
+
+1. add in code block loading parameters:
+
+
+        @code{
+            RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()  //general map settings
+                {
+                    location = new RealTimeMap.Location()
+                    {
+                        latitude = 44.4501715,      
+                        longitude = 26.1107672,
+                    },
+                    zoomLevel = 18
+                };
+            }
+
+2. set the loading parameters (default map parameters) to the **RealTimeMap** control:
+
+       <RealTimeMap Parameters="parameters" height="460px" width="620px"></RealTimeMap>
+
 
 ## RealTimeMap and basemap
 
@@ -84,70 +201,6 @@ Code block
             };
         }
 
-
-
-![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
-
-[more about configuring tooltips and data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
-
--------------------------
-
-# RealTimeMap Blazor control
-
-> RealTimeMap control is optimized for working with streaming data. This control will load data using multiple concurrent calls (separate threads of execution).
-
-
-## Basic configuration
-
-1. add LeafletForBlazor NuGet package:
-
-Using Visual Studio _interface_:
-
- - Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution...
- 
- > Search for "LeafletForBlazor" and add the package to the project or solution.
-
- Or using Visual Studio _console_:
-
- - Tools -> NuGet Package Manager -> Package Manager Console
-
-       NuGet\Install-Package LeafletForBlazor
-
-2. add the LeafletForBlazor namespace to the project, using the @using directive
-
-For this, add
-
-        @using LeafletForBlazor
-
-in the **_Imports.razor** file of the project.
-
-3. add RealTimeMap control into Blazor Page:
-
-        <RealTimeMap height="460px" width="620px"></RealTimeMap>
-
-## Working with loading parameters
-
-Map loading parameters can be defined using the **LoadParameters** class. This class allows you to define: the location of the center of the view (default) of the map, the zoom level and others.
-
-1. add in code block loading parameters:
-
-
-        @code{
-            RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()  //general map settings
-                {
-                    location = new RealTimeMap.Location()
-                    {
-                        latitude = 44.4501715,      
-                        longitude = 26.1107672,
-                    },
-                    zoom_level = 18
-                };
-            }
-
-2. set the loading parameters (default map parameters) to the **RealTimeMap** control:
-
-       <RealTimeMap Parameters="parameters" height="460px" width="620px"></RealTimeMap>
-
 ## RealTimeMap control events
 
 | **Events**   | **Description**                                              |
@@ -158,6 +211,8 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
 | [**OnMouseDownMap**](#onmousedownmap) | event is triggered when the left button is pressed (contact open). This control will return the **location** of the clicked down (left pressed) point|
 | [**OnMouseUpMap**](#onmouseupmap) | event is triggered after the left button is released (contact close). This control will return the **location** of the clicked up (left released) point|
 | [**OnZoomLevelEndChange**](#onzoomlevelendchange) | event is triggered after the map has been zoom change ended|
+| [**OnMouseMove**](#onmousemove) |event is triggered when mouse move and return the **location** of pointer in map|
+
 
 
 ### OnAfterMapLoaded
@@ -301,6 +356,29 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
             Console.WriteLine(args.zoomLevel);
         }
     }
+
+### OnMouseMove
+
+> **OnMouseMove** event is triggered after the usermove pointer mouse on RealTimeMap and return the **location** of the mouse pointer.
+
+1. **value._sender_**: is the reference to the **RealTimeMap** control
+1. **value._location_**: location of the mouse pointer
+
+#### Example code
+
+Blazor page
+
+    <RealTimeMap @ref="realTimeMap" height="460px" width="460px" OnMouseMove="@onMouseMove"></RealTimeMap>
+
+Code block
+
+    @code{
+            RealTimeMap realTimeMap = new RealTimeMap();
+            public void onMouseMove(RealTimeMap.ClicksMapArgs args)
+            {
+                Console.WriteLine($"{args.location.latitude} / {args.location.longitude}");
+            }
+        }
 
 ## Working with a single point (ex. my position)
 
