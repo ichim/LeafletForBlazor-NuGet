@@ -31,3 +31,15 @@ This class allow:
               {
                  zoomLevel = 18
               };
+
+   1. scale of view map:
+  
+               RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+               {
+                 mapScale = new RealTimeMap.MapScale()
+                 {
+                     has = true,
+                     meters = true,
+                     miles = true
+                 }  
+               };
