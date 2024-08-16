@@ -25,6 +25,7 @@ This class allow:
                }
             };
 
+
 2.configuring the zoom level of the RealTimeMap view:
 
               RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
