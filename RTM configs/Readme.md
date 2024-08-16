@@ -34,7 +34,7 @@ This class allow:
                  zoomLevel = 18
               };
 
-- scale of view map:
+- scale of view:
   
                RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
                {
