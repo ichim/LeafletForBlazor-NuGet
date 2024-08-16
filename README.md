@@ -17,12 +17,63 @@ You can find more information:
 
 # What's New
 
-This version will add the possibility of customizing the tooltips using the data stored at the level of geojson records (properties).
+## MouseMove event
+
+| **Events**   | **Description**                                              |
+| ---------------- | ---------------------------------------------------- |
+| [**OnMouseMove**](#onmousemove) |event is triggered when mouse move and return the **location** of pointer in map|
+
+
+## View class
+
+This class allows you to modify and read the RealTimeMap loading parameters:
+
+| **Property** | **Direction** | **Description** |
+| --------- | ----------- | -------- |
+| setZoomLevel | to | set RealTimeMap zoom level |
+| setMinZoomLevel | to | set RealTimeMap minimum zoom level |
+| setMaxZoomLevel | to | set RealTimeMap maximum zoom level |
+| setCenter | to | set RealTimeMap center of map view (location) |
+| setBounds | to | set maxim bounds (extent) of map view |
+
+
+### Exemple code
+
+Blazor page
+
+    <RealTimeMap @ref="realTimeMap" height="460px" width="460px"></RealTimeMap>
+
+Code block
+
+    @code{
+        RealTimeMap realTimeMap = new RealTimeMap();
+        public void onZoomLevel()
+        {
+            realTimeMap.View.setZoomLevel = 10;
+        }
+
+        public void onLocation()
+        {
+            realTimeMap.View.setCenter = new RealTimeMap.Location()
+            {
+                    latitude = 40.712,
+                    longitude = -74.227
+            };
+        }
+
+        public void onBounds()
+        {
+            realTimeMap.View.setBounds = new RealTimeMap.Bounds()
+                {
+                    northEast = new RealTimeMap.Location() { latitude = 44.119016922388475, longitude = 25.5423343754357 },
+                    southWest = new RealTimeMap.Location() { latitude = 44.06574292386291, longitude = 25.67686807545283 }
+                };
+        }
+   
+    }
 
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
-
-
 
 [more about configuring tooltips and data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
 
@@ -76,13 +127,79 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
                         latitude = 44.4501715,      
                         longitude = 26.1107672,
                     },
-                    zoom_level = 18
+                    zoomLevel = 18
                 };
             }
 
 2. set the loading parameters (default map parameters) to the **RealTimeMap** control:
 
        <RealTimeMap Parameters="parameters" height="460px" width="620px"></RealTimeMap>
+
+
+## RealTimeMap and basemap
+
+You can add various basemaps to the list of map layers.
+
+Blazor page
+
+    <RealTimeMap height="462px" width="462px" Parameters="@parameters"></RealTimeMap>
+
+Code block
+
+    @code{
+        static string openCycleMapAPIKey = "";
+        RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+            {
+                basemap = new RealTimeMap.Basemap()
+                {
+                    basemapLayers = new List<RealTimeMap.BasemapLayer>()
+                    {
+                        new RealTimeMap.BasemapLayer()
+                        {
+                            url = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                            attribution = "©Open Street Map",
+                            title = "Open Street Map",
+                            detectRetina = true
+                        },
+                        new RealTimeMap.BasemapLayer()
+                        {
+                            url = "https://tile.opentopomap.org/{z}/{x}/{y}.png",
+                            attribution = "Open Topo",
+                            title = "Open Topo",
+                            detectRetina = true
+                        },
+                        new RealTimeMap.BasemapLayer()
+                        {
+                            url = "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=" + openCycleMapAPIKey,
+                            attribution = "©Open Cycle Map",
+                            title = "Open Cycle Map"
+                        },
+
+                    }
+
+                },
+           }
+
+## RealTimeMap and interaction options
+
+You can change the behavior of the map to various mouse actions:
+
+Blazor page
+
+    <RealTimeMap height="462px" width="462px" Parameters="@parameters" Options="options"></RealTimeMap>
+
+Code block
+
+    @code{
+        RealTimeMap.MapOptions options = new RealTimeMap.MapOptions()
+            {
+                interactionOptions = new RealTimeMap.InteractionOptions()
+                {
+                    doubleClickZoom = true,
+                    shiftBoxZoom = false
+                }
+            };
+        }
 
 ## RealTimeMap control events
 
@@ -94,6 +211,8 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
 | [**OnMouseDownMap**](#onmousedownmap) | event is triggered when the left button is pressed (contact open). This control will return the **location** of the clicked down (left pressed) point|
 | [**OnMouseUpMap**](#onmouseupmap) | event is triggered after the left button is released (contact close). This control will return the **location** of the clicked up (left released) point|
 | [**OnZoomLevelEndChange**](#onzoomlevelendchange) | event is triggered after the map has been zoom change ended|
+| [**OnMouseMove**](#onmousemove) |event is triggered when mouse move and return the **location** of pointer in map|
+
 
 
 ### OnAfterMapLoaded
@@ -237,6 +356,29 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
             Console.WriteLine(args.zoomLevel);
         }
     }
+
+### OnMouseMove
+
+> **OnMouseMove** event is triggered after the usermove pointer mouse on RealTimeMap and return the **location** of the mouse pointer.
+
+1. **value._sender_**: is the reference to the **RealTimeMap** control
+1. **value._location_**: location of the mouse pointer
+
+#### Example code
+
+Blazor page
+
+    <RealTimeMap @ref="realTimeMap" height="460px" width="460px" OnMouseMove="@onMouseMove"></RealTimeMap>
+
+Code block
+
+    @code{
+            RealTimeMap realTimeMap = new RealTimeMap();
+            public void onMouseMove(RealTimeMap.ClicksMapArgs args)
+            {
+                Console.WriteLine($"{args.location.latitude} / {args.location.longitude}");
+            }
+        }
 
 ## Working with a single point (ex. my position)
 
@@ -832,6 +974,27 @@ _similar with leaflet documentation_
 
 
 _similar with leaflet documentation_
+
+### Custom tooltip
+
+You can display customized tooltips based on the attributes stored in the files:
+
+    "tooltip": {
+        "content": "<b>${name}</b><br/><i><font size='4' face='verdana' color='blue' >${description}</font></i><br/><img width='100%' height='100%' src = '${url}'></img>",
+        "opacity": 0.8,
+        "visibilityZoomLevels": {
+              "minZoomLevel": 15,
+              "maxZoomLevel": 18
+    }
+
+
+![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
+
+
+
+[more about configuring tooltips and data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
+
+
 
 
 ## **DisplayPolygonsFromArray** class

@@ -1,72 +1,4 @@
-
-# **DataFromGeoJSON** class
-
-It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats.
-
-Two formats are used, both complying with [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946):
-
-1. The first format is an array that exactly respects the format [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
-
-		<RealTimeMap OnAfterMapLoaded="@OnAfterMapLoaded" width="460px" height="462px" />
-		@code{
-			public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
-			 {
-				await args.sender.Geometric.DataFromGeoJSON.addObject(geojsonArray);
-			 }
-		}
-
-1. And another JSON format, which for the "data" property we have the same array [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946). In addition, this format accepts customization of symbolization, tooltips, etc 
-
-
-
-		<RealTimeMap OnAfterMapLoaded="@OnAfterMapLoaded" width="460px" height="462px" />
-		@code{
-			public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
-			 {
-				await args.sender.Geometric.DataFromGeoJSON.addObject(geojsonObject);
-			 }
-		}
-
-## Working with array
-
-The GeoJSON array format is the one in the documentation [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
-In order to create a GeoJSON array, it is necessary to define the classes:
-
-### GeoJSON custom properties
-
-	   public class Properties
-	   {
-	       public string? name { get; set; }
-	   }
-
-### GeoJSON geometry
-
-	    public class PointGeometry
-	    {
-	        public string? type { get; set; } = "Point";
-	        public double[]? coordinates { get; set; }
-	        public Properties? properties { get; set; }
-	    }
-
-### GeoJSON item
-
-	public class GeoJSONItem
-	{
-		public string? type { get; set; }
-		public PointGeometry? geometry { get; set; }   
-	}
-
-### Using GeoJSON array
-
-   	List<GeoJSONItem> inputPointsList = new();
-    	await args.sender.Geometric.DataFromGeoJSON.addObject(inputPointsList.ToArray());
-
-[Working with GeoJSON Array example and documentation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
-
-
-## Configuring Appearance from files
-
-[more about upload data from GeoJSON files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/GeoJSON%20from%20file)
+# Upload data from GeoJSON files
 
 GeoJSON data can be loaded from files hosted on the Internet (https protocol). Once with loading data, the programmer can configure the appearance, the visibility scales and the content of the tools.
 
@@ -90,9 +22,10 @@ Code block:
 		
 		    }
 		}
- 
 
-### GeoJSON format - basic specifications
+ ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
+
+## GeoJSON format - basic specifications
 
 The GeoJSON data in the files must comply with [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946). This format is an array of JSON items. Also, RealTimeMap supports a format that allows customizing the appearance of the map items. This format is based on: [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
 
@@ -119,7 +52,16 @@ In addition, RealTimeMap supports a JSON format that allows customizing the appe
 		  	"appearance": {} //appearance of RealTimeMap items
 		}
 
-#### About appearance 
+Also, the format also supports symbology (old format) instead of appearance.
+
+		{
+			"name": "Name of Group Layer",
+		 	"data": [], //RFC 7946 array
+		  	"symbology": {} //old format - appearance of RealTimeMap items
+		}
+
+
+### About appearance 
 
 Appearance can contain Leaflet specifications regarding marker icon, circleMarker symbol, polyline symbol, polygon symbol etc (Leaflet documentation). to which visibility can be added:
 
@@ -174,9 +116,13 @@ _similar with leaflet documentation_
 
 _similar with leaflet documentation_
 
-### JSON example for point(s)
+# JSON formats of data files
 
-Example of JSON format:
+Below I will show you several examples of files that can be loaded by RealTimeMap.
+
+## For geometric points
+
+Example of JSON format for geometric points:
 
 		{
 		  "name": "Points of Interes",
@@ -204,55 +150,4 @@ Example of JSON format:
 		}
 
 
-### JSON example for polygon(s)
-
-Example of JSON format:
-
-		{
-		  "name": "Rezidential",
-		  "data": [
-		    {
-		      "type": "Feature",
-		      "geometry": {
-		        "type": "Polygon",
-		        "coordinates": [
-		          [
-		            [ 44.4432512, 26.0931846 ],
-		            [ 44.4435381, 26.0945783 ],
-		            [ 44.4438006, 26.0959206 ],
-		            [ 44.4439288, 26.0965448 ],
-		            [ 44.4444598, 26.0979042 ],
-		            [ 44.4439044, 26.0981265 ],
-		            [ 44.4436419, 26.0976905 ],
-		            [ 44.4431657, 26.0972459 ],
-		            [ 44.4427384, 26.0963396 ],
-		            [ 44.4420181, 26.0941508 ]
-		          ]
-		        ]
-		      },
-		      "properties": {
-		        "name": "commercial",
-		        "population": 542
-		
-		      }
-		    }
-		  ],
-		  "appearance": {
-		    "color": "orange",
-		    "opacity": 0.6,
-		    "weight": 2,
-		    "visibilityZoomLevels": {
-		      "minZoomLevel": 14,
-		      "maxZoomLevel": 18
-		    }
-		  }
-		}
-
-[example loading and config. from files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/config%20tooltip%20from%20file)
-
-![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
-
-
-
-
-
+Points will be displayed using the default icon from a Blazor application. The display will only be between the scales level 12 and 16
