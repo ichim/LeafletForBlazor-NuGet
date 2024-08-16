@@ -14,7 +14,7 @@ Code block:
 
 This class allow:
 
-1. configuring the center of the RealTimeMap view:
+ - configuring the center of the RealTimeMap view:
 
 
             RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
@@ -27,14 +27,14 @@ This class allow:
             };
 
 
-2.configuring the zoom level of the RealTimeMap view:
+- configuring the zoom level of the RealTimeMap view:
 
               RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
               {
                  zoomLevel = 18
               };
 
-3. scale of view map:
+- scale of view map:
   
                RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
                {
