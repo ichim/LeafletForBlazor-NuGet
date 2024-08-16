@@ -1,0 +1,16 @@
+﻿@page "/"
+
+<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" Parameters="@parameters"></RealTimeMap>
+
+@code{
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+    {
+      mapScale = new RealTimeMap.MapScale()
+      {
+          has = true,
+          meters = true,
+          miles = true
+
+      }  
+    };
+}
