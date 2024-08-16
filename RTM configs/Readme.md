@@ -25,14 +25,14 @@ This class allow:
                }
             };
 
-1. configuring the zoom level of the RealTimeMap view:
+1.configuring the zoom level of the RealTimeMap view:
 
               RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
               {
                  zoomLevel = 18
               };
 
-   1. scale of view map:
+1. scale of view map:
   
                RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
                {
