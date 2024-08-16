@@ -13,6 +13,7 @@ Code block:
             }
 
 This class allow:
+
 1. configuring the center of the RealTimeMap view:
 
 
