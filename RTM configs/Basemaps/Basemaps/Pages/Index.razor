@@ -1,0 +1,44 @@
+﻿@page "/"
+
+<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" Parameters="@parameters"></RealTimeMap>
+
+@code {
+    static string openCycleMapAPIKey = "--- your Open Cycle Map API Key ---";
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 43.65406446200289,
+                longitude = 25.369446755738487
+            },
+            zoomLevel = 12,
+            basemap = new RealTimeMap.Basemap()
+            {
+                basemapLayers = new List<RealTimeMap.BasemapLayer>()
+         {
+              new RealTimeMap.BasemapLayer()
+                    {
+                        url = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                        attribution = "©Open Street Map",
+                        title = "Open Street Map",
+                        detectRetina = true
+                    },
+                    new RealTimeMap.BasemapLayer()
+                    {
+                        url = "https://tile.opentopomap.org/{z}/{x}/{y}.png",
+                        attribution = "Open Topo",
+                        title = "Open Topo",
+                        detectRetina = true
+                    },
+                    new RealTimeMap.BasemapLayer()
+                    {
+                        url = "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=" + openCycleMapAPIKey,
+                        attribution = "©Open Cycle Map",
+                        title = "Open Cycle Map"
+                    },
+
+         }
+
+            },
+        };
+}
