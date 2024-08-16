@@ -1,6 +1,18 @@
 # RealTimeMap and load parameteres
 
-RealTimeMap.LoadParameters is a class that allows the map to be configured when loading. This class allow:
+RealTimeMap.LoadParameters is a class that allows the map to be configured when loading. 
+
+Blazor page:
+
+            <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" Parameters="@parameters"></RealTimeMap>
+
+Code block:
+
+            @code{
+                RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+            }
+
+This class allow:
 1. configuring the center of the RealTimeMap view:
 
 
