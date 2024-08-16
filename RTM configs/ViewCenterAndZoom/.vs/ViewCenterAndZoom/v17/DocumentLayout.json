@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM configs\\ViewCenterAndZoom\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6DDDBFE-840F-4986-B3FD-BBC236E6942C}|ViewCenterAndZoom\\ViewCenterAndZoom.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm configs\\viewcenterandzoom\\viewcenterandzoom\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6DDDBFE-840F-4986-B3FD-BBC236E6942C}|ViewCenterAndZoom\\ViewCenterAndZoom.csproj|solutionrelative:viewcenterandzoom\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6DDDBFE-840F-4986-B3FD-BBC236E6942C}|ViewCenterAndZoom\\ViewCenterAndZoom.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm configs\\viewcenterandzoom\\viewcenterandzoom\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6DDDBFE-840F-4986-B3FD-BBC236E6942C}|ViewCenterAndZoom\\ViewCenterAndZoom.csproj|solutionrelative:viewcenterandzoom\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM configs\\ViewCenterAndZoom\\ViewCenterAndZoom\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "ViewCenterAndZoom\\Pages\\Index.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM configs\\ViewCenterAndZoom\\ViewCenterAndZoom\\Pages\\Index.razor",
+              "RelativeToolTip": "ViewCenterAndZoom\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T09:38:57.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM configs\\ViewCenterAndZoom\\ViewCenterAndZoom\\_Imports.razor",
+              "RelativeDocumentMoniker": "ViewCenterAndZoom\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM configs\\ViewCenterAndZoom\\ViewCenterAndZoom\\_Imports.razor",
+              "RelativeToolTip": "ViewCenterAndZoom\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T09:38:39.257Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
