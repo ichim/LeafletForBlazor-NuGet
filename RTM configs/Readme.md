@@ -9,7 +9,7 @@ Blazor page:
 Code block:
 
             @code{
-                RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+                RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters();
             }
 
 This class allow:
