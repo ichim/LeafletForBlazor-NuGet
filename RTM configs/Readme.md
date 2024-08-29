@@ -9,11 +9,12 @@ Blazor page:
 Code block:
 
             @code{
-                RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+                RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters();
             }
 
 This class allow:
-1. configuring the center of the RealTimeMap view:
+
+ - configuring the center of the RealTimeMap view:
 
 
             RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
@@ -25,9 +26,22 @@ This class allow:
                }
             };
 
-1. configuring the zoom level of the RealTimeMap view:
+
+- configuring the zoom level of the RealTimeMap view:
 
               RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
               {
                  zoomLevel = 18
               };
+
+- scale of view:
+  
+               RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+               {
+                 mapScale = new RealTimeMap.MapScale()
+                 {
+                     has = true,
+                     meters = true,
+                     miles = true
+                 }  
+               };
