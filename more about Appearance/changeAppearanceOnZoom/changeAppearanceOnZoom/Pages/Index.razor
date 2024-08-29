@@ -1,0 +1,102 @@
+﻿@page "/"
+@using zoomLevelSimbols.data
+<h2>Simplify points Appearance based on Zoom Level. Simplify when it drops below 15.</h2>
+<RealTimeMap height="calc(100vh - 12rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="onAfterMapLoaded" OnZoomLevelEndChange="onZoomLevelEnd"></RealTimeMap>
+<h4>Zoom Level: @zoomLevel</h4>
+
+@code {
+    int zoomLevel = 0;
+    bool notChanged = true;
+    string path = "http://localhost:5056/";
+    public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs value)
+    {
+        defaultAppearance(value.sender);
+        await upload(value.sender);
+    }
+
+    public async Task upload(RealTimeMap rtm)
+    {
+        if (rtm != null)
+        {
+            await rtm.Geometric.Points.upload(new InputData().input);
+
+        }
+    }
+
+    private void defaultAppearance(RealTimeMap rtm)
+    {
+        System.Diagnostics.Debug.WriteLine("Icons Appearance");
+        rtm.Geometric.Points.AppearanceOnType((item) => item.type == "ambulance").pattern = new RealTimeMap.PointIcon()
+            {
+                iconUrl = $"{path}icons/ambulance.png",
+                iconSize = new int[2] { 80, 50 },
+                iconAnchor = new int[2] { 40, 25 },
+            };
+
+        rtm.Geometric.Points.AppearanceOnType((item) => item.type == "police crew" || item.type == "intervention crew").pattern = new RealTimeMap.PointIcon()
+            {
+                iconUrl = $"{path}icons/police.png",
+                iconSize = new int[2] { 64, 64 },
+                iconAnchor = new int[2] { 32, 32 },
+            };
+
+        rtm.Geometric.Points.AppearanceOnType((item) => item.type == "suspicious vehicle").pattern = new RealTimeMap.PointIcon()
+            {
+                iconUrl = $"{path}icons/suspicious.png",
+                iconSize = new int[2] { 48, 48 },
+                iconAnchor = new int[2] { 24, 24 },
+            };
+    }
+
+    private void simplifyAppearance(RealTimeMap rtm)
+    {
+        System.Diagnostics.Debug.WriteLine("Simplify Appearance");
+        rtm.Geometric.Points.AppearanceOnType((item) =>
+                                                        item.type == "police crew" ||
+                                                        item.type == "intervention crew" ||
+                                                        item.type == "ambulance"
+                                                        ).pattern = new RealTimeMap.PointSymbol()
+                                                            {
+                                                                radius = 6,
+                                                                color = "gray",
+                                                                opacity = 1,
+                                                                fillColor = "blue",
+                                                                fillOpacity = 0.5,
+                                                                weight = 2
+                                                            };
+
+        rtm.Geometric.Points.AppearanceOnType((item) =>
+                                                        item.type == "suspicious vehicle"
+                                                        ).pattern = new RealTimeMap.PointSymbol()
+                                                            {
+                                                                radius = 6,
+                                                                color = "gray",
+                                                                opacity = 1,
+                                                                fillColor = "red",
+                                                                fillOpacity = 0.5,
+                                                                weight = 2
+                                                            };
+    }
+
+    public class Properties
+    {
+        public string? description { get; set; }
+    }
+
+    private void onZoomLevelEnd(RealTimeMap.MapZoomEventArgs args)
+    {
+        zoomLevel = args.zoomLevel;
+
+        if (args.zoomLevel <= 15 && notChanged)
+        {
+            simplifyAppearance(args.sender);
+            notChanged = false;
+        }
+        if (args.zoomLevel > 15 && !notChanged)
+        {
+            defaultAppearance(args.sender);
+            notChanged = true;
+        }
+        StateHasChanged();
+    }
+}

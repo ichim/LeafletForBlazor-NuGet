@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\changeAppearanceOnZoom\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4488F9-7C19-42FC-9905-EDE1297BB3B6}|changeAppearanceOnZoom\\changeAppearanceOnZoom.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\more about appearance\\changeappearanceonzoom\\changeappearanceonzoom\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A4488F9-7C19-42FC-9905-EDE1297BB3B6}|changeAppearanceOnZoom\\changeAppearanceOnZoom.csproj|solutionrelative:changeappearanceonzoom\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4488F9-7C19-42FC-9905-EDE1297BB3B6}|changeAppearanceOnZoom\\changeAppearanceOnZoom.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\more about appearance\\changeappearanceonzoom\\changeappearanceonzoom\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A4488F9-7C19-42FC-9905-EDE1297BB3B6}|changeAppearanceOnZoom\\changeAppearanceOnZoom.csproj|solutionrelative:changeappearanceonzoom\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4488F9-7C19-42FC-9905-EDE1297BB3B6}|changeAppearanceOnZoom\\changeAppearanceOnZoom.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\more about appearance\\changeappearanceonzoom\\changeappearanceonzoom\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A4488F9-7C19-42FC-9905-EDE1297BB3B6}|changeAppearanceOnZoom\\changeAppearanceOnZoom.csproj|solutionrelative:changeappearanceonzoom\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\changeAppearanceOnZoom\\changeAppearanceOnZoom\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "changeAppearanceOnZoom\\Pages\\Index.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\changeAppearanceOnZoom\\changeAppearanceOnZoom\\Pages\\Index.razor",
+              "RelativeToolTip": "changeAppearanceOnZoom\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T13:41:53.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\changeAppearanceOnZoom\\changeAppearanceOnZoom\\_Imports.razor",
+              "RelativeDocumentMoniker": "changeAppearanceOnZoom\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\changeAppearanceOnZoom\\changeAppearanceOnZoom\\_Imports.razor",
+              "RelativeToolTip": "changeAppearanceOnZoom\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T13:41:22.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "data.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\changeAppearanceOnZoom\\changeAppearanceOnZoom\\Data\\data.cs",
+              "RelativeDocumentMoniker": "changeAppearanceOnZoom\\Data\\data.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\changeAppearanceOnZoom\\changeAppearanceOnZoom\\Data\\data.cs",
+              "RelativeToolTip": "changeAppearanceOnZoom\\Data\\data.cs",
+              "ViewState": "AQIAAOgBAAAAAAAAAAArwPABAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:40:36.552Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
