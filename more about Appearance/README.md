@@ -235,7 +235,7 @@ Simplification is done with the simplifyAppearance() method:
          }
 
 
-[Example code about Simplify Appearance]()
+[Example code about Simplify Appearance](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom)
 
 
 
