@@ -32,3 +32,64 @@ where:
          }
          StateHasChanged();
      }
+
+## Default Appearance
+
+The default display of the points will be done with the defaultAppearance() method and will use icons for display:
+
+        private void defaultAppearance(RealTimeMap rtm)
+        {
+            System.Diagnostics.Debug.WriteLine("Icons Appearance");
+            rtm.Geometric.Points.AppearanceOnType((item) => item.type == "ambulance").pattern = new RealTimeMap.PointIcon()
+                {
+                    iconUrl = "https://localhost:7140/icons/ambulance.png",
+                    iconSize = new int[2] { 80, 50 },
+                    iconAnchor = new int[2] { 40, 25 },
+                };
+            rtm.Geometric.Points.AppearanceOnType((item) => item.type == "police crew" || item.type == "intervention crew").pattern = new RealTimeMap.PointIcon()
+                {
+                    iconUrl = "https://localhost:7140/icons/police.png",
+                    iconSize = new int[2]{64,64},
+                    iconAnchor = new int[2]{32,32},
+                };
+            rtm.Geometric.Points.AppearanceOnType((item) => item.type == "suspicious vehicle").pattern = new RealTimeMap.PointIcon()
+                {
+                    iconUrl = "https://localhost:7140/icons/suspicious.png",
+                    iconSize = new int[2] { 48, 48 },
+                    iconAnchor = new int[2] { 24, 24 },
+                };
+        }
+
+## Simplify Appearance
+
+Simplification is done with the simplifyAppearance() method:
+
+         private void simplifyAppearance(RealTimeMap rtm)
+         {
+             System.Diagnostics.Debug.WriteLine("Simplify Appearance");
+             rtm.Geometric.Points.AppearanceOnType((item) =>
+                                                             item.type == "police crew" ||
+                                                             item.type == "intervention crew" ||
+                                                             item.type == "ambulance"
+                                                             ).pattern = new RealTimeMap.PointSymbol()
+                                                                 {
+                                                                     radius = 6,
+                                                                     color = "gray",
+                                                                     opacity = 1,
+                                                                     fillColor = "blue",
+                                                                     fillOpacity = 0.5,
+                                                                     weight = 2
+                                                                 };
+      
+             rtm.Geometric.Points.AppearanceOnType((item) =>
+                                                             item.type == "suspicious vehicle"
+                                                             ).pattern = new RealTimeMap.PointSymbol()
+                                                                 {
+                                                                     radius = 6,
+                                                                     color = "gray",
+                                                                     opacity = 1,
+                                                                     fillColor = "red",
+                                                                     fillOpacity = 0.5,
+                                                                     weight = 2
+                                                                 };
+         }
