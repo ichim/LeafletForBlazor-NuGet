@@ -17,60 +17,11 @@ You can find more information:
 
 # What's New
 
-## MouseMove event
+bug #46 reported by https://github.com/paoc77 - icon not display on AppearanceOnType
+bug #34 reported by https://github.com/odskee - the first marker would be but nothing is displayed
+more functionalities about change CircleMarker to Icons or Icon to CircleMarker for Geometric.Points.Appearance() and Geometric.Points.AppearanceOnType()
 
-| **Events**   | **Description**                                              |
-| ---------------- | ---------------------------------------------------- |
-| [**OnMouseMove**](#onmousemove) |event is triggered when mouse move and return the **location** of pointer in map|
-
-
-## View class
-
-This class allows you to modify and read the RealTimeMap loading parameters:
-
-| **Property** | **Direction** | **Description** |
-| --------- | ----------- | -------- |
-| setZoomLevel | to | set RealTimeMap zoom level |
-| setMinZoomLevel | to | set RealTimeMap minimum zoom level |
-| setMaxZoomLevel | to | set RealTimeMap maximum zoom level |
-| setCenter | to | set RealTimeMap center of map view (location) |
-| setBounds | to | set maxim bounds (extent) of map view |
-
-
-### Exemple code
-
-Blazor page
-
-    <RealTimeMap @ref="realTimeMap" height="460px" width="460px"></RealTimeMap>
-
-Code block
-
-    @code{
-        RealTimeMap realTimeMap = new RealTimeMap();
-        public void onZoomLevel()
-        {
-            realTimeMap.View.setZoomLevel = 10;
-        }
-
-        public void onLocation()
-        {
-            realTimeMap.View.setCenter = new RealTimeMap.Location()
-            {
-                    latitude = 40.712,
-                    longitude = -74.227
-            };
-        }
-
-        public void onBounds()
-        {
-            realTimeMap.View.setBounds = new RealTimeMap.Bounds()
-                {
-                    northEast = new RealTimeMap.Location() { latitude = 44.119016922388475, longitude = 25.5423343754357 },
-                    southWest = new RealTimeMap.Location() { latitude = 44.06574292386291, longitude = 25.67686807545283 }
-                };
-        }
-   
-    }
+[Simplify points Appearance based on Zoom Levels](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme)
 
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
@@ -200,6 +151,54 @@ Code block
                 }
             };
         }
+
+## View class
+
+This class allows you to modify and read the RealTimeMap loading parameters:
+
+| **Property** | **Direction** | **Description** |
+| --------- | ----------- | -------- |
+| setZoomLevel | to | set RealTimeMap zoom level |
+| setMinZoomLevel | to | set RealTimeMap minimum zoom level |
+| setMaxZoomLevel | to | set RealTimeMap maximum zoom level |
+| setCenter | to | set RealTimeMap center of map view (location) |
+| setBounds | to | set maxim bounds (extent) of map view |
+
+
+### Exemple code
+
+Blazor page
+
+    <RealTimeMap @ref="realTimeMap" height="460px" width="460px"></RealTimeMap>
+
+Code block
+
+    @code{
+        RealTimeMap realTimeMap = new RealTimeMap();
+        public void onZoomLevel()
+        {
+            realTimeMap.View.setZoomLevel = 10;
+        }
+
+        public void onLocation()
+        {
+            realTimeMap.View.setCenter = new RealTimeMap.Location()
+            {
+                    latitude = 40.712,
+                    longitude = -74.227
+            };
+        }
+
+        public void onBounds()
+        {
+            realTimeMap.View.setBounds = new RealTimeMap.Bounds()
+                {
+                    northEast = new RealTimeMap.Location() { latitude = 44.119016922388475, longitude = 25.5423343754357 },
+                    southWest = new RealTimeMap.Location() { latitude = 44.06574292386291, longitude = 25.67686807545283 }
+                };
+        }
+   
+    }
 
 ## RealTimeMap control events
 
