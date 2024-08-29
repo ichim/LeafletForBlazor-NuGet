@@ -235,7 +235,7 @@ Simplification is done with the simplifyAppearance() method:
          }
 
 
-
+[Example code about Simplify Appearance]()
 
 
 
