@@ -136,6 +136,8 @@ on the onClick event of a button, the custom vehicleType attribute will be updat
 
 The rendering symbol of this StreamPoint will be made in accordance with the Appearance configured when loading the map (onAfterMapLoaded event).
 
+![update@appearance@render](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/581ec7bc-4f87-4082-9bc8-56af7f8cc0a2)
+
 # Simplify Appearance (Point Symbols) based on Zoom Level
 
 When the map display scales have small values, the observer is far from the map, the point symbols can no longer be icons.
@@ -234,7 +236,6 @@ Simplification is done with the simplifyAppearance() method:
 
 
 
-![update@appearance@render](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/581ec7bc-4f87-4082-9bc8-56af7f8cc0a2)
 
 
 
