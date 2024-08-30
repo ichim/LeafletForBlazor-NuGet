@@ -49,13 +49,6 @@ more functionalities about change CircleMarker to Icons or Icon to CircleMarker 
     </tr>
 </table>
 
-| **New examples** | **Description** |
-| ------------------ | ----------------- |              
-|[Appearance and Zoom Level - Simplify](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme)| The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area |
-|[Tracking and Monitoring points position](https://github.com/ichim/LeafletForBlazorTracking)| Highlighting, displaying information and alert when points from the map are close to each other at distances less than or equal to a threshold value.|
-|[GeoJSON file and custom tooltips](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)| We can configure the content of the tooltips based on the custom properties of a StreamPoint |
-
-
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
 
 
