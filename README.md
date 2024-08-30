@@ -21,8 +21,36 @@ bug #46 reported by https://github.com/paoc77 - icon not display on AppearanceOn
 bug #34 reported by https://github.com/odskee - the first marker would be but nothing is displayed
 more functionalities about change CircleMarker to Icons or Icon to CircleMarker for Geometric.Points.Appearance() and Geometric.Points.AppearanceOnType()
 
+<table>
+    <tr>
+        <td> <b>New examples</b> </td>
+        <td><b>Description</b></td>
+    </tr>
+    <tr>
+        <td colspan="2">PointStream collection</td>
+    </tr>
+    <tr>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme">Appearance and Zoom Level - Simplify</a></td>
+        <td><font size = "2px">The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area</font></td>
+    </tr>
+    <tr>
+        <td colspan="2">GeoJSON file</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazorTracking">Tracking and Monitoring points position</a></td>
+        <td><font size = "2px">Highlighting, displaying information and alert when points from the map are close to each other at distances less than or equal to a threshold value.</font></td>
+    </tr>
+    <tr>
+        <td colspan="2">Analisys</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON">GeoJSON file and custom tooltips</a></td>
+        <td><font size = "2px">We can configure the content of the tooltips based on the custom properties of a StreamPoint</font></td>
+    </tr>
+</table>
+
 | **New examples** | **Description** |
-|------------------|-----------------|
+| ------------------ | ----------------- |              
 |[Appearance and Zoom Level - Simplify](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme)| The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area |
 |[Tracking and Monitoring points position](https://github.com/ichim/LeafletForBlazorTracking)| Highlighting, displaying information and alert when points from the map are close to each other at distances less than or equal to a threshold value.|
 |[GeoJSON file and custom tooltips](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)| We can configure the content of the tooltips based on the custom properties of a StreamPoint |
