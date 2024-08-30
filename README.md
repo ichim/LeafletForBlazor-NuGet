@@ -43,7 +43,6 @@ more functionalities about change CircleMarker to Icons or Icon to CircleMarker 
       <tr>
         <td colspan="2"><font color = "green"><b>GeoJSON file</b></font></td>
     </tr>
-   
     <tr>
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON">GeoJSON file and custom tooltips</a></td>
         <td><font size = "2px">We can configure the content of the tooltips based on the custom properties of a StreamPoint</font></td>
