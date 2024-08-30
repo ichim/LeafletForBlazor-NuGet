@@ -21,12 +21,15 @@ bug #46 reported by https://github.com/paoc77 - icon not display on AppearanceOn
 bug #34 reported by https://github.com/odskee - the first marker would be but nothing is displayed
 more functionalities about change CircleMarker to Icons or Icon to CircleMarker for Geometric.Points.Appearance() and Geometric.Points.AppearanceOnType()
 
-[Simplify points Appearance based on Zoom Levels](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme)
+| **New examples** | **Description** |
+|------------------|-----------------|
+|[Simplify points (StreamPoint) Appearance based on Zoom Levels](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme)| The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area |
+|[GeoJSON file and custom tooltips](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)| We can configure the content of the tooltips based on the custom properties of a StreamPoint |
 
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
 
-[more about configuring tooltips and data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
+
 
 -------------------------
 
