@@ -21,6 +21,16 @@ bug #46 reported by https://github.com/paoc77 - icon not display on AppearanceOn
 bug #34 reported by https://github.com/odskee - the first marker would be but nothing is displayed
 more functionalities about change CircleMarker to Icons or Icon to CircleMarker for Geometric.Points.Appearance() and Geometric.Points.AppearanceOnType()
 
+<table>
+    <tr>
+        <td colspan="2">Merged Header</td>
+    </tr>
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+    </tr>
+</table>
+
 | **New examples** | **Description** |
 |------------------|-----------------|
 |[Appearance and Zoom Level - Simplify](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme)| The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area |
