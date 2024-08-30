@@ -33,21 +33,23 @@ more functionalities about change CircleMarker to Icons or Icon to CircleMarker 
         <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme">Appearance and Zoom Level - Simplify</a></td>
         <td><font size = "2px">The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area</font></td>
     </tr>
-    <tr>
-        <td colspan="2"><font color = "green"><b>GeoJSON file</b></font></td>
+   <tr>
+        <td colspan="2"><font color = "green"><b>Analisys</b></font></td>
     </tr>
     <tr>
         <td><a href="https://github.com/ichim/LeafletForBlazorTracking">Tracking and Monitoring points position</a></td>
         <td><font size = "2px">Highlighting, displaying information and alert when points from the map are close to each other at distances less than or equal to a threshold value.</font></td>
     </tr>
-    <tr>
-        <td colspan="2"><font color = "green"><b>Analisys</b></font></td>
+      <tr>
+        <td colspan="2"><font color = "green"><b>GeoJSON file</b></font></td>
     </tr>
+   
     <tr>
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON">GeoJSON file and custom tooltips</a></td>
         <td><font size = "2px">We can configure the content of the tooltips based on the custom properties of a StreamPoint</font></td>
     </tr>
 </table>
+
 
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
