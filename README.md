@@ -21,6 +21,8 @@ bug #46 reported by https://github.com/paoc77 - icon not display on AppearanceOn
 bug #34 reported by https://github.com/odskee - the first marker would be but nothing is displayed
 more functionalities about change CircleMarker to Icons or Icon to CircleMarker for Geometric.Points.Appearance() and Geometric.Points.AppearanceOnType()
 
+# New examples code
+
 <table>
     <tr>
         <td> <b>Example</b> </td>
