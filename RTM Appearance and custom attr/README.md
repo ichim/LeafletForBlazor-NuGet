@@ -36,3 +36,4 @@ The appearance of the points on the map will be determined by a custom property.
                fillColor = "red",
                radius = 8
            };
+
