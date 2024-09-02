@@ -1,1 +1,1 @@
-## Display polygons from Coordinates Array
+# Display polygons from Coordinates Array
