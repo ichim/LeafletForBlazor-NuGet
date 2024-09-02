@@ -23,15 +23,19 @@ more functionalities about change CircleMarker to Icons or Icon to CircleMarker 
 
 <table>
     <tr>
-        <td> <b>New examples</b> </td>
+        <td> <b>Example</b> </td>
         <td><b>Description</b></td>
     </tr>
     <tr>
-        <td colspan="2"><font color = "green"><b>PointStream collection</b></font></td>
+        <td colspan="2"><font color = "green"><b>Real Time Data/PointStream collection</b></font></td>
     </tr>
     <tr>
         <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme">Appearance and Zoom Level - Simplify</a></td>
         <td><font size = "2px">The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area</font></td>
+    </tr>
+    <tr>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20tooltip%20hierarchical%20attr">Tooltips and custom properties</a></td>
+        <td><font size = "2px">A StreamPoint can use custom properties stored on value. These custom properties can be used to define tooltips.</font></td>
     </tr>
    <tr>
         <td colspan="2"><font color = "green"><b>Analisys</b></font></td>
@@ -43,6 +47,7 @@ more functionalities about change CircleMarker to Icons or Icon to CircleMarker 
       <tr>
         <td colspan="2"><font color = "green"><b>GeoJSON file</b></font></td>
     </tr>
+   
     <tr>
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON">GeoJSON file and custom tooltips</a></td>
         <td><font size = "2px">We can configure the content of the tooltips based on the custom properties of a StreamPoint</font></td>
