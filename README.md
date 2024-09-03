@@ -29,7 +29,7 @@ more functionalities about change CircleMarker to Icons or Icon to CircleMarker 
         <td><b>Description</b></td>
     </tr>
     <tr>
-        <td colspan="2"><font color = "green"><b>Real Time Data/PointStream collection</b></font></td>
+        <td colspan="2"><font color = "green"><b>Real Time Data/StreamPoint collection</b></font></td>
     </tr>
      <tr>
         <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Query%20RealTimeMap/Click%20and%20Query%20StreamPoint%20collection">Click and Query StreamPoint Collection</a></td>
