@@ -33,7 +33,7 @@ more functionalities about change CircleMarker to Icons or Icon to CircleMarker 
     </tr>
      <tr>
         <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Query%20RealTimeMap/Click%20and%20Query%20StreamPoint%20collection">Click and Query StreamPoint Collection</a></td>
-        <td><font size = "2px">Displays the attributes of a StreamPoint from RealTimeMap selected by clicking.</font></td>
+        <td><font size = "2px">Displays the attributes of a StreamPoint from RealTimeMap selected by clicking. Query StreamPoint collection based on distance</font></td>
     </tr>
     <tr>
         <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme">Appearance and Zoom Level - Simplify</a></td>
@@ -54,7 +54,7 @@ more functionalities about change CircleMarker to Icons or Icon to CircleMarker 
         <td colspan="2"><font color = "green"><b>GeoJSON file</b></font></td>
     </tr>
     <tr>
-        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON">Configuring custom tooltips</a></td>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/config%20tooltip%20from%20file">Configuring custom tooltips</a></td>
         <td><font size = "2px">We can configure the content of the tooltips based on the custom properties of a StreamPoint</font></td>
     </tr>
 </table>
