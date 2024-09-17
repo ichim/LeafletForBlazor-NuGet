@@ -1,4 +1,4 @@
-# IMPORTANT!
+# IMPORTANT about Map component!
 
 The Map component is deprecated!
 
