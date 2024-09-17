@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\Custom Attributes\\Custom Attributes\\Custom Attributes.csproj": {}
+    "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\Appearance switch case.csproj": {}
   },
   "projects": {
-    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\Custom Attributes\\Custom Attributes\\Custom Attributes.csproj": {
+    "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\Appearance switch case.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\Custom Attributes\\Custom Attributes\\Custom Attributes.csproj",
-        "projectName": "Custom Attributes",
-        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\Custom Attributes\\Custom Attributes\\Custom Attributes.csproj",
+        "projectUniqueName": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\Appearance switch case.csproj",
+        "projectName": "Appearance switch case",
+        "projectPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\Appearance switch case.csproj",
         "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\more about Appearance\\Custom Attributes\\Custom Attributes\\obj\\",
+        "outputPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,34 +52,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.0.4.4, )"
-            },
-            "Microsoft.AspNetCore.Components.WebAssembly": {
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.NET.ILLink.Analyzers": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.100-1.23401.1, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.100-1.23401.1, )",
-              "autoReferenced": true
-            },
-            "Microsoft.NET.Sdk.WebAssembly.Pack": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.5, )",
-              "autoReferenced": true
+              "version": "[2.2.0.2, )"
             }
           },
           "imports": [
@@ -99,11 +72,11 @@
               "version": "[7.0.19, 7.0.19]"
             },
             {
-              "name": "Microsoft.NETCore.App.Ref",
+              "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[7.0.19, 7.0.19]"
             },
             {
-              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "name": "Microsoft.NETCore.App.Ref",
               "version": "[7.0.19, 7.0.19]"
             },
             {
@@ -112,16 +85,14 @@
             }
           ],
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "browser-wasm": {
-          "#import": []
         }
       }
     }
