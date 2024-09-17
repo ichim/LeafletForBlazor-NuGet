@@ -55,7 +55,7 @@ You can find more information:
         <td colspan="2"><font color = "green"><b>GeoJSON file</b></font></td>
     </tr>
     <tr>
-        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/config%20tooltip%20from%20file">Configuring custom tooltips</a></td>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/config%20tooltip%20from%20file">Configuring custom tooltips</a></td>
         <td><font size = "2px">We can configure the content of the tooltips based on the custom properties of a StreamPoint</font></td>
     </tr>
 </table>
