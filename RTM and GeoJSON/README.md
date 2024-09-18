@@ -80,7 +80,7 @@ RealTimeMap OnAfterMapLoaded event:
         });
     }
 
-## Configuring Appearance from files
+## More about GeoJSON file. Configuring Appearance from files
 
 [more about upload data from GeoJSON files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/GeoJSON%20from%20file)
 
