@@ -1113,8 +1113,7 @@ You can display customized tooltips based on the attributes stored in the files:
 
 
 
-[more about configuring tooltips and data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
-
+[more about configuring appearance and tooltips form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
 
 
 
