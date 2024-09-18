@@ -63,6 +63,22 @@ In order to create a GeoJSON array, it is necessary to define the classes:
 
 [Working with GeoJSON Array example and documentation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
 
+# **DataFromGeoJSON** class
+
+You can add GeoJSON specification data [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946) from files:
+
+RealTimeMap OnAfterMapLoaded event:
+
+    private void onAfterMapLoad(RealTimeMap.MapEventArgs args)
+    {
+        var realTimeMap = args.sender as RealTimeMap;
+        realTimeMap.Geometric.DataFromGeoJSON.addFromFiles(new string[3]
+        {
+            $"{path}/geojson/points.json",
+            $"{path}/geojson/polylines.json",
+            $"{path}/geojson/polygons.json"
+        });
+    }
 
 ## Configuring Appearance from files
 
