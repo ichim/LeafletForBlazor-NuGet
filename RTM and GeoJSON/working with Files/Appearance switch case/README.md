@@ -15,10 +15,12 @@ It can be done using a JSON switch object of *appearance* item:
 What is the structure of a _cases_ array item?
 
     "<property value>": {
-                        "color": "green",
-                        "opacity": 0.6,
-                        "weight": 8
+                        "color": "green",    //appearance symbol property
+                        "opacity": 0.6,      //appearance symbol property
+                        "weight": 8          //appearance symbol property
                       }
+
+This appearance symbol can be for: points, polylines or polygons in accordance with the geometry of the geojson items (geometry.type).
 
 #### Example code
 
