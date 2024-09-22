@@ -19,7 +19,7 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [GeoJSON file - appearance and switch cases](#appearance-and-switch-cases) | You can create distinct _symbolization classes_ based on the properties of GeoJSON file items |
+| [GeoJSON file - appearance and switch cases](#appearance-and-switch-cases) | You can create distinct _symbolization classes_ based on the properties of GeoJSON file items. Apply zoom levels visibility. |
 
 
 # New examples code
@@ -60,7 +60,7 @@ You can find more information:
     </tr>
     <tr>
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20case">Appearance and switch/cases</a></td>
-        <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items</font></td>
+        <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items. Apply zoom levels visibility.</font></td>
     </tr>
 </table>
 
