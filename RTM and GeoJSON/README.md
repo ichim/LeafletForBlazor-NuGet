@@ -264,7 +264,22 @@ Example of JSON format:
 		  }
 		}
 
-[example loading and config. from files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/config%20tooltip%20from%20file)
+# More about working with GeoJSON files
+
+<table>
+    <tr>
+        <td> <b>Example</b> </td>
+        <td><b>Description</b></td>
+    </tr>
+    <tr>
+        <td colspan="2"><font color = "green"><b>Upload GeoJSON files</b></font></td>
+    </tr>
+     <tr>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/GeoJSON%20from%20file">Upload GeoJSON data from files</a></td>
+        <td><font size = "2px">Displays the attributes of a StreamPoint from RealTimeMap selected by clicking. Query StreamPoint collection based on distance</font></td>
+    </tr>
+</table>
+
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
 
