@@ -19,7 +19,7 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [GeoJSON file - appearance and switch cases](#appearance-and-switch-cases) | You can create distinct _symbolization classes_ based on the properties of GeoJSON file items |
+| [GeoJSON file - appearance and switch cases](#appearance-and-switch-cases) | You can create distinct _symbolization classes_ based on the properties of GeoJSON file items. Apply zoom levels visibility. |
 
 
 # New examples code
@@ -55,8 +55,12 @@ You can find more information:
         <td colspan="2"><font color = "green"><b>GeoJSON file</b></font></td>
     </tr>
     <tr>
-        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/config%20tooltip%20from%20file">Configuring custom tooltips</a></td>
-        <td><font size = "2px">We can configure the content of the tooltips based on the custom properties of a StreamPoint</font></td>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/config%20tooltip%20from%20file">Configuring custom tooltips</a></td>
+        <td><font size = "2px">We can configure the content of the tooltips based on the custom properties of a GeoJSON items</font></td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20case">Appearance and switch/cases</a></td>
+        <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items. Apply zoom levels visibility.</font></td>
     </tr>
 </table>
 
@@ -1109,8 +1113,7 @@ You can display customized tooltips based on the attributes stored in the files:
 
 
 
-[more about configuring tooltips and data form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
-
+[more about configuring appearance and tooltips form files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON)
 
 
 

@@ -63,8 +63,24 @@ In order to create a GeoJSON array, it is necessary to define the classes:
 
 [Working with GeoJSON Array example and documentation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
 
+# **DataFromGeoJSON** class
 
-## Configuring Appearance from files
+You can add GeoJSON specification data [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946) from files:
+
+RealTimeMap OnAfterMapLoaded event:
+
+    private void onAfterMapLoad(RealTimeMap.MapEventArgs args)
+    {
+        var realTimeMap = args.sender as RealTimeMap;
+        realTimeMap.Geometric.DataFromGeoJSON.addFromFiles(new string[3]
+        {
+            $"{path}/geojson/points.json",
+            $"{path}/geojson/polylines.json",
+            $"{path}/geojson/polygons.json"
+        });
+    }
+
+## More about GeoJSON file. Configuring Appearance from files
 
 [more about upload data from GeoJSON files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/GeoJSON%20from%20file)
 
@@ -248,7 +264,7 @@ Example of JSON format:
 		  }
 		}
 
-[example loading and config. from files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/config%20tooltip%20from%20file)
+[example loading and config. from files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/config%20tooltip%20from%20file)
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
 
