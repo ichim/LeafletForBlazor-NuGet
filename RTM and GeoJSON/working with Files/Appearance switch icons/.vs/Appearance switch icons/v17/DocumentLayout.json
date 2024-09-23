@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch icons\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAE7405-F656-4243-8AB9-3DFA2D0B23C2}|Appearance switch icons\\Appearance switch icons.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch icons\\appearance switch icons\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CAE7405-F656-4243-8AB9-3DFA2D0B23C2}|Appearance switch icons\\Appearance switch icons.csproj|solutionrelative:appearance switch icons\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAE7405-F656-4243-8AB9-3DFA2D0B23C2}|Appearance switch icons\\Appearance switch icons.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch icons\\appearance switch icons\\wwwroot\\geojson files\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6CAE7405-F656-4243-8AB9-3DFA2D0B23C2}|Appearance switch icons\\Appearance switch icons.csproj|solutionrelative:appearance switch icons\\wwwroot\\geojson files\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAE7405-F656-4243-8AB9-3DFA2D0B23C2}|Appearance switch icons\\Appearance switch icons.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch icons\\appearance switch icons\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CAE7405-F656-4243-8AB9-3DFA2D0B23C2}|Appearance switch icons\\Appearance switch icons.csproj|solutionrelative:appearance switch icons\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "points.json",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\wwwroot\\geojson files\\points.json",
+              "RelativeDocumentMoniker": "Appearance switch icons\\wwwroot\\geojson files\\points.json",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\wwwroot\\geojson files\\points.json",
+              "RelativeToolTip": "Appearance switch icons\\wwwroot\\geojson files\\points.json",
+              "ViewState": "AQIAADoAAAAAAAAAAAAkwFYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-23T07:43:53.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\_Imports.razor",
+              "RelativeDocumentMoniker": "Appearance switch icons\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\_Imports.razor",
+              "RelativeToolTip": "Appearance switch icons\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T07:42:04.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Appearance switch icons\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\Pages\\Index.razor",
+              "RelativeToolTip": "Appearance switch icons\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T07:41:03.137Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
