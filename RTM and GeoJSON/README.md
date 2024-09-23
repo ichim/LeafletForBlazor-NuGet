@@ -276,7 +276,14 @@ Example of JSON format:
     </tr>
      <tr>
         <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/GeoJSON%20from%20file">Upload GeoJSON data from files</a></td>
-        <td><font size = "2px">Displays the attributes of a StreamPoint from RealTimeMap selected by clicking. Query StreamPoint collection based on distance</font></td>
+        <td><font size = "2px">Upload data from GeoJSON files</font></td>
+    </tr>
+    <tr>
+        <td colspan="2"><font color = "green"><b>Shapes appearance</b></font></td>
+    </tr>
+    <tr>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20case">Appearance and switch/cases symbology</a></td>
+        <td><font size = "2px">switch/cases allows you to distinctly symbolize shapes based on properties</font></td>
     </tr>
 </table>
 
