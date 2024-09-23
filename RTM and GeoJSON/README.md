@@ -190,6 +190,19 @@ _similar with leaflet documentation_
 
 _similar with leaflet documentation_
 
+4. symbol for polyline shape:
+
+
+| Property | Type | Descriotion |
+|----|----|----|
+| color | string | color of line |
+| opacity | double | opacity of line |
+| weight | int | weight of line |
+
+
+_similar with leaflet documentation_
+
+
 ### JSON example for point(s)
 
 Example of JSON format:
