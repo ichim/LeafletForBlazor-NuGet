@@ -1,0 +1,36 @@
+﻿@page "/"
+
+<h4>Zoom level: @zoomLevel</h4>
+<RealTimeMap Parameters="@parameters" OnAfterMapLoaded="@OnAfterMapLoaded" OnZoomLevelEndChange="@OnZoomLevelEndChange" width="1000px" height="620px" />
+<h4>Mouse scroll or +/- map buttons to change zoom level. Polygons be visible between 12 and 16 (inclusive)</h4>
+
+@code {
+    string path = "http://localhost:5072/geojson files/";//path GeoJSON file(s)
+    int zoomLevel = 0;
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 44.44643179834759,
+                longitude = 26.096934450120933
+            },
+            zoomLevel = 16
+
+        };
+    public  void OnZoomLevelEndChange(RealTimeMap.MapZoomEventArgs args)
+    {
+        Console.WriteLine(args.zoomLevel);
+        zoomLevel = args.zoomLevel;
+        StateHasChanged();
+
+    }
+    public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        await args.sender.Geometric.DataFromGeoJSON.addFromFiles(new string[1]
+            {
+                 $"{path}polygons.json"//GeoJSON file
+            }
+        );
+
+    }
+}

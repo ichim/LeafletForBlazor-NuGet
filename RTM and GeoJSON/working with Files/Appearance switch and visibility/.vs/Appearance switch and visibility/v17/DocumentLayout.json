@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch and visibility\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46FFED2D-9473-4533-B915-B266FF239066}|Appearance switch and visibility\\Appearance switch and visibility.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch and visibility\\appearance switch and visibility\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46FFED2D-9473-4533-B915-B266FF239066}|Appearance switch and visibility\\Appearance switch and visibility.csproj|solutionrelative:appearance switch and visibility\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46FFED2D-9473-4533-B915-B266FF239066}|Appearance switch and visibility\\Appearance switch and visibility.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch and visibility\\appearance switch and visibility\\wwwroot\\geojson files\\polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{46FFED2D-9473-4533-B915-B266FF239066}|Appearance switch and visibility\\Appearance switch and visibility.csproj|solutionrelative:appearance switch and visibility\\wwwroot\\geojson files\\polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46FFED2D-9473-4533-B915-B266FF239066}|Appearance switch and visibility\\Appearance switch and visibility.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch and visibility\\appearance switch and visibility\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46FFED2D-9473-4533-B915-B266FF239066}|Appearance switch and visibility\\Appearance switch and visibility.csproj|solutionrelative:appearance switch and visibility\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "polygons.json",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\wwwroot\\geojson files\\polygons.json",
+              "RelativeDocumentMoniker": "Appearance switch and visibility\\wwwroot\\geojson files\\polygons.json",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\wwwroot\\geojson files\\polygons.json",
+              "RelativeToolTip": "Appearance switch and visibility\\wwwroot\\geojson files\\polygons.json",
+              "ViewState": "AQIAAE0BAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-23T06:40:40.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Appearance switch and visibility\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\Pages\\Index.razor",
+              "RelativeToolTip": "Appearance switch and visibility\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:43:32.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\_Imports.razor",
+              "RelativeDocumentMoniker": "Appearance switch and visibility\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\_Imports.razor",
+              "RelativeToolTip": "Appearance switch and visibility\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:39:42.858Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
