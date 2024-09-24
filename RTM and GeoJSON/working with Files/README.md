@@ -13,7 +13,7 @@ Two formats are used, both complying with [GeoJSON specification (RFC 7946)](htt
 		@code{
 			public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
 			 {
-				await args.sender.Geometric.DataFromGeoJSON.addObject(geojsonArray);
+				await args.sender.Geometric.DataFromGeoJSON.addFromFiles(urlsArray);
 			 }
 		}
 
@@ -25,7 +25,7 @@ Two formats are used, both complying with [GeoJSON specification (RFC 7946)](htt
 		@code{
 			public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
 			 {
-				await args.sender.Geometric.DataFromGeoJSON.addObject(geojsonObject);
+				await args.sender.Geometric.DataFromGeoJSON.addFromFiles(urlsArray);
 			 }
 		}
 **DataFromGeoJSON** addFromFiles(string[]) method accepts an array of url addresses of GeoJSON files.
