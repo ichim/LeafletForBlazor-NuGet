@@ -35,7 +35,7 @@ example code:
  - Blazor page:
 
 
-		<RealTimeMap OnAfterMapLoaded="@OnAfterMapLoaded" width="460px" height="462px" />
+		<RealTimeMap OnAfterMapLoaded="@onAfterMapLoad" width="460px" height="462px" />
 
 
  - code block:
