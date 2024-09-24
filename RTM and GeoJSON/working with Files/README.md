@@ -52,3 +52,12 @@ example code:
 		    });
 		}
 
+## Configuring shapes appearance
+
+The configuration can be done in the GeoJSON file and can be: 
+- simple or [example simple appearance]()
+- switch/cases [example switch/cases appearance]()
+
+## Configuring custom tooltips
+
+
