@@ -18,7 +18,7 @@ Two formats are used, both complying with [GeoJSON specification (RFC 7946)](htt
 			 }
 		}
 
-1. And another JSON format, which for the "data" property we have the same array [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946). In addition, this format accepts customization of symbolization, tooltips, etc 
+1. And another JSON format, which for the "data" property we have the same array [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946). In addition, this format accepts customization of appearance, tooltips, visibility etc 
 
 
 
