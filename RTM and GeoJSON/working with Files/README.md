@@ -1,6 +1,6 @@
 # Upload data from GeoJSON files
 
-You can load spatial data stored in files in GeoJSOM format. The data may be in accordance with the specifications or may have settings regarding the configuration of the appearance, tooltips or scales at which the data are visible on the map
+You can load spatial data stored in files in GeoJSOM format. The data may be in accordance with the specifications [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946) or may have settings regarding the configuration of the appearance, tooltips or scales at which the data are visible on the map
 
 ## **DataFromGeoJSON** class
 
