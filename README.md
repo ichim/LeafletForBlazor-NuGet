@@ -63,7 +63,7 @@ You can find more information:
         <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items. Apply zoom levels visibility.</font></td>
     </tr>
 	<tr>
-        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20icons">png.* Icons, switch/cases and vesibility zoom levels</a></td>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20icons">png.* Icons, switch/cases and control visibility based on zoom levels</a></td>
         <td><font size = "2px">YYou can create distinct symbolization classes based on the properties of GeoJSON file items. When the shape is point type, you can icons (*.png) for display in the map. Apply zoom levels visibility.</font></td>
     </tr>
 </table>
