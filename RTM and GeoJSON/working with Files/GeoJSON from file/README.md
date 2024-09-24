@@ -116,6 +116,19 @@ _similar with leaflet documentation_
 
 _similar with leaflet documentation_
 
+4. symbol for polyline shape:
+
+
+| Property | Type | Descriotion |
+|----|----|----|
+| color | string | color of line |
+| opacity | double | opacity of line |
+| weight | int | weight of line |
+
+
+_similar with leaflet documentation_
+
+
 # JSON formats of data files
 
 Below I will show you several examples of files that can be loaded by RealTimeMap.
