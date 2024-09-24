@@ -60,4 +60,6 @@ The configuration can be done in the GeoJSON file and can be:
 
 ## Configuring custom tooltips
 
+You can configure the content of tooltips messages can be done in GeoJSON files [configuring tooltips example]()
+
 
