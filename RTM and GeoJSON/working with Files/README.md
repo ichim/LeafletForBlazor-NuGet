@@ -55,7 +55,7 @@ example code:
 ## Configuring shapes appearance
 
 The configuration can be done in the GeoJSON file and can be: 
-- simple or [example simple appearance]()
+- simple or [example simple appearance](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/GeoJSON%20from%20file)
 - switch/cases [example switch/cases appearance]()
 
 ## Configuring custom tooltips
