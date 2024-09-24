@@ -28,3 +28,5 @@ Two formats are used, both complying with [GeoJSON specification (RFC 7946)](htt
 				await args.sender.Geometric.DataFromGeoJSON.addObject(geojsonObject);
 			 }
 		}
+**DataFromGeoJSON** addFromFiles(string[]) method accepts an array of url addresses of GeoJSON files.
+
