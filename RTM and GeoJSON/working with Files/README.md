@@ -60,6 +60,6 @@ The configuration can be done in the GeoJSON file and can be:
 
 ## Configuring custom tooltips
 
-You can configure the content of tooltips messages can be done in GeoJSON files [configuring tooltips example]()
+You can configure the content of tooltips messages can be done in GeoJSON files [configuring tooltips example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/config%20tooltip%20from%20file)
 
 
