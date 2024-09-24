@@ -34,18 +34,20 @@ example code:
 
  - Blazor page:
 
-	<RealTimeMap OnAfterMapLoaded="@OnAfterMapLoaded" width="460px" height="462px" />
+
+		<RealTimeMap OnAfterMapLoaded="@OnAfterMapLoaded" width="460px" height="462px" />
+
 
  - code block:
 	
-	private void onAfterMapLoad(RealTimeMap.MapEventArgs args)
-	{
-	    var realTimeMap = args.sender as RealTimeMap;
-	    realTimeMap.Geometric.DataFromGeoJSON.addFromFiles(new string[3]
-	    {
-	        $"{path}/geojson/points.json",
-	        $"{path}/geojson/polylines.json",
-	        $"{path}/geojson/polygons.json"
-	    });
-	}
+		private void onAfterMapLoad(RealTimeMap.MapEventArgs args)
+		{
+		    var realTimeMap = args.sender as RealTimeMap;
+		    realTimeMap.Geometric.DataFromGeoJSON.addFromFiles(new string[3]
+		    {
+		        $"{path}/geojson/points.json",
+		        $"{path}/geojson/polylines.json",
+		        $"{path}/geojson/polygons.json"
+		    });
+		}
 
