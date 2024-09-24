@@ -32,5 +32,14 @@ Two formats are used, both complying with [GeoJSON specification (RFC 7946)](htt
 
 example code:
 
-
+	private void onAfterMapLoad(RealTimeMap.MapEventArgs args)
+	{
+	    var realTimeMap = args.sender as RealTimeMap;
+	    realTimeMap.Geometric.DataFromGeoJSON.addFromFiles(new string[3]
+	    {
+	        $"{path}/geojson/points.json",
+	        $"{path}/geojson/polylines.json",
+	        $"{path}/geojson/polygons.json"
+	    });
+	}
 
