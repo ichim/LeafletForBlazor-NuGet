@@ -40,7 +40,8 @@ example code:
 
 
  - code block:
-	
+
+ 		string path = "http://localhost:5292/";
 		private void onAfterMapLoad(RealTimeMap.MapEventArgs args)
 		{
 		    var realTimeMap = args.sender as RealTimeMap;
