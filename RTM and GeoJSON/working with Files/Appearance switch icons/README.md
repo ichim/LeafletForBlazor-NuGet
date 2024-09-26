@@ -20,7 +20,7 @@ What is the structure of a _cases_ array item based on _icon marker_?
                            "iconAnchor": [ 24, 24 ]                                 //icon anchor based on bottom-left corner - pixels
                         }
 
-This appearance symbol can be for: points, polylines or polygons in accordance with the geometry of the geojson items (geometry.type).
+This appearance symbol(icon) can be for point shapes.
 
 #### Example code
 
