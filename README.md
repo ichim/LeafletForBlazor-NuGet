@@ -25,16 +25,56 @@ You can find more information:
 
 # New examples code
 
-| **Example** | **Description** |
-| ------------------ | ----------------- |              
-|[Click and Query StreamPoint Collection](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Query%20RealTimeMap/Click%20and%20Query%20StreamPoint%20collection)| Displays the attributes of a StreamPoint from RealTimeMap selected by clicking. |
-|[Appearance and Zoom Level - Simplify](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme)| The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area. |
-|[Tooltips and custom properties](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20tooltip%20hierarchical%20attr)| A StreamPoint can use custom properties stored on value. These custom properties can be used to define tooltips. |
-|[Tracking and Monitoring points position](https://github.com/ichim/LeafletForBlazorTracking)| Highlighting, displaying information and alert when points from the map are close to each other at distances less than or equal to a threshold value.|
-|[Configuring custom tooltips](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/config%20tooltip%20from%20file)| We can configure the content of the tooltips based on the custom properties of a GeoJSON items |
-|[Appearance and switch/cases](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20case)| You can create distinct symbolization classes based on the properties of GeoJSON file items. Apply visibility zoom levels |
-|[png.* Icons, switch/cases and vesibility zoom levels](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20icons)|You can create distinct symbolization classes based on the properties of GeoJSON file items. When the shape is point type, you can icons (*.png) for display in the map. Apply zoom levels visibility.|
-
+<table>
+    <tr>
+        <td> <b>Example</b> </td>
+        <td><b>Description</b></td>
+    </tr>
+    <tr>
+        <td colspan="2"><font color = "green"><b>Real Time Data/StreamPoint collection</b></font></td>
+    </tr>
+     <tr>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Query%20RealTimeMap/Click%20and%20Query%20StreamPoint%20collection">Click and Query StreamPoint Collection</a></td>
+        <td><font size = "2px">Displays the attributes of a StreamPoint from RealTimeMap selected by clicking. Query StreamPoint collection based on distance</font></td>
+    </tr>
+    <tr>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/more%20about%20Appearance/changeAppearanceOnZoom#readme">Appearance and Zoom Level - Simplify</a></td>
+        <td><font size = "2px">The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area</font></td>
+    </tr>
+    <tr>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20tooltip%20hierarchical%20attr">Tooltips and custom properties</a></td>
+        <td><font size = "2px">A StreamPoint can use custom properties stored on value. These custom properties can be used to define tooltips.</font></td>
+    </tr>
+   <tr>
+        <td colspan="2"><font color = "green"><b>Analisys</b></font></td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazorTracking">Tracking and Monitoring points position</a></td>
+        <td><font size = "2px">Highlighting, displaying information and alert when points from the map are close to each other at distances less than or equal to a threshold value.</font></td>
+    </tr>
+      <tr>
+        <td colspan="2"><font color = "green"><b>GeoJSON file</b></font></td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/config%20tooltip%20from%20file">Configuring custom tooltips</a></td>
+        <td><font size = "2px">We can configure the content of the tooltips based on the custom properties of a GeoJSON items</font></td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20case">Appearance and switch/cases</a></td>
+        <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items. Apply zoom levels visibility.</font></td>
+    </tr>
+	<tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20icons">png.* Icons, switch/cases and vesibility zoom levels</a></td>
+        <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items. When the shape is point type, you can icons (*.png) for display in the map. Apply zoom levels visibility.</font></td>
+    </tr>
+	<tr>
+        <td colspan="2"><font color = "green"><b>RealTimeMap components (beta)</b></font></td>
+    </tr>
+	<tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend/basic">StreamLegend component</a></td>
+        <td><font size = "2px">StreamLegend is a beta component (starting with 2.0.0.6) that allows the display of symbols applied through the Appearance() method. This component displays only the symbols of the StreamPoint elements added on the RealTime.Geometric.Points class.</font></td>
+    </tr>
+</table>
 
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
