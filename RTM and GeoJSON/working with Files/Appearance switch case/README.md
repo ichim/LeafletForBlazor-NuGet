@@ -111,3 +111,34 @@ _similar with leaflet documentation_
 
 
 _similar with leaflet documentation_
+
+4. symbol for polyline shape:
+
+
+| Property | Type | Descriotion |
+|----|----|----|
+| color | string | color of line |
+| opacity | double | opacity of line |
+| weight | int | weight of line |
+
+
+_similar with leaflet documentation_
+
+
+
+# More about working with GeoJSON files
+
+<table>
+    <tr>
+        <td> <b>Example</b> </td>
+        <td><b>Description</b></td>
+    </tr>
+    <tr>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20case">Appearance and switch/cases symbology</a></td>
+        <td><font size = "2px">switch/cases allows you to distinctly symbolize shapes based on properties</font></td>
+    </tr>
+    <tr>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20icons">Appearance switch/cases and icons</a></td>
+        <td><font size = "2px">Working with switch/cases and png icons</font></td>
+    </tr>
+</table>
