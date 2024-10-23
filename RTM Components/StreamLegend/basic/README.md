@@ -16,3 +16,6 @@ in the **_Imports.razor** file of the project.
         <RealTimeMap height="88vh" width="80hw">
             <StreamLegend/>
         </RealTimeMap>
+
+
+![StreamLegend](https://github.com/user-attachments/assets/63bbeab9-5b55-4f37-8470-9c64931a0296)
