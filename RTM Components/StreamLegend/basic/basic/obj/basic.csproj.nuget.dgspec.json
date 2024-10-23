@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LaurențiuIchim\\source\\repos\\basic\\basic\\basic.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM Components\\StreamLegend\\basic\\basic\\basic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LaurențiuIchim\\source\\repos\\basic\\basic\\basic.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM Components\\StreamLegend\\basic\\basic\\basic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LaurențiuIchim\\source\\repos\\basic\\basic\\basic.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM Components\\StreamLegend\\basic\\basic\\basic.csproj",
         "projectName": "basic",
-        "projectPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\basic\\basic\\basic.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM Components\\StreamLegend\\basic\\basic\\basic.csproj",
         "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\basic\\basic\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM Components\\StreamLegend\\basic\\basic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.2.0.6, )"
+              "version": "[2.2.0.8, )"
             }
           },
           "imports": [

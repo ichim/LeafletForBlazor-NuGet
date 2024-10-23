@@ -1,54 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\basic\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{316EC32C-54AB-46CB-AC01-7728C494A01A}|basic\\basic.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\basic\\basic\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{316EC32C-54AB-46CB-AC01-7728C494A01A}|basic\\basic.csproj|solutionrelative:basic\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{316EC32C-54AB-46CB-AC01-7728C494A01A}|basic\\basic.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\basic\\basic\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{316EC32C-54AB-46CB-AC01-7728C494A01A}|basic\\basic.csproj|solutionrelative:basic\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM Components\\StreamLegend\\basic\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\basic\\basic\\Pages\\Index.razor",
-              "RelativeDocumentMoniker": "basic\\Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\basic\\basic\\Pages\\Index.razor",
-              "RelativeToolTip": "basic\\Pages\\Index.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T13:59:10.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\basic\\basic\\_Imports.razor",
-              "RelativeDocumentMoniker": "basic\\_Imports.razor",
-              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\basic\\basic\\_Imports.razor",
-              "RelativeToolTip": "basic\\_Imports.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T13:58:08.232Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

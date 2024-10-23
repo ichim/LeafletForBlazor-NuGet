@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "LeafletForBlazor/2.2.0.6": {
+      "LeafletForBlazor/2.2.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0"
@@ -236,10 +236,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/2.2.0.6": {
-      "sha512": "QsbR6WAAgIbw5vvdW0Kfjlh+OavjhMpEVflq8h/bh5I1gOMft5A1XsmJ7/ZtwIvCIZa+n30jLZuWJT0IFZjhGg==",
+    "LeafletForBlazor/2.2.0.8": {
+      "sha512": "qhnWC4pJnZlWGFh3GIgTUQQFhtOGMJ4rnPgrkKxORMW6FwVDXeJ/akGjweKn+onwRHYBd1AwWaXpiLeq9g2Z9A==",
       "type": "package",
-      "path": "leafletforblazor/2.2.0.6",
+      "path": "leafletforblazor/2.2.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -251,7 +251,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net7.0/map_color.ico",
-        "leafletforblazor.2.2.0.6.nupkg.sha512",
+        "leafletforblazor.2.2.0.8.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net7.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -611,7 +611,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "LeafletForBlazor >= 2.2.0.6"
+      "LeafletForBlazor >= 2.2.0.8"
     ]
   },
   "packageFolders": {
@@ -621,11 +621,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LaurențiuIchim\\source\\repos\\basic\\basic\\basic.csproj",
+      "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM Components\\StreamLegend\\basic\\basic\\basic.csproj",
       "projectName": "basic",
-      "projectPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\basic\\basic\\basic.csproj",
+      "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM Components\\StreamLegend\\basic\\basic\\basic.csproj",
       "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\basic\\basic\\obj\\",
+      "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM Components\\StreamLegend\\basic\\basic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -666,7 +666,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[2.2.0.6, )"
+            "version": "[2.2.0.8, )"
           }
         },
         "imports": [
