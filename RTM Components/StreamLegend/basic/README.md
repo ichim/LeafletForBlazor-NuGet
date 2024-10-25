@@ -18,4 +18,6 @@ in the **_Imports.razor** file of the project.
         </RealTimeMap>
 
 
-![StreamLegend](https://github.com/user-attachments/assets/63bbeab9-5b55-4f37-8470-9c64931a0296)
+
+
+![streamLegend@basic22](https://github.com/user-attachments/assets/4de7a0a0-ad00-4efc-ab6f-7bf1f9524335)
