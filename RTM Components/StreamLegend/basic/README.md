@@ -20,4 +20,4 @@ in the **_Imports.razor** file of the project.
 
 
 
-![streamLegend@basic22](https://github.com/user-attachments/assets/4de7a0a0-ad00-4efc-ab6f-7bf1f9524335 =250x240)
+![streamLegend@basic22](https://github.com/user-attachments/assets/4de7a0a0-ad00-4efc-ab6f-7bf1f9524335|width=10)
