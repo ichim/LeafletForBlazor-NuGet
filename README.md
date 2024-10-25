@@ -73,7 +73,6 @@ You can find more information:
 	<tr>
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend/basic">StreamLegend component</a></td>
         <td><font size = "2px">StreamLegend is a beta component (starting with 2.0.0.6) that allows the display of symbols applied through the Appearance() method. This component displays only the symbols of the StreamPoint elements added on the RealTime.Geometric.Points class.</font></td>
-		<td><img ref="https://github.com/user-attachments/assets/4de7a0a0-ad00-4efc-ab6f-7bf1f9524335"></img></td>
     </tr>
 </table>
 
