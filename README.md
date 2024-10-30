@@ -68,11 +68,11 @@ You can find more information:
         <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items. When the shape is point type, you can icons (*.png) for display in the map. Apply zoom levels visibility.</font></td>
     </tr>
 	<tr>
-        <td colspan="2"><font color = "green"><b>RealTimeMap components (beta)</b></font></td>
+        <td colspan="2"><font color = "green"><b>RealTimeMap components</b></font></td>
     </tr>
 	<tr>
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend/basic">StreamLegend component</a></td>
-        <td><font size = "2px">StreamLegend is a beta component (starting with 2.0.0.6) that allows the display of symbols applied through the Appearance() method. This component displays only the symbols of the StreamPoint elements added on the RealTime.Geometric.Points class.</font></td>
+        <td><font size = "2px">StreamLegend is a component (starting with 2.2.0.6) that allows the display of symbols applied through the Appearance() method. This component displays only the symbols of the StreamPoint elements added on the RealTime.Geometric.Points class.</font></td>
     </tr>
 </table>
 
