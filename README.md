@@ -19,8 +19,7 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [**OnStreamPointAppearanceChange**](#onstreampointappearancechange) | event is triggered every time the Appearance() method from the Geometric.Points class is called|
-| [**StreamLegend** RealTimeMap component (beta)](#streamlegend) | **StreamLegend** is a new Blazor component which offers the possibility of displaying a legend with symbols and the attribute to be symbolized (eg type) on the Appearance() method|
+| [#52 bug](https://github.com/ichim/LeafletForBlazor-NuGet/issues/52) | Issue when rendering the map reported by Tiago Costa (https://github.com/xm3khs) |
 
 
 # New examples code
