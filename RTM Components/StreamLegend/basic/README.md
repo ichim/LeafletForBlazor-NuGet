@@ -40,9 +40,9 @@ The items of the legend can be displayed at customizable distances from the edge
 
 | Paramerer | Default value | Description |
 |----|----|----|
-| paddingLeft | 10 | padding from the left canvas edge |
-| paddingRight | 10 | padding from the right canvas edge |
-| paddingTop | 10 | padding from the top canvas edge |
+| paddingLeft | 10 | padding from the left canvas edge (px) |
+| paddingRight | 10 | padding from the right canvas edge (px) |
+| paddingTop | 10 | padding from the top canvas edge (px) |
 
 _values ​​are in pixels_
 
@@ -56,5 +56,18 @@ _values ​​are in pixels_
                      paddingTop = 15    //values ​​in pixels, default value is 10px
                  }
             };
+
+### Formatting legend labels 
+
+You can change the font (family, color, size, style and weight) and padding from the symbol displayed in the legend:
+
+| Paramerer | Default value | Description |
+|----|----|----|
+| fontFamily | "Arial"  | label font family |
+| fontSize | 15 | label font size |
+| fontColor | "black" | label font color |
+| fontWeight | "normal" | label font weight |
+| fontStyle | "normal" | label font style |
+| paddingLeft | 10 | padding from the symbol displayed in the legend (px) |
 
         
