@@ -1,6 +1,6 @@
 # StreamLegend
 
-StreamLegend is a beta component (starting with 2.2.0.6) that allows the display of symbols applied through the Appearance() method. This component displays only the symbols of the StreamPoint elements added on the RealTime.Geometric.Points class.
+StreamLegend is a component (starting with 2.2.0.6) that allows the display of symbols applied through the Appearance() method. This component displays only the symbols of the StreamPoint elements added on the RealTime.Geometric.Points class.
 
 1. Add the LeafletForBlazor namespace to the project, using the @using directive
 
