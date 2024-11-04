@@ -19,7 +19,9 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [#52 bug](https://github.com/ichim/LeafletForBlazor-NuGet/issues/52) | Issue when rendering the map reported by Tiago Costa (https://github.com/xm3khs) |
+| [#12 bug](https://github.com/ichim/LeafletForBlazor-NuGet/issues/12) | Issue when rendering the map reported by [Mohammad Khairul Azmi bin Mat Esa](https://github.com/khairulazmimatesa) |
+| [StreamLegend Customization](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend/basic#readme) | Formatting StreamLegend label text (font, padding), padding content and items counter |
+
 
 
 # New examples code
