@@ -88,7 +88,7 @@ You can change the font (family, color, size, style and weight) and padding from
 
 Blazor page:
 
-        <RealTimeMap @ref="realTimeMap" height="88vh" width="80hw" OnAfterMapLoaded="AfterMapLoaded">
+        <RealTimeMap @ref="realTimeMap" height="88vh" width="80hw">
             <StreamLegend  contentStyleInitialization="@contentStyle" />
          </RealTimeMap>
 
@@ -113,3 +113,16 @@ Code block:
                             }
                         }; 
                 }
+
+### Display the number of StreamPoints on the label
+
+**displayCounter** is a boolean parameters, which allows displaying or not the number of StreamPoints located in the map for each category.
+
+### Display counter example code
+
+Blazor page:
+
+        <RealTimeMap @ref="realTimeMap" height="88vh" width="80hw">
+            <StreamLegend  displayCounter="true"/>
+         </RealTimeMap>
+
