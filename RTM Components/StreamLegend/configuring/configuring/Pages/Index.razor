@@ -1,0 +1,90 @@
+﻿@page "/"
+
+@using Configuring.Data
+<h4>Use the mouse scroll to change the scale. Map point symbols will change at zoom levels below 16/@zoomLevel</h4>
+<RealTimeMap @ref="realTimeMap" height="88vh" width="80hw" OnZoomLevelEndChange="@zoomLevelChange" OnAfterMapLoaded="@MapLoaded">
+    <StreamLegend displayCounter="true" contentStyleInitialization="@contentStyle" />
+</RealTimeMap>
+
+@code {
+    RealTimeMap realTimeMap;
+    string iconPath = "http://localhost:5146/icons/";
+    int zoomLevel = 2;
+
+    /*StreamLegend customization*/
+
+    StreamLegend.ContentStyle contentStyle = new StreamLegend.ContentStyle()
+        {
+            labelStyle = new StreamLegend.LabelStyle()
+            {
+                fontColor = "#626262",
+                fontFamily = "Verdana",
+                fontSize = 14,
+                fontWeight = "bold",
+                paddingLeft = 20,
+
+
+            },
+            contentPadding = new StreamLegend.ContentPadding()
+            {
+                paddingLeft = 20,
+                paddingRight = 20,
+                paddingTop = 15
+            }
+
+        };
+
+    /*StreamLegend customization*/
+
+    private void defaultAppearance()
+    {
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "residency").pattern = new RealTimeMap.PointSymbol() { radius = 8, color = "black", opacity = 1, fillColor = "gray", fillOpacity = 1, weight = 2 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "unknown").pattern = new RealTimeMap.PointSymbol() { radius = 8, color = "blue", opacity = 1, fillColor = "azure", fillOpacity = 1, weight = 2 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "museum").pattern = new RealTimeMap.PointSymbol() { radius = 12, color = "orange", opacity = 1, fillColor = "#cd6420", fillOpacity = 1, weight = 2 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "post office").pattern = new RealTimeMap.PointSymbol() { radius = 12, color = "yellow", opacity = 1, fillColor = "red", fillOpacity = 1, weight = 4 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "food shop").pattern = new RealTimeMap.PointIcon() { iconUrl = $"{iconPath}food.png", iconSize = new int[2] { 32, 32 } };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "souvenir shop").pattern = new RealTimeMap.PointIcon() { iconUrl = $"{iconPath}souvenir.png", iconSize = new int[2] { 32, 32 } };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "cofee shop").pattern = new RealTimeMap.PointIcon() { iconUrl = $"{iconPath}cofee.png", iconSize = new int[2] { 32, 32 } };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "car rentals").pattern = new RealTimeMap.PointIcon() { iconUrl = $"{iconPath}carrentals.png", iconSize = new int[2] { 32, 32 } };
+    }
+
+    private void awayAppearance()
+    {
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "residency").pattern = new RealTimeMap.PointSymbol() { radius = 6, color = "black", opacity = 1, fillColor = "gray", fillOpacity = 1, weight = 2 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "unknown").pattern = new RealTimeMap.PointSymbol() { radius = 6, color = "blue", opacity = 1, fillColor = "azure", fillOpacity = 1, weight = 2 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "museum").pattern = new RealTimeMap.PointSymbol() { radius = 6, color = "orange", opacity = 1, fillColor = "#cd6420", fillOpacity = 1, weight = 2 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "post office").pattern = new RealTimeMap.PointSymbol() { radius = 6, color = "yellow", opacity = 1, fillColor = "red", fillOpacity = 1, weight = 4 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "food shop").pattern = new RealTimeMap.PointSymbol() { radius = 6, color = "#6fbb00", opacity = 1, fillColor = "#8bec00", fillOpacity = 1, weight = 2 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "souvenir shop").pattern = new RealTimeMap.PointSymbol() { radius = 6, color = "#02486a", opacity = 1, fillColor = "#009afe", fillOpacity = 1, weight = 2 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "cofee shop").pattern = new RealTimeMap.PointSymbol() { radius = 4, color = "#4c0090", opacity = 1, fillColor = "#8002f0", fillOpacity = 1, weight = 2 };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "car rentals").pattern = new RealTimeMap.PointSymbol() { radius = 4, color = "#8c064b", opacity = 1, fillColor = "#fb188d", fillOpacity = 1, weight = 2 };
+    }
+
+    public async void MapLoaded(RealTimeMap.MapEventArgs args)
+    {
+
+        InputData inputData = new InputData();
+        await args.sender.Geometric.Points.add(inputData.points.ToArray());
+        defaultAppearance();
+    }
+
+    private void onStreamPointAppearanceChange(RealTimeMap.StreamPointsAppearanceArgs args)
+    {
+        RealTimeMap.StreamPointsAppearance[] result = args.pointsAppearance as RealTimeMap.StreamPointsAppearance[];
+
+    }
+
+    private void zoomLevelChange(RealTimeMap.IMapZoomEventArgs args)
+    {
+        zoomLevel = args.zoomLevel;
+        if (args.zoomLevel < 16)
+        {
+            awayAppearance();
+        }
+        else
+        {
+            defaultAppearance();
+        }
+
+    }
+}
