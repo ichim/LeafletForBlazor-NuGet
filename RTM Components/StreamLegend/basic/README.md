@@ -43,6 +43,7 @@ The items of the legend can be displayed at customizable distances from the edge
 | paddingLeft | 10 | padding from the left canvas edge |
 | paddingRight | 10 | padding from the right canvas edge |
 | paddingTop | 10 | padding from the top canvas edge |
+
 _values ​​are in pixels_
 
 
