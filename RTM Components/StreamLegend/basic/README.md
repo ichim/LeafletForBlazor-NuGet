@@ -83,3 +83,33 @@ You can change the font (family, color, size, style and weight) and padding from
                      paddingLeft = 20,
                  }
              }; 
+
+### Formatting StreamLegend example code
+
+Blazor page:
+
+        <RealTimeMap @ref="realTimeMap" height="88vh" width="80hw" OnAfterMapLoaded="AfterMapLoaded">
+            <StreamLegend  contentStyleInitialization="@contentStyle" />
+         </RealTimeMap>
+
+Code block:
+
+        @code{
+                        StreamLegend.ContentStyle contentStyle = new StreamLegend.ContentStyle()
+                        {
+                            labelStyle = new StreamLegend.LabelStyle()
+                            {
+                                fontColor = "#626262",
+                                fontFamily = "Verdana",
+                                fontSize = 14,
+                                fontWeight = "bold",
+                                paddingLeft = 20,
+                            },
+                            contentPadding = new StreamLegend.ContentPadding()
+                            {
+                                paddingLeft = 20,
+                                paddingRight = 20,
+                                paddingTop = 15
+                            }
+                        }; 
+                }
