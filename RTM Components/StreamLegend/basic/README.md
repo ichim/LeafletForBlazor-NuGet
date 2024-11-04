@@ -70,4 +70,16 @@ You can change the font (family, color, size, style and weight) and padding from
 | fontStyle | "normal" | label font style |
 | paddingLeft | 10 | padding from the symbol displayed in the legend (px) |
 
-        
+
+         StreamLegend.ContentStyle contentStyle = new StreamLegend.ContentStyle()
+             {
+                 labelStyle = new StreamLegend.LabelStyle()
+                 {
+                     fontColor = "#626262",
+                     fontFamily = "Verdana",
+                     fontSize = 14,
+                     fontWeight = "bold",
+                     fontStyle = "italic",
+                     paddingLeft = 20,
+                 }
+             }; 
