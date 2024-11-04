@@ -32,4 +32,27 @@ Where:
             }
 
 
+**contentStyleInitialization** parameter allows customizing the legend labels and their position on the canvas (padding).
+
+### Padding (position on the canvas)
+
+The items of the legend can be displayed at customizable distances from the edges of the canvas:
+
+| Paramerer | Default value | Description |
+|----|----|----|
+| paddingLeft | 10 | padding from the left canvas edge |
+| paddingRight | 10 | padding from the right canvas edge |
+| paddingTop | 10 | padding from the top canvas edge |
+
+
+            StreamLegend.ContentStyle contentStyle = new StreamLegend.ContentStyle()
+            {
+                 contentPadding = new StreamLegend.ContentPadding()
+                 {
+                     paddingLeft = 20,  //values ​​in pixels, default value is 10px
+                     paddingRight = 20, //values ​​in pixels, default value is 10px
+                     paddingTop = 15    //values ​​in pixels, default value is 10px
+                 }
+            };
+
         
