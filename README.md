@@ -12,7 +12,7 @@ You can find more information:
  - [LeafletForBlazor GitHub](https://github.com/ichim/LeafletForBlazor-NuGet)
  - [Youtube channel](https://www.youtube.com/@step-by-step-cs)
  - [Youtube LeafletForBlazor playlist](https://youtube.com/playlist?list=PLDpzfV5MtMji-wml7dm5S80hOc1Nzywtc)
- - [RealTimeMap in Dialog boxes (MudBlazor) by Florian Dengg](https://github.com/ummerland/LeafletMudBlazorDemo)
+
 
  _____________
 
