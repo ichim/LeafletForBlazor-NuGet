@@ -1,6 +1,6 @@
 # RealTimeMap and load parameteres
 
-[Video Example](https://www.youtube.com/watch?v=zisprc60S88)
+[Video Example - location, zoom level and Map Scale](https://www.youtube.com/watch?v=zisprc60S88)
 
 RealTimeMap.LoadParameters is a class that allows the map to be configured when loading. 
 
