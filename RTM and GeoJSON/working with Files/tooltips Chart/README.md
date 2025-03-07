@@ -33,7 +33,8 @@ To configure a chart you must set the following parameters:
 | data | Is an array of numeric values ​​that will be displayed in the chart | is mandatory |
 | render | is an array of strings representing display colors | not mandatory |
 | labels | is an array of strings representing legend labels | not mandatory |
-| type | is a string that defines the chart type | pie, bar, line, doughnut etc |
+| type | is a string that defines the chart type | pie, bar, line, doughnut etc | is mandatory |
+| style | the particularization of the appearance and is similar to that of the div | not mandatory |
 | [options](#options-settings) | in accordance with https://www.chartjs.org/docs/latest/ | not mandatory |
 
 ## Options settings
@@ -46,6 +47,20 @@ where:
 
 | Parameter | Description | Significant |
 | --- | --- | --- |
-| plugins | to customize or change the default behavior of a chart. Find more [Chart.js documentation](https://www.chartjs.org/docs/latest/developers/plugins.html) | not mandatory |
+| [plugins](#plugins) | to customize or change the default behavior of a chart. Find more [Chart.js documentation](https://www.chartjs.org/docs/latest/developers/plugins.html) | not mandatory |
 
+## Plugins
+
+Provide you the possibility to customize the chart and its behavior:
+
+| Parameter | Description | Significant |
+| --- | --- | --- |
+| [legend](#legend) | you can customize the display of the chart legend. Find more [Chart.js documentation](https://www.chartjs.org/docs/latest/configuration/legend.html) | not mandatory |
+
+### Legend
+
+| Parameter | Description | Significant |
+| --- | --- | --- |
+| display | boolean true/false | not mandatory |
+| position | string 'top', 'bottom', 'left', 'right', 'chartArea' | not mandatory |
 
