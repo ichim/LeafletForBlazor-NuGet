@@ -10,7 +10,7 @@ GeoJSON files allow configuring tooltips. Starting with version 2.2.2.4, Leaflet
 
 where: 
 
-uid is a property (field) of GeoJSON items;
+uid is a property (field) of GeoJSON items.
 
 Provided by https://cdn.jsdelivr.net/npm/chart.js
           
