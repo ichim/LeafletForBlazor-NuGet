@@ -65,11 +65,15 @@ You can find more information:
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20case">Appearance and switch/cases</a></td>
         <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items. Apply zoom levels visibility.</font></td>
     </tr>
-	<tr>
+     <tr>
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20icons">png.* Icons, switch/cases and vesibility zoom levels</a></td>
         <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items. When the shape is point type, you can icons (*.png) for display in the map. Apply zoom levels visibility.</font></td>
     </tr>
-	<tr>
+    <tr>
+        <td><a href="">Configuring charts on tooltips</a></td>
+        <td><font size = "2px">LeafletForBlazor's GeoJSON files allow you to configure charts to be displayed on map tooltips.</font></td>
+    </tr>
+    <tr>
         <td colspan="2"><font color = "green"><b>RealTimeMap components</b></font></td>
     </tr>
 	<tr>
