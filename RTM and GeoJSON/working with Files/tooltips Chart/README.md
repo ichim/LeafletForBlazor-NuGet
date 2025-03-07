@@ -5,16 +5,23 @@ GeoJSON files allow configuring tooltips. Starting with version 2.2.2.4, Leaflet
      <chart/>
 
 Provided by https://cdn.jsdelivr.net/npm/chart.js
-
-     "tooltip": {
-       "content": "<chart id=${uid} data = ${graphic.values} render = ${graphic.render} labels=${graphic.labels} type = 'pie'></chart>",
-       "opacity": 0.8,
-       "permanent": false,
-       "visibilityZoomLevels": {
-         "minZoomLevel": 10,
-         "maxZoomLevel": 20
-       }
-     }
+          
+          {
+               "name": "Name of layer",
+               "data": [],               //GeoJSON data 
+               "appearance": {
+               ...
+                    "tooltip": {
+                      "content": "<chart id=${uid} data = ${graphic.values} render = ${graphic.render} labels=${graphic.labels} type = 'pie'></chart>",
+                      "opacity": 0.8,
+                      "permanent": false,
+                      "visibilityZoomLevels": {
+                        "minZoomLevel": 10,
+                        "maxZoomLevel": 20
+                      }
+                    }
+               }
+          }
 
 ## Basic settings
 
