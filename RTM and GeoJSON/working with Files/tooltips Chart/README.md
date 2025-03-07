@@ -4,6 +4,14 @@ GeoJSON files allow configuring tooltips. Starting with version 2.2.2.4, Leaflet
 
      <chart/>
 
+> It is absolutely necessary that the items of the map (point, polygon or line) be uniquely identified by an attribute (property):
+
+     <chart id = ${uid}/>
+
+where: 
+
+uid is a property (field) of GeoJSON items;
+
 Provided by https://cdn.jsdelivr.net/npm/chart.js
           
           {
