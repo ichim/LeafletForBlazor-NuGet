@@ -15,3 +15,10 @@ Provided by https://cdn.jsdelivr.net/npm/chart.js
          "maxZoomLevel": 20
        }
      }
+
+## Setting up a chart
+
+To configure a chart you must set the following parameters:
+
+|---|---|---|
+| id | unique identifier for the map element (point, polygon or line) | setting is mandatory |
