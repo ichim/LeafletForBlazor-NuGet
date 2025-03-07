@@ -40,6 +40,12 @@ To configure a chart you must set the following parameters:
 
 These are settings according to the documentation: https://www.chartjs.org/docs/latest/
 
+     "<chart id = ${uid} data = ${values} type = 'pie' options = '{\"plugins\":{\"legend\": {\"display\": true,\"position\":\"bottom\"}}}'></chart>"
 
+where:
+
+| Parameter | Description | Significant |
+| --- | --- | --- |
+| plugins | to customize or change the default behavior of a chart. | not mandatory |
 
 
