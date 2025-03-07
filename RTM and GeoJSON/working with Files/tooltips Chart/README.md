@@ -46,6 +46,6 @@ where:
 
 | Parameter | Description | Significant |
 | --- | --- | --- |
-| plugins | to customize or change the default behavior of a chart. | not mandatory |
+| plugins | to customize or change the default behavior of a chart. [Chart.js documentation](https://www.chartjs.org/docs/latest/developers/plugins.html) | not mandatory |
 
 
