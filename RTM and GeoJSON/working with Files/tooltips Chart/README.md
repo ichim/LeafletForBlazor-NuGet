@@ -26,4 +26,5 @@ To configure a chart you must set the following parameters:
 | data | Is an array of numeric values ​​that will be displayed in the chart | is mandatory |
 | render | is an array of strings representing display colors | not mandatory |
 | labels | is an array of strings representing legend labels | not mandatory |
+| type | is a string that defines the chart type | pie, bar, line, doughnut etc |
 
