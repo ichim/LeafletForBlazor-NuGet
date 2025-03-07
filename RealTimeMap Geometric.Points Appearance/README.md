@@ -77,3 +77,4 @@ The appearance of the points is preserved in the map view. To reset the stored a
             fillOpacity = 0.5,
             radius = 10
         };
+

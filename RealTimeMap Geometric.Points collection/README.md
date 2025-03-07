@@ -72,3 +72,4 @@ Expanding the existing collection:
         if (realTimeMap != null)
             await realTimeMap.Geometric.Points.delete();
    
+

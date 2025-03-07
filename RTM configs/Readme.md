@@ -1,5 +1,10 @@
 # RealTimeMap and load parameteres
 
+[Video Example - location, zoom level and Map Scale](https://www.youtube.com/watch?v=zisprc60S88)
+
+[Video Example - basemap layers](https://www.youtube.com/watch?v=2Ut4ugCuCJk&t=221s)
+
+
 RealTimeMap.LoadParameters is a class that allows the map to be configured when loading. 
 
 Blazor page:

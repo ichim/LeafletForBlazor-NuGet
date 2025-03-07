@@ -13,13 +13,16 @@ You can find more information:
  - [Youtube channel](https://www.youtube.com/@step-by-step-cs)
  - [Youtube LeafletForBlazor playlist](https://youtube.com/playlist?list=PLDpzfV5MtMji-wml7dm5S80hOc1Nzywtc)
 
+
  _____________
 
 # What's New
 
 | Title | News Description |
 | ---- | ---- |
-| [#52 bug](https://github.com/ichim/LeafletForBlazor-NuGet/issues/52) | Issue when rendering the map reported by Tiago Costa (https://github.com/xm3khs) |
+| [#12 bug](https://github.com/ichim/LeafletForBlazor-NuGet/issues/12) | Issue when rendering the map reported by [Mohammad Khairul Azmi bin Mat Esa](https://github.com/khairulazmimatesa) |
+| [StreamLegend Customization](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend/basic#readme) | Formatting StreamLegend label text (font, padding), padding content and items counter |
+
 
 
 # New examples code
@@ -70,7 +73,7 @@ You can find more information:
         <td colspan="2"><font color = "green"><b>RealTimeMap components</b></font></td>
     </tr>
 	<tr>
-        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend/basic">StreamLegend component</a></td>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend">StreamLegend component</a></td>
         <td><font size = "2px">StreamLegend is a component (starting with 2.2.0.6) that allows the display of symbols applied through the Appearance() method. This component displays only the symbols of the StreamPoint elements added on the RealTime.Geometric.Points class.</font></td>
     </tr>
 </table>
