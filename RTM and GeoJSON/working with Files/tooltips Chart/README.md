@@ -16,7 +16,7 @@ Provided by https://cdn.jsdelivr.net/npm/chart.js
        }
      }
 
-## Setting up a chart
+## Basic settings
 
 To configure a chart you must set the following parameters:
 
