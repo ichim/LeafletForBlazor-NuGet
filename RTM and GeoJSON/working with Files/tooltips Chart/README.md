@@ -36,3 +36,9 @@ To configure a chart you must set the following parameters:
 | type | is a string that defines the chart type | pie, bar, line, doughnut etc |
 | options | in accordance with https://www.chartjs.org/docs/latest/ | not mandatory |
 
+## Options settings
+
+These are settings according to the documentation: https://www.chartjs.org/docs/latest/
+
+
+
