@@ -24,3 +24,6 @@ To configure a chart you must set the following parameters:
 | --- | --- | --- |
 | id | Unique identifier for the map element (point, polygon or line) | Setting is mandatory |
 | data | Is an array of numeric values ​​that will be displayed in the chart | is mandatory |
+| render | is an array of strings representing display colors | not mandatory |
+| labels | is an array of strings representing legend labels | not mandatory |
+
