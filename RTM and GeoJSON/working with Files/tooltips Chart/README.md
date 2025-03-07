@@ -8,7 +8,7 @@ Provided by https://cdn.jsdelivr.net/npm/chart.js
           
           {
                "name": "Name of layer",
-               "data": [],               //GeoJSON data 
+               "data": [],               //GeoJSON data [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
                "appearance": {
                ...
                     "tooltip": {
