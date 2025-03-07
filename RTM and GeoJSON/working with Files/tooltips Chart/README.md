@@ -61,6 +61,6 @@ Provide you the possibility to customize the chart and its behavior:
 
 | Parameter | Description | Significant |
 | --- | --- | --- |
-| display | boolean true/false | not mandatory |
-| position | string 'top', 'bottom', 'left', 'right', 'chartArea' | not mandatory |
+| display | boolean/and can have the values: true or false | not mandatory |
+| position | string/and can have the values: 'top', 'bottom', 'left', 'right', 'chartArea' | not mandatory |
 
