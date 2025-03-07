@@ -20,5 +20,6 @@ Provided by https://cdn.jsdelivr.net/npm/chart.js
 
 To configure a chart you must set the following parameters:
 
-|---|---|---|
+| Parameter | Description | significant |
+| --- | --- | --- |
 | id | unique identifier for the map element (point, polygon or line) | setting is mandatory |
