@@ -1,0 +1,97 @@
+﻿{
+  "name": "Points of Interes",
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 44.44548367787484, 26.09998384495714 ]
+      },
+      "properties": {
+        "uid": "unique0",
+        "name": "Piata Lahovari",
+        "type": "host",
+        "description": "Hotels",
+        "itemUrl": "https://img3.imonet.ro/X9AP/9AP00M76UST/garsoniera-de-inchiriat-bucuresti-ilfov-bucuresti-186065309.jpg",
+        "graphic": {
+          "values": [ 22, 18, 2 ],
+          "render": [ "#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145" ],
+          "labels": [ "fasion", "food", "tech" ]
+        }
+
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 44.44695351120105, 26.096702416100246 ]
+      },
+      "properties": {
+        "uid": "unique1",
+        "name": "Piata Romana",
+        "type": "market",
+        "description": "historical place",
+        "itemUrl": "https://blog.travelminit.ro/wp-content/uploads/2016/01/Bucurestiul-noaptea.jpg",
+        "graphic": {
+          "values": [ 55, 49 ],
+          "render": [ "#b91d47", "green" ],
+          "labels": [ "fasion", "souvenir" ]
+        }
+
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 44.44696546756651, 26.10401797350891 ]
+      },
+      "properties": {
+        "uid": "unique0",
+        "name": "Piata Lahovari",
+        "type": "host",
+        "description": "Hotels",
+        "itemUrl": "https://img3.imonet.ro/X9AP/9AP00M76UST/garsoniera-de-inchiriat-bucuresti-ilfov-bucuresti-186065309.jpg",
+        "graphic": {
+          "values": [ 22, 18, 2,1 ],
+          "render": [ "#b91d47", "#00aba9", "#2b5797", "azure" ],
+          "labels": [ "fasion", "food", "tech", "host" ]
+        }
+
+      }
+    }
+  ],
+  "appearance": {
+    "switch": {
+      "fieldName": "type",
+      "cases": [
+        {
+          "host": {
+            "iconUrl": "http://localhost:5213/icons/cofee.png",
+            "iconSize": [ 40, 40 ],
+            "iconAnchor": [ 30, 16 ]
+          },
+          "market": {
+            "iconUrl": "http://localhost:5213/icons/food.png",
+            "iconSize": [ 40, 40 ],
+            "iconAnchor": [ 30, 16 ]
+          }
+        }
+      ]
+    },
+
+    "tooltip": {
+      "content": "<chart id=${uid} data = ${graphic.values} render = ${graphic.render} labels=${graphic.labels} type = 'pie' style='width:180px; height:180px; background-color:#ececed' options = '{\"plugins\":{\"legend\": {\"display\": true, \"position\":\"bottom\"}}}'></chart>",
+      "opacity": 0.8,
+      "permanent": false,
+      "visibilityZoomLevels": {
+        "minZoomLevel": 10,
+        "maxZoomLevel": 20
+      }
+    }
+
+
+  }
+
+}

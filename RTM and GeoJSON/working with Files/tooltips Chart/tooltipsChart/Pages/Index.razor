@@ -1,0 +1,29 @@
+﻿@page "/"
+
+<RealTimeMap @ref="realTimeMap" Parameters="@parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="onAfterMapLoaded"></RealTimeMap>
+
+@code {
+    string path = "http://localhost:5213/";
+    RealTimeMap? realTimeMap;
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 44.44695351120105,
+                longitude = 26.096702416100246
+            },
+            zoomLevel = 16
+        };
+
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        List<string> paths = new List<string>()
+        {
+
+            $"{path}input/toolTipPieChart.json",            //PieChart on points
+            $"{path}input/toolTipChartPolygon.json",        //PieChart on polygons
+
+        };
+        await args.sender.Geometric.DataFromGeoJSON.addFromFiles(paths.ToArray());
+    }
+}

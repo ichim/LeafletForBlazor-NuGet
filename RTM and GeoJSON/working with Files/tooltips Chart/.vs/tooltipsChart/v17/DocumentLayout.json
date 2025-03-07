@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7AAC1CD2-E1B6-478C-96C4-462E5DAF6C14}|tooltipsChart\\tooltipsChart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\tooltips chart\\tooltipschart\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7AAC1CD2-E1B6-478C-96C4-462E5DAF6C14}|tooltipsChart\\tooltipsChart.csproj|solutionrelative:tooltipschart\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AAC1CD2-E1B6-478C-96C4-462E5DAF6C14}|tooltipsChart\\tooltipsChart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\tooltips chart\\tooltipschart\\wwwroot\\input\\tooltipchartpolygon.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7AAC1CD2-E1B6-478C-96C4-462E5DAF6C14}|tooltipsChart\\tooltipsChart.csproj|solutionrelative:tooltipschart\\wwwroot\\input\\tooltipchartpolygon.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AAC1CD2-E1B6-478C-96C4-462E5DAF6C14}|tooltipsChart\\tooltipsChart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\tooltips chart\\tooltipschart\\wwwroot\\input\\tooltippiechart.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7AAC1CD2-E1B6-478C-96C4-462E5DAF6C14}|tooltipsChart\\tooltipsChart.csproj|solutionrelative:tooltipschart\\wwwroot\\input\\tooltippiechart.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AAC1CD2-E1B6-478C-96C4-462E5DAF6C14}|tooltipsChart\\tooltipsChart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\tooltips chart\\tooltipschart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7AAC1CD2-E1B6-478C-96C4-462E5DAF6C14}|tooltipsChart\\tooltipsChart.csproj|solutionrelative:tooltipschart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "toolTipChartPolygon.json",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\tooltipsChart\\wwwroot\\input\\toolTipChartPolygon.json",
+              "RelativeDocumentMoniker": "tooltipsChart\\wwwroot\\input\\toolTipChartPolygon.json",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\tooltipsChart\\wwwroot\\input\\toolTipChartPolygon.json",
+              "RelativeToolTip": "tooltipsChart\\wwwroot\\input\\toolTipChartPolygon.json",
+              "ViewState": "AQIAAGgBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-07T12:01:28.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "toolTipPieChart.json",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\tooltipsChart\\wwwroot\\input\\toolTipPieChart.json",
+              "RelativeDocumentMoniker": "tooltipsChart\\wwwroot\\input\\toolTipPieChart.json",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\tooltipsChart\\wwwroot\\input\\toolTipPieChart.json",
+              "RelativeToolTip": "tooltipsChart\\wwwroot\\input\\toolTipPieChart.json",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-07T12:01:15.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\tooltipsChart\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "tooltipsChart\\Pages\\Index.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\tooltipsChart\\Pages\\Index.razor",
+              "RelativeToolTip": "tooltipsChart\\Pages\\Index.razor",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T12:00:11.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\tooltipsChart\\_Imports.razor",
+              "RelativeDocumentMoniker": "tooltipsChart\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\tooltipsChart\\_Imports.razor",
+              "RelativeToolTip": "tooltipsChart\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T11:59:42.381Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
