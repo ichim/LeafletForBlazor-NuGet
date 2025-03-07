@@ -34,8 +34,9 @@ To configure a chart you must set the following parameters:
 | render | is an array of strings representing display colors | not mandatory |
 | labels | is an array of strings representing legend labels | not mandatory |
 | type | is a string that defines the chart type | pie, bar, line, doughnut etc |
-| options | in accordance with https://www.chartjs.org/docs/latest/ | not mandatory |
+| [options](#options-settings) | in accordance with https://www.chartjs.org/docs/latest/ | not mandatory |
 
+[rendering](#appearance-render-configuring-display-symbol)
 ## Options settings
 
 These are settings according to the documentation: https://www.chartjs.org/docs/latest/
