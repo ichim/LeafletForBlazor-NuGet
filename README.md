@@ -20,8 +20,7 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [#12 bug](https://github.com/ichim/LeafletForBlazor-NuGet/issues/12) | Issue when rendering the map reported by [Mohammad Khairul Azmi bin Mat Esa](https://github.com/khairulazmimatesa) |
-| [StreamLegend Customization](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend/basic#readme) | Formatting StreamLegend label text (font, padding), padding content and items counter |
+| [Configuring charts on tooltips](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme) | LeafletForBlazor's GeoJSON files allow you to configure charts to be displayed on map tooltips. |
 
 
 
