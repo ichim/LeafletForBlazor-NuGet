@@ -64,4 +64,7 @@ The configuration can be done in the GeoJSON file and can be:
 
 You can configure the content of tooltips messages in GeoJSON files [configuring tooltips example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/config%20tooltip%20from%20file)
 
+## Configuring charts on tooltips
+
+LeafletForBlazor's GeoJSON files allow you to configure charts to be displayed on map tooltips. [Configuring charts on tooltips example]([https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/config%20tooltip%20from%20file](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart))
 
