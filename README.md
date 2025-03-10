@@ -24,7 +24,7 @@ You can find more information:
 
 
 ![chart06](https://github.com/user-attachments/assets/cc768477-69e3-432e-9750-2000b221130b)
-- Configuring charts on tooltips / GeoJSON files -
+_ Configuring charts on tooltips / GeoJSON files
 
 # New examples code
 
