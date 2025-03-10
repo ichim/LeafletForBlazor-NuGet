@@ -1,6 +1,12 @@
 # Map Tooltip and Chart
 
-GeoJSON files allow configuring tooltips. Starting with version 2.2.2.4, LeafletForBlazor allows configuring charts. To add a chart to the tooltip, you need to add the custom html element (LeafletForBlazor):
+GeoJSON files allow configuring tooltips. Starting with version 2.2.2.4, LeafletForBlazor allows configuring charts. 
+
+![chart06](https://github.com/user-attachments/assets/6733fee8-52d8-4e59-88ad-e2e61e6e3678)
+
+
+
+To add a chart to the tooltip, you need to add the custom html element (LeafletForBlazor):
 
      "<chart/>"
 
