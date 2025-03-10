@@ -16,7 +16,7 @@ To add a chart to the tooltip, you need to add the custom html element (LeafletF
 
 where: 
 
-_uid is a property (field) of GeoJSON items.
+_uid is a property (field) of GeoJSON items._
 
 Provided by https://cdn.jsdelivr.net/npm/chart.js
           
