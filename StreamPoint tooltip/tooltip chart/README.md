@@ -15,3 +15,10 @@ where:
 _uid is a property (field) of GeoJSON items._
 
 Provided by https://cdn.jsdelivr.net/npm/chart.js
+
+        var realTimeMap = args.sender as RealTimeMap;
+        realTimeMap.Geometric.Points.Appearance(item => item.type != "asked for help").pattern = new RealTimeMap.PointTooltip()
+            {
+                content = "<chart id=${guid} data = ${value.values} render = ${value.render} labels=${value.labels} type = 'pie' style='width:180px; height:180px; background-color:#ececed' options = '{\"plugins\":{\"legend\": {\"display\": true,\"labels\": {\"color\": \"gray\"},\"position\":\"bottom\"}}}'></chart>"
+            };
+        await realTimeMap.Geometric.Points.upload(new streamPieChart.data.InputData().input);
