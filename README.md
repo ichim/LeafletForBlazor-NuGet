@@ -20,7 +20,8 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [Configuring charts on tooltips](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme) | LeafletForBlazor's GeoJSON files allow you to configure charts to be displayed on map tooltips. |
+| [GeoJSON and configuring charts on tooltips](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme) | LeafletForBlazor's GeoJSON files allow you to configure charts to be displayed on map tooltips. |
+| [StreamPoint collection and configuring charts on tooltips](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/StreamPoint%20tooltip/tooltip%20chart#readme) | LeafletForBlazor's StreamPoint collection allow you to configure charts to be displayed on map tooltips. |
 
 
 ![chart06](https://github.com/user-attachments/assets/cc768477-69e3-432e-9750-2000b221130b)
