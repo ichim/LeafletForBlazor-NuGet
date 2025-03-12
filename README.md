@@ -45,7 +45,7 @@ You can find more information:
         <td><font size = "2px">The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area</font></td>
     </tr>
     <tr>
-        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20tooltip%20hierarchical%20attr">Tooltips and custom properties</a></td>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/StreamPoint%20tooltip/RTM%20tooltip%20hierarchical%20attr#readme">Tooltips and custom properties</a></td>
         <td><font size = "2px">A StreamPoint can use custom properties stored on value. These custom properties can be used to define tooltips.</font></td>
     </tr>
    <tr>
@@ -913,9 +913,9 @@ in this case, the tooltips will be displayed for all elements in the map.
 The value property of the **StreamPoint** object allows to use custom attributes. These custom attributes can be used for various purposes.
 The pattern property allows the use of _custom attributes_ defined for **StreamPoint** to configuring RealTimeMap items tooltips. For more details, you can access the following examples:
 
-[Configuring StreamPoint Tooltips with custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/RTM%20Points%20Tooltips/README.md)
+[Configuring StreamPoint Tooltips with custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/StreamPoint%20tooltip/RTM%20Points%20Tooltips#readme)
 
-[Configuring StreamPoint Tooltips with hierarchical custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20tooltip%20hierarchical%20attr#readme)
+[Configuring StreamPoint Tooltips with hierarchical custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/StreamPoint%20tooltip/RTM%20tooltip%20hierarchical%20attr/README.md)
 
 
 ## Code Example
