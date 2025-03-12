@@ -20,10 +20,11 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [#12 bug](https://github.com/ichim/LeafletForBlazor-NuGet/issues/12) | Issue when rendering the map reported by [Mohammad Khairul Azmi bin Mat Esa](https://github.com/khairulazmimatesa) |
-| [StreamLegend Customization](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend/basic#readme) | Formatting StreamLegend label text (font, padding), padding content and items counter |
+| [Configuring charts on tooltips](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme) | LeafletForBlazor's GeoJSON files allow you to configure charts to be displayed on map tooltips. |
 
 
+![chart06](https://github.com/user-attachments/assets/cc768477-69e3-432e-9750-2000b221130b)
+[Configuring charts on tooltips / GeoJSON files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme)
 
 # New examples code
 
@@ -65,11 +66,15 @@ You can find more information:
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20case">Appearance and switch/cases</a></td>
         <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items. Apply zoom levels visibility.</font></td>
     </tr>
-	<tr>
+     <tr>
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20icons">png.* Icons, switch/cases and vesibility zoom levels</a></td>
         <td><font size = "2px">You can create distinct symbolization classes based on the properties of GeoJSON file items. When the shape is point type, you can icons (*.png) for display in the map. Apply zoom levels visibility.</font></td>
     </tr>
-	<tr>
+    <tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart">Configuring charts on tooltips</a></td>
+        <td><font size = "2px">LeafletForBlazor's GeoJSON files allow you to configure charts to be displayed on map tooltips.</font></td>
+    </tr>
+    <tr>
         <td colspan="2"><font color = "green"><b>RealTimeMap components</b></font></td>
     </tr>
 	<tr>

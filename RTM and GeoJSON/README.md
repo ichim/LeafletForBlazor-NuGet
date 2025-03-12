@@ -302,6 +302,10 @@ Example of JSON format:
         <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/Appearance%20switch%20icons">Appearance switch/cases and icons</a></td>
         <td><font size = "2px">Working with switch/cases and png icons</font></td>
     </tr>
+    <tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart">Configuring charts on tooltips</a></td>
+        <td><font size = "2px">LeafletForBlazor's GeoJSON files allow you to configure charts to be displayed on map tooltips.</font></td>
+    </tr>
 </table>
 
 
