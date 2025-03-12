@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\StreamPoint tooltip\\tooltip chart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84FA7AF2-F2B6-4DF0-8305-56876FA1B8D8}|tooltip chart\\tooltip chart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\streampoint tooltip\\tooltip chart\\tooltip chart\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84FA7AF2-F2B6-4DF0-8305-56876FA1B8D8}|tooltip chart\\tooltip chart.csproj|solutionrelative:tooltip chart\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84FA7AF2-F2B6-4DF0-8305-56876FA1B8D8}|tooltip chart\\tooltip chart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\streampoint tooltip\\tooltip chart\\tooltip chart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84FA7AF2-F2B6-4DF0-8305-56876FA1B8D8}|tooltip chart\\tooltip chart.csproj|solutionrelative:tooltip chart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\StreamPoint tooltip\\tooltip chart\\tooltip chart\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "tooltip chart\\Pages\\Index.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\StreamPoint tooltip\\tooltip chart\\tooltip chart\\Pages\\Index.razor",
+              "RelativeToolTip": "tooltip chart\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T08:23:26.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\StreamPoint tooltip\\tooltip chart\\tooltip chart\\_Imports.razor",
+              "RelativeDocumentMoniker": "tooltip chart\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\StreamPoint tooltip\\tooltip chart\\tooltip chart\\_Imports.razor",
+              "RelativeToolTip": "tooltip chart\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T08:21:04.489Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

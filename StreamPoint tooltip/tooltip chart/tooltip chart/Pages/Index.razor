@@ -1,0 +1,22 @@
+﻿@page "/"
+
+@using streamPieChart;
+<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="onAfterMapLoaded"></RealTimeMap>
+
+@code {
+
+
+    public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        var realTimeMap = args.sender as RealTimeMap;
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "asked for help").pattern = new RealTimeMap.PointTooltip()
+            {//based on hierachical attributes
+                content = "<b>Registration number: </b>${value.registrationNumber}</br><b>Vehicle type: </b>${value.vehicleType}</br>${value.description}"
+            };
+        realTimeMap.Geometric.Points.Appearance(item => item.type != "asked for help").pattern = new RealTimeMap.PointTooltip()
+            {//Configuring chart on tooltip
+                content = "<chart id=${guid} data = ${value.values} render = ${value.render} labels=${value.labels} type = 'pie' style='width:180px; height:180px; background-color:#ececed' options = '{\"plugins\":{\"legend\": {\"display\": true,\"labels\": {\"color\": \"gray\"},\"position\":\"bottom\"}}}'></chart>"
+            };
+        await realTimeMap.Geometric.Points.upload(new streamPieChart.data.InputData().input);
+    }
+}
