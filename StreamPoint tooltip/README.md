@@ -5,3 +5,7 @@
 # Configuring tooltips for hierarchical attribute data
 
 [Configurng tooltip for hierachical attribute example](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/StreamPoint%20tooltip/RTM%20tooltip%20hierarchical%20attr/README.md)
+
+# Configuring charts on tooltiop
+
+[Configurng charts example]()
