@@ -1,5 +1,5 @@
 
-# **DataFromGeoJSON** class
+# **DataFromGeoJSON** class and object data
 
 It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats.
 
@@ -63,7 +63,7 @@ In order to create a GeoJSON array, it is necessary to define the classes:
 
 [Working with GeoJSON Array example and documentation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
 
-# **DataFromGeoJSON** class
+# **DataFromGeoJSON** class and data from files
 
 ## addFromFiles() method
 
