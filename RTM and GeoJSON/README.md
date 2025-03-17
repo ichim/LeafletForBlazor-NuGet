@@ -65,7 +65,10 @@ In order to create a GeoJSON array, it is necessary to define the classes:
 
 # **DataFromGeoJSON** class
 
+## addFromFiles() method
+
 You can add GeoJSON specification data [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946) from files:
+
 
 RealTimeMap OnAfterMapLoaded event:
 
@@ -79,6 +82,19 @@ RealTimeMap OnAfterMapLoaded event:
             $"{path}/geojson/polygons.json"
         });
     }
+
+## hideContent() method
+
+This method allows you to hide or show (uncheck/check on Layers Control) data loaded from GeoJSON files.
+This method can be used without a parameter:
+
+	await args.sender.Geometric.DataFromGeoJSON.hideContent();
+
+The method will hide all layers.
+
+...or you can use a predicate to specify the layer or layers to be hidden:
+
+	await args.sender.Geometric.DataFromGeoJSON.hideContent((name)=>name == "Zones");
 
 ## More about GeoJSON file. Configuring Appearance from files
 
