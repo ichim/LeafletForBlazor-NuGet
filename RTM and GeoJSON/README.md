@@ -83,19 +83,6 @@ RealTimeMap OnAfterMapLoaded event:
         });
     }
 
-## hideContent() method
-
-This method allows you to hide or show (uncheck/check on Layers Control) data loaded from GeoJSON files.
-This method can be used without a parameter:
-
-	await args.sender.Geometric.DataFromGeoJSON.hideContent();
-
-The method will hide all layers.
-
-...or you can use a predicate to specify the layer or layers to be hidden:
-
-	await args.sender.Geometric.DataFromGeoJSON.hideContent((name)=>name == "Zones");
-
 ## More about GeoJSON file. Configuring Appearance from files
 
 [more about upload data from GeoJSON files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/GeoJSON%20from%20file)
@@ -327,6 +314,20 @@ Example of JSON format:
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
 
+# **DataFromGeoJSON** class other method(s)
+
+## hideContent() method
+
+This method allows you to hide or show (uncheck/check on Layers Control) data loaded from GeoJSON files.
+This method can be used without a parameter:
+
+	await args.sender.Geometric.DataFromGeoJSON.hideContent();
+
+The method will hide all layers.
+
+...or you can use a predicate to specify the layer or layers to be hidden:
+
+	await args.sender.Geometric.DataFromGeoJSON.hideContent((name)=>name == "Zones");
 
 
 
