@@ -21,7 +21,7 @@ You can find more information:
 | Title | News Description |
 | ---- | ---- |
 | GeoJSON and non-permanent tooltip | Configuring GeoJSON and non-permanent tooltip. |
-| hideContent() method on DataFromGeoJSON class | Hide/Visible (check / uncheck) layers on Layers Control. |
+| [hideContent() method on DataFromGeoJSON class](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/RTM%20and%20GeoJSON/README.md) | Hide/Visible (check / uncheck) layers on Layers Control. |
 
 
 ![chart06](https://github.com/user-attachments/assets/cc768477-69e3-432e-9750-2000b221130b)
