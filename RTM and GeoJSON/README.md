@@ -4,6 +4,7 @@
 It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats. Two formats are used, both complying with [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946).
 The class provides you with the following methods:
 
+| Method | Description |
 | ---- | ---- |
 | addObject() | Add data objects (based on classes according to RFC 7946) to the map. |
 | [addFromFiles()](#addfromfiles-method) | Add data (based on classes according to RFC 7946) from JSON (GeoJSON) files to the map. |
