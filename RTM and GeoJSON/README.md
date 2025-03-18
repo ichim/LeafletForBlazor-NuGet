@@ -8,6 +8,7 @@ The class provides you with the following methods:
 | ---- | ---- |
 | [addObject()](#addobject-method) | Add data objects (based on classes according to RFC 7946) to the map. |
 | [addFromFiles()](#addfromfiles-method) | Add data (based on classes according to RFC 7946) from JSON (GeoJSON) files to the map. |
+| [hideContent()](#hidecontent-method) | Hide/Show map content and Content Layers. |
 
 
 
@@ -321,7 +322,6 @@ Example of JSON format:
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
 
-# **DataFromGeoJSON** class other method(s)
 
 ## hideContent() method
 
