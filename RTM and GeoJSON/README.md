@@ -1,9 +1,16 @@
 
-# **DataFromGeoJSON** class and object data
+# **DataFromGeoJSON** class
 
-It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats.
+It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats. Two formats are used, both complying with [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946).
+The class provides you with the following methods:
 
-Two formats are used, both complying with [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946):
+| ---- | ---- |
+| addObject() | Add data objects (based on classes according to RFC 7946) to the map. |
+| [addFromFiles()](#addfromfiles-method) | Add data (based on classes according to RFC 7946) from JSON (GeoJSON) files to the map. |
+
+
+
+## addObject() method
 
 1. The first format is an array that exactly respects the format [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
 
@@ -63,7 +70,6 @@ In order to create a GeoJSON array, it is necessary to define the classes:
 
 [Working with GeoJSON Array example and documentation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
 
-# **DataFromGeoJSON** class and data from files
 
 ## addFromFiles() method
 
