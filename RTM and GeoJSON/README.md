@@ -91,7 +91,9 @@ RealTimeMap OnAfterMapLoaded event:
         });
     }
 
-## More about GeoJSON file. Configuring Appearance from files
+# Appearance
+
+##  From files
 
 [more about upload data from GeoJSON files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/GeoJSON%20from%20file)
 
@@ -146,7 +148,7 @@ In addition, RealTimeMap supports a JSON format that allows customizing the appe
 		  	"appearance": {} //appearance of RealTimeMap items
 		}
 
-# Appearance 
+## Appearance and Visibility and specifications
 
 Appearance can contain Leaflet specifications regarding marker icon, circleMarker symbol, polyline symbol, polygon symbol etc (Leaflet documentation). to which visibility can be added:
 
