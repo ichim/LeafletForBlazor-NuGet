@@ -6,7 +6,7 @@ The class provides you with the following methods:
 
 | Method | Description |
 | ---- | ---- |
-| addObject() | Add data objects (based on classes according to RFC 7946) to the map. |
+| [addObject()](#addobject-method) | Add data objects (based on classes according to RFC 7946) to the map. |
 | [addFromFiles()](#addfromfiles-method) | Add data (based on classes according to RFC 7946) from JSON (GeoJSON) files to the map. |
 
 
