@@ -20,9 +20,7 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| GeoJSON and non-permanent tooltip | Configuring GeoJSON and non-permanent tooltip. |
-| [hideContent() method on DataFromGeoJSON class](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/RTM%20and%20GeoJSON/README.md) | Hide/Visible (check / uncheck) layers on Layers Control. |
-
+| bug #75 | https://github.com/ichim/LeafletForBlazor-NuGet/issues/75 |
 
 ![chart06](https://github.com/user-attachments/assets/cc768477-69e3-432e-9750-2000b221130b)
 [_Configuring charts on tooltips / GeoJSON files_](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme)
