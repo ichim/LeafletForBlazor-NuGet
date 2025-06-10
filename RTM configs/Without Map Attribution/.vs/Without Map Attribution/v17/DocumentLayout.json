@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Without Map Attribution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4FCE7D2-44EC-48AE-873B-700E2E663057}|Without Map Attribution\\Without Map Attribution.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\without map attribution\\without map attribution\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E4FCE7D2-44EC-48AE-873B-700E2E663057}|Without Map Attribution\\Without Map Attribution.csproj|solutionrelative:without map attribution\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4FCE7D2-44EC-48AE-873B-700E2E663057}|Without Map Attribution\\Without Map Attribution.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\without map attribution\\without map attribution\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E4FCE7D2-44EC-48AE-873B-700E2E663057}|Without Map Attribution\\Without Map Attribution.csproj|solutionrelative:without map attribution\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Without Map Attribution\\Without Map Attribution\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Without Map Attribution\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Without Map Attribution\\Without Map Attribution\\Pages\\Index.razor",
+              "RelativeToolTip": "Without Map Attribution\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T17:47:38.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Without Map Attribution\\Without Map Attribution\\_Imports.razor",
+              "RelativeDocumentMoniker": "Without Map Attribution\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Without Map Attribution\\Without Map Attribution\\_Imports.razor",
+              "RelativeToolTip": "Without Map Attribution\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T17:47:22.385Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
