@@ -1,9 +1,18 @@
 
 # **DataFromGeoJSON** class
 
-It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats.
+It is a class hosted by the **Geometric** class. This class allows adding spatial data from **GeoJSON** formats. Two formats are used, both complying with [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946).
+The class provides you with the following methods:
 
-Two formats are used, both complying with [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946):
+| Method | Description |
+| ---- | ---- |
+| [addObject()](#addobject-method) | Add data objects (based on classes according to RFC 7946) to the map. |
+| [addFromFiles()](#addfromfiles-method) | Add data (based on classes according to RFC 7946) from JSON (GeoJSON) files to the map. |
+| [hideContent()](#hidecontent-method) | Hide/Show map content and Content Layers. |
+
+
+
+## addObject() method
 
 1. The first format is an array that exactly respects the format [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946)
 
@@ -63,9 +72,11 @@ In order to create a GeoJSON array, it is necessary to define the classes:
 
 [Working with GeoJSON Array example and documentation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Array)
 
-# **DataFromGeoJSON** class
+
+## addFromFiles() method
 
 You can add GeoJSON specification data [GeoJSON specification (RFC 7946)](https://www.rfc-editor.org/rfc/rfc7946) from files:
+
 
 RealTimeMap OnAfterMapLoaded event:
 
@@ -80,7 +91,9 @@ RealTimeMap OnAfterMapLoaded event:
         });
     }
 
-## More about GeoJSON file. Configuring Appearance from files
+# Appearance
+
+##  From files
 
 [more about upload data from GeoJSON files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/GeoJSON%20from%20file)
 
@@ -135,7 +148,7 @@ In addition, RealTimeMap supports a JSON format that allows customizing the appe
 		  	"appearance": {} //appearance of RealTimeMap items
 		}
 
-#### About appearance 
+## Appearance and Visibility and specifications
 
 Appearance can contain Leaflet specifications regarding marker icon, circleMarker symbol, polyline symbol, polygon symbol etc (Leaflet documentation). to which visibility can be added:
 
@@ -311,6 +324,19 @@ Example of JSON format:
 
 ![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
 
+
+## hideContent() method
+
+This method allows you to hide or show (uncheck/check on Layers Control) data loaded from GeoJSON files.
+This method can be used without a parameter:
+
+	await args.sender.Geometric.DataFromGeoJSON.hideContent();
+
+The method will hide all layers.
+
+...or you can use a predicate to specify the layer or layers to be hidden:
+
+	await args.sender.Geometric.DataFromGeoJSON.hideContent((name)=>name == "Zones");
 
 
 

@@ -20,11 +20,10 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [Configuring charts on tooltips](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme) | LeafletForBlazor's GeoJSON files allow you to configure charts to be displayed on map tooltips. |
-
+| bug #75 | https://github.com/ichim/LeafletForBlazor-NuGet/issues/75 |
 
 ![chart06](https://github.com/user-attachments/assets/cc768477-69e3-432e-9750-2000b221130b)
-[Configuring charts on tooltips / GeoJSON files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme)
+[_Configuring charts on tooltips / GeoJSON files_](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme)
 
 # New examples code
 
