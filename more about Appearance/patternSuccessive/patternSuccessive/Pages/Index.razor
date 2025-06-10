@@ -1,0 +1,29 @@
+﻿@page "/"
+
+
+<RealTimeMap height="620px" width="820px" OnAfterMapLoaded="onAfterMapLoaded"></RealTimeMap>
+
+@code {
+
+
+    public async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        var realTimeMap = args.sender as RealTimeMap;
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "intervention crew").pattern = new RealTimeMap.PointTooltip()
+            {
+                content = "<b>Registration number: </b>${value.registrationNumber}</br><b>Vehicle type: </b>${value.vehicleType}</br>${value.description}"
+            };
+
+        realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointSymbol()
+        {
+            fillColor = "red",
+            color = "black",
+            radius = 10,
+            weight = 2,
+            opacity = 1,
+            fillOpacity = 0.6
+        };
+
+        await realTimeMap.Geometric.Points.upload(new streamPoints.data.InputData().input);
+    }
+}

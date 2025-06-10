@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "patternSuccessive", "patternSuccessive\patternSuccessive.csproj", "{66E50E06-078D-4848-8C46-8576E87B370C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66E50E06-078D-4848-8C46-8576E87B370C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E50E06-078D-4848-8C46-8576E87B370C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E50E06-078D-4848-8C46-8576E87B370C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E50E06-078D-4848-8C46-8576E87B370C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F213DF55-0628-45BC-B866-DC845E5D1D08}
+	EndGlobalSection
+EndGlobal

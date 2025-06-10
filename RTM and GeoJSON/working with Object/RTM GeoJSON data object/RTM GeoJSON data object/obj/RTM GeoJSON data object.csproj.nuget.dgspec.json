@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\RTM GeoJSON data object\\RTM GeoJSON data object\\RTM GeoJSON data object.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Object\\RTM GeoJSON data object\\RTM GeoJSON data object\\RTM GeoJSON data object.csproj": {}
   },
   "projects": {
-    "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\RTM GeoJSON data object\\RTM GeoJSON data object\\RTM GeoJSON data object.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Object\\RTM GeoJSON data object\\RTM GeoJSON data object\\RTM GeoJSON data object.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\RTM GeoJSON data object\\RTM GeoJSON data object\\RTM GeoJSON data object.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Object\\RTM GeoJSON data object\\RTM GeoJSON data object\\RTM GeoJSON data object.csproj",
         "projectName": "RTM GeoJSON data object",
-        "projectPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\RTM GeoJSON data object\\RTM GeoJSON data object\\RTM GeoJSON data object.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Object\\RTM GeoJSON data object\\RTM GeoJSON data object\\RTM GeoJSON data object.csproj",
         "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-        "outputPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\RTM GeoJSON data object\\RTM GeoJSON data object\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Object\\RTM GeoJSON data object\\RTM GeoJSON data object\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

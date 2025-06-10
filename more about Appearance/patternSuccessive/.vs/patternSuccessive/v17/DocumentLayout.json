@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\patternSuccessive\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66E50E06-078D-4848-8C46-8576E87B370C}|patternSuccessive\\patternSuccessive.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\patternsuccessive\\patternsuccessive\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E50E06-078D-4848-8C46-8576E87B370C}|patternSuccessive\\patternSuccessive.csproj|solutionrelative:patternsuccessive\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E50E06-078D-4848-8C46-8576E87B370C}|patternSuccessive\\patternSuccessive.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\patternsuccessive\\patternsuccessive\\data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66E50E06-078D-4848-8C46-8576E87B370C}|patternSuccessive\\patternSuccessive.csproj|solutionrelative:patternsuccessive\\data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66E50E06-078D-4848-8C46-8576E87B370C}|patternSuccessive\\patternSuccessive.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\patternsuccessive\\patternsuccessive\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66E50E06-078D-4848-8C46-8576E87B370C}|patternSuccessive\\patternSuccessive.csproj|solutionrelative:patternsuccessive\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\patternSuccessive\\patternSuccessive\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "patternSuccessive\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\patternSuccessive\\patternSuccessive\\Pages\\Index.razor",
+              "RelativeToolTip": "patternSuccessive\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T07:45:45.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\patternSuccessive\\patternSuccessive\\_Imports.razor",
+              "RelativeDocumentMoniker": "patternSuccessive\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\patternSuccessive\\patternSuccessive\\_Imports.razor",
+              "RelativeToolTip": "patternSuccessive\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T07:44:36.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "streamPoints.cs",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\patternSuccessive\\patternSuccessive\\Data\\streamPoints.cs",
+              "RelativeDocumentMoniker": "patternSuccessive\\Data\\streamPoints.cs",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\patternSuccessive\\patternSuccessive\\Data\\streamPoints.cs",
+              "RelativeToolTip": "patternSuccessive\\Data\\streamPoints.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T07:43:40.968Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
