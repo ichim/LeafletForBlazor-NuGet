@@ -20,7 +20,9 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| bug #75 | https://github.com/ichim/LeafletForBlazor-NuGet/issues/75 |
+| [RealTimeMap and default map attribution](#realtimemap-and-default-map-attribution) | You can set what the default attribution of the map is (LoadParameters class)|
+| [Attribution class](#attributions-class) | It is a child class of the Map class that provides access to Map Attribution. add() and remove() methods |
+
 
 ![chart06](https://github.com/user-attachments/assets/cc768477-69e3-432e-9750-2000b221130b)
 [_Configuring charts on tooltips / GeoJSON files_](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme)
@@ -190,6 +192,29 @@ Code block
                 },
            }
 
+
+## RealTimeMap and default map attribution
+
+You can set what the default attribution of the map is.
+
+Example code
+
+        <RealTimeMap Parameters="@parameters" />
+
+        @code {
+            RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+                {
+                    defaultAttribution = new RealTimeMap.DefaultAttribution()
+                    {
+                        has = true,
+                       defaultHtmlContent = "<img src = \"http://localhost:5236/favicon.png\"></img>"
+                    }
+
+                };
+            }
+
+
+
 ## RealTimeMap and interaction options
 
 You can change the behavior of the map to various mouse actions:
@@ -258,6 +283,28 @@ Code block
         }
    
     }
+
+## Map class
+
+### Attributions class
+
+It is a child class of the Map class that provides access to Map Attribution.
+
+Example code
+
+1. Add attribution 
+
+        public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+        {
+            args.sender.Map.Attributions.add("<img src = \"http://localhost:5236/favicon.png\"></img>");
+        }
+
+2. Remove existing attribution
+
+        public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+        {
+            args.sender.Map.Attributions.add("<img src = \"http://localhost:5236/favicon.png\"></img>");
+        }
 
 ## RealTimeMap control events
 
