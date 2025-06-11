@@ -73,4 +73,12 @@ This class allow:
 
 - confinguring map attribution
 
-  
+
+                RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+                    {
+                       defaultAttribution = new RealTimeMap.DefaultAttribution()
+                       {
+                           has =  true,
+                           defaultHtmlContent = "<h6 style = \"font-style:italic;opacity:0.2\">My Map</h6>"
+                       }
+                    };
