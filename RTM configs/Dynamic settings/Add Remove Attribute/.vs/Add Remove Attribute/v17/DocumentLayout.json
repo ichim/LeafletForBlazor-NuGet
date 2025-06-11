@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Add Remove Attribute\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9168FD6-27AD-4F60-A7D4-98A6D3B7118B}|Add Remove Attribute\\Add Remove Attribute.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\add remove attribute\\add remove attribute\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A9168FD6-27AD-4F60-A7D4-98A6D3B7118B}|Add Remove Attribute\\Add Remove Attribute.csproj|solutionrelative:add remove attribute\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9168FD6-27AD-4F60-A7D4-98A6D3B7118B}|Add Remove Attribute\\Add Remove Attribute.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\add remove attribute\\add remove attribute\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A9168FD6-27AD-4F60-A7D4-98A6D3B7118B}|Add Remove Attribute\\Add Remove Attribute.csproj|solutionrelative:add remove attribute\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Add Remove Attribute\\Add Remove Attribute\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Add Remove Attribute\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Add Remove Attribute\\Add Remove Attribute\\Pages\\Index.razor",
+              "RelativeToolTip": "Add Remove Attribute\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T08:49:15.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Add Remove Attribute\\Add Remove Attribute\\_Imports.razor",
+              "RelativeDocumentMoniker": "Add Remove Attribute\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Add Remove Attribute\\Add Remove Attribute\\_Imports.razor",
+              "RelativeToolTip": "Add Remove Attribute\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T08:48:48.397Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

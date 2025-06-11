@@ -1,0 +1,17 @@
+﻿@page "/"
+<button @onclick="remove">Remove added attribution</button>
+<RealTimeMap @ref = "realTimeMap" height="calc(100vh - 10rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+@code{
+    RealTimeMap? realTimeMap;
+    string myAttribution = "<img style = \"width:20px;height:20px;\" src = \"http://localhost:5015/map.png\">My Map</img>";
+    void onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        args.sender.Map.Attributions.add(myAttribution);
+    }
+
+    void remove()
+    {
+        realTimeMap?.Map.Attributions.remove(myAttribution);
+    }
+}
