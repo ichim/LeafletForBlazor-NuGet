@@ -49,3 +49,26 @@ This class allow:
                      miles = true
                  }  
                };
+
+  - configuring basemaps
+ 
+                static string openCycleMapAPIKey = "--- your Open Cycle Map API Key ---";
+                RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+                    {
+                        basemap = new RealTimeMap.Basemap()
+                        {
+                            basemapLayers = new List<RealTimeMap.BasemapLayer>()
+                                 {
+                                            new RealTimeMap.BasemapLayer()
+                                            {
+                                                url = "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=" + openCycleMapAPIKey,
+                                                attribution = "©Open Cycle Map",
+                                                title = "Open Cycle Map"
+                                            },
+                                 }
+                            },
+                    };
+
+- confinguring map attribution
+
+  
