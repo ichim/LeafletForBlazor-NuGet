@@ -82,3 +82,7 @@ This class allow:
                            defaultHtmlContent = "<h6 style = \"font-style:italic;opacity:0.2\">My Map</h6>"
                        }
                     };
+
+# RealTimeMap and dynamic settings
+
+
