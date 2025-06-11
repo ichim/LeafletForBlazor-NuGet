@@ -105,7 +105,7 @@ Code block:
                         args.sender.Map.Attributions.add("<h6 style = \"font-style:italic;opacity:0.2\">My GeoJSON data</h6>");
                 }
 
-  - remove attribution
+- remove attribution
 
             public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
                 {
