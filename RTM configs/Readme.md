@@ -50,8 +50,10 @@ This class allow:
                  }  
                };
 
-  - configuring basemaps
- 
+
+- configuring basemaps
+
+
                 static string openCycleMapAPIKey = "--- your Open Cycle Map API Key ---";
                 RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
                     {
