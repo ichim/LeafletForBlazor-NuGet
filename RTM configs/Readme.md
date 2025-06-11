@@ -85,4 +85,29 @@ This class allow:
 
 # RealTimeMap and dynamic settings
 
+Blazor page:
 
+            <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"  OnAfterMapLoaded="@OnAfterMapLoaded"></RealTimeMap>
+
+Code block:
+
+            @code{
+                        public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+                            {
+                                   //settings code example
+                            }
+            }
+
+- add more attribution
+
+            public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+                {
+                        args.sender.Map.Attributions.add("<h6 style = \"font-style:italic;opacity:0.2\">My GeoJSON data</h6>");
+                }
+
+  - remove attribution
+
+            public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+                {
+                        args.sender.Map.Attributions.add("<h6 style = \"font-style:italic;opacity:0.2\">My GeoJSON data</h6>");
+                }
