@@ -1,3 +1,5 @@
+> Here you will find examples of the default configuration of the RealTimeMap and its dynamic configuration (ex. Basemap, Attribution etc)
+
 # RealTimeMap and load parameteres
 
 [Video Example - location, zoom level and Map Scale](https://www.youtube.com/watch?v=zisprc60S88)
@@ -111,5 +113,5 @@ Code block:
 
             public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
                 {
-                        args.sender.Map.Attributions.add("<h6 style = \"font-style:italic;opacity:0.2\">My GeoJSON data</h6>");
+                        args.sender.Map.Attributions.remove("<h6 style = \"font-style:italic;opacity:0.2\">My GeoJSON data</h6>");
                 }
