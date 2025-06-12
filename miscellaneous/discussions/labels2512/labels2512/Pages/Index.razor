@@ -1,0 +1,30 @@
+﻿@page "/"
+<button @onclick="onClick">Delete labels</button>
+<RealTimeMap @ref="realTimeMap" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" Parameters="@parameters" OnAfterMapLoaded="@onAfterMapLoad"></RealTimeMap>
+@code {
+    RealTimeMap? realTimeMap;
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 43.97248976827578,
+                longitude = 25.326675905214792
+            },
+            zoomLevel = 12
+        };
+    private async Task onAfterMapLoad(RealTimeMap.MapEventArgs args)
+    {
+        await args.sender.Geometric.DisplayPointsFromArray.addLabel(new RealTimeMap.LabelInfo()
+            {
+                coordinates = new double[2] { 43.97248976827578, 25.326675905214792 },
+                textAnchor = new double[2] { 0, 16 },
+                text = "text displayed on the map",
+                labelStyle = "min-width:40px;height:100%;background-color:#920202;border-radius:6px;color:white;text-align:center;font-size:11px;opacity:0.6"
+            });
+    }
+
+    private void onClick()
+    {
+        realTimeMap?.Geometric.DisplayPointsFromArray.deleteAllLabels();
+    }
+}
