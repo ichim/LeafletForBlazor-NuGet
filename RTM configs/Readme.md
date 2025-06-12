@@ -1,3 +1,5 @@
+> Here you will find examples of the default configuration of the RealTimeMap and its dynamic configuration.
+
 # RealTimeMap and load parameteres
 
 [Video Example - location, zoom level and Map Scale](https://www.youtube.com/watch?v=zisprc60S88)
