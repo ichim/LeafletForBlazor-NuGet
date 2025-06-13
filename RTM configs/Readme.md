@@ -118,19 +118,50 @@ Code block:
 
 ## View dynamic settings
 
+View is a RealTimeMap class that allows dynamic configuration of the *visible area* of ​​the map.
+
 Blazor page
 
         <RealTimeMap @ref = "realTimeMap" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
 
+### Center of the visible area
+
 Code block
 
             @code{
-            RealTimeMap? realTimeMap;
-            
-                                realTimeMap?.View.setCenter = new RealTimeMap.Location()
+                            RealTimeMap? realTimeMap;
+                            public void onLocation()
+                            {
+                                realTimeMap.View.setCenter = new RealTimeMap.Location()
                                 {
                                         latitude = 40.712,
                                         longitude = -74.227
                                 };
+                            }
             
                     }
+
+
+
+    public void onZoomLevel()
+    {
+        realTimeMap.View.setZoomLevel = 10;
+    }
+
+    public void onLocation()
+    {
+        realTimeMap.View.setCenter = new RealTimeMap.Location()
+        {
+                latitude = 40.712,
+                longitude = -74.227
+        };
+    }
+
+    public void onBounds()
+    {
+        realTimeMap.View.setBounds = new RealTimeMap.Bounds()
+            {
+                northEast = new RealTimeMap.Location() { latitude = 44.119016922388475, longitude = 25.5423343754357 },
+                southWest = new RealTimeMap.Location() { latitude = 44.06574292386291, longitude = 25.67686807545283 }
+            };
+    }
