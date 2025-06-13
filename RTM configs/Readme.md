@@ -115,3 +115,20 @@ Code block:
                 {
                         args.sender.Map.Attributions.remove("<h6 style = \"font-style:italic;opacity:0.2\">My GeoJSON data</h6>");
                 }
+
+## View dynamic settings
+
+Blazor page
+
+        <RealTimeMap @ref = "realTimeMap" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
+
+            @code{
+            RealTimeMap? realTimeMap;
+            
+                                realTimeMap?.View.setCenter = new RealTimeMap.Location()
+                                {
+                                        latitude = 40.712,
+                                        longitude = -74.227
+                                };
+            
+                    }
