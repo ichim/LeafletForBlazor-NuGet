@@ -122,6 +122,8 @@ Blazor page
 
         <RealTimeMap @ref = "realTimeMap" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
 
+Code block
+
             @code{
             RealTimeMap? realTimeMap;
             
