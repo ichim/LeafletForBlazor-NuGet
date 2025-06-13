@@ -141,27 +141,26 @@ Code block
             
                     }
 
+### Level zoom
 
+            @code{
+                            RealTimeMap? realTimeMap;
+                            public void onZoomLevel()
+                            {
+                                realTimeMap.View.setZoomLevel = 10;
+                            }
+                }
 
-    public void onZoomLevel()
-    {
-        realTimeMap.View.setZoomLevel = 10;
-    }
+### Visible area  
 
-    public void onLocation()
-    {
-        realTimeMap.View.setCenter = new RealTimeMap.Location()
-        {
-                latitude = 40.712,
-                longitude = -74.227
-        };
-    }
-
-    public void onBounds()
-    {
-        realTimeMap.View.setBounds = new RealTimeMap.Bounds()
-            {
-                northEast = new RealTimeMap.Location() { latitude = 44.119016922388475, longitude = 25.5423343754357 },
-                southWest = new RealTimeMap.Location() { latitude = 44.06574292386291, longitude = 25.67686807545283 }
-            };
-    }
+                   @code{
+                   RealTimeMap? realTimeMap;
+                            public void onBounds()
+                            {
+                                realTimeMap.View.setBounds = new RealTimeMap.Bounds()
+                                    {
+                                        northEast = new RealTimeMap.Location() { latitude = 44.119016922388475, longitude = 25.5423343754357 },
+                                        southWest = new RealTimeMap.Location() { latitude = 44.06574292386291, longitude = 25.67686807545283 }
+                                    };
+                            }
+                         }
