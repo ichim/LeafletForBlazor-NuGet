@@ -1,0 +1,19 @@
+﻿@page "/"
+<button @onclick="onLocation">Go To My Location</button>
+<RealTimeMap @ref="realTimeMap" Parameters ="parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
+
+@code {
+    RealTimeMap? realTimeMap;
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+        {
+            zoomLevel = 12
+        };
+    public void onLocation()
+    {
+        realTimeMap.View.setCenter = new RealTimeMap.Location()
+            {
+                latitude = 40.712,
+                longitude = -74.227
+            };
+    }
+ }
