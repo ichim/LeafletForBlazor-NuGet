@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\add Point on event\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C63362-A6CB-4714-BEE3-519B9467B385}|add Point on event\\add Point on event.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\add point on event\\add point on event\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E5C63362-A6CB-4714-BEE3-519B9467B385}|add Point on event\\add Point on event.csproj|solutionrelative:add point on event\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C63362-A6CB-4714-BEE3-519B9467B385}|add Point on event\\add Point on event.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\add point on event\\add point on event\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E5C63362-A6CB-4714-BEE3-519B9467B385}|add Point on event\\add Point on event.csproj|solutionrelative:add point on event\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\add Point on event\\add Point on event\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "add Point on event\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\add Point on event\\add Point on event\\Pages\\Index.razor",
+              "RelativeToolTip": "add Point on event\\Pages\\Index.razor",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T09:49:06.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\add Point on event\\add Point on event\\_Imports.razor",
+              "RelativeDocumentMoniker": "add Point on event\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\add Point on event\\add Point on event\\_Imports.razor",
+              "RelativeToolTip": "add Point on event\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T09:48:47.978Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
