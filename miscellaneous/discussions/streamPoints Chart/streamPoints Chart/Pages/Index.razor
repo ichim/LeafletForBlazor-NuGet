@@ -1,0 +1,25 @@
+﻿@page "/"
+
+<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" Parameters="@parameters" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+@code {
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 43.65406446200289,
+                longitude = 25.369446755738487
+            },
+            zoomLevel = 14
+        };
+
+    private async void onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        var realTimeMap = args.sender as RealTimeMap;
+        realTimeMap.Geometric.Points.Appearance(item => item.type != "asked for help").pattern = new RealTimeMap.PointTooltip()
+            {
+                content = "<chart id=${guid} data = ${value.values} render = ${value.render} labels=${value.labels} type = 'pie' style='width:180px; height:180px; background-color:#ececed' options = '{\"plugins\":{\"legend\": {\"display\": true,\"labels\": {\"color\": \"gray\"},\"position\":\"bottom\"}}}'></chart>"
+            };
+        await realTimeMap.Geometric.Points.upload(new streamPieChart.data.InputData().input);
+    }
+}
