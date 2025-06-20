@@ -1322,7 +1322,11 @@ The **labelStyle** property allows you to formating label displayed in the map.
 
 ## DisplayPolylinesFromArray
 
-The **DisplayPolylinesFromArray** class hosted by the Geometric class, allows you to display measurement lines with addMeasure() method:
+The **DisplayPolylinesFromArray** class hosted by the Geometric class, allows you to display measurements and connectors lines.
+
+### Measure line
+
+Add line with addMeasure() method:
 
             await realTimeMap.Geometric.DisplayPolylinesFromArray.addMeasure(
                                                                 new RealTimeMap.MeasureLine()
@@ -1337,6 +1341,23 @@ The **DisplayPolylinesFromArray** class hosted by the Geometric class, allows yo
 
 
 
+Delete all measure lines with deleteMeasure() method:
+
+			await realTimeMap.Geometric.DisplayPolylinesFromArray.deleteMeasure();
+
+### Connector line
+
+Add line with addConnector() method:
+
+           double[,] polyline = new double[12, 2] {
+                           { 44.44586931032441, 26.097146294088674 }, { 44.44567571771458, 26.096377445586192 }, { 44.44557322665131, 26.096160510467932 }, { 44.44542518267126, 26.09578087503316 }, { 44.44530219217061, 26.09554799080396 }, { 44.445135928272926, 26.095378912700124 }, { 44.44502660288366, 26.095200263212803 }, { 44.44493095375493, 26.094874850544517 }, { 44.44486034694202, 26.09453030700582 }, { 44.44465286263079, 26.093572916893123 }, { 44.44440775850324, 26.092709245635653 }, { 44.44427754378361, 26.09215134979953 }
+           };
+           await realTimeMap.Geometric.DisplayPolylinesFromArray.addConnector(polyline, symbol: new RealTimeMap.PolylineSymbol() { color = "blue", weight = 2 });
+
+
+Delete all connector lines with deleteConnectors() method:
+
+        await realTimeMap?.Geometric.DisplayPolylinesFromArray.deleteConnectors();
 
 # RealTimeMap components
 
