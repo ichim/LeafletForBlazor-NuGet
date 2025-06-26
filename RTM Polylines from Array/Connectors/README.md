@@ -45,3 +45,7 @@ addConnector() method adds a polyline provided by an array of coordinates and a 
 ## Configurable connector arrow
 
 The addConnector() method allows you to customize the arrow through two parameters: the angle of inclination and the length of the lines that form the arrow.
+
+
+![image](https://github.com/user-attachments/assets/f332ef07-771b-4989-8a39-f9023eaab9c8)
+
