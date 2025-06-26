@@ -15,3 +15,8 @@ addConnector() method adds a polyline provided by an array of coordinates and a 
                                                                           polyline,start:1, 
                                                                           symbol: new RealTimeMap.PolylineSymbol() { color = "blue", weight = 2 }
                                                                           );
+
+The start parameter allows you to configure the arrow position:
+> start: 1 // this means that the arrow direction is a same of polyline
+> start: 0 // this means that the arrow direction is opposite of polyline
+> start: 2 // this means that the connector will be bidirectional (in both directions)
