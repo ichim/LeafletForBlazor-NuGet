@@ -46,7 +46,7 @@ addConnector() method adds a polyline provided by an array of coordinates and a 
 
 The addConnector() method allows you to customize the arrow through two parameters: the angle of inclination and the length of the lines that form the arrow.
 
-> length - the length of the lines that make up the arrow;
+> length - the length of the lines that make up the arrow, given in meters;
 > 
 > radianAngle - the angle of inclination that makes up the arrow, given in radians
 
@@ -54,8 +54,8 @@ The addConnector() method allows you to customize the arrow through two paramete
       await args.sender.Geometric.DisplayPolylinesFromArray.addConnector(
                                                                         polyline, 
                                                                         start: 1, 
-                                                                        length:42,
-                                                                        radianAngle:0.22, 
+                                                                        length:42,        //meters
+                                                                        radianAngle:0.22, //radians
                                                                         symbol: new RealTimeMap.PolylineSymbol() { color = "red", weight = 2 }
                                                                         );
 
