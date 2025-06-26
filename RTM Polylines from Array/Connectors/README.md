@@ -37,3 +37,7 @@ addConnector() method adds a polyline provided by an array of coordinates and a 
 
 
 >  start: 2 // this means that the connector will be bidirectional (in both directions)
+
+![image](https://github.com/user-attachments/assets/4e9796c6-5645-4511-b757-711d0663cbf1)
+![image](https://github.com/user-attachments/assets/4e9796c6-5645-4511-b757-711d0663cbf1)
+
