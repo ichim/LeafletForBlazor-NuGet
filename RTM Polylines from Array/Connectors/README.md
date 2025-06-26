@@ -7,3 +7,8 @@ With DisplayPolylinesFormArray you can add connectors. A connector is a polyline
 
 
 ## One way connector
+
+
+
+
+await args.sender.Geometric.DisplayPolylinesFromArray.addConnector(polyline,start:1, symbol: new RealTimeMap.PolylineSymbol() { color = "blue", weight = 2 });
