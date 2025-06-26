@@ -1,4 +1,4 @@
-# Connectors and DisplayPolylinesFromArray class
+# Connectors
 
 
 With DisplayPolylinesFormArray you can add connectors. A connector is a polyline that can have:
