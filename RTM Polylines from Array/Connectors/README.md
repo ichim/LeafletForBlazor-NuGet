@@ -17,6 +17,6 @@ addConnector() method adds a polyline provided by an array of coordinates and a 
                                                                           );
 
 The start parameter allows you to configure the arrow position:
-> start: 1 // this means that the arrow direction is a same of polyline
-> start: 0 // this means that the arrow direction is opposite of polyline
-> start: 2 // this means that the connector will be bidirectional (in both directions)
+>start: 1 // this means that the arrow direction is a same of polyline
+>start: 0 // this means that the arrow direction is opposite of polyline
+>start: 2 // this means that the connector will be bidirectional (in both directions)
