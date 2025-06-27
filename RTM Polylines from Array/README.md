@@ -1,5 +1,6 @@
 # Meassure line
 
+A measurement line is a line drawn between two points (coordinate points) and on which a label can be displayed.
 
 # Connector line
 
