@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\config tooltip from file.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\config tooltip from file\\config tooltip from file\\config tooltip from file.csproj": {}
   },
   "projects": {
-    "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\config tooltip from file.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\config tooltip from file\\config tooltip from file\\config tooltip from file.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\config tooltip from file.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\config tooltip from file\\config tooltip from file\\config tooltip from file.csproj",
         "projectName": "config tooltip from file",
-        "projectPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\config tooltip from file.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\config tooltip from file\\config tooltip from file\\config tooltip from file.csproj",
         "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-        "outputPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\config tooltip from file\\config tooltip from file\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.0.6.8, )"
+              "version": "[2.2.4.8, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",

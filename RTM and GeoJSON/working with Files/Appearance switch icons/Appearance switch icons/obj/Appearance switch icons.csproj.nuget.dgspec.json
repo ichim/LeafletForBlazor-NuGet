@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj",
         "projectName": "Appearance switch icons",
-        "projectPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj",
         "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch icons\\Appearance switch icons\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.2.0.4, )"
+              "version": "[2.2.4.8, )"
             }
           },
           "imports": [

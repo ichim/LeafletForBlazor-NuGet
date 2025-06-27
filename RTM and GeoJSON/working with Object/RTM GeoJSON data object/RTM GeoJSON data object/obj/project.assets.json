@@ -2,10 +2,11 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "LeafletForBlazor/2.0.4.8": {
+      "LeafletForBlazor/2.2.4.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.0"
+          "Microsoft.AspNetCore.Components.Web": "7.0.0",
+          "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
           "lib/net7.0/LeafletForBlazor.dll": {}
@@ -458,6 +459,19 @@
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO.Pipelines/8.0.0": {
@@ -519,10 +533,11 @@
       }
     },
     "net8.0/browser-wasm": {
-      "LeafletForBlazor/2.0.4.8": {
+      "LeafletForBlazor/2.2.4.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.0"
+          "Microsoft.AspNetCore.Components.Web": "7.0.0",
+          "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
           "lib/net7.0/LeafletForBlazor.dll": {}
@@ -977,6 +992,19 @@
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.targets": {}
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.IO.Pipelines/8.0.0": {
         "type": "package",
         "compile": {
@@ -1031,14 +1059,14 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/2.0.4.8": {
-      "sha512": "IcTgKW+G6m/4nnj1WWk7hj+QgzXRzW5wP5WyqwOG32c1QT4QNaZPI1AfjjT1WwNO7yCf7bDpUNWbdHaUlJ9MeQ==",
+    "LeafletForBlazor/2.2.4.8": {
+      "sha512": "+rvCISoxW+4lRiVUPgLZQ3QDwblg90uAdabNmud3WpmRsWuiHtJueJnydz40EN+tnK/RK8HHmEP84MfKA68QwA==",
       "type": "package",
-      "path": "leafletforblazor/2.0.4.8",
+      "path": "leafletforblazor/2.2.4.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "License (2).md",
+        "License.md",
         "Readme.md",
         "build/LeafletForBlazor.props",
         "build/Microsoft.AspNetCore.StaticWebAssets.props",
@@ -1046,13 +1074,14 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net7.0/map_color.ico",
-        "leafletforblazor.2.0.4.8.nupkg.sha512",
+        "leafletforblazor.2.2.4.8.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net7.0/LeafletForBlazor.dll",
         "map_color.png",
         "staticwebassets/LeafletForBlazor.bundle.scp.css",
         "staticwebassets/LeafletMapFunctionalities.js",
         "staticwebassets/RealTime/Map.js",
+        "staticwebassets/RealTime/components/streamLegend.js",
         "staticwebassets/RealTime/geojson/fromObject.js",
         "staticwebassets/RealTime/geometry/point.js",
         "staticwebassets/RealTime/geometry/points.js",
@@ -2008,6 +2037,36 @@
         "tools/net8.0/System.Windows.Extensions.dll"
       ]
     },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "System.IO.Pipelines/8.0.0": {
       "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
       "type": "package",
@@ -2148,7 +2207,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "LeafletForBlazor >= 2.0.4.8",
+      "LeafletForBlazor >= 2.2.4.8",
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.5",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.5",
       "Microsoft.NET.ILLink.Tasks >= 8.0.5",
@@ -2207,7 +2266,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[2.0.4.8, )"
+            "version": "[2.2.4.8, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",

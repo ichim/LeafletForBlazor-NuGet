@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\Appearance switch and visibility.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch and visibility\\Appearance switch and visibility\\Appearance switch and visibility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\Appearance switch and visibility.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch and visibility\\Appearance switch and visibility\\Appearance switch and visibility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\Appearance switch and visibility.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch and visibility\\Appearance switch and visibility\\Appearance switch and visibility.csproj",
         "projectName": "Appearance switch and visibility",
-        "projectPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\Appearance switch and visibility.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch and visibility\\Appearance switch and visibility\\Appearance switch and visibility.csproj",
         "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch and visibility\\Appearance switch and visibility\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch and visibility\\Appearance switch and visibility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.2.0.4, )"
+              "version": "[2.2.4.8, )"
             }
           },
           "imports": [
@@ -66,24 +66,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.19, 7.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.19, 7.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.19, 7.0.19]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.19, 7.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

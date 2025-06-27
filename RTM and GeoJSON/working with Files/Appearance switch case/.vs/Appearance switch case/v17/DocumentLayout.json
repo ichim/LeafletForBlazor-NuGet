@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\",
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch case\\appearance switch case\\wwwroot\\geojson\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\appearance switch case\\appearance switch case\\wwwroot\\geojson\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|solutionrelative:appearance switch case\\wwwroot\\geojson\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch case\\appearance switch case\\wwwroot\\geojson\\polylines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\appearance switch case\\appearance switch case\\wwwroot\\geojson\\polylines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|solutionrelative:appearance switch case\\wwwroot\\geojson\\polylines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch case\\appearance switch case\\wwwroot\\geojson\\polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\appearance switch case\\appearance switch case\\wwwroot\\geojson\\polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|solutionrelative:appearance switch case\\wwwroot\\geojson\\polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch case\\appearance switch case\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\appearance switch case\\appearance switch case\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|solutionrelative:appearance switch case\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\appearance switch case\\appearance switch case\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\appearance switch case\\appearance switch case\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{500A9A70-22A4-4614-A576-AE9AED15F160}|Appearance switch case\\Appearance switch case.csproj|solutionrelative:appearance switch case\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "polylines.json",
-              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\polylines.json",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\polylines.json",
               "RelativeDocumentMoniker": "Appearance switch case\\wwwroot\\geojson\\polylines.json",
-              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\polylines.json",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\polylines.json",
               "RelativeToolTip": "Appearance switch case\\wwwroot\\geojson\\polylines.json",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAHEAAAATAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAIBJwHEAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-09-17T17:31:27.124Z",
               "EditorCaption": ""
@@ -49,11 +49,11 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "polygons.json",
-              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\polygons.json",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\polygons.json",
               "RelativeDocumentMoniker": "Appearance switch case\\wwwroot\\geojson\\polygons.json",
-              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\polygons.json",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\polygons.json",
               "RelativeToolTip": "Appearance switch case\\wwwroot\\geojson\\polygons.json",
-              "ViewState": "AQIAAKgAAAAAAAAAAAAAADIBAAATAAAA",
+              "ViewState": "AQIAAKUAAAAAAAAAAIBJwDIBAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-09-17T17:20:46.308Z",
               "EditorCaption": ""
@@ -62,9 +62,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "points.json",
-              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\points.json",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\points.json",
               "RelativeDocumentMoniker": "Appearance switch case\\wwwroot\\geojson\\points.json",
-              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\points.json",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\Appearance switch case\\wwwroot\\geojson\\points.json",
               "RelativeToolTip": "Appearance switch case\\wwwroot\\geojson\\points.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -75,9 +75,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\Pages\\Index.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\Appearance switch case\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "Appearance switch case\\Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\Pages\\Index.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\Appearance switch case\\Pages\\Index.razor",
               "RelativeToolTip": "Appearance switch case\\Pages\\Index.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -88,9 +88,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\Appearance switch case\\_Imports.razor",
               "RelativeDocumentMoniker": "Appearance switch case\\_Imports.razor",
-              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Appearance switch case\\Appearance switch case\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch case\\Appearance switch case\\_Imports.razor",
               "RelativeToolTip": "Appearance switch case\\_Imports.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\",
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\config tooltip from file\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A1917AE-118C-49B9-90A4-0A00F78E4201}|config tooltip from file\\config tooltip from file.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\test\\config tooltip from file\\config tooltip from file\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5A1917AE-118C-49B9-90A4-0A00F78E4201}|config tooltip from file\\config tooltip from file.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\config tooltip from file\\config tooltip from file\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5A1917AE-118C-49B9-90A4-0A00F78E4201}|config tooltip from file\\config tooltip from file.csproj|solutionrelative:config tooltip from file\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A1917AE-118C-49B9-90A4-0A00F78E4201}|config tooltip from file\\config tooltip from file.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\test\\config tooltip from file\\config tooltip from file\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5A1917AE-118C-49B9-90A4-0A00F78E4201}|config tooltip from file\\config tooltip from file.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm and geojson\\working with files\\config tooltip from file\\config tooltip from file\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5A1917AE-118C-49B9-90A4-0A00F78E4201}|config tooltip from file\\config tooltip from file.csproj|solutionrelative:config tooltip from file\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Home.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\Pages\\Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\config tooltip from file\\config tooltip from file\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "config tooltip from file\\Pages\\Home.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\config tooltip from file\\config tooltip from file\\Pages\\Home.razor",
               "RelativeToolTip": "config tooltip from file\\Pages\\Home.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -37,9 +37,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\config tooltip from file\\config tooltip from file\\_Imports.razor",
               "RelativeDocumentMoniker": "config tooltip from file\\_Imports.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\test\\config tooltip from file\\config tooltip from file\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\config tooltip from file\\config tooltip from file\\_Imports.razor",
               "RelativeToolTip": "config tooltip from file\\_Imports.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

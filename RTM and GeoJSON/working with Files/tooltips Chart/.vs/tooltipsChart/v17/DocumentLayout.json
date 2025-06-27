@@ -36,9 +36,10 @@
               "RelativeDocumentMoniker": "tooltipsChart\\wwwroot\\input\\toolTipChartPolygon.json",
               "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\tooltipsChart\\wwwroot\\input\\toolTipChartPolygon.json",
               "RelativeToolTip": "tooltipsChart\\wwwroot\\input\\toolTipChartPolygon.json",
-              "ViewState": "AQIAAGgBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAGUBAAAAAAAAAIBJwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-07T12:01:28.612Z"
+              "WhenOpened": "2025-03-07T12:01:28.612Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,9 +49,10 @@
               "RelativeDocumentMoniker": "tooltipsChart\\wwwroot\\input\\toolTipPieChart.json",
               "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\tooltips Chart\\tooltipsChart\\wwwroot\\input\\toolTipPieChart.json",
               "RelativeToolTip": "tooltipsChart\\wwwroot\\input\\toolTipPieChart.json",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAEsAAAAtAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAIBJwEsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-07T12:01:15.522Z"
+              "WhenOpened": "2025-03-07T12:01:15.522Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -75,7 +77,8 @@
               "RelativeToolTip": "tooltipsChart\\_Imports.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T11:59:42.381Z"
+              "WhenOpened": "2025-03-07T11:59:42.381Z",
+              "EditorCaption": ""
             }
           ]
         }

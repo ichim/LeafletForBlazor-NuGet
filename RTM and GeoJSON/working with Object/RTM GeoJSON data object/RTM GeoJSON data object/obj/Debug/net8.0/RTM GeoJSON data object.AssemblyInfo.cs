@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RTM GeoJSON data object")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4faa2fc8e02c5003b8f982b425ca73b05e667e21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83d6e0caefda362e7651bd8fb95795f466da41b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("RTM GeoJSON data object")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RTM GeoJSON data object")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

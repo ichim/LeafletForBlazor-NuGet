@@ -2,10 +2,11 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "LeafletForBlazor/2.2.0.4": {
+      "LeafletForBlazor/2.2.4.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.0"
+          "Microsoft.AspNetCore.Components.Web": "7.0.0",
+          "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
           "lib/net7.0/LeafletForBlazor.dll": {}
@@ -217,6 +218,19 @@
           }
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.IO.Pipelines/7.0.0": {
         "type": "package",
         "compile": {
@@ -236,10 +250,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/2.2.0.4": {
-      "sha512": "Azc4iBFdAa7gv16UZTalRNECWywOFbDVB7Qkj3OTXd52PFE7MrG0/Qxj5W4IXa18VjDiAO5usYHYHdmZwOdLFQ==",
+    "LeafletForBlazor/2.2.4.8": {
+      "sha512": "+rvCISoxW+4lRiVUPgLZQ3QDwblg90uAdabNmud3WpmRsWuiHtJueJnydz40EN+tnK/RK8HHmEP84MfKA68QwA==",
       "type": "package",
-      "path": "leafletforblazor/2.2.0.4",
+      "path": "leafletforblazor/2.2.4.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -251,13 +265,14 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net7.0/map_color.ico",
-        "leafletforblazor.2.2.0.4.nupkg.sha512",
+        "leafletforblazor.2.2.4.8.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net7.0/LeafletForBlazor.dll",
         "map_color.png",
         "staticwebassets/LeafletForBlazor.bundle.scp.css",
         "staticwebassets/LeafletMapFunctionalities.js",
         "staticwebassets/RealTime/Map.js",
+        "staticwebassets/RealTime/components/streamLegend.js",
         "staticwebassets/RealTime/geojson/fromObject.js",
         "staticwebassets/RealTime/geometry/point.js",
         "staticwebassets/RealTime/geometry/points.js",
@@ -580,6 +595,36 @@
         "microsoft.jsinterop.nuspec"
       ]
     },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "System.IO.Pipelines/7.0.0": {
       "sha512": "jRn6JYnNPW6xgQazROBLSfpdoczRw694vO5kKvMcNnpXuolEixUyw6IBuBs2Y2mlSX/LdLvyyWmfXhaI3ND1Yg==",
       "type": "package",
@@ -610,7 +655,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "LeafletForBlazor >= 2.2.0.4"
+      "LeafletForBlazor >= 2.2.4.8"
     ]
   },
   "packageFolders": {
@@ -620,11 +665,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj",
+      "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj",
       "projectName": "Appearance switch icons",
-      "projectPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj",
+      "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch icons\\Appearance switch icons\\Appearance switch icons.csproj",
       "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\Appearance switch icons\\Appearance switch icons\\obj\\",
+      "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM and GeoJSON\\working with Files\\Appearance switch icons\\Appearance switch icons\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -665,7 +710,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[2.2.0.4, )"
+            "version": "[2.2.4.8, )"
           }
         },
         "imports": [
