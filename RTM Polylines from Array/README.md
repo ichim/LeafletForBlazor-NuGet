@@ -1,6 +1,8 @@
-# Meassure line
+# Measure line
 
 A measurement line is a line drawn between two points (coordinate points) and on which a label can be displayed.
+
+[Measure line](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Polylines%20from%20Array/Measures/Measure%20line#measure-line)
 
 # Connector line
 
