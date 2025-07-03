@@ -18,10 +18,12 @@ You can find more information:
 
 # What's New
 
+
 | Title | News Description |
 | ---- | ---- |
-| [RealTimeMap and default map attribution](#realtimemap-and-default-map-attribution) | You can set what the default attribution of the map is (LoadParameters class)|
-| [Attribution class](#attributions-class) | It is a child class of the Map class that provides access to Map Attribution. add() and remove() methods |
+| [New parameter for addMeasure() method](#measure-line) | The DisplayPolylinesFromArray class allows to add measure lines. These lines display a label. The addMeasure () method adding Measure Line now has the parameter **labelRotateWithLine** that allows the rotated display of the label after the direction of the line |
+| [textAnchor parameter becomes obsoletes](#measure-line) | ~~textAnchor~~ parameter becomes obsoletes and is replaced with **labelAnchor** |
+| [text parameter becomes obsolete](#measure-line) | ~~text~~ parameter becomes obsolete and is replaced with **content** |
 
 
 ![chart06](https://github.com/user-attachments/assets/cc768477-69e3-432e-9750-2000b221130b)
@@ -1326,20 +1328,29 @@ The **DisplayPolylinesFromArray** class hosted by the Geometric class, allows yo
 
 ### Measure line
 
-Add line with addMeasure() method:
+Adding a measurement line is done with the addMeasure() method.
+
+>~~textAnchor~~ parameter is **obsolete/deprecated**. The **labelAnchor** parameter is used to set the anchor point of the text label displayed in the map.
+
+>~~text~~ parameter becomes obsolete and is replaced with **content**
+
 
             await realTimeMap.Geometric.DisplayPolylinesFromArray.addMeasure(
                                                                 new RealTimeMap.MeasureLine()
                                                                 {
                                                                     start = new double[2] { 43.971312524467095, 25.328505256329578},    //start point of measure line
                                                                     end = new double[2] { 43.970933062429864, 25.329087513345627},      //end point of measure line
-                                                                    text = "20 meters",
-                                                                    textAnchor = new double[2] {- 2, 8 },                               //the anchor point (text) from the middle of the line 
+                                                                    text = "20 meters", //is obsolete
+                                                                    content = "20 meters", //replace text parameter
+                                                                    textAnchor = new double[2] {- 2, 8 },  //is obsolete
+                                                                    labelAnchor = new double[2] {- 2, 8 }, //replace textAnchor                              //the anchor point (text) from the middle of the line 
                                                                     labelStyle = "min-width:40px;height:100%;background-color:#084886;border-radius:6px;color:#d2efff;text-align:center;font-size:10px;"
 
                                                             });
 
 
+
+The **labelRotateWithLine** parameter is of type boolean and allows the label to be displayed in the same direction (slope) as the measurement line.
 
 Delete all measure lines with deleteMeasure() method:
 
