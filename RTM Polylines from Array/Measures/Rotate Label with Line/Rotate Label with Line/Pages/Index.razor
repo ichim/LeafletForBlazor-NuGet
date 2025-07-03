@@ -1,0 +1,40 @@
+﻿@page "/"
+
+<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" Parameters="@parameters" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+@code {
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 43.97105564881256, //latitude of the center of the map
+                longitude = 25.33182361405929 //longitude of the center of the map
+            },
+            zoomLevel = 18, //zoom level of the map
+        };
+
+    private async void onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        await args.sender.Geometric.DisplayPolylinesFromArray.addMeasure(
+                                                           new RealTimeMap.MeasureLine()
+                                                               {
+                                                                   start = new double[2] { 43.971951019880514, 25.328811663232205 },    //start point of measure line
+                                                                   end = new double[2] { 43.969947306468306, 25.331884320765532 },      //end point of measure line
+                                                                   content = "<h6 style=\"font-size:1em\">820 meters</h6>",
+                                                                   labelAnchor = new double[2] { -40, -28 },                               //the anchor point (text) from the middle of the line
+                                                                   labelRotateWithLine = true, //if the label should rotate with the line
+                                                                   labelStyle = "opacity:0.6;width:60px;height:100%;background-color:#084886;border-radius:6px;color:#d2efff;text-align:center;font-size:10px;",
+                                                               });
+        await args.sender.Geometric.DisplayPolylinesFromArray.addMeasure(
+                                                           new RealTimeMap.MeasureLine()
+                                                               {
+                                                                   start = new double[2] { 43.97221314982322, 25.332096675777887 },    //start point of measure line
+                                                                   end = new double[2] { 43.97090272750886, 25.3303897816722 },      //end point of measure line
+                                                                   content = "Eticheta 4",
+                                                                   labelAnchor = new double[2] { 0, 0 },                               //the anchor point (text) from the middle of the line
+                                                                   labelRotateWithLine = true, //if the label should rotate with the line
+                                                                   labelStyle = "opacity:0.6;min-width:40px;height:100%;background-color:#084886;border-radius:6px;color:#d2efff;text-align:center;font-size:10px;",
+                                                               });
+        
+
+    }
+}
