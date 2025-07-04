@@ -1,0 +1,30 @@
+﻿@page "/"
+
+
+<RealTimeMap Parameters="@parameters" OnAfterMapLoaded="@OnAfterMapLoaded"  width="1000px" height="620px" />
+
+
+
+
+@code {
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 44.44643179834759,
+                longitude = 26.096934450120933
+            },
+            zoomLevel = 16
+
+        };
+    public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        var path = "http://localhost:5191/";
+
+        await args.sender.Geometric.DataFromGeoJSON.addFromFiles(new string[1]
+           {
+            $"{path}/polygonSymbol.json"
+           }
+       );
+    }
+}
