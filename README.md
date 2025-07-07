@@ -124,7 +124,7 @@ in the **_Imports.razor** file of the project.
 
 3. add RealTimeMap control into Blazor Page:
 
-        <RealTimeMap height="460px" width="620px"></RealTimeMap>
+                <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
 
 ## Working with loading parameters
 
