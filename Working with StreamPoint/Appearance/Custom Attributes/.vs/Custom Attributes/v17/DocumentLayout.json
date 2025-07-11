@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Custom Attributes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E28822C5-10DB-412A-BA76-A02917951E43}|Custom Attributes\\Custom Attributes.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\custom attributes\\custom attributes\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E28822C5-10DB-412A-BA76-A02917951E43}|Custom Attributes\\Custom Attributes.csproj|solutionrelative:custom attributes\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E28822C5-10DB-412A-BA76-A02917951E43}|Custom Attributes\\Custom Attributes.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\custom attributes\\custom attributes\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E28822C5-10DB-412A-BA76-A02917951E43}|Custom Attributes\\Custom Attributes.csproj|solutionrelative:custom attributes\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E28822C5-10DB-412A-BA76-A02917951E43}|Custom Attributes\\Custom Attributes.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\custom attributes\\custom attributes\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E28822C5-10DB-412A-BA76-A02917951E43}|Custom Attributes\\Custom Attributes.csproj|solutionrelative:custom attributes\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E28822C5-10DB-412A-BA76-A02917951E43}|Custom Attributes\\Custom Attributes.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\custom attributes\\custom attributes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E28822C5-10DB-412A-BA76-A02917951E43}|Custom Attributes\\Custom Attributes.csproj|solutionrelative:custom attributes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Custom Attributes\\Custom Attributes\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Custom Attributes\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Custom Attributes\\Custom Attributes\\Pages\\Index.razor",
+              "RelativeToolTip": "Custom Attributes\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T10:26:02.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Custom Attributes\\Custom Attributes\\_Imports.razor",
+              "RelativeDocumentMoniker": "Custom Attributes\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Custom Attributes\\Custom Attributes\\_Imports.razor",
+              "RelativeToolTip": "Custom Attributes\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T10:25:16.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Custom Attributes\\Custom Attributes\\Program.cs",
+              "RelativeDocumentMoniker": "Custom Attributes\\Program.cs",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Custom Attributes\\Custom Attributes\\Program.cs",
+              "RelativeToolTip": "Custom Attributes\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:25:15.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "data.cs",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Custom Attributes\\Custom Attributes\\Data\\data.cs",
+              "RelativeDocumentMoniker": "Custom Attributes\\Data\\data.cs",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\Custom Attributes\\Custom Attributes\\Data\\data.cs",
+              "RelativeToolTip": "Custom Attributes\\Data\\data.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:23:40.383Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
