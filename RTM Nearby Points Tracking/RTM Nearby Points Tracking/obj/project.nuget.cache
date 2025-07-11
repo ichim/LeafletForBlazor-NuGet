@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TOs4woTOU/WVKDafGbBVJ4vGQ/y9X+8PhJMDmkEffH0cEbLX94NDxl8pBpJBb3KvzeBTuAPwokI8tEqo0Ml83A==",
+  "dgSpecHash": "M5Y/X82EJ0c=",
   "success": true,
   "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM Nearby Points Tracking\\RTM Nearby Points Tracking\\RTM Nearby Points Tracking.csproj",
   "expectedPackageFiles": [
@@ -29,10 +29,16 @@
     "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.jsinterop\\7.0.13\\microsoft.jsinterop.7.0.13.nupkg.sha512",
     "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.13\\microsoft.jsinterop.webassembly.7.0.13.nupkg.sha512",
+    "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23401.1\\microsoft.net.illink.analyzers.7.0.100-1.23401.1.nupkg.sha512",
+    "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23401.1\\microsoft.net.illink.tasks.7.0.100-1.23401.1.nupkg.sha512",
+    "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.5\\microsoft.net.sdk.webassembly.pack.8.0.5.nupkg.sha512",
     "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.12\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.12.nupkg.sha512"
+    "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.19\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.19.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,60 @@
+﻿@page "/"
+
+@using StreamPointCollection
+<button @onclick="upload">upload data</button>
+<h4>Use the mouse scroll wheel to change the zoom level of the map.</h4>
+<h4>Current zoom level: @zoomLevel</h4>
+<h6>The blue and green points will be displayed only between 15 and 18 zoom level</h6>
+<RealTimeMap 
+    @ref="realTimeMap" 
+    height="calc(100vh - 16rem)" 
+    width="calc(100vw - 18rem)"
+    OnZoomLevelEndChange="@onZoomLevelChange">
+</RealTimeMap>
+@code {
+    RealTimeMap? realTimeMap;
+    int zoomLevel = 0;
+    public async Task upload()
+    {
+        if (realTimeMap != null)
+        {
+            #region Points Appearance on points Type
+            //settings appearance of points displayed on map
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
+                {
+                    radius = 10,
+                    fillColor = "green"
+                };
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention crew").pattern = new RealTimeMap.PointSymbol()
+                {
+                    radius = 10,
+                    fillColor = "blue"
+                };
+
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "suspicious vehicle").pattern = new RealTimeMap.PointSymbol()
+                {
+                    radius = 10,
+                    fillColor = "red"
+                };
+            #endregion
+            #region Zoom level visibility
+            //hide or show points based on zoom level
+            // ... only green and blue points
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention crew" || item.type == "ambulance").pattern = new RealTimeMap.VisibilityZoomLevel()
+                {
+                    maxZoomLevel = 18,
+                    minZoomLevel = 15
+                };
+            #endregion
+            #region upload data
+            //upload data from \...\data\data.cs
+            await realTimeMap.Geometric.Points.upload(new InputData().input);
+            #endregion
+        }
+    }
+    public void onZoomLevelChange(RealTimeMap.MapZoomEventArgs args)
+    {
+        zoomLevel = args.zoomLevel;
+        StateHasChanged();
+    }
+}

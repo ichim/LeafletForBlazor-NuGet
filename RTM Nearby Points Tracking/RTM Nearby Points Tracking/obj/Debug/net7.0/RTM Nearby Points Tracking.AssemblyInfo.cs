@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RTM Nearby Points Tracking")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47540a3667080dfddb8abc2f7a9be270e76e2ef9")]
 [assembly: System.Reflection.AssemblyProductAttribute("RTM Nearby Points Tracking")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RTM Nearby Points Tracking")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

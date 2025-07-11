@@ -1,4 +1,8 @@
 is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
 build_property.TargetFramework = net7.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -10,6 +14,8 @@ build_property._SupportedPlatformList = browser
 build_property.RootNamespace = RTM_Nearby_Points_Tracking
 build_property.RootNamespace = RTM_Nearby_Points_Tracking
 build_property.ProjectDir = D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\RTM Nearby Points Tracking\RTM Nearby Points Tracking\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 

@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM AppearanceOnType\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4DEF05A0-96D6-43DC-A433-5CA83176A3EB}|RTM AppearanceOnType\\RTM AppearanceOnType.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm appearanceontype\\rtm appearanceontype\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4DEF05A0-96D6-43DC-A433-5CA83176A3EB}|RTM AppearanceOnType\\RTM AppearanceOnType.csproj|solutionrelative:rtm appearanceontype\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DEF05A0-96D6-43DC-A433-5CA83176A3EB}|RTM AppearanceOnType\\RTM AppearanceOnType.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm appearanceontype\\rtm appearanceontype\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DEF05A0-96D6-43DC-A433-5CA83176A3EB}|RTM AppearanceOnType\\RTM AppearanceOnType.csproj|solutionrelative:rtm appearanceontype\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DEF05A0-96D6-43DC-A433-5CA83176A3EB}|RTM AppearanceOnType\\RTM AppearanceOnType.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\rtm appearanceontype\\rtm appearanceontype\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4DEF05A0-96D6-43DC-A433-5CA83176A3EB}|RTM AppearanceOnType\\RTM AppearanceOnType.csproj|solutionrelative:rtm appearanceontype\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "data.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM AppearanceOnType\\RTM AppearanceOnType\\data\\data.cs",
+              "RelativeDocumentMoniker": "RTM AppearanceOnType\\data\\data.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM AppearanceOnType\\RTM AppearanceOnType\\data\\data.cs",
+              "RelativeToolTip": "RTM AppearanceOnType\\data\\data.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T12:44:50.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM AppearanceOnType\\RTM AppearanceOnType\\_Imports.razor",
+              "RelativeDocumentMoniker": "RTM AppearanceOnType\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM AppearanceOnType\\RTM AppearanceOnType\\_Imports.razor",
+              "RelativeToolTip": "RTM AppearanceOnType\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-20T12:43:24.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM AppearanceOnType\\RTM AppearanceOnType\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "RTM AppearanceOnType\\Pages\\Index.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RTM AppearanceOnType\\RTM AppearanceOnType\\Pages\\Index.razor",
+              "RelativeToolTip": "RTM AppearanceOnType\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-20T12:42:36.822Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

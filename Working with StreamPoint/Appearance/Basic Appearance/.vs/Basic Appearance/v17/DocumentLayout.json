@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Appearance\\Basic Appearance\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E3F363-6BF4-47B9-AC38-FDC7D6B291F1}|Basic Appearance\\Basic Appearance.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with streampoint\\appearance\\basic appearance\\basic appearance\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5E3F363-6BF4-47B9-AC38-FDC7D6B291F1}|Basic Appearance\\Basic Appearance.csproj|solutionrelative:basic appearance\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E3F363-6BF4-47B9-AC38-FDC7D6B291F1}|Basic Appearance\\Basic Appearance.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with streampoint\\appearance\\basic appearance\\basic appearance\\data\\datacollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E3F363-6BF4-47B9-AC38-FDC7D6B291F1}|Basic Appearance\\Basic Appearance.csproj|solutionrelative:basic appearance\\data\\datacollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dataCollection.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Appearance\\Basic Appearance\\Basic Appearance\\Data\\dataCollection.cs",
+              "RelativeDocumentMoniker": "Basic Appearance\\Data\\dataCollection.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Appearance\\Basic Appearance\\Basic Appearance\\Data\\dataCollection.cs",
+              "RelativeToolTip": "Basic Appearance\\Data\\dataCollection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T05:32:41.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Appearance\\Basic Appearance\\Basic Appearance\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Basic Appearance\\Pages\\Index.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Appearance\\Basic Appearance\\Basic Appearance\\Pages\\Index.razor",
+              "RelativeToolTip": "Basic Appearance\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T05:31:53.629Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

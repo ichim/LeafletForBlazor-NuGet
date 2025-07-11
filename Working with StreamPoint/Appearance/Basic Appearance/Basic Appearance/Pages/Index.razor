@@ -1,0 +1,30 @@
+﻿@page "/"
+@using global::Data.Coolection
+
+<button @onclick="changeAppearance">Appearance</button>
+<RealTimeMap 
+    @ref="realTimeMap" 
+    height="calc(100vh - 6rem)" 
+    width="calc(100vw - 18rem)" 
+    OnAfterMapLoaded="@uploadCollection">
+</RealTimeMap>
+@code {
+    RealTimeMap? realTimeMap;
+    StreamPointsCollection spCollection = new StreamPointsCollection();
+    public async Task uploadCollection(RealTimeMap.MapEventArgs args)
+    {
+            await args.sender.Geometric.Points.upload(spCollection.points, true);
+    }
+    public void changeAppearance()
+    {
+        if (realTimeMap != null)
+        {
+            realTimeMap.Geometric.Points.Appearance(item => !(item.type == "red" || item.type == "green" || item.type == "blue")).pattern = new RealTimeMap.PointSymbol() { radius = 8, color = "#28ffff", opacity = 0.68, fillColor = "orange", weight = 2, fillOpacity = 0.68 };
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "red").pattern = new RealTimeMap.PointSymbol() { radius = 8, color = "rgb(200,100,0)", opacity = 0.68, fillColor = "red", weight = 4, fillOpacity = 0.68 };
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "green").pattern = new RealTimeMap.PointSymbol() { radius = 10, color = "white", opacity = 0.68, fillColor = "green", weight = 2, fillOpacity = 0.68 };
+            realTimeMap.Geometric.Points.Appearance(item => item.type == "blue").pattern = new RealTimeMap.PointSymbol() { radius = 12, color = "#28ffff", opacity = 0.68, fillColor = "blue", weight = 2, fillOpacity = 0.68 };
+
+        }
+
+    }
+}

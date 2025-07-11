@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\instruitre\\nugets\\github\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance.csproj": {}
   },
   "projects": {
-    "D:\\instruitre\\nugets\\github\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\instruitre\\nugets\\github\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance.csproj",
         "projectName": "RealTimeMap Geometric.Points Appearance",
-        "projectPath": "D:\\instruitre\\nugets\\github\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance.csproj",
         "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-        "outputPath": "D:\\instruitre\\nugets\\github\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\RealTimeMap Geometric.Points Appearance\\RealTimeMap Geometric.Points Appearance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -57,6 +62,24 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.13, )"
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23401.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23401.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -72,8 +95,20 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.12, 7.0.12]"
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
             }
           ],
           "frameworkReferences": {
@@ -81,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

@@ -1,0 +1,37 @@
+﻿@page "/"
+@using StreamPointCollection
+<button @onclick="upload">upload data</button>
+
+<RealTimeMap @ref="realTimeMap" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
+@code {
+    RealTimeMap? realTimeMap;
+    public async Task upload()
+    {
+        if (realTimeMap != null)
+        {
+            #region Points Appearance on points Type
+            //settings appearance of points displayed on map
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "ambulance").pattern = new RealTimeMap.PointSymbol()
+                {
+                    radius = 10,
+                    fillColor = "green"
+                };
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "intervention crew").pattern = new RealTimeMap.PointSymbol()
+                {
+                    radius = 10,
+                    fillColor = "blue"
+                };
+
+            realTimeMap.Geometric.Points.AppearanceOnType(item => item.type == "suspicious vehicle").pattern = new RealTimeMap.PointSymbol()
+                {
+                    radius = 10,
+                    fillColor = "red"
+                };
+            #endregion
+            #region upload data
+            //upload data from \...\data\data.cs
+            await realTimeMap.Geometric.Points.upload(new InputData().input);
+            #endregion
+        }
+    }
+}
