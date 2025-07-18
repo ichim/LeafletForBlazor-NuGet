@@ -83,7 +83,7 @@ You can configure tooltips for map items.
 
 StreamPoint elements can work with hierarchical data. This hierarchical data of StreamPoints can be displayed on tooltips.
 
-[Configuring tooltip for hierachical attribute example](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/StreamPoint%20tooltip/RTM%20tooltip%20hierarchical%20attr/README.md)
+[Configuring tooltip for hierachical attribute example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip/RTM%20tooltip%20hierarchical%20attr)
 
 # Configuring charts on tooltiop
 
