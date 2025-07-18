@@ -77,7 +77,7 @@ Expanding the existing collection:
 
 You can configure tooltips for map items.
 
-[Configurng tooltip example](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/StreamPoint%20tooltip/RTM%20Points%20Tooltips/README.md)
+[Configurng tooltip example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip)
 
 # Configuring tooltips for hierarchical attribute data
 
