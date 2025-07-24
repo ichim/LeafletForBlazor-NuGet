@@ -1,3 +1,6 @@
+
+> StreamPoint is a LeafletForBlazor class created to optimize the display and analysis of real-time data. StreamPoint has a predefined structure (unique identifier, date, type). The value property of the StreamPoint class is of type object and allows the extension of its attributes.
+
 # Working with Geometric.Points collection
 
 The Geometric.Points collection allows update operations:
