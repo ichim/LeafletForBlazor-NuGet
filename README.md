@@ -156,7 +156,7 @@ You can add various basemaps to the list of map layers.
 
 Blazor page
 
-    <RealTimeMap height="462px" width="462px" Parameters="@parameters"></RealTimeMap>
+    <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" Parameters="@parameters"></RealTimeMap>
 
 Code block
 
