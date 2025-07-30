@@ -32,11 +32,7 @@ Code block parameters
                  },
                  esriTasks = new RealTimeMap.EsriTasks()
                  {
-                     geoSearch = new RealTimeMap.EsriGeocodeTask()
-                     {
-                         position = RealTimeMap.EsriGeocodeTask.Position.topRight,  //position on the RealTimeMap
-                         title = "Geocode",                                         //tooltip text
-                     }
+                     geoSearch = new RealTimeMap.EsriGeocodeTask(){}
                  }
          };
     }
