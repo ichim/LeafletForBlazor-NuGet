@@ -20,7 +20,7 @@ Code block parameters
         }
     }
 
-## Configuring Esri 
+## Configuring Esri GeoSearch Task
 
      @code{
          RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
