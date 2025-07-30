@@ -8,7 +8,7 @@ To be able to use Esri tasks, you need to generate an Esri API Key Code (for fre
 
     <RealTimeMap Parameters="parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
 
-
+Code block parameters
 
     @code{
     RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
