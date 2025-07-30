@@ -147,7 +147,7 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
 
 2. set the loading parameters (default map parameters) to the **RealTimeMap** control:
 
-       <RealTimeMap Parameters="parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"</RealTimeMap>
+       <RealTimeMap Parameters="parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
 
 
 ## RealTimeMap and basemap
