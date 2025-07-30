@@ -4,6 +4,6 @@ RealTimeMap can use basemaps provided by [Esri](https://www.esri.com/en-us/home)
 
 [more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet/basemap)
 
-# Esri Geocode
+# Esri GeoSearch Task
 
 Geocoding GeoSearch is a very important Esri Task with which you can find the location of an address.
