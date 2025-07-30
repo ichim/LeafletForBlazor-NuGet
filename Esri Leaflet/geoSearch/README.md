@@ -19,3 +19,24 @@ Code block parameters
             },
         }
     }
+
+## Configuring Esri 
+
+     @code{
+         RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+             {
+             
+                 apiKeys = new RealTimeMap.APIKeys()
+                 {
+                     EsriAPIKey = "--Your Esri API Key Code--"
+                 },
+                 esriTasks = new RealTimeMap.EsriTasks()
+                 {
+                     geoSearch = new RealTimeMap.EsriGeocodeTask()
+                     {
+                         position = RealTimeMap.EsriGeocodeTask.Position.topRight,  //position on the RealTimeMap
+                         title = "Geocode",                                         //tooltip text
+                     }
+                 }
+         };
+    }
