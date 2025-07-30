@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\geoSearch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07D88B69-E1FB-4E6D-B616-607F35F60400}|geoSearch\\geoSearch.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\geosearch\\geosearch\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07D88B69-E1FB-4E6D-B616-607F35F60400}|geoSearch\\geoSearch.csproj|solutionrelative:geosearch\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07D88B69-E1FB-4E6D-B616-607F35F60400}|geoSearch\\geoSearch.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\geosearch\\geosearch\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07D88B69-E1FB-4E6D-B616-607F35F60400}|geoSearch\\geoSearch.csproj|solutionrelative:geosearch\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\geoSearch\\geoSearch\\_Imports.razor",
+              "RelativeDocumentMoniker": "geoSearch\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\geoSearch\\geoSearch\\_Imports.razor",
+              "RelativeToolTip": "geoSearch\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T06:08:11.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\geoSearch\\geoSearch\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "geoSearch\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\geoSearch\\geoSearch\\Pages\\Index.razor",
+              "RelativeToolTip": "geoSearch\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T06:07:44.988Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+﻿@page "/"
+
+<RealTimeMap Parameters="parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@OnAfterMapLoaded"></RealTimeMap>
+
+    @code{
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+        {
+            
+            apiKeys = new RealTimeMap.APIKeys()
+            {
+                /*
+                 * To use the Esri Geocode Task, you need to provide an API key.
+                 * You can get a free API key from the Esri website.
+                 * https://developers.arcgis.com/documentation/security-and-authentication/api-key-authentication/tutorials/create-an-api-key/
+                 */
+                EsriAPIKey = "--Your Esri API Key Code--"
+            },
+            esriTasks = new RealTimeMap.EsriTasks()
+            {
+                geoSearch = new RealTimeMap.EsriGeocodeTask()
+                {
+                    position = RealTimeMap.EsriGeocodeTask.Position.topRight,
+                    title = "Geocode",
+                }
+            }
+        };
+
+    public void OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        args.sender.EsriTasksEvents.OnGeoSearchUpdate += OnGeoSearchResult;
+    }
+
+
+    public void OnGeoSearchResult(object? sender, LeafletForBlazor.EsriTasksEvents.EsriGeoSearchEventArgs args)
+    {
+
+    }
+    }

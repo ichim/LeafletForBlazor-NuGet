@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geoSearch", "geoSearch\geoSearch.csproj", "{07D88B69-E1FB-4E6D-B616-607F35F60400}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07D88B69-E1FB-4E6D-B616-607F35F60400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D88B69-E1FB-4E6D-B616-607F35F60400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D88B69-E1FB-4E6D-B616-607F35F60400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D88B69-E1FB-4E6D-B616-607F35F60400}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93259129-1470-48F3-9E7B-E38E75566B5E}
+	EndGlobalSection
+EndGlobal
