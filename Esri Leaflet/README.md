@@ -6,3 +6,4 @@ RealTimeMap can use basemaps provided by [Esri](https://www.esri.com/en-us/home)
 
 # Esri Geocode
 
+Geocoding GeoSearch is a very important Esri Task with which you can find the location of an address.
