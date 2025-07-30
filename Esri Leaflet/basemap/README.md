@@ -19,10 +19,11 @@ Configuring Esri basemaps:
                  }
             },
             apiKeys = new RealTimeMap.APIKeys()
-            {   // These are example API keys, replace with your own
-                // ArcGIS API Key
-                //Create API key credentials for free
-                //https://developers.arcgis.com/documentation/security-and-authentication/api-key-authentication/api-key-credentials/
+            { 
                 EsriAPIKey = "-YOUR Esri API key credentials-"
             }
         };
+
+## ArcGIS API Key
+
+Create API key credentials for free https://developers.arcgis.com/documentation/security-and-authentication/api-key-authentication/api-key-credentials/
