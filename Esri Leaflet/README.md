@@ -10,3 +10,8 @@ Geocoding GeoSearch is a very important Esri Task with which you can find the lo
 
 
 [more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet/geoSearch#geosearch-esri-task)
+
+# Esri Reverse Geocode Task
+
+
+
