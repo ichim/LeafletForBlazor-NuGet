@@ -1,0 +1,45 @@
+﻿@page "/"
+
+<RealTimeMap @ref="realTimeMap"
+             Parameters="@parameters"
+             OnAfterMapLoaded="@OnAfterMapLoaded"
+             width="calc(100vw - 18rem)"
+             height="calc(100vh - 6rem)"/>
+
+             @code{
+                    RealTimeMap? realTimeMap;
+                    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+                        {
+                            location = new RealTimeMap.Location()
+                            {
+                                latitude = 44.4622,
+                                longitude = 26.2224
+                            },
+                            zoomLevel = 14,
+                            apiKeys = new RealTimeMap.APIKeys()
+                            {
+                                EsriAPIKey = "--Your Esri API Key Code--"
+                            },
+                            esriTasks = new RealTimeMap.EsriTasks()
+                            {
+                                reverseGeocode = new RealTimeMap.EsriReverseGeocodeTask() { }
+
+                            }
+                        };
+                        public  void OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+                        {
+        
+                            args.sender.EsriTasksEvents.OnReverseGeocodeUpdate += OnReverseGeocodeResult;
+
+                        }
+                        public void OnReverseGeocodeResult(object? sender, LeafletForBlazor.EsriTasksEvents.EsriReverseGeocodeEventArgs args)
+                        {
+                            var address = args.address;
+                            realTimeMap?.movePoint(new double[2] { address?.inputY ?? 0, address?.inputX ?? 0 }, new RealTimeMap.PointTooltip()
+                                {
+                                    content = $"<h6><b>{address?.address}</b></h6><label>Country: {address?.countryName}</label><br/><label>City: {address?.city}</label>" +
+                                            $"<br/><label>Postal code: {address?.postal}</label><br/><label>Region: {address?.region}</label>",
+                                    offset = new double[2] { 10, -40 }
+                                });
+                        }
+             }

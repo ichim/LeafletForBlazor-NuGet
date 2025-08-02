@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Esri Leaflet\\geoSearch\\geoSearch\\geoSearch.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Esri Leaflet\\reverseGeocode\\reverseGeocode\\reverseGeocode.csproj": {}
   },
   "projects": {
-    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Esri Leaflet\\geoSearch\\geoSearch\\geoSearch.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Esri Leaflet\\reverseGeocode\\reverseGeocode\\reverseGeocode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Esri Leaflet\\geoSearch\\geoSearch\\geoSearch.csproj",
-        "projectName": "geoSearch",
-        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Esri Leaflet\\geoSearch\\geoSearch\\geoSearch.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Esri Leaflet\\reverseGeocode\\reverseGeocode\\reverseGeocode.csproj",
+        "projectName": "reverseGeocode",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Esri Leaflet\\reverseGeocode\\reverseGeocode\\reverseGeocode.csproj",
         "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Esri Leaflet\\geoSearch\\geoSearch\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Esri Leaflet\\reverseGeocode\\reverseGeocode\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.2.6.8, )"
+              "version": "[2.2.8, )"
             }
           },
           "imports": [
