@@ -13,6 +13,7 @@ Blazor page:
 Code block parameters:
 
     @code{
+    RealTimeMap? realTimeMap;
     RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
         {
             apiKeys = new RealTimeMap.APIKeys()
