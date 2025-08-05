@@ -21,3 +21,20 @@ Code block parameters:
             },
         }
     }
+
+## Configuring Esri Reverse Geocode Task
+
+Code block:
+
+        RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+            {
+                apiKeys = new RealTimeMap.APIKeys()
+                {
+                    EsriAPIKey = "--Your Esri API Key Code--"
+                },
+                esriTasks = new RealTimeMap.EsriTasks()
+                {
+                    reverseGeocode = new RealTimeMap.EsriReverseGeocodeTask() { }
+
+                }
+            };
