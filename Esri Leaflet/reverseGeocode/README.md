@@ -38,3 +38,23 @@ Code block:
 
                 }
             };
+
+## Configuring Task event
+
+Blazor page:
+
+     <RealTimeMap Parameters="parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded = "@OnAfterMapLoaded"></RealTimeMap>
+
+Code block:
+
+                        public  void OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+                        {
+        
+                            args.sender.EsriTasksEvents.OnReverseGeocodeUpdate += OnReverseGeocodeResult;
+
+                        }
+                        public void OnReverseGeocodeResult(object? sender, LeafletForBlazor.EsriTasksEvents.EsriReverseGeocodeEventArgs args)
+                        {
+       
+                        }
+
