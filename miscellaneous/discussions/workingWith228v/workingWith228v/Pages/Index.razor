@@ -1,0 +1,41 @@
+﻿@page "/"
+
+<RealTimeMap Parameters = "@parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
+
+@code {
+    //1
+    //RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters() { };
+
+    //2
+    // RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+    // {
+    //     location = new RealTimeMap.Location(){
+    //         latitude = 37.7749, // Example latitude
+    //         longitude = -122.4194 // Example longitude
+    //     }      
+    //     , 
+    //     zoomLevel = 10 // Example zoom level
+    // };
+
+    //3
+    // RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+    // {
+    //     location = new RealTimeMap.Location()
+    //     {
+    //         latitude = 37.7749, // Example latitude
+    //         longitude = -122.4194 // Example longitude
+    //     },
+    //     zoomLevel = 10, // Example zoom level
+    //    basemap = new RealTimeMap.Basemap()
+    //    {
+    //        basemapLayers = new List<RealTimeMap.BasemapLayer>()
+    //        {
+    //            new RealTimeMap.BasemapLayer()
+    //            {
+    //              url = "arcgis/streets",
+    //              title = "Streets",
+    //            },
+    //        }
+    //    }
+    // };
+}
