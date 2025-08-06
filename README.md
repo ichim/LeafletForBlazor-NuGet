@@ -25,7 +25,9 @@ You can find more information:
 
 
 >working with charts
+
 ![chart06](https://github.com/user-attachments/assets/cc768477-69e3-432e-9750-2000b221130b)
+
 [_Configuring charts on tooltips / GeoJSON files_](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20and%20GeoJSON/working%20with%20Files/tooltips%20Chart#readme)
 
 # New examples code
