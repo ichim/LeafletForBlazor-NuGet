@@ -21,9 +21,8 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [New parameter for addMeasure() method](#measure-line) | The DisplayPolylinesFromArray class allows to add measure lines. These lines display a label. The addMeasure () method adding Measure Line now has the parameter **labelRotateWithLine** that allows the rotated display of the label after the direction of the line |
-| [textAnchor parameter becomes obsoletes](#measure-line) | ~~textAnchor~~ parameter becomes obsoletes and is replaced with **labelAnchor** |
-| [text parameter becomes obsolete](#measure-line) | ~~text~~ parameter becomes obsolete and is replaced with **content** |
+| [Clustering StreamPoint Collection](#clustering) | Displaying clusters for a StreamPoint Collection |
+
 
 
 ![chart06](https://github.com/user-attachments/assets/cc768477-69e3-432e-9750-2000b221130b)
@@ -1014,6 +1013,13 @@ _If the timestamp is missing, LeafletForBlazor will assign the current date_
 
 _This collection has a static behavior._
 
+### Clustering
+
+You can choose to have the StreamPoint collection clustered in the map. To do this, you must set the property to true:
+
+	realTimeMap.Geometric.Points.clusteringAfterCollectionUpdate = true;
+
+[more about](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Clustering/README.md#clustering)
 
 
 # Geometric class for displaying different static shapes
@@ -1611,6 +1617,21 @@ Use the _nearbyThresholdTriggerClosed_ method to return to the initial appearanc
                 radius = 10
             };
     }
+
+# Esri Leaflet
+
+## Esri basemaps
+
+[more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet#esri-basemaps)
+
+## Esri GeoSearch Task
+
+[more about](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Esri%20Leaflet/README.md#esri-geosearch-task)
+
+## Esri Reverse Geocode Task
+
+[more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet#esri-reverse-geocode-task)
+
 
 
  _____________
