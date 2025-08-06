@@ -1,0 +1,20 @@
+﻿@page "/"
+@using clusters.Data
+
+<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+@code{
+    DataSource dataSource = new DataSource();
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        // This method can be used to perform actions after the map has been loaded.
+        args.sender.Geometric.Points.clusteringAfterCollectionUpdate = true;
+        // Upload the initial set of points and then add more points to the collection.
+        await args.sender.Geometric.Points.upload(dataSource.pointsStart);
+        // Add more points to the collection.
+        foreach (var item in dataSource.pointsMore)
+        {
+            await args.sender.Geometric.Points.add(item);
+        }
+    }
+}
