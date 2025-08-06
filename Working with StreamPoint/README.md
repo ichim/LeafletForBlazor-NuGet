@@ -95,4 +95,6 @@ StreamPoint elements can work with hierarchical data. This hierarchical data of 
 [Configuring charts example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip/tooltip%20chart)
 
    
+# Clustering
 
+[more about]()
