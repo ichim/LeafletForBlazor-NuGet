@@ -100,3 +100,17 @@ StreamPoint elements can work with hierarchical data. This hierarchical data of 
 You can choose to have the StreamPoint collection clustered in the map.
 
 [more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Clustering#clustering)
+
+## Configuration Parameters
+
+You can customize the cluster allocation to the StreamPoint collection.
+
+[more about configuration](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Clustering#configuration-parameters)
+
+## Working with Click Event
+
+Geometric.Points provides the OnClusterClick event
+
+
+
+
