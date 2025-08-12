@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LaurențiuIchim\\source\\repos\\clustering\\clustering\\clustering.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Clustering\\clustering\\clustering\\clustering.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LaurențiuIchim\\source\\repos\\clustering\\clustering\\clustering.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Clustering\\clustering\\clustering\\clustering.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LaurențiuIchim\\source\\repos\\clustering\\clustering\\clustering.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Clustering\\clustering\\clustering\\clustering.csproj",
         "projectName": "clustering",
-        "projectPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\clustering\\clustering\\clustering.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Clustering\\clustering\\clustering\\clustering.csproj",
         "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LaurențiuIchim\\source\\repos\\clustering\\clustering\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Clustering\\clustering\\clustering\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.2.8.2, )"
+              "version": "[2.2.8.4, )"
             }
           },
           "imports": [
