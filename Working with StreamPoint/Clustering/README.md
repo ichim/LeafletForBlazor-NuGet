@@ -35,3 +35,25 @@ You can configure the display/allocation of clusters using several parameters
 | Parameter | Type |
 | ---- | ---- |
 | maxClusterRadius | integer / pixels |
+
+
+Example code:
+
+Blazor page:
+
+    <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+Code block:
+
+     private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+     {
+         // This method can be used to perform actions after the map has loaded
+         args.sender.Geometric.Points.clusteringAfterCollectionUpdate = true;
+         args.sender.Geometric.Points.clusteringConfiguration = new ClusteringConfiguration()
+             {
+                 showCoverageOnHover = true,     // Show coverage on hover
+                 spiderfyOnMaxZoom = true,       // Spiderfy markers when zoomed in
+                 zoomToBoundsOnClick = false,    // Zoom to bounds when clicking on a cluster
+                 maxClusterRadius = 120,         // Maximum radius of a cluster when it is not zoomed in px
+             }
+     }
