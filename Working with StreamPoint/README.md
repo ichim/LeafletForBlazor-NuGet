@@ -109,9 +109,10 @@ You can customize the cluster allocation to the StreamPoint collection.
 
 ## Working with Click Event
 
+The .Geometric.Points class provides the OnClusterClick event.
+
 [more about cluster click event](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Clustering#working-with-cluster-event)
 
-Geometric.Points provides the OnClusterClick event
 
 
 
