@@ -22,6 +22,8 @@ You can find more information:
 | Title | News Description |
 | ---- | ---- |
 | [Clustering StreamPoint Collection](#clustering) | Displaying clusters for a StreamPoint Collection |
+| [Clustering configuration parameters](#clustering) | Configuration parameters for StreamPoint clustering |
+| [Clustering click event](#clustering) | Working with clustering event (click) |
 
 # New examples code
 
