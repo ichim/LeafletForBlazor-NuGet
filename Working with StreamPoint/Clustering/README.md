@@ -13,14 +13,21 @@ This property must be set before updating the StreamPoint collection (add, uploa
 You can configure the display/allocation of clusters using several parameters
 
 1. Show coverage on hover
+
 | Parameter | Type |
 | showCoverageOnHover | boolean |
+
 3. Spiderfy markers when zoomed in
+
 | Parameter | Type |
 | spiderfyOnMaxZoom | boolean |
+
 5. Zoom to bounds when clicking on a cluster
+
 | Parameter | Type |
 | zoomToBoundsOnClick | boolean |
+
 7. Maximum radius of a cluster when it is not zoomed in px
+
 | Parameter | Type |
 | maxClusterRadius | integer / pixels |
