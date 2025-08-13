@@ -27,4 +27,6 @@ Upload data in the map:
 
      await realTimeMap.Geometric.Points.upload(new InputData().input);
 
-# Appearance based on custom at
+# Appearance based on custom attributes
+
+
