@@ -1,5 +1,11 @@
 # Upload or add to StreamPoint collection
 
+A good choice is to load the data on the * OnAfterMapLoaded * event of the RealTimeMap component
+
+
+        <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+
 ## Upload data
 
 Uploading a list of StreamPoint list:
