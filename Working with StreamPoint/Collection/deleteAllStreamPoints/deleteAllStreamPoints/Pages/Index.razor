@@ -1,0 +1,20 @@
+﻿@page "/"
+
+@using clusters.Data
+<button class="btn btn-primary" @onclick="() => realTimeMap.Geometric.Points.delete()">Delete All Points</button>
+<RealTimeMap @ref="realTimeMap" height="calc(100vh - 8rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+@code {
+    DataSource dataSource = new DataSource();
+    RealTimeMap realTimeMap ;
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        // Initialize the data source with some points
+        await args.sender.Geometric.Points.upload(dataSource.pointsStart);
+        // Add more points to the map
+        foreach (var item in dataSource.pointsMore)
+        {
+            await args.sender.Geometric.Points.add(item);
+        }
+    }
+}
