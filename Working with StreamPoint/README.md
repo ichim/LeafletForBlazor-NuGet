@@ -62,6 +62,8 @@ Expanding the existing collection:
         if (realTimeMap != null)
             await realTimeMap.Geometric.Points.add(dataSource.pointsMore.ToArray());
 
+[more about upload and add](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#upload-or-add-to-streampoint-collection)
+
 ## Delete some points
 
 
