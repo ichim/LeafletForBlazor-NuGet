@@ -2,16 +2,26 @@
 
 A good choice is to load the data on the OnAfterMapLoaded event of the RealTimeMap component
 
+Blazor page:
 
         <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+Code block
+
+        @code{
+                 DataSource dataSource = new DataSource();//object with the data source
+                 private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+                 {
+                            
+                 }
+         }
 
 
 ## Upload data
 
 Uploading a list of StreamPoint list:
 
-        if (realTimeMap != null)
-            await realTimeMap.Geometric.Points.upload(dataSource.pointsStart, true);
+        await args.sender.Geometric.Points.upload(dataSource.pointsStart, true);
 
 
 where:
@@ -31,5 +41,26 @@ where:
 
 Expanding the existing collection:
 
-        if (realTimeMap != null)
-            await realTimeMap.Geometric.Points.add(dataSource.pointsMore.ToArray());
+     foreach (var item in dataSource.pointsMore)
+     {
+         await args.sender.Geometric.Points.add(item);
+     }
+
+
+The complete example:
+
+<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+        @code{
+            DataSource dataSource = new DataSource();
+            private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+            {
+                // Initialize the data source with some points
+                await args.sender.Geometric.Points.upload(dataSource.pointsStart);
+                // Add more points to the map
+                foreach (var item in dataSource.pointsMore)
+                {
+                    await args.sender.Geometric.Points.add(item);
+                }
+            }
+        }
