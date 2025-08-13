@@ -35,7 +35,7 @@ where:
   if it's missing, it means it's _false_. That is, the previous collection is kept;
 
             if(realTimeMap !=null)
-                await realTimeMap.Geometric.Points.upload(dataSource.pointsStart);
+                await args.sender.Geometric.Points.upload(dataSource.pointsStart);
 
 ## Add data
 
