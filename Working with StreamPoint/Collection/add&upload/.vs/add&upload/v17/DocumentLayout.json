@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\add\u0026upload\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0E3B3CC-F0C5-4E5E-8F29-D09617C19B99}|add\u0026upload\\add\u0026upload.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\add\u0026upload\\add\u0026upload\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0E3B3CC-F0C5-4E5E-8F29-D09617C19B99}|add\u0026upload\\add\u0026upload.csproj|solutionrelative:add\u0026upload\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0E3B3CC-F0C5-4E5E-8F29-D09617C19B99}|add\u0026upload\\add\u0026upload.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\add\u0026upload\\add\u0026upload\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0E3B3CC-F0C5-4E5E-8F29-D09617C19B99}|add\u0026upload\\add\u0026upload.csproj|solutionrelative:add\u0026upload\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\add\u0026upload\\add\u0026upload\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "add\u0026upload\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\add\u0026upload\\add\u0026upload\\Pages\\Index.razor",
+              "RelativeToolTip": "add\u0026upload\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T04:40:01.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\add\u0026upload\\add\u0026upload\\_Imports.razor",
+              "RelativeDocumentMoniker": "add\u0026upload\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\add\u0026upload\\add\u0026upload\\_Imports.razor",
+              "RelativeToolTip": "add\u0026upload\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T04:38:59.736Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
