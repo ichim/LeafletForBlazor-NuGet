@@ -89,3 +89,10 @@ Code block:
 Blazor page:
 
         <button class="btn btn-primary" @onclick="() => realTimeMap.Geometric.Points.delete()">Delete All Points</button>
+
+# Delete some StreamPoints
+
+You must specify an array of guids (string):
+
+         if(realTimeMap!=null)
+             await realTimeMap.Geometric.Points.delete(new string[2] { "18466d7f-0689-4b8e-a2ee-28e5cb27f86e", "28466d7f-0689-4b8e-a2ee-28e5cb28f86f" });
