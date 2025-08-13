@@ -102,8 +102,5 @@ You must specify an array of guids (string):
 A StreamPoint (or more) can be moved on the map by updating the coordinates.
 
 
-# Move to
-
-A StreamPoint (or more) can be moved on the map by updating the coordinates.
 
 
