@@ -49,7 +49,11 @@ Expanding the existing collection:
 
 The complete example:
 
-<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+Blazor page:
+
+        <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+Code block:
 
         @code{
             DataSource dataSource = new DataSource();
@@ -64,3 +68,24 @@ The complete example:
                 }
             }
         }
+
+# Delete all 
+
+To delete all points you can call the delete() method without any arguments.
+
+Blazor page:
+
+         <RealTimeMap @ref="realTimeMap" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+Code block:
+
+        @code {
+            RealTimeMap realTimeMap ;
+                    private void onClick(){
+                            realTimeMap.Geometric.Points.delete();
+                    }
+            }
+
+Blazor page:
+
+        <button class="btn btn-primary" @onclick="() => realTimeMap.Geometric.Points.delete()">Delete All Points</button>
