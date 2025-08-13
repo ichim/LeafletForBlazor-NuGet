@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\deleteSomeStreamPoints\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F62E7742-902F-4C06-8CD6-8F4715169CE8}|deleteSomeStreamPoints\\deleteSomeStreamPoints.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\deletesomestreampoints\\deletesomestreampoints\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F62E7742-902F-4C06-8CD6-8F4715169CE8}|deleteSomeStreamPoints\\deleteSomeStreamPoints.csproj|solutionrelative:deletesomestreampoints\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F62E7742-902F-4C06-8CD6-8F4715169CE8}|deleteSomeStreamPoints\\deleteSomeStreamPoints.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\deletesomestreampoints\\deletesomestreampoints\\data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F62E7742-902F-4C06-8CD6-8F4715169CE8}|deleteSomeStreamPoints\\deleteSomeStreamPoints.csproj|solutionrelative:deletesomestreampoints\\data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F62E7742-902F-4C06-8CD6-8F4715169CE8}|deleteSomeStreamPoints\\deleteSomeStreamPoints.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\deletesomestreampoints\\deletesomestreampoints\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F62E7742-902F-4C06-8CD6-8F4715169CE8}|deleteSomeStreamPoints\\deleteSomeStreamPoints.csproj|solutionrelative:deletesomestreampoints\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "streamPoints.cs",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\deleteSomeStreamPoints\\deleteSomeStreamPoints\\Data\\streamPoints.cs",
+              "RelativeDocumentMoniker": "deleteSomeStreamPoints\\Data\\streamPoints.cs",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\deleteSomeStreamPoints\\deleteSomeStreamPoints\\Data\\streamPoints.cs",
+              "RelativeToolTip": "deleteSomeStreamPoints\\Data\\streamPoints.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAAwGwAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T08:09:28.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\deleteSomeStreamPoints\\deleteSomeStreamPoints\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "deleteSomeStreamPoints\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\deleteSomeStreamPoints\\deleteSomeStreamPoints\\Pages\\Index.razor",
+              "RelativeToolTip": "deleteSomeStreamPoints\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T08:06:34.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\deleteSomeStreamPoints\\deleteSomeStreamPoints\\_Imports.razor",
+              "RelativeDocumentMoniker": "deleteSomeStreamPoints\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\deleteSomeStreamPoints\\deleteSomeStreamPoints\\_Imports.razor",
+              "RelativeToolTip": "deleteSomeStreamPoints\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T08:05:42.706Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
