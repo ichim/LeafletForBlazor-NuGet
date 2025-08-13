@@ -78,6 +78,10 @@ Expanding the existing collection:
             await realTimeMap.Geometric.Points.delete();
 
 
+## Delete some points
+
+[more about delete](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#delete-some-streampoints)
+
 # Configuring StreamPoint Tooltip
 
 You can configure tooltips for map items.
