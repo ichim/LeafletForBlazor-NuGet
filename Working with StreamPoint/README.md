@@ -85,6 +85,13 @@ Expanding the existing collection:
 
 [more about delete](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#delete-some-streampoints)
 
+## Move to
+
+A StreamPoint (or more) can be moved on the map by updating the coordinates.
+
+
+[more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#move-to)
+
 # Configuring StreamPoint Tooltip
 
 You can configure tooltips for map items.
