@@ -97,6 +97,11 @@ You must specify an array of guids (string):
          if(realTimeMap!=null)
              await realTimeMap.Geometric.Points.delete(new string[2] { "18466d7f-0689-4b8e-a2ee-28e5cb27f86e", "28466d7f-0689-4b8e-a2ee-28e5cb28f86f" });
 
+# Move To
+
+A StreamPoint (or more) can be moved on the map by updating the coordinates.
+
+
 # Move to
 
 A StreamPoint (or more) can be moved on the map by updating the coordinates.
