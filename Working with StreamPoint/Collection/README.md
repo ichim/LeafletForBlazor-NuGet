@@ -106,6 +106,12 @@ A StreamPoint (or more) can be moved on the map by updating the coordinates. The
 
 
 
-
+           List<RealTimeMap.StreamPoint> newPositions = new List<RealTimeMap.StreamPoint>()
+           {
+               new RealTimeMap.StreamPoint() { guid = Guid.Parse("18466d7f-0689-4b8e-a2ee-28e5cb27f86e"), latitude = 44.94315750985839,  longitude =  26.045736793436422 },
+               new RealTimeMap.StreamPoint(){ guid = Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb28f86f"), latitude = 45.15302298583691, longitude = 26.829259910543875 },
+           };
+           if (realTimeMap != null)
+               await realTimeMap.Geometric.Points.moveTo(newPositions.ToArray());
 
 
