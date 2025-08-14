@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\moveTo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9766C9C8-A2AC-41B3-BD4C-02C730721316}|moveTo\\moveTo.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\moveto\\moveto\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9766C9C8-A2AC-41B3-BD4C-02C730721316}|moveTo\\moveTo.csproj|solutionrelative:moveto\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9766C9C8-A2AC-41B3-BD4C-02C730721316}|moveTo\\moveTo.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\moveto\\moveto\\data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9766C9C8-A2AC-41B3-BD4C-02C730721316}|moveTo\\moveTo.csproj|solutionrelative:moveto\\data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "streamPoints.cs",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\moveTo\\moveTo\\Data\\streamPoints.cs",
+              "RelativeDocumentMoniker": "moveTo\\Data\\streamPoints.cs",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\moveTo\\moveTo\\Data\\streamPoints.cs",
+              "RelativeToolTip": "moveTo\\Data\\streamPoints.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAAwHEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T06:38:03.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\moveTo\\moveTo\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "moveTo\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\moveTo\\moveTo\\Pages\\Index.razor",
+              "RelativeToolTip": "moveTo\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAClAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T06:33:15.161Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+@using clusters.Data
+<button @onclick="moveSomePoints">Move some points</button>
+<RealTimeMap @ref="realTimeMap" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+@code {
+    RealTimeMap? realTimeMap;
+    DataSource dataSource = new DataSource();
+
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        // Initialize the data source with some points
+        await args.sender.Geometric.Points.upload(dataSource.pointsStart);
+        // Add more points to the map
+        foreach (var item in dataSource.pointsMore)
+        {
+            await args.sender.Geometric.Points.add(item);
+        }
+    }
+
+    private async Task moveSomePoints()
+    {
+        List<RealTimeMap.StreamPoint> newPositions = new List<RealTimeMap.StreamPoint>()
+        {
+            new RealTimeMap.StreamPoint() { guid = Guid.Parse("18466d7f-0689-4b8e-a2ee-28e5cb27f86e"), latitude = 44.94315750985839,  longitude =  26.045736793436422 },
+            new RealTimeMap.StreamPoint(){ guid = Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb28f86f"), latitude = 45.15302298583691, longitude = 26.829259910543875 },
+        };
+        if (realTimeMap != null)
+            await realTimeMap.Geometric.Points.moveTo(newPositions.ToArray());
+        StateHasChanged();
+    }
+}
