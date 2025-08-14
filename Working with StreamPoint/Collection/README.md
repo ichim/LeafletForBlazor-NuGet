@@ -99,7 +99,12 @@ You must specify an array of guids (string):
 
 # Move To
 
-A StreamPoint (or more) can be moved on the map by updating the coordinates.
+A StreamPoint (or more) can be moved on the map by updating the coordinates. The method accepts a single StreamPoint or an array of StreamPoints:
+
+1. Single point .Geometric.Points.moveTo(new StreamPoint(){});
+2. Multiple points .Geometric.Points.moveTo(StreamPoint[]);
+
+
 
 
 
