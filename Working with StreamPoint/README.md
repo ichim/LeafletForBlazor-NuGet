@@ -78,6 +78,20 @@ Expanding the existing collection:
             await realTimeMap.Geometric.Points.delete();
 
 
+## Delete some points
+
+     if(realTimeMap!=null)
+         await realTimeMap.Geometric.Points.delete(new string[2] { "18466d7f-0689-4b8e-a2ee-28e5cb27f86e", "28466d7f-0689-4b8e-a2ee-28e5cb28f86f" });
+
+[more about delete](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#delete-some-streampoints)
+
+## Move to
+
+A StreamPoint (or more) can be moved on the map by updating the coordinates.
+
+
+[more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#move-to)
+
 # Configuring StreamPoint Tooltip
 
 You can configure tooltips for map items.
