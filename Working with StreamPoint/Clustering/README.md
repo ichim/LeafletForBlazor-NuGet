@@ -59,6 +59,17 @@ Code block:
      }
 
 
-# Working with Cluster Event
+# Working with Cluster Click Event
 
+Add new Event method:
 
+    args.sender.Geometric.Points.OnClusterClick += onClusterClick;
+
+ Event method definition:
+
+    public void onClusterClick(object? sender, ClusteringEventArgs args)
+    {
+        // Handle the cluster click event
+        //you receive bounds of the cluster, location of mouse click and guids
+        
+    }
