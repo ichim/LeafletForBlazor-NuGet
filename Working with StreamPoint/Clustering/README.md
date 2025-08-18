@@ -61,6 +61,8 @@ Code block:
 
 # Working with Cluster Click Event
 
+The .Geometric.Points class provides the OnClusterClick event.
+
 Add new Event method:
 
     args.sender.Geometric.Points.OnClusterClick += onClusterClick;
