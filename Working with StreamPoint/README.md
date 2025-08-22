@@ -27,6 +27,8 @@ The properties guid, timestamp, latitude, longitude, type of the StreamPoint obj
 # Extending streampoint attributes
 
 The value property of the StreamPoint is of type object. It can accept values ​​of type string, html (all string) or even objects defined by custom classes.
+To extend the StreamPoint class, you need to create a new attribute class. The attribute class must contain properties for your new dataset. Let's assume we want to extend the StreamPoint class with the attributes of vehicles in a fleet. The attributes could be the following:
+
 
 
 
