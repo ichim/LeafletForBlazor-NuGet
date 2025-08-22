@@ -31,6 +31,12 @@ To extend the StreamPoint class, you need to create a new attribute class. The a
 The attributes could be the following:
 
 
+           public class Attributes
+           {
+               public string? registrationNumber { get; set; }
+               public string? vehicleType { get; set; }
+               public string? description { get; set; }
+           }
 
 
 
