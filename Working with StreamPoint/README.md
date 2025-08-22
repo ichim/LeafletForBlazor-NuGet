@@ -28,7 +28,7 @@ Geometric.Points is a collection of StreamPoints designed to respond quickly to 
 
 If you have applications for monitoring the positions of a device, vehicle, fleet, etc., it is recommended to use StreamPoint (StreamPoint collection).
 
-# Working with Geometric.Points collection
+# Working with StreamPoint collection
 
 The Geometric.Points collection allows update operations:
 - upload - Loading an array of StreamPoint;
