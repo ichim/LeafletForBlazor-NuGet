@@ -26,6 +26,7 @@ The properties guid, timestamp, latitude, longitude, type of the StreamPoint obj
 
 # value property of StreamPoint
 
+The value property of the StreamPoint is of type object. It can accept values ​​of type string, html (all string) or even objects defined by custom classes.
 
 
 
