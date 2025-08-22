@@ -22,6 +22,13 @@ _latitude and longitude properties are Web Mercator coordinate values._
 
 The value property can be string or object defined by customn Data Structure Class.
 
+The properties guid, timestamp, latitude, longitude, type of the StreamPoint object are mandatory for correct operation.
+
+# value property of StreamPoint
+
+
+
+
 # Stream Point Collection
 
 Geometric.Points is a collection of StreamPoints designed to respond quickly to upload, add, delete, update or moveTo.
