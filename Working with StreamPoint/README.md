@@ -1,6 +1,33 @@
 
 > StreamPoint is a LeafletForBlazor class created to optimize the display and analysis of real-time data. StreamPoint has a predefined structure (unique identifier, date, type). The value property of the StreamPoint class is of type object and allows the extension of its attributes.
 
+
+
+
+# Stream Point
+
+Class has the following structure:
+
+          public interface IStreamPoint
+           {
+               public Guid guid { get; set; }              //globally unique identifier
+               public DateTime timestamp { get; set; }     //Date and Time
+               public double latitude { get; set; }        //EPSG latitude coordionate
+               public double longitude { get; set; }       //EPSG longitude coordionate
+               public string type { get; set; }            //StreamPoint type
+               public object value { get; set; }           //StreamPoint value (object)
+           }
+
+_latitude and longitude properties are Web Mercator coordinate values._
+
+The value property can be string or object defined by customn Data Structure Class.
+
+# Stream Point Collection
+
+Geometric.Points is a collection of StreamPoints designed to respond quickly to upload, add, delete, update or moveTo.
+
+If you have applications for monitoring the positions of a device, vehicle, fleet, etc., it is recommended to use StreamPoint (StreamPoint collection).
+
 # Working with Geometric.Points collection
 
 The Geometric.Points collection allows update operations:
