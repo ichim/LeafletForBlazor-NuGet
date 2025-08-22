@@ -24,7 +24,7 @@ The value property can be string or object defined by customn Data Structure Cla
 
 The properties guid, timestamp, latitude, longitude, type of the StreamPoint object are mandatory for correct operation.
 
-# value property of StreamPoint
+# Extending streampoint attributes
 
 The value property of the StreamPoint is of type object. It can accept values ​​of type string, html (all string) or even objects defined by custom classes.
 
