@@ -1,7 +1,66 @@
 
 > StreamPoint is a LeafletForBlazor class created to optimize the display and analysis of real-time data. StreamPoint has a predefined structure (unique identifier, date, type). The value property of the StreamPoint class is of type object and allows the extension of its attributes.
 
-# Working with Geometric.Points collection
+
+
+
+# Stream Point
+
+Class has the following structure:
+
+          public interface IStreamPoint
+           {
+               public Guid guid { get; set; }              //globally unique identifier
+               public DateTime timestamp { get; set; }     //Date and Time
+               public double latitude { get; set; }        //EPSG latitude coordionate
+               public double longitude { get; set; }       //EPSG longitude coordionate
+               public string type { get; set; }            //StreamPoint type
+               public object value { get; set; }           //StreamPoint value (object)
+           }
+
+_latitude and longitude properties are Web Mercator coordinate values._
+
+The value property can be string or object defined by customn Data Structure Class.
+
+The properties guid, timestamp, latitude, longitude, type of the StreamPoint object are mandatory for correct operation.
+
+# Extending streampoint attributes
+
+The value property of the StreamPoint is of type object. It can accept values ​​of type string, html (all string) or even objects defined by custom classes.
+To extend the StreamPoint class, you need to create a new attribute class. The attribute class must contain properties for your new dataset. Let's assume we want to extend the StreamPoint class with the attributes of vehicles in a fleet. 
+The attributes could be the following:
+
+
+           public class Attributes
+           {
+               public string? registrationNumber { get; set; }
+               public string? vehicleType { get; set; }
+               public string? description { get; set; }
+           }
+
+
+Custom attributes are defined on the value property:
+
+         var streamPoint = new RealTimeMap.StreamPoint()
+         {
+                guid = Guid.Parse("28466d7f-0689-4b8e-a2ee-28e5cb27f86f"),
+                latitude = 43.972801938829356,
+                longitude = 25.326177627532893,
+                type = "intervention crew",
+                value = new Attributes() { registrationNumber = "B 24 AAB", vehicleType = "bus" }
+         };
+
+Custom data defined on the value property can be used for Appearance, tooltips, etc.
+
+[Appearance based on Custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Appearance/README.md#appearance-based-on-custom-attributes)
+
+# Stream Point Collection
+
+Geometric.Points is a collection of StreamPoints designed to respond quickly to upload, add, delete, update or moveTo.
+
+If you have applications for monitoring the positions of a device, vehicle, fleet, etc., it is recommended to use StreamPoint (StreamPoint collection).
+
+# Working with StreamPoint collection
 
 The Geometric.Points collection allows update operations:
 - upload - Loading an array of StreamPoint;
