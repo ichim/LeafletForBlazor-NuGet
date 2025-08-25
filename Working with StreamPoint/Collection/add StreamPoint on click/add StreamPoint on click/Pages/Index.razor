@@ -1,0 +1,19 @@
+﻿@page "/"
+
+<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnClickMap="@onClickMap"></RealTimeMap>
+
+@code{
+    private async Task onClickMap(RealTimeMap.ClicksMapArgs args)
+    {
+        args.sender.Geometric.Points.changeExtentWhenAddPoints = false;
+        // Add a StreamPoint at the clicked location
+        var point = new RealTimeMap.StreamPoint
+        {
+            guid = Guid.NewGuid(),                  //the use of GUID identification is mandatory
+            latitude = args.location.latitude,      //the latitude of the map click point
+            longitude = args.location.longitude,    //the longitude of the map click point
+        };
+        await args.sender.Geometric.Points.add(point);
+        StateHasChanged();
+    }
+}
