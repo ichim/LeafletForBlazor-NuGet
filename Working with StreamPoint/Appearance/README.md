@@ -4,7 +4,7 @@
 
 # Appearance based on Custom Attributes
 
-Streampoint data defined based on a [Custom class]() can be used to define the appearance in the map.
+Streampoint data defined based on a [Custom class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint#extending-streampoint-attributes) can be used to define the appearance in the map.
 
 # Zoom Level Visibility
 
