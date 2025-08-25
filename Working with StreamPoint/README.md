@@ -51,6 +51,7 @@ Custom attributes are defined on the value property:
          };
 
 Custom data defined on the value property can be used for Appearance, tooltips, etc.
+
 [Appearance based on Custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Appearance/README.md#appearance-based-on-custom-attributes)
 
 # Stream Point Collection
