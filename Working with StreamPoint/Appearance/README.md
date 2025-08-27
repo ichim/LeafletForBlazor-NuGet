@@ -1,5 +1,18 @@
 # Basic Appearance
 
+               realTimeMap.Geometric.Points.Appearance(item => item.type == "intervention crew").pattern = 
+                new RealTimeMap.PointSymbol() 
+                       { 
+                              radius = 8, 
+                              color = "#28ffff", 
+                              opacity = 0.68, 
+                              fillColor = "orange", 
+                              weight = 2, 
+                              fillOpacity = 0.68 
+                         };
+
+  [more about basic implementation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance/Basic%20Appearance#appearance-render)
+
 # Appearance on Type
 
 # Appearance based on Custom Attributes
