@@ -1,5 +1,18 @@
 # Basic Appearance
 
+               realTimeMap.Geometric.Points.Appearance(item => item.type == "intervention crew").pattern = 
+                new RealTimeMap.PointSymbol() 
+                       { 
+                              radius = 8, 
+                              color = "#28ffff", 
+                              opacity = 0.68, 
+                              fillColor = "orange", 
+                              weight = 2, 
+                              fillOpacity = 0.68 
+                         };
+
+  [more about basic implementation]()
+
 # Appearance on Type
 
 # Appearance based on Custom Attributes
