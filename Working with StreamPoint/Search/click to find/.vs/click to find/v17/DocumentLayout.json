@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\click to find\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{882E3586-BB8A-4AC4-81DD-205C08458665}|click to find\\click to find.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\click to find\\click to find\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{882E3586-BB8A-4AC4-81DD-205C08458665}|click to find\\click to find.csproj|solutionrelative:click to find\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882E3586-BB8A-4AC4-81DD-205C08458665}|click to find\\click to find.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\click to find\\click to find\\data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882E3586-BB8A-4AC4-81DD-205C08458665}|click to find\\click to find.csproj|solutionrelative:click to find\\data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "streamPoints.cs",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\click to find\\click to find\\Data\\streamPoints.cs",
+              "RelativeDocumentMoniker": "click to find\\Data\\streamPoints.cs",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\click to find\\click to find\\Data\\streamPoints.cs",
+              "RelativeToolTip": "click to find\\Data\\streamPoints.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T07:43:23.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\click to find\\click to find\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "click to find\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\click to find\\click to find\\Pages\\Index.razor",
+              "RelativeToolTip": "click to find\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T07:40:06.154Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
