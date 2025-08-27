@@ -11,7 +11,7 @@
                               fillOpacity = 0.68 
                          };
 
-  [more about basic implementation]()
+  [more about basic implementation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance/Basic%20Appearance#appearance-render)
 
 # Appearance on Type
 
