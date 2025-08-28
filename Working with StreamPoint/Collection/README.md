@@ -118,4 +118,4 @@ A StreamPoint (or more) can be moved on the map by updating the coordinates. The
 
 # Update
 
-Update is a method that allows updating data related to type, datetime, value. Update does not allow updating coordinates. To update coordinates you must use [moveTo](#move_to).
+Update is a method that allows updating data related to type, datetime, value. Update does not allow updating coordinates. To update coordinates you must use [moveTo](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Collection/README.md#move-to).
