@@ -54,6 +54,8 @@ Custom data defined on the value property can be used for Appearance, tooltips, 
 
 [Appearance based on Custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Appearance/README.md#appearance-based-on-custom-attributes)
 
+[click to display custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Search/click%20to%20find/README.md#click-to-find)
+
 # Stream Point Collection
 
 Geometric.Points is a collection of StreamPoints designed to respond quickly to upload, add, delete, update or moveTo.
