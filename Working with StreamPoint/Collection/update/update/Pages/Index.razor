@@ -1,0 +1,27 @@
+﻿@page "/"
+
+@using update.Data
+
+<RealTimeMap @ref="realTimeMap" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+@code {
+    DataSource dataSource = new DataSource();
+    RealTimeMap? realTimeMap;
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        // Initialize the data source with some points
+        await args.sender.Geometric.Points.upload(dataSource.pointsStart);
+
+    }
+
+    private async Task updatePoints()
+    {
+        var streamPoint = dataSource.pointsStart[0];
+        streamPoint.type = "New Stream Point Type";
+        await InvokeAsync(async () =>
+        {
+            // Update the type point in the StreamPoint collection and RealTimeMap
+           await realTimeMap!.Geometric.Points.update(streamPoint);
+        });
+    }
+}
