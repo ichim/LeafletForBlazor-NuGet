@@ -141,6 +141,6 @@ The Appearance can be configured on the Load event of the RealTimeMap component.
 Updating the type property, anywhere in the code, will have the effect of updating the Appearance in the Map.
 
 
-[example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#update).
+[example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#update)
 
 
