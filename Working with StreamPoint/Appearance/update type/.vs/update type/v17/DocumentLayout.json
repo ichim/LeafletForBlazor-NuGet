@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\update type\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F1849A-A50F-41C9-A7C7-712739C9B431}|update type\\update type.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\update type\\update type\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8F1849A-A50F-41C9-A7C7-712739C9B431}|update type\\update type.csproj|solutionrelative:update type\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\update type\\update type\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "update type\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\update type\\update type\\Pages\\Index.razor",
+              "RelativeToolTip": "update type\\Pages\\Index.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T06:37:13.385Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
