@@ -24,7 +24,7 @@ StreamPoint data defined based on a [Custom class](https://github.com/ichim/Leaf
 You can use the Appearance method to show or hide StreamPoints at certain scale levels.
 
 
-## Update type and Appearance
+# Update type and Appearance
 
 Changing the type property of a StreamPoint will have the effect of changing its appearance.
 
