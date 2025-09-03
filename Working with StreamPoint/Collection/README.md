@@ -136,7 +136,7 @@ To update coordinates you must use [moveTo](https://github.com/ichim/LeafletForB
 
 Changing the type property of a streampoint will also change its Appearance.
 
-[change type example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance/update%20type)
+[more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance#update-type-and-appearance)
 
 
 
