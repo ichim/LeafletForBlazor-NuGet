@@ -33,7 +33,7 @@ The Appearance can be configured on the Load event (OnAfterMapLoaded) of the Rea
 Updating the type property, anywhere in the code, will have the effect of updating the Appearance in the Map.
 
 
-[example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#update)
+[example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance/update%20type)
 
 
 
