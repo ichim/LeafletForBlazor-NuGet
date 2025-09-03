@@ -23,10 +23,17 @@ StreamPoint data defined based on a [Custom class](https://github.com/ichim/Leaf
 
 You can use the Appearance method to show or hide StreamPoints at certain scale levels.
 
-# Update type
 
-Changing the type property of a streampoint will also change its Appearance.
+## Update type and Appearance
 
-[change type example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance/update%20type)
+Changing the type property of a StreamPoint will have the effect of changing its appearance.
+
+The Appearance can be configured on the Load event (OnAfterMapLoaded) of the RealTimeMap component.
+
+Updating the type property, anywhere in the code, will have the effect of updating the Appearance in the Map.
+
+
+[example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#update)
+
 
 
