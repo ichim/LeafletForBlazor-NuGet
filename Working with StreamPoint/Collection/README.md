@@ -132,6 +132,13 @@ Code block:
 
 To update coordinates you must use [moveTo](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Collection/README.md#move-to).
 
+## Update type
+
+Changing the type property of a streampoint will also change its Appearance.
+
+[change type example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance/update%20type)
+
+
 
 
 
