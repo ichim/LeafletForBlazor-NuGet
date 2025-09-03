@@ -27,6 +27,6 @@ You can use the Appearance method to show or hide StreamPoints at certain scale 
 
 Changing the type property of a streampoint will also change its Appearance.
 
-
+[change type example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance/update%20type)
 
 
