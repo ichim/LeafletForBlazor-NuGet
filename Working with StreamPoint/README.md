@@ -150,6 +150,8 @@ Expanding the existing collection:
 
 A StreamPoint (or more) can be moved on the map by updating the coordinates.
 
+           await realTimeMap.Geometric.Points.moveTo(new StreamPoint(){...});//guid must exist in the collection
+
 [more about moveTo](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#move-to)
 
 ## Update
