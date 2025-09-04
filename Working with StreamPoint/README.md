@@ -150,6 +150,11 @@ Expanding the existing collection:
 
 A StreamPoint (or more) can be moved on the map by updating the coordinates.
 
+## Update
+
+The update method allows you to update StreamPoint attributes, except for the coordinates (latitude and longitude).
+
+[more about]()
 
 [more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#move-to)
 
