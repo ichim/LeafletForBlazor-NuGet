@@ -118,7 +118,7 @@ where:
 
 ## Add data
 
-Expanding the existing collection:
+Adding elements to the collection:
 
         if (realTimeMap != null)
             await realTimeMap.Geometric.Points.add(dataSource.pointsMore.ToArray());
@@ -127,6 +127,7 @@ Expanding the existing collection:
 
 ## Delete some points
 
+You can delete some of the items in the collection:
 
         string[] guids = new string[2] { "18466d7f-0689-4b8e-a2ee-28e5cb27f86e", "28466d7f-0689-4b8e-a2ee-28e5cb28f86f"};
         if (realTimeMap != null)
@@ -134,15 +135,11 @@ Expanding the existing collection:
     
 ## Delete all points
 
+Delete all points:
 
         if (realTimeMap != null)
             await realTimeMap.Geometric.Points.delete();
 
-
-## Delete some points
-
-     if(realTimeMap!=null)
-         await realTimeMap.Geometric.Points.delete(new string[2] { "18466d7f-0689-4b8e-a2ee-28e5cb27f86e", "28466d7f-0689-4b8e-a2ee-28e5cb28f86f" });
 
 [more about delete](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#delete-some-streampoints)
 
