@@ -120,6 +120,12 @@ A StreamPoint (or more) can be moved on the map by updating the coordinates. The
 
 Update is a method that allows updating data related to type, datetime, value. Update does not allow updating coordinates. 
 
+To update coordinates you must use [moveTo](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Collection/README.md#move-to).
+
+## Update type
+
+Changing the type property of a streampoint will also change its Appearance.
+
 Blazor page:
 
         <RealTimeMap @ref="realTimeMap"></RealTimeMap>
@@ -130,4 +136,9 @@ Code block:
                 guid = Guid.Parse("18466d7f-0689-4b8e-a2ee-28e5cb27f86e"), 
                 type = "new type for this StreamPoint"});
 
-To update coordinates you must use [moveTo](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Collection/README.md#move-to).
+[more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance#update-type-and-appearance)
+
+
+
+
+
