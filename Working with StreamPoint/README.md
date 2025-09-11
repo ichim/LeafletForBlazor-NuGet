@@ -157,6 +157,8 @@ The update method allows you to update StreamPoint attributes, except for the co
 
 [more about update](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#update)
 
+To update the coordinates (position of the StreamPoint), use the [moveTo]() method
+
 # Configuring StreamPoint Tooltip
 
 You can configure tooltips for map items.
