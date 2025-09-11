@@ -1,0 +1,53 @@
+﻿@page "/"
+
+@using clusters.Data
+<button @onclick="moveStreamPoints">Move to</button>
+<RealTimeMap @ref = "realTimeMap" Parameters = "@parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded"></RealTimeMap>
+
+@code {
+    DataSource dataSource = new DataSource();
+    RealTimeMap? realTimeMap;
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()
+    {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 44.45028925827577,
+                longitude = 26.10629452317551
+            },
+        zoomLevel = 16
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        // Do not change the map extent when moving points.
+        args.sender.Geometric.Points.changeExtentWhenMovingPoints = false;
+        // clustering configuration.
+        args.sender.Geometric.Points.clusteringConfiguration = new LeafletForBlazor.RealTime.points.ClusteringConfiguration()
+            {
+                maxClusterRadius = 140
+            };
+        // Enable clustering after each point is added.
+        args.sender.Geometric.Points.clusteringAfterCollectionUpdate = true;
+        // Do not change the map extent when adding points.
+        args.sender.Geometric.Points.changeExtentWhenAddPoints = false;
+        
+
+        // Add the initial points.
+        foreach (var item in dataSource.pointsMore)
+        {
+            await args.sender.Geometric.Points.add(item);
+        }
+    }
+
+    private void moveStreamPoints()
+    {
+      
+        // Move the points to new locations.
+        foreach (var item in dataSource.pointsMore)
+        {
+            item.latitude -= 0.002;
+            item.longitude -= 0.0028;
+            realTimeMap?.Geometric.Points.moveTo(item);
+        }
+        StateHasChanged();
+    }
+}

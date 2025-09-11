@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\clustering \u0026 moveTo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C18DF6A4-CB1C-470F-98CC-08CFF60B1BCC}|clustering \u0026 moveTo\\clustering \u0026 moveTo.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\clustering \u0026 moveto\\clustering \u0026 moveto\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C18DF6A4-CB1C-470F-98CC-08CFF60B1BCC}|clustering \u0026 moveTo\\clustering \u0026 moveTo.csproj|solutionrelative:clustering \u0026 moveto\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C18DF6A4-CB1C-470F-98CC-08CFF60B1BCC}|clustering \u0026 moveTo\\clustering \u0026 moveTo.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\clustering \u0026 moveto\\clustering \u0026 moveto\\data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C18DF6A4-CB1C-470F-98CC-08CFF60B1BCC}|clustering \u0026 moveTo\\clustering \u0026 moveTo.csproj|solutionrelative:clustering \u0026 moveto\\data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "streamPoints.cs",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\clustering \u0026 moveTo\\clustering \u0026 moveTo\\Data\\streamPoints.cs",
+              "RelativeDocumentMoniker": "clustering \u0026 moveTo\\Data\\streamPoints.cs",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\clustering \u0026 moveTo\\clustering \u0026 moveTo\\Data\\streamPoints.cs",
+              "RelativeToolTip": "clustering \u0026 moveTo\\Data\\streamPoints.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T13:19:02.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\clustering \u0026 moveTo\\clustering \u0026 moveTo\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "clustering \u0026 moveTo\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\clustering \u0026 moveTo\\clustering \u0026 moveTo\\Pages\\Index.razor",
+              "RelativeToolTip": "clustering \u0026 moveTo\\Pages\\Index.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAswBYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-11T13:06:35.947Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
