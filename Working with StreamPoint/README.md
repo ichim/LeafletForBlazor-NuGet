@@ -200,6 +200,8 @@ The .Geometric.Points class provides the OnClusterClick event.
 
 Moving a point (existing point) on the map will result in the clusters being updated.
 
+[more about clustering and moveTo](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Clustering#clustering-and-moveto-method)
+
 
 
 
