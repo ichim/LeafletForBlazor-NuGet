@@ -186,7 +186,7 @@ You can choose to have the StreamPoint collection clustered in the map.
 
 ## Configuration Parameters
 
-You can customize the cluster allocation to the StreamPoint collection.
+You can customize the cluster allocation to the StreamPoint collection. The ClusteringConfiguration class allow you to customize of the StreamPoint allocation on cluster, 
 
 [more about configuration](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Clustering#configuration-parameters)
 
