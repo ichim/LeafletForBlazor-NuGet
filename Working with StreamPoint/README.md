@@ -54,9 +54,7 @@ Extended attributes, using a custom class, can be used to define appearance, too
 | Example | Description |
 |---|---|
 | [Appearance based on Custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Appearance/README.md#appearance-based-on-custom-attributes) | |
-
 | [click to display custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Search/click%20to%20find/README.md#click-to-find) | |
-
 |[Configuring chart on tooltip](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip/tooltip%20chart#configuring-chart-on-tooltip) | |
 
 # Stream Point Collection
