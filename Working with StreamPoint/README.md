@@ -53,9 +53,9 @@ Custom attributes are defined on the value property:
 Extended attributes, using a custom class, can be used to define appearance, tooltips, visibility levels, charts on tooltip and so one.
 | Example | Description |
 |---|---|
-| [Appearance based on Custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Appearance/README.md#appearance-based-on-custom-attributes) | |
+| [Appearance based on Custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Appearance/README.md#appearance-based-on-custom-attributes) | The StreamPoint collection has a custom class defined on the value property. This class is used as an attribute on the Appearance method to define symbols. |
 | [click to display custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Search/click%20to%20find/README.md#click-to-find) | |
-|[Configuring chart on tooltip](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip/tooltip%20chart#configuring-chart-on-tooltip) | |
+|[Configuring chart on tooltip](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip/tooltip%20chart#configuring-chart-on-tooltip) | The custom class defined on the value property can be used as an attribute for building a graph, if it is a numeric array. |
 
 # Stream Point Collection
 
