@@ -176,8 +176,9 @@ StreamPoint elements can work with hierarchical data. This hierarchical data of 
 
 StreamPoint elements can work with hierarchical data. This hierarchical data of StreamPoints can be used in displaying charts on tooltips.
 
-[Configuring charts example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip/tooltip%20chart)
-
+| Example | Description |
+|---|---|
+|[Configuring chart on tooltip](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip/tooltip%20chart#configuring-chart-on-tooltip) | The custom class defined on the value property can be used as an attribute for building a graph, if it is a numeric array. |
    
 # Clustering
 
