@@ -50,7 +50,7 @@ Custom attributes are defined on the value property:
                 value = new Attributes() { registrationNumber = "B 24 AAB", vehicleType = "bus" }
          };
 
-Custom data defined on the value property can be used for Appearance, tooltips, etc.
+Extended attributes, using a custom class, can be used to define appearance, tooltips, visibility levels and so one.
 
 [Appearance based on Custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Appearance/README.md#appearance-based-on-custom-attributes)
 
