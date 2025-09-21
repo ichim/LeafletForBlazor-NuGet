@@ -674,7 +674,7 @@ _latitude and longitude properties are Web Mercator coordinate values._
 
 _The value property can be string or object defined by customn Data Structure Class._
 
-[more about StreamPoint collection](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint#stream-point)
+(more about StreamPoint collection)[https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint#stream-point]
 
 
 ### Working with Points collection
