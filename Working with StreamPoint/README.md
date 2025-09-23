@@ -156,6 +156,10 @@ A StreamPoint (or more) can be moved on the map by updating the coordinates.
 
 The update method allows you to update StreamPoint attributes, except for the coordinates (latitude and longitude).
 
+    await realTimeMap!.Geometric.Points.update(new StreamPoint(){
+            guid = Guid.Parse("18466d7f-0689-4b8e-a2ee-28e5cb27f86e"), //existing guid
+            type = "new type for this StreamPoint"});
+
 [more about update](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#update)
 
 To update the coordinates (position of the StreamPoint), use the [moveTo](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/README.md#move-to) method.
