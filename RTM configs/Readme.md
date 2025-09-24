@@ -102,6 +102,9 @@ Code block:
 
 ## Map Attribution
 
+This attribution is necessary for legal compliance, ensuring proper credit is given to the companies and individuals who created the map data, such as Esri, Google, Leaflet, OpenStreetMap, or other third-party data providers.
+The specific attribution details, including the exact text and placement, depend on the map service and can be found in the service's usage policies. 
+
 - add more attribution
 
             public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
