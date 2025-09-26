@@ -146,6 +146,8 @@ Code block
 
 ### Level zoom
 
+Changing the current zoom level:
+
             @code{
                             RealTimeMap? realTimeMap;
                             public void onZoomLevel()
@@ -155,6 +157,8 @@ Code block
                 }
 
 ### Visible area  
+
+Changing the current map display area (current view):
 
                    @code{
                    RealTimeMap? realTimeMap;
