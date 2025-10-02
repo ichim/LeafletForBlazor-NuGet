@@ -1,4 +1,4 @@
-> Here you will find examples of the default configuration of the RealTimeMap and its dynamic configuration (ex. Basemap, Attribution etc)
+> Here you will find examples of the default configuration of the RealTimeMap and its dynamic configuration (ex. Basemap, Scale View, Attribution etc)
 
 # RealTimeMap and load parameteres
 
