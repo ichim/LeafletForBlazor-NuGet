@@ -75,3 +75,10 @@ Add new Event method:
         //you receive bounds of the cluster, location of mouse click and guids
         
     }
+
+# Clustering and moveTo method
+
+The moveTo method allows changing the position of a StreamPoint in the map. Once the position of a StreamPoint is updated and the clustering is updated.
+
+Working with StreamPoint/Clustering/clustering & moveTo
+

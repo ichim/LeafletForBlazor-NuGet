@@ -1,4 +1,4 @@
-> Here you will find examples of the default configuration of the RealTimeMap and its dynamic configuration (ex. Basemap, Attribution etc)
+> Here you will find examples of the default configuration of the RealTimeMap and its dynamic configuration (ex. Basemap, Scale View, Attribution etc)
 
 # RealTimeMap and load parameteres
 
@@ -102,6 +102,9 @@ Code block:
 
 ## Map Attribution
 
+This attribution is necessary for legal compliance, ensuring proper credit is given to the companies and individuals who created the map data, such as Esri, Google, Leaflet, OpenStreetMap, or other third-party data providers.
+The specific attribution details, including the exact text and placement, depend on the map service and can be found in the service's usage policies. 
+
 - add more attribution
 
             public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
@@ -143,6 +146,8 @@ Code block
 
 ### Level zoom
 
+Changing the current zoom level:
+
             @code{
                             RealTimeMap? realTimeMap;
                             public void onZoomLevel()
@@ -152,6 +157,8 @@ Code block
                 }
 
 ### Visible area  
+
+Changing the current map display area (current view):
 
                    @code{
                    RealTimeMap? realTimeMap;

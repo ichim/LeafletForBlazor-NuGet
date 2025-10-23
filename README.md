@@ -643,6 +643,8 @@ The movePoint() method accepts from one argument to three arguments:
 
  > This class will be a parent class (more precisely, host class - there is no inheritance) for the geometric shapes (ex. Points), geometric map shapes appearance, geometric analisys and so one supported by RealTimeMap.
 
+The Geometric class gives you the ability to work with data in real time.
+The Points class, hosted by the Geometric class, gives you the ability to work with points that have a predefined but extensible structure. These points are defined by the StreamPoint class.
 
 ### Points class
 
@@ -653,7 +655,9 @@ The movePoint() method accepts from one argument to three arguments:
 
  >Also, this class will provide methods to control the display of points (Appearance()), analysis (points collection) and so one.
 
-### StreamPoint
+# StreamPoint collection
+
+StreamPoint is a predefined and extensible class. Geometric.Point can host and operate in real time on collections of StreamPoints.
 
 Class has the following structure:
 
@@ -669,6 +673,9 @@ Class has the following structure:
 _latitude and longitude properties are Web Mercator coordinate values._
 
 _The value property can be string or object defined by customn Data Structure Class._
+
+[more about StreamPoint collection](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint#stream-point)
+
 
 ### Working with Points collection
 

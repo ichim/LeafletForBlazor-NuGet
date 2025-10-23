@@ -50,11 +50,12 @@ Custom attributes are defined on the value property:
                 value = new Attributes() { registrationNumber = "B 24 AAB", vehicleType = "bus" }
          };
 
-Custom data defined on the value property can be used for Appearance, tooltips, etc.
-
-[Appearance based on Custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Appearance/README.md#appearance-based-on-custom-attributes)
-
-[click to display custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Search/click%20to%20find/README.md#click-to-find)
+Extended attributes, using a custom class, can be used to define appearance, tooltips, visibility levels, charts on tooltip and so one.
+| Example | Description |
+|---|---|
+| [Appearance based on Custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Appearance/README.md#appearance-based-on-custom-attributes) | The StreamPoint collection has a custom class defined on the value property. This class is used as an attribute on the Appearance method to define symbols. |
+| [click to display custom attributes](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Search/click%20to%20find/README.md#click-to-find) | After you have found a StreamPoint around a point (click), you can extract the custom attributes and use them further in the application. |
+|[Configuring chart on tooltip](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip/tooltip%20chart#configuring-chart-on-tooltip) | The custom class defined on the value property can be used as an attribute for building a graph, if it is a numeric array. |
 
 # Stream Point Collection
 
@@ -155,6 +156,10 @@ A StreamPoint (or more) can be moved on the map by updating the coordinates.
 
 The update method allows you to update StreamPoint attributes, except for the coordinates (latitude and longitude).
 
+    await realTimeMap!.Geometric.Points.update(new StreamPoint(){
+            guid = Guid.Parse("18466d7f-0689-4b8e-a2ee-28e5cb27f86e"), //existing guid
+            type = "new type for this StreamPoint"});
+
 [more about update](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Collection#update)
 
 To update the coordinates (position of the StreamPoint), use the [moveTo](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/README.md#move-to) method.
@@ -175,8 +180,9 @@ StreamPoint elements can work with hierarchical data. This hierarchical data of 
 
 StreamPoint elements can work with hierarchical data. This hierarchical data of StreamPoints can be used in displaying charts on tooltips.
 
-[Configuring charts example](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip/tooltip%20chart)
-
+| Example | Description |
+|---|---|
+|[Configuring chart on tooltip](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip/tooltip%20chart#configuring-chart-on-tooltip) | The custom class defined on the value property can be used as an attribute for building a graph, if it is a numeric array. |
    
 # Clustering
 
@@ -186,7 +192,7 @@ You can choose to have the StreamPoint collection clustered in the map.
 
 ## Configuration Parameters
 
-You can customize the cluster allocation to the StreamPoint collection.
+You can customize the cluster allocation to the StreamPoint collection. The ClusteringConfiguration class allow you to customize of the StreamPoint allocation on cluster, show coverage on hover and so one. 
 
 [more about configuration](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Clustering#configuration-parameters)
 
@@ -195,6 +201,12 @@ You can customize the cluster allocation to the StreamPoint collection.
 The .Geometric.Points class provides the OnClusterClick event.
 
 [more about cluster click event](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Clustering#working-with-cluster-event)
+
+## Clustering and moveTo
+
+Moving a point (existing point) on the map will result in the clusters being updated.
+
+[more about clustering and moveTo](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Clustering#clustering-and-moveto-method)
 
 
 
