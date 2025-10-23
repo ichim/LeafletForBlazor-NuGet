@@ -7,13 +7,18 @@
     DataSource dataSource = new DataSource();
     int zoomLevel = 0;
    
-    private void onLoadMap(RealTimeMap.MapEventArgs args)
+    private async Task  onLoadMap(RealTimeMap.MapEventArgs args)
     {
 
       
-
-        args.sender.Geometric.Points.upload(dataSource.pointsMore);
-       
+      await  args.sender.Geometric.Points.upload(dataSource.pointsStart, true);
+      await  args.sender.Geometric.Points.upload(dataSource.pointsMore, false);
+      
+        args.sender.Geometric.Points.AppearanceOnType().pattern = new RealTimeMap.VisibilityZoomLevel()
+        {
+            minZoomLevel = 10,
+            maxZoomLevel = 16
+        };
 
         args.sender.Geometric.Points.Appearance(item => item.type == "B").pattern = new RealTimeMap.PointSymbol()
             {
@@ -32,11 +37,7 @@
             iconUrl = "http://localhost:5088/car.png",
 iconSize = new int[2]{46,46}
         };
-        args.sender.Geometric.Points.AppearanceOnType().pattern = new RealTimeMap.VisibilityZoomLevel()
-        {
-            minZoomLevel = 10,
-            maxZoomLevel = 16
-        };
+        
     }
 
     private void onZoomLevelChange(RealTimeMap.MapZoomEventArgs args)
