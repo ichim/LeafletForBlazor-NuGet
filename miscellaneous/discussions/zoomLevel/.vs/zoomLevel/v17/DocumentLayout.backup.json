@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\dev\\zoomLevel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2FFDBC30-CD0F-46C9-AB73-97F9D9EC6248}|zoomLevel\\zoomLevel.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\dev\\zoomlevel\\zoomlevel\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2FFDBC30-CD0F-46C9-AB73-97F9D9EC6248}|zoomLevel\\zoomLevel.csproj|solutionrelative:zoomlevel\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FFDBC30-CD0F-46C9-AB73-97F9D9EC6248}|zoomLevel\\zoomLevel.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\dev\\zoomlevel\\zoomlevel\\data\\streampointcollections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FFDBC30-CD0F-46C9-AB73-97F9D9EC6248}|zoomLevel\\zoomLevel.csproj|solutionrelative:zoomlevel\\data\\streampointcollections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FFDBC30-CD0F-46C9-AB73-97F9D9EC6248}|zoomLevel\\zoomLevel.csproj|c:\\users\\lauren\u021Biuichim\\source\\repos\\dev\\zoomlevel\\zoomlevel\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2FFDBC30-CD0F-46C9-AB73-97F9D9EC6248}|zoomLevel\\zoomLevel.csproj|solutionrelative:zoomlevel\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "streamPointCollections.cs",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\dev\\zoomLevel\\zoomLevel\\Data\\streamPointCollections.cs",
+              "RelativeDocumentMoniker": "zoomLevel\\Data\\streamPointCollections.cs",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\dev\\zoomLevel\\zoomLevel\\Data\\streamPointCollections.cs",
+              "RelativeToolTip": "zoomLevel\\Data\\streamPointCollections.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAAwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:01:43.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\dev\\zoomLevel\\zoomLevel\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "zoomLevel\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\dev\\zoomLevel\\zoomLevel\\Pages\\Index.razor",
+              "RelativeToolTip": "zoomLevel\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T05:57:12.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\dev\\zoomLevel\\zoomLevel\\_Imports.razor",
+              "RelativeDocumentMoniker": "zoomLevel\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Lauren\u021BiuIchim\\source\\repos\\dev\\zoomLevel\\zoomLevel\\_Imports.razor",
+              "RelativeToolTip": "zoomLevel\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T05:55:56.663Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

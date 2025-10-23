@@ -1,0 +1,46 @@
+﻿@page "/"
+@using update.Data
+<label>@zoomLevel</label>
+<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="onLoadMap" OnZoomLevelEndChange="onZoomLevelChange"></RealTimeMap>
+
+@code{
+    DataSource dataSource = new DataSource();
+    int zoomLevel = 0;
+   
+    private void onLoadMap(RealTimeMap.MapEventArgs args)
+    {
+
+      
+
+        args.sender.Geometric.Points.upload(dataSource.pointsMore);
+       
+
+        args.sender.Geometric.Points.Appearance(item => item.type == "B").pattern = new RealTimeMap.PointSymbol()
+            {
+                color = "red",
+                radius = 25
+            }; 
+
+        args.sender.Geometric.Points.Appearance(item => item.type == "A").pattern = new RealTimeMap.PointSymbol()
+        {
+            color = "blue",
+            radius = 25
+        };
+
+        args.sender.Geometric.Points.Appearance(item => item.type == "C").pattern = new RealTimeMap.PointIcon()
+        {
+            iconUrl = "http://localhost:5088/car.png",
+iconSize = new int[2]{46,46}
+        };
+        args.sender.Geometric.Points.AppearanceOnType().pattern = new RealTimeMap.VisibilityZoomLevel()
+        {
+            minZoomLevel = 10,
+            maxZoomLevel = 16
+        };
+    }
+
+    private void onZoomLevelChange(RealTimeMap.MapZoomEventArgs args)
+    {
+        zoomLevel = args.zoomLevel;
+    }
+}
