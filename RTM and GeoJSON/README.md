@@ -339,5 +339,13 @@ The method will hide all layers.
 	await args.sender.Geometric.DataFromGeoJSON.hideContent((name)=>name == "Zones");
 
 
+## clearMap() method
+
+This method allows you to delete all existing elements in the map, which were loaded using the class **DataFromGeoJSON**
+
+	await args.sender.Geometric.DataFromGeoJSON.clearMap();
+
+
+
 
 
