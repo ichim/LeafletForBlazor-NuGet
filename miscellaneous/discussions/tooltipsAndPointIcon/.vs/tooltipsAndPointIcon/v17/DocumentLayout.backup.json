@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\tooltipsAndPointIcon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80659DFE-F125-451B-89D4-27BEF4BCA063}|tooltipsAndPointIcon\\tooltipsAndPointIcon.csproj|c:\\users\\40720\\source\\repos\\tooltipsandpointicon\\tooltipsandpointicon\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80659DFE-F125-451B-89D4-27BEF4BCA063}|tooltipsAndPointIcon\\tooltipsAndPointIcon.csproj|solutionrelative:tooltipsandpointicon\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80659DFE-F125-451B-89D4-27BEF4BCA063}|tooltipsAndPointIcon\\tooltipsAndPointIcon.csproj|c:\\users\\40720\\source\\repos\\tooltipsandpointicon\\tooltipsandpointicon\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80659DFE-F125-451B-89D4-27BEF4BCA063}|tooltipsAndPointIcon\\tooltipsAndPointIcon.csproj|solutionrelative:tooltipsandpointicon\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80659DFE-F125-451B-89D4-27BEF4BCA063}|tooltipsAndPointIcon\\tooltipsAndPointIcon.csproj|c:\\users\\40720\\source\\repos\\tooltipsandpointicon\\tooltipsandpointicon\\tooltipsandpointicon.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{80659DFE-F125-451B-89D4-27BEF4BCA063}|tooltipsAndPointIcon\\tooltipsAndPointIcon.csproj|solutionrelative:tooltipsandpointicon\\tooltipsandpointicon.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\tooltipsAndPointIcon\\tooltipsAndPointIcon\\_Imports.razor",
+              "RelativeDocumentMoniker": "tooltipsAndPointIcon\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\tooltipsAndPointIcon\\tooltipsAndPointIcon\\_Imports.razor",
+              "RelativeToolTip": "tooltipsAndPointIcon\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T07:02:33.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\tooltipsAndPointIcon\\tooltipsAndPointIcon\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "tooltipsAndPointIcon\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\tooltipsAndPointIcon\\tooltipsAndPointIcon\\Pages\\Index.razor",
+              "RelativeToolTip": "tooltipsAndPointIcon\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T07:01:50.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tooltipsAndPointIcon",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\tooltipsAndPointIcon\\tooltipsAndPointIcon\\tooltipsAndPointIcon.csproj",
+              "RelativeDocumentMoniker": "tooltipsAndPointIcon\\tooltipsAndPointIcon.csproj",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\tooltipsAndPointIcon\\tooltipsAndPointIcon\\tooltipsAndPointIcon.csproj",
+              "RelativeToolTip": "tooltipsAndPointIcon\\tooltipsAndPointIcon.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-11T07:00:55.408Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

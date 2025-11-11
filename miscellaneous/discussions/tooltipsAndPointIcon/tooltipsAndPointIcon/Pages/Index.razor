@@ -1,0 +1,31 @@
+﻿@page "/"
+
+
+<RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+@code {
+  
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        var realTimeMap = args.sender as RealTimeMap;
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "asked for help").pattern = new RealTimeMap.PointTooltip()
+        {
+            content = "<b>Registration number: </b>${value.registrationNumber}</br><b>Vehicle type: </b>${value.vehicleType}</br>${value.description}"
+        };
+        realTimeMap.Geometric.Points.Appearance(item => item.type != "asked for help").pattern = new RealTimeMap.PointTooltip()
+        {
+            content = "<b>${type}</b><br><b>Vehicle type: </b>${value.vehicleType}"
+        };
+        realTimeMap.Geometric.Points.Appearance(item => item.type == "asked for help").pattern = new RealTimeMap.PointSymbol()
+        {
+            radius = 12,
+            fillColor = "red"
+        };
+        realTimeMap.Geometric.Points.Appearance(item => item.type != "asked for help").pattern = new RealTimeMap.PointIcon()
+        {
+            iconUrl = "http://localhost:5145/location2.png",
+            iconSize = new int[2] { 32, 32 }
+        };
+        await realTimeMap.Geometric.Points.upload(new tooltips.data.InputData().input);
+    }
+}
