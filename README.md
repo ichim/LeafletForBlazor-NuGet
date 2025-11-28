@@ -44,7 +44,7 @@ You can find more information:
         <td><font size = "2px">The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area</font></td>
     </tr>
     <tr>
-        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/StreamPoint%20tooltip/RTM%20tooltip%20hierarchical%20attr#readme">Tooltips and custom properties</a></td>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip">Tooltips and custom properties</a></td>
         <td><font size = "2px">A StreamPoint can use custom properties stored on value. These custom properties can be used to define tooltips.</font></td>
     </tr>
    <tr>
