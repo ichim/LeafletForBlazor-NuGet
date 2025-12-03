@@ -120,7 +120,7 @@ in the **_Imports.razor** file of the project.
 
 3. add RealTimeMap control into Blazor Page:
 
-        <RealTimeMap height="460px" width="620px"></RealTimeMap>
+        <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
 
 ## Working with loading parameters
 
@@ -143,7 +143,7 @@ Map loading parameters can be defined using the **LoadParameters** class. This c
 
 2. set the loading parameters (default map parameters) to the **RealTimeMap** control:
 
-       <RealTimeMap Parameters="parameters" height="460px" width="620px"></RealTimeMap>
+       <RealTimeMap Parameters="parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
 
 
 ## RealTimeMap and basemap
@@ -152,7 +152,7 @@ You can add various basemaps to the list of map layers.
 
 Blazor page
 
-    <RealTimeMap height="462px" width="462px" Parameters="@parameters"></RealTimeMap>
+    <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" Parameters="@parameters"></RealTimeMap>
 
 Code block
 
@@ -216,7 +216,7 @@ You can change the behavior of the map to various mouse actions:
 
 Blazor page
 
-    <RealTimeMap height="462px" width="462px" Parameters="@parameters" Options="options"></RealTimeMap>
+    <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" Parameters="@parameters" Options="options"></RealTimeMap>
 
 Code block
 
@@ -248,7 +248,7 @@ This class allows you to modify and read the RealTimeMap loading parameters:
 
 Blazor page
 
-    <RealTimeMap @ref="realTimeMap" height="460px" width="460px"></RealTimeMap>
+    <RealTimeMap @ref="realTimeMap" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
 
 Code block
 
@@ -299,6 +299,17 @@ Example code
         public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
         {
             args.sender.Map.Attributions.add("<img src = \"http://localhost:5236/favicon.png\"></img>");
+        }
+
+
+        
+## RealTimeMap div id
+
+You can retrieve the div id using the getDivId method on the RealTimeMap component reference.
+
+        public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+        {
+            string divId = args.sender.getDivId;
         }
 
 
@@ -1664,4 +1675,5 @@ O-L I
 Thank you for choosing this package!
 
 Laurentiu Ichim
+
 
