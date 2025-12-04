@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 single symbol\\rfc 7946 single symbol\\wwwroot\\geojson\\polylines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|solutionrelative:rfc 7946 single symbol\\wwwroot\\geojson\\polylines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 single symbol\\rfc 7946 single symbol\\wwwroot\\geojson\\polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|solutionrelative:rfc 7946 single symbol\\wwwroot\\geojson\\polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 single symbol\\rfc 7946 single symbol\\wwwroot\\geojson\\circles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|solutionrelative:rfc 7946 single symbol\\wwwroot\\geojson\\circles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 single symbol\\rfc 7946 single symbol\\wwwroot\\geojson\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|solutionrelative:rfc 7946 single symbol\\wwwroot\\geojson\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 single symbol\\rfc 7946 single symbol\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|solutionrelative:rfc 7946 single symbol\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 single symbol\\rfc 7946 single symbol\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|solutionrelative:rfc 7946 single symbol\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "RFC 7946 single Symbol\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\Pages\\Index.razor",
+              "RelativeToolTip": "RFC 7946 single Symbol\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T18:12:27.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "polylines.json",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\wwwroot\\geojson\\polylines.json",
+              "RelativeDocumentMoniker": "RFC 7946 single Symbol\\wwwroot\\geojson\\polylines.json",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\wwwroot\\geojson\\polylines.json*",
+              "RelativeToolTip": "RFC 7946 single Symbol\\wwwroot\\geojson\\polylines.json*",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T18:11:33.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "polygons.json",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\wwwroot\\geojson\\polygons.json",
+              "RelativeDocumentMoniker": "RFC 7946 single Symbol\\wwwroot\\geojson\\polygons.json",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\wwwroot\\geojson\\polygons.json",
+              "RelativeToolTip": "RFC 7946 single Symbol\\wwwroot\\geojson\\polygons.json",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T18:11:16.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "points.json",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\wwwroot\\geojson\\points.json",
+              "RelativeDocumentMoniker": "RFC 7946 single Symbol\\wwwroot\\geojson\\points.json",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\wwwroot\\geojson\\points.json",
+              "RelativeToolTip": "RFC 7946 single Symbol\\wwwroot\\geojson\\points.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T18:11:07.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "circles.json",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\wwwroot\\geojson\\circles.json",
+              "RelativeDocumentMoniker": "RFC 7946 single Symbol\\wwwroot\\geojson\\circles.json",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\wwwroot\\geojson\\circles.json",
+              "RelativeToolTip": "RFC 7946 single Symbol\\wwwroot\\geojson\\circles.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T18:09:52.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\_Imports.razor",
+              "RelativeDocumentMoniker": "RFC 7946 single Symbol\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\_Imports.razor",
+              "RelativeToolTip": "RFC 7946 single Symbol\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T18:08:10.801Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

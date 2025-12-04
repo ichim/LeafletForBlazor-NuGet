@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "RFC 7946 single Symbol/1.0.0": {
+        "runtime": {
+          "RFC 7946 single Symbol.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RFC 7946 single Symbol/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
