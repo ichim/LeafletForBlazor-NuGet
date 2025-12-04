@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 formats\\rfc 7946 formats\\wwwroot\\rfc7946\\polylines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|solutionrelative:rfc 7946 formats\\wwwroot\\rfc7946\\polylines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 formats\\rfc 7946 formats\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|solutionrelative:rfc 7946 formats\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 formats\\rfc 7946 formats\\wwwroot\\rfc7946\\polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|solutionrelative:rfc 7946 formats\\wwwroot\\rfc7946\\polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 formats\\rfc 7946 formats\\wwwroot\\rfc7946\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|solutionrelative:rfc 7946 formats\\wwwroot\\rfc7946\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 formats\\rfc 7946 formats\\wwwroot\\rfc7946\\circles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|solutionrelative:rfc 7946 formats\\wwwroot\\rfc7946\\circles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 formats\\rfc 7946 formats\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67112D90-7F3C-4C5F-9CB4-F51817AEBC9A}|RFC 7946 formats\\RFC 7946 formats.csproj|solutionrelative:rfc 7946 formats\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "points.json",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\wwwroot\\RFC7946\\points.json",
+              "RelativeDocumentMoniker": "RFC 7946 formats\\wwwroot\\RFC7946\\points.json",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\wwwroot\\RFC7946\\points.json",
+              "RelativeToolTip": "RFC 7946 formats\\wwwroot\\RFC7946\\points.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T13:37:56.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "circles.json",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\wwwroot\\RFC7946\\circles.json",
+              "RelativeDocumentMoniker": "RFC 7946 formats\\wwwroot\\RFC7946\\circles.json",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\wwwroot\\RFC7946\\circles.json",
+              "RelativeToolTip": "RFC 7946 formats\\wwwroot\\RFC7946\\circles.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T13:35:30.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "polygons.json",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\wwwroot\\RFC7946\\polygons.json",
+              "RelativeDocumentMoniker": "RFC 7946 formats\\wwwroot\\RFC7946\\polygons.json",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\wwwroot\\RFC7946\\polygons.json",
+              "RelativeToolTip": "RFC 7946 formats\\wwwroot\\RFC7946\\polygons.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T13:32:54.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "polylines.json",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\wwwroot\\RFC7946\\polylines.json",
+              "RelativeDocumentMoniker": "RFC 7946 formats\\wwwroot\\RFC7946\\polylines.json",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\wwwroot\\RFC7946\\polylines.json",
+              "RelativeToolTip": "RFC 7946 formats\\wwwroot\\RFC7946\\polylines.json",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T13:32:34.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "RFC 7946 formats\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\Pages\\Index.razor",
+              "RelativeToolTip": "RFC 7946 formats\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T13:30:51.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\_Imports.razor",
+              "RelativeDocumentMoniker": "RFC 7946 formats\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 formats\\RFC 7946 formats\\_Imports.razor",
+              "RelativeToolTip": "RFC 7946 formats\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T13:29:53.338Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

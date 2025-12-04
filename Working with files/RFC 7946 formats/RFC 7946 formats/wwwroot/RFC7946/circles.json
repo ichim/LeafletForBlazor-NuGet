@@ -1,0 +1,24 @@
+﻿[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Circle",
+      "coordinates": [ 44.44695351120105, 26.096702416100246 ],
+      "radius": 28
+    },
+    "properties": {
+      "name": "Piata Romana"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Circle",
+      "coordinates": [ 44.444433971415684, 26.093844322972007 ],
+      "radius": 48
+    },
+    "properties": {
+      "name": "Biserica Amzei"
+    }
+  }
+]
