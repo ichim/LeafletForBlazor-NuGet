@@ -44,7 +44,7 @@ You can find more information:
         <td><font size = "2px">The symbols used in displaying the points must be correlated with the zoom level. Thus, we can use icons when displaying a small area and points when displaying an extended area</font></td>
     </tr>
     <tr>
-        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/StreamPoint%20tooltip/RTM%20tooltip%20hierarchical%20attr#readme">Tooltips and custom properties</a></td>
+        <td><a href = "https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Tooltip">Tooltips and custom properties</a></td>
         <td><font size = "2px">A StreamPoint can use custom properties stored on value. These custom properties can be used to define tooltips.</font></td>
     </tr>
    <tr>
@@ -120,7 +120,7 @@ in the **_Imports.razor** file of the project.
 
 3. add RealTimeMap control into Blazor Page:
 
-                <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
+        <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
 
 ## Working with loading parameters
 
@@ -190,7 +190,6 @@ Code block
                 },
            }
 
-
 ## RealTimeMap and default map attribution
 
 You can set what the default attribution of the map is.
@@ -211,15 +210,13 @@ Example code
                 };
             }
 
-
-
 ## RealTimeMap and interaction options
 
 You can change the behavior of the map to various mouse actions:
 
 Blazor page
 
-    <RealTimeMap height="462px" width="462px" Parameters="@parameters" Options="options"></RealTimeMap>
+    <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" Parameters="@parameters" Options="options"></RealTimeMap>
 
 Code block
 
@@ -251,7 +248,7 @@ This class allows you to modify and read the RealTimeMap loading parameters:
 
 Blazor page
 
-    <RealTimeMap @ref="realTimeMap" height="460px" width="460px"></RealTimeMap>
+    <RealTimeMap @ref="realTimeMap" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)"></RealTimeMap>
 
 Code block
 
@@ -304,7 +301,19 @@ Example code
             args.sender.Map.Attributions.add("<img src = \"http://localhost:5236/favicon.png\"></img>");
         }
 
-## RealTimeMap control events
+
+        
+## RealTimeMap div id
+
+You can retrieve the div id using the getDivId method on the RealTimeMap component reference.
+
+        public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+        {
+            string divId = args.sender.getDivId;
+        }
+
+
+## RealTimeMap and Map events
 
 | **Events**   | **Description**                                              |
 | ---------------- | ---------------------------------------------------- |
@@ -314,6 +323,7 @@ Example code
 | [**OnMouseDownMap**](#onmousedownmap) | event is triggered when the left button is pressed (contact open). This control will return the **location** of the clicked down (left pressed) point|
 | [**OnMouseUpMap**](#onmouseupmap) | event is triggered after the left button is released (contact close). This control will return the **location** of the clicked up (left released) point|
 | [**OnZoomLevelEndChange**](#onzoomlevelendchange) | event is triggered after the map has been zoom change ended|
+| [**OnPanMap**](#onpanmap) | event is triggered after the map has been moved (panned)|
 | [**OnMouseMove**](#onmousemove) | event is triggered when mouse move and return the **location** of pointer in map|
 | [**OnStreamPointAppearanceChange**](#onstreampointappearancechange) | event is triggered every time the Appearance() method from the Geometric.Points class is called|
 
@@ -458,6 +468,27 @@ Example code
             Console.WriteLine(args.zoomLevel);
         }
     }
+
+### OnPanMap
+
+Method is triggered after the map has been moved (panned).
+
+#### **OnPanMap** event arguments
+
+1. **value._sender_**: is the reference to the **RealTimeMap** control
+1. **value._zoomLevel_**: is the value of the zoom level of the loaded **RealTimeMap**
+1. **value._centerOfView_**: is the location of the center of the current view in coordinates (latitude, longitude)
+1. **value._bounds_**: the coordinates of the northeast (upper right) and southwest (lower left) corners of the displayed map extent
+
+
+       public async Task onPanMap(RealTimeMap.MapEventArgs value)
+        {
+            Console.WriteLine(value.bounds.northEast.latitude);
+            Console.WriteLine(value.bounds.northEast.longitude);
+            Console.WriteLine(value.bounds.southWest.latitude);
+            Console.WriteLine(value.bounds.southWest.longitude);
+        }
+
 
 ### OnMouseMove
 
@@ -643,8 +674,6 @@ The movePoint() method accepts from one argument to three arguments:
 
  > This class will be a parent class (more precisely, host class - there is no inheritance) for the geometric shapes (ex. Points), geometric map shapes appearance, geometric analisys and so one supported by RealTimeMap.
 
-The Geometric class gives you the ability to work with data in real time.
-The Points class, hosted by the Geometric class, gives you the ability to work with points that have a predefined but extensible structure. These points are defined by the StreamPoint class.
 
 ### Points class
 
@@ -655,9 +684,7 @@ The Points class, hosted by the Geometric class, gives you the ability to work w
 
  >Also, this class will provide methods to control the display of points (Appearance()), analysis (points collection) and so one.
 
-# StreamPoint collection
-
-StreamPoint is a predefined and extensible class. Geometric.Point can host and operate in real time on collections of StreamPoints.
+### StreamPoint
 
 Class has the following structure:
 
@@ -673,9 +700,6 @@ Class has the following structure:
 _latitude and longitude properties are Web Mercator coordinate values._
 
 _The value property can be string or object defined by customn Data Structure Class._
-
-[more about StreamPoint collection](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint#stream-point)
-
 
 ### Working with Points collection
 
@@ -966,7 +990,7 @@ The pattern property allows the use of _custom attributes_ defined for **StreamP
 
 [Configuring StreamPoint Tooltips with custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/StreamPoint%20tooltip/RTM%20Points%20Tooltips#readme)
 
-[Configuring StreamPoint Tooltips with hierarchical custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/StreamPoint%20tooltip/RTM%20tooltip%20hierarchical%20attr/README.md)
+[Configuring StreamPoint Tooltips with hierarchical custom attributes - example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/StreamPoint%20tooltip/RTM%20tooltip%20hierarchical%20attr#readme)
 
 
 ## Code Example
@@ -1024,7 +1048,6 @@ You can choose to have the StreamPoint collection clustered in the map. To do th
 	realTimeMap.Geometric.Points.clusteringAfterCollectionUpdate = true;
 
 [more about](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Working%20with%20StreamPoint/Clustering/README.md#clustering)
-
 
 # Geometric class for displaying different static shapes
 
@@ -1134,6 +1157,13 @@ _similar with leaflet documentation_
 
 
 _similar with leaflet documentation_
+
+## clearMap() method
+
+Data loaded from GeoJSON files can be deleted from the map using the clearMap() method:
+
+    await args.sender.Geometric.DataFromGeoJSON.clearMap();
+
 
 ### Appearance
 
@@ -1384,7 +1414,7 @@ Delete all connector lines with deleteConnectors() method:
 
 ## StreamLegend
 
-StreamLegend is a beta component (starting with 2.0.0.6) that allows the display of symbols applied through the Appearance() method. This component displays only the symbols of the StreamPoint elements added on the RealTime.Geometric.Points class.
+StreamLegend is a RealTimeMap component (starting with 2.0.0.6) that allows the display of symbols applied through the Appearance() method. This component displays only the symbols of the StreamPoint elements added on the RealTime.Geometric.Points class.
 
 1. Add the LeafletForBlazor namespace to the project, using the @using directive
 
@@ -1402,7 +1432,7 @@ in the **_Imports.razor** file of the project.
         </RealTimeMap>
 
 
-
+[StreamLegend example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend/basic)
 
 
 # Geometric.Computations class
@@ -1622,6 +1652,7 @@ Use the _nearbyThresholdTriggerClosed_ method to return to the initial appearanc
             };
     }
 
+
 # Esri Leaflet
 
 ## Esri basemaps
@@ -1636,8 +1667,6 @@ Use the _nearbyThresholdTriggerClosed_ method to return to the initial appearanc
 
 [more about](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Esri%20Leaflet#esri-reverse-geocode-task)
 
-
-
  _____________
 
 
@@ -1646,3 +1675,5 @@ O-L I
 Thank you for choosing this package!
 
 Laurentiu Ichim
+
+
