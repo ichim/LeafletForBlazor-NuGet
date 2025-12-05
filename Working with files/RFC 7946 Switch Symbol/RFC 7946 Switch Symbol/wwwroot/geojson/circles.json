@@ -1,0 +1,59 @@
+﻿{
+  "name": "Circes",
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Circle",
+        "coordinates": [ 44.44695351120105, 26.096702416100246 ],
+        "radius": 208
+      },
+      "properties": {
+        "name": "Piata Romana"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Circle",
+        "coordinates": [ 44.444433971415684, 26.093844322972007 ],
+        "radius": 408
+      },
+      "properties": {
+        "name": "Biserica Amzei"
+      }
+    }
+  ],
+  "appearance": {
+    "switch": {
+      "fieldName": "name",
+      "cases": [
+        {
+          "Piata Romana": {
+            "color": "green",
+            "opacity": 0.6,
+            "weight": 1
+          }
+        },
+        {
+          "Biserica Amzei": {
+            "color": "magenta",
+            "opacity": 0.8,
+            "weight": 1
+          }
+        }
+      ],
+      "default": {
+        "color": "black",
+        "opacity": 0.8,
+        "fillColor": "gray",
+        "fillOpacity": 0.6,
+        "weight": 1
+      }
+    },
+    "visibilityZoomLevels": {
+      "minZoomLevel": 14,
+      "maxZoomLevel": 16
+    }
+  }
+}

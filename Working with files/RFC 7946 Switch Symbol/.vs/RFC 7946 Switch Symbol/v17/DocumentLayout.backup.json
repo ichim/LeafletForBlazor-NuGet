@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\RFC 7946 Switch Symbol\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D57AC100-502B-471E-821B-F4CAAA3AD23F}|RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 switch symbol\\rfc 7946 switch symbol\\wwwroot\\geojson\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D57AC100-502B-471E-821B-F4CAAA3AD23F}|RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj|solutionrelative:rfc 7946 switch symbol\\wwwroot\\geojson\\points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57AC100-502B-471E-821B-F4CAAA3AD23F}|RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 switch symbol\\rfc 7946 switch symbol\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D57AC100-502B-471E-821B-F4CAAA3AD23F}|RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj|solutionrelative:rfc 7946 switch symbol\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57AC100-502B-471E-821B-F4CAAA3AD23F}|RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 switch symbol\\rfc 7946 switch symbol\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D57AC100-502B-471E-821B-F4CAAA3AD23F}|RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj|solutionrelative:rfc 7946 switch symbol\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57AC100-502B-471E-821B-F4CAAA3AD23F}|RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj|c:\\users\\40720\\source\\repos\\rfc 7946 switch symbol\\rfc 7946 switch symbol\\rfc 7946 switch symbol.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D57AC100-502B-471E-821B-F4CAAA3AD23F}|RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj|solutionrelative:rfc 7946 switch symbol\\rfc 7946 switch symbol.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "points.json",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol\\wwwroot\\geojson\\points.json",
+              "RelativeDocumentMoniker": "RFC 7946 Switch Symbol\\wwwroot\\geojson\\points.json",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol\\wwwroot\\geojson\\points.json",
+              "RelativeToolTip": "RFC 7946 Switch Symbol\\wwwroot\\geojson\\points.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-05T18:15:18.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "RFC 7946 Switch Symbol\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol\\Pages\\Index.razor",
+              "RelativeToolTip": "RFC 7946 Switch Symbol\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-05T18:14:05.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol\\_Imports.razor",
+              "RelativeDocumentMoniker": "RFC 7946 Switch Symbol\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol\\_Imports.razor",
+              "RelativeToolTip": "RFC 7946 Switch Symbol\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-05T18:13:18.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RFC 7946 Switch Symbol",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj",
+              "RelativeDocumentMoniker": "RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj",
+              "RelativeToolTip": "RFC 7946 Switch Symbol\\RFC 7946 Switch Symbol.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-05T18:13:09.439Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
