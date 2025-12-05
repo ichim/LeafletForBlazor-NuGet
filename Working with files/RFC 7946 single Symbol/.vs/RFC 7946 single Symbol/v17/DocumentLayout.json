@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with files\\RFC 7946 single Symbol\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with files\\rfc 7946 single symbol\\rfc 7946 single symbol\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8B2CF5BF-6DD3-4A17-8EEA-2438BF6E7A1B}|RFC 7946 single Symbol\\RFC 7946 single Symbol.csproj|solutionrelative:rfc 7946 single symbol\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with files\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "RFC 7946 single Symbol\\Pages\\Index.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with files\\RFC 7946 single Symbol\\RFC 7946 single Symbol\\Pages\\Index.razor",
+              "RelativeToolTip": "RFC 7946 single Symbol\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-05T11:25:31.874Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,3 @@
+C:\Users\40720\source\repos\RFC 7946 Tooltips\RFC 7946 Tooltips\wwwroot\geojson\polygons.json
+C:\Users\40720\source\repos\RFC 7946 Tooltips\RFC 7946 Tooltips\wwwroot\geojson\polylines.json
+C:\Users\40720\source\repos\RFC 7946 Tooltips\RFC 7946 Tooltips\wwwroot\geojson\circles.json
