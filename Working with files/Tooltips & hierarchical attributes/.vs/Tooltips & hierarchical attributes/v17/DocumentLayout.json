@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\Tooltips \u0026 hierarchical attributes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5880926D-0465-41DC-B23A-60C17171405E}|Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes.csproj|c:\\users\\40720\\source\\repos\\tooltips \u0026 hierarchical attributes\\tooltips \u0026 hierarchical attributes\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5880926D-0465-41DC-B23A-60C17171405E}|Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes.csproj|solutionrelative:tooltips \u0026 hierarchical attributes\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5880926D-0465-41DC-B23A-60C17171405E}|Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes.csproj|c:\\users\\40720\\source\\repos\\tooltips \u0026 hierarchical attributes\\tooltips \u0026 hierarchical attributes\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5880926D-0465-41DC-B23A-60C17171405E}|Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes.csproj|solutionrelative:tooltips \u0026 hierarchical attributes\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5880926D-0465-41DC-B23A-60C17171405E}|Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes.csproj|c:\\users\\40720\\source\\repos\\tooltips \u0026 hierarchical attributes\\tooltips \u0026 hierarchical attributes\\tooltips \u0026 hierarchical attributes.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{5880926D-0465-41DC-B23A-60C17171405E}|Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes.csproj|solutionrelative:tooltips \u0026 hierarchical attributes\\tooltips \u0026 hierarchical attributes.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Tooltips \u0026 hierarchical attributes\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes\\Pages\\Index.razor",
+              "RelativeToolTip": "Tooltips \u0026 hierarchical attributes\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-06T08:43:57.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes\\_Imports.razor",
+              "RelativeDocumentMoniker": "Tooltips \u0026 hierarchical attributes\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes\\_Imports.razor",
+              "RelativeToolTip": "Tooltips \u0026 hierarchical attributes\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-06T08:42:58.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tooltips \u0026 hierarchical attributes",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes.csproj",
+              "RelativeDocumentMoniker": "Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes.csproj",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes.csproj",
+              "RelativeToolTip": "Tooltips \u0026 hierarchical attributes\\Tooltips \u0026 hierarchical attributes.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-06T08:42:17.567Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

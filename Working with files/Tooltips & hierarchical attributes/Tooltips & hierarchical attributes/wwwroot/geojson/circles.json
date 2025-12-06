@@ -1,0 +1,51 @@
+{
+  "name": "Circles",
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Circle",
+        "coordinates": [ 44.44695351120105, 26.096702416100246 ],
+        "radius": 20
+      },
+      "properties": {
+        "name": "Romana Square",
+        "historicalInfo": {
+          "established": 1900,
+          "foundedBy": "Gheorghe Grigore Cantacuzino"
+        },
+        "images": {
+          "url1": "https://upload.wikimedia.org/wikipedia/commons/0/06/Academia_de_Studii_Economice_-_Piata_Romana.jpg",
+          "url2": "https://upload.wikimedia.org/wikipedia/commons/d/de/Bucharest_-_Piata_Romana_pano_01.jpg"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Circle",
+        "coordinates": [ 44.444433971415684, 26.093844322972007 ],
+        "radius": 40
+      },
+      "properties": {
+        "name": "Amzei Church",
+        "historicalInfo": {
+          "established": 1815,
+          "foundedBy": "Dimitrie Maimarolu"
+        },
+        "images": {
+          "url1": "https://upload.wikimedia.org/wikipedia/commons/3/37/Biserica_Amzei.jpg",
+          "url2": "https://upload.wikimedia.org/wikipedia/commons/6/64/Biserica_Amzei%2C_imagine_frontala.jpg"
+        }
+      }
+    }
+  ],
+  "appearance": {
+    "color": "red",
+    "opacity": 0.8,
+    "weight": 2,
+    "fillColor": "yellow",
+    "fillOpacity": 0.5
+  },
+  "tooltip": { "content": "<b>${name}</b><br/>Founded By: ${historicalInfo.foundedBy}<br/>Established: ${historicalInfo.established}<br/><img width='120px' height='120px' src = '${images.url1}'></img>" }
+}
