@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\Tooltpis \u0026 Pie Chart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3BE6062-5A43-46F3-9E29-CB3D8C7987D5}|Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj|c:\\users\\40720\\source\\repos\\tooltpis \u0026 pie chart\\tooltpis \u0026 pie chart\\wwwroot\\geojson\\circles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A3BE6062-5A43-46F3-9E29-CB3D8C7987D5}|Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj|solutionrelative:tooltpis \u0026 pie chart\\wwwroot\\geojson\\circles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3BE6062-5A43-46F3-9E29-CB3D8C7987D5}|Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj|c:\\users\\40720\\source\\repos\\tooltpis \u0026 pie chart\\tooltpis \u0026 pie chart\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3BE6062-5A43-46F3-9E29-CB3D8C7987D5}|Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj|solutionrelative:tooltpis \u0026 pie chart\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3BE6062-5A43-46F3-9E29-CB3D8C7987D5}|Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj|c:\\users\\40720\\source\\repos\\tooltpis \u0026 pie chart\\tooltpis \u0026 pie chart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3BE6062-5A43-46F3-9E29-CB3D8C7987D5}|Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj|solutionrelative:tooltpis \u0026 pie chart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3BE6062-5A43-46F3-9E29-CB3D8C7987D5}|Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj|c:\\users\\40720\\source\\repos\\tooltpis \u0026 pie chart\\tooltpis \u0026 pie chart\\tooltpis \u0026 pie chart.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A3BE6062-5A43-46F3-9E29-CB3D8C7987D5}|Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj|solutionrelative:tooltpis \u0026 pie chart\\tooltpis \u0026 pie chart.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "circles.json",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart\\wwwroot\\geojson\\circles.json",
+              "RelativeDocumentMoniker": "Tooltpis \u0026 Pie Chart\\wwwroot\\geojson\\circles.json",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart\\wwwroot\\geojson\\circles.json",
+              "RelativeToolTip": "Tooltpis \u0026 Pie Chart\\wwwroot\\geojson\\circles.json",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAEIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-09T09:18:28.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Tooltpis \u0026 Pie Chart\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart\\Pages\\Index.razor",
+              "RelativeToolTip": "Tooltpis \u0026 Pie Chart\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T09:16:12.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart\\_Imports.razor",
+              "RelativeDocumentMoniker": "Tooltpis \u0026 Pie Chart\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart\\_Imports.razor",
+              "RelativeToolTip": "Tooltpis \u0026 Pie Chart\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-09T09:15:56.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tooltpis \u0026 Pie Chart",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj",
+              "RelativeDocumentMoniker": "Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj",
+              "RelativeToolTip": "Tooltpis \u0026 Pie Chart\\Tooltpis \u0026 Pie Chart.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-09T09:14:34.342Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
