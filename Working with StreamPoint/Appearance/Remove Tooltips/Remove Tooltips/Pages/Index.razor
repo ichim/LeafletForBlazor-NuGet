@@ -1,0 +1,44 @@
+﻿@page "/"
+
+@using PointStream.Data
+@inject NavigationManager NavigationManager
+<button onclick="@onClick">Remove C (type) tooltips</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+@code{
+
+
+    RealTimeMap rtm;
+
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+       location = new RealTimeMap.Location()
+       {
+            latitude = 44.444433971415684,
+            longitude = 26.093844322972007
+        },
+        zoomLevel=14
+    };
+
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        var path = NavigationManager.Uri;
+        await args.sender.Geometric.Points.upload(new DataSource().pointsCollection);
+     
+        args.sender.Geometric.Points.Appearance((item)=>item.type == "Type A" || item.type == "Type C").pattern = new RealTimeMap.PointTooltip()
+        {
+            content = "<b>Information A and C</b><br/><label>${type}</label><br/><label>${value}</label>",
+            permanent = true
+        };
+        args.sender.Geometric.Points.Appearance((item) => item.type == "Type B").pattern = new RealTimeMap.PointTooltip()
+        {
+            content = "<b>Information B</b><br/><label>${type}</label><br/><label>${value}</label>",
+            permanent = true
+        };
+    }
+
+    private void onClick()
+    {
+        rtm.Geometric.Points.Appearance((item) => item.type == "Type C").pattern = new RealTimeMap.WithoutTooltip();
+    }
+}
