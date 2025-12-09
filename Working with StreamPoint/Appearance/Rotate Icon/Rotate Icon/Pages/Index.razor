@@ -1,0 +1,53 @@
+﻿@page "/"
+@using PointStream.Data
+@inject NavigationManager NavigationManager
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+@code {
+
+
+    RealTimeMap rtm;
+
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 44.444433971415684,
+            longitude = 26.093844322972007
+        },
+        zoomLevel = 14
+    };
+
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {//5134
+        var path = NavigationManager.Uri;
+        var uriIcon1 = $"{path}icons/icon1.png";
+        var uriIcon2 = $"{path}icons/icon2.png";
+        var uriIcon3 = $"{path}icons/icon3.png";
+        var uriIcon4 = $"{path}icons/icon4.png";
+        await args.sender.Geometric.Points.upload(new DataSource().pointsCollection);
+        args.sender.Geometric.Points.Appearance((item) => item.type == "Type A").pattern = new RealTimeMap.PointIcon()
+        {
+            iconUrl = uriIcon1,
+            iconSize = new int[2] { 32, 32 },
+            rotationAngle = -45
+        };
+        args.sender.Geometric.Points.Appearance((item) => item.type == "Type B").pattern = new RealTimeMap.PointIcon()
+        {
+            iconUrl = uriIcon2,
+            iconSize = new int[2] { 32, 32 },
+            rotationAngle = 45
+        };
+        args.sender.Geometric.Points.Appearance((item) => item.type == "Type C").pattern = new RealTimeMap.PointIcon()
+        {
+            iconUrl = uriIcon3,
+            iconSize = new int[2] { 32, 32 },
+            rotationAngle = 90
+        };
+
+
+
+    }
+
+   
+}
