@@ -1,0 +1,27 @@
+﻿@page "/"
+
+@inject NavigationManager NavigationManager
+
+<RealTimeMap Parameters="parameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@OnAfterMapLoaded"></RealTimeMap>
+
+@code {
+    RealTimeMap.LoadParameters parameters = new RealTimeMap.LoadParameters()  //general map settings
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 44.444433971415684,
+            longitude = 26.093844322972007,
+        },
+        zoomLevel = 16
+    };
+    public async Task OnAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        var path = NavigationManager.Uri;
+        List<string> jsonFiles = new List<string>() {
+                $"{path}\\geojson\\{"points.json"}",
+        };
+        await args.sender.Geometric.DataFromGeoJSON.addFromFiles(jsonFiles.ToArray());
+        await Task.CompletedTask;
+
+    }
+}
