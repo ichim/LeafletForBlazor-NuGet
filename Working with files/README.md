@@ -1,3 +1,4 @@
 # Working with files
 
-> All formats used in the code examples are based on the format 
+> All formats used in the code examples are based on the format RFC 7946.
+> 
