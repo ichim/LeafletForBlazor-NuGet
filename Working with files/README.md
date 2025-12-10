@@ -11,8 +11,4 @@
     "geometry": {
       "type": "Point",
       "coordinates": [ 44.44695351120105, 26.096702416100246 ]
-    },
-    "properties": {
-      "name": "Piata Romana"
-    }
-  }|
+    }}|
