@@ -12,3 +12,4 @@
 |Circle| {"type": "Feature","geometry": {"type": "Circle","coordinates": [, ], "radius":2}}|[RFC 7946](https://datatracker.ietf.org/doc/html/rfc7946)|
 
 
+[Pure RFC 7946 format example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20files/RFC%207946%20formats)
