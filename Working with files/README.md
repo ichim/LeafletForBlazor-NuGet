@@ -9,4 +9,6 @@
 |Point| {"type": "Feature","geometry": {"type": "Point","coordinates": [, ]}}|[RFC 7946](https://datatracker.ietf.org/doc/html/rfc7946)|
 |Polyline|{"type": "Feature","geometry": {"type": "Polyline","coordinates": [[[, ]]]}|[RFC 7946](https://datatracker.ietf.org/doc/html/rfc7946)|
 |Polygon| {"type": "Feature","geometry": {"type": "Polygon","coordinates": [[[, ]]]}}|[RFC 7946](https://datatracker.ietf.org/doc/html/rfc7946)|
+|Circle| {"type": "Feature","geometry": {"type": "Circle","coordinates": [, ], "radius":2}}|[RFC 7946](https://datatracker.ietf.org/doc/html/rfc7946)|
+
 
