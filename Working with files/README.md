@@ -4,6 +4,7 @@
 > 
 
 
-|Geometry|Structure|
-|---|---|
-|point| {"type": "Feature","geometry": {"type": "Point","coordinates": [  ]}}|
+|Geometry|Structure|Format|
+|----|----|---\|
+|Point| {"type": "Feature","geometry": {"type": "Point","coordinates": [  ]}}|[RFC 7946](https://datatracker.ietf.org/doc/html/rfc7946)|
+|Polyline||[RFC 7946](https://datatracker.ietf.org/doc/html/rfc7946)|
