@@ -7,4 +7,4 @@
 |Geometry|Structure|
 |---|---|
 |point| {"type": "Feature","geometry": 
-{"type": "Point","coordinates": [  ]}}|
+      {"type": "Point","coordinates": [  ]}}|
