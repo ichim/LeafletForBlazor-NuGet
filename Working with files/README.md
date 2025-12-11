@@ -34,6 +34,35 @@ Is an RFC 7946 format supplemented with the definition of a unique symbol.
     }
 
 
+Example code:
+
+    {
+      "name": "Points of Interes",
+      "data": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [ 44.44695351120105, 26.096702416100246 ]
+          },
+          "properties": {
+            "name": "Piata Romana"
+          }
+        }
+      ],
+      "appearance": {
+        "color": "Red",
+        "radius": 8,
+        "opacity": 0.6,
+        "weight": 2,
+        "visibilityZoomLevels": {
+          "minZoomLevel": 12,
+          "maxZoomLevel": 16
+        }
+      }
+    }
+
+
 [RFC 7946 and unique symbol example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20files/RFC%207946%20single%20Symbol)
 
 ## RFC 7946 format and switch symbol(s) statement
