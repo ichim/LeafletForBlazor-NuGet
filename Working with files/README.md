@@ -18,6 +18,22 @@
 
 Is an RFC 7946 format supplemented with the definition of a unique symbol.
 
+    {
+      "name": "Points of Interes",
+      "data": [RFC 7946],
+      "appearance": {
+        "color": "Red",
+        "radius": 8,
+        "opacity": 0.6,
+        "weight": 2,
+        "visibilityZoomLevels": {
+          "minZoomLevel": 12,
+          "maxZoomLevel": 16
+        }
+      }
+    }
+
+
 [RFC 7946 and unique symbol example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20files/RFC%207946%20single%20Symbol)
 
 ## RFC 7946 format and switch symbol(s) statement
