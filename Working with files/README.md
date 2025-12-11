@@ -165,3 +165,11 @@ Example code:
 
 [RFC 7946 and switch symbol(s) statement example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20files/RFC%207946%20Switch%20Symbol)
 
+## Tooltips
+
+[Tooltips examle code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20files/RFC%207946%20Tooltips)
+
+## Tooltips and Hierarchical Attributes
+
+[Tooltips Hierachical Attributes example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20files/Tooltips%20%26%20hierarchical%20attributes)
+
