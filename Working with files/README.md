@@ -19,9 +19,9 @@
 Is an RFC 7946 format supplemented with the definition of a unique symbol.
 
     {
-      "name": "Points of Interes",
-      "data": [RFC 7946],
-      "appearance": {
+      "name": "Points of Interes",     //List Control
+      "data": [RFC 7946],              //RFC 7946 compliant data format
+      "appearance": {                  //unique symbol definition
         "color": "Red",
         "radius": 8,
         "opacity": 0.6,
