@@ -24,5 +24,5 @@ Is an RFC 7946 format supplemented with the definition of a unique symbol.
 
 Is an RFC 7946 format supplemented with switch symbols statement.
 
-[RFC 7946 and switch symbol(s) statement example code]()
+[RFC 7946 and switch symbol(s) statement example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20files/RFC%207946%20Switch%20Symbol)
 
