@@ -19,7 +19,7 @@
 Is an RFC 7946 format supplemented with the definition of a unique symbol.
 
     {
-      "name": "Points of Interes",     //List Control
+      "name": "Points of Interes",     //An item will appear in the List Control
       "data": [RFC 7946],              //RFC 7946 compliant data format
       "appearance": {                  //unique symbol definition
         "color": "Red",
@@ -70,9 +70,9 @@ Example code:
 Is an RFC 7946 format supplemented with switch symbols statement.
 
     {
-      "name": "Area",
-      "data": [RFC 7946],
-      "appearance": {
+      "name": "Area",                        //An item will appear in the List Control
+      "data": [RFC 7946],                    //RFC 7946 compliant data formatRFC 7946 compliant data format
+      "appearance": {                        //appearance and switch (statement) symbols JSON definition
         "switch": {
           "fieldName": "name",
           "cases": [
