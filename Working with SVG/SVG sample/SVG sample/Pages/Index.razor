@@ -1,0 +1,89 @@
+﻿@page "/"
+<button onclick="@clearAllFormMap">Clear SVG from RealTimeMap</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+
+@code {
+    RealTimeMap rtm;
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 44.444433971415684,
+            longitude = 26.093844322972007
+        },
+        zoomLevel = 8,
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        List<RealTimeMap.SVGPoint> svgPoints = new List<RealTimeMap.SVGPoint>();
+        svgPoints.Add(new RealTimeMap.SVGPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 44.947579629545736,
+                longitude = 26.014289670509296
+            },
+            dimension = 20,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                maxZoomLevel = 12,
+                minZoomLevel = 8
+            },
+            htmlContent = "<defs><radialGradient id='grad4' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'><stop offset='0%' stop-color='blue' /><stop offset='100%' stop-color='white' /></radialGradient></defs><polygon  style='fill-opacity:0.62;stroke:navy;stroke-width:2' points='50,0 100,50 50,100 0,50' fill='url(#grad4)'  />",
+
+        });
+        svgPoints.Add(new RealTimeMap.SVGPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 44.444433971415684,
+                longitude = 26.093844322972007
+            },
+            dimension = 40,
+            htmlContent = "<defs><radialGradient id='grad2' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'><stop offset='0%' stop-color='red' /><stop offset='100%' stop-color='yellow' /></radialGradient></defs><circle style='fill-opacity:0.62' cx='50' cy='50' r='50' fill='url(#grad2)' />",
+
+        });
+        svgPoints.Add(new RealTimeMap.SVGPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 43.969016218783956,
+                longitude = 25.337364355414202
+            },
+            dimension = 28,
+            htmlContent = "<defs><radialGradient id='grad8' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'><stop offset='0%' stop-color='orange' /><stop offset='100%' stop-color='red' /></radialGradient></defs><polygon style='fill-opacity:0.62;stroke:brown;stroke-width:2' points='30,40 30,30 40,30 50,0 60,30 70,30 70,40 100,50 70,60 70,70 60,70 50,100 40,70 30,70 30,60 0,50' fill='url(#grad8)'  />",
+
+        });
+        svgPoints.Add(new RealTimeMap.SVGPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 44.92709220393816,
+                longitude = 25.46088822799261
+            },
+            dimension = 28,
+            htmlContent = "<defs><radialGradient id='grad20' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'><stop offset='0%' stop-color='#800080' /><stop offset='100%' stop-color='#d8bfd8' /></radialGradient></defs><polygon transform='translate(35, -35) rotate(45)' style='fill-opacity:0.62;stroke:#800080;stroke-width:2' points='30,40 30,30 40,30 50,0 60,30 70,30 70,40 100,50 70,60 70,70 60,70 50,100 40,70 30,70 30,60 0,50' fill='url(#grad20)'  />",
+
+        });
+        svgPoints.Add(new RealTimeMap.SVGPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 44.860104788167774,
+                longitude = 24.871279202693675
+            },
+            dimension = 28,
+            htmlContent = "<defs><radialGradient id='grad6' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'><stop offset='0%' stop-color='yellow' /><stop offset='100%' stop-color='#224504' /></radialGradient></defs><polygon  style='fill-opacity:0.62;stroke:green;stroke-width:2' points='40,40 50,0 60,40 100,50 60,60 50,100 40,60 0,50' fill='url(#grad6)'  />",
+
+        });
+        foreach (var svgPoint in svgPoints)
+            await args.sender.Geometric.DisplaySVGFromHTML.addItem(svgPoint);
+    }
+
+    private async Task clearAllFormMap()
+    {
+        await rtm.Geometric.DisplaySVGFromHTML.clearAll();
+    }
+
+}

@@ -1,0 +1,76 @@
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\appsettings.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\SVG sample.staticwebassets.runtime.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\SVG sample.staticwebassets.endpoints.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\SVG sample.exe
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\SVG sample.deps.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\SVG sample.runtimeconfig.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\SVG sample.dll
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\SVG sample.pdb
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\LeafletForBlazor.dll
+C:\Users\40720\source\repos\SVG sample\SVG sample\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.csproj.AssemblyReference.cache
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.AssemblyInfoInputs.cache
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.AssemblyInfo.cs
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.csproj.CoreCompileInputs.cache
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.RazorAssemblyInfo.cache
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.RazorAssemblyInfo.cs
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\scopedcss\bundle\SVG sample.styles.css
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\scopedcss\projectbundle\SVG sample.bundle.scp.css
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\zh00by7qvg-u5dqj233yj.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\rr3rj5g4ln-1g074axppc.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\cy63s9ztcm-c09yrar5j0.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\89vpdvt1vh-klzhkh34ny.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\7bnlzs5o4a-pwm550k0yp.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\nxsxw5m2f2-mm30od2jer.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\j53yhp3yla-j6m2ivp4h8.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\kkc6uvi71d-hn5qixqzw1.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\ionkwe6wei-xb41vbz65x.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\q2i8n5nezh-h2qp0zwxkj.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\wi6e1j866k-naybt4pb3n.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\zu1h5rhl30-27ix8o99a7.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\1bm7x6s2mt-ynwzuzzhbg.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\raefxan687-9qvnlwgbu2.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\5ybmuwzmi3-2kcfxnfqjt.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\cv1ms4c7rc-030g0k9ean.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\z6bttzzi28-c4o5mu4gtf.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\ear0a5xez9-29xsovyp6v.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\sb68bccq4t-7nsu268oq0.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\w0r02luum2-fphufpfwwi.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\cw0hnjbl5k-7jz4je8dd8.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\098x4xgm9n-fcfons0sbr.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\tph9mtouh6-hg67wea390.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\uwmspg5rb8-fc2gum9evd.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\wsmwy0eio2-iandt4iq9y.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\qqqreou24n-612w08nje5.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\n5bg22b511-krlg6xk2d7.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\k2njhd1tkg-9ecav2yjas.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\gwbybnbcrd-bpk8xqwxhs.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\m90lcj4g7e-8inm30yfxf.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\xr5kx0qux5-cmapd0fi15.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\r0c8z5g2lk-wk8x8xm0ah.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\bso6xlo358-sjnzgf7e1h.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\cwfwt31ee0-5bzwdl5l6x.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\cbhbjz7s3b-zh9s866nx2.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\3tqz3658i2-037l07h7lk.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\dbvarsd3m2-o2gqeiewwz.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\compressed\5zi9h0v49f-2b9kv5wlw1.gz
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.csproj.Up2Date
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.dll
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\refint\SVG sample.dll
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.pdb
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\SVG sample.genruntimeconfig.cache
+C:\Users\40720\source\repos\SVG sample\SVG sample\obj\Debug\net9.0\ref\SVG sample.dll
