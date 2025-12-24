@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\SVG Star\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD7B2CD-042B-4A6B-8EB1-343C75E416CA}|SVG Star\\SVG Star.csproj|c:\\users\\40720\\source\\repos\\svg star\\svg star\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCD7B2CD-042B-4A6B-8EB1-343C75E416CA}|SVG Star\\SVG Star.csproj|solutionrelative:svg star\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD7B2CD-042B-4A6B-8EB1-343C75E416CA}|SVG Star\\SVG Star.csproj|c:\\users\\40720\\source\\repos\\svg star\\svg star\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCD7B2CD-042B-4A6B-8EB1-343C75E416CA}|SVG Star\\SVG Star.csproj|solutionrelative:svg star\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\SVG Star\\SVG Star\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "SVG Star\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\SVG Star\\SVG Star\\Pages\\Index.razor",
+              "RelativeToolTip": "SVG Star\\Pages\\Index.razor",
+              "ViewState": "AgIAACsAAAAAAAAAAAAwwE4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T08:33:56.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\SVG Star\\SVG Star\\_Imports.razor",
+              "RelativeDocumentMoniker": "SVG Star\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\SVG Star\\SVG Star\\_Imports.razor",
+              "RelativeToolTip": "SVG Star\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T08:33:33.986Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
