@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\PieChartPoint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{084FAA01-D3D3-471E-AEB7-3A4C4594A52B}|PieChartPoint\\PieChartPoint.csproj|c:\\users\\40720\\source\\repos\\piechartpoint\\piechartpoint\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{084FAA01-D3D3-471E-AEB7-3A4C4594A52B}|PieChartPoint\\PieChartPoint.csproj|solutionrelative:piechartpoint\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{084FAA01-D3D3-471E-AEB7-3A4C4594A52B}|PieChartPoint\\PieChartPoint.csproj|c:\\users\\40720\\source\\repos\\piechartpoint\\piechartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{084FAA01-D3D3-471E-AEB7-3A4C4594A52B}|PieChartPoint\\PieChartPoint.csproj|solutionrelative:piechartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{084FAA01-D3D3-471E-AEB7-3A4C4594A52B}|PieChartPoint\\PieChartPoint.csproj|c:\\users\\40720\\source\\repos\\piechartpoint\\piechartpoint\\piechartpoint.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{084FAA01-D3D3-471E-AEB7-3A4C4594A52B}|PieChartPoint\\PieChartPoint.csproj|solutionrelative:piechartpoint\\piechartpoint.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\PieChartPoint\\PieChartPoint\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "PieChartPoint\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\PieChartPoint\\PieChartPoint\\Pages\\Index.razor",
+              "RelativeToolTip": "PieChartPoint\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T18:57:11.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\PieChartPoint\\PieChartPoint\\_Imports.razor",
+              "RelativeDocumentMoniker": "PieChartPoint\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\PieChartPoint\\PieChartPoint\\_Imports.razor",
+              "RelativeToolTip": "PieChartPoint\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T18:56:49.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PieChartPoint",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\PieChartPoint\\PieChartPoint\\PieChartPoint.csproj",
+              "RelativeDocumentMoniker": "PieChartPoint\\PieChartPoint.csproj",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\PieChartPoint\\PieChartPoint\\PieChartPoint.csproj",
+              "RelativeToolTip": "PieChartPoint\\PieChartPoint.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-26T18:56:42.873Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
