@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SVG sample")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7188f608a8a36bb8b606a856293d8fb261d2d4f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc62d52e02706adfdcf9eee8bc601ca4eaf24ace")]
 [assembly: System.Reflection.AssemblyProductAttribute("SVG sample")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SVG sample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

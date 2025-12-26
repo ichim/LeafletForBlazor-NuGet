@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "LeafletForBlazor/2.4.0.4": {
+      "LeafletForBlazor/2.4.0.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0",
@@ -250,10 +250,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/2.4.0.4": {
-      "sha512": "XMRNEUZiqWwdLLmqHevI5Cg8pxitr89ihJxw+/3XNQ9wG/YVSeEdaEtezmhc3jPOpqSHbBkwoNStnEkX9V+3nA==",
+    "LeafletForBlazor/2.4.0.6": {
+      "sha512": "bDwi13KslLrYIrdtvNQfmUbMdgedbmJJo10oUAsPL3KDvPb/GHqg5Z78tSs+99BdAH37wMNX+m0IDLpuefMBnA==",
       "type": "package",
-      "path": "leafletforblazor/2.4.0.4",
+      "path": "leafletforblazor/2.4.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -266,7 +266,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net9.0/map_color.ico",
-        "leafletforblazor.2.4.0.4.nupkg.sha512",
+        "leafletforblazor.2.4.0.6.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net9.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -287,11 +287,9 @@
         "staticwebassets/RealTime/layers/basemap.js",
         "staticwebassets/RealTime/layers/geometricLayers.js",
         "staticwebassets/RealTime/layers/svg.js",
-        "staticwebassets/background02.png",
         "staticwebassets/basemap_layers.js",
         "staticwebassets/create_on_the_fly_css.js",
         "staticwebassets/custom_map_controls.js",
-        "staticwebassets/docs/images/map000test.png",
         "staticwebassets/esri_interops.js",
         "staticwebassets/helper.js",
         "staticwebassets/other_overlays.js",
@@ -661,7 +659,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "LeafletForBlazor >= 2.4.0.4"
+      "LeafletForBlazor >= 2.4.0.6"
     ]
   },
   "packageFolders": {
@@ -671,11 +669,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\40720\\source\\repos\\SVG Star\\SVG Star\\SVG Star.csproj",
+      "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with SVG\\SVG Star\\SVG Star\\SVG Star.csproj",
       "projectName": "SVG Star",
-      "projectPath": "C:\\Users\\40720\\source\\repos\\SVG Star\\SVG Star\\SVG Star.csproj",
+      "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with SVG\\SVG Star\\SVG Star\\SVG Star.csproj",
       "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\40720\\source\\repos\\SVG Star\\SVG Star\\obj\\",
+      "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with SVG\\SVG Star\\SVG Star\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -717,7 +715,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[2.4.0.4, )"
+            "version": "[2.4.0.6, )"
           }
         },
         "imports": [
