@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj",
         "projectName": "GaugeChartPoint",
-        "projectPath": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj",
         "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint\\GaugeChartPoint\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,7 +53,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.4.0.8, )"
+              "version": "[2.4.2, )"
             }
           },
           "imports": [

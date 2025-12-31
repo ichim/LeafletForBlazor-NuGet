@@ -1,70 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{78F84812-CCA6-451C-9D21-31A2C6E3F924}|GaugeChartPoint\\GaugeChartPoint.csproj|c:\\users\\40720\\source\\repos\\gaugechartpoint\\gaugechartpoint\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{78F84812-CCA6-451C-9D21-31A2C6E3F924}|GaugeChartPoint\\GaugeChartPoint.csproj|solutionrelative:gaugechartpoint\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78F84812-CCA6-451C-9D21-31A2C6E3F924}|GaugeChartPoint\\GaugeChartPoint.csproj|c:\\users\\40720\\source\\repos\\gaugechartpoint\\gaugechartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{78F84812-CCA6-451C-9D21-31A2C6E3F924}|GaugeChartPoint\\GaugeChartPoint.csproj|solutionrelative:gaugechartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78F84812-CCA6-451C-9D21-31A2C6E3F924}|GaugeChartPoint\\GaugeChartPoint.csproj|c:\\users\\40720\\source\\repos\\gaugechartpoint\\gaugechartpoint\\gaugechartpoint.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{78F84812-CCA6-451C-9D21-31A2C6E3F924}|GaugeChartPoint\\GaugeChartPoint.csproj|solutionrelative:gaugechartpoint\\gaugechartpoint.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\Pages\\Index.razor",
-              "RelativeDocumentMoniker": "GaugeChartPoint\\Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\Pages\\Index.razor",
-              "RelativeToolTip": "GaugeChartPoint\\Pages\\Index.razor",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAF0AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-31T11:29:59.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\_Imports.razor",
-              "RelativeDocumentMoniker": "GaugeChartPoint\\_Imports.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\_Imports.razor",
-              "RelativeToolTip": "GaugeChartPoint\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-31T11:29:10.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GaugeChartPoint",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj",
-              "RelativeDocumentMoniker": "GaugeChartPoint\\GaugeChartPoint.csproj",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj",
-              "RelativeToolTip": "GaugeChartPoint\\GaugeChartPoint.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-31T11:28:31.883Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

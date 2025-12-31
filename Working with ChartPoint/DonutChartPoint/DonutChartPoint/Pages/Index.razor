@@ -1,0 +1,111 @@
+﻿@page "/"
+
+<button onclick="@clearAllCharts">Clear all charts from map</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+
+@code {
+    RealTimeMap rtm;
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 51.02094731770253,
+            longitude = 4.523290395225346,
+        },
+        zoomLevel = 10
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        List<RealTimeMap.DonutChartPoint> charts = new List<RealTimeMap.DonutChartPoint>();
+        charts.Add(new RealTimeMap.DonutChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.85073773727975,
+                longitude = 4.357868777032773
+            },
+            values = (new List<double>() { 15, 45, 20, 20 }).ToArray(),
+            colors = (new List<string>() { "#32cd32", "#ffe4c4", "#dda0dd", "pink" }).ToArray(),
+            labels = (new List<string>() { "Dacia", "Pegeut", "Audi", "Mini" }).ToArray(),
+            expandedIndex = 0,
+            fontSize = 10,
+            dimension = 40,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 8,
+                maxZoomLevel = 14
+            }
+        });
+
+        charts.Add(new RealTimeMap.DonutChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.878884914917606,
+                longitude = 4.700185924924764
+            },
+            values = (new List<double>() { 20, 65, 15 }).ToArray(),
+            colors = (new List<string>() { "azure", "yellow", "#FF8C00" }).ToArray(),
+            labels = (new List<string>() { "Samsung", "Bosch", "Gorenje" }).ToArray(),
+            expandedIndex = 0,
+            fontSize = 9,
+            dimension = 36,
+            heightCircularCrown = 34,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 8,
+                maxZoomLevel = 14
+            }
+        });
+
+        charts.Add(new RealTimeMap.DonutChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.02785015312669,
+                longitude = 4.4787052530511895
+            },
+            values = (new List<double>() { 15, 55, 15, 15 }).ToArray(),
+            colors = (new List<string>() { "red", "#ADD8E6", "#FF8C00", "#FF00FF" }).ToArray(),
+            labels = (new List<string>() { "cheese", "sausag.", "pretzel", "cacke" }).ToArray(),
+            expandedIndex = 2,
+            fontSize = 10,
+            dimension = 30,
+            heightCircularCrown = 28,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 8,
+                maxZoomLevel = 14
+            }
+        });
+
+        charts.Add(new RealTimeMap.DonutChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.10290763552592,
+                longitude = 3.9819789339909764
+            },
+            values = (new List<double>() { 30, 55, 15 }).ToArray(),
+            colors = (new List<string>() { "#ADFF2F", "#00FFFF", "#FF8C00" }).ToArray(),
+            labels = (new List<string>() { "music", "history", "tradit." }).ToArray(),
+            expandedIndex = 2,
+            fontSize = 10,
+            dimension = 38,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 8,
+                maxZoomLevel = 14
+            }
+        });
+
+        foreach (var item in charts)
+            await args.sender.Geometric.DisplayChartFromObject.addChartPoint(item);
+    }
+    private async Task clearAllCharts()
+    {
+        await rtm.Geometric.DisplayChartFromObject.clearAll();
+    }
+
+}

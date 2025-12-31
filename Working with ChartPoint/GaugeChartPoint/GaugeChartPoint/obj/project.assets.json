@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "LeafletForBlazor/2.4.0.8": {
+      "LeafletForBlazor/2.4.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0",
@@ -250,10 +250,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/2.4.0.8": {
-      "sha512": "3F1R9RCdA6MsPYWfUqiv4Xhcip8gzg0kgj5toq0DuEcCw4+LSAo1DkD6NXLU9GJ4fQynCXs8m/mV3/68reyQGQ==",
+    "LeafletForBlazor/2.4.2": {
+      "sha512": "rF/Pddk0E10TEHOh6YUDZfUYhgbOLUhqIut4DKc79D74wnGNmrswMK/S3TQzOkL9Rp6sauA0YIY3bjLIhuPgIA==",
       "type": "package",
-      "path": "leafletforblazor/2.4.0.8",
+      "path": "leafletforblazor/2.4.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -266,7 +266,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net9.0/map_color.ico",
-        "leafletforblazor.2.4.0.8.nupkg.sha512",
+        "leafletforblazor.2.4.2.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net9.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -659,7 +659,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "LeafletForBlazor >= 2.4.0.8"
+      "LeafletForBlazor >= 2.4.2"
     ]
   },
   "packageFolders": {
@@ -669,11 +669,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj",
+      "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj",
       "projectName": "GaugeChartPoint",
-      "projectPath": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj",
+      "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint\\GaugeChartPoint\\GaugeChartPoint.csproj",
       "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint\\GaugeChartPoint\\obj\\",
+      "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint\\GaugeChartPoint\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -715,7 +715,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[2.4.0.8, )"
+            "version": "[2.4.2, )"
           }
         },
         "imports": [
