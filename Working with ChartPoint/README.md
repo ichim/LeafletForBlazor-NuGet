@@ -106,3 +106,5 @@ Clear all chart items from RealTimeMap:
 
     await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
 
+[GaugeChartPoint](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint/GaugeChartPoint)
+
