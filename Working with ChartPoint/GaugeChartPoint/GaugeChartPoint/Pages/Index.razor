@@ -1,0 +1,157 @@
+﻿@page "/"
+
+<button onclick="@removeAllLayers">Clear All Chart Points from map</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 8rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+
+@code {
+    private RealTimeMap rtm;
+   
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 51.02094731770253,
+            longitude = 4.523290395225346,
+        },
+        zoomLevel = 10
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        List<RealTimeMap.GaugeChartPoint> gaugePoints = new List<RealTimeMap.GaugeChartPoint>();
+        gaugePoints.Add(new RealTimeMap.GaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.02094731770253,
+                longitude = 4.523290395225346,
+            },
+            valueStart = 0,
+            valueStop = 100,
+            value = 82,
+            colorStart = "red",
+            colorStop = "#8F2A18",
+            heightCircularCrown = 18,
+
+            fontColorStart = "black",
+            fontColorMiddle = "white",
+            fontColorStop = "yellow",
+            fontSize = 8,
+            dimension = 28,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 6,
+                maxZoomLevel = 14
+            }
+        });
+        gaugePoints.Add(new RealTimeMap.GaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.10290763552592,
+                longitude = 3.9819789339909764
+            },
+            valueStart = 0,
+            valueStop = 100,
+            value = 44,
+            colorStart = "white",
+            colorStop = "indianred",
+            heightCircularCrown = 18,
+
+            fontColorStart = "black",
+            fontColorMiddle = "black",
+            fontColorStop = "yellow",
+            fontSize = 8,
+            dimension = 28,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 8,
+                maxZoomLevel = 14
+            }
+        });
+        gaugePoints.Add(new RealTimeMap.GaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.877960977208936,
+                longitude = 4.26815536656923
+            },
+            valueStart = 0,
+            valueStop = 120,
+            value = 62,
+            colorStart = "white",
+            colorStop = "blue",
+            heightCircularCrown = 18,
+
+            fontColorStart = "black",
+            fontColorMiddle = "white",
+            fontColorStop = "yellow",
+            fontSize = 8,
+            dimension = 22,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 8,
+                maxZoomLevel = 12
+            }
+        });
+        gaugePoints.Add(new RealTimeMap.GaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            valueStart = 0,
+            valueStop = 200,
+            value = 110,
+            colorStart = "yellow",
+            colorStop = "green",
+            heightCircularCrown = 18,
+
+            fontColorStart = "black",
+            fontColorMiddle = "black",
+            fontColorStop = "yellow",
+            fontSize = 8,
+            dimension = 28,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 6,
+                maxZoomLevel = 14
+            }
+        });
+        gaugePoints.Add(new RealTimeMap.GaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.215991945426374,
+                longitude = 4.4133372736501375
+            },
+            valueStart = 0,
+            valueStop = 100,
+            value = 68,
+            colorStart = "white",
+            colorStop = "green",
+            heightCircularCrown = 18,
+
+            fontColorStart = "black",
+            fontColorMiddle = "black",
+            fontColorStop = "yellow",
+            fontSize = 8,
+            dimension = 22,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 6,
+                maxZoomLevel = 14
+            }
+        });
+        foreach (var item in gaugePoints)
+            await args.sender.Geometric.DisplayChartFromObject.addGaugeChartPoint(item);
+
+
+    }
+    private async Task removeAllLayers()
+    {
+        await rtm.Geometric.DisplayChartFromObject.clearAll();
+    }
+
+}
