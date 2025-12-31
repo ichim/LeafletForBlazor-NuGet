@@ -125,8 +125,8 @@
                 longitude = 4.4257336791909,
             },
             values = (new List<double>() { 20, 10, 15, 55 }).ToArray(),
-            colors = (new List<string>() { "#ADFF2F", "#00FFFF", "#FFA500", "azure" }).ToArray(),
-            labels = (new List<string>() { "parks", "streets", "housing", "museums" }).ToArray(),
+            colors = (new List<string>() { "black", "#00FFFF", "#FFA500", "navy" }).ToArray(),
+            labels = (new List<string>() { "night club", "streets", "housing", "museums" }).ToArray(),
             //without expandedIndex
             fontSize = 6,
             dimension = 54,
@@ -139,7 +139,7 @@
        
 
         foreach (var pieChartPoint in pieChartPoints)
-            await args.sender.Geometric.DisplayChartFromObject.addPieChartPoint(pieChartPoint);
+            await args.sender.Geometric.DisplayChartFromObject.addChartPoint(pieChartPoint);
        
     }
     private async Task clearRealTimeMap()
