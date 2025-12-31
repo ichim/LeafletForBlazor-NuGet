@@ -68,6 +68,8 @@ Clear all chart items from RealTimeMap:
 
     await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
 
+[DonutChartPoint example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint/DonutChartPoint)
+
 ## GaugeChartPoint
 
 <img width="1339" height="1293" alt="image" src="https://github.com/user-attachments/assets/93fa6ac5-5b01-4234-8760-df6b43dbbcda" />
