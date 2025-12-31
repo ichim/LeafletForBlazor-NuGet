@@ -34,6 +34,8 @@ Clear all chart items from RealTimeMap:
 
     await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
 
+[PieChartPoint example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint/PieChartPoint)
+
 ## DonutChartPoint
 
 <img width="1341" height="885" alt="image" src="https://github.com/user-attachments/assets/f84155fe-92a4-4fd2-8e1b-81de5d442a25" />
