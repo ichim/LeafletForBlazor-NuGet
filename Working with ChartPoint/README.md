@@ -1,6 +1,21 @@
 # DisplayChartFromObject class
 
 The DisplayChartFromObject class provides the ability to display charts directly on the map (RealTimeMap).
+Since the graphs are displayed directly on the map, all ChartPoint classes will have in common Location (latitude, longitude)
+
+           var location = new RealTimeMap.Location()
+          {
+              latitude = 51.215639249505294, 
+              longitude = 4.4257336791909,
+          }
+
+Another common characteristic of all graphs is that they are drawn in a ViewBox with default dimensions 100,100 (width:100, height:100).
+
+However, this ViewBox size cannot fit all scale levels, so each ChartPoint will have a common dimension parameter with which the chart can be resized.
+
+ex.
+
+     dimension  =  28
 
 ## PieChartPoint
 
