@@ -1410,6 +1410,139 @@ Delete all connector lines with deleteConnectors() method:
 
         await realTimeMap?.Geometric.DisplayPolylinesFromArray.deleteConnectors();
 
+## DisplaySVGFromHTML
+
+This class allows you to display SVG items in the map. This class provides the addItem() method with which you can add SVG elements to the map.
+
+        var svgPoint = new RealTimeMap.SVGPoint()
+            {
+                location = new RealTimeMap.Location()
+                {
+                    latitude = 42.644433,
+                    longitude = 24.8838443
+                },
+                dimension=40,
+                htmlContent = "<circle style='fill-opacity:0.62' cx='50' cy='50' r='50' />",
+
+            };
+
+And add SVG on RealTimeMap:
+
+     private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+     {
+        await args.sender.Geometric.DisplaySVGFromHTML.addItem(svgPoint);
+     }
+
+Clear all SVG items from RealTimeMap:
+        
+        await realTimeMap.Geometric.DisplaySVGFromHTML.clearAll();
+
+
+## DisplayChartFromObject
+
+The **DisplayChartFromObject** class allows the display of charts in the RealTimeMap control. 
+
+### Pie Chart
+
+This class provides the **addPieChartPoint()** method with which you can add Pie Chart points to the map.
+        
+       var pieChartPoint = new RealTimeMap.PieChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.215639249505294, 
+                longitude = 4.4257336791909,
+            },
+            values = (new List<double>() { 20, 10, 15, 55}).ToArray(),
+            colors = (new List<string>() { "#ADFF2F", "#00FFFF", "#FFA500", "azure" }).ToArray(),
+            labels = (new List<string>() { "parks", "streets", "housing", "museums" }).ToArray(),
+            expandedIndex = 2,
+            fontSize = 8,
+            dimension = 54,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 8,
+                maxZoomLevel = 14
+            }
+        };
+        args.sender.Geometric.DisplayChartFromObject.addPieChartPoint(pieChartPoint);
+
+Clear all chart items from RealTimeMap:
+        
+        await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
+
+
+
+### Donut Chart
+
+This class provides the **addDonutChartPoint()** method with which you can add Donut Chart points to the map.
+        
+       var chartPoint = new RealTimeMap.DonutChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.215639249505294, 
+                longitude = 4.4257336791909,
+            },
+            values = (new List<double>() { 20, 10, 15, 55}).ToArray(),
+            colors = (new List<string>() { "#ADFF2F", "#00FFFF", "#FFA500", "azure" }).ToArray(),
+            labels = (new List<string>() { "parks", "streets", "housing", "museums" }).ToArray(),
+            expandedIndex = 2,
+            fontSize = 8,
+            dimension = 54,
+            heightCircularCrown = 20,//thickness of donut ring - default 28
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 8,
+                maxZoomLevel = 14
+            }
+        };
+        args.sender.Geometric.DisplayChartFromObject.addDonutChartPoint(chartPoint);
+
+Clear all chart items from RealTimeMap:
+        
+        await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
+
+
+
+### Gauge Chart
+
+This class provides the **addGaugeChartPoint()** method with which you can add Gauge Chart points to the map.
+        
+
+        var gaugeChartPoint = new RealTimeMap.GaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.02094731770253,
+                longitude = 4.523290395225346,
+            },
+             valueStart = 0,
+             valueStop = 100,
+             value = 82,
+             colorStart = "yellow",
+             colorStop = "#8F2A18",
+             heightCircularCrown  = 18,
+             fontColorStart = "black",
+             fontColorMiddle = "white",
+             fontColorStop = "yellow",
+             fontSize  = 6,
+             dimension = 40,       
+             visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel(){
+                minZoomLevel = 6,
+                maxZoomLevel = 14
+            }
+        };
+        await args.sender.Geometric.DisplayChartFromObject.addGaugeChartPoint(gaugeChartPoint);
+
+      
+   
+
+Clear all chart items from RealTimeMap:
+        
+        await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
+
+
 # RealTimeMap components
 
 ## StreamLegend
