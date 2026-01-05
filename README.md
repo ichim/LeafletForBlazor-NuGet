@@ -83,7 +83,8 @@ You can find more information:
 </table>
 
 
-![GeoJSON@appearance20](https://github.com/ichim/LeafletForBlazor-NuGet/assets/8348463/81f4ea40-55b5-4dd5-9270-c2643aa47dd6)
+<img width="1290" height="813" alt="image" src="https://github.com/user-attachments/assets/6f786980-7c13-4d0e-8fb2-b033d268ee48" />
+
 
 
 
