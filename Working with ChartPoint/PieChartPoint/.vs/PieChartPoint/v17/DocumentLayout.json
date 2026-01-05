@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\PieChartPoint\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{084FAA01-D3D3-471E-AEB7-3A4C4594A52B}|PieChartPoint\\PieChartPoint.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\piechartpoint\\piechartpoint\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{084FAA01-D3D3-471E-AEB7-3A4C4594A52B}|PieChartPoint\\PieChartPoint.csproj|solutionrelative:piechartpoint\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\PieChartPoint\\PieChartPoint\\Pages\\Index.razor",
-              "RelativeDocumentMoniker": "PieChartPoint\\Pages\\Index.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\PieChartPoint\\PieChartPoint\\Pages\\Index.razor",
-              "RelativeToolTip": "PieChartPoint\\Pages\\Index.razor",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIAAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-31T19:33:12.567Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

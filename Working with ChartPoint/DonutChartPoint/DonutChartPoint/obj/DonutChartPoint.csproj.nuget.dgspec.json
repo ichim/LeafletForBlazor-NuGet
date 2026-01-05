@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\40720\\source\\repos\\DonutChartPoint\\DonutChartPoint\\DonutChartPoint.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DonutChartPoint\\DonutChartPoint\\DonutChartPoint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\40720\\source\\repos\\DonutChartPoint\\DonutChartPoint\\DonutChartPoint.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DonutChartPoint\\DonutChartPoint\\DonutChartPoint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\40720\\source\\repos\\DonutChartPoint\\DonutChartPoint\\DonutChartPoint.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DonutChartPoint\\DonutChartPoint\\DonutChartPoint.csproj",
         "projectName": "DonutChartPoint",
-        "projectPath": "C:\\Users\\40720\\source\\repos\\DonutChartPoint\\DonutChartPoint\\DonutChartPoint.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DonutChartPoint\\DonutChartPoint\\DonutChartPoint.csproj",
         "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\40720\\source\\repos\\DonutChartPoint\\DonutChartPoint\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DonutChartPoint\\DonutChartPoint\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,7 +53,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[2.4.4.2, )"
             }
           },
           "imports": [

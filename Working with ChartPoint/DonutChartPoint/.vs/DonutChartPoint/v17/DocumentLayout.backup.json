@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\DonutChartPoint\\",
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DonutChartPoint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2CE29BDE-ED1E-4A1A-AF9A-BB448E195428}|DonutChartPoint\\DonutChartPoint.csproj|c:\\users\\40720\\source\\repos\\donutchartpoint\\donutchartpoint\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2CE29BDE-ED1E-4A1A-AF9A-BB448E195428}|DonutChartPoint\\DonutChartPoint.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\donutchartpoint\\donutchartpoint\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2CE29BDE-ED1E-4A1A-AF9A-BB448E195428}|DonutChartPoint\\DonutChartPoint.csproj|solutionrelative:donutchartpoint\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CE29BDE-ED1E-4A1A-AF9A-BB448E195428}|DonutChartPoint\\DonutChartPoint.csproj|c:\\users\\40720\\source\\repos\\donutchartpoint\\donutchartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2CE29BDE-ED1E-4A1A-AF9A-BB448E195428}|DonutChartPoint\\DonutChartPoint.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\donutchartpoint\\donutchartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2CE29BDE-ED1E-4A1A-AF9A-BB448E195428}|DonutChartPoint\\DonutChartPoint.csproj|solutionrelative:donutchartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\DonutChartPoint\\DonutChartPoint\\Pages\\Index.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DonutChartPoint\\DonutChartPoint\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "DonutChartPoint\\Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\DonutChartPoint\\DonutChartPoint\\Pages\\Index.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DonutChartPoint\\DonutChartPoint\\Pages\\Index.razor",
               "RelativeToolTip": "DonutChartPoint\\Pages\\Index.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-31T18:33:31.266Z",
               "EditorCaption": ""
@@ -37,9 +37,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\DonutChartPoint\\DonutChartPoint\\_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DonutChartPoint\\DonutChartPoint\\_Imports.razor",
               "RelativeDocumentMoniker": "DonutChartPoint\\_Imports.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\DonutChartPoint\\DonutChartPoint\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DonutChartPoint\\DonutChartPoint\\_Imports.razor",
               "RelativeToolTip": "DonutChartPoint\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

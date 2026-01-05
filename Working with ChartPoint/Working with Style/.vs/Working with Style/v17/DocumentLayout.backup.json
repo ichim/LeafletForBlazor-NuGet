@@ -1,54 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\Working with Style\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2D63B521-FF46-41C8-A1F8-63B8C70342BA}|Working with Style\\Working with Style.csproj|c:\\users\\40720\\source\\repos\\working with style\\working with style\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D63B521-FF46-41C8-A1F8-63B8C70342BA}|Working with Style\\Working with Style.csproj|solutionrelative:working with style\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D63B521-FF46-41C8-A1F8-63B8C70342BA}|Working with Style\\Working with Style.csproj|c:\\users\\40720\\source\\repos\\working with style\\working with style\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D63B521-FF46-41C8-A1F8-63B8C70342BA}|Working with Style\\Working with Style.csproj|solutionrelative:working with style\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Working with Style\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Working with Style\\Working with Style\\Pages\\Index.razor",
-              "RelativeDocumentMoniker": "Working with Style\\Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\Working with Style\\Working with Style\\Pages\\Index.razor",
-              "RelativeToolTip": "Working with Style\\Pages\\Index.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-04T16:21:38.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Working with Style\\Working with Style\\_Imports.razor",
-              "RelativeDocumentMoniker": "Working with Style\\_Imports.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\Working with Style\\Working with Style\\_Imports.razor",
-              "RelativeToolTip": "Working with Style\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-04T16:20:44.541Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

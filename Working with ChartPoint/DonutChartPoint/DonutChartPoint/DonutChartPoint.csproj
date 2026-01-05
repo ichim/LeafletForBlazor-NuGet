@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LeafletForBlazor" Version="2.4.2" />
+    <PackageReference Include="LeafletForBlazor" Version="2.4.4.2" />
   </ItemGroup>
 
 </Project>

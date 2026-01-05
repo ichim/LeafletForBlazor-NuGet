@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\40720\\source\\repos\\Working with Style\\Working with Style\\Working with Style.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Working with Style\\Working with Style\\Working with Style.csproj": {}
   },
   "projects": {
-    "C:\\Users\\40720\\source\\repos\\Working with Style\\Working with Style\\Working with Style.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Working with Style\\Working with Style\\Working with Style.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\40720\\source\\repos\\Working with Style\\Working with Style\\Working with Style.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Working with Style\\Working with Style\\Working with Style.csproj",
         "projectName": "Working with Style",
-        "projectPath": "C:\\Users\\40720\\source\\repos\\Working with Style\\Working with Style\\Working with Style.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Working with Style\\Working with Style\\Working with Style.csproj",
         "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\40720\\source\\repos\\Working with Style\\Working with Style\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Working with Style\\Working with Style\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,7 +53,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.4.4, )"
+              "version": "[2.4.4.2, )"
             }
           },
           "imports": [
