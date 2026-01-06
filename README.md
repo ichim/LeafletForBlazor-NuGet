@@ -80,6 +80,13 @@ You can find more information:
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/RTM%20Components/StreamLegend">StreamLegend component</a></td>
         <td><font size = "2px">StreamLegend is a component (starting with 2.2.0.6) that allows the display of symbols applied through the Appearance() method. This component displays only the symbols of the StreamPoint elements added on the RealTime.Geometric.Points class.</font></td>
     </tr>
+	    <tr>
+        <td colspan="2"><font color = "green"><b>Charts displayed directly on the map</b></font></td>
+    </tr>
+	<tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint#displaychartfromobject-class">ChartPoint example code</a></td>
+        <td><font size = "2px">Using classes inherited from IChartPoint you can display graphs directly in the map (Pie, Donut, Gauge).</font></td>
+    </tr>
 </table>
 
 
