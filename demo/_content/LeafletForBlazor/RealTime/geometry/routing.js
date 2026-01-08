@@ -1,1 +1,0 @@
-﻿export const _route = (o, e, r, s) => { console.log("_routing", JSON.parse(o)), console.log(JSON.parse(o).map((o => r.latLng(o)))), r.Routing.osrmv1({ waypoints: [JSON.parse(o).map((o => r.latLng(o)))], serviceUrl: "http://my-osrm/route/v1" }).addTo(e), console.log("STOP") };
