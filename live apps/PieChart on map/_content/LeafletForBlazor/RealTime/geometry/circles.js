@@ -1,0 +1,1 @@
+var displayedCircles = []; export const _addCircle = (e, r, l, s, d) => { var c = d.circle(e, { radius: r }).addTo(s); return null !== l && c.setStyle(l), displayedCircles.push(c), displayedCircles }; export const _deleteAllCircles = e => { displayedCircles.forEach((r => { try { e.removeLayer(r) } catch (e) { console.error(e) } })), displayedCircles = [] };

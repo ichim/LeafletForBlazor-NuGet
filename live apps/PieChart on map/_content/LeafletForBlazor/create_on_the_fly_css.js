@@ -1,0 +1,1 @@
+﻿function create_css_classes(e) { var t = e, s = document.head || document.getElementsByTagName("head")[0], a = document.createElement("style"); s.appendChild(a), a.type = "text/css", a.styleSheet ? a.styleSheet.cssText = t : a.appendChild(document.createTextNode(t)) } export { create_css_classes };
