@@ -90,7 +90,8 @@ You can find more information:
 </table>
 
 
-<img width="1290" height="813" alt="image" src="https://github.com/user-attachments/assets/6f786980-7c13-4d0e-8fb2-b033d268ee48" />
+![Uploading image.png…]()
+
 
 [direct display of charts on the map](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint#displaychartfromobject-class)
 
