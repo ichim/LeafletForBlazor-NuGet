@@ -144,6 +144,10 @@ This class provides the addGaugeChartPoint() method with which you can add Gauge
 
 # Combined Chart
 
+
+You can combine Gauge ChartPoint with other Gauge Chart Point charts, but also DiscreteGaugeChartPoint.
+
+
 <img width="2576" height="1638" alt="image" src="https://github.com/user-attachments/assets/77edfb94-ec5f-4a9e-8aad-1febd8755bda" />
 
 
