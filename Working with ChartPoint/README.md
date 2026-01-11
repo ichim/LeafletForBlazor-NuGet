@@ -116,6 +116,32 @@ This class provides the addGaugeChartPoint() method with which you can add Gauge
     };
     await args.sender.Geometric.DisplayChartFromObject.addChartPoint(gaugeChartPoint);
 
+# DiscreteGaugeChartPoint
+
+    var gaugePoints = new RealTimeMap.DiscreteGaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+        colors = ["green", "yellow", "red", "darkgray"],
+        percentageValues = [19, 18, 18, 30],
+        labels = ["low", "midle", "high", "unknown"],
+        label = "traffic",
+        fontSize = 10,
+        index = 1,
+        turnedAround = false,
+        heightCircularCrown = 18,
+        dimension = 40,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 6,
+                maxZoomLevel = 14
+            }
+        });
+
+
 # Combined Chart
 
 <img width="2576" height="1638" alt="image" src="https://github.com/user-attachments/assets/77edfb94-ec5f-4a9e-8aad-1febd8755bda" />
