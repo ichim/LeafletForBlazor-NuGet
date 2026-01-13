@@ -14,9 +14,9 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)leafletforblazor\2.4.4.4\contentFiles\any\net9.0\map_color.ico" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.4.4.4\contentFiles\any\net9.0\map_color.ico')">
+    <Content Include="$(NuGetPackageRoot)leafletforblazor\2.4.4.6\contentFiles\any\net9.0\map_color.ico" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.4.4.6\contentFiles\any\net9.0\map_color.ico')">
       <NuGetPackageId>LeafletForBlazor</NuGetPackageId>
-      <NuGetPackageVersion>2.4.4.4</NuGetPackageVersion>
+      <NuGetPackageVersion>2.4.4.6</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
       <Pack>false</Pack>
       <Private>False</Private>
@@ -27,7 +27,7 @@
     <Import Project="$(NuGetPackageRoot)microsoft.net.sdk.webassembly.pack\9.0.11\build\Microsoft.NET.Sdk.WebAssembly.Pack.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.sdk.webassembly.pack\9.0.11\build\Microsoft.NET.Sdk.WebAssembly.Pack.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.net.illink.tasks\9.0.11\build\Microsoft.NET.ILLink.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.illink.tasks\9.0.11\build\Microsoft.NET.ILLink.Tasks.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\9.0.11\build\net9.0\Microsoft.AspNetCore.Components.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\9.0.11\build\net9.0\Microsoft.AspNetCore.Components.WebAssembly.props')" />
-    <Import Project="$(NuGetPackageRoot)leafletforblazor\2.4.4.4\buildTransitive\LeafletForBlazor.props" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.4.4.4\buildTransitive\LeafletForBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)leafletforblazor\2.4.4.6\buildTransitive\LeafletForBlazor.props" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.4.4.6\buildTransitive\LeafletForBlazor.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_NET_Sdk_WebAssembly_Pack Condition=" '$(PkgMicrosoft_NET_Sdk_WebAssembly_Pack)' == '' ">C:\Users\40720\.nuget\packages\microsoft.net.sdk.webassembly.pack\9.0.11</PkgMicrosoft_NET_Sdk_WebAssembly_Pack>

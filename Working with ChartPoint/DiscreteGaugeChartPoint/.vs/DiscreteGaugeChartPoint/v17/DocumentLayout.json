@@ -1,54 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\DiscreteGaugeChartPoint\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F4B4D1FF-A35A-4ACA-A422-664257C9367E}|DiscreteGaugeChartPoint\\DiscreteGaugeChartPoint.csproj|c:\\users\\40720\\source\\repos\\discretegaugechartpoint\\discretegaugechartpoint\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F4B4D1FF-A35A-4ACA-A422-664257C9367E}|DiscreteGaugeChartPoint\\DiscreteGaugeChartPoint.csproj|solutionrelative:discretegaugechartpoint\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4B4D1FF-A35A-4ACA-A422-664257C9367E}|DiscreteGaugeChartPoint\\DiscreteGaugeChartPoint.csproj|c:\\users\\40720\\source\\repos\\discretegaugechartpoint\\discretegaugechartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F4B4D1FF-A35A-4ACA-A422-664257C9367E}|DiscreteGaugeChartPoint\\DiscreteGaugeChartPoint.csproj|solutionrelative:discretegaugechartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\DiscreteGaugeChartPoint\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\DiscreteGaugeChartPoint\\DiscreteGaugeChartPoint\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "DiscreteGaugeChartPoint\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\DiscreteGaugeChartPoint\\DiscreteGaugeChartPoint\\Pages\\Home.razor",
-              "RelativeToolTip": "DiscreteGaugeChartPoint\\Pages\\Home.razor",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-09T09:00:23.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\DiscreteGaugeChartPoint\\DiscreteGaugeChartPoint\\_Imports.razor",
-              "RelativeDocumentMoniker": "DiscreteGaugeChartPoint\\_Imports.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\DiscreteGaugeChartPoint\\DiscreteGaugeChartPoint\\_Imports.razor",
-              "RelativeToolTip": "DiscreteGaugeChartPoint\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-09T08:59:29.062Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

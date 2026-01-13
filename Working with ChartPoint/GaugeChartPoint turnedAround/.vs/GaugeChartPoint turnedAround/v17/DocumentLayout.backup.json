@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint turnedAround\\",
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint turnedAround\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{197F69BA-0CCC-4EA6-85CB-045587CA16C4}|GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround.csproj|c:\\users\\40720\\source\\repos\\gaugechartpoint turnedaround\\gaugechartpoint turnedaround\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{197F69BA-0CCC-4EA6-85CB-045587CA16C4}|GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\gaugechartpoint turnedaround\\gaugechartpoint turnedaround\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{197F69BA-0CCC-4EA6-85CB-045587CA16C4}|GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround.csproj|solutionrelative:gaugechartpoint turnedaround\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{197F69BA-0CCC-4EA6-85CB-045587CA16C4}|GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround.csproj|c:\\users\\40720\\source\\repos\\gaugechartpoint turnedaround\\gaugechartpoint turnedaround\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{197F69BA-0CCC-4EA6-85CB-045587CA16C4}|GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\gaugechartpoint turnedaround\\gaugechartpoint turnedaround\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{197F69BA-0CCC-4EA6-85CB-045587CA16C4}|GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround.csproj|solutionrelative:gaugechartpoint turnedaround\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -24,10 +24,10 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround\\Pages\\Index.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "GaugeChartPoint turnedAround\\Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround\\Pages\\Index.razor*",
-              "RelativeToolTip": "GaugeChartPoint turnedAround\\Pages\\Index.razor*",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround\\Pages\\Index.razor",
+              "RelativeToolTip": "GaugeChartPoint turnedAround\\Pages\\Index.razor",
               "ViewState": "AgIAADkAAAAAAAAAAAAAAEcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-05T12:18:39.657Z",
@@ -37,9 +37,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround\\_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround\\_Imports.razor",
               "RelativeDocumentMoniker": "GaugeChartPoint turnedAround\\_Imports.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\GaugeChartPoint turnedAround\\GaugeChartPoint turnedAround\\_Imports.razor",
               "RelativeToolTip": "GaugeChartPoint turnedAround\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
