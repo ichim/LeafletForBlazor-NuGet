@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuarterGaugeChartPoint")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b874a1fbc4223169351827a5bca1e38afc68a16")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb567501dc3ef22881bece3b2ca709ec554ca89f")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuarterGaugeChartPoint")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuarterGaugeChartPoint")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

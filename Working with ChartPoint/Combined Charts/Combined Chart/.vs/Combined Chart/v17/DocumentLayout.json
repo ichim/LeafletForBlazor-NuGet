@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\Combined Chart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6FDB698-0E80-4371-8096-0C7B464A1F6E}|Combined Chart\\Combined Chart.csproj|c:\\users\\40720\\source\\repos\\combined chart\\combined chart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E6FDB698-0E80-4371-8096-0C7B464A1F6E}|Combined Chart\\Combined Chart.csproj|solutionrelative:combined chart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6FDB698-0E80-4371-8096-0C7B464A1F6E}|Combined Chart\\Combined Chart.csproj|c:\\users\\40720\\source\\repos\\combined chart\\combined chart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E6FDB698-0E80-4371-8096-0C7B464A1F6E}|Combined Chart\\Combined Chart.csproj|solutionrelative:combined chart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Combined Chart\\Combined Chart\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Combined Chart\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Combined Chart\\Combined Chart\\Pages\\Home.razor",
+              "RelativeToolTip": "Combined Chart\\Pages\\Home.razor",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAcwG4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-13T12:39:13.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Combined Chart\\Combined Chart\\_Imports.razor",
+              "RelativeDocumentMoniker": "Combined Chart\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Combined Chart\\Combined Chart\\_Imports.razor",
+              "RelativeToolTip": "Combined Chart\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-13T12:38:58.253Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
