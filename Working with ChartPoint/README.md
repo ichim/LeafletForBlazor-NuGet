@@ -141,6 +141,29 @@ This class provides the addGaugeChartPoint() method with which you can add Gauge
             }
         });
 
+# QuarterGaugeChartPoint
+
+The addChartPoint  method and QuarterGaugeChartPoint class can add a Quarte Gauge Chart directly to the map..
+
+   var quarterGaugeChartPoint = new RealTimeMap.QuarterGaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 60,
+            indexQuadrant = 3,  //trigonometric quadrant number (0,1,2,3)
+            valueStart = 0,
+            valueStop = 35,
+            value = 18,
+            label="temperature",
+            opacity = 0.4
+    };
+    await args.sender.Geometric.DisplayChartFromObject.addChartPoint(quarterGaugeChartPoint);
+Clear all chart items from RealTimeMap:
+
+    await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
 
 # Combined Chart
 
