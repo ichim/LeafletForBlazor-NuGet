@@ -21,7 +21,7 @@ ex.
 
 <img width="2013" height="1435" alt="image" src="https://github.com/user-attachments/assets/adf0f44a-ef50-428e-aebf-e952291006d1" />
 
-This class provides the addPieChartPoint() method with which you can add Pie Chart points to the map.
+The addChartPoint method and PieChartPoint class can add a Pie Chart directly to the map.
 
      var pieChartPoint = new RealTimeMap.PieChartPoint()
       {
@@ -55,7 +55,7 @@ Clear all chart items from RealTimeMap:
 
 <img width="1341" height="885" alt="image" src="https://github.com/user-attachments/assets/f84155fe-92a4-4fd2-8e1b-81de5d442a25" />
 
-This class provides the addDonutChartPoint() method with which you can add Donut Chart points to the map.
+The addChartPoint method and DonutChartPoint class can add a Donut Chart directly to the map.
 
      var chartPoint = new RealTimeMap.DonutChartPoint()
       {
@@ -89,7 +89,7 @@ Clear all chart items from RealTimeMap:
 
 <img width="1339" height="1293" alt="image" src="https://github.com/user-attachments/assets/93fa6ac5-5b01-4234-8760-df6b43dbbcda" />
 
-This class provides the addGaugeChartPoint() method with which you can add Gauge Chart points to the map.
+The addChartPoint method and GaugeChartPoint class can add a Gauge Chart directly to the map.
 
     var gaugeChartPoint = new RealTimeMap.GaugeChartPoint()
     {
@@ -118,6 +118,8 @@ This class provides the addGaugeChartPoint() method with which you can add Gauge
 
 # DiscreteGaugeChartPoint
 
+The addChartPoint method and DiscreteGaugeChartPoint class can add a Gauge Category Style Chart directly to the map.
+
     var gaugePoints = new RealTimeMap.DiscreteGaugeChartPoint()
         {
             location = new RealTimeMap.Location()
@@ -143,24 +145,30 @@ This class provides the addGaugeChartPoint() method with which you can add Gauge
 
 # QuarterGaugeChartPoint
 
-The addChartPoint  method and QuarterGaugeChartPoint class can add a Quarte Gauge Chart directly to the map..
+The addChartPoint method and QuarterGaugeChartPoint class can add a Quarte Gauge Chart directly to the map.
 
-   var quarterGaugeChartPoint = new RealTimeMap.QuarterGaugeChartPoint()
-        {
-            location = new RealTimeMap.Location()
-            {
-                latitude = 50.81229753879652,
-                longitude = 4.4274985764447905
-            },
-            dimension = 60,
-            indexQuadrant = 3,  //trigonometric quadrant number (0,1,2,3)
-            valueStart = 0,
-            valueStop = 35,
-            value = 18,
-            label="temperature",
-            opacity = 0.4
-    };
-    await args.sender.Geometric.DisplayChartFromObject.addChartPoint(quarterGaugeChartPoint);
+              var quarterGaugeChartPoint = new RealTimeMap.QuarterGaugeChartPoint()
+                   {
+                       location = new RealTimeMap.Location()
+                       {
+                           latitude = 50.81229753879652,
+                           longitude = 4.4274985764447905
+                       },
+                       dimension = 60,
+                       indexQuadrant = 3,  //trigonometric quadrant number (0,1,2,3)
+                       valueStart = 0,
+                       valueStop = 35,
+                       value = 18,
+                       label="temperature",
+                       opacity = 0.4
+               };
+               await args.sender.Geometric.DisplayChartFromObject.addChartPoint(quarterGaugeChartPoint);
+
+
+<img width="945" height="682" alt="image" src="https://github.com/user-attachments/assets/6987511a-65f9-4592-a300-73f1f9f0a092" />
+
+
+
 Clear all chart items from RealTimeMap:
 
     await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
