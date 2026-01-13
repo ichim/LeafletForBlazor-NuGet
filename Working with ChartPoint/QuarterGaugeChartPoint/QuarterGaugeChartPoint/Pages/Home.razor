@@ -1,0 +1,74 @@
+﻿@page "/"
+
+<button onclick="@clearAllItemsFromMap">Clear map</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 4rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+
+@code {
+    RealTimeMap rtm;
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 50.81229753879652,
+            longitude = 4.4274985764447905
+        },
+        zoomLevel = 12
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        List<RealTimeMap.QuarterGaugeChartPoint> gaugePoints = new List<RealTimeMap.QuarterGaugeChartPoint>();
+
+
+        gaugePoints.Add(new RealTimeMap.QuarterGaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 60,
+            indexQuadrant = 3,
+            valueStart = 0,
+            valueStop = 35,
+            value = 18,
+            label = "temperature",
+            opacity = 0.4
+
+        });
+
+        gaugePoints.Add(new RealTimeMap.QuarterGaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 60,
+            indexQuadrant = 2,
+            valueStart = 0,
+            valueStop = 80,
+            value = 32,
+            label = "rainfall",
+            fill = "#4DBEEB",
+            opacity = 0.4
+        });
+
+        foreach (var item in gaugePoints)
+            await args.sender.Geometric.DisplayChartFromObject.addChartPoint(item);
+
+        await args.sender.Geometric.DisplayPointsFromArray.addLabel(new RealTimeMap.LabelInfo()
+        {
+            coordinates = new double[2] { 50.81228753879652, 4.4284985764447905 },
+            text = "Weather Station",
+        });
+
+
+    }
+    private async Task clearAllItemsFromMap()
+    {
+        await rtm.Geometric.DisplayChartFromObject.clearAll();
+        await rtm.Geometric.DisplayPointsFromArray.deleteAllLabels();
+    }
+
+}

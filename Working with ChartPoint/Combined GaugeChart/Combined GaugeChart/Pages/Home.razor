@@ -1,0 +1,206 @@
+﻿@page "/"
+
+<button onclick="@clearChartFormMap">Clear chart from map</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 4rem)" width="calc(100vw - 1.4rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+
+@code {
+    RealTimeMap rtm;
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 51.02094731770253,
+            longitude = 4.523290395225346,
+        },
+        zoomLevel = 10
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        List<RealTimeMap.DiscreteGaugeChartPoint> discretGaugePoints = new List<RealTimeMap.DiscreteGaugeChartPoint>();
+        List<RealTimeMap.GaugeChartPoint> gaugePoints = new List<RealTimeMap.GaugeChartPoint>();
+
+        discretGaugePoints.Add(new RealTimeMap.DiscreteGaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            colors = ["green", "yellow", "red", "darkgray"],
+            percentageValues = [19, 18, 18, 30],
+            labels = ["low", "midle", "high", "unknown"],
+            label = "traffic",
+            fontSize = 10,
+            index = 1,
+            turnedAround = false,
+            heightCircularCrown = 18,
+            dimension = 40,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 6,
+                maxZoomLevel = 14
+            }
+        });
+        discretGaugePoints.Add(new RealTimeMap.DiscreteGaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.215991945426374,
+                longitude = 4.4133372736501375
+            },
+            colors = ["navy", "yellow", "darkgray"],
+            percentageValues = [30, 30, 40],
+            labels = ["rain", "clear", "unknown"],
+            label = "wheather",
+            fontSize = 10,
+            index = 3,
+            turnedAround = true,
+            heightCircularCrown = 18,
+            dimension = 40,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 6,
+                maxZoomLevel = 14
+            }
+        });
+        discretGaugePoints.Add(new RealTimeMap.DiscreteGaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.215991945426374,
+                longitude = 4.4133372736501375
+            },
+            colors = ["black", "blue", "darkgray"],
+            percentageValues = [25, 35, 40],
+            labels = ["high", "normal", "unknown"],
+            label = "pollution",
+            fontSize = 10,
+            index = 1,
+            turnedAround = false,
+            heightCircularCrown = 18,
+            dimension = 40
+        });
+        gaugePoints.Add(new RealTimeMap.GaugeChartPoint()
+        {
+           
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            valueStart = 0,
+            valueStop = 120,
+            value = 86,
+            label = "traff. wait.",
+            colorStart = "red",
+            colorStop = "yellow",
+            fontColorStart = "black",
+            fontColorMiddle = "white",
+            fontColorStop = "yellow",
+            heightCircularCrown = 18,
+           dimension = 40,
+           fontSize = 6,
+            styles = new RealTimeMap.GaugeStyle()
+            {
+                panel = (new LeafletForBlazor.css.Style()).add("fill", "yellow").add("opacity", "0.5"),
+                crown = (new LeafletForBlazor.css.Style()).add("stroke", "black").add("stroke-width", "0.4").add("opacity", "0.8"),
+                gaugeValue = (new LeafletForBlazor.css.Style()).add("fill", "black"),
+                gaugeLabel = (new LeafletForBlazor.css.Style()).add("fill", "black").add("font-size", "8"),
+                lineIndicator = (new LeafletForBlazor.css.Style()).add("stroke", "indigo").add("stroke-width", "2").add("stroke-linecap", "square").add("opacity", "0.8"),
+                shaft = (new LeafletForBlazor.css.Style()).add("r", "3").add("fill", "red")
+            },
+           turnedAround = true
+        });
+
+
+        gaugePoints.Add(new RealTimeMap.GaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.02094731770253,
+                longitude = 4.523290395225346,
+            },
+            valueStart = 0,
+            valueStop = 80,
+            value = 20,
+            label = "charging",
+            colorStart = "#22FF00",
+            colorStop = "#0D8000",
+            heightCircularCrown = 18,
+            styles = new RealTimeMap.GaugeStyle()
+            {
+                panel = (new LeafletForBlazor.css.Style()).add("stroke", "black").add("stroke-width", "2").add("fill", "#22FF00").add("opacity", "0.4"),
+                crown = (new LeafletForBlazor.css.Style()).add("stroke", "white").add("stroke-width", "0").add("opacity", "0.6"),
+                gaugeValue = (new LeafletForBlazor.css.Style()).add("fill", "black"),
+                gaugeLabel = (new LeafletForBlazor.css.Style()).add("fill", "black").add("font-size", "8"),
+                lineIndicator = (new LeafletForBlazor.css.Style()).add("stroke", "white").add("stroke-width", "2").add("stroke-linecap", "square").add("opacity", "0.8"),
+                shaft = (new LeafletForBlazor.css.Style()).add("r", "3").add("fill", "white")
+            },
+            fontColorStart = "black",
+            fontColorMiddle = "red",
+            fontColorStop = "black",
+            fontSize = 8,
+            dimension = 32,
+            // urlIndicator = "http://localhost:5193/arrow.png",
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 6,
+                maxZoomLevel = 14
+            },
+            turnedAround = true
+        });
+
+        gaugePoints.Add(new RealTimeMap.GaugeChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 51.02094731770253,
+                longitude = 4.523290395225346,
+            },
+            valueStart = 0,
+            valueStop = 120,
+            value = 84,
+            label = "parking",
+            colorStart = "azure",
+            colorStop = "navy",
+            heightCircularCrown = 18,
+            styles = new RealTimeMap.GaugeStyle()
+            {
+                panel = (new LeafletForBlazor.css.Style()).add("stroke", "black").add("stroke-width", "2").add("fill", "navy").add("opacity", "0.6"),
+                crown = (new LeafletForBlazor.css.Style()).add("stroke", "white").add("stroke-width", "0").add("opacity", "0.6"),
+                gaugeValue = (new LeafletForBlazor.css.Style()).add("fill", "white"),
+                gaugeLabel = (new LeafletForBlazor.css.Style()).add("fill", "yellow").add("font-size", "8"),
+                lineIndicator = (new LeafletForBlazor.css.Style()).add("stroke", "white").add("stroke-width", "2").add("stroke-linecap", "square").add("opacity", "0.8"),
+                shaft = (new LeafletForBlazor.css.Style()).add("r", "3").add("fill", "white")
+            },
+            fontColorStart = "navy",
+            fontColorMiddle = "yellow",
+            fontColorStop = "yellow",
+            fontSize = 8,
+            dimension = 32,
+            // urlIndicator = "http://localhost:5193/arrow.png",
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 6,
+                maxZoomLevel = 14
+            },
+            turnedAround = false
+        });
+
+
+
+        foreach (var item in discretGaugePoints)
+            await args.sender.Geometric.DisplayChartFromObject.addChartPoint(item);
+
+        foreach (var item in gaugePoints)
+            await args.sender.Geometric.DisplayChartFromObject.addChartPoint(item);
+
+
+    }
+    private async Task clearChartFormMap()
+    {
+        await rtm.Geometric.DisplayChartFromObject.clearAll();
+    }
+
+}
