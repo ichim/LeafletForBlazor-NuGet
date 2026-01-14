@@ -1,0 +1,159 @@
+﻿@page "/"
+
+<button onclick="@removeAllLayers">Remove All</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 6rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+
+@code {
+    RealTimeMap rtm;
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 50.81229753879652,
+            longitude = 4.4274985764447905
+        },
+        zoomLevel = 12
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        List<RealTimeMap.QuarterGaugeFillChartPoint> gaugePoints = new List<RealTimeMap.QuarterGaugeFillChartPoint>();
+
+
+        gaugePoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 62,
+            indexQuadrant = 3,
+            valueStart = 0,
+            valueStop = 42,
+            value = 35,
+            label = "temperature",
+            fillPanel = "azure",
+            fillingColor = "red",
+            opacity = 0.4,
+            fontSize = 5,
+            haloText = true,
+            heightCrownInner = 10
+
+        });
+
+        gaugePoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 62,
+            indexQuadrant = 2,
+            valueStart = 0,
+            valueStop = 80,
+            value = 16,
+            label = "rainfall",
+            fillPanel = "#4DBEEB",
+            fillingColor = "navy",
+            opacity = 0.4,
+            fontSize = 5,
+            haloText = true
+        });
+
+
+ gaugePoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.8092230102253, 
+                longitude = 4.3006902043943915
+            },
+            dimension = 62,
+            indexQuadrant = 2,
+            valueStart = 0,
+            valueStop = 100,
+            value = 20,
+            label = "visibility",
+            fillPanel = "#4DBEEB",
+            fillingColor = "navy",
+            opacity = 0.4,
+            fontSize = 5,
+            haloText = true
+        });
+        gaugePoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.8092230102253,
+                longitude = 4.3006902043943915
+            },
+            dimension = 62,
+            indexQuadrant = 3,
+            valueStart = 0,
+            valueStop = 120,
+            value = 20,
+            label = "traffic waiting",
+            fillPanel = "azure",
+            fillingColor = "orange",
+            opacity = 0.4,
+            fontSize = 5,
+            haloText = true
+        });
+        gaugePoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.8092230102253,
+                longitude = 4.3006902043943915
+            },
+            dimension = 62,
+            indexQuadrant = 1,
+            valueStart = 0,
+            valueStop = 4,
+            value = 2,
+            label = "time green light",
+            fillPanel = "green",
+            fillingColor = "green",
+            opacity = 0.2,
+            fontSize = 5,
+            haloText = true
+        });
+        gaugePoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.8092230102253,
+                longitude = 4.3006902043943915
+            },
+            dimension = 62,
+            indexQuadrant = 0,
+            valueStart = 0,
+            valueStop = 6,
+            value = 2,
+            label = "time red light",
+            fillPanel = "orange",
+            fillingColor = "red",
+            opacity = 0.2,
+            fontSize = 5,
+            haloText = true
+        });
+        foreach (var item in gaugePoints)
+            await args.sender.Geometric.DisplayChartFromObject.addChartPoint(item);
+
+        await args.sender.Geometric.DisplayPointsFromArray.addLabel(new RealTimeMap.LabelInfo()
+        {
+            coordinates = new double[2] { 50.81228753879652, 4.4284985764447905 },
+            text = "Weather Station",
+        });
+
+
+    }
+    private async Task removeAllLayers()
+    {
+        await rtm.Geometric.DisplayChartFromObject.clearAll();
+        await rtm.Geometric.DisplayPointsFromArray.deleteAllLabels();
+    }
+
+}
