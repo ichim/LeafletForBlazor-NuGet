@@ -90,7 +90,8 @@ You can find more information:
 </table>
 
 
-<img width="1532" height="1561" alt="image" src="https://github.com/user-attachments/assets/ec5949f6-cbac-4404-9665-14c39d38e211" />
+<img width="2595" height="1835" alt="image" src="https://github.com/user-attachments/assets/51d3316e-af1e-4a2b-b210-ac36f830f97e" />
+
 
 
 
