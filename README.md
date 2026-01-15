@@ -1,7 +1,10 @@
 # ![LealletForBlazor32](https://user-images.githubusercontent.com/8348463/224698821-8768d8af-46ea-462a-a603-a7adf9095594.png) Leaflet Map for Blazor
 
- > You can quickly add a map to the blazor page. 
- > Starting with version 2.0.0, LeafletForBlazor provide you a new control (RealTimeMap) for real time data displaying and analysis. Data can come from various (provided by various) tracking devices: router (static) and mobile phone, GPS of the fleet (dynamic) etc. 
+> You can quickly add a map to the blazor page without script links and without stylesheet references or without other JavaScript specific settings.
+> LeafletForBlazor provide you RealTimeMap control for real time data displaying, custom appearance on the map. The appearance of shapes displayed on the map includes customized symbology, the use of icons, displaying data in tooltips, displaying charts in tooltips, direct display of charts in map (Pie, Donut Gauge), displaying the zoom level in certain intervals, etc. 
+> LeafletForBlazor can also display data stored in GeoJSON files following the RFC 7946 standard.
+> **Nuget versions 1.x.x are deprecated.**
+
 
 [NuGet Package](https://www.nuget.org/packages/LeafletForBlazor#versions-body-tab)
 
