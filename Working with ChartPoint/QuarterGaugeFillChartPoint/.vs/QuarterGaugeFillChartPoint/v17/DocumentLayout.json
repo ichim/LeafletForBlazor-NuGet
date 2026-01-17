@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\QuarterGaugeFillChartPoint\\",
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeFillChartPoint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0E54775-4A08-4D2D-9BA3-03C24FA4F455}|QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint.csproj|c:\\users\\40720\\source\\repos\\quartergaugefillchartpoint\\quartergaugefillchartpoint\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D0E54775-4A08-4D2D-9BA3-03C24FA4F455}|QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\quartergaugefillchartpoint\\quartergaugefillchartpoint\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D0E54775-4A08-4D2D-9BA3-03C24FA4F455}|QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint.csproj|solutionrelative:quartergaugefillchartpoint\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0E54775-4A08-4D2D-9BA3-03C24FA4F455}|QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint.csproj|c:\\users\\40720\\source\\repos\\quartergaugefillchartpoint\\quartergaugefillchartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D0E54775-4A08-4D2D-9BA3-03C24FA4F455}|QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\quartergaugefillchartpoint\\quartergaugefillchartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D0E54775-4A08-4D2D-9BA3-03C24FA4F455}|QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint.csproj|solutionrelative:quartergaugefillchartpoint\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint\\Pages\\Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "QuarterGaugeFillChartPoint\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint\\Pages\\Home.razor",
               "RelativeToolTip": "QuarterGaugeFillChartPoint\\Pages\\Home.razor",
               "ViewState": "AgIAAGgAAAAAAAAAAAAwwIcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -37,9 +37,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint\\_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint\\_Imports.razor",
               "RelativeDocumentMoniker": "QuarterGaugeFillChartPoint\\_Imports.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeFillChartPoint\\QuarterGaugeFillChartPoint\\_Imports.razor",
               "RelativeToolTip": "QuarterGaugeFillChartPoint\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

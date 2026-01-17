@@ -1,13 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\Combined GaugeChart\\",
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined GaugeChart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF5CD8DF-2B89-4F37-80B6-050D7739D018}|Combined GaugeChart\\Combined GaugeChart.csproj|c:\\users\\40720\\source\\repos\\combined gaugechart\\combined gaugechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.308\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF5CD8DF-2B89-4F37-80B6-050D7739D018}|Combined GaugeChart\\Combined GaugeChart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\combined charts\\combined gaugechart\\combined gaugechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DF5CD8DF-2B89-4F37-80B6-050D7739D018}|Combined GaugeChart\\Combined GaugeChart.csproj|solutionrelative:combined gaugechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF5CD8DF-2B89-4F37-80B6-050D7739D018}|Combined GaugeChart\\Combined GaugeChart.csproj|c:\\users\\40720\\source\\repos\\combined gaugechart\\combined gaugechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DF5CD8DF-2B89-4F37-80B6-050D7739D018}|Combined GaugeChart\\Combined GaugeChart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\combined charts\\combined gaugechart\\combined gaugechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DF5CD8DF-2B89-4F37-80B6-050D7739D018}|Combined GaugeChart\\Combined GaugeChart.csproj|solutionrelative:combined gaugechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -23,10 +26,21 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AgIAAOgBAAAAAAAAAAAUwPsBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-01-17T18:15:44.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Combined GaugeChart\\Combined GaugeChart\\Pages\\Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined GaugeChart\\Combined GaugeChart\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Combined GaugeChart\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\Combined GaugeChart\\Combined GaugeChart\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined GaugeChart\\Combined GaugeChart\\Pages\\Home.razor",
               "RelativeToolTip": "Combined GaugeChart\\Pages\\Home.razor",
               "ViewState": "AgIAAFAAAAAAAAAAAAAAAGoAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -35,11 +49,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Combined GaugeChart\\Combined GaugeChart\\_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined GaugeChart\\Combined GaugeChart\\_Imports.razor",
               "RelativeDocumentMoniker": "Combined GaugeChart\\_Imports.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\Combined GaugeChart\\Combined GaugeChart\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined GaugeChart\\Combined GaugeChart\\_Imports.razor",
               "RelativeToolTip": "Combined GaugeChart\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

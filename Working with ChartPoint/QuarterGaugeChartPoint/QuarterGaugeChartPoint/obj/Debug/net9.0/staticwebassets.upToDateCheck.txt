@@ -1,5 +1,0 @@
-wwwroot\css\app.css
-wwwroot\icon-192.png
-wwwroot\index.html
-D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with ChartPoint\QuarterGaugeChartPoint\QuarterGaugeChartPoint\wwwroot\css\app.css
-D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with ChartPoint\QuarterGaugeChartPoint\QuarterGaugeChartPoint\wwwroot\index.html

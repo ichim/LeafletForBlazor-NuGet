@@ -14,9 +14,9 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)leafletforblazor\2.4.4.6\contentFiles\any\net9.0\map_color.ico" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.4.4.6\contentFiles\any\net9.0\map_color.ico')">
+    <Content Include="$(NuGetPackageRoot)leafletforblazor\2.4.4.82\contentFiles\any\net9.0\map_color.ico" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.4.4.82\contentFiles\any\net9.0\map_color.ico')">
       <NuGetPackageId>LeafletForBlazor</NuGetPackageId>
-      <NuGetPackageVersion>2.4.4.6</NuGetPackageVersion>
+      <NuGetPackageVersion>2.4.4.82</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
       <Pack>false</Pack>
       <Private>False</Private>
@@ -24,6 +24,6 @@
     </Content>
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)leafletforblazor\2.4.4.6\buildTransitive\LeafletForBlazor.props" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.4.4.6\buildTransitive\LeafletForBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)leafletforblazor\2.4.4.82\buildTransitive\LeafletForBlazor.props" Condition="Exists('$(NuGetPackageRoot)leafletforblazor\2.4.4.82\buildTransitive\LeafletForBlazor.props')" />
   </ImportGroup>
 </Project>

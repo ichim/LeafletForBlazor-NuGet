@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "LeafletForBlazor/2.4.4.4": {
+      "LeafletForBlazor/2.4.4.82": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0",
@@ -474,7 +474,7 @@
       }
     },
     "net9.0/browser-wasm": {
-      "LeafletForBlazor/2.4.4.4": {
+      "LeafletForBlazor/2.4.4.82": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0",
@@ -947,10 +947,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/2.4.4.4": {
-      "sha512": "/nIPIMix3jmIe9M3YPrmo4xvGr3x54X1na6xxyvARTLJkfOUWAlGcuW/eX+m5754gzO56mjcq89guCSUOa9dnw==",
+    "LeafletForBlazor/2.4.4.82": {
+      "sha512": "2DAR+7xyfg92kzPO174TF+m7OiI+cgzMCCHcdqS9J5jd3nESeZcLniFwUAXYBk3rNTrcnKV/yAUHINAFn2d6yA==",
       "type": "package",
-      "path": "leafletforblazor/2.4.4.4",
+      "path": "leafletforblazor/2.4.4.82",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -963,7 +963,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net9.0/map_color.ico",
-        "leafletforblazor.2.4.4.4.nupkg.sha512",
+        "leafletforblazor.2.4.4.82.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net9.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -1909,7 +1909,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "LeafletForBlazor >= 2.4.4.4",
+      "LeafletForBlazor >= 2.4.4.82",
       "Microsoft.AspNetCore.Components.WebAssembly >= 9.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.11",
       "Microsoft.NET.ILLink.Tasks >= 9.0.11",
@@ -1923,11 +1923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\40720\\source\\repos\\Combined GaugeChart\\Combined GaugeChart\\Combined GaugeChart.csproj",
+      "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined GaugeChart\\Combined GaugeChart\\Combined GaugeChart.csproj",
       "projectName": "Combined GaugeChart",
-      "projectPath": "C:\\Users\\40720\\source\\repos\\Combined GaugeChart\\Combined GaugeChart\\Combined GaugeChart.csproj",
+      "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined GaugeChart\\Combined GaugeChart\\Combined GaugeChart.csproj",
       "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\40720\\source\\repos\\Combined GaugeChart\\Combined GaugeChart\\obj\\",
+      "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined GaugeChart\\Combined GaugeChart\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1969,7 +1969,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[2.4.4.4, )"
+            "version": "[2.4.4.82, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
