@@ -1,7 +1,10 @@
 # ![LealletForBlazor32](https://user-images.githubusercontent.com/8348463/224698821-8768d8af-46ea-462a-a603-a7adf9095594.png) Leaflet Map for Blazor
 
- > You can quickly add a map to the blazor page. 
- > Starting with version 2.0.0, LeafletForBlazor provide you a new control (RealTimeMap) for real time data displaying and analysis. Data can come from various (provided by various) tracking devices: router (static) and mobile phone, GPS of the fleet (dynamic) etc. 
+> You can quickly add a map to the blazor page without script links and without stylesheet references or without other JavaScript specific settings.
+> LeafletForBlazor provide you RealTimeMap control for real time data displaying, custom appearance on the map. The appearance of shapes displayed on the map includes customized symbology, the use of icons, displaying data in tooltips, displaying charts in tooltips, direct display of charts in map (Pie, Donut Gauge), displaying the zoom level in certain intervals, etc. 
+> LeafletForBlazor can also display data stored in GeoJSON files following the RFC 7946 standard.
+> **Nuget versions 1.x.x are deprecated.**
+
 
 [NuGet Package](https://www.nuget.org/packages/LeafletForBlazor#versions-body-tab)
 
@@ -90,7 +93,8 @@ You can find more information:
 </table>
 
 
-<img width="1532" height="1561" alt="image" src="https://github.com/user-attachments/assets/ec5949f6-cbac-4404-9665-14c39d38e211" />
+<img width="2595" height="1835" alt="image" src="https://github.com/user-attachments/assets/51d3316e-af1e-4a2b-b210-ac36f830f97e" />
+
 
 
 
@@ -1449,13 +1453,13 @@ Clear all SVG items from RealTimeMap:
         await realTimeMap.Geometric.DisplaySVGFromHTML.clearAll();
 
 
-## DisplayChartFromObject
+DisplayChartFromObject
 
 The **DisplayChartFromObject** class allows the display of charts in the RealTimeMap control. 
 
 ### Pie Chart
 
-This class provides the **addPieChartPoint()** method with which you can add Pie Chart points to the map.
+DisplayChartFromObject class provides the **addChartPoint()** method with which you can add Pie Chart points to the map.
         
        var pieChartPoint = new RealTimeMap.PieChartPoint()
         {
@@ -1476,17 +1480,21 @@ This class provides the **addPieChartPoint()** method with which you can add Pie
                 maxZoomLevel = 14
             }
         };
-        args.sender.Geometric.DisplayChartFromObject.addPieChartPoint(pieChartPoint);
+        args.sender.Geometric.DisplayChartFromObject.addChartPoint(pieChartPoint);
 
 Clear all chart items from RealTimeMap:
         
         await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
 
+#### Pie Chart and custom style
 
+You can customize the style of the Pie Chart using the **styles** property of the **PieChartPoint** class.
+
+[more about Pie Chart displayed in map](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint#piechartpoint)
 
 ### Donut Chart
 
-This class provides the **addDonutChartPoint()** method with which you can add Donut Chart points to the map.
+DisplayChartFromObject class provides the **addChartPoint()** method with which you can add Donut Chart points to the map.
         
        var chartPoint = new RealTimeMap.DonutChartPoint()
         {
@@ -1508,17 +1516,23 @@ This class provides the **addDonutChartPoint()** method with which you can add D
                 maxZoomLevel = 14
             }
         };
-        args.sender.Geometric.DisplayChartFromObject.addDonutChartPoint(chartPoint);
+        args.sender.Geometric.DisplayChartFromObject.addChartPoint(chartPoint);
 
 Clear all chart items from RealTimeMap:
         
         await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
 
+#### Donut Chart and custom style
+
+You can customize the style of the Donut Chart using the **styles** property of the **DonutChartPoint** class.
+
+[more about Donut Chart displayed in map](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint#donutchartpoint)
+
 
 
 ### Gauge Chart
 
-This class provides the **addGaugeChartPoint()** method with which you can add Gauge Chart points to the map.
+DisplayChartFromObject class provides the **addChartPoint()** method with which you can add Gauge Chart points to the map.
         
 
         var gaugeChartPoint = new RealTimeMap.GaugeChartPoint()
@@ -1544,10 +1558,72 @@ This class provides the **addGaugeChartPoint()** method with which you can add G
                 maxZoomLevel = 14
             }
         };
-        await args.sender.Geometric.DisplayChartFromObject.addGaugeChartPoint(gaugeChartPoint);
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(gaugeChartPoint);
 
       
    
+
+Clear all chart items from RealTimeMap:
+        
+        await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
+
+#### Gauge Chart and custom style
+
+You can customize the style of the Gauge Chart using the **styles** property of the **GaugeChartPoint** class.
+
+
+[more about Gauge Chart displayed in map](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint#gaugechartpoint)
+
+
+### Quarter Gauge Chart
+
+DisplayChartFromObject class provides the **addChartPoint()** method with which you can add Quarter Gauge Chart points to the map.
+        
+       var quarterGaugeChartPoint = new RealTimeMap.QuarterGaugeChartPoint()
+            {
+                location = new RealTimeMap.Location()
+                {
+                    latitude = 50.81229753879652,
+                    longitude = 4.4274985764447905
+                },
+                dimension = 60,
+                indexQuadrant = 3,  //trigonometric quadrant number (0,1,2,3)
+                valueStart = 0,
+                valueStop = 35,
+                value = 18,
+                label="temperature",
+                opacity = 0.4
+        };
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(quarterGaugeChartPoint);
+
+Clear all chart items from RealTimeMap:
+        
+        await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
+
+### Quarter Gauge Fill Chart
+
+DisplayChartFromObject class provides the **addChartPoint()** method with which you can add Quarter Gauge Fill Chart points to the map.
+        
+        var quarterGaugeFillChartPoint = new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 62,
+            indexQuadrant = 2,
+            valueStart = 0,
+            valueStop = 80,
+            value = 16,
+            label = "rainfall",
+            fillPanel = "#4DBEEB",
+            fillingColor="navy",
+            opacity = 0.4,
+            fontSize = 5,
+            haloText = true
+        });
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(quarterGaugeFillChartPoint);
 
 Clear all chart items from RealTimeMap:
         
