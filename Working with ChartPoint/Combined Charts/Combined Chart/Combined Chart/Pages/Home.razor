@@ -21,13 +21,14 @@
         List<RealTimeMap.GaugeChartPoint> gaugePoints = new List<RealTimeMap.GaugeChartPoint>();
         List<RealTimeMap.PieChartPoint> pieChartPoints = new List<RealTimeMap.PieChartPoint>();
         List<RealTimeMap.QuarterGaugeChartPoint> quarterGaugeValue = new List<RealTimeMap.QuarterGaugeChartPoint>();
+        List<RealTimeMap.QuarterGaugeFillChartPoint> gaugeFillPoints = new List<RealTimeMap.QuarterGaugeFillChartPoint>();
 
         discretGaugePoints.Add(new RealTimeMap.DiscreteGaugeChartPoint()
         {
             location = new RealTimeMap.Location()
             {
-                latitude = 50.81229753879652,
-                longitude = 4.4274985764447905
+                latitude = 51.038591076069274,
+                longitude = 3.72533864390199
             },
             colors = ["green", "yellow", "red", "darkgray"],
             percentageValues = [19, 18, 18, 30],
@@ -165,8 +166,8 @@
 
             location = new RealTimeMap.Location()
             {
-                latitude = 50.81229753879652,
-                longitude = 4.4274985764447905
+                latitude = 51.038591076069274, 
+                longitude = 3.72533864390199
             },
             valueStart = 0,
             valueStop = 120,
@@ -290,6 +291,85 @@
                 maxZoomLevel = 14
             }
         });
+
+        gaugeFillPoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.8092230102253,
+                longitude = 4.3006902043943915
+            },
+            dimension = 62,
+            indexQuadrant = 2,
+            valueStart = 0,
+            valueStop = 100,
+            value = 20,
+            label = "visibility",
+            fillPanel = "#4DBEEB",
+            fillingColor = "navy",
+            opacity = 0.4,
+            fontSize = 5,
+            haloText = true
+        });
+        gaugeFillPoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.8092230102253,
+                longitude = 4.3006902043943915
+            },
+            dimension = 62,
+            indexQuadrant = 3,
+            valueStart = 0,
+            valueStop = 120,
+            value = 20,
+            label = "traffic waiting",
+            fillPanel = "azure",
+            fillingColor = "orange",
+            opacity = 0.4,
+            fontSize = 5,
+            haloText = true
+        });
+        gaugeFillPoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.8092230102253,
+                longitude = 4.3006902043943915
+            },
+            dimension = 62,
+            indexQuadrant = 1,
+            valueStart = 0,
+            valueStop = 4,
+            value = 2,
+            label = "time green light",
+            fillPanel = "green",
+            fillingColor = "green",
+            opacity = 0.2,
+            fontSize = 5,
+            haloText = true
+        });
+        gaugeFillPoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.8092230102253,
+                longitude = 4.3006902043943915
+            },
+            dimension = 62,
+            indexQuadrant = 0,
+            valueStart = 0,
+            valueStop = 6,
+            value = 2,
+            label = "time red light",
+            fillPanel = "orange",
+            fillingColor = "red",
+            opacity = 0.2,
+            fontSize = 5,
+            haloText = true
+        });
+        foreach (var item in gaugeFillPoints)
+            await args.sender.Geometric.DisplayChartFromObject.addChartPoint(item);
 
         foreach (var item in discretGaugePoints)
             await args.sender.Geometric.DisplayChartFromObject.addChartPoint(item);

@@ -1,0 +1,107 @@
+﻿@page "/"
+
+<button onclick="@clearAllGaugeScalePercentChartsAndLabels">Clear all from map</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 4rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+
+@code {
+    RealTimeMap rtm;
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 50.81229753879652,
+            longitude = 4.4274985764447905
+        },
+        zoomLevel = 12
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+
+
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(new RealTimeMap.QuarterGaugeScalePercent()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 62,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 10,
+                maxZoomLevel = 14
+            },
+
+            indexQuadrant = 3,
+            valueStart = 0,
+            valueStop = 120,
+            value = 60,
+            fontSize = 5,
+
+
+
+            label = "time waiting (s)",
+            fillPanel = "yellow",
+            opacity = 0.6,
+
+            fillingColor = "#ff4500",
+
+
+            haloText = true,
+            type = RealTimeMap.QuarterGaugeScalePercentType.HowManyAreThere
+
+        });
+
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(new RealTimeMap.QuarterGaugeScalePercent()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 62,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 10,
+                maxZoomLevel = 12
+            },
+
+            indexQuadrant = 2,
+            valueStart = 0,
+            valueStop = 200,
+            value = 121,
+            fontSize = 5,
+
+
+
+            label = "left parking places",
+            fillPanel = "azure",
+            
+            opacity = 0.6,
+
+            fillingColor = "indigo",
+
+
+            haloText = true,
+            type = RealTimeMap.QuarterGaugeScalePercentType.HowManyAreLeft
+
+        });
+
+        
+
+        await args.sender.Geometric.DisplayPointsFromArray.addLabel(new RealTimeMap.LabelInfo()
+        {
+            coordinates = new double[2] { 50.81228753879652, 4.4284985764447905 },
+            text = "Hypermarket",
+        });
+
+
+    }
+    private async Task clearAllGaugeScalePercentChartsAndLabels()
+    {
+        await rtm.Geometric.DisplayChartFromObject.clearAll();
+        await rtm.Geometric.DisplayPointsFromArray.deleteAllLabels();
+    }
+
+}
