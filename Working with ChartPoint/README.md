@@ -168,6 +168,46 @@ The addChartPoint method and QuarterGaugeChartPoint class can add a Quarte Gauge
 <img width="945" height="682" alt="image" src="https://github.com/user-attachments/assets/6987511a-65f9-4592-a300-73f1f9f0a092" />
 
 
+Clear all chart items from RealTimeMap:
+
+    await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
+
+# QuarterGaugeScalePercent
+
+The addChartPoint method and QuarterGaugeScalePercent class can add a Quarte Gauge Scale And Percent Chart directly to the map.
+
+              await args.sender.Geometric.DisplayChartFromObject.addChartPoint(new RealTimeMap.QuarterGaugeScalePercent()
+              {
+                  location = new RealTimeMap.Location()
+                  {
+                      latitude = 50.81229753879652,
+                      longitude = 4.4274985764447905
+                  },
+                  dimension = 62,
+                  visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+                  {
+                      minZoomLevel = 10,
+                      maxZoomLevel = 14
+                  },
+           
+                  indexQuadrant = 3,
+                  valueStart = 0,
+                  valueStop = 120,
+                  value = 60,
+                  fontSize = 5,
+           
+                  label = "time waiting (s)",
+                  fillPanel = "yellow",
+                  opacity = 0.6,
+           
+                  fillingColor = "#ff4500",
+           
+                  haloText = true,
+                  type = RealTimeMap.QuarterGaugeScalePercentType.HowManyAreThere //type of chart HowManyAreThere || HowManyAreLeft
+              });
+
+<img width="869" height="677" alt="image" src="https://github.com/user-attachments/assets/43277e41-b1d6-4b60-9797-baa90bb51263" />
+
 
 Clear all chart items from RealTimeMap:
 
