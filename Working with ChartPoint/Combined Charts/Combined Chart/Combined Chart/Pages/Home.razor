@@ -292,25 +292,60 @@
             }
         });
 
-        gaugeFillPoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(new RealTimeMap.QuarterGaugeScalePercent()
         {
-            location = new RealTimeMap.Location()
-            {
-                latitude = 50.8092230102253,
-                longitude = 4.3006902043943915
-            },
+                location = new RealTimeMap.Location()
+                {
+                    latitude = 50.8092230102253,
+                    longitude = 4.3006902043943915
+                },
             dimension = 62,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 10,
+                maxZoomLevel = 12
+            },
+
             indexQuadrant = 2,
             valueStart = 0,
-            valueStop = 100,
-            value = 20,
-            label = "visibility",
-            fillPanel = "#4DBEEB",
-            fillingColor = "navy",
-            opacity = 0.4,
+            valueStop = 200,
+            value = 121,
             fontSize = 5,
-            haloText = true
+
+
+
+            label = "left parking places",
+            fillPanel = "azure",
+
+            opacity = 0.6,
+
+            fillingColor = "indigo",
+
+
+            haloText = true,
+            type = RealTimeMap.QuarterGaugeScalePercentType.HowManyAreLeft
+
         });
+
+        // gaugeFillPoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
+        // {
+        //     location = new RealTimeMap.Location()
+        //     {
+        //         latitude = 50.8092230102253,
+        //         longitude = 4.3006902043943915
+        //     },
+        //     dimension = 62,
+        //     indexQuadrant = 2,
+        //     valueStart = 0,
+        //     valueStop = 100,
+        //     value = 20,
+        //     label = "visibility",
+        //     fillPanel = "#4DBEEB",
+        //     fillingColor = "navy",
+        //     opacity = 0.4,
+        //     fontSize = 5,
+        //     haloText = true
+        // });
         gaugeFillPoints.Add(new RealTimeMap.QuarterGaugeFillChartPoint()
         {
             location = new RealTimeMap.Location()

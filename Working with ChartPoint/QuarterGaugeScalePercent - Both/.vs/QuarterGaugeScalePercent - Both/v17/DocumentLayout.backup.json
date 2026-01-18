@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent - Both\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81F6A092-7228-467D-96A0-E285EAFC5205}|QuarterGaugeScalePercent - Both\\QuarterGaugeScalePercent - Both.csproj|c:\\users\\40720\\source\\repos\\quartergaugescalepercent - both\\quartergaugescalepercent - both\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81F6A092-7228-467D-96A0-E285EAFC5205}|QuarterGaugeScalePercent - Both\\QuarterGaugeScalePercent - Both.csproj|solutionrelative:quartergaugescalepercent - both\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81F6A092-7228-467D-96A0-E285EAFC5205}|QuarterGaugeScalePercent - Both\\QuarterGaugeScalePercent - Both.csproj|c:\\users\\40720\\source\\repos\\quartergaugescalepercent - both\\quartergaugescalepercent - both\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81F6A092-7228-467D-96A0-E285EAFC5205}|QuarterGaugeScalePercent - Both\\QuarterGaugeScalePercent - Both.csproj|solutionrelative:quartergaugescalepercent - both\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent - Both\\QuarterGaugeScalePercent - Both\\_Imports.razor",
+              "RelativeDocumentMoniker": "QuarterGaugeScalePercent - Both\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent - Both\\QuarterGaugeScalePercent - Both\\_Imports.razor",
+              "RelativeToolTip": "QuarterGaugeScalePercent - Both\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-18T18:52:31.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent - Both\\QuarterGaugeScalePercent - Both\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "QuarterGaugeScalePercent - Both\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent - Both\\QuarterGaugeScalePercent - Both\\Pages\\Home.razor",
+              "RelativeToolTip": "QuarterGaugeScalePercent - Both\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-18T18:52:04.121Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent\\",
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeScalePercent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F48B819-D66A-4188-8F2A-FEE46A5F2B06}|QuarterGaugeScalePercent\\QuarterGaugeScalePercent.csproj|c:\\users\\40720\\source\\repos\\quartergaugescalepercent\\quartergaugescalepercent\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8F48B819-D66A-4188-8F2A-FEE46A5F2B06}|QuarterGaugeScalePercent\\QuarterGaugeScalePercent.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\quartergaugescalepercent\\quartergaugescalepercent\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8F48B819-D66A-4188-8F2A-FEE46A5F2B06}|QuarterGaugeScalePercent\\QuarterGaugeScalePercent.csproj|solutionrelative:quartergaugescalepercent\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F48B819-D66A-4188-8F2A-FEE46A5F2B06}|QuarterGaugeScalePercent\\QuarterGaugeScalePercent.csproj|c:\\users\\40720\\source\\repos\\quartergaugescalepercent\\quartergaugescalepercent\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8F48B819-D66A-4188-8F2A-FEE46A5F2B06}|QuarterGaugeScalePercent\\QuarterGaugeScalePercent.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\quartergaugescalepercent\\quartergaugescalepercent\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8F48B819-D66A-4188-8F2A-FEE46A5F2B06}|QuarterGaugeScalePercent\\QuarterGaugeScalePercent.csproj|solutionrelative:quartergaugescalepercent\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\Pages\\Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "QuarterGaugeScalePercent\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\Pages\\Home.razor",
               "RelativeToolTip": "QuarterGaugeScalePercent\\Pages\\Home.razor",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAFgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-17T13:23:31.518Z",
               "EditorCaption": ""
@@ -37,14 +37,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\_Imports.razor",
               "RelativeDocumentMoniker": "QuarterGaugeScalePercent\\_Imports.razor",
-              "ToolTip": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\_Imports.razor",
               "RelativeToolTip": "QuarterGaugeScalePercent\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-17T13:22:57.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T13:22:57.883Z"
             }
           ]
         }

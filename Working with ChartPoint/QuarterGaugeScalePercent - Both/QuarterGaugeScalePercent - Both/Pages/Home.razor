@@ -1,0 +1,63 @@
+﻿@page "/"
+
+<button onclick="@clarAllChartsAndLabels">Clear All</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 4rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+
+@code {
+    RealTimeMap rtm;
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 50.81229753879652,
+            longitude = 4.4274985764447905
+        },
+        zoomLevel = 12
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(new RealTimeMap.QuarterGaugeScalePercentChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 62,
+
+            indexQuadrant = 3,
+            valueStart = 0,
+            valueStop = 150,
+            value = 110,
+            fontSize = 5,
+
+          
+
+            label  = "parking place",
+            fillPanel = "#4f86f7",
+            opacity  = 0.24,
+   
+            fillingColor = "green",
+   
+
+            haloText = true,
+            type=RealTimeMap.QuarterGaugeScalePercentType.Both
+
+        });
+
+        await args.sender.Geometric.DisplayPointsFromArray.addLabel(new RealTimeMap.LabelInfo()
+        {
+            coordinates = new double[2] { 50.81228753879652, 4.4284985764447905 },
+            text = "Hypermarket Parking",
+        });
+
+
+    }
+    private async Task clarAllChartsAndLabels()
+    {
+        await rtm.Geometric.DisplayChartFromObject.clearAll();
+        await rtm.Geometric.DisplayPointsFromArray.deleteAllLabels();
+    }
+
+}

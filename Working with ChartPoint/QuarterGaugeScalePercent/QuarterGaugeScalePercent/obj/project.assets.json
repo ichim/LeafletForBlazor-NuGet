@@ -1923,11 +1923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent.csproj",
+      "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent.csproj",
       "projectName": "QuarterGaugeScalePercent",
-      "projectPath": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent.csproj",
+      "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent.csproj",
       "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\40720\\source\\repos\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\obj\\",
+      "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\QuarterGaugeScalePercent\\QuarterGaugeScalePercent\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

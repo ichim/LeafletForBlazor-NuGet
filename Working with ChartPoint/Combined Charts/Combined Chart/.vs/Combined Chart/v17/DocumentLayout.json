@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined Chart\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6FDB698-0E80-4371-8096-0C7B464A1F6E}|Combined Chart\\Combined Chart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\working with chartpoint\\combined charts\\combined chart\\combined chart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E6FDB698-0E80-4371-8096-0C7B464A1F6E}|Combined Chart\\Combined Chart.csproj|solutionrelative:combined chart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined Chart\\Combined Chart\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Combined Chart\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with ChartPoint\\Combined Charts\\Combined Chart\\Combined Chart\\Pages\\Home.razor",
+              "RelativeToolTip": "Combined Chart\\Pages\\Home.razor",
+              "ViewState": "AgIAACIBAAAAAAAAAAAmwCwBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-17T18:37:25.47Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
