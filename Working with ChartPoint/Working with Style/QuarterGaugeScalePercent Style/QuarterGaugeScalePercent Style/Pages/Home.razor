@@ -1,0 +1,127 @@
+﻿@page "/"
+
+<button onclick="@clearAllItemsFromMap">Clear map</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 4rem)" width="calc(100vw - 2.6rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+
+@code {
+    RealTimeMap rtm;
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 50.81229753879652,
+            longitude = 4.4274985764447905
+        },
+        zoomLevel = 12
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(new RealTimeMap.QuarterGaugeScalePercentChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 120,
+
+            indexQuadrant = 3,
+            valueStart = 0,
+            valueStop = 120,
+            value = 90,
+            fontSize = 5,
+
+
+
+            label = "time waiting",
+            fillPanel = "#4f86f7",
+            opacity = 0.24,
+
+            fillingColor = "green",
+
+
+            haloText = true,
+            type = RealTimeMap.QuarterGaugeScalePercentType.HowManyAreThere,
+
+            styles = new RealTimeMap.GaugeScalePercentStyle()
+            {
+                crownScale = new LeafletForBlazor.css.Style().add("fill", "lightgray").add("stroke-width", ".4").add("stroke", "green"),
+                crownBackgroundHowManyAreFirst = new LeafletForBlazor.css.Style().add("fill", "yellow").add("stroke-width", ".8").add("stroke", "orange"),
+                crownFillingHowManyAreFirst = new LeafletForBlazor.css.Style().add("fill", "orange"),
+                crownBackgroundHowManyAreSecond = new LeafletForBlazor.css.Style().add("fill", "azure").add("stroke-width", ".4").add("stroke", "green"),
+                crownFillingHowManyAreSecond = new LeafletForBlazor.css.Style().add("fill", "green"),
+                crownLabel = new LeafletForBlazor.css.Style().add("fill", "purple").add("opacity", "0"),//the crown that houses the label
+                label = new LeafletForBlazor.css.Style().add("font-size", "5.5").add("fill", "brown"), //gauge label
+                values = new LeafletForBlazor.css.Style().add("font-weight", "1000").add("fill", "indigo"),//gauge value and scale values
+                background = new LeafletForBlazor.css.Style().add("fill", "lightgray").add("opacity", "0.2"),//gauge background
+                value = new LeafletForBlazor.css.Style().add("fill", "orange")
+
+            }
+
+
+
+        });
+
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(new RealTimeMap.QuarterGaugeScalePercentChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 120,
+
+            indexQuadrant = 2,
+            valueStart = 0,
+            valueStop = 150,
+            value = 110,
+            fontSize = 5,
+
+
+
+            label = "parking place",
+            fillPanel = "#4f86f7",
+            opacity = 0.24,
+
+            fillingColor = "green",
+
+
+            haloText = true,
+            type = RealTimeMap.QuarterGaugeScalePercentType.Both,
+
+            styles = new RealTimeMap.GaugeScalePercentStyle()
+            {
+                crownScale = new LeafletForBlazor.css.Style().add("fill", "lightgray").add("stroke-width", ".4").add("stroke", "green"),
+                crownBackgroundHowManyAreFirst = new LeafletForBlazor.css.Style().add("fill", "yellow").add("stroke-width", ".8").add("stroke", "orange"),
+                crownFillingHowManyAreFirst = new LeafletForBlazor.css.Style().add("fill", "orange"),
+                crownBackgroundHowManyAreSecond = new LeafletForBlazor.css.Style().add("fill", "azure").add("stroke-width", ".4").add("stroke", "green"),
+                crownFillingHowManyAreSecond = new LeafletForBlazor.css.Style().add("fill", "green"),
+                crownLabel = new LeafletForBlazor.css.Style().add("fill", "purple").add("opacity", "0"),//the crown that houses the label
+                label = new LeafletForBlazor.css.Style().add("font-size", "5.5").add("fill", "brown"), //gauge label
+                values = new LeafletForBlazor.css.Style().add("font-weight", "1000").add("fill", "indigo"),//gauge value and scale values
+                background = new LeafletForBlazor.css.Style().add("fill", "lightgray").add("opacity", "0.2"),//gauge background
+                value = new LeafletForBlazor.css.Style().add("fill", "orange")
+
+            }
+
+
+
+        });
+
+        await args.sender.Geometric.DisplayPointsFromArray.addLabel(new RealTimeMap.LabelInfo()
+        {
+            coordinates = new double[2] { 50.81228753879652, 4.4284985764447905 },
+            text = "Weather Station",
+        });
+
+
+    }
+    private async Task clearAllItemsFromMap()
+    {
+        await rtm.Geometric.DisplayChartFromObject.clearAll();
+        await rtm.Geometric.DisplayPointsFromArray.deleteAllLabels();
+    }
+
+}
