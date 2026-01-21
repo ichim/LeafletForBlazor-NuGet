@@ -172,7 +172,7 @@ Clear all chart items from RealTimeMap:
 
     await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
 
-# QuarterGaugeScalePercent
+# QuarterGaugeScalePercentChartPoint
 
 The addChartPoint method and QuarterGaugeScalePercent class can add a Quarte Gauge Scale And Percent Chart directly to the map.
 
@@ -206,7 +206,22 @@ The addChartPoint method and QuarterGaugeScalePercent class can add a Quarte Gau
                   type = RealTimeMap.QuarterGaugeScalePercentType.HowManyAreThere //type of chart HowManyAreThere || HowManyAreLeft
               });
 
+
+Example 1:
+
+       HowManyAreThere = 0,
+       HowManyAreLeft = 1,
+
+
 <img width="869" height="677" alt="image" src="https://github.com/user-attachments/assets/43277e41-b1d6-4b60-9797-baa90bb51263" />
+
+Example 2
+
+       HowManyAreThere = 0,
+       HowManyAreLeft = 1,
+       Both = 2
+
+<img width="1101" height="966" alt="image" src="https://github.com/user-attachments/assets/0bd7f5db-319a-4a41-94b9-32d9e5c32740" />
 
 
 Clear all chart items from RealTimeMap:
