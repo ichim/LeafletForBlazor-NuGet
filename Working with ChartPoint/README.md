@@ -1,5 +1,9 @@
 # DisplayChartFromObject class
 
+
+> To optimize map rendering, svg elements are displayed only in the visible area.
+
+
 The DisplayChartFromObject class provides the ability to display charts directly on the map (RealTimeMap).
 Since the graphs are displayed directly on the map, all ChartPoint classes will have in common Location (latitude, longitude)
 
