@@ -24,7 +24,6 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-
 | [Direct display of charts on the map](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint#displaychartfromobject-class)|Direct display of charts on the map for Pie, Donut, Gauge |
 | [Clustering StreamPoint Collection](#clustering) | Displaying clusters for a StreamPoint Collection. Configuration parameters for StreamPoint clustering. Working with clustering event (click). |
 # New examples code
