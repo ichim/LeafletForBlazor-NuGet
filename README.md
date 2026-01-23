@@ -25,7 +25,7 @@ You can find more information:
 | Title | News Description |
 | ---- | ---- |
 | [Clustering StreamPoint Collection](#clustering) | Displaying clusters for a StreamPoint Collection. Configuration parameters for StreamPoint clustering. Working with clustering event (click)|
-|[direct display of charts on the map]()|Direct display of charts on the map for Pie, Donut, Gauge|
+|[direct display of charts on the map](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint#displaychartfromobject-class)|Direct display of charts on the map for Pie, Donut, Gauge|
 # New examples code
 
 <table>
