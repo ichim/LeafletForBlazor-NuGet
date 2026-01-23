@@ -24,10 +24,8 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [Clustering StreamPoint Collection](#clustering) | Displaying clusters for a StreamPoint Collection |
-| [Clustering configuration parameters](#clustering) | Configuration parameters for StreamPoint clustering |
-| [Clustering click event](#clustering) | Working with clustering event (click) |
-
+| [Clustering StreamPoint Collection](#clustering) | Displaying clusters for a StreamPoint Collection. Configuration parameters for StreamPoint clustering. Working with clustering event (click)|
+|[direct display of charts on the map]()|Direct display of charts on the map for Pie, Donut, Gauge|
 # New examples code
 
 <table>
