@@ -24,10 +24,8 @@ You can find more information:
 
 | Title | News Description |
 | ---- | ---- |
-| [Clustering StreamPoint Collection](#clustering) | Displaying clusters for a StreamPoint Collection |
-| [Clustering configuration parameters](#clustering) | Configuration parameters for StreamPoint clustering |
-| [Clustering click event](#clustering) | Working with clustering event (click) |
-
+| [Direct display of charts on the map](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint#displaychartfromobject-class)|Direct display of charts on the map for Pie, Donut, Gauge |
+| [Clustering StreamPoint Collection](#clustering) | Displaying clusters for a StreamPoint Collection. Configuration parameters for StreamPoint clustering. Working with clustering event (click). |
 # New examples code
 
 <table>
@@ -93,7 +91,8 @@ You can find more information:
 </table>
 
 
-<img width="2471" height="1819" alt="image" src="https://github.com/user-attachments/assets/c2a1cf66-8647-4893-a7af-288c73950ab1" />
+<img width="1744" height="1112" alt="image" src="https://github.com/user-attachments/assets/be73bfa8-39c5-48dd-9496-654b5971038b" />
+
 
 
 
