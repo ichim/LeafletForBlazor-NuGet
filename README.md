@@ -88,6 +88,8 @@ You can find more information:
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint#displaychartfromobject-class">ChartPoint example code</a></td>
         <td><font size = "2px">Using classes inherited from IChartPoint you can display charts directly in the map (Pie, Donut, Gauge).</font></td>
     </tr>
+
+	
 </table>
 
 
