@@ -1,4 +1,4 @@
-# Sigma Drone
+# Sigma Drone Chart basic
 
 You can create charts specific to drone monitoring. This type of chart is a combination of Gauge and vehicle-specific indicators.
 
