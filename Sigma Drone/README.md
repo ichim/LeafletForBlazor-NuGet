@@ -4,6 +4,25 @@
 ![interactive08](https://github.com/user-attachments/assets/64fbf731-61a2-47dc-bb41-8a917cd879e1)
 
 
+## Basic properties
+
+Just as each chart that is displayed on the map has a location, Sigma Drone Chart has properties related to location, size, and visibility levels:
+
+     var sigmaDroneChartPoint = new RealTimeMap.SigmaDroneChartPoint()
+        {
+            location = new RealTimeMap.Location()                  //mandatory
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 80,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()     //not mandatory
+             {
+                 minZoomLevel = 6,
+                 maxZoomLevel = 14
+             },
+          };
+
 
 You can create charts specific to drone monitoring. This type of chart is a combination of Gauge and vehicle-specific indicators.
 
