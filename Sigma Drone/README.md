@@ -71,4 +71,4 @@ You can expand the display of parameters in the crown area:
                }
           };
 
-[more about basic config]()
+[more about basic config](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Sigma%20Drone/Sigma%20Drone%20Chart%20basic#sigma-drone-chart-basic)
