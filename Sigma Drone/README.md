@@ -24,6 +24,12 @@ Just as each chart that is displayed on the map has a location, Sigma Drone Char
           };
 
 
+## Configuring the first indicators
+
+A first set of indicators are displayed on the circle sector of the gauge chart and refer to the WiFi signal and the altimeter.
+
+Both altimeter and WiFi signal are optional.
+
 You can create charts specific to drone monitoring. This type of chart is a combination of Gauge and vehicle-specific indicators.
 
      var sigmaDroneChartPoint = new RealTimeMap.SigmaDroneChartPoint()
@@ -47,6 +53,8 @@ You can create charts specific to drone monitoring. This type of chart is a comb
             //... and more indicators
         };
         await args.sender.Geometric.DisplayChartFromObject.addChartPoint(sigmaDroneChartPoint);
+
+        
 
 You can expand the display of parameters in the crown area:
 
