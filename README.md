@@ -1634,6 +1634,64 @@ Clear all chart items from RealTimeMap:
         
         await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
 
+### Sigma Drone Chart
+
+You can create charts specific to drone monitoring. This type of chart is a combination of Gauge and vehicle-specific indicators.
+
+        var sigmaDroneChartPoint = new RealTimeMap.SigmaDroneChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 80,
+            wifiIndicator = new RealTimeMap.WiFiIndicator()
+            {
+                    level = 1
+            },
+            altitudeIndicator = new RealTimeMap.AltitudeIndicator()
+            {
+                    altitude = 800,
+                    maximumAltitude = 1200,
+              
+            },
+             crownIndicators = new List<RealTimeMap.SigmaDroneObject>()
+            {
+                new RealTimeMap.SigmaDroneCrownScale()
+                {
+                    label = "x 10 km/h",
+                    valueStart = 0,
+                    valueStop = 12,
+                    value = 9,
+                    percentageOfTheEntireCrown = 100,
+                    backgroundColor = "#f8f8ff",
+                    styles = new RealTimeMap.SigmaDroneCrownScaleStyle()
+                    {
+                        //style customization
+                    }
+                },
+                //... and more indicators
+            },
+            
+
+            //Custom Styles...
+            styles = new RealTimeMap.SigmaDroneStyle()
+            {
+                background = new LeafletForBlazor.css.Style().add("fill","azure"),
+                pivot = new LeafletForBlazor.css.Style().add("fill","indigo").add("r","3px")
+            },
+        };
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(sigmaDroneChartPoint);
+
+
+Style customization is done through the **styles** property of the **SigmaDroneChartPoint** class. This property allows you to customize the style of chart items.
+
+Style customization is done through the **styles** property of the **SigmaDroneCrownScale** class. This property allows you to customize the style of chart items.
+
+
+[more details about Sigma Drone Chart](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Sigma%20Drone/Sigma%20Drone%20Chart%20basic#sigma-drone)
+
 
 # RealTimeMap components
 
