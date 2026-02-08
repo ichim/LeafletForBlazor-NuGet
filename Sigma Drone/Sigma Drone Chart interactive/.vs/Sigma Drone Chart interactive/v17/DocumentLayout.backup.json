@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCA8EF5F-CEF1-4E7C-806B-57D61EE427EB}|Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj|c:\\users\\40720\\source\\repos\\sigma drone chart interactive\\sigma drone chart interactive\\input\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCA8EF5F-CEF1-4E7C-806B-57D61EE427EB}|Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj|solutionrelative:sigma drone chart interactive\\input\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCA8EF5F-CEF1-4E7C-806B-57D61EE427EB}|Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj|c:\\users\\40720\\source\\repos\\sigma drone chart interactive\\sigma drone chart interactive\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCA8EF5F-CEF1-4E7C-806B-57D61EE427EB}|Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj|solutionrelative:sigma drone chart interactive\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCA8EF5F-CEF1-4E7C-806B-57D61EE427EB}|Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj|c:\\users\\40720\\source\\repos\\sigma drone chart interactive\\sigma drone chart interactive\\sigma drone chart interactive.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FCA8EF5F-CEF1-4E7C-806B-57D61EE427EB}|Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj|solutionrelative:sigma drone chart interactive\\sigma drone chart interactive.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCA8EF5F-CEF1-4E7C-806B-57D61EE427EB}|Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj|c:\\users\\40720\\source\\repos\\sigma drone chart interactive\\sigma drone chart interactive\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCA8EF5F-CEF1-4E7C-806B-57D61EE427EB}|Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj|solutionrelative:sigma drone chart interactive\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCA8EF5F-CEF1-4E7C-806B-57D61EE427EB}|Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj|c:\\users\\40720\\source\\repos\\sigma drone chart interactive\\sigma drone chart interactive\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCA8EF5F-CEF1-4E7C-806B-57D61EE427EB}|Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj|solutionrelative:sigma drone chart interactive\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Sigma Drone Chart interactive\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive\\Pages\\Home.razor",
+              "RelativeToolTip": "Sigma Drone Chart interactive\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-08T10:16:04.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "data.cs",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive\\input\\data.cs",
+              "RelativeDocumentMoniker": "Sigma Drone Chart interactive\\input\\data.cs",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive\\input\\data.cs",
+              "RelativeToolTip": "Sigma Drone Chart interactive\\input\\data.cs",
+              "ViewState": "AgIAAEoBAAAAAAAAAAAwwGQBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T10:15:52.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sigma Drone Chart interactive",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj",
+              "RelativeDocumentMoniker": "Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj",
+              "RelativeToolTip": "Sigma Drone Chart interactive\\Sigma Drone Chart interactive.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-08T10:15:19.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Sigma Drone Chart interactive\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Sigma Drone Chart interactive\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-08T10:15:12.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive\\_Imports.razor",
+              "RelativeDocumentMoniker": "Sigma Drone Chart interactive\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart interactive\\Sigma Drone Chart interactive\\_Imports.razor",
+              "RelativeToolTip": "Sigma Drone Chart interactive\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-08T10:14:58.522Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
