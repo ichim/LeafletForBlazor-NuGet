@@ -109,7 +109,8 @@ You can find more information:
 
 
 
-![interactive06](https://github.com/user-attachments/assets/83b806c4-afbf-4845-82dd-7f853d8430c5)
+![interactive08](https://github.com/user-attachments/assets/f91ad362-f6c0-4d1a-b8e7-0a266d4e6b7d)
+
 
 
 
