@@ -2,9 +2,9 @@
 
 > You can quickly add a map to the blazor page without script links and without stylesheet references or without other JavaScript specific settings.
 > 
-> LeafletForBlazor provide you RealTimeMap control for real time data displaying. The display, distinct symbolization and updating of StreamPoint collection properties is optimized by minimizing invoke calls to javascript functions, managing symbols at the map level (JavaScript) via Appearance().pattern and distinct threads of execution.
+> LeafletForBlazor provide you **RealTimeMap** control for real time data displaying. The display, distinct symbolization and updating of **StreamPoint** collection properties is optimized by minimizing invoke calls to javascript functions, managing symbols at the map level (JavaScript) via Appearance().pattern and distinct threads of execution.
 > 
-> Also to optimize data display and updating, StreamPoint has a predefined but hierarchically extensible structure. 
+> Also to optimize data display and updating, **StreamPoint** has a predefined but hierarchically extensible structure. 
 >
 > **Direct display** of charts in map (Pie, Donut Gauge) at the zoom level in certain intervals, etc. 
 >
