@@ -1,9 +1,20 @@
 # ![LealletForBlazor32](https://user-images.githubusercontent.com/8348463/224698821-8768d8af-46ea-462a-a603-a7adf9095594.png) Leaflet Map for Blazor
 
 > You can quickly add a map to the blazor page without script links and without stylesheet references or without other JavaScript specific settings.
-> LeafletForBlazor provide you RealTimeMap control for real time data displaying, custom appearance on the map. The appearance of shapes displayed on the map includes customized symbology, the use of icons, displaying data in tooltips, displaying charts in tooltips, direct display of charts in map (Pie, Donut Gauge), displaying the zoom level in certain intervals, etc. 
+> 
+> LeafletForBlazor provide you RealTimeMap control for real time data displaying. The display, distinct symbolization and updating of StreamPoint collection properties is optimized by minimizing invoke calls to javascript functions, managing symbols at the map level (JavaScript) via Appearance().pattern and distinct threads of execution.
+> 
+> Also to optimize data display and updating, StreamPoint has a predefined but hierarchically extensible structure. 
+>
+> **Direct display** of charts in map (Pie, Donut Gauge) at the zoom level in certain intervals, etc. 
+>
+> **Sigma Drone Chart** - you can create customizable charts for drone monitoring
+>
 > LeafletForBlazor can also display data stored in GeoJSON files following the RFC 7946 standard.
-> **Nuget versions 1.x.x are deprecated.**
+>
+>**Nuget versions 1.x.x are deprecated.**
+
+
 
 
 [NuGet Package](https://www.nuget.org/packages/LeafletForBlazor#versions-body-tab)
