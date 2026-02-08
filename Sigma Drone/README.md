@@ -1,5 +1,10 @@
 # Sigma Drone Chart
 
+
+![interactive08](https://github.com/user-attachments/assets/64fbf731-61a2-47dc-bb41-8a917cd879e1)
+
+
+
 You can create charts specific to drone monitoring. This type of chart is a combination of Gauge and vehicle-specific indicators.
 
      var sigmaDroneChartPoint = new RealTimeMap.SigmaDroneChartPoint()
