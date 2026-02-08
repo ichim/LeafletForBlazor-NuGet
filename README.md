@@ -108,9 +108,9 @@ You can find more information:
 
 
 
-![interactive02](https://github.com/user-attachments/assets/fe27f3e5-0977-4901-a632-b9f6cce4a244)
 
 
+![interactive04](https://github.com/user-attachments/assets/b19358a5-d0d0-424e-a213-3b9fc96731f2)
 
 
 
