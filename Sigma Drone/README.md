@@ -70,3 +70,5 @@ You can expand the display of parameters in the crown area:
                  },
                }
           };
+
+[more about basic config]()
