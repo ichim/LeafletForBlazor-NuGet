@@ -1,9 +1,20 @@
 # ![LealletForBlazor32](https://user-images.githubusercontent.com/8348463/224698821-8768d8af-46ea-462a-a603-a7adf9095594.png) Leaflet Map for Blazor
 
 > You can quickly add a map to the blazor page without script links and without stylesheet references or without other JavaScript specific settings.
-> LeafletForBlazor provide you RealTimeMap control for real time data displaying, custom appearance on the map. The appearance of shapes displayed on the map includes customized symbology, the use of icons, displaying data in tooltips, displaying charts in tooltips, direct display of charts in map (Pie, Donut Gauge), displaying the zoom level in certain intervals, etc. 
+> 
+> LeafletForBlazor provide you **RealTimeMap** control for real time data displaying. The display, distinct symbolization and updating of **StreamPoint** collection properties is optimized by minimizing invoke calls to javascript functions, managing symbols at the map level (JavaScript) via Appearance().pattern and distinct threads of execution.
+> 
+> Also to optimize data display and updating, **StreamPoint** has a predefined but hierarchically extensible structure. 
+>
+> **Direct display** of charts in map (Pie, Donut Gauge) at the zoom level in certain intervals, etc. 
+>
+> **Sigma Drone Chart** - you can create customizable charts for drone monitoring
+>
 > LeafletForBlazor can also display data stored in GeoJSON files following the RFC 7946 standard.
-> **Nuget versions 1.x.x are deprecated.**
+>
+>**Nuget versions 1.x.x are deprecated.**
+
+
 
 
 [NuGet Package](https://www.nuget.org/packages/LeafletForBlazor#versions-body-tab)
@@ -88,6 +99,11 @@ You can find more information:
         <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20ChartPoint#displaychartfromobject-class">ChartPoint example code</a></td>
         <td><font size = "2px">Using classes inherited from IChartPoint you can display charts directly in the map (Pie, Donut, Gauge).</font></td>
     </tr>
+	<tr>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Sigma%20Drone/Sigma%20Drone%20Chart%20basic#sigma-drone">Sigma Drone</a></td>
+        <td><font size = "2px">You can create charts specific to drone monitoring. This type of chart is a combination of Gauge and vehicle-specific indicators.</font></td>
+    </tr>
+	
 </table>
 
 
@@ -1628,6 +1644,64 @@ DisplayChartFromObject class provides the **addChartPoint()** method with which 
 Clear all chart items from RealTimeMap:
         
         await realTimeMap.Geometric.DisplayChartFromObject.clearAll();
+
+### Sigma Drone Chart
+
+You can create charts specific to drone monitoring. This type of chart is a combination of Gauge and vehicle-specific indicators.
+
+        var sigmaDroneChartPoint = new RealTimeMap.SigmaDroneChartPoint()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 80,
+            wifiIndicator = new RealTimeMap.WiFiIndicator()
+            {
+                    level = 1
+            },
+            altitudeIndicator = new RealTimeMap.AltitudeIndicator()
+            {
+                    altitude = 800,
+                    maximumAltitude = 1200,
+              
+            },
+             crownIndicators = new List<RealTimeMap.SigmaDroneObject>()
+            {
+                new RealTimeMap.SigmaDroneCrownScale()
+                {
+                    label = "x 10 km/h",
+                    valueStart = 0,
+                    valueStop = 12,
+                    value = 9,
+                    percentageOfTheEntireCrown = 100,
+                    backgroundColor = "#f8f8ff",
+                    styles = new RealTimeMap.SigmaDroneCrownScaleStyle()
+                    {
+                        //style customization
+                    }
+                },
+                //... and more indicators
+            },
+            
+
+            //Custom Styles...
+            styles = new RealTimeMap.SigmaDroneStyle()
+            {
+                background = new LeafletForBlazor.css.Style().add("fill","azure"),
+                pivot = new LeafletForBlazor.css.Style().add("fill","indigo").add("r","3px")
+            },
+        };
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(sigmaDroneChartPoint);
+
+
+Style customization is done through the **styles** property of the **SigmaDroneChartPoint** class. This property allows you to customize the style of chart items.
+
+Style customization is done through the **styles** property of the **SigmaDroneCrownScale** class. This property allows you to customize the style of chart items.
+
+
+[more details about Sigma Drone Chart](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Sigma%20Drone/Sigma%20Drone%20Chart%20basic#sigma-drone)
 
 
 # RealTimeMap components
