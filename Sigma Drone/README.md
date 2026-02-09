@@ -90,7 +90,7 @@ The chart crown can host one or more indicators, of the same type or of differen
                 percentageOfTheEntireCrown = 20,          //how much of the circular crown will be filled with this indicator
             }
 
-- **Discrete indicator**. It is an indicator that can display discrete classes of a parameter (e.g. half, full). Is implemented by the class **RealTimeMap.SigmaDroneCrownDiscreteStyle**
+- **Discrete indicator**. It is an indicator that can display discrete classes of a parameter (e.g. half, full). Is implemented by the class **RealTimeMap.SigmaDroneCrownDiscrete**
 
                new RealTimeMap.SigmaDroneCrownDiscrete()
               {
@@ -114,6 +114,24 @@ The chart crown can host one or more indicators, of the same type or of differen
                 }
 
   The **percentageOfTheEntireCrown** parameter will set how much of the circular crown will be filled with this indicator.
+
+## Multiple indicators on the same crown
+
+The crown of a Sigma Drone Chart can have one or more indicators of the same type or of different types (RealTimeMap.SigmaDroneCrownScale, RealTimeMap.SigmaDroneCrownDiscrete, RealTimeMap.SigmaDroneCrownPercent).
+<table>
+     <tr>
+          <td>Case 1</td>
+     </tr>
+     <tr>
+          Two indicators of the same type and same percentage of coverage of the circular crown
+     </tr>
+     <tr>
+          <img width="240" height="141" alt="image" src="https://github.com/user-attachments/assets/6c47cdfa-7d04-4d42-968c-d73a199bd03d" />
+     </tr>
+</table>
+**Case 1**. Two indicators of the same type and same percentage of coverage of the circular crown
+
+
 
 You can expand the display of parameters in the crown area:
 
