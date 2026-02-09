@@ -1,0 +1,36 @@
+﻿@page "/"
+@using input.Data
+
+<button onclick="@clearAllItems">Clear all items</button>
+<RealTimeMap @ref="rtm" Parameters="@loadParameters" height="calc(100vh - 4rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+
+@code {
+    RealTimeMap rtm;
+    RealTimeMap.LoadParameters loadParameters = new RealTimeMap.LoadParameters()
+    {
+        location = new RealTimeMap.Location()
+        {
+            latitude = 54.349746877082964,
+            longitude = 18.74062644099916,
+        },
+        zoomLevel = 12
+    };
+    private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+    {
+       
+
+        foreach (var item in new data().items)
+        {
+            await args.sender.Geometric.DisplayChartFromObject.addChartPoint(item);
+        }
+    }
+
+   
+
+    private async Task clearAllItems()
+    {
+        await rtm.Geometric.DisplayChartFromObject.clearAll();
+    }
+
+}

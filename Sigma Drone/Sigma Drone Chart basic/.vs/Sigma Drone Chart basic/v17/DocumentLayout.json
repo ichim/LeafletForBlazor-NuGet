@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Sigma Drone\\Sigma Drone Chart basic\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4296DF14-A2EA-454B-B13C-5727A1389083}|Sigma Drone Chart basic\\Sigma Drone Chart basic.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\sigma drone\\sigma drone chart basic\\sigma drone chart basic\\sigma drone chart basic.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{4296DF14-A2EA-454B-B13C-5727A1389083}|Sigma Drone Chart basic\\Sigma Drone Chart basic.csproj|solutionrelative:sigma drone chart basic\\sigma drone chart basic.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4296DF14-A2EA-454B-B13C-5727A1389083}|Sigma Drone Chart basic\\Sigma Drone Chart basic.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\sigma drone\\sigma drone chart basic\\sigma drone chart basic\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4296DF14-A2EA-454B-B13C-5727A1389083}|Sigma Drone Chart basic\\Sigma Drone Chart basic.csproj|solutionrelative:sigma drone chart basic\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,6 +27,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Sigma Drone Chart basic",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Sigma Drone\\Sigma Drone Chart basic\\Sigma Drone Chart basic\\Sigma Drone Chart basic.csproj",
+              "RelativeDocumentMoniker": "Sigma Drone Chart basic\\Sigma Drone Chart basic.csproj",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Sigma Drone\\Sigma Drone Chart basic\\Sigma Drone Chart basic\\Sigma Drone Chart basic.csproj",
+              "RelativeToolTip": "Sigma Drone Chart basic\\Sigma Drone Chart basic.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-08T10:31:13.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Home.razor",
               "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Sigma Drone\\Sigma Drone Chart basic\\Sigma Drone Chart basic\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Sigma Drone Chart basic\\Pages\\Home.razor",
@@ -35,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_Imports.razor",
               "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Sigma Drone\\Sigma Drone Chart basic\\Sigma Drone Chart basic\\_Imports.razor",
               "RelativeDocumentMoniker": "Sigma Drone Chart basic\\_Imports.razor",
@@ -43,8 +59,7 @@
               "RelativeToolTip": "Sigma Drone Chart basic\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-05T06:57:48.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T06:57:48.769Z"
             }
           ]
         }
