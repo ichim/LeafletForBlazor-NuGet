@@ -123,10 +123,10 @@ The crown of a Sigma Drone Chart can have one or more indicators of the same typ
           <td>Case 1</td>
      </tr>
      <tr>
-          Two indicators of the same type and same percentage of coverage of the circular crown
+         <td> Two indicators of the same type and same percentage of coverage of the circular crown </td>
      </tr>
      <tr>
-          <img width="240" height="141" alt="image" src="https://github.com/user-attachments/assets/6c47cdfa-7d04-4d42-968c-d73a199bd03d" />
+         <td> <img width="240" height="141" alt="image" src="https://github.com/user-attachments/assets/6c47cdfa-7d04-4d42-968c-d73a199bd03d" /> </td>
      </tr>
 </table>
 **Case 1**. Two indicators of the same type and same percentage of coverage of the circular crown
