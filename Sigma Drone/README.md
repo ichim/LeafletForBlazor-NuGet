@@ -72,6 +72,17 @@ The chart crown can host one or more indicators, of the same type or of differen
             }
 
 - **Discrete indicator**. It is an indicator that can display discrete classes of a parameter (e.g. half, full). Is implemented by the class **RealTimeMap.SigmaDroneCrownDiscreteStyle**
+
+               new RealTimeMap.SigmaDroneCrownDiscrete()
+              {
+                  label  = "battery",
+                  colors = new List<string>() { "red", "orange", "yellow", "green" }.ToArray(),
+                  percentageValues = new List<int>() { 33, 33, 33, 33 }.ToArray(),
+                  index=1,
+                  labels = new List<string>() { "critical", "low", "long range", "full" }.ToArray(),
+                  //percentageOfTheEntireCrown = 80,
+              }
+
 - **Percent indicator**. It is an indicator dedicated to displaying percentage values ​​(of a whole).Is implemented by the class **RealTimeMap.SigmaDroneCrownPercent**
 
 You can expand the display of parameters in the crown area:
