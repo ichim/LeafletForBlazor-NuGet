@@ -57,6 +57,7 @@ You can create charts specific to drone monitoring. This type of chart is a comb
         await args.sender.Geometric.DisplayChartFromObject.addChartPoint(sigmaDroneChartPoint);
 
         
+## Crown Indicators
 
 You can expand the display of parameters in the crown area:
 
