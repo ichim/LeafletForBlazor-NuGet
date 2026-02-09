@@ -62,8 +62,8 @@ You can create charts specific to drone monitoring. This type of chart is a comb
 The chart crown can host one or more indicators, of the same type or of different types. 3 distinct types of indicators can be added to the crown:
 <table>
      <tr>
-          <td>**Scale**</td>
-          <td>**Discrete**</td>
+          <td> **Scale** </td>
+          <td> **Discrete** </td>
      </tr>
     <tr>
          <td>
