@@ -26,7 +26,9 @@ Just as each chart that is displayed on the map has a location, Sigma Drone Char
 
 ## Configuring the first indicators
 
-A first set of indicators are displayed on the circle sector of the gauge chart and refer to the WiFi signal and the altimeter.
+A first set of indicators are displayed on the circle sector of the gauge chart and refer to the 
+ - **WiFi signal** - level between -1 (without signal) and 3 (maximum level of signal);
+ - **Altimeter** - configurable between 0 (default) and maximum height;
 
 Both altimeter and WiFi signal are optional.
 
