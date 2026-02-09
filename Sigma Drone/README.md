@@ -189,7 +189,36 @@ The crown of a Sigma Drone Chart can have one or more indicators of the same typ
 
 **Case 3**
 
-
+                     new RealTimeMap.SigmaDroneCrownPercent()
+               {
+                   label = "battery",
+                   valueStart = 0,
+                   valueStop = 10,
+                   value = 3,
+                   percentageOfTheEntireCrown = 20,
+                   backgroundColor = "white",
+                   fillColor = "blue",
+                   haloText = true
+               },
+               new RealTimeMap.SigmaDroneCrownScale()
+               {
+                   label = "x 10 km/h",
+                   valueStart = 0,
+                   valueStop = 12,
+                   value = 6,
+                   percentageOfTheEntireCrown = 30,
+                   backgroundColor = "#f8f8ff"
+               },
+              new RealTimeMap.SigmaDroneCrownDiscrete()
+              {
+                  colors = new List<string>(){"red", "orange","green"}.ToArray(),
+                  labels = new List<string>(){"low", "half","full"}.ToArray(),
+                  percentageValues = new List<int>(){33,33,33}.ToArray(),
+                  label = "fuel",
+                  index =1,
+                  //haloText = true,
+                  percentageOfTheEntireCrown = 50,
+              }
 
 
 
