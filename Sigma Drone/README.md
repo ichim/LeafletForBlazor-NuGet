@@ -61,6 +61,16 @@ You can create charts specific to drone monitoring. This type of chart is a comb
 
 The chart crown can host one or more indicators, of the same type or of different types. 3 distinct types of indicators can be added to the crown:
 - **Scale indicator**. It is a scale type indicator (similar to the metric one) and can display speed, battery level, fuel level, engine speed, etc. Is implemented by the class **RealTimeMap.SigmaDroneCrownScale**
+
+            new RealTimeMap.SigmaDroneCrownScale()
+            {
+                label = "x 10 km/h",
+                valueStart = 0,
+                valueStop = 12,
+                value = 8,
+                //percentageOfTheEntireCrown = 20,
+            }
+
 - **Discrete indicator**. It is an indicator that can display discrete classes of a parameter (e.g. half, full). Is implemented by the class **RealTimeMap.SigmaDroneCrownDiscreteStyle**
 - **Percent indicator**. It is an indicator dedicated to displaying percentage values ​​(of a whole).Is implemented by the class **RealTimeMap.SigmaDroneCrownPercent**
 
