@@ -129,8 +129,7 @@ The crown of a Sigma Drone Chart can have one or more indicators of the same typ
      </tr>
      <tr>
          <td> <img width="240" height="141" alt="image" src="https://github.com/user-attachments/assets/6c47cdfa-7d04-4d42-968c-d73a199bd03d" /> </td>
-          <td><img width="241" height="140" alt="image" src="https://github.com/user-attachments/assets/f1b5581e-133c-41dc-b956-518e1f5f2cac" />
-</td>
+          <td><img width="240" height="142" alt="image" src="https://github.com/user-attachments/assets/4b6ae30d-40e1-4c76-97de-e9890a6d3524" /> </td>
      </tr>
 </table>
 
