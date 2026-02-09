@@ -226,7 +226,8 @@ The crown of a Sigma Drone Chart can have one or more indicators of the same typ
               }
 
 
-**percentageOfTheEntireCrown** -> percentage of the entire circular crown. How much of the circular crown will be filled with this indicator (0 -> 100%)
+- **percentageOfTheEntireCrown** -> percentage of the entire circular crown. How much of the circular crown will be filled with this indicator (0 -> 100%)
+- **haloText** -> creates a white shadow of the text. The purpose is to highlight the text on the indicator (boolean)
 
 
 You can expand the display of parameters in the crown area:
