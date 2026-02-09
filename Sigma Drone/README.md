@@ -145,7 +145,7 @@ The crown of a Sigma Drone Chart can have one or more indicators of the same typ
                 valueStart = 0,
                 valueStop = 10,
                 value = 3,
-                percentageOfTheEntireCrown = 25,
+                percentageOfTheEntireCrown = 50,
                 backgroundColor = "white",
                 fillColor = "blue",
                 haloText = true
