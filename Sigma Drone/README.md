@@ -24,6 +24,11 @@ Just as each chart that is displayed on the map has a location, Sigma Drone Char
           };
 
 
+ - **location** - latitude and longitude of chart pivot.
+ - **dimension** - is a chart display size on the map and is relative to the visible size of the map
+ - **visibilityZoomLevel** - zoom levels between which the chart is displayed on the map
+
+
 ## Configuring the first indicators
 
 A first set of indicators are displayed on the circle sector of the gauge chart and refer to the 
