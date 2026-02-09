@@ -60,6 +60,14 @@ You can create charts specific to drone monitoring. This type of chart is a comb
 ## Crown Indicators
 
 The chart crown can host one or more indicators, of the same type or of different types. 3 distinct types of indicators can be added to the crown:
+<table>
+    <tr>
+         <td>
+              <img width="240" height="124" alt="image" src="https://github.com/user-attachments/assets/363a08b4-8e74-4b69-a234-0cefe5c64ca2" />
+
+         </td>
+    </tr>
+</table>
 - **Scale indicator**. It is a scale type indicator (similar to the metric one) and can display speed, battery level, fuel level, engine speed, etc. Is implemented by the class **RealTimeMap.SigmaDroneCrownScale**
 
             new RealTimeMap.SigmaDroneCrownScale()
