@@ -74,6 +74,7 @@ The chart crown can host one or more indicators, of the same type or of differen
               <img width="241" height="129" alt="image" src="https://github.com/user-attachments/assets/c466b3ab-4722-48a1-ac84-de04b7318d18" />
          </td>
          <td>
+               <img width="240" height="124" alt="image" src="https://github.com/user-attachments/assets/ec421a51-c016-4c39-94ad-740b3933398f" />
          </td>
     </tr>
 </table>
