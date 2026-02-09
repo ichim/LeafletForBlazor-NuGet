@@ -1,4 +1,34 @@
-# Sigma Drone Chart basic
+# Sigma Drone Chart
+
+
+![interactive08](https://github.com/user-attachments/assets/64fbf731-61a2-47dc-bb41-8a917cd879e1)
+
+
+## Basic properties
+
+Just as each chart that is displayed on the map has a location, Sigma Drone Chart has properties related to location, size, and visibility levels:
+
+     var sigmaDroneChartPoint = new RealTimeMap.SigmaDroneChartPoint()
+        {
+            location = new RealTimeMap.Location()                  //mandatory
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 80,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()     //not mandatory
+             {
+                 minZoomLevel = 6,
+                 maxZoomLevel = 14
+             },
+          };
+
+
+## Configuring the first indicators
+
+A first set of indicators are displayed on the circle sector of the gauge chart and refer to the WiFi signal and the altimeter.
+
+Both altimeter and WiFi signal are optional.
 
 You can create charts specific to drone monitoring. This type of chart is a combination of Gauge and vehicle-specific indicators.
 
@@ -23,6 +53,8 @@ You can create charts specific to drone monitoring. This type of chart is a comb
             //... and more indicators
         };
         await args.sender.Geometric.DisplayChartFromObject.addChartPoint(sigmaDroneChartPoint);
+
+        
 
 You can expand the display of parameters in the crown area:
 
@@ -70,3 +102,5 @@ You can expand the display of parameters in the crown area:
                  },
                }
           };
+
+[more about basic config](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Sigma%20Drone/Sigma%20Drone%20Chart%20basic#sigma-drone-chart-basic)
