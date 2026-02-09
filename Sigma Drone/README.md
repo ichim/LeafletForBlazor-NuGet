@@ -78,6 +78,7 @@ The chart crown can host one or more indicators, of the same type or of differen
          </td>
     </tr>
 </table>
+
 - **Scale indicator**. It is a scale type indicator (similar to the metric one) and can display speed, battery level, fuel level, engine speed, etc. Is implemented by the class **RealTimeMap.SigmaDroneCrownScale**
 
             new RealTimeMap.SigmaDroneCrownScale()
