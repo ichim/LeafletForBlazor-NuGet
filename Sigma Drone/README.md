@@ -285,6 +285,14 @@ You can choose to have Sigma Drone Chart be interactive at mouse pointer:
 
 ### Mouse events
 
+#### OnClick
+
+#### OnDoubleClick
+
+#### OnMouseDown
+
+#### OnMouseUp
+
 ### Inetactive Dispalay
 
 To optimize the display on the map, Sigma Drone Chart allows a dynamic display so that:
