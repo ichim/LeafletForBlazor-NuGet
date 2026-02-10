@@ -1,5 +1,6 @@
 # Sigma Drone Chart
 
+> Being a configurable chart, it can be used to monitor any moving vehicle, whether it is land, air (altimeter), or sea (river).
 
 ![interactive08](https://github.com/user-attachments/assets/64fbf731-61a2-47dc-bb41-8a917cd879e1)
 
