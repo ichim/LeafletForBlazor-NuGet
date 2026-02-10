@@ -290,6 +290,25 @@ You can choose to have Sigma Drone Chart be interactive at mouse pointer:
 
 #### OnDoubleClick
 
+Blazor page:
+
+     <RealTimeMap height="calc(100vh - 6rem)" width="calc(100vw - 18rem)" OnAfterMapLoaded="@onAfterMapLoaded" />
+
+Code block:
+
+       private async Task onAfterMapLoaded(RealTimeMap.MapEventArgs args)
+       {
+           args.sender.Geometric.DisplayChartFromObject.OnClick += OnGaugeChartPointDoubleClick;   
+       }
+
+Event method:
+
+      private void OnGaugeChartPointDoubleClick(object sender, RealTimeMap.ChartEventArgs eventArgs)
+      {
+          
+      }
+
+
 #### OnMouseDown
 
 #### OnMouseUp
