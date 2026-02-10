@@ -286,6 +286,14 @@ You can choose to have Sigma Drone Chart be interactive at mouse pointer:
 
 ### Mouse events
 
+To use events you need to set the **eventsEnabled** parameter on the **interactive** property to true.
+
+       interactive = new RealTimeMap.InteractiveChart()
+       {
+           eventsEnabled = true,
+       },
+
+
 #### OnClick
 
 #### OnDoubleClick
