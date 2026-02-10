@@ -120,7 +120,7 @@ The chart crown can host one or more indicators, of the same type or of differen
 
   The **percentageOfTheEntireCrown** parameter will set how much of the circular crown will be filled with this indicator.
 
-## Multiple indicators on the same crown
+### Multiple indicators on the same crown
 
 The crown of a Sigma Drone Chart can have one or more indicators of the same type or of different types (RealTimeMap.SigmaDroneCrownScale, RealTimeMap.SigmaDroneCrownDiscrete, RealTimeMap.SigmaDroneCrownPercent).
 <table>
@@ -276,5 +276,17 @@ You can expand the display of parameters in the crown area:
                  },
                }
           };
+
+## Interactive Chart
+
+You can choose to have Sigma Drone Chart be interactive at mouse pointer:
+- Mouse events
+- Interactive Display
+
+### Mouse events
+
+### Inetactive Dispalay
+
+
 
 [more about basic config](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Sigma%20Drone/Sigma%20Drone%20Chart%20basic#sigma-drone-chart-basic)
