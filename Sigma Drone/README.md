@@ -287,6 +287,9 @@ You can choose to have Sigma Drone Chart be interactive at mouse pointer:
 
 ### Inetactive Dispalay
 
+To optimize the display on the map, Sigma Drone Chart allows a dynamic display so that:
+- When the mouse pointer is not over the chart, it will be displayed at a smaller size and higher transparency.
+- When the mouse pointer is over the chart, it will return to the set size and opacity 1.
 
 
 [more about basic config](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Sigma%20Drone/Sigma%20Drone%20Chart%20basic#sigma-drone-chart-basic)
