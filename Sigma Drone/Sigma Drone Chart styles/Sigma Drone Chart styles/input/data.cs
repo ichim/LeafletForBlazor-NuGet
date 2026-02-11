@@ -87,6 +87,11 @@ namespace input.Data
                     altitude = 820,
                     maximumAltitude = 1200,
 
+            },
+            batteryIndicator = new RealTimeMap.BatteryIndicator()
+            {
+                    level = 6,
+                   
             }
             },
          

@@ -199,6 +199,11 @@ namespace Input.Data
                     altitude = 260,
                     maximumAltitude = 1200,
 
+            },
+            batteryIndicator = new RealTimeMap.BatteryIndicator()
+            {
+                    level = 2,
+                    rotate =0
             }
             },
                         new RealTimeMap.SigmaDronePoint()
@@ -244,6 +249,11 @@ namespace Input.Data
             {
                     level = 0
             },
+                 batteryIndicator = new RealTimeMap.BatteryIndicator()
+            {
+                    level = 9,
+                    rotate =-90
+            }
             //altitudeIndicator = new RealTimeMap.AltitudeIndicator()
             //{
             //        altitude = 28,
@@ -371,6 +381,10 @@ namespace Input.Data
                     altitude = 260,
                     maximumAltitude = 1200,
 
+            },
+            batteryIndicator = new RealTimeMap.BatteryIndicator()
+            {
+                    level = 2
             }
             },
         };  

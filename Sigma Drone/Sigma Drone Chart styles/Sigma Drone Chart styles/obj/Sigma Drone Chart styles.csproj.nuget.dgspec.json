@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart styles\\Sigma Drone Chart styles\\Sigma Drone Chart styles.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Sigma Drone\\Sigma Drone Chart styles\\Sigma Drone Chart styles\\Sigma Drone Chart styles.csproj": {}
   },
   "projects": {
-    "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart styles\\Sigma Drone Chart styles\\Sigma Drone Chart styles.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Sigma Drone\\Sigma Drone Chart styles\\Sigma Drone Chart styles\\Sigma Drone Chart styles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart styles\\Sigma Drone Chart styles\\Sigma Drone Chart styles.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Sigma Drone\\Sigma Drone Chart styles\\Sigma Drone Chart styles\\Sigma Drone Chart styles.csproj",
         "projectName": "Sigma Drone Chart styles",
-        "projectPath": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart styles\\Sigma Drone Chart styles\\Sigma Drone Chart styles.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Sigma Drone\\Sigma Drone Chart styles\\Sigma Drone Chart styles\\Sigma Drone Chart styles.csproj",
         "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\40720\\source\\repos\\Sigma Drone Chart styles\\Sigma Drone Chart styles\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Sigma Drone\\Sigma Drone Chart styles\\Sigma Drone Chart styles\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,7 +53,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[2.4.6.2, )"
+              "version": "[2.4.6.22, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
