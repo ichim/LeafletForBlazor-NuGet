@@ -100,7 +100,7 @@ You can find more information:
         <td><font size = "2px">Using classes inherited from IChartPoint you can display charts directly in the map (Pie, Donut, Gauge).</font></td>
     </tr>
 	<tr>
-        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Sigma%20Drone/Sigma%20Drone%20Chart%20basic#sigma-drone">Sigma Drone</a></td>
+        <td><a href="https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Sigma%20Drone#sigma-drone-chart">Sigma Drone</a></td>
         <td><font size = "2px">You can create charts specific to drone monitoring. This type of chart is a combination of Gauge and vehicle-specific indicators.</font></td>
     </tr>
 	
