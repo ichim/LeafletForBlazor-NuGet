@@ -51,7 +51,8 @@ You can create charts specific to drone monitoring. This type of chart is a comb
             dimension = 80,
             wifiIndicator = new RealTimeMap.WiFiIndicator()
             {
-                    level = 1
+                    level = 1,
+                    size = 12                       //default 14
             },
             altitudeIndicator = new RealTimeMap.AltitudeIndicator()
             {
@@ -59,6 +60,12 @@ You can create charts specific to drone monitoring. This type of chart is a comb
                     maximumAltitude = 1200,
               
             },
+            batteryIndicator = new RealTimeMap.BatteryIndicator()
+            {
+                level = 9
+                rotate = 0                          //-90 default
+                size = 12                           //defalut 14
+            }, 
             //... and more indicators
         };
         await args.sender.Geometric.DisplayChartFromObject.addChartPoint(sigmaDroneChartPoint);
