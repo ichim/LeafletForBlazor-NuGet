@@ -35,6 +35,7 @@ Just as each chart that is displayed on the map has a location, Sigma Drone Char
 A first set of indicators are displayed on the circle sector of the gauge chart and refer to the 
  - **WiFi signal** - level between -1 (without signal) and 3 (maximum level of signal);
  - **Altimeter** - configurable between 0 (default) and maximum height;
+ - **Battery level** - configurable between 0 (default - minimum level) and 10 (maximum level);
 
 Both altimeter and WiFi signal are optional.
 
@@ -50,7 +51,8 @@ You can create charts specific to drone monitoring. This type of chart is a comb
             dimension = 80,
             wifiIndicator = new RealTimeMap.WiFiIndicator()
             {
-                    level = 1
+                    level = 1,
+                    size = 12                       //default 14
             },
             altitudeIndicator = new RealTimeMap.AltitudeIndicator()
             {
@@ -58,6 +60,12 @@ You can create charts specific to drone monitoring. This type of chart is a comb
                     maximumAltitude = 1200,
               
             },
+            batteryIndicator = new RealTimeMap.BatteryIndicator()
+            {
+                level = 9
+                rotate = 0                          //-90 default
+                size = 12                           //defalut 14
+            }, 
             //... and more indicators
         };
         await args.sender.Geometric.DisplayChartFromObject.addChartPoint(sigmaDroneChartPoint);
@@ -119,7 +127,11 @@ The chart crown can host one or more indicators, of the same type or of differen
                     percentageOfTheEntireCrown = 20,          //how much of the circular crown will be filled with this indicator
                 }
 
-  The **percentageOfTheEntireCrown** parameter will set how much of the circular crown will be filled with this indicator.
+ Regardless of the type of indicator, they have the properties **label** and **percentageOfTheEntireCrown**:
+- **label** will be a text that will be displayed centered under the indicator;
+- **percentageOfTheEntireCrown** how much of the entire crown will be filled by the indicator;
+
+The position on the circular crown will be controlled by the position of the **crownIndicators** property in the array.
 
 ### Multiple indicators on the same crown
 
