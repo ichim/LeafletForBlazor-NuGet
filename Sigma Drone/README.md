@@ -127,7 +127,7 @@ The chart crown can host one or more indicators, of the same type or of differen
                     percentageOfTheEntireCrown = 20,          //how much of the circular crown will be filled with this indicator
                 }
 
- Regardless of the type of indicator, they have the properties: label and percentageOfTheEntireCrown:
+ Regardless of the type of indicator, they have the properties **label** and **percentageOfTheEntireCrown**:
 - **label** will be a text that will be displayed centered under the indicator;
 - **percentageOfTheEntireCrown** how much of the entire crown will be filled by the indicator;
 
