@@ -88,6 +88,40 @@
 
         });
 
+        await args.sender.Geometric.DisplayChartFromObject.addChartPoint(new RealTimeMap.QuarterGaugeScalePercent()
+        {
+            location = new RealTimeMap.Location()
+            {
+                latitude = 50.81229753879652,
+                longitude = 4.4274985764447905
+            },
+            dimension = 62,
+            visibilityZoomLevel = new RealTimeMap.VisibilityZoomLevel()
+            {
+                minZoomLevel = 10,
+                maxZoomLevel = 12
+            },
+
+            indexQuadrant = 1,
+            valueStart = 0,
+            valueStop = 30,
+            value = 8,
+            fontSize = 5,
+
+
+
+            label = "secure parking",
+            fillPanel = "azure",
+
+            opacity = 0.6,
+
+            fillingColor = "blue",
+
+
+            haloText = true,
+            type = RealTimeMap.QuarterGaugeScalePercentType.Both
+
+        });
         
 
         await args.sender.Geometric.DisplayPointsFromArray.addLabel(new RealTimeMap.LabelInfo()

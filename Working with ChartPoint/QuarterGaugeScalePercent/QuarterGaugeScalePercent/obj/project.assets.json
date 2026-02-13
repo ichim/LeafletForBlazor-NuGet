@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "LeafletForBlazor/2.4.4.82": {
+      "LeafletForBlazor/2.4.6.24": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0",
@@ -474,7 +474,7 @@
       }
     },
     "net9.0/browser-wasm": {
-      "LeafletForBlazor/2.4.4.82": {
+      "LeafletForBlazor/2.4.6.24": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0",
@@ -947,10 +947,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/2.4.4.82": {
-      "sha512": "2DAR+7xyfg92kzPO174TF+m7OiI+cgzMCCHcdqS9J5jd3nESeZcLniFwUAXYBk3rNTrcnKV/yAUHINAFn2d6yA==",
+    "LeafletForBlazor/2.4.6.24": {
+      "sha512": "Bzzf/P1vsvLeOUKBk3JtGyQ+lggvklDZyxvXuleCFY9LeDG9cufKjjZ6cSVvZNjw6GGcd9vHgdoce8kt19pxYQ==",
       "type": "package",
-      "path": "leafletforblazor/2.4.4.82",
+      "path": "leafletforblazor/2.4.6.24",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -963,7 +963,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net9.0/map_color.ico",
-        "leafletforblazor.2.4.4.82.nupkg.sha512",
+        "leafletforblazor.2.4.6.24.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net9.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -1909,7 +1909,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "LeafletForBlazor >= 2.4.4.82",
+      "LeafletForBlazor >= 2.4.6.24",
       "Microsoft.AspNetCore.Components.WebAssembly >= 9.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.11",
       "Microsoft.NET.ILLink.Tasks >= 9.0.11",
@@ -1969,7 +1969,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[2.4.4.82, )"
+            "version": "[2.4.6.24, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",

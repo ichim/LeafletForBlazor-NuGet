@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuarterGaugeScalePercent - Both")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf95cc39e47b62417e439cecd609a5b3fedb4b1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45ce7891e0b0a740e922ebfba520a9aa8245ad14")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuarterGaugeScalePercent - Both")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuarterGaugeScalePercent - Both")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
