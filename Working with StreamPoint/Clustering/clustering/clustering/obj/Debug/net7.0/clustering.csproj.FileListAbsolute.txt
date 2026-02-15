@@ -1,0 +1,9 @@
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with StreamPoint\Clustering\clustering\clustering\obj\Debug\net7.0\rpswa.dswa.cache.json
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with StreamPoint\Clustering\clustering\clustering\obj\Debug\net7.0\clustering.GeneratedMSBuildEditorConfig.editorconfig
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with StreamPoint\Clustering\clustering\clustering\obj\Debug\net7.0\clustering.AssemblyInfoInputs.cache
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with StreamPoint\Clustering\clustering\clustering\obj\Debug\net7.0\clustering.AssemblyInfo.cs
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with StreamPoint\Clustering\clustering\clustering\obj\Debug\net7.0\clustering.csproj.CoreCompileInputs.cache
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with StreamPoint\Clustering\clustering\clustering\obj\Debug\net7.0\clustering.MvcApplicationPartsAssemblyInfo.cache
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with StreamPoint\Clustering\clustering\clustering\obj\Debug\net7.0\clustering.RazorAssemblyInfo.cache
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with StreamPoint\Clustering\clustering\clustering\obj\Debug\net7.0\clustering.RazorAssemblyInfo.cs
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\Working with StreamPoint\Clustering\clustering\clustering\obj\Debug\net7.0\clustering.sourcelink.json

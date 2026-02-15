@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("clustering")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+144be591bdc0fb1b7922bd56921e2bcc064f1840")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a2f5e2484d52a9259563dc521af6eda6f096568")]
 [assembly: System.Reflection.AssemblyProductAttribute("clustering")]
 [assembly: System.Reflection.AssemblyTitleAttribute("clustering")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

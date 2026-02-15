@@ -1,21 +1,21 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
-      "LeafletForBlazor/2.2.8.4": {
+    "net9.0": {
+      "LeafletForBlazor/2.4.6.24": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "7.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/net7.0/LeafletForBlazor.dll": {}
+          "lib/net9.0/LeafletForBlazor.dll": {}
         },
         "runtime": {
-          "lib/net7.0/LeafletForBlazor.dll": {}
+          "lib/net9.0/LeafletForBlazor.dll": {}
         },
         "contentFiles": {
-          "contentFiles/any/net7.0/map_color.ico": {
+          "contentFiles/any/net9.0/map_color.ico": {
             "buildAction": "Content",
             "codeLanguage": "any",
             "copyToOutput": false
@@ -250,43 +250,46 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/2.2.8.4": {
-      "sha512": "3+SrJq9luh09F8E3RGpKR4rrw7dUvNwmtI0k0Fy49QfJM09wHgWjSHtT8QO5wsJ4rCr6lWrbhaKib9cZwTaGyg==",
+    "LeafletForBlazor/2.4.6.24": {
+      "sha512": "Bzzf/P1vsvLeOUKBk3JtGyQ+lggvklDZyxvXuleCFY9LeDG9cufKjjZ6cSVvZNjw6GGcd9vHgdoce8kt19pxYQ==",
       "type": "package",
-      "path": "leafletforblazor/2.2.8.4",
+      "path": "leafletforblazor/2.4.6.24",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "License.md",
         "Readme.md",
         "build/LeafletForBlazor.props",
+        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
         "build/Microsoft.AspNetCore.StaticWebAssets.props",
         "buildMultiTargeting/LeafletForBlazor.props",
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
-        "contentFiles/any/net7.0/map_color.ico",
-        "leafletforblazor.2.2.8.4.nupkg.sha512",
+        "contentFiles/any/net9.0/map_color.ico",
+        "leafletforblazor.2.4.6.24.nupkg.sha512",
         "leafletforblazor.nuspec",
-        "lib/net7.0/LeafletForBlazor.dll",
+        "lib/net9.0/LeafletForBlazor.dll",
         "map_color.png",
-        "staticwebassets/LeafletForBlazor.bundle.scp.css",
+        "staticwebassets/LeafletForBlazor.037l07h7lk.bundle.scp.css",
         "staticwebassets/LeafletMapFunctionalities.js",
-        "staticwebassets/RealTime/Esri/geocoder.js",
         "staticwebassets/RealTime/Map.js",
         "staticwebassets/RealTime/components/streamLegend.js",
+        "staticwebassets/RealTime/esri/geocoder.js",
         "staticwebassets/RealTime/geojson/fromObject.js",
+        "staticwebassets/RealTime/geometry/circles.js",
         "staticwebassets/RealTime/geometry/point.js",
         "staticwebassets/RealTime/geometry/points.js",
         "staticwebassets/RealTime/geometry/polygons.js",
         "staticwebassets/RealTime/geometry/polylines.js",
+        "staticwebassets/RealTime/geometry/routing.js",
         "staticwebassets/RealTime/helper/felicia.js",
+        "staticwebassets/RealTime/helper/mathFelicia.js",
         "staticwebassets/RealTime/layers/basemap.js",
         "staticwebassets/RealTime/layers/geometricLayers.js",
-        "staticwebassets/background.png",
+        "staticwebassets/RealTime/layers/svg.js",
         "staticwebassets/basemap_layers.js",
         "staticwebassets/create_on_the_fly_css.js",
         "staticwebassets/custom_map_controls.js",
-        "staticwebassets/docs/images/map000test.png",
         "staticwebassets/esri_interops.js",
         "staticwebassets/helper.js",
         "staticwebassets/other_overlays.js",
@@ -655,12 +658,12 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
-      "LeafletForBlazor >= 2.2.8.4"
+    "net9.0": [
+      "LeafletForBlazor >= 2.4.6.24"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\": {},
+    "C:\\Users\\40720\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -669,19 +672,19 @@
       "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Clustering\\clustering\\clustering\\clustering.csproj",
       "projectName": "clustering",
       "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Clustering\\clustering\\clustering\\clustering.csproj",
-      "packagesPath": "C:\\Users\\LaurențiuIchim\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
       "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\Working with StreamPoint\\Clustering\\clustering\\clustering\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\LaurențiuIchim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\40720\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net9.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -689,8 +692,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "projectReferences": {}
         }
       },
@@ -703,15 +706,16 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net9.0": {
+        "targetAlias": "net9.0",
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[2.2.8.4, )"
+            "version": "[2.4.6.24, )"
           }
         },
         "imports": [
@@ -725,24 +729,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.19, 7.0.19]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.19, 7.0.19]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.19, 7.0.19]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.19, 7.0.19]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -751,7 +737,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
