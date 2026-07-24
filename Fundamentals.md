@@ -19,3 +19,10 @@ The code you write will be simple, pure Blazor, clear and easy to manage.
 	- Memory Cache
 
 Following specific development iterations, invokes were eliminated, LINQ structuring/destructuring procedures were added, JavaScript code was reduced. Also, Memory Cache mechanisms were implemented in both C# and JavaScript.
+
+Advantages:
+
+ - ``Only C# code``, easy to manage. You focus only on functionality
+ - ``Out-of-the-box`` integration;
+ - ``Server-side configuration``: all settings can be made from C#/config, without html page, css etc
+ - ``Security``: reduces the risk of introducing XSS (cross-site scripting) errors through controlled generation of markup/JS.
