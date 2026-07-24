@@ -7,7 +7,6 @@
 
 # Core Concept
 
-
 1. ``No JavaScript or HTML specific configurations required``, no API script configurations, no CSS references, no HTML items etc.
 
 The code you write will be simple, pure Blazor, clear and easy to manage.
