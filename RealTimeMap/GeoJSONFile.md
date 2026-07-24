@@ -4,6 +4,8 @@
 > 
 
 
+
+
 |Geometry|Structure|Format|
 |----|----|----|
 |Point| {"type": "Feature","geometry": {"type": "Point","coordinates": [, ]}}|[RFC 7946](https://datatracker.ietf.org/doc/html/rfc7946)|
