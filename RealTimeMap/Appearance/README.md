@@ -1,39 +1,80 @@
-# Basic Appearance
+# Appearance render
 
-               realTimeMap.Geometric.Points.Appearance(item => item.type == "intervention crew").pattern = 
-                new RealTimeMap.PointSymbol() 
-                       { 
-                              radius = 8, 
-                              color = "#28ffff", 
-                              opacity = 0.68, 
-                              fillColor = "orange", 
-                              weight = 2, 
-                              fillOpacity = 0.68 
-                         };
+Configuring the "appearance render" of the **StreamPoint** collection from the map.
 
-  [more about basic implementation](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance/Basic%20Appearance#appearance-render)
+Configuring **StreamPoint** appearance example code:
 
-# Appearance on Type
+        if (realTimeMap != null)
+        {
+                   realTimeMap.Geometric.Points.Appearance(item => item.type == "intervention crew").pattern = 
+                          new RealTimeMap.PointSymbol() 
+                                 { 
+                                        radius = 8, 
+                                        color = "#28ffff", 
+                                        opacity = 0.68, 
+                                        fillColor = "orange", 
+                                        weight = 2, 
+                                        fillOpacity = 0.68 
+                                   };
+       }
 
-# Appearance based on Custom Attributes
+## Input data source
 
-StreamPoint data defined based on a [Custom class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint#extending-streampoint-attributes) can be used to define the Appearance in the map. To define the Appearance of a point class in the StreamPoint collection, you must [use the Custom class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance/Custom%20Attributes#appearance-based-on-custom-attributes) defined to extend the StreamPoint data structure. 
+The sample project working with a list of **StreamPoint** items. Example code:
 
-# Zoom Level Visibility
+       public List<RealTimeMap.StreamPoint> pointsStart = new List<RealTimeMap.StreamPoint> {
+          new RealTimeMap.StreamPoint()
+            {
+                guid = Guid.NewGuid(),
+                type = "Intervention crew",
+                value = "5 seats",
+                latitude = 44.45028925827577,
+                longitude =  26.10629452317551
+            }
+        };
 
-You can use the Appearance method to show or hide StreamPoints at certain scale levels.
+_**latitude** and **longitude** properties are Web Mercator coordinate values._
+
+_In this previous, the **value** property is of string type. The **value** property also supports objects defined by custom classes, if we have customized attributes._
+
+_If the **timestamp** is missing, LeafletForBlazor will assign the current date_
+
+_This collection has a static behavior._
 
 
-# Update type and Appearance
+## Appearance render
 
-Changing the type property of a StreamPoint will have the effect of changing its appearance.
+Configuring of a render class is done using the **Appearance()** method and an object defined by the **PointSymbol** class. Assign **PointSymbol** to the **pattern** property.
 
-The Appearance can be configured on the Load event (OnAfterMapLoaded) of the RealTimeMap component.
+For example, change appearance render for all points:
 
-Updating the type property, anywhere in the code, will have the effect of updating the Appearance in the Map.
+        realTimeMap.Geometric.Points.Appearance().pattern = new RealTimeMap.PointSymbol(){}
 
+or
 
-[example code](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Working%20with%20StreamPoint/Appearance/update%20type)
+        realTimeMap.Geometric.Points.Appearance(item => true).pattern = new RealTimeMap.PointSymbol(){}
 
+Change the "appearance render" of the **StreamPoint** collection for a class based on the **type** property:
 
+       realTimeMap.Geometric.Points.Appearance(item => item.type == "a certain type").pattern = new RealTimeMap.PointSymbol(){}
+
+Example code:
+
+        if (realTimeMap != null)
+        {
+                    realTimeMap.Geometric.Points.Appearance(item => !(item.type == "red" || item.type == "green" || item.type == "blue")).pattern = new RealTimeMap.PointSymbol() { radius = 8, color = "#28ffff", opacity = 0.68, fillColor = "orange", weight = 2, fillOpacity = 0.68 };
+                    realTimeMap.Geometric.Points.Appearance(item => item.type == "red").pattern = new RealTimeMap.PointSymbol() { radius = 8, color = "rgb(200,100,0)", opacity = 0.68, fillColor = "red", weight = 4, fillOpacity = 0.68 };
+                    realTimeMap.Geometric.Points.Appearance(item => item.type == "green").pattern = new RealTimeMap.PointSymbol() { radius = 10, color = "white", opacity = 0.68, fillColor = "green", weight = 2, fillOpacity = 0.68 };
+                    realTimeMap.Geometric.Points.Appearance(item => item.type == "blue").pattern = new RealTimeMap.PointSymbol() { radius = 12, color = "#28ffff", opacity = 0.68, fillColor = "blue", weight = 2, fillOpacity = 0.68 };
+        }
+
+The appearance of the points is preserved in the map view. To reset the stored appearance, the **Appearance** method provide reset boolean parameter:
+
+        realTimeMap.Geometric.Points.Appearance(item=>item.type=="emergency vehicles", true).pattern = new RealTimeMap.PointSymbol()
+        {
+            color = "blue",
+            fillColor = "blue",
+            fillOpacity = 0.5,
+            radius = 10
+        };
 
