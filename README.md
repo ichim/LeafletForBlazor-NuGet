@@ -23,15 +23,48 @@
 
 # 🚀 Quick Start
 
+
 ## 🔧 Basic configuration
+
+🔵 **Add the Map component to your project in just 3 steps:**
+
+1. add LeafletForBlazor NuGet package:
+
+Using Visual Studio _interface_:
+
+ - Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution...
+ 
+ > Search for "LeafletForBlazor" and add the package to the project or solution.
+
+ Or using Visual Studio _console_:
+
+ - Tools -> NuGet Package Manager -> Package Manager Console
+
+       NuGet\Install-Package LeafletForBlazor
+ 
+2. add the LeafletForBlazor namespace to the project, using the @using directive
+
+To do this, add the following directives to the **_Imports.razor** file
+
+		@using LeafletForBlazor
+		@using static LeafletForBlazor.Map
+
+
+3. Configuring the Blazor page (which will host the Map control):
+
+The `@using` directive allows selecting the API for generating the map:
+
+	@using static LeafletForBlazor.techs.maps.Leaflet
+
+
 
 ## 🗺️ Add Map
 
+Adding the map to the blazor page:
+
+	<Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)"/>
 
 
-| Examples |  |
-|----|----|
-| Dashboard [code examples](----) | ![SigmaDrone](https://raw.githubusercontent.com/ichim/MapsForBlazor-nuget/main/images/dashboard/SigmaDrone-more.gif) | 
 
 
 
