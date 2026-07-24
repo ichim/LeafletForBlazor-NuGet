@@ -4,6 +4,7 @@ The Map component is deprecated!
 
 ## Basic Map configuration ##
 
+
 #### Add in __Imports.razor_ project file
 
     @using LeafletForBlazor
