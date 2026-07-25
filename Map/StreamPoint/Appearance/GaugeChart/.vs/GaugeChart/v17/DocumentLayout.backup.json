@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\GaugeChart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD394303-1F12-45B5-8101-5D2AF8C61042}|GaugeChart\\GaugeChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\gaugechart\\gaugechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD394303-1F12-45B5-8101-5D2AF8C61042}|GaugeChart\\GaugeChart.csproj|solutionrelative:gaugechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD394303-1F12-45B5-8101-5D2AF8C61042}|GaugeChart\\GaugeChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\gaugechart\\gaugechart\\input-data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD394303-1F12-45B5-8101-5D2AF8C61042}|GaugeChart\\GaugeChart.csproj|solutionrelative:gaugechart\\input-data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD394303-1F12-45B5-8101-5D2AF8C61042}|GaugeChart\\GaugeChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\gaugechart\\gaugechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD394303-1F12-45B5-8101-5D2AF8C61042}|GaugeChart\\GaugeChart.csproj|solutionrelative:gaugechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StreamPoints.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\GaugeChart\\GaugeChart\\input-data\\StreamPoints.cs",
+              "RelativeDocumentMoniker": "GaugeChart\\input-data\\StreamPoints.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\GaugeChart\\GaugeChart\\input-data\\StreamPoints.cs",
+              "RelativeToolTip": "GaugeChart\\input-data\\StreamPoints.cs",
+              "ViewState": "AgIAAK8BAAAAAAAAAAAUwMsBAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T17:13:01.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\GaugeChart\\GaugeChart\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "GaugeChart\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\GaugeChart\\GaugeChart\\Pages\\Home.razor",
+              "RelativeToolTip": "GaugeChart\\Pages\\Home.razor",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvy8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T17:09:52.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\GaugeChart\\GaugeChart\\_Imports.razor",
+              "RelativeDocumentMoniker": "GaugeChart\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\GaugeChart\\GaugeChart\\_Imports.razor",
+              "RelativeToolTip": "GaugeChart\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T17:09:29.829Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
