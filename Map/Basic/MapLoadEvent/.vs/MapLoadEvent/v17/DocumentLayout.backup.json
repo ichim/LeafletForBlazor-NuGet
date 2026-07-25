@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\MapLoadEvent\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CFB2C9-E79B-403C-A58C-FA2DD7C441A0}|MapLoadEvent\\MapLoadEvent.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\maploadevent\\maploadevent\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7CFB2C9-E79B-403C-A58C-FA2DD7C441A0}|MapLoadEvent\\MapLoadEvent.csproj|solutionrelative:maploadevent\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CFB2C9-E79B-403C-A58C-FA2DD7C441A0}|MapLoadEvent\\MapLoadEvent.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\maploadevent\\maploadevent\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7CFB2C9-E79B-403C-A58C-FA2DD7C441A0}|MapLoadEvent\\MapLoadEvent.csproj|solutionrelative:maploadevent\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\MapLoadEvent\\MapLoadEvent\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "MapLoadEvent\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\MapLoadEvent\\MapLoadEvent\\Pages\\Home.razor",
+              "RelativeToolTip": "MapLoadEvent\\Pages\\Home.razor",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAWwCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T13:32:57.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\MapLoadEvent\\MapLoadEvent\\_Imports.razor",
+              "RelativeDocumentMoniker": "MapLoadEvent\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\MapLoadEvent\\MapLoadEvent\\_Imports.razor",
+              "RelativeToolTip": "MapLoadEvent\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T13:32:24.001Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

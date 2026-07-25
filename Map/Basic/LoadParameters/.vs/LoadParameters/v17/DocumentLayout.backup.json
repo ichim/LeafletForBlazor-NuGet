@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\LoadParameters\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3BD84F-517B-43E4-A60A-221114162504}|LoadParameters\\LoadParameters.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\loadparameters\\loadparameters\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC3BD84F-517B-43E4-A60A-221114162504}|LoadParameters\\LoadParameters.csproj|solutionrelative:loadparameters\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3BD84F-517B-43E4-A60A-221114162504}|LoadParameters\\LoadParameters.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\loadparameters\\loadparameters\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC3BD84F-517B-43E4-A60A-221114162504}|LoadParameters\\LoadParameters.csproj|solutionrelative:loadparameters\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC3BD84F-517B-43E4-A60A-221114162504}|LoadParameters\\LoadParameters.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\loadparameters\\loadparameters\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC3BD84F-517B-43E4-A60A-221114162504}|LoadParameters\\LoadParameters.csproj|solutionrelative:loadparameters\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\LoadParameters\\LoadParameters\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "LoadParameters\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\LoadParameters\\LoadParameters\\Pages\\Home.razor",
+              "RelativeToolTip": "LoadParameters\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T13:25:45.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\LoadParameters\\LoadParameters\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "LoadParameters\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\LoadParameters\\LoadParameters\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "LoadParameters\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T13:25:39.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\LoadParameters\\LoadParameters\\_Imports.razor",
+              "RelativeDocumentMoniker": "LoadParameters\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\LoadParameters\\LoadParameters\\_Imports.razor",
+              "RelativeToolTip": "LoadParameters\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T13:25:30.994Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
