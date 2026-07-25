@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\QuarterGaugeFillChart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F30C0899-2BCA-4980-9520-425CA3D0B8BD}|QuarterGaugeFillChart\\QuarterGaugeFillChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\quartergaugefillchart\\quartergaugefillchart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F30C0899-2BCA-4980-9520-425CA3D0B8BD}|QuarterGaugeFillChart\\QuarterGaugeFillChart.csproj|solutionrelative:quartergaugefillchart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F30C0899-2BCA-4980-9520-425CA3D0B8BD}|QuarterGaugeFillChart\\QuarterGaugeFillChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\quartergaugefillchart\\quartergaugefillchart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F30C0899-2BCA-4980-9520-425CA3D0B8BD}|QuarterGaugeFillChart\\QuarterGaugeFillChart.csproj|solutionrelative:quartergaugefillchart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\QuarterGaugeFillChart\\QuarterGaugeFillChart\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "QuarterGaugeFillChart\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\QuarterGaugeFillChart\\QuarterGaugeFillChart\\Pages\\Home.razor",
+              "RelativeToolTip": "QuarterGaugeFillChart\\Pages\\Home.razor",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwCkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T18:59:21.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\QuarterGaugeFillChart\\QuarterGaugeFillChart\\_Imports.razor",
+              "RelativeDocumentMoniker": "QuarterGaugeFillChart\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\QuarterGaugeFillChart\\QuarterGaugeFillChart\\_Imports.razor",
+              "RelativeToolTip": "QuarterGaugeFillChart\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T18:59:02.22Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

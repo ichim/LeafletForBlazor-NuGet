@@ -1,0 +1,55 @@
+﻿@page "/"
+@using Data.Input
+@using LeafletForBlazor.techs.core.Appearance
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 2rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+@code {
+    Map? map = null;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 45.27452939016828,
+            longitude = 27.972121962159605
+        },
+        zoomLevel = 14,
+        mapControls = new MapControls()
+        {
+            scaleBar = new ScaleBar()                                           //Map Scale Bar
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+
+        }
+    };
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        if (map?.Geometric?.Points != null)
+        {
+            await map.Geometric.Points.Appearance(e => e.type == "Sigma").SetStyle(new QuarterGaugeFillChart()
+            {
+                dimension = 68,
+                fillingColor  = "orangered",
+                fillPanel = "azure",
+                fontSize = 6,
+                haloText = true,
+                heightCrownInner = 9,
+                heightCrownOuter = 9,
+                label = "Fuel",
+                opacity = 0.6,
+                paramOrIndexQuadrant = 3,
+                paramOrValue = "${fuel}",
+                paramOrValueStart = 0,
+                paramOrValueStop = 100
+            });
+
+            await map.Geometric.Points.Add(new StreamPoints().test);
+        }
+    }
+}
