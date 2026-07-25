@@ -1,0 +1,50 @@
+﻿@page "/"
+@using Data.Input
+<button onclick="@add">Add</button><button onclick="@removeAll">Remove</button>
+<Map @ref = "map" loadParameters="@loadParameters"
+     height="calc(100vh - 4rem)"
+     width="calc(100vw - 2rem)"/>
+
+@code {
+    Map? map = null;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 50.951451266515306,
+            longitude = 3.986288916944186
+        },
+        zoomLevel = 8,
+        mapControls = new MapControls()
+        {
+            layerList = new LayerList() { position = Position.topRight },       //Layer List Control
+            scaleBar = new ScaleBar()                                           //Map Scale Bar
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+
+        }
+    };
+
+    private async Task add()
+    {
+        if (map is null)
+            return;
+        if (map?.Geometric?.Points != null)
+        {
+            await map.Geometric.Points.Add(new StreamPoints().points);
+        }
+
+    }
+
+    private async Task removeAll()
+    {
+        if (map is null)
+            return;
+        await map.Geometric.Points.Remove();
+
+    }
+
+
+}
