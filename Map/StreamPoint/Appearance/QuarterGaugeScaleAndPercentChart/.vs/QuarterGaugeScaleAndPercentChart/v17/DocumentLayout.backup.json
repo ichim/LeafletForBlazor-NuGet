@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\QuarterGaugeScaleAndPercentChart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22FD9AF2-8812-405D-AE2A-639CA1DE05E5}|QuarterGaugeScaleAndPercentChart\\QuarterGaugeScaleAndPercentChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\quartergaugescaleandpercentchart\\quartergaugescaleandpercentchart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22FD9AF2-8812-405D-AE2A-639CA1DE05E5}|QuarterGaugeScaleAndPercentChart\\QuarterGaugeScaleAndPercentChart.csproj|solutionrelative:quartergaugescaleandpercentchart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FD9AF2-8812-405D-AE2A-639CA1DE05E5}|QuarterGaugeScaleAndPercentChart\\QuarterGaugeScaleAndPercentChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\quartergaugescaleandpercentchart\\quartergaugescaleandpercentchart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22FD9AF2-8812-405D-AE2A-639CA1DE05E5}|QuarterGaugeScaleAndPercentChart\\QuarterGaugeScaleAndPercentChart.csproj|solutionrelative:quartergaugescaleandpercentchart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\QuarterGaugeScaleAndPercentChart\\QuarterGaugeScaleAndPercentChart\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "QuarterGaugeScaleAndPercentChart\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\QuarterGaugeScaleAndPercentChart\\QuarterGaugeScaleAndPercentChart\\Pages\\Home.razor",
+              "RelativeToolTip": "QuarterGaugeScaleAndPercentChart\\Pages\\Home.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwDEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T19:13:09.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\QuarterGaugeScaleAndPercentChart\\QuarterGaugeScaleAndPercentChart\\_Imports.razor",
+              "RelativeDocumentMoniker": "QuarterGaugeScaleAndPercentChart\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\QuarterGaugeScaleAndPercentChart\\QuarterGaugeScaleAndPercentChart\\_Imports.razor",
+              "RelativeToolTip": "QuarterGaugeScaleAndPercentChart\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T19:12:40.79Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
