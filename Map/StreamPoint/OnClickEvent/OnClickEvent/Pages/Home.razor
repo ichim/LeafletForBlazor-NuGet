@@ -1,0 +1,43 @@
+﻿@page "/"
+@using Data.Input
+@using LeafletForBlazor.techs.core.Appearance
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 2rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+@code {
+    Map? map = null;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 50.79562462192155,
+            longitude = 4.469710158688292
+        },
+        zoomLevel = 10,
+        mapControls = new MapControls()
+        {
+            layerList = new LayerList() { position = Position.topRight },       //Layer List Control
+            scaleBar = new ScaleBar()                                           //Map Scale Bar
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+
+        }
+    };
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        if (map?.Geometric?.Points != null)
+        {
+            map.Geometric.Points.OnClick += (object? sender, StreamPointEventArgs args) =>
+            {
+                Console.WriteLine($"    Clicked point with count {args.points.Count()}");
+            };
+            await map.Geometric.Points.Add(new StreamPoints().points);
+        }
+    }
+}
