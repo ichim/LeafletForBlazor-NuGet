@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\PieChart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8355BF7-CB60-40C7-A7F7-24E1C5CB68D0}|PieChart\\PieChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\piechart\\piechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B8355BF7-CB60-40C7-A7F7-24E1C5CB68D0}|PieChart\\PieChart.csproj|solutionrelative:piechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8355BF7-CB60-40C7-A7F7-24E1C5CB68D0}|PieChart\\PieChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\piechart\\piechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B8355BF7-CB60-40C7-A7F7-24E1C5CB68D0}|PieChart\\PieChart.csproj|solutionrelative:piechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\PieChart\\PieChart\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "PieChart\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\PieChart\\PieChart\\Pages\\Home.razor",
+              "RelativeToolTip": "PieChart\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T16:12:59.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\PieChart\\PieChart\\_Imports.razor",
+              "RelativeDocumentMoniker": "PieChart\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\PieChart\\PieChart\\_Imports.razor",
+              "RelativeToolTip": "PieChart\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-25T16:12:53.777Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
