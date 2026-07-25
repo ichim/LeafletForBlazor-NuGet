@@ -5,7 +5,7 @@
 
 **🔑 KEYWORDS**: Minimizing Invoke callers to JavaScript, `No JavaScript specific settings`, no script references, no css links.
 
-![NuGet Version](https://img.shields.io/nuget/v/LeafletForBlazor?cacheSeconds=3600) ![NuGet Downloads](https://img.shields.io/nuget/dt/LeafletForBlazor?cacheSeconds=3600)![GitHub stars](https://img.shields.io/github/stars/ichim/LeafletForBlazor-nuget?cacheSeconds=3600) ![GitHub last commit](https://img.shields.io/github/last-commit/ichim/LeafletForBlazor-nuget?cacheSeconds=3600)[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/ichim/LeafletForBlazor-nuget/blob/main/LICENSE?cacheSeconds=3600)![Release](https://img.shields.io/github/v/release/ichim/leafletforblazor)
+![NuGet Version](https://img.shields.io/nuget/v/LeafletForBlazor?cacheSeconds=3600) ![NuGet Downloads](https://img.shields.io/nuget/dt/LeafletForBlazor?cacheSeconds=3600)![GitHub stars](https://img.shields.io/github/stars/ichim/LeafletForBlazor-nuget?cacheSeconds=3600) ![GitHub last commit](https://img.shields.io/github/last-commit/ichim/LeafletForBlazor-nuget?cacheSeconds=3600)[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/ichim/LeafletForBlazor-nuget/blob/main/LICENSE?cacheSeconds=3600)![Release](https://img.shields.io/github/v/release/ichim/LeafletForBlazor-nuget?include_prereleases=true)
 
 🧩 Version 4.0 [rehydrates the Map control](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#rehydratates). The new control will inherit the minimalism of the Map control and the optimizations of the RealTimeMap control.
 
