@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\SigmaDroneChart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72378C04-0762-4147-9493-A770E0A2C98D}|SigmaDroneChart\\SigmaDroneChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\sigmadronechart\\sigmadronechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72378C04-0762-4147-9493-A770E0A2C98D}|SigmaDroneChart\\SigmaDroneChart.csproj|solutionrelative:sigmadronechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72378C04-0762-4147-9493-A770E0A2C98D}|SigmaDroneChart\\SigmaDroneChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\sigmadronechart\\sigmadronechart\\input-data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72378C04-0762-4147-9493-A770E0A2C98D}|SigmaDroneChart\\SigmaDroneChart.csproj|solutionrelative:sigmadronechart\\input-data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72378C04-0762-4147-9493-A770E0A2C98D}|SigmaDroneChart\\SigmaDroneChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260419\\sigmadronechart\\sigmadronechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72378C04-0762-4147-9493-A770E0A2C98D}|SigmaDroneChart\\SigmaDroneChart.csproj|solutionrelative:sigmadronechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StreamPoints.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\SigmaDroneChart\\SigmaDroneChart\\input-data\\StreamPoints.cs",
+              "RelativeDocumentMoniker": "SigmaDroneChart\\input-data\\StreamPoints.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\SigmaDroneChart\\SigmaDroneChart\\input-data\\StreamPoints.cs",
+              "RelativeToolTip": "SigmaDroneChart\\input-data\\StreamPoints.cs",
+              "ViewState": "AgIAAK4BAAAAAAAAAAAuwMkBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-26T17:42:35.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\SigmaDroneChart\\SigmaDroneChart\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "SigmaDroneChart\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\SigmaDroneChart\\SigmaDroneChart\\Pages\\Home.razor",
+              "RelativeToolTip": "SigmaDroneChart\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-26T17:34:55.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\SigmaDroneChart\\SigmaDroneChart\\_Imports.razor",
+              "RelativeDocumentMoniker": "SigmaDroneChart\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\SigmaDroneChart\\SigmaDroneChart\\_Imports.razor",
+              "RelativeToolTip": "SigmaDroneChart\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-26T17:34:17.979Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

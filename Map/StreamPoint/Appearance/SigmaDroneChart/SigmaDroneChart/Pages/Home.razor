@@ -1,0 +1,136 @@
+﻿@page "/"
+@using Data.Input
+@using LeafletForBlazor.techs.core.Appearance
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 2rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+@code {
+    Map? map = null;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 45.2852939016828,
+            longitude = 27.972121962159605
+        },
+        zoomLevel = 14,
+        mapControls = new MapControls()
+        {
+            scaleBar = new ScaleBar()                                           //Map Scale Bar
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+
+        }
+    };
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        if (map?.Geometric?.Points != null)
+        {
+            await map.Geometric.Points.Appearance(e => e.type == "SigmaDrone2").SetStyle(new SigmaDroneChart()
+            {
+                title = "titlu",
+                dimension = 60,
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+                moreThan180DegreesWith = 30,
+                wifiIndicator = new WiFiIndicator()
+                {
+                    paramOrLevel = "${wifiLevel}",
+                    size = 10
+                },
+                altitudeIndicator = new AltitudeIndicator()
+                {
+                    paramOrAltitude = "${altitude}",
+                    maximumAltitude = 300,
+                },
+                crownIndicators = new List<SigmaDroneObject>()
+                {
+                        new SigmaDroneCrownScale()
+                    {
+                        label = "x 1 km/h",
+                        valueStart = 0,
+                        valueStop = 120,
+                        paramOrValue = "${speed}",
+                        percentageOfTheEntireCrown = 50,
+                        backgroundColor = "#f8f8ff"
+                    },
+                    new SigmaDroneCrownPercent()
+                    {
+                        backgroundColor = "azure",
+                        fillColor = "red",
+                        haloText = true,
+                        label = "Battery",
+                        paramOrValue = "${battery}",
+                        percentageOfTheEntireCrown = 50,
+                        valueStart = 0,
+                        valueStop = 100
+                    }
+                }
+            });
+
+            await map.Geometric.Points.Appearance(e => e.type == "SigmaDrone").SetStyle(new SigmaDroneChart()
+            {
+                title = "titlu",
+                dimension = 60,
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+                moreThan180DegreesWith = 60,
+                wifiIndicator = new WiFiIndicator()
+                {
+                    paramOrLevel = "${wifiLevel}",
+                    size = 10
+                },
+                altitudeIndicator = new AltitudeIndicator()
+                {
+                    paramOrAltitude = "${altitude}",
+                    maximumAltitude = 300,
+                },
+                batteryIndicator = new BatteryIndicator()
+                {
+                    paramOrLevel = "${battery}"
+                },
+                crownIndicators = new List<SigmaDroneObject>()
+                {
+                      new SigmaDroneCrownDiscrete()
+                    {
+                        label  = "Fuel",
+                        colors = new List<string>() { "red", "orange", "yellow", "green" }.ToArray(),
+                        percentageValues = new List<int>() { 33, 33, 33, 33 }.ToArray(),
+                        paramOrIndex = "${fuel}",
+                        labels = new List<string>() { "critical", "low", "range", "full" }.ToArray(),
+                        percentageOfTheEntireCrown = 60,
+                        backgroundColor = "lightgray",
+                        haloText = true,
+                    },
+                        new SigmaDroneCrownScale()
+                    {
+                        label = "x 1 km/h",
+                        valueStart = 0,
+                        valueStop = 120,
+                        paramOrValue = "${speed}",
+                        percentageOfTheEntireCrown = 25,
+                        backgroundColor = "#f8f8ff"
+                    },
+                    new SigmaDroneCrownPercent()
+                    {
+                        backgroundColor = "azure",
+                        fillColor = "red",
+                        haloText = true,
+                        label = "Battery",
+                        paramOrValue = "${battery}",
+                        percentageOfTheEntireCrown = 15,
+                        valueStart = 0,
+                        valueStop = 100
+                    }
+                }
+            });
+
+       
+            await map.Geometric.Points.Add(new StreamPoints().test);
+        }
+    }
+}
