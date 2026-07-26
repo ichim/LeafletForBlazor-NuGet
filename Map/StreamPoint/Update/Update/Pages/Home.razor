@@ -1,0 +1,74 @@
+﻿@page "/"
+@using Data.Input
+@using LeafletForBlazor.techs.core.Appearance
+<button onclick="@update">Update single StreamPoint</button>
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 2rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+@code {
+    Map? map = null;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()
+        {
+            latitude = 50.79562462192155,
+            longitude = 4.469710158688292
+        },
+        zoomLevel = 10,
+        mapControls = new MapControls()
+        {
+            layerList = new LayerList() { position = Position.topRight },
+            scaleBar = new ScaleBar()
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+        }
+    };
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        if (map?.Geometric?.Points != null)
+        {
+            await map.Geometric.Points.Appearance(e => e.type == "Industrial").SetStyle(new PieChart()
+            {
+                dimension = 40,
+                title = "Industrial",
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 8, maxZoomLevel = 10 },
+                expandedIndex = 0,
+                fontSize = 8,
+                paramOrValues = "${production}",
+                paramOrLabels = "${texts}",
+                paramOrColors = "${classes}"
+            });
+
+            await map.Geometric.Points.Add(new StreamPoints().points);  
+        }
+    }
+
+    private async Task update()
+    {
+        if (map?.Geometric?.Points != null)
+        {
+            List<StreamPoint> updatedPoints = new List<StreamPoint>()
+            {
+                new StreamPoint()
+                {
+                    guid = new Guid("00000000-0000-0000-0000-000000000001"),
+                    type = "Industrial",
+                    value = new IndustrialValues()
+                    {
+                        production = new double[2] { 20, 20},
+                        texts = new string[2] { "White", "Black" },
+                        classes = new string[2] { "white", "black" }
+                    }
+                }
+            };
+            await map.Geometric.Points.Update(updatedPoints);
+        }
+        await Task.Yield();
+    }
+}
