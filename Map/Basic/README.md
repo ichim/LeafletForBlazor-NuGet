@@ -1,1 +1,1 @@
-
+# 🧭 Map configuration
