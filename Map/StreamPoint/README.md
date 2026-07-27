@@ -4,7 +4,7 @@ The StreamPoint collection is hosted by @map.Geometric.Points and provides opera
 
 What does root data structure mean?
 
-StreamPoint has a predefined, mandatory structure without which these points cannot function correctly.
+``StreamPoint`` has a predefined, mandatory structure without which these points cannot function correctly.
 
     public class StreamPoint : IStreamPoint, IStreamType
     {
