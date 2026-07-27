@@ -1,0 +1,266 @@
+﻿@page "/"
+@using Data.Input
+@using LeafletForBlazor.techs.core.Appearance
+<button onclick="@start">Start simulator</button>
+<button onclick="@stop">Stop simulator</button>
+<label>Move the mouse over the chart</label>
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 4rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+@code {
+    Map? map = null;
+    int chartDimension = 28; //pixels
+    int chartIncreaseFactorMouseOver = 2;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 45.2852939016828,
+            longitude = 27.972121962159605
+        },
+        zoomLevel = 14,
+        mapControls = new MapControls()
+        {
+            scaleBar = new ScaleBar()                                           //Map Scale Bar
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+
+        }
+    };
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        if (map?.Geometric?.Points != null)
+        {
+            await map.Geometric.Points.Appearance(e => e.type == "SigmaDrone2").SetStyle(new SigmaDroneChart()
+            {
+                title = "titlu",
+                dimension = chartDimension,
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+                increaseScaleFactorOnMouseover = chartIncreaseFactorMouseOver,
+                moreThan180DegreesWith = 30,
+                wifiIndicator = new WiFiIndicator()
+                {
+                    paramOrLevel = "${wifiLevel}",
+                    size = 10
+                },
+                altitudeIndicator = new AltitudeIndicator()
+                {
+                    paramOrAltitude = "${altitude}",
+                    maximumAltitude = 300,
+                },
+                crownIndicators = new List<SigmaDroneObject>()
+                {
+                        new SigmaDroneCrownScale()
+                    {
+                        label = "x 1 km/h",
+                        valueStart = 0,
+                        valueStop = 120,
+                        paramOrValue = "${speed}",
+                        percentageOfTheEntireCrown = 50,
+                        backgroundColor = "#f8f8ff"
+                    },
+                    new SigmaDroneCrownPercent()
+                    {
+                        backgroundColor = "azure",
+                        fillColor = "red",
+                        haloText = true,
+                        label = "Battery",
+                        paramOrValue = "${battery}",
+                        percentageOfTheEntireCrown = 50,
+                        valueStart = 0,
+                        valueStop = 100
+                    }
+                }
+            });
+
+            await map.Geometric.Points.Appearance(e => e.type == "SigmaDrone").SetStyle(new SigmaDroneChart()
+            {
+                title = "titlu",
+                dimension = chartDimension,
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+                increaseScaleFactorOnMouseover = chartIncreaseFactorMouseOver,
+                moreThan180DegreesWith = 60,
+                wifiIndicator = new WiFiIndicator()
+                {
+                    paramOrLevel = "${wifiLevel}",
+                    size = 10
+                },
+                altitudeIndicator = new AltitudeIndicator()
+                {
+                    paramOrAltitude = "${altitude}",
+                    maximumAltitude = 300,
+                },
+                batteryIndicator = new BatteryIndicator()
+                {
+                    paramOrLevel = "${battery}"
+                },
+                crownIndicators = new List<SigmaDroneObject>()
+                {
+                      new SigmaDroneCrownDiscrete()
+                    {
+                        label  = "Fuel",
+                        colors = new List<string>() { "red", "orange", "yellow", "green" }.ToArray(),
+                        percentageValues = new List<int>() { 33, 33, 33, 33 }.ToArray(),
+                        paramOrIndex = "${fuel}",
+                        labels = new List<string>() { "critical", "low", "range", "full" }.ToArray(),
+                        percentageOfTheEntireCrown = 60,
+                        backgroundColor = "lightgray",
+                        haloText = true,
+                    },
+                        new SigmaDroneCrownScale()
+                    {
+                        label = "x 1 km/h",
+                        valueStart = 0,
+                        valueStop = 120,
+                        paramOrValue = "${speed}",
+                        percentageOfTheEntireCrown = 25,
+                        backgroundColor = "#f8f8ff"
+                    },
+                    new SigmaDroneCrownPercent()
+                    {
+                        backgroundColor = "azure",
+                        fillColor = "red",
+                        haloText = true,
+                        label = "Battery",
+                        paramOrValue = "${battery}",
+                        percentageOfTheEntireCrown = 15,
+                        valueStart = 0,
+                        valueStop = 100
+                    }
+                }
+            });
+
+            await map.Geometric.Points.Appearance(e => e.type == "SigmaDrone4").SetStyle(new SigmaDroneChart()
+            {
+                title = "titlu",
+                dimension = chartDimension,
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+                increaseScaleFactorOnMouseover = chartIncreaseFactorMouseOver,
+                moreThan180DegreesWith = 0,
+
+                batteryIndicator = new BatteryIndicator()
+                {
+                    paramOrLevel = "${battery}"
+                },
+                crownIndicators = new List<SigmaDroneObject>()
+                {
+                          new SigmaDroneCrownPercent()
+                    {
+                        backgroundColor = "azure",
+                        fillColor = "blue",
+                        haloText = true,
+                        label = "Battery",
+                        paramOrValue = "${battery}",
+                        percentageOfTheEntireCrown = 50,
+                        valueStart = 0,
+                        valueStop = 100
+                    },
+                        new SigmaDroneCrownScale()
+                    {
+                        label = "x 1 km/h",
+                        valueStart = 0,
+                        valueStop = 120,
+                        paramOrValue = "${speed}",
+                        percentageOfTheEntireCrown = 50,
+                        backgroundColor = "#f8f8ff"
+                    },
+
+                }
+            });
+
+
+            await map.Geometric.Points.Add(new StreamPoints().test);
+        }
+    }
+    List<DroneSimulator.DroneSimulator> simulators = new List<DroneSimulator.DroneSimulator>();
+    public async Task start()
+    {
+        List<string> simulatorOnType = new List<string>() { "SigmaDrone4", "SigmaDrone2", "SigmaDrone" };
+
+        if (map is null)
+            return;
+        var bounds = new DroneSimulator.Bounds(
+         latMin: 45.27125785161344,    // Sud
+         lonMin: 27.96145300608208,   // Vest
+         latMax: 45.296145140141526,      // Nord
+         lonMax: 28.00795154834795    // Est
+     );
+
+
+        IEnumerable<StreamPoint> points = new StreamPoints().test.Where((p) => simulatorOnType.Contains(p.type));
+        if (points.Count() != 0)
+        {
+            foreach (StreamPoint point in points)
+            {
+                var droneSimulator = new DroneSimulator.DroneSimulator(bounds, point.coordinates.xy[0], point.coordinates.xy[1], timeStep: (point.value as DroneTrak).timeSpent);
+
+                double batteryLevel = 10;
+
+                droneSimulator.OnDroneUpdate += async (sender, e) =>
+                 {
+                     Random rand = new Random();
+                     var state = e.State.Clone();
+
+                     //Console.WriteLine($"DI {state.Position.Latitude} - {state.Position.Longitude}");
+                     await map.Geometric.Points.Update(new List<StreamPoint>()
+                                 {
+
+                 new StreamPoint()
+                 {
+                     guid = point.guid,
+                     type = point.type,
+                     timestamp = DateTime.Now,
+                     coordinates = new Coordinates()
+                     {
+                         xy = new double[2] { state.Position.Latitude, state.Position.Longitude }
+                     },
+                     value = new DroneTrak()
+                     {
+                         speed = state.Speed * 1000/(60*60),
+                         fuel = fuelClass( state.Fuel),
+                       altitude =Math.Abs( state.Altitude),
+                       battery = batteryLevel,
+                       wifiLevel =rand.Next(0,4)
+
+                     }
+                 }
+
+                                 });
+                     {
+                         batteryLevel = batteryLevel - 0.1;
+
+
+                     }
+                     ;
+
+                 };
+                simulators.Add(droneSimulator);
+            }
+        }
+    }
+    public async Task stop()
+    {
+        foreach (DroneSimulator.DroneSimulator simulator in simulators)
+        {
+            simulator.Stop();
+        }
+    }
+
+    private int fuelClass(double fuel)
+    {
+        if (fuel < 25)
+            return 0;
+        else if (fuel < 50)
+            return 1;
+        else if (fuel < 75)
+            return 2;
+        else
+            return 3;
+    }
+}
