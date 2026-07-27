@@ -25,5 +25,5 @@ Advantages:
  - ``Only C# code``, easy to manage. You focus only on functionality
  - ``Out-of-the-box`` integration;
  - ``Server-side configuration``: all settings can be made from C#/config, without html page, css etc
- - ``Security``: reduces the risk of introducing XSS (cross-site scripting) errors through controlled generation of markup/JS.
+ - ``Security``: reduces the risk of introducing XSS (cross-site scripting) errors through controlled generation of markup/JS (ex. destructuring and structuring LINQ expressions).
  - ``Complete abstraction``
