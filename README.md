@@ -99,6 +99,20 @@ The loadParameter parameter of the Map component allows you to configure the map
                 unitOfScaleBar = UnitOfScaleBar.metric
             },
 
+[more about Map Configuration](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Map/Basic/README.md#-map-configuration)
+
+## 📍 StreamPoint collection
+
+The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides operating functionalities with a predefined but hierarchically extensible root data structure.
+
+[more about StreamCollection](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Map/StreamPoint/README.md#streampoint-collection)
+
+## 📊 Dashboard
+
+``StreamPoint`` collection can be used to monitor moving targets: vehicles, boats, aircraft, even fleets of vehicles, drones and so one.
+
+[more about Map Dashboard](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Map/Dashboard#working-with-map-dashboard)
+
  _____________
 
 
