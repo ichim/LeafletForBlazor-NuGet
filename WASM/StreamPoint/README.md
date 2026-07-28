@@ -51,8 +51,46 @@ This class is used to extend StreamPoint:
 
 ## Add
 
+The Add() method on @map.Geometric.Points is async:
+
+     await map.Geometric.Points.Add(new List<StreamPoint>(){});
+
 ## Remove
+
+The Remove() method on @map.Geometric.Points is async:
+
+    await map.Geometric.Points.Remove();
 
 ## Update
 
+The Update() method on @map.Geometric.Points is async:
+
+    await map.Geometric.Points.Update(new List<StreamPoint>(){});
+
+Example code:
+
+         await map.Geometric.Points.Update(new List<StreamPoint>()
+                     {
+
+                             new StreamPoint()
+                             {
+                                 guid = point.guid,                //existing guide
+                                 type = point.type,                //type can be changed
+                                 timestamp = DateTime.Now,         //useful for the MemoryCache mechanism
+                                 coordinates = new Coordinates()
+                                 {
+                                     xy = new double[2] { state.Position.Latitude, state.Position.Longitude }
+                                 },
+                                 value = new DroneTrak()
+                                 {
+                                     speed = state.Speed * 1000/(60*60),
+                                     fuel = fuelClass( state.Fuel),
+                                   altitude =Math.Abs( state.Altitude),
+                                   battery = batteryLevel,
+                                   wifiLevel =rand.Next(0,4)
+            
+                                 }
+                             }
+
+                        });
 ## Appearance
