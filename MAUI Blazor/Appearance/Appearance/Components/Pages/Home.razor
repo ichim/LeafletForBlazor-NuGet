@@ -1,0 +1,160 @@
+﻿@page "/"
+@using Data.Input
+@using LeafletForBlazor.techs.core.Appearance
+<table>
+    <tbody>
+        <tr>
+            <td><button @onclick="change">Change Appearance</button></td>
+            <td width="160px"></td>
+            <td><button @onclick="add">Add</button></td>
+            <td>
+                <button @onclick="remove">Reomove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<Map @ref="map" loadParameters="@loadParameters"
+     height="calc(100vh - 4rem)"
+     width="calc(100vw - 2rem)" />
+
+@code {
+    Map? map = null;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 45.2852939016828,
+            longitude = 27.972121962159605
+        },
+        zoomLevel = 14,
+        mapControls = new MapControls()
+        {
+            layerList = new LayerList()                                         //LayersList control
+            {
+                position = Position.topRight
+            },
+            scaleBar = new ScaleBar()                                           //Map Scale Bar
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+
+        }
+    };
+
+    private async Task add()
+    {
+        if (map is not null)
+        {
+            await map.Geometric.Points.Add(new StreamPoints().test);
+        }
+        await Task.Yield();
+    }
+    private async Task remove()
+    {
+        if (map is not null)
+        {
+            await map.Geometric.Points.Remove();
+        }
+        await Task.Yield();
+    }
+    private async Task change()
+    {
+        if (map?.Geometric?.Points != null)
+        {
+            await map.Geometric.Points.Appearance(e => e.type == "Quarters").SetStyle(new QuartersCharts()
+            {
+                title = "quarters",
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 4, maxZoomLevel = 18 },
+                dimension = 60,
+                quartersCharts = new List<QuarterObject>()
+            {
+                                     new QuarterGaugeFillChartBase()
+                                     {
+                                         fillingColor = "red",
+                                         fillPanel = "white",
+                                         paramOrValueStart = 0,
+                                         paramOrValueStop = 100,
+                                         paramOrValue = "${fuel}",
+                                         label = "Fuel"
+
+                                     } ,
+                                          new QuarterGaugeScaleChartBase()
+                                     {
+
+                                         fillPanel = "azure",
+                                         paramOrValueStart = 10,
+                                         paramOrValueStop = 200,
+                                         paramOrValue = "${speed}",
+                                         label = "Speed km/h"
+
+                                     },
+                                     new QuarterGaugeScaleAndPercentChartBase()
+                                     {
+                                        fillingColor="orange",
+                                        fillPanel = "white",
+                                        paramOrValueStart = 0,
+                                        paramOrValueStop = 100,
+                                        paramOrValue = "${battery}",
+                                        fontSize = 4,
+                                        haloText = true,
+                                        label = "Battery",
+                                        heightCrownInner = 9,
+                                        heightCrownInner2 = 8,
+                                        heightCrownOuter=8,
+                                        paramOrIndexQuadrant=3,
+                                        type = QuarterGaugeScalePercentType.HowManyAreLeft
+                                     },
+
+
+                                 }
+            });
+            await map.Geometric.Points.Appearance(e => e.type == "Sigma").SetStyle(new SigmaDroneChart()
+            {
+                title = "titlu",
+                dimension = 60,
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+                moreThan180DegreesWith = 15,
+                wifiIndicator = new WiFiIndicator()
+                {
+                    paramOrLevel = "${wifiLevel}",
+                    size = 10
+                },
+                altitudeIndicator = new AltitudeIndicator()
+                {
+                    paramOrAltitude = "${altitude}",
+                    maximumAltitude = 300,
+                },
+                batteryIndicator = new BatteryIndicator()
+                {
+                    paramOrLevel = "${battery}"
+                },
+                crownIndicators = new List<SigmaDroneObject>()
+                {
+                      new SigmaDroneCrownDiscrete()
+                    {
+                        label  = "Fuel",
+                        colors = new List<string>() { "red", "orange", "yellow", "green" }.ToArray(),
+                        percentageValues = new List<int>() { 33, 33, 33, 33 }.ToArray(),
+                        paramOrIndex = "${fuel}",
+                        labels = new List<string>() { "critical", "low", "range", "full" }.ToArray(),
+                        percentageOfTheEntireCrown = 60,
+                        backgroundColor = "lightgray",
+                        haloText = true,
+                    },
+                        new SigmaDroneCrownScale()
+                    {
+                        label = "x 1 km/h",
+                        valueStart = 0,
+                        valueStop = 120,
+                        paramOrValue = "${speed}",
+                        percentageOfTheEntireCrown = 40,
+                        backgroundColor = "#f8f8ff"
+                    },
+
+                    }
+            });
+        }
+        await Task.Yield();
+    }
+}

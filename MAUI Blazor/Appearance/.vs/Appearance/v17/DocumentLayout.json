@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\MAUI\\Appearance\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC2872E-E4A1-44C9-8708-FA40A4162289}|Appearance\\Appearance.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\maui\\appearance\\appearance\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0EC2872E-E4A1-44C9-8708-FA40A4162289}|Appearance\\Appearance.csproj|solutionrelative:appearance\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC2872E-E4A1-44C9-8708-FA40A4162289}|Appearance\\Appearance.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\maui\\appearance\\appearance\\input-data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC2872E-E4A1-44C9-8708-FA40A4162289}|Appearance\\Appearance.csproj|solutionrelative:appearance\\input-data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC2872E-E4A1-44C9-8708-FA40A4162289}|Appearance\\Appearance.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\maui\\appearance\\appearance\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0EC2872E-E4A1-44C9-8708-FA40A4162289}|Appearance\\Appearance.csproj|solutionrelative:appearance\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StreamPoints.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\MAUI\\Appearance\\Appearance\\input-data\\StreamPoints.cs",
+              "RelativeDocumentMoniker": "Appearance\\input-data\\StreamPoints.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\MAUI\\Appearance\\Appearance\\input-data\\StreamPoints.cs",
+              "RelativeToolTip": "Appearance\\input-data\\StreamPoints.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAA/wKoBAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T08:53:51.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\MAUI\\Appearance\\Appearance\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Appearance\\Components\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\MAUI\\Appearance\\Appearance\\Components\\_Imports.razor",
+              "RelativeToolTip": "Appearance\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-28T08:52:44.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\MAUI\\Appearance\\Appearance\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Appearance\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\MAUI\\Appearance\\Appearance\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Appearance\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAkwJ8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-28T08:52:11.395Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
