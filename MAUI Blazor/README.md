@@ -44,6 +44,7 @@ Default configuration parameters:
 
 Settings Map parameters:
 
-<Map loadParameters="@loadParameters"
-     height="calc(100vh - 4rem)"
-     width="calc(100vw - 2rem)" />
+
+    <Map loadParameters="@loadParameters"
+         height="calc(100vh - 4rem)"
+         width="calc(100vw - 2rem)" />
