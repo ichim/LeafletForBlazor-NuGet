@@ -1,5 +1,12 @@
 # .NET MAUI Blazor Hybrid App
 
+Adding to _Imports.razor
+
+    @using LeafletForBlazor
+    @using static LeafletForBlazor.Map
+    @using static LeafletForBlazor.techs.maps.Leaflet
+
+
 Adding the Map component:
 
     <Map
