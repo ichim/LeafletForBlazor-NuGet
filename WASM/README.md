@@ -1,6 +1,11 @@
 # Basic
 
-Basic map settings.
+Basic map settings, including:
+- center of view displayed on the map,
+- zoom level
+- map controls, etc.
+
+[more about Basic Map Settings]()
 
 # StreamPoint
 
