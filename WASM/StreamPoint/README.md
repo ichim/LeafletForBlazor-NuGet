@@ -1,6 +1,21 @@
 # 📍 StreamPoint collection
 
-The StreamPoint collection is hosted by @map.Geometric.Points and provides operating functionalities with a predefined but hierarchically extensible root data structure.
+The `StreamPoint` collection maintains live synchronization between your data objects and their map representation:
+
+| Property Change | Map Effect | Performance Feature |
+|----|----|----|
+| Coordinates | Point moves instantly | Cached for smooth animation |
+| Appearance | Style updates immediately | Smart re-rendering |
+| Timestamp | Time-based filtering | Temporal indexing |
+
+Key characteristics:
+
+✅ Real-time updates - Any property change triggers immediate map refresh
+✅ Automatic positioning - Coordinate updates = map marker/svg/chart movement
+✅ Visual consistency - Appearance changes = style updates
+✅ Cached performance - Objects served from cache with live synchronization
+
+The `StreamPoint` collection is hosted by @map.Geometric.Points and provides operating functionalities with a predefined but hierarchically extensible root data structure.
 
 What does root data structure mean?
 
