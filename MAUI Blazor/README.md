@@ -123,3 +123,17 @@ This class is used to extend StreamPoint:
 
 ### ⚡ StreamPoint collection events
 
+
+        map.Geometric.Points.OnClick += async (object? sender, StreamPointEventArgs args) =>
+       {
+           Console.WriteLine($"    Clicked point with count {args.points.Count()}");
+       };
+
+Where:
+
+       public class StreamPointEventArgs : EventArgs
+       {
+           public List<StreamPoint> points { get; set; }
+           public Coordinates geoid { get; set; }
+           public Coordinates screen { get; set; }
+        }
