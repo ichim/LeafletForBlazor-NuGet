@@ -99,19 +99,34 @@ The loadParameter parameter of the Map component allows you to configure the map
                 unitOfScaleBar = UnitOfScaleBar.metric
             },
 
-[more about Map Configuration](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Map/Basic/README.md#-map-configuration)
+[more about Map Configuration - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic#-map-configuration)
+
+[more about Map Configuration - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#net-maui-blazor-hybrid-app)
+
 
 ## 📍 StreamPoint collection
 
 The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides operating functionalities with a predefined but hierarchically extensible root data structure.
 
-[more about StreamCollection](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Map/StreamPoint/README.md#streampoint-collection)
+[more about StreamCollection - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#-streampoint-collection)
+
+[more about StreamCollection - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor/Appearance#streampoint-collection-and-appearance)
+
+### 🎨 Appearance
+
+Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
+
+    await map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...);
+
+[more about Appearance - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint/Appearance#-appearance)
+
+[more about Appearance - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/MAUI%20Blazor/Appearance/README.md#-appearance)
 
 ## 📊 Dashboard
 
 ``StreamPoint`` collection can be used to monitor moving targets: vehicles, boats, aircraft, even fleets of vehicles, drones and so one.
 
-[more about Map Dashboard](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/Map/Dashboard#working-with-map-dashboard)
+[more about Map Dashboard](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Dashboard#-working-with-map-dashboard)
 
  _____________
 

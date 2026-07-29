@@ -1,6 +1,25 @@
 # 📍 StreamPoint collection
 
-The StreamPoint collection is hosted by @map.Geometric.Points and provides operating functionalities with a predefined but hierarchically extensible root data structure.
+The `StreamPoint` collection maintains live synchronization between your data objects and their map representation:
+
+| Property Change | Map Effect | Performance Feature |
+|----|----|----|
+| Coordinates | Point moves instantly | Cached for smooth animation |
+| Appearance | Style updates immediately | Smart re-rendering |
+| Timestamp | Time-based filtering | Temporal indexing |
+
+Key characteristics:
+
+✅ Real-time updates - Any property change triggers immediate map refresh
+
+✅ Automatic positioning - Coordinate updates = map marker/svg/chart movement
+
+✅ Visual consistency - Appearance changes = style updates
+
+✅ Cached performance - Objects served from cache with live synchronization
+
+
+The `StreamPoint` collection is hosted by @map.Geometric.Points and provides operating functionalities with a predefined but hierarchically extensible root data structure.
 
 What does root data structure mean?
 
@@ -51,8 +70,55 @@ This class is used to extend StreamPoint:
 
 ## Add
 
+The Add() method on @map.Geometric.Points is async:
+
+     await map.Geometric.Points.Add(new List<StreamPoint>(){});
+
 ## Remove
+
+The Remove() method on @map.Geometric.Points is async:
+
+    await map.Geometric.Points.Remove();
 
 ## Update
 
-## Appearance
+The Update() method on @map.Geometric.Points is async:
+
+    await map.Geometric.Points.Update(new List<StreamPoint>(){});
+
+Example code:
+
+         await map.Geometric.Points.Update(new List<StreamPoint>()
+                     {
+
+                             new StreamPoint()
+                             {
+                                 guid = point.guid,                //existing guide
+                                 type = point.type,                //type can be changed
+                                 timestamp = DateTime.Now,         //useful for the MemoryCache mechanism
+                                 coordinates = new Coordinates()
+                                 {
+                                     xy = new double[2] { state.Position.Latitude, state.Position.Longitude }
+                                 },
+                                 value = new DroneTrak()
+                                 {
+                                     speed = state.Speed * 1000/(60*60),
+                                     fuel = fuelClass( state.Fuel),
+                                   altitude =Math.Abs( state.Altitude),
+                                   battery = batteryLevel,
+                                   wifiLevel =rand.Next(0,4)
+            
+                                 }
+                             }
+
+                        });
+# 🎨 Appearance
+
+Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
+
+    await map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...);
+
+
+[more about Appearance](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/Appearance/README.md#-appearance)
+
+
