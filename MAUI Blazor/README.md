@@ -1,5 +1,7 @@
 # .NET MAUI Blazor Hybrid App
 
+## Basic configuration
+
 Adding to _Imports.razor
 
     @using LeafletForBlazor
@@ -49,7 +51,7 @@ Settings Map parameters:
          height="calc(100vh - 4rem)"
          width="calc(100vw - 2rem)" />
 
-# 📍 StreamPoint collection
+## 📍 StreamPoint collection
 
 The `StreamPoint` collection maintains live synchronization between your data objects and their map representation:
 
@@ -85,7 +87,7 @@ What does root data structure mean?
         public string? type { get; set; }                                         //allows for a classification of data. Often used for map appearance
     }
 
-## Extending the StreamPoint class
+### Extending the StreamPoint class
 
 To extend the StreamPoint class you need to create a new custom class:
 
@@ -118,3 +120,6 @@ This class is used to extend StreamPoint:
                            }
         
         };
+
+### ⚡ StreamPoint collection events
+
