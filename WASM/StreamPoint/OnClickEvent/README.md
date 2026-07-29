@@ -1,1 +1,1 @@
-# StreamPoint collection events
+# ⚡ StreamPoint collection events
