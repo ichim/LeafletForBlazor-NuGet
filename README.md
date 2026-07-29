@@ -112,6 +112,16 @@ The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides
 
 [more about StreamCollection - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor/Appearance#streampoint-collection-and-appearance)
 
+### 🎨 Appearance
+
+Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
+
+    await map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...);
+
+[more about Appearance - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint/Appearance#-appearance)
+
+[more about Appearance - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/MAUI%20Blazor/Appearance/README.md#-appearance)
+
 ## 📊 Dashboard
 
 ``StreamPoint`` collection can be used to monitor moving targets: vehicles, boats, aircraft, even fleets of vehicles, drones and so one.
