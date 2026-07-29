@@ -62,9 +62,13 @@ The `StreamPoint` collection maintains live synchronization between your data ob
 Key characteristics:
 
 ✅ Real-time updates - Any property change triggers immediate map refresh
+
 ✅ Automatic positioning - Coordinate updates = map marker/svg/chart movement
+
 ✅ Visual consistency - Appearance changes = style updates
+
 ✅ Cached performance - Objects served from cache with live synchronization
+
 
 The `StreamPoint` collection is hosted by @map.Geometric.Points and provides operating functionalities with a predefined but hierarchically extensible root data structure.
 
