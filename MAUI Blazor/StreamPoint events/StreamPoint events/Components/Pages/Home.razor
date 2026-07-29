@@ -1,0 +1,66 @@
+﻿@page "/"
+@using Data.Input
+@using LeafletForBlazor.techs.core.Appearance
+<table>
+    <tbody>
+        <tr>
+            <td><label>Click on Map StreamPoint: @type</label></td>
+            <td width="160px"></td>
+            <td></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+<Map @ref="map" loadParameters="@loadParameters"
+     height="calc(100vh - 4rem)"
+     width="calc(100vw - 2rem)" OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+@code {
+    Map? map = null;
+    string type = "";
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()
+            {
+                latitude = 50.81498421475167,
+                longitude = 4.505337235085694
+            },
+        zoomLevel = 8,
+        mapControls = new MapControls()
+        {
+            layerList = new LayerList()                                         //LayersList control
+            {
+                position = Position.topRight
+            },
+            scaleBar = new ScaleBar()                                           //Map Scale Bar
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+
+        }
+    };
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        if (map is not null)
+        {
+            await map.Geometric.Points.Add(new StreamPoints().points);
+            map.Geometric.Points.OnClick +=  (object? sender, StreamPointEventArgs args) =>
+             {
+                 System.Diagnostics.Debug.WriteLine($"    Clicked point with count {args.points.Count()}");
+                 foreach(StreamPoint point in args.points)
+                 {
+                     if(point.type!=null)
+                        type = point.type;
+                 }
+                 StateHasChanged();
+             };
+        }
+   
+        await Task.Yield();
+    }
+
+   
+}
