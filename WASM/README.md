@@ -5,7 +5,7 @@ Basic map settings, including:
 - zoom level
 - map controls, etc.
 
-[more about Basic Map Settings]()
+[more about Basic Map Settings](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic#-map-configuration)
 
 # StreamPoint
 
