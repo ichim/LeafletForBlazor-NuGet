@@ -16,7 +16,7 @@
 1. ``Optimized code`` through various solutions
    	- minimizing the number of calls to JavaScript;
    	- collection searches by destructuring and structuring LINQ expressions;
-   	- fluent API, a design pattern that allows code to be written in a readable way, similar to an English sentence
+   	- [fluent API](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api), a design pattern that allows code to be written in a readable way, similar to an English sentence
 	- redusing size of the JavaScript code by removing unused code.
 	- Memory Cache
 
