@@ -3,7 +3,7 @@
 *Leaflet for Blazor* is a library that provides components for displaying map in Blazor applications. Allows developers to easily integrate interactive maps, `without any JavaScript settings`, into their Blazor projects. 
 
 
-**🔑 KEYWORDS**: Minimizing Invoke callers to JavaScript, `No JavaScript specific settings`, no script references, no css links.
+**🔑 KEYWORDS**: Minimizing Invoke callers to JavaScript, `No JavaScript specific settings`, no script references, no css links, readability, intuitive, immutability through `fluent API`.
 
 ![NuGet Version](https://img.shields.io/nuget/v/LeafletForBlazor?cacheSeconds=3600) ![NuGet Downloads](https://img.shields.io/nuget/dt/LeafletForBlazor?cacheSeconds=3600)![GitHub stars](https://img.shields.io/github/stars/ichim/LeafletForBlazor-nuget?cacheSeconds=3600) ![GitHub last commit](https://img.shields.io/github/last-commit/ichim/LeafletForBlazor-nuget?cacheSeconds=3600)[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/ichim/LeafletForBlazor-nuget/blob/main/LICENSE?cacheSeconds=3600)
 
@@ -106,6 +106,8 @@ The loadParameter parameter of the Map component allows you to configure the map
 
 ## 📍 StreamPoint collection
 
+`StreamPoint` collection provides *real-time map synchronization* - any property change (coordinates, appearance, timestamp) instantly updates the map visualization. Objects are cached for performance but remain fully dynamic.
+
 The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides operating functionalities with a predefined but hierarchically extensible root data structure.
 
 [more about StreamCollection - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#-streampoint-collection)
@@ -121,6 +123,18 @@ Appearance is a method that accepts Expression<Func<T, bool>> predicates and all
 [more about Appearance - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint/Appearance#-appearance)
 
 [more about Appearance - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/MAUI%20Blazor/Appearance/README.md#-appearance)
+
+### 🛠️ Settings
+
+Here you can configure how the collection of points displayed on the map behaves.
+
+    map.Geometric.Points.settings = new LeafletForBlazor.techs.core.Geometry.Points.Settings(){};
+
+### ⚡ Events
+
+StreamPoint Collection Events.
+
+[more about events](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/OnClickEvent/README.md#-streampoint-collection-events)
 
 ## 📊 Dashboard
 
