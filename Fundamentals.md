@@ -47,3 +47,14 @@ Here method chaining is used: SetStyle, SetLabel etc:
 
 	@map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...).SetPopup(...);
 
+# Destructuring and Structuring LINQ
+
+To optimize data flow and improve package performance, data filtering is done separately: Both in C# and in JavaScript. This LINQ Destructuring/Structure mechanism avoids the repeated transmission of data collections, the transmission of large data collections.
+
+Advantages of LINQ Destructuring/Restructuring:
+
+✅ Minimal data transfer (only the expression)
+✅ Fast re-filtering in JS (data is already there)
+✅ Maximum flexibility: Client can re-apply filters
+✅ Offline-capable after first load
+
