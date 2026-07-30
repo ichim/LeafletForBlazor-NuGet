@@ -47,7 +47,7 @@ Here method chaining is used: SetStyle, SetLabel etc:
 
 	@map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...).SetPopup(...);
 
-Other example:
+## Points behavior
 
 	@map.Geometric.Points.isFitExtentEnabled = true;
 
