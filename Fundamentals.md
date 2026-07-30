@@ -41,3 +41,9 @@ For example, access to the map's point collection:
 
 	@map.Geometric.Points (.Add, .Remove, .Appearance etc)
 
+## Access to point/point properties
+
+Here method chaining is used: SetStyle, SetLabel etc:
+
+	@map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...).SetPopup(...);
+
