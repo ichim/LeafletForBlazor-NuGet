@@ -54,7 +54,14 @@ To optimize data flow and improve package performance, data filtering is done se
 Advantages of LINQ Destructuring/Restructuring:
 
 ✅ Minimal data transfer (only the expression)
+
 ✅ Fast re-filtering in JS (data is already there)
+
 ✅ Maximum flexibility: Client can re-apply filters
+
 ✅ Offline-capable after first load
+
+
+
+
 
