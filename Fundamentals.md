@@ -63,7 +63,7 @@ Advantages of LINQ Destructuring/Restructuring:
 
 ✅ Maximum flexibility: Client can re-apply filters
 
-✅ Offline-capable after first load
+✅ For the future: Offline-capable after first load
 
 
 
