@@ -27,3 +27,17 @@ Advantages:
  - ``Server-side configuration``: all settings can be made from C#/config, without html page, css etc
  - ``Security``: reduces the risk of introducing XSS (cross-site scripting) errors through controlled generation of markup/JS (ex. destructuring and structuring LINQ expressions).
  - ``Complete abstraction``
+
+# Fluent API
+
+A design pattern that allows code to be written in a readable way, similar to an English sentence. 
+
+## Access to map classes
+
+It is designed through a chain of already instantiated classes (objects) with a hierarchical and linguistic structure:
+
+For example, access to the map's point collection:
+
+
+	@map.Geometric.Points (.Add, .Remove, .Appearance etc)
+
