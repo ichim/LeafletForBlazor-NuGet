@@ -16,7 +16,6 @@ Adding the Map component:
          width="calc(100vw - 2rem)"
          />
 
-
 Default configuration parameters:
 
 
