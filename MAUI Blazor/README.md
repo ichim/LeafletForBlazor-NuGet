@@ -187,6 +187,24 @@ The value property enables seamless integration of domain-specific models:
             }
         };
 
+#### Integration Benefits
+
+1. Map Visualization
+ - Automatic layer assignment based on type property
+ - Dynamic styling through classification
+ - Real-time position updates via coordinates
+2. Cache Optimization
+ - timestamp enables efficient MemoryCache strategies
+ - Time-based invalidation and refresh policies
+ - Historical data retention and retrieval
+3. Domain Flexibility
+ - Zero-modification extension via value property
+ - Type-safe domain model integration
+ - Hierarchical data structure support
+4. Spatial Operations
+ - Native support for geographic calculations
+ - Integration with spatial databases
+ - Distance-based querying and clustering
 
 ### ⚡ StreamPoint collection events
 
