@@ -107,29 +107,38 @@ Where:
 1. `guid` - Identity Management
 
    Purpose: Uniquely identifies each point across the application lifecycle
+   
    Use Case: Tracking, updates, and synchronization operations
+   
    Implementation: Standard Guid for distributed system compatibility
+   
+1. `coordinates` - Geographic Positioning
 
-coordinates - Geographic Positioning
-Purpose: Defines the spatial location using WGS84 standard
-Use Case: Map rendering, spatial queries, and distance calculations
-Implementation: Coordinates class encapsulating latitude/longitude logic
-type - Classification & Layering
-Purpose: Categorizes points for visual organization and filtering
-Use Case:
-Layer-based map display (e.g., "Industrial", "Residential", "Commercial")
-Style application based on classification
-Dynamic filtering in UI components
-timestamp - Temporal Context & Caching
-Purpose: Provides temporal dimension for time-series analysis
-Use Case:
-MemoryCache integration for performance optimization
-Time-based filtering and aggregation
-Historical data tracking and versioning
-value - Extensible Domain Model
-Purpose: Enables type-safe extension for domain-specific attributes
-Use Case: Custom data attachment without modifying core structure
-Design Pattern: Open/Closed Principle implementation
+   Purpose: Defines the spatial location using WGS84 standard
+
+    Use Case: Map rendering, spatial queries, and distance calculations
+
+    Implementation: Coordinates class encapsulating latitude/longitude logic
+
+1. `type` - Classification & Layering
+
+    Purpose: Categorizes points for visual organization and filtering
+
+    Use Case:    Layer-based map display (e.g., "Industrial", "Residential", "Commercial"), Style application based on classification, Dynamic filtering in UI components
+
+1. `timestamp` - Temporal Context & Caching
+
+   Purpose: Provides temporal dimension for time-series analysis
+
+   Use Case: MemoryCache integration for performance optimization, Time-based filtering and aggregation, Historical data tracking and versioning
+
+1. `value` - Extensible Domain Model
+
+   Purpose: Enables type-safe extension for domain-specific attributes
+
+    Use Case: Custom data attachment without modifying core structure
+
+    Design Pattern: Open/Closed Principle implementation
 
 To extend the StreamPoint class you need to create a new custom class:
 
@@ -143,25 +152,41 @@ To extend the StreamPoint class you need to create a new custom class:
                 public double timeSpent { get; set; } = 0;
         }
 
-This class is used to extend StreamPoint:
+#### Extension Example: Vehicle Tracking System
 
-        StreamPoint point = new StreamPoint(){
-                           coordinates = new Coordinates()
-                           {
-                               xy = new double[2] { 50.860847591747186,  4.227255449993002 }
-                           },
-                           guid = new Guid("00000000-0000-0000-0000-000000000001"),
-                           type = "Industrial",
-                           value = new VehicleTracking()
-                           {
-                              speed = 20,
-                              battery = 4,
-                              wifiLevel = 2,
-                              fuel = 30, 
-                              altitude = 120,
-                           }
+The value property enables seamless integration of domain-specific models:
+
+        public class VehicleTracking
+        {
+            public double? speed { get; set; }        // Velocity in km/h
+            public double? battery { get; set; }      // Charge level percentage
+            public int wifiLevel { get; set; }        // Signal strength (0-5)
+            public double? fuel { get; set; }         // Fuel remaining in liters
+            public double? altitude { get; set; }     // Elevation in meters
+            public double timeSpent { get; set; }     // Duration at location
+        }
         
+        // Usage: Domain-specific point creation
+        StreamPoint vehiclePoint = new StreamPoint()
+        {
+            coordinates = new Coordinates() 
+            { 
+                xy = new double[2] { 50.860847591747186, 4.227255449993002 } 
+            },
+            guid = Guid.NewGuid(),
+            type = "Vehicle",
+            timestamp = DateTime.UtcNow,
+            value = new VehicleTracking()
+            {
+                speed = 20,
+                battery = 85.5,
+                wifiLevel = 4,
+                fuel = 30,
+                altitude = 120,
+                timeSpent = 45.5
+            }
         };
+
 
 ### ⚡ StreamPoint collection events
 
