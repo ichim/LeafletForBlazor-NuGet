@@ -87,7 +87,49 @@ What does root data structure mean?
         public string? type { get; set; }                                         //allows for a classification of data. Often used for map appearance
     }
 
-### Extending the StreamPoint class
+### StreamPoint: a Flexible, Extensible Map Point Definition
+
+StreamPoint is a foundational data model designed for geographic information systems (GIS) in Blazor applications. It provides a standardized, yet extensible structure for representing dynamic map points with real-time synchronization capabilities.
+
+#### Core Architecture
+
+    public class StreamPoint : IStreamPoint, IStreamType
+    {
+        public Guid guid { get; set; }                    // Unique identifier for point tracking
+        public Coordinates coordinates { get; set; }      // WGS84 geographic coordinates
+        public object value { get; set; }                 // Extensible property for domain-specific data
+        public DateTime timestamp { get; set; }           // Temporal indexing and cache management
+        public string? type { get; set; }                 // Classification for layered visualization
+    }
+
+Where:
+
+1. `guid` - Identity Management
+
+   Purpose: Uniquely identifies each point across the application lifecycle
+   Use Case: Tracking, updates, and synchronization operations
+   Implementation: Standard Guid for distributed system compatibility
+
+coordinates - Geographic Positioning
+Purpose: Defines the spatial location using WGS84 standard
+Use Case: Map rendering, spatial queries, and distance calculations
+Implementation: Coordinates class encapsulating latitude/longitude logic
+type - Classification & Layering
+Purpose: Categorizes points for visual organization and filtering
+Use Case:
+Layer-based map display (e.g., "Industrial", "Residential", "Commercial")
+Style application based on classification
+Dynamic filtering in UI components
+timestamp - Temporal Context & Caching
+Purpose: Provides temporal dimension for time-series analysis
+Use Case:
+MemoryCache integration for performance optimization
+Time-based filtering and aggregation
+Historical data tracking and versioning
+value - Extensible Domain Model
+Purpose: Enables type-safe extension for domain-specific attributes
+Use Case: Custom data attachment without modifying core structure
+Design Pattern: Open/Closed Principle implementation
 
 To extend the StreamPoint class you need to create a new custom class:
 
