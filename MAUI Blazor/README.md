@@ -51,9 +51,11 @@ Settings Map parameters:
          height="calc(100vh - 4rem)"
          width="calc(100vw - 2rem)" />
 
-## 📍 StreamPoint collection
+## 📍 StreamPoint
 
-The `StreamPoint` collection maintains live synchronization between your data objects and their map representation:
+`StreamPoint` provides a robust, intentionally-designed foundation for Blazor GIS applications. Its carefully crafted attributes support essential mapping functionality while maintaining extensibility for domain-specific requirements. The architecture enables efficient caching, spatial operations, and real-time updates—critical capabilities for modern geographic applications.
+
+On another note, the `StreamPoint` collection maintains live synchronization between your data objects and their map representation:
 
 | Property Change | Map Effect | Performance Feature |
 |----|----|----|
