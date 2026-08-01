@@ -31,7 +31,7 @@ The code you write will be simple, pure Blazor, clear and easy to manage.
 
 Following specific development iterations, invokes were eliminated, LINQ structuring/destructuring procedures were added, JavaScript code was reduced. Also, Memory Cache mechanisms were implemented in both C# and JavaScript.
 
-Advantages:
+⭐ Advantages:
 
  - ``Only C# code``, easy to manage. You focus only on functionality
  - ``Out-of-the-box`` integration;
