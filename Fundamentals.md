@@ -9,13 +9,13 @@
 
 1. ``No JavaScript or HTML specific configurations required``, no API script configurations, no CSS references, no HTML items etc. Zero-Configuration Integration: Pure C# Mapping
 
-What You Don't Need:
+❌ What You Don't Need:
  - No JavaScript Configuration
  - No API Key Management
  - No CSS/Link Tags
  - No HTML Template Setup
 
-What You Do Instead:
+✅ What You Do Instead:
  - Pure C# Initialization
  - Type-Safe Configuration
  - Dynamic Property Binding
