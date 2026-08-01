@@ -5,7 +5,7 @@
  - It inherits the minimalism of the old Map control – meaning it will remain simple, easy to use, with a clean interface.
  - It inherits optimizations from the RealTimeMap control – it will include performance improvements for displaying real-time data (e.g., live updates, fast rendering, efficient resource consumption).
 
-# Core Concept
+# ⚙️ Core Concept
 
 1. ``No JavaScript or HTML specific configurations required``, no API script configurations, no CSS references, no HTML items etc. Zero-Configuration Integration: Pure C# Mapping
 
