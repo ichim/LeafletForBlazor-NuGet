@@ -14,6 +14,7 @@ What You Don't Need:
  - No API Key Management
  - No CSS/Link Tags
  - No HTML Template Setup
+
 What You Do Instead:
  - Pure C# Initialization
  - Type-Safe Configuration
