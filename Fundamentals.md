@@ -62,7 +62,7 @@ Here method chaining is used: SetStyle, SetLabel etc:
 
 	@map.Geometric.Points.isFitExtentEnabled = true;
 
-# Destructuring and Structuring LINQ
+# 🔀λ Destructuring and Structuring LINQ
 
 To optimize data flow and improve package performance, data filtering is done separately: Both in C# and in JavaScript. This LINQ Destructuring/Structure mechanism avoids the repeated transmission of data collections, the transmission of large data collections.
 
