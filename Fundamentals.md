@@ -7,7 +7,17 @@
 
 # Core Concept
 
-1. ``No JavaScript or HTML specific configurations required``, no API script configurations, no CSS references, no HTML items etc.
+1. ``No JavaScript or HTML specific configurations required``, no API script configurations, no CSS references, no HTML items etc. Zero-Configuration Integration: Pure C# Mapping
+
+What You Don't Need:
+ - No JavaScript Configuration
+ - No API Key Management
+ - No CSS/Link Tags
+ - No HTML Template Setup
+What You Do Instead:
+ - Pure C# Initialization
+ - Type-Safe Configuration
+ - Dynamic Property Binding
 
 The code you write will be simple, pure Blazor, clear and easy to manage.
 
