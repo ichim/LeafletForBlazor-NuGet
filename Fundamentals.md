@@ -39,7 +39,7 @@ Following specific development iterations, invokes were eliminated, LINQ structu
  - ``Security``: reduces the risk of introducing XSS (cross-site scripting) errors through controlled generation of markup/JS (ex. destructuring and structuring LINQ expressions).
  - ``Complete abstraction``
 
-# Fluent API
+# 🔗 Fluent API
 
 A design pattern that allows code to be written in a readable way, similar to an English sentence. 
 
