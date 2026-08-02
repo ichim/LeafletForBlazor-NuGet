@@ -232,7 +232,9 @@ Appearance is a method that accepts Expression<Func<T, bool>> predicates and all
     await map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...);
 
 Initial Context → Filtered Points → Styled Points → Labeled Points → Final Render
+
       ↑                ↑                ↑                ↑
+      
    Map.Points      Appearance()     SetStyle()       SetLabel()
 
 
