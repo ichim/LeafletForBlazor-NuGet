@@ -33,11 +33,11 @@ Performance with Fluency:
         await map.Geometric.Points
             .Appearance(p => p.type == "Market")
             .SetStyle(marketStyle)
-            .SetLabel("M");
+            .SetLabel("Market");
             //Add
             .And(...)  // Chain continuation pattern
             //Again
             .Appearance(p => p.type == "Vehicle")
             .SetStyle(vehicleStyle)
-            .SetLabel("V");
+            .SetLabel("Vehicle");
 
