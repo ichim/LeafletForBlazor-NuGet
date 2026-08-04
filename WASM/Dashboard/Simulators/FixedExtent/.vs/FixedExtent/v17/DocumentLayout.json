@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\FixedExtent\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5477E7D-99EC-47BE-A14A-13C4D3DFDDE7}|FixedExtent\\FixedExtent.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\fixedextent\\fixedextent\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5477E7D-99EC-47BE-A14A-13C4D3DFDDE7}|FixedExtent\\FixedExtent.csproj|solutionrelative:fixedextent\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5477E7D-99EC-47BE-A14A-13C4D3DFDDE7}|FixedExtent\\FixedExtent.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\fixedextent\\fixedextent\\input-data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5477E7D-99EC-47BE-A14A-13C4D3DFDDE7}|FixedExtent\\FixedExtent.csproj|solutionrelative:fixedextent\\input-data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5477E7D-99EC-47BE-A14A-13C4D3DFDDE7}|FixedExtent\\FixedExtent.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\fixedextent\\fixedextent\\input-data\\simulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5477E7D-99EC-47BE-A14A-13C4D3DFDDE7}|FixedExtent\\FixedExtent.csproj|solutionrelative:fixedextent\\input-data\\simulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5477E7D-99EC-47BE-A14A-13C4D3DFDDE7}|FixedExtent\\FixedExtent.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\fixedextent\\fixedextent\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5477E7D-99EC-47BE-A14A-13C4D3DFDDE7}|FixedExtent\\FixedExtent.csproj|solutionrelative:fixedextent\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StreamPoints.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\FixedExtent\\FixedExtent\\input-data\\StreamPoints.cs",
+              "RelativeDocumentMoniker": "FixedExtent\\input-data\\StreamPoints.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\FixedExtent\\FixedExtent\\input-data\\StreamPoints.cs",
+              "RelativeToolTip": "FixedExtent\\input-data\\StreamPoints.cs",
+              "ViewState": "AgIAABsCAAAAAAAAAAAUwDwCAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T07:34:46.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "simulator.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\FixedExtent\\FixedExtent\\input-data\\simulator.cs",
+              "RelativeDocumentMoniker": "FixedExtent\\input-data\\simulator.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\FixedExtent\\FixedExtent\\input-data\\simulator.cs",
+              "RelativeToolTip": "FixedExtent\\input-data\\simulator.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T07:34:35.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\FixedExtent\\FixedExtent\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "FixedExtent\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\FixedExtent\\FixedExtent\\Pages\\Home.razor",
+              "RelativeToolTip": "FixedExtent\\Pages\\Home.razor",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwL8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-04T07:06:53.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\FixedExtent\\FixedExtent\\_Imports.razor",
+              "RelativeDocumentMoniker": "FixedExtent\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\FixedExtent\\FixedExtent\\_Imports.razor",
+              "RelativeToolTip": "FixedExtent\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-04T07:06:26.08Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
