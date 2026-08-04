@@ -105,7 +105,9 @@ The loadParameter parameter of the Map component allows you to configure the map
 
 ## ⚡ Map Events
 
-[more about Map Events](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/MapLoadEvent#map-events)
+[more about Map Events - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/MapLoadEvent#map-events)
+[more about Map Events - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-map-events)
+
 
 # 📍 StreamPoint collection
 
