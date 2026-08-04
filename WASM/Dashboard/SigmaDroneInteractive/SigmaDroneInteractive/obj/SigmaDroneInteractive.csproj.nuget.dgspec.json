@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj": {}
   },
   "projects": {
-    "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj",
         "projectName": "SigmaDroneInteractive",
-        "projectPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj",
         "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-        "outputPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SigmaDroneInteractive\\SigmaDroneInteractive\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,6 +54,10 @@
             "LeafletForBlazor": {
               "target": "Package",
               "version": "[4.0.0.2, )"
+            },
+            "MapsForBlazor": {
+              "target": "Package",
+              "version": "[2.0.0.2, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
