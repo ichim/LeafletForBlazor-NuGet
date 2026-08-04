@@ -1,21 +1,21 @@
 # ![LealletForBlazor32](https://user-images.githubusercontent.com/8348463/224698821-8768d8af-46ea-462a-a603-a7adf9095594.png) Leaflet Map for Blazor
 
-*Leaflet for Blazor* is a library that provides components for displaying map in Blazor applications. Allows developers to easily integrate interactive maps, `without any JavaScript settings`, into their Blazor projects. 
+*Leaflet for Blazor* is a library that provides components for displaying map in Blazor applications.  
 
-
-**🔑 KEYWORDS**: Minimizing Invoke callers to JavaScript, `No JavaScript specific settings`, no script references, no css links.
+**🔑 KEYWORDS**: [`Pure C#`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept) - *Write map logic entirely in .NET / no JavaScript interop boilerplate*, [`LINQ Integration`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#destructuring-and-structuring-linq) - *Destructuring/Structuring LINQ expression*, [`Fluent API`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api) - *objects Hierarchical and Linguistic structure and Chain methods*, [`Zero JavaScript Config`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept) - *no script references and no css links etc*   
 
 ![NuGet Version](https://img.shields.io/nuget/v/LeafletForBlazor?cacheSeconds=3600) ![NuGet Downloads](https://img.shields.io/nuget/dt/LeafletForBlazor?cacheSeconds=3600)![GitHub stars](https://img.shields.io/github/stars/ichim/LeafletForBlazor-nuget?cacheSeconds=3600) ![GitHub last commit](https://img.shields.io/github/last-commit/ichim/LeafletForBlazor-nuget?cacheSeconds=3600)[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/ichim/LeafletForBlazor-nuget/blob/main/LICENSE?cacheSeconds=3600)
 
-🧩 Version 4.0 [rehydrates the Map control](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#rehydratates). The new control will inherit the minimalism of the Map control and the optimizations of the RealTimeMap control.
+🧩 Version 4.0 ♻️[rehydrates the Map control](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#rehydratates). The new control will inherit the minimalism of the Map control and the optimizations of the RealTimeMap control.
 
 # ⚙️ Core Concepts
 
 
 1. ``No JavaScript or HTML specific configurations required``, no API script configurations, no CSS references, no HTML items etc.
 1. ``Optimized code`` through various solutions
-   - minimizing the number of calls to JavaScript;
-   - collection searches by destructuring and structuring LINQ expressions
+   	- minimizing the number of calls to JavaScript;
+   	- collection searches by [`destructuring and structuring LINQ expressions`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#destructuring-and-structuring-linq);
+   	- [fluent API](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api), a design pattern that allows code to be written in a readable way, similar to an English sentence
 	- redusing size of the JavaScript code by removing unused code.
 	- Memory Cache
 
@@ -106,11 +106,13 @@ The loadParameter parameter of the Map component allows you to configure the map
 
 ## 📍 StreamPoint collection
 
+`StreamPoint` collection provides *real-time map synchronization* - any property change (coordinates, appearance, timestamp) instantly updates the map visualization. Objects are cached for performance but remain fully dynamic.
+
 The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides operating functionalities with a predefined but hierarchically extensible root data structure.
 
 [more about StreamCollection - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#-streampoint-collection)
 
-[more about StreamCollection - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor/Appearance#streampoint-collection-and-appearance)
+[more about StreamCollection - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-streampoint)
 
 ### 🎨 Appearance
 
@@ -122,9 +124,22 @@ Appearance is a method that accepts Expression<Func<T, bool>> predicates and all
 
 [more about Appearance - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/MAUI%20Blazor/Appearance/README.md#-appearance)
 
+### 🛠️ Settings
+
+Here you can configure how the collection of points displayed on the map behaves.
+
+    map.Geometric.Points.settings = new LeafletForBlazor.techs.core.Geometry.Points.Settings(){};
+
+### ⚡ Events
+
+StreamPoint Collection Events.
+
+[more about events](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/OnClickEvent/README.md#-streampoint-collection-events)
+
 ## 📊 Dashboard
 
-``StreamPoint`` collection can be used to monitor moving targets: vehicles, boats, aircraft, even fleets of vehicles, drones and so one.
+``StreamPoint`` collection can be used to monitor moving targets: vehicles, boats, aircraft, even fleets of vehicles, drones and so one. Both the map and the StreamPoint collection can be configured to create a Map Dashboard.
+
 
 [more about Map Dashboard](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Dashboard#-working-with-map-dashboard)
 
