@@ -29,6 +29,25 @@
           "buildMultiTargeting/LeafletForBlazor.props": {}
         }
       },
+      "MapsForBlazor/2.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "9.0.11",
+          "Microsoft.Extensions.Caching.Memory": "10.0.9"
+        },
+        "compile": {
+          "lib/net9.0/MapsForBlazor.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/MapsForBlazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/MapsForBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MapsForBlazor.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/9.0.11": {
         "type": "package",
         "dependencies": {
@@ -559,6 +578,25 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/LeafletForBlazor.props": {}
+        }
+      },
+      "MapsForBlazor/2.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "9.0.11",
+          "Microsoft.Extensions.Caching.Memory": "10.0.9"
+        },
+        "compile": {
+          "lib/net9.0/MapsForBlazor.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/MapsForBlazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/MapsForBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MapsForBlazor.props": {}
         }
       },
       "Microsoft.AspNetCore.Authorization/9.0.11": {
@@ -1128,6 +1166,42 @@
         "staticwebassets/plugins/easyPrint.js",
         "staticwebassets/plugins/geolet.js",
         "staticwebassets/plugins/testare.js"
+      ]
+    },
+    "MapsForBlazor/2.0.0.2": {
+      "sha512": "1sp74F4Otsay4Q+w92FFR/NrFC2xpAnN0JOQSdGB0JT/UqIK9a8JzqCYBqThy4Ogv3BI+lCw50EplcgcnAUkKQ==",
+      "type": "package",
+      "path": "mapsforblazor/2.0.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CAL.png",
+        "License.md",
+        "README.md",
+        "build/MapsForBlazor.props",
+        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/MapsForBlazor.props",
+        "buildTransitive/MapsForBlazor.props",
+        "lib/net9.0/MapsForBlazor.dll",
+        "mapsforblazor.2.0.0.2.nupkg.sha512",
+        "mapsforblazor.nuspec",
+        "staticwebassets/Geometry/ArcGIS/points.js",
+        "staticwebassets/Geometry/ArcGIS/svg.js",
+        "staticwebassets/Geometry/ArcGIS/visibility.js",
+        "staticwebassets/Geometry/Felicia/felicia.js",
+        "staticwebassets/Geometry/Felicia/mathFelicia.js",
+        "staticwebassets/Geometry/IisChartsAndSvg/IisCharts.js",
+        "staticwebassets/Geometry/Leaflet/points.js",
+        "staticwebassets/Geometry/Leaflet/svg.js",
+        "staticwebassets/Geometry/Leaflet/visibility.js",
+        "staticwebassets/Geometry/expressify.js",
+        "staticwebassets/Geometry/helper.js",
+        "staticwebassets/MapsForBlazor.0lbpytryuy.bundle.scp.css",
+        "staticwebassets/config.js",
+        "staticwebassets/maps/ArcGIS.js",
+        "staticwebassets/maps/Leaflet.js",
+        "staticwebassets/maps/helpers/compatibility.js"
       ]
     },
     "Microsoft.AspNetCore.Authorization/9.0.11": {
@@ -2132,6 +2206,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "LeafletForBlazor >= 4.0.0",
+      "MapsForBlazor >= 2.0.0.2",
       "Microsoft.AspNetCore.Components.WebAssembly >= 9.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.11",
       "Microsoft.NET.ILLink.Tasks >= 9.0.11",
@@ -2145,11 +2220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\MapLoadEvent\\MapLoadEvent\\MapLoadEvent.csproj",
+      "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\MapLoadEvent\\MapLoadEvent\\MapLoadEvent.csproj",
       "projectName": "MapLoadEvent",
-      "projectPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\MapLoadEvent\\MapLoadEvent\\MapLoadEvent.csproj",
+      "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\MapLoadEvent\\MapLoadEvent\\MapLoadEvent.csproj",
       "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-      "outputPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\MapLoadEvent\\MapLoadEvent\\obj\\",
+      "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\MapLoadEvent\\MapLoadEvent\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2192,6 +2267,10 @@
           "LeafletForBlazor": {
             "target": "Package",
             "version": "[4.0.0, )"
+          },
+          "MapsForBlazor": {
+            "target": "Package",
+            "version": "[2.0.0.2, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",

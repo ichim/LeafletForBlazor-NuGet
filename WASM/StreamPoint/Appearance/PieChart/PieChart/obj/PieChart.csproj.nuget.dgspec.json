@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\PieChart\\PieChart\\PieChart.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\PieChart\\PieChart\\PieChart.csproj": {}
   },
   "projects": {
-    "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\PieChart\\PieChart\\PieChart.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\PieChart\\PieChart\\PieChart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\PieChart\\PieChart\\PieChart.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\PieChart\\PieChart\\PieChart.csproj",
         "projectName": "PieChart",
-        "projectPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\PieChart\\PieChart\\PieChart.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\PieChart\\PieChart\\PieChart.csproj",
         "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-        "outputPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260419\\PieChart\\PieChart\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\PieChart\\PieChart\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,6 +54,10 @@
             "LeafletForBlazor": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "MapsForBlazor": {
+              "target": "Package",
+              "version": "[2.0.0.2, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
