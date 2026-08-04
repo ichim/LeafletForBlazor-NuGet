@@ -103,7 +103,7 @@ The loadParameter parameter of the Map component allows you to configure the map
 
 [more about Map Configuration - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#net-maui-blazor-hybrid-app)
 
-## ⚡ Events
+## ⚡ Map Events
 
 [more about Map Events](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/MapLoadEvent#map-events)
 
@@ -133,7 +133,7 @@ Here you can configure how the collection of points displayed on the map behaves
 
     map.Geometric.Points.settings = new LeafletForBlazor.techs.core.Geometry.Points.Settings(){};
 
-### ⚡ Events
+### ⚡StreamPoint collection Events
 
 StreamPoint Collection Events.
 
