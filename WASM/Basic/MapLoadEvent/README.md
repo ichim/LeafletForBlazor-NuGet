@@ -2,6 +2,7 @@
 
 Blazor page:
 
+    <Map height="calc(100vh - 2rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@OnAfterMapLoaded" />
 
 
 Code block:
