@@ -109,6 +109,12 @@ The loadParameter parameter of the Map component allows you to configure the map
 
 [more about Map Events - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-map-events)
 
+## 👁️ View class
+
+View is the class that allows you to control the visible area of ​​the map.
+
+[more about View class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/View#view)
+
 
 # 📍 StreamPoint collection
 
