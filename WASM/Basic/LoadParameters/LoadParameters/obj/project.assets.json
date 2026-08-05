@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "LeafletForBlazor/4.0.0": {
+      "LeafletForBlazor/4.0.0.28": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -553,7 +553,7 @@
       }
     },
     "net9.0/browser-wasm": {
-      "LeafletForBlazor/4.0.0": {
+      "LeafletForBlazor/4.0.0.28": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -1105,10 +1105,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/4.0.0": {
-      "sha512": "uOJNhqjQpAAm1N/4T54hc91tlVJJOoC4xCg4tPIM6BcFiao+J7LMnWTNhYcNfLc9wv752nN0riVSwh6gVqwAiw==",
+    "LeafletForBlazor/4.0.0.28": {
+      "sha512": "hb+QMw5oAoAyyijezB4Dbfn7VGIr8escxoMMvECTKGY+fj2gAbGnu/9ZmqbSJjAZ4n+6X9PCy2N3ZTLhCJJA8Q==",
       "type": "package",
-      "path": "leafletforblazor/4.0.0",
+      "path": "leafletforblazor/4.0.0.28",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1121,13 +1121,14 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net9.0/map_color.ico",
-        "leafletforblazor.4.0.0.nupkg.sha512",
+        "leafletforblazor.4.0.0.28.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net9.0/LeafletForBlazor.dll",
         "map_color.png",
         "staticwebassets/Geometry/Felicia/felicia.js",
         "staticwebassets/Geometry/Felicia/mathFelicia.js",
         "staticwebassets/Geometry/IisChartsAndSvg/IisCharts.js",
+        "staticwebassets/Geometry/IisChartsAndSvg/IisChartsEvents.js",
         "staticwebassets/Geometry/Leaflet/points.js",
         "staticwebassets/Geometry/Leaflet/svg.js",
         "staticwebassets/Geometry/Leaflet/visibility.js",
@@ -1159,6 +1160,7 @@
         "staticwebassets/index.html",
         "staticwebassets/maps/Leaflet.js",
         "staticwebassets/maps/helpers/compatibility.js",
+        "staticwebassets/maps/helpers/extent.js",
         "staticwebassets/other_overlays.js",
         "staticwebassets/plugins.js",
         "staticwebassets/plugins/Leaflet.LinearMeasurement.css",
@@ -2205,7 +2207,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "LeafletForBlazor >= 4.0.0",
+      "LeafletForBlazor >= 4.0.0.28",
       "MapsForBlazor >= 2.0.0.2",
       "Microsoft.AspNetCore.Components.WebAssembly >= 9.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.11",
@@ -2266,7 +2268,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[4.0.0, )"
+            "version": "[4.0.0.28, )"
           },
           "MapsForBlazor": {
             "target": "Package",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\LoadParameters\\LoadParameters\\LoadParameters.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj": {}
   },
   "projects": {
-    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\LoadParameters\\LoadParameters\\LoadParameters.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\LoadParameters\\LoadParameters\\LoadParameters.csproj",
-        "projectName": "LoadParameters",
-        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\LoadParameters\\LoadParameters\\LoadParameters.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj",
+        "projectName": "SigmaDroneInteractive",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj",
         "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\LoadParameters\\LoadParameters\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

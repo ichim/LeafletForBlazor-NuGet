@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nWThxm700HI=",
+  "dgSpecHash": "RkCFWFQ3oSE=",
   "success": true,
-  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\MapLoadEvent\\MapLoadEvent\\MapLoadEvent.csproj",
+  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneInteractive\\SigmaDroneInteractive\\SigmaDroneInteractive.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.0.28\\leafletforblazor.4.0.0.28.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\mapsforblazor\\2.0.0.2\\mapsforblazor.2.0.0.2.nupkg.sha512",
