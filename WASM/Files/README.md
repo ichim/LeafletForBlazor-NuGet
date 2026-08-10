@@ -51,3 +51,13 @@ The event is triggered whenever pooling is done on files:
 ## Stop pooling
 
             await map.Geometric.From.Files.StopFetchingAsync();
+
+## Clear content
+
+Each file has a layer associated with it. The contents of all layers can be deleted with the command:
+
+      await map.Geometric.From.Files.ClearAsync();
+
+However, if you only want to delete the contents of a specific layer (corresponding to a file), then you can use the Where clause:
+
+      await map.Geometric.From.Files.Where((file) => file.url == "http://localhost:5057/data/input4.json").ClearAsync();
