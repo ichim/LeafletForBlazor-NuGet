@@ -150,7 +150,7 @@ StreamPoint Collection Events.
 
 # 📁 Working with Files
 
-The @map.Geometric.From.Files class allows you to load data from files stored on a web service host (https://...). Full RFC 7946 Feature Support.
+The ``@map.Geometric.From.Files`` class allows you to load data from files stored on a web service host (_https://..._). Full `RFC 7946` Feature Support.
 
 [more about working with files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files#files)
 
