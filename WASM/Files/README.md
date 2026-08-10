@@ -38,4 +38,16 @@ Pooling:
         }
     }
 
+## Files events
 
+The event is triggered whenever pooling is done on files:
+
+
+            map.Geometric.From.Files.OnAfterFetchAsync += (sender, args) =>
+            {
+                Console.WriteLine($"Files loaded: {args.layerId}");
+            };
+
+## Stop pooling
+
+            await map.Geometric.From.Files.StopFetchingAsync();
