@@ -34,11 +34,11 @@
         var map = args.sender as Map;
         if (map?.Geometric.From.Files != null)
         {
-            map.Geometric.From.Files.OnAfterPooling += (sender, args) =>
+            map.Geometric.From.Files.OnAfterFetchAsync += (sender, args) =>
            {
                Console.WriteLine($"Files loaded: {args.fileContent}");
            };
-            await map.Geometric.From.Files.Open("http://localhost:5106/data/geojson.json", PoolingDelay.Short);
+            await map.Geometric.From.Files.FetchAsync(new List<string> { "http://localhost:5106/data/geojson.json" }, PoolingDelay.Short);
         }
     }
 }

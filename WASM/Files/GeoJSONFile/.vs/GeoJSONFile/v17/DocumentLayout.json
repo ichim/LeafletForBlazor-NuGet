@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "GeoJSONFile\\Pages\\Home.razor",
               "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Files\\GeoJSONFile\\GeoJSONFile\\Pages\\Home.razor",
               "RelativeToolTip": "GeoJSONFile\\Pages\\Home.razor",
-              "ViewState": "AgIAABcAAAAAAAAAAAAiwCgAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-07T08:09:42.594Z",
               "EditorCaption": ""
@@ -43,7 +43,8 @@
               "RelativeToolTip": "GeoJSONFile\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T08:09:08.829Z"
+              "WhenOpened": "2026-08-07T08:09:08.829Z",
+              "EditorCaption": ""
             }
           ]
         }
