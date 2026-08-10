@@ -25,7 +25,7 @@ Non Pooling:
     private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
-            await map.Geometric.From.Files.Open("http://localhost:5057/data/points.json");
+            await map.Geometric.From.Files.FetchAsync(new List<string> { "http://....json"});
         }
     }
 
@@ -34,15 +34,8 @@ Pooling:
     private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
-            await map.Geometric.From.Files.Open("http://localhost:5057/data/points.json", PoolingDelay.Short);
+            await map.Geometric.From.Files.FetchAsync(new List<string> { "http://....json"}, PoolingDelay.Short);
         }
     }
 
-Multiple files:
 
-    private async Task OnAfterMapLoaded(MapEventArgs args)
-    {
-        var map = args.sender as Map;
-            await map.Geometric.From.Files.Open(new List<string>(){"http://..."});
-        }
-    }
