@@ -19,6 +19,8 @@ Its carefully crafted attributes support essential mapping functionality while m
 
 The @map.Geometric.From.Files class allows you to load data from files stored on a web service host (https://...).
 
+[more about Files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files#files)
+
 # Dashboard
 
 ``StreamPoint`` collection can be used to monitor moving targets: vehicles, boats, aircraft, even fleets of vehicles, drones and so one. Both the map and the StreamPoint collection can be configured to create a Map Dashboard.
