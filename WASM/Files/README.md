@@ -61,3 +61,7 @@ Each file has a layer associated with it. The contents of all layers can be dele
 However, if you only want to delete the contents of a specific layer (corresponding to a file), then you can use the Where clause:
 
       await map.Geometric.From.Files.Where((file) => file.url == "http://...fileName.json").ClearAsync();
+
+## Remove all Leaflet layers
+
+     await map.Geometric.From.Files.RemoveAsync();
