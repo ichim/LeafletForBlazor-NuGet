@@ -65,3 +65,21 @@ However, if you only want to delete the contents of a specific layer (correspond
 ## Remove all Leaflet layers
 
      await map.Geometric.From.Files.RemoveAsync();
+
+## Other data formats
+
+    {
+      "data": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [ 26.097369, 44.4448446 ]
+          },
+          "properties": {
+            "name": "Beautiful Memories Store"
+          }
+        }
+      ]
+    }
+
