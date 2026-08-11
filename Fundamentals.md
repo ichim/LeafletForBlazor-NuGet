@@ -52,6 +52,12 @@ For example, access to the map's point collection:
 
 	@map.Geometric.Points (.Add, .Remove, .Appearance etc)
 
+## Working with files
+
+Example fluent API:
+
+	await map.Geometric.From.Files.Where((file) => file.url == "http://...fileName.json").ClearAsync();
+
 ## Access to point/point properties
 
 Here method chaining is used: SetStyle, SetLabel etc:
