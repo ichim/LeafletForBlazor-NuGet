@@ -25,7 +25,7 @@ Non Pooling:
     private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
-            await map.Geometric.From.Files.Open("http://localhost:5057/data/points.json");
+            await map.Geometric.From.Files.FetchAsync(new List<string> { "http://....json"});
         }
     }
 
@@ -34,15 +34,34 @@ Pooling:
     private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
-            await map.Geometric.From.Files.Open("http://localhost:5057/data/points.json", PoolingDelay.Short);
+            await map.Geometric.From.Files.FetchAsync(new List<string> { "http://....json"}, PoolingDelay.Short);
         }
     }
 
-Multiple files:
+## Files events
 
-    private async Task OnAfterMapLoaded(MapEventArgs args)
-    {
-        var map = args.sender as Map;
-            await map.Geometric.From.Files.Open(new List<string>(){"http://..."});
-        }
-    }
+The event is triggered whenever pooling is done on files:
+
+
+            map.Geometric.From.Files.OnAfterFetchAsync += (sender, args) =>
+            {
+                Console.WriteLine($"Files loaded: {args.layerId}");
+            };
+
+## Stop pooling
+
+            await map.Geometric.From.Files.StopFetchingAsync();
+
+## Clear content
+
+Each file has a layer associated with it. The contents of all layers can be deleted with the command:
+
+      await map.Geometric.From.Files.ClearAsync();
+
+However, if you only want to delete the contents of a specific layer (corresponding to a file), then you can use the Where clause:
+
+      await map.Geometric.From.Files.Where((file) => file.url == "http://...fileName.json").ClearAsync();
+
+## Remove all Leaflet layers
+
+     await map.Geometric.From.Files.RemoveAsync();
