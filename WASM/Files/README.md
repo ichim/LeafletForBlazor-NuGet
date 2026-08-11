@@ -31,6 +31,19 @@ Non Pooling:
 
 Pooling:
 
+PoolingDelay is the parameter of the FetchAsync method that allows configuring the pooling mechanism. PoolingDelay is an enum:
+
+        public enum PoolingDelay
+        {
+            None = 0,
+            Short = 5000,
+            Medium = 30000,
+            Long = 60000,
+            VeryLong = 120000
+        }
+
+  So:
+
     private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
