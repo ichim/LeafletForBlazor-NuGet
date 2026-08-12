@@ -79,7 +79,11 @@ However, if you only want to delete the contents of a specific layer (correspond
 
      await map.Geometric.From.Files.RemoveAsync();
 
-## Other data formats
+# Other data formats
+
+## JSON Object
+
+JSON object based on the `RFC 7946` format:
 
     {
       "data": [
@@ -94,5 +98,33 @@ However, if you only want to delete the contents of a specific layer (correspond
           }
         }
       ]
+    }
+
+## JSON Object and Appearance
+
+    {
+      "data": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [ 26.097369, 44.4448446 ]
+          },
+          "properties": {
+            "name": "Beautiful Memories Store"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [ 26.095369, 44.444648 ]
+          },
+          "properties": {
+            "name": "Amzei Market"
+          }
+        }
+      ],
+      "appearance": { "radius" : 10, "fillColor": "#ff0000", "color": "#000000", "weight": 2, "opacity": 0.8, "fillOpacity": 0.6 }
     }
 
