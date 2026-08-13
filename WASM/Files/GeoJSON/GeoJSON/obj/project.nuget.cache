@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "THDdn9Nj/eE=",
+  "dgSpecHash": "esipVQtL/w8=",
   "success": true,
-  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\Simulators\\Dynamic\\Dynamic\\Dynamic.csproj",
+  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Files\\GeoJSON\\GeoJSON\\GeoJSON.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.2.4\\leafletforblazor.4.0.2.4.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.11\\microsoft.aspnetcore.authorization.9.0.11.nupkg.sha512",
