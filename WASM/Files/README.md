@@ -63,6 +63,8 @@ The event is triggered whenever pooling is done on files:
 
 ## Stop pooling
 
+``Please call StopPoolingAsync before doing a new FetchAsync!``
+
             await map.Geometric.From.Files.StopFetchingAsync();
 
 ## Clear content
