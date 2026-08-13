@@ -83,6 +83,8 @@ However, if you only want to delete the contents of a specific layer (correspond
 
 # Other data formats
 
+Leaflet For Blazor can also work with other formats based on ... but to which ``appearance`` properties are added.
+
 ## JSON Object
 
 JSON object based on the `RFC 7946` format:
