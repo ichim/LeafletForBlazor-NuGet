@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoJSON Simple Style", "GeoJSON Simple Style\GeoJSON Simple Style.csproj", "{D68B35E0-FBFA-42A6-8B3F-FD4A6642563E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D68B35E0-FBFA-42A6-8B3F-FD4A6642563E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68B35E0-FBFA-42A6-8B3F-FD4A6642563E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68B35E0-FBFA-42A6-8B3F-FD4A6642563E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68B35E0-FBFA-42A6-8B3F-FD4A6642563E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {078B89A6-37CA-4D2D-AB99-99E608D26A0F}
+	EndGlobalSection
+EndGlobal
