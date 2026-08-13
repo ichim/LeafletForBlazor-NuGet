@@ -1,0 +1,71 @@
+﻿@page "/"
+@using LeafletForBlazor.techs.core.Geometry.FilesAndObjects
+@inject NavigationManager NavigationManager
+<label>1. </label>
+<button class="btn btn-primary" onclick="@Stop">Stop pooling</button>
+<label>2. </label>
+<button class="btn btn-primary" onclick="@Clear">Clear files</button>
+<label>3. </label>
+<button class="btn btn-primary" onclick="@open">Reopen files</button>
+<label>Don't forget to stop pooling fetch before Reopening</label>
+
+
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 4rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+@code {
+    Map? map = null;
+
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                              
+        {
+            latitude = 44.444941,
+            longitude = 26.097369
+        },
+        zoomLevel = 16,
+        mapControls = new MapControls()
+        {
+            scaleBar = new ScaleBar()                                          
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+
+        }
+    };
+
+  
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        var path = NavigationManager.Uri;
+        if (map?.Geometric.From.Files != null)
+        {
+            map.Geometric.From.Files.forceCacheIgnore = true;
+            map.Geometric.From.Files.OnAfterFetchAsync += (sender, args) =>
+            {
+                Console.WriteLine($"Url: {args.url} Layer ID: {args.layerId}");
+            };
+            await map.Geometric.From.Files.FetchAsync(new List<string> { $"{path}/data/infrastructure2.json", $"{path}/data/market4.json" }, PoolingDelay.Short);
+        }
+    }
+
+    private async Task Stop()
+    {
+        await map.Geometric.From.Files.StopFetchingAsync();
+    }
+    private async Task Clear()
+    {
+        await map.Geometric.From.Files.ClearAsync();
+    }
+    private async Task open()
+    {
+       /*Don't forget to stop pooling fetch before Reopening*/
+        var path = NavigationManager.Uri;
+        await map.Geometric.From.Files.FetchAsync(new List<string> { $"{path}/data/infrastructure2.json", $"{path}/data/market4.json" }, PoolingDelay.Short);
+    }
+}

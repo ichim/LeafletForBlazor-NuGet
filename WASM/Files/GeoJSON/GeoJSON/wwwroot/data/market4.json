@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [ 26.098368, 44.4468244 ]
+    },
+    "properties": {
+      "name": "Beautiful Memories Store"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [ 26.095369, 44.444648 ]
+    },
+    "properties": {
+      "name": "Amzei Market"
+    }
+  }
+]
