@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Appearance\\Appearance\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\Appearance.styles.css",
+      "PackagePath": "staticwebassets\\Appearance.styles.css"
+    },
+    {
+      "Id": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Appearance\\Appearance\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Appearance\\Appearance\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.Appearance.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.Appearance.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.build.Appearance.props",
+      "PackagePath": "build\\Appearance.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildMultiTargeting.Appearance.props",
+      "PackagePath": "buildMultiTargeting\\Appearance.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildTransitive.Appearance.props",
+      "PackagePath": "buildTransitive\\Appearance.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

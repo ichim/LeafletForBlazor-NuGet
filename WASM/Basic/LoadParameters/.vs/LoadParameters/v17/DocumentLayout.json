@@ -47,7 +47,8 @@
               "RelativeToolTip": "LoadParameters\\Layout\\MainLayout.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-25T13:25:39.218Z"
+              "WhenOpened": "2026-07-25T13:25:39.218Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -59,7 +60,8 @@
               "RelativeToolTip": "LoadParameters\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-25T13:25:30.994Z"
+              "WhenOpened": "2026-07-25T13:25:30.994Z",
+              "EditorCaption": ""
             }
           ]
         }

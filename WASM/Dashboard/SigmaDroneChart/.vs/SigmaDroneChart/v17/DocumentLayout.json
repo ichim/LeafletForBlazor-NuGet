@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SigmaDroneChart\\",
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneChart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA127F54-251C-47E8-9D86-2D9188B9F520}|SigmaDroneChart\\SigmaDroneChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\sigmadronechart\\sigmadronechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DA127F54-251C-47E8-9D86-2D9188B9F520}|SigmaDroneChart\\SigmaDroneChart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\wasm\\dashboard\\sigmadronechart\\sigmadronechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DA127F54-251C-47E8-9D86-2D9188B9F520}|SigmaDroneChart\\SigmaDroneChart.csproj|solutionrelative:sigmadronechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA127F54-251C-47E8-9D86-2D9188B9F520}|SigmaDroneChart\\SigmaDroneChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\sigmadronechart\\sigmadronechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DA127F54-251C-47E8-9D86-2D9188B9F520}|SigmaDroneChart\\SigmaDroneChart.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\wasm\\dashboard\\sigmadronechart\\sigmadronechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DA127F54-251C-47E8-9D86-2D9188B9F520}|SigmaDroneChart\\SigmaDroneChart.csproj|solutionrelative:sigmadronechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Home.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SigmaDroneChart\\SigmaDroneChart\\Pages\\Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneChart\\SigmaDroneChart\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "SigmaDroneChart\\Pages\\Home.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SigmaDroneChart\\SigmaDroneChart\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneChart\\SigmaDroneChart\\Pages\\Home.razor",
               "RelativeToolTip": "SigmaDroneChart\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -37,14 +37,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SigmaDroneChart\\SigmaDroneChart\\_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneChart\\SigmaDroneChart\\_Imports.razor",
               "RelativeDocumentMoniker": "SigmaDroneChart\\_Imports.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SigmaDroneChart\\SigmaDroneChart\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneChart\\SigmaDroneChart\\_Imports.razor",
               "RelativeToolTip": "SigmaDroneChart\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-27T09:43:28.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-27T09:43:28.679Z"
             }
           ]
         }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Eogr4j+VG/I=",
+  "dgSpecHash": "bl4M8XBLxpI=",
   "success": true,
   "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Files\\GeoJSONFile\\GeoJSONFile\\GeoJSONFile.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.2\\leafletforblazor.4.0.2.nupkg.sha512",
+    "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.2.2\\leafletforblazor.4.0.2.2.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.11\\microsoft.aspnetcore.authorization.9.0.11.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.11\\microsoft.aspnetcore.components.9.0.11.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\9.0.11\\microsoft.aspnetcore.components.analyzers.9.0.11.nupkg.sha512",

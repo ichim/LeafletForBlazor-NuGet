@@ -1,0 +1,4 @@
+wwwroot\css\app.css
+wwwroot\index.html
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\MAUI Blazor\Appearance\Appearance\wwwroot\css\app.css
+D:\instruitre\nugets\github\LeafletForBlazor\repo\LeafletForBlazor-NuGet\MAUI Blazor\Appearance\Appearance\wwwroot\index.html
