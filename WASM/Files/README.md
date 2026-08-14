@@ -187,7 +187,7 @@ JSON object based on the `RFC 7946` format:
       }
     }
 
-**Structure Overview
+**Structure Overview**
 
  - `data` — an array of valid GeoJSON features (points, lines, or polygons).
  - `appearance.switch` — a rule-based styling engine that maps feature property values to visual styles.
