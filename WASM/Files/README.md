@@ -77,71 +77,29 @@ Listen for fetch completions (fired after each pooling cycle):
 
     await map.Geometric.From.Files.StopFetchingAsync();
 
+## Clearing Content
 
----
-Pooling:
+Each file maps to its own layer. You can clear all layers at once:
 
-PoolingDelay is the parameter of the FetchAsync method that allows configuring the pooling mechanism. PoolingDelay is an enum:
+    await map.Geometric.From.Files.ClearAsync();
 
-        public enum PoolingDelay
-        {
-            None = 0,
-            Short = 5000,
-            Medium = 30000,
-            Long = 60000,
-            VeryLong = 120000
-        }
+Or target a specific file/layer:
 
-  So:
+    await map.Geometric.From.Files
+        .Where(file => file.Url == "http://example.com/data.json")
+        .ClearAsync();
 
-    private async Task OnAfterMapLoaded(MapEventArgs args)
-    {
-        var map = args.sender as Map;
-            await map.Geometric.From.Files.FetchAsync(new List<string> { "http://....json"}, PoolingDelay.Short);
-        }
-    }
+## Removing All Layers
 
-The data fetching method provides for the exclusion of caches:
+To completely remove all Leaflet layers from the map:
 
-    DefaultRequestHeaders.CacheControl = new CacheControlHeaderValue
-                        {
-                            NoCache = true,
-                            NoStore = true,
-                            MustRevalidate = true
-                        };
-In addition, for some browsers, it is necessary to force the exclusion of caches from reading data:
+    await map.Geometric.From.Files.RemoveAsync();
 
-    map.Geometric.From.Files.forceCacheIgnore = true;
- 
-## Files events
+## Suggestions
+ - Consider adding a small "Common Gotchas" section: calling FetchAsync without stopping previous pooling can lead to duplicate requests.
+ - If forceCacheIgnore is browser-specific, listing which browsers are affected would help developers troubleshoot faster.
+ - A note on thread safety (e.g., should these calls always happen on the UI thread?) could be useful for Blazor users.
 
-The event is triggered whenever pooling is done on files:
-
-
-            map.Geometric.From.Files.OnAfterFetchAsync += (sender, args) =>
-            {
-                Console.WriteLine($"Files loaded: {args.layerId}");
-            };
-
-## Stop pooling
-
-``Please call StopPoolingAsync before doing a new FetchAsync!``
-
-            await map.Geometric.From.Files.StopFetchingAsync();
-
-## Clear content
-
-Each file has a layer associated with it. The contents of all layers can be deleted with the command:
-
-      await map.Geometric.From.Files.ClearAsync();
-
-However, if you only want to delete the contents of a specific layer (corresponding to a file), then you can use the Where clause:
-
-      await map.Geometric.From.Files.Where((file) => file.url == "http://...fileName.json").ClearAsync();
-
-## Remove all Leaflet layers
-
-     await map.Geometric.From.Files.RemoveAsync();
 
 # Other data formats
 
