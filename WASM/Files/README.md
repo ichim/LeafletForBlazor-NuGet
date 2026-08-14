@@ -18,19 +18,67 @@ Supported Rich data objects GeoJSON Elements:
 
     { "type": "Feature", "geometry": {...}, "properties": {...} }
 
-## Usage example
-
-Data access (GeoJSON files - RFC 7946):
-
-Non Pooling:
+## Basic Usage (No Pooling)
 
     private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
-            await map.Geometric.From.Files.FetchAsync(new List<string> { "http://....json"});
-        }
+        await map.Geometric.From.Files.FetchAsync(
+            new List<string> { "http://example.com/data.json" }
+        );
     }
 
+## Pooling (Auto-Refresh)
+
+Use PoolingDelay to periodically re-fetch the data. Available intervals:
+| Value  | Interval  |
+|----|----|
+| None | Disabled |
+| Short |	5 seconds |
+| Medium |	30 seconds |
+| Long |	60 seconds |
+| VeryLong |	120 seconds |
+
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        await map.Geometric.From.Files.FetchAsync(
+            new List<string> { "http://example.com/data.json" },
+            PoolingDelay.Short
+        );
+    }
+
+## Cache Bypass
+
+To ensure fresh data on every fetch, cache is disabled by default:
+
+    DefaultRequestHeaders.CacheControl = new CacheControlHeaderValue
+    {
+        NoCache = true,
+        NoStore = true,
+        MustRevalidate = true
+    };
+
+For some browsers, you may also need to force-ignore cached reads:
+
+    map.Geometric.From.Files.forceCacheIgnore = true;
+
+## Events
+Listen for fetch completions (fired after each pooling cycle):
+
+    map.Geometric.From.Files.OnAfterFetchAsync += (sender, args) =>
+    {
+        Console.WriteLine($"Files loaded: {args.layerId}");
+    };
+
+## Stopping Pooling
+
+``*Important:* Always call`` StopFetchingAsync before starting a new `FetchAsync`.
+
+    await map.Geometric.From.Files.StopFetchingAsync();
+
+
+---
 Pooling:
 
 PoolingDelay is the parameter of the FetchAsync method that allows configuring the pooling mechanism. PoolingDelay is an enum:
