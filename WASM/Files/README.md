@@ -18,6 +18,10 @@ Supported Rich data objects GeoJSON Elements:
 
     { "type": "Feature", "geometry": {...}, "properties": {...} }
 
+# Fetching data
+
+The asynchronous `FetchAsync` method on the `@map.Geometric.From.Files` class allows you to retrieve data from files stored on a virtual folder of a web server.
+
 ## Basic Usage (No Pooling)
 
     private async Task OnAfterMapLoaded(MapEventArgs args)
