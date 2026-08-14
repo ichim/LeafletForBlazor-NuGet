@@ -73,7 +73,7 @@ Listen for fetch completions (fired after each pooling cycle):
 
 ## Stopping Pooling
 
-``*Important:* Always call`` StopFetchingAsync before starting a new `FetchAsync`.
+``Important: Always call`` StopFetchingAsync before starting a new `FetchAsync`.
 
     await map.Geometric.From.Files.StopFetchingAsync();
 
