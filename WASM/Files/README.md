@@ -20,17 +20,7 @@ Supported Rich data objects GeoJSON Elements:
 
 ## Usage example
 
-The data reading method provides for the exclusion of caches:
-
-    DefaultRequestHeaders.CacheControl = new CacheControlHeaderValue
-                        {
-                            NoCache = true,
-                            NoStore = true,
-                            MustRevalidate = true
-                        };
-In addition, for some browsers, it is necessary to force the exclusion of caches from reading data:
-
-    map.Geometric.From.Files.forceCacheIgnore = true;
+Data access (GeoJSON files - RFC 7946):
 
 Non Pooling:
 
@@ -63,6 +53,18 @@ PoolingDelay is the parameter of the FetchAsync method that allows configuring t
         }
     }
 
+The data fetching method provides for the exclusion of caches:
+
+    DefaultRequestHeaders.CacheControl = new CacheControlHeaderValue
+                        {
+                            NoCache = true,
+                            NoStore = true,
+                            MustRevalidate = true
+                        };
+In addition, for some browsers, it is necessary to force the exclusion of caches from reading data:
+
+    map.Geometric.From.Files.forceCacheIgnore = true;
+ 
 ## Files events
 
 The event is triggered whenever pooling is done on files:
