@@ -125,7 +125,7 @@ JSON object based on the `RFC 7946` format:
       ]
     }
 
-## JSON Object and Appearance
+## JSON Object and Style
 
     {
       "data": [
@@ -153,3 +153,36 @@ JSON object based on the `RFC 7946` format:
       "appearance": { "radius" : 10, "fillColor": "#ff0000", "color": "#000000", "weight": 2, "opacity": 0.8, "fillOpacity": 0.6 }
     }
 
+## JSON Object and Switch/Classes
+
+    {
+      "data": [],
+      "appearance": {
+        "switch": {
+          "fieldName": "name",
+          "classes": [
+            {
+              "fieldValue": "commercial",
+              "style": {
+                "color": "blue",
+                "weight": 8,
+                "opacity": 0
+              }
+            },
+            {
+              "fieldValue": "residential",
+              "style": {
+                "color": "green",
+                "weight": 10,
+                "opacity": 0
+              }
+            }
+          ],
+          "default": {
+            "color": "gray",
+            "weight": 2,
+            "opacity": 0.8
+          }
+        }
+      }
+    }
