@@ -20,6 +20,18 @@ Supported Rich data objects GeoJSON Elements:
 
 ## Usage example
 
+The data reading method provides for the exclusion of caches:
+
+    DefaultRequestHeaders.CacheControl = new CacheControlHeaderValue
+                        {
+                            NoCache = true,
+                            NoStore = true,
+                            MustRevalidate = true
+                        };
+In addition, for some browsers, it is necessary to force the exclusion of caches from reading data:
+
+    map.Geometric.From.Files.forceCacheIgnore = true;
+
 Non Pooling:
 
     private async Task OnAfterMapLoaded(MapEventArgs args)
