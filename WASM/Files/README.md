@@ -186,3 +186,19 @@ JSON object based on the `RFC 7946` format:
         }
       }
     }
+
+**Structure Overview
+
+ - `data` — an array of valid GeoJSON features (points, lines, or polygons).
+ - `appearance.switch` — a rule-based styling engine that maps feature property values to visual styles.
+ - `fieldName` — the GeoJSON properties key to evaluate (e.g., "name").
+ - `classes` — an ordered list of value-to-style mappings. Each entry matches when properties[fieldName] === fieldValue.
+ - `fieldValue` — the exact value to match.
+ - `style` — the visual attributes applied on match (color, weight, opacity).
+ - `default` — a fallback style applied when no fieldValue in classes matches the feature's property.
+
+**Key notes for devs:**
+
+ - Matching is first-come, first-served: the first classes entry whose fieldValue matches wins.
+ - The default style guarantees every feature gets rendered, even with unexpected or missing property values.
+ - GeoJSON geometry types are honored as-is; additional geometry-type filtering would **require an optional appliesTo field (not yet implemented)**.
