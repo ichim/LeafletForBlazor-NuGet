@@ -96,8 +96,9 @@ To completely remove all Leaflet layers from the map:
     await map.Geometric.From.Files.RemoveAsync();
 
 ## Suggestions
- - Consider adding a small "Common Gotchas" section: calling FetchAsync without stopping previous pooling can lead to duplicate requests.
- - If forceCacheIgnore is browser-specific, listing which browsers are affected would help developers troubleshoot faster.
+
+ - Consider adding a small "Common Gotchas" section: calling FetchAsync without stopping previous pooling can lead to duplicate requests and `the threads may work improperly`.
+ - If **forceCacheIgnore** is browser-specific, listing which browsers are affected would help developers troubleshoot faster.
  - A note on thread safety (e.g., should these calls always happen on the UI thread?) could be useful for Blazor users.
 
 
