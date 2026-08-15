@@ -112,7 +112,7 @@ Leaflet For Blazor can also work with other formats based on ... but to which ``
 
 ## JSON Object
 
-JSON object based on the `RFC 7946` format:
+JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, contains an array in the format.
 
     {
       "data": [
@@ -130,6 +130,8 @@ JSON object based on the `RFC 7946` format:
     }
 
 ## JSON Object and Style
+
+JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, contains an array in the format.
 
     {
       "data": [
@@ -158,6 +160,8 @@ JSON object based on the `RFC 7946` format:
     }
 
 ## JSON Object and Switch/Classes
+
+JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, contains an array in the format.
 
     {
       "data": [],
