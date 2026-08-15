@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0P6EcAbwaDE=",
+  "dgSpecHash": "niE6xmCEwOw=",
   "success": true,
   "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\LoadParameters\\LoadParameters\\LoadParameters.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.2.4\\leafletforblazor.4.0.2.4.nupkg.sha512",
+    "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.2.6\\leafletforblazor.4.0.2.6.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.11\\microsoft.aspnetcore.authorization.9.0.11.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.11\\microsoft.aspnetcore.components.9.0.11.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\9.0.11\\microsoft.aspnetcore.components.analyzers.9.0.11.nupkg.sha512",
