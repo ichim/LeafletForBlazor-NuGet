@@ -68,12 +68,20 @@ For some browsers, you may also need to force-ignore cached reads:
     map.Geometric.From.Files.forceCacheIgnore = true;
 
 ## Events
+
 Listen for fetch completions (fired after each pooling cycle):
 
     map.Geometric.From.Files.OnAfterFetchAsync += (sender, args) =>
     {
         Console.WriteLine($"Files loaded: {args.layerId}");
     };
+
+OnClick event:
+
+     map.Geometric.From.Files.OnClick += (sender, args) =>
+     {
+         
+     };
 
 ## Stopping Pooling
 
