@@ -69,6 +69,8 @@ For some browsers, you may also need to force-ignore cached reads:
 
 ## Events
 
+### OnAfterFetchAsync
+
 Listen for fetch completions (fired after each pooling cycle):
 
     map.Geometric.From.Files.OnAfterFetchAsync += (sender, args) =>
@@ -88,7 +90,9 @@ Listen for fetch completions (fired after each pooling cycle):
          public int[]? layerId { get; set; }
      }
 
-OnClick event:
+### OnClick
+
+This is triggered whenever a click is made on the map.
 
      map.Geometric.From.Files.OnClick += (sender, args) =>
      {
