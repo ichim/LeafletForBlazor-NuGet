@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\GeoJSON Switch Style\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09BCBA0A-A178-4674-B352-168FF75176A9}|GeoJSON\\GeoJSON.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\geojson switch style\\geojson\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{09BCBA0A-A178-4674-B352-168FF75176A9}|GeoJSON\\GeoJSON.csproj|solutionrelative:geojson\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09BCBA0A-A178-4674-B352-168FF75176A9}|GeoJSON\\GeoJSON.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\geojson switch style\\geojson\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{09BCBA0A-A178-4674-B352-168FF75176A9}|GeoJSON\\GeoJSON.csproj|solutionrelative:geojson\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\GeoJSON Switch Style\\GeoJSON\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "GeoJSON\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\GeoJSON Switch Style\\GeoJSON\\Pages\\Home.razor*",
+              "RelativeToolTip": "GeoJSON\\Pages\\Home.razor*",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwEQAAACjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-16T16:09:49.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\GeoJSON Switch Style\\GeoJSON\\_Imports.razor",
+              "RelativeDocumentMoniker": "GeoJSON\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\GeoJSON Switch Style\\GeoJSON\\_Imports.razor*",
+              "RelativeToolTip": "GeoJSON\\_Imports.razor*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-16T16:09:34.963Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
