@@ -76,12 +76,33 @@ Listen for fetch completions (fired after each pooling cycle):
         Console.WriteLine($"Files loaded: {args.layerId}");
     };
 
+ Where args is:
+
+      public class FileFetchingEventArgs : EventArgs
+     {
+         public string url { get; }
+         public DateTime timestamp { get; }
+         public bool success { get; }
+         public string? fileContent { get; set; }
+         public int? id { get; set; }
+         public int[]? layerId { get; set; }
+     }
+
 OnClick event:
 
      map.Geometric.From.Files.OnClick += (sender, args) =>
      {
          
      };
+
+ Where args is:
+
+        public class FilesItemsEventArgs : EventArgs
+        {
+            public List<object> items { get; set; }
+            public Coordinates geoid { get; set; }
+            public Coordinates screen { get; set; }
+        }
 
 ## Stopping Pooling
 
