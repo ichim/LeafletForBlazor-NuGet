@@ -103,7 +103,7 @@ This is triggered whenever a click is made on the map.
 
         public class FilesItemsEventArgs : EventArgs
         {
-            public List<object> items { get; set; }
+             public List<ExpandoObject> geometriesFound { get; set; }
             public Coordinates geoid { get; set; }
             public Coordinates screen { get; set; }
         }
