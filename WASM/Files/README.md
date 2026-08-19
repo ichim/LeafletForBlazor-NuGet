@@ -108,6 +108,8 @@ This is triggered whenever a click is made on the map.
             public Coordinates screen { get; set; }
         }
 
+[more about OnClick](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files/events/OnClick#onclick-event)
+
 ## Stopping Pooling
 
 ``Important: Always call`` StopFetchingAsync before starting a new `FetchAsync`.
