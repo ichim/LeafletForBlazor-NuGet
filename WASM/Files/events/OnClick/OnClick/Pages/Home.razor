@@ -1,0 +1,75 @@
+﻿@page "/"
+@using System.Dynamic
+@inject NavigationManager NavigationManager
+<label class="text-center d-block mt-2 mb-2">This example demonstrates how to use the OnClick event handler of the Geometric.From.Files component. The geometries are fetched from the files located in the "/simple" folder of the project. The files are loaded asynchronously and the geometries are added to the map. When a geometry is found in the files, the OnClick event handler is triggered and the geometry is logged to the console.</label>
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 4rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+@code {
+    Map? map = null;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 44.444941,
+            longitude = 26.097369
+        },
+
+        /*
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
+            },
+        */
+        zoomLevel = 16,
+        mapControls = new MapControls()
+        {
+            scaleBar = new ScaleBar()                                           //Map Scale Bar
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+
+        }
+    };
+
+
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        var path = NavigationManager.Uri;
+        if (map?.Geometric.From.Files != null)
+        {
+            //OnClick event handler for the Geometric.From.Files component. This event is triggered when geometries are found in the files being loaded.
+            map.Geometric.From.Files.OnClick += (sender, args) =>
+            {
+                foreach (ExpandoObject shape in args.geometriesFound)
+                {
+                    foreach (var dict in shape)
+                    {
+                        if (dict.Value is ExpandoObject newTree)
+                        {
+                            foreach (var dictTree in newTree)
+                            {
+                                Console.WriteLine($"Key: {dictTree.Key} / Value: {dictTree.Value}");
+                            }
+                        }
+                        else
+                            Console.WriteLine($"Key: {dict.Key} / Value: {dict.Value}");
+                    }
+                }
+            };
+            map.Geometric.From.Files.forceCacheIgnore = true;
+            //Fetching the geometries from the files. The files are located in the "/simple" folder of the project. The files are loaded asynchronously and the geometries are added to the map.
+            await map.Geometric.From.Files.FetchAsync(new List<string> { $"{path}/simple/appearance-lines.json", $"{path}/simple/appearance-points.json", $"{path}/simple/appearance-points-polygons.json" }, PoolingDelay.None);
+
+        }
+    }
+
+   
+}

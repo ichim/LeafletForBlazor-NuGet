@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\OnClick\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A36A68B5-F35C-4611-AF63-27D4C3F9FD61}|OnClick\\OnClick.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\onclick\\onclick\\wwwroot\\simple\\appearance-points-polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A36A68B5-F35C-4611-AF63-27D4C3F9FD61}|OnClick\\OnClick.csproj|solutionrelative:onclick\\wwwroot\\simple\\appearance-points-polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A36A68B5-F35C-4611-AF63-27D4C3F9FD61}|OnClick\\OnClick.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\onclick\\onclick\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A36A68B5-F35C-4611-AF63-27D4C3F9FD61}|OnClick\\OnClick.csproj|solutionrelative:onclick\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A36A68B5-F35C-4611-AF63-27D4C3F9FD61}|OnClick\\OnClick.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\onclick\\onclick\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A36A68B5-F35C-4611-AF63-27D4C3F9FD61}|OnClick\\OnClick.csproj|solutionrelative:onclick\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appearance-points-polygons.json",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\OnClick\\OnClick\\wwwroot\\simple\\appearance-points-polygons.json",
+              "RelativeDocumentMoniker": "OnClick\\wwwroot\\simple\\appearance-points-polygons.json",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\OnClick\\OnClick\\wwwroot\\simple\\appearance-points-polygons.json",
+              "RelativeToolTip": "OnClick\\wwwroot\\simple\\appearance-points-polygons.json",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-19T06:10:49.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\OnClick\\OnClick\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "OnClick\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\OnClick\\OnClick\\Pages\\Home.razor",
+              "RelativeToolTip": "OnClick\\Pages\\Home.razor",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAwEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-19T06:05:40.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\OnClick\\OnClick\\_Imports.razor",
+              "RelativeDocumentMoniker": "OnClick\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\OnClick\\OnClick\\_Imports.razor",
+              "RelativeToolTip": "OnClick\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-19T06:05:18.868Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
