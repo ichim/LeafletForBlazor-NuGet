@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\NET MAUI Blazor\\Map\\",
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Map\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E13A3CE-AEEE-406D-BDBA-7B62DACB82E3}|Map\\Map.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\net maui blazor\\map\\map\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5E13A3CE-AEEE-406D-BDBA-7B62DACB82E3}|Map\\Map.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\maui blazor\\map\\map\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5E13A3CE-AEEE-406D-BDBA-7B62DACB82E3}|Map\\Map.csproj|solutionrelative:map\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E13A3CE-AEEE-406D-BDBA-7B62DACB82E3}|Map\\Map.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\net maui blazor\\map\\map\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5E13A3CE-AEEE-406D-BDBA-7B62DACB82E3}|Map\\Map.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\maui blazor\\map\\map\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5E13A3CE-AEEE-406D-BDBA-7B62DACB82E3}|Map\\Map.csproj|solutionrelative:map\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -24,21 +24,22 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\NET MAUI Blazor\\Map\\Map\\Components\\_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Map\\Map\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "Map\\Components\\_Imports.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\NET MAUI Blazor\\Map\\Map\\Components\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Map\\Map\\Components\\_Imports.razor",
               "RelativeToolTip": "Map\\Components\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-27T18:33:04.394Z"
+              "WhenOpened": "2026-07-27T18:33:04.394Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Home.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\NET MAUI Blazor\\Map\\Map\\Components\\Pages\\Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Map\\Map\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Map\\Components\\Pages\\Home.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\NET MAUI Blazor\\Map\\Map\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Map\\Map\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "Map\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

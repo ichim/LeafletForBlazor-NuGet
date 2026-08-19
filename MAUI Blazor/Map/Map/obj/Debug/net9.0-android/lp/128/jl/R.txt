@@ -1,0 +1,5 @@
+int attr drawerLayoutStyle 0x0
+int attr elevation 0x0
+int dimen def_drawer_elevation 0x0
+int[] styleable DrawerLayout { 0x0 }
+int styleable DrawerLayout_elevation 0
