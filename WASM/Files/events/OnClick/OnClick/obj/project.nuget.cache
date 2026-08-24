@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eVIqwIgzjww=",
+  "dgSpecHash": "8X1j2ZhXpSE=",
   "success": true,
-  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\SigmaDroneChart\\SigmaDroneChart\\SigmaDroneChart.csproj",
+  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Files\\events\\OnClick\\OnClick\\OnClick.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.4\\leafletforblazor.4.0.4.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.11\\microsoft.aspnetcore.authorization.9.0.11.nupkg.sha512",

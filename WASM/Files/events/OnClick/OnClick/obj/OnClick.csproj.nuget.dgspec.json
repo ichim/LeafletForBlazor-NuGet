@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\MapLoadEvent\\MapLoadEvent\\MapLoadEvent.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Files\\events\\OnClick\\OnClick\\OnClick.csproj": {}
   },
   "projects": {
-    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\MapLoadEvent\\MapLoadEvent\\MapLoadEvent.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Files\\events\\OnClick\\OnClick\\OnClick.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\MapLoadEvent\\MapLoadEvent\\MapLoadEvent.csproj",
-        "projectName": "MapLoadEvent",
-        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\MapLoadEvent\\MapLoadEvent\\MapLoadEvent.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Files\\events\\OnClick\\OnClick\\OnClick.csproj",
+        "projectName": "OnClick",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Files\\events\\OnClick\\OnClick\\OnClick.csproj",
         "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\MapLoadEvent\\MapLoadEvent\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Files\\events\\OnClick\\OnClick\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
