@@ -69,7 +69,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[4.0.4, )"
+              "version": "[4.0.4.2, )"
             },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
@@ -116,7 +116,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[4.0.4, )"
+              "version": "[4.0.4.2, )"
             },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
@@ -163,7 +163,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[4.0.4, )"
+              "version": "[4.0.4.2, )"
             },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
@@ -211,7 +211,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[4.0.4, )"
+              "version": "[4.0.4.2, )"
             },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",

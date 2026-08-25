@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "LeafletForBlazor/4.0.4": {
+      "LeafletForBlazor/4.0.4.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -583,7 +583,7 @@
       }
     },
     "net9.0/browser-wasm": {
-      "LeafletForBlazor/4.0.4": {
+      "LeafletForBlazor/4.0.4.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -1165,10 +1165,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/4.0.4": {
-      "sha512": "0szRIVhorVWDtaTGCkRuoopyUVt3evFx2bf9yn52EFCEkjC5O/zBh2hBQPiH6guz6JJKYe/mQzYx7V74JD8G7Q==",
+    "LeafletForBlazor/4.0.4.2": {
+      "sha512": "NpT75t/0xHji/5md8HNuCmxzNkzuV/O3vRnwepgh42H8s6K+bc+bS6lMTeYjg7zu5divTBAVNXN1VXO1GrJniQ==",
       "type": "package",
-      "path": "leafletforblazor/4.0.4",
+      "path": "leafletforblazor/4.0.4.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1182,7 +1182,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net9.0/map_color.ico",
-        "leafletforblazor.4.0.4.nupkg.sha512",
+        "leafletforblazor.4.0.4.2.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net9.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -2275,7 +2275,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "LeafletForBlazor >= 4.0.4",
+      "LeafletForBlazor >= 4.0.4.2",
       "Microsoft.AspNetCore.Components.WebAssembly >= 9.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.11",
       "Microsoft.NET.ILLink.Tasks >= 9.0.11",
@@ -2335,7 +2335,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[4.0.4, )"
+            "version": "[4.0.4.2, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
