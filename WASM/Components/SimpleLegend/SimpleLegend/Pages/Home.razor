@@ -1,0 +1,51 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 1rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded">
+    <Legend left="12px" top="80px"/>
+</Map>
+
+@code {
+    Map? map = null;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 44.444941,
+            longitude = 26.097369
+        },
+        zoomLevel = 16,
+        mapControls = new MapControls()
+        {
+            scaleBar = new ScaleBar()                                           //Map Scale Bar
+            {
+                position = Position.bottomRight,
+                unitOfScaleBar = UnitOfScaleBar.metric
+            },
+
+        }
+    };
+
+
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        var path = NavigationManager.Uri;
+        if (map?.Geometric.From.Files != null)
+        {
+            map.Geometric.From.Files.forceCacheIgnore = true;
+      
+            await map.Geometric.From.Files.FetchAsync(new List<string> {
+                $"{path}/simple/appearance-lines.json",
+                $"{path}/simple/appearance-points.json",
+                $"{path}/simple/appearance-polygons.json"
+            }, PoolingDelay.Short);
+        }
+    }
+}

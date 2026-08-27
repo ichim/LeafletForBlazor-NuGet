@@ -1,0 +1,27 @@
+﻿{
+  "data": [
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [ 26.095369, 44.444642 ],
+          [ 26.097369, 44.444841 ]
+        ]
+      },
+      "properties": {
+        "name": "Connection"
+      }
+    }
+  ],
+  "appearance": {
+    "title": "Conexiuni",
+    "radius": 10,
+    "fillColor": "yellow",
+    "color": "#000000",
+    "weight": 1,
+    "opacity": 0.8,
+    "fillOpacity": 0.6
+  }
+}

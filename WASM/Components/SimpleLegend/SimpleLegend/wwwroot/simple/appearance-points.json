@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 26.097369, 44.4448446 ]
+      },
+      "properties": {
+        "name": "Beautiful Memories Store"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 26.095369, 44.444648 ]
+      },
+      "properties": {
+        "name": "Amzei Market"
+      }
+    }
+  ],
+  "appearance": {"title":  "Retails & Market", "radius" : 10, "fillColor": "orange", "color": "red", "weight": 1, "opacity": 0.8, "fillOpacity": 0.6 }
+}
