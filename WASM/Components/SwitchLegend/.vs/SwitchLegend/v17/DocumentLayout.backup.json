@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchLegend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{646E400D-AE7C-4D93-BC4B-650C7EE7E108}|SwitchLegend\\SwitchLegend.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\switchlegend\\switchlegend\\wwwroot\\data\\appearance-polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{646E400D-AE7C-4D93-BC4B-650C7EE7E108}|SwitchLegend\\SwitchLegend.csproj|solutionrelative:switchlegend\\wwwroot\\data\\appearance-polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646E400D-AE7C-4D93-BC4B-650C7EE7E108}|SwitchLegend\\SwitchLegend.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\switchlegend\\switchlegend\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646E400D-AE7C-4D93-BC4B-650C7EE7E108}|SwitchLegend\\SwitchLegend.csproj|solutionrelative:switchlegend\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646E400D-AE7C-4D93-BC4B-650C7EE7E108}|SwitchLegend\\SwitchLegend.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\switchlegend\\switchlegend\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646E400D-AE7C-4D93-BC4B-650C7EE7E108}|SwitchLegend\\SwitchLegend.csproj|solutionrelative:switchlegend\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appearance-polygons.json",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchLegend\\SwitchLegend\\wwwroot\\data\\appearance-polygons.json",
+              "RelativeDocumentMoniker": "SwitchLegend\\wwwroot\\data\\appearance-polygons.json",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchLegend\\SwitchLegend\\wwwroot\\data\\appearance-polygons.json",
+              "RelativeToolTip": "SwitchLegend\\wwwroot\\data\\appearance-polygons.json",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-28T08:27:06.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchLegend\\SwitchLegend\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "SwitchLegend\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchLegend\\SwitchLegend\\Pages\\Home.razor",
+              "RelativeToolTip": "SwitchLegend\\Pages\\Home.razor",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwB8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-28T08:22:25.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchLegend\\SwitchLegend\\_Imports.razor",
+              "RelativeDocumentMoniker": "SwitchLegend\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchLegend\\SwitchLegend\\_Imports.razor",
+              "RelativeToolTip": "SwitchLegend\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-28T08:21:14.801Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
