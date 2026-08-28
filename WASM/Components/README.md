@@ -3,6 +3,8 @@
 
 The <Legend/> component displays a legend on the map, allowing users to quickly understand the meaning of the symbols and colors applied to data layers. In the current version, the legend is only available for GeoJSON files (at this moment).
 
+![Legend](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/gifs/SwitchLegend.gif)
+
 ## How to use
 
 The component is placed as a child element of the <Map> component:
