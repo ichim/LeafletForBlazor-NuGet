@@ -61,7 +61,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="LeafletForBlazor" Version="4.0.4.4" />
+        <PackageReference Include="LeafletForBlazor" Version="4.0.4.8" />
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.8" />

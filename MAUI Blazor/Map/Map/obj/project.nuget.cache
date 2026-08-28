@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zt/XofXzNsk=",
+  "dgSpecHash": "9mexgy46dio=",
   "success": true,
   "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Map\\Map\\Map.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\40720\\.nuget\\packages\\googlegson\\2.13.0.1\\googlegson.2.13.0.1.nupkg.sha512",
-    "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.4.4\\leafletforblazor.4.0.4.4.nupkg.sha512",
+    "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.4.8\\leafletforblazor.4.0.4.8.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.11\\microsoft.aspnetcore.authorization.9.0.11.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.11\\microsoft.aspnetcore.components.9.0.11.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\9.0.11\\microsoft.aspnetcore.components.analyzers.9.0.11.nupkg.sha512",
