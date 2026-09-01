@@ -1,0 +1,78 @@
+﻿{
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [ 4.370726294035056, 50.85576118549743 ],
+            [ 4.37280072848059, 50.85698223571704 ],
+            [ 4.375504848831149, 50.85992080546935 ],
+            [ 4.384232066790315, 50.85806270232648 ],
+            [ 4.3832733475876315, 50.852470062668985 ],
+            [ 4.376211492123027, 50.854057040530414 ],
+            [ 4.370726294035056, 50.85576118549743 ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "commercial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [ 4.329995576079408, 50.863166498291605 ],
+            [ 4.335327918390948, 50.868071295728555 ],
+            [ 4.338937206757795, 50.86582972051806 ],
+            [ 4.342227984022312, 50.86114874597603 ],
+            [ 4.340181987352243, 50.86040913547834 ],
+            [ 4.329995576079408, 50.863166498291605 ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "residential"
+      }
+    }
+  ],
+
+  "appearance": {
+    "switch": {
+      "fieldName": "name",
+      "classes": [
+        {
+          "fieldValue": "commercial",
+          "style": {
+            "title": "Markets",
+            "color": "indigo",
+            "fillColor": "orange",
+            "weight": 2,
+            "opacity": 0.8
+            
+          }
+        },
+        {
+          "fieldValue": "residential",
+          "style": {
+            "title": "Residential",
+            "color": "green",
+            "fillColor": "yellow",
+            "weight": 4,
+            "opacity": 1
+          }
+        }
+      ],
+      "default": {
+        "title": "Other",
+        "color": "gray",
+        "weight": 2,
+        "opacity": 0.8
+      }
+    }
+  }
+}

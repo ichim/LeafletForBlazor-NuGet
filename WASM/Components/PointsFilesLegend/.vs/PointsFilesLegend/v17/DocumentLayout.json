@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\PointsFilesLegend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{900F6BE3-8A43-42C5-ACCD-ABFEF3B48CD1}|PointsFilesLegend\\PointsFilesLegend.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\pointsfileslegend\\pointsfileslegend\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{900F6BE3-8A43-42C5-ACCD-ABFEF3B48CD1}|PointsFilesLegend\\PointsFilesLegend.csproj|solutionrelative:pointsfileslegend\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\PointsFilesLegend\\PointsFilesLegend\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "PointsFilesLegend\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\PointsFilesLegend\\PointsFilesLegend\\Pages\\Home.razor",
+              "RelativeToolTip": "PointsFilesLegend\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-01T12:08:39.674Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

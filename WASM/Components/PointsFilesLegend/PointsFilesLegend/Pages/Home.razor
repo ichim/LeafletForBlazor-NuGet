@@ -1,0 +1,71 @@
+﻿@page "/"
+@using Data.Input
+@inject NavigationManager NavigationManager
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 1rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded">
+    <Legend left="12px" top="80px"><HeaderContent><h2>Legend</h2></HeaderContent><FooterContent><label style="font-size:8px;font-style:italic;font-weight:100">You can add explanations.</label></FooterContent></Legend>
+</Map>
+
+@code {
+    Map? map = null;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
+        },
+
+        zoomLevel = 11,
+    };
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        if (map?.Geometric?.Points != null)
+        {
+            await map.Geometric.Points.Appearance(e => e.type == "SigmaDrone").SetStyle(new PointStyle()
+            {
+                color = "orange",
+                fillColor = "yellow",
+                weight = 1,
+                radius = 10,
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+                title = "Sigma Drone"
+            });
+
+            await map.Geometric.Points.Appearance(e => e.type == "Industrial").SetStyle(new PointStyle()
+            {
+                color = "green",
+                fillColor = "navy",
+                weight = 1,
+                radius = 10,
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+                title = "Industrial"
+            });
+            await map.Geometric.Points.Appearance(e => e.type == "Auto").SetStyle(new PointStyle()
+            {
+                color = "green",
+                fillColor = "indigo",
+                weight = 1,
+                radius = 10,
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+                title = "Auto"
+            });
+            await map.Geometric.Points.Appearance(e => e.type == "Deposit").SetStyle(new PointStyle()
+            {
+                color = "black",
+                fillColor = "red",
+                weight = 1,
+                radius = 10,
+                visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+                title = "Deposit"
+            });
+            await map.Geometric.Points.Add(new StreamPoints().points);
+        }
+        var path = NavigationManager.Uri;
+        await map.Geometric.From.Files.FetchAsync(new List<string>() { $"{path}/data/appearance-polygons.json" });
+    }
+   }
