@@ -165,7 +165,6 @@ The ``@map.Geometric.From.Files`` class allows you to load data from files store
 
 # 📦 Map Components
 
-## 🧾 Legend
 
 | Description | Image |
 |-----------|-------|
