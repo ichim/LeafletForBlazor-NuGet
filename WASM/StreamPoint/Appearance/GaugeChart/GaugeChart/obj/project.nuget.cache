@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9WC23el0i/I=",
+  "dgSpecHash": "JbFLinSxPG4=",
   "success": true,
   "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\GaugeChart\\GaugeChart\\GaugeChart.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.4.8\\leafletforblazor.4.0.4.8.nupkg.sha512",
+    "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.6\\leafletforblazor.4.0.6.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.11\\microsoft.aspnetcore.authorization.9.0.11.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.11\\microsoft.aspnetcore.components.9.0.11.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\9.0.11\\microsoft.aspnetcore.components.analyzers.9.0.11.nupkg.sha512",
