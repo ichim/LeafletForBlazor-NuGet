@@ -1,7 +1,7 @@
 
 # Legend
 
-The <Legend/> component displays a legend on the map, allowing users to quickly understand the meaning of the symbols and colors applied to data layers. In the current version, the legend is only available for GeoJSON files (at this moment).
+The <Legend/> component displays a legend on the map, allowing users to quickly understand the meaning of the symbols and colors applied to data layers. In the current version, the legend is only available for GeoJSON files and StreamPoint Collection.
 
 ![Legend](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/gifs/SwitchLegend.gif)
 
