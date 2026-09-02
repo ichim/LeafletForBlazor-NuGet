@@ -21,3 +21,23 @@ The component is placed as a child element of the <Map> component:
 | `bottom`     | `string` | `"10px"` | The distance from the bottom edge of the map. Accepts any valid CSS value (`px`, `%`, `rem`, etc.). |
 
 ## How to use Legend
+
+### Simple Legend
+
+    <Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)">
+        <Legend left="12px" top="80px"/>
+    </Map>
+
+### Configurable legend
+
+    <Map @ref="map" height="calc(100vh - 2rem)" width="calc(100vw - 2rem)">
+        <Legend left="12px" top="80px">
+            <HeaderContent>
+                <h2>Legend</h2>  //title
+            </HeaderContent>
+            <FooterContent>
+                <label style="font-size:8px;font-style:italic;font-weight:100">You can add explanations.</label> //notes
+            </FooterContent>
+        </Legend>
+     </Map>
+
