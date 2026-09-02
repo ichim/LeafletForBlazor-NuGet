@@ -31,8 +31,8 @@ The @map.Geometric.From.Files class allows you to load data from files stored on
 
 ## Legend
 
-<img width="1148" height="926" alt="image" src="https://github.com/user-attachments/assets/1304b1fa-c8bb-4eee-bc7a-ae8bd421d7a4" />
+<img width="550" height="460" alt="image" src="https://github.com/user-attachments/assets/1304b1fa-c8bb-4eee-bc7a-ae8bd421d7a4" />
 
- [More about Legend]()
+ [More about Legend](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components#legend)
 
 
