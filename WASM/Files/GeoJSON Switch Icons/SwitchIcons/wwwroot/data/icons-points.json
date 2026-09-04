@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 26.097369, 44.4448446 ]
+      },
+      "properties": {
+        "type": "Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 26.095369, 44.444648 ]
+      },
+      "properties": {
+        "type": "Museum"
+      }
+    }
+  ],
+  "appearance":
+  {
+    "switch": {
+      "fieldName": "type",
+      "classes": [
+        {
+          "fieldValue": "Market",
+          "style": {
+            "title": "Markets",
+            "iconUrl": "http://localhost:5248/icons/market.png",
+
+            "iconSize": [ 32, 32 ],
+            "shadowSize": [ 16, 16 ],
+            "iconAnchor": [ 16, 16 ],
+            "shadowAnchor": [ 16, 16 ],
+            "popupAnchor": [ 0, 0 ],
+            "rotation": 0
+          }
+        },
+        {
+          "fieldValue": "Museum",
+          "style": {
+            "title": "Museums",
+            "iconUrl": "http://localhost:5248/icons/museum.png",
+           
+            "iconSize": [ 32, 32 ],
+            "shadowSize": [ 16, 16 ],
+            "iconAnchor": [ 16, 16 ],
+            "shadowAnchor": [ 16, 16 ],
+            "popupAnchor": [ 0, 0 ],
+            "rotation": 0
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 1rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded">
+    <Legend left="12px" top="80px"><HeaderContent><h2 style="margin-block-start:0.20em;margin-block-end:0.20em">Legend</h2></HeaderContent><FooterContent><label style="font-size:8px;font-style:italic;font-weight:100">You can add explanations.</label></FooterContent></Legend>
+</Map>
+
+@code {
+    Map? map = null;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 44.444941,
+            longitude = 26.097369
+        },
+        zoomLevel = 16,
+    };
+
+
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        if (map?.Geometric.From.Files != null)
+        {
+            var path = NavigationManager.Uri;
+           
+            map.Geometric.From.Files.forceCacheIgnore = true;
+            
+            await map.Geometric.From.Files.FetchAsync(new List<string> { $"{path}/data/icons-points.json" });
+          
+        }
+    }
+}

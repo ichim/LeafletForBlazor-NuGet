@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchIcons\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B51844F-CB62-4724-9DC0-CD3079EC5AB9}|SwitchIcons\\SwitchIcons.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\switchicons\\switchicons\\wwwroot\\data\\icons-points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9B51844F-CB62-4724-9DC0-CD3079EC5AB9}|SwitchIcons\\SwitchIcons.csproj|solutionrelative:switchicons\\wwwroot\\data\\icons-points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B51844F-CB62-4724-9DC0-CD3079EC5AB9}|SwitchIcons\\SwitchIcons.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\switchicons\\switchicons\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B51844F-CB62-4724-9DC0-CD3079EC5AB9}|SwitchIcons\\SwitchIcons.csproj|solutionrelative:switchicons\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B51844F-CB62-4724-9DC0-CD3079EC5AB9}|SwitchIcons\\SwitchIcons.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\switchicons\\switchicons\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B51844F-CB62-4724-9DC0-CD3079EC5AB9}|SwitchIcons\\SwitchIcons.csproj|solutionrelative:switchicons\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "icons-points.json",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchIcons\\SwitchIcons\\wwwroot\\data\\icons-points.json",
+              "RelativeDocumentMoniker": "SwitchIcons\\wwwroot\\data\\icons-points.json",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchIcons\\SwitchIcons\\wwwroot\\data\\icons-points.json",
+              "RelativeToolTip": "SwitchIcons\\wwwroot\\data\\icons-points.json",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-04T06:54:45.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchIcons\\SwitchIcons\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "SwitchIcons\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchIcons\\SwitchIcons\\Pages\\Home.razor",
+              "RelativeToolTip": "SwitchIcons\\Pages\\Home.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T06:52:51.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchIcons\\SwitchIcons\\_Imports.razor",
+              "RelativeDocumentMoniker": "SwitchIcons\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\SwitchIcons\\SwitchIcons\\_Imports.razor",
+              "RelativeToolTip": "SwitchIcons\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T06:52:11.299Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
