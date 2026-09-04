@@ -18,7 +18,7 @@
           }
         }
       },
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -2774,7 +2774,7 @@
           }
         }
       },
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -5530,7 +5530,7 @@
           }
         }
       },
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -8286,7 +8286,7 @@
           }
         }
       },
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -11042,7 +11042,7 @@
           }
         }
       },
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -13798,7 +13798,7 @@
           }
         }
       },
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -16538,7 +16538,7 @@
       }
     },
     "net9.0-ios26.0": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -17402,7 +17402,7 @@
       }
     },
     "net9.0-ios26.0/android-arm64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -18266,7 +18266,7 @@
       }
     },
     "net9.0-ios26.0/android-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -19130,7 +19130,7 @@
       }
     },
     "net9.0-ios26.0/iossimulator-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -19994,7 +19994,7 @@
       }
     },
     "net9.0-ios26.0/maccatalyst-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -20858,7 +20858,7 @@
       }
     },
     "net9.0-ios26.0/win10-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -21722,7 +21722,7 @@
       }
     },
     "net9.0-maccatalyst26.0": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -22586,7 +22586,7 @@
       }
     },
     "net9.0-maccatalyst26.0/android-arm64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -23450,7 +23450,7 @@
       }
     },
     "net9.0-maccatalyst26.0/android-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -24314,7 +24314,7 @@
       }
     },
     "net9.0-maccatalyst26.0/iossimulator-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -25178,7 +25178,7 @@
       }
     },
     "net9.0-maccatalyst26.0/maccatalyst-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -26042,7 +26042,7 @@
       }
     },
     "net9.0-maccatalyst26.0/win10-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -26906,7 +26906,7 @@
       }
     },
     "net9.0-windows10.0.19041": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -28020,7 +28020,7 @@
       }
     },
     "net9.0-windows10.0.19041/android-arm64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -29072,7 +29072,7 @@
       }
     },
     "net9.0-windows10.0.19041/android-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -30124,7 +30124,7 @@
       }
     },
     "net9.0-windows10.0.19041/iossimulator-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -31176,7 +31176,7 @@
       }
     },
     "net9.0-windows10.0.19041/maccatalyst-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -32228,7 +32228,7 @@
       }
     },
     "net9.0-windows10.0.19041/win10-x64": {
-      "LeafletForBlazor/4.0.6": {
+      "LeafletForBlazor/4.0.6.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -33310,10 +33310,10 @@
         "readme.md"
       ]
     },
-    "LeafletForBlazor/4.0.6": {
-      "sha512": "/n/OaCtGj2Mj99cBafXxKTaD0MfDafy6ha6PEK5jD7c1+n+B053RgvE4sDuvXNjvTgmIBNameYYIbzEFroyZWw==",
+    "LeafletForBlazor/4.0.6.2": {
+      "sha512": "Ty5Th2WRJbGf5j01EXcwKW4BKAe5UviSe8O4e09h0mWRKrg5LdDYSbLaFyXc7xjU9+54ZQ3RRGZu5ly0ule4pw==",
       "type": "package",
-      "path": "leafletforblazor/4.0.6",
+      "path": "leafletforblazor/4.0.6.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -33327,7 +33327,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net9.0/map_color.ico",
-        "leafletforblazor.4.0.6.nupkg.sha512",
+        "leafletforblazor.4.0.6.2.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net9.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -37832,28 +37832,28 @@
   },
   "projectFileDependencyGroups": {
     "net9.0-android35.0": [
-      "LeafletForBlazor >= 4.0.6",
+      "LeafletForBlazor >= 4.0.6.2",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 9.0.111",
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.11"
     ],
     "net9.0-ios26.0": [
-      "LeafletForBlazor >= 4.0.6",
+      "LeafletForBlazor >= 4.0.6.2",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 9.0.111",
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.11"
     ],
     "net9.0-maccatalyst26.0": [
-      "LeafletForBlazor >= 4.0.6",
+      "LeafletForBlazor >= 4.0.6.2",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 9.0.111",
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.11"
     ],
     "net9.0-windows10.0.19041": [
-      "LeafletForBlazor >= 4.0.6",
+      "LeafletForBlazor >= 4.0.6.2",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 9.0.111",
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111"
@@ -37928,7 +37928,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[4.0.6, )"
+            "version": "[4.0.6.2, )"
           },
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
@@ -37975,7 +37975,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[4.0.6, )"
+            "version": "[4.0.6.2, )"
           },
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
@@ -38022,7 +38022,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[4.0.6, )"
+            "version": "[4.0.6.2, )"
           },
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
@@ -38070,7 +38070,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[4.0.6, )"
+            "version": "[4.0.6.2, )"
           },
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
