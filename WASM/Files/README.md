@@ -240,6 +240,72 @@ JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, c
  - `style` — the visual attributes applied on match (color, weight, opacity).
  - `default` — a fallback style applied when no fieldValue in classes matches the feature's property.
 
+## Working with icons
+
+    {
+      "data": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [ 26.097369, 44.4448446 ]
+          },
+          "properties": {
+            "type": "Market"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [ 26.095369, 44.444648 ]
+          },
+          "properties": {
+            "type": "Museum"
+          }
+        }
+      ],
+      "appearance":
+      {
+        "switch": {
+          "fieldName": "type",
+          "classes": [
+            {
+              "fieldValue": "Market",
+              "style": {
+                "title": "Markets",
+                "iconUrl": "http://localhost:5248/icons/market.png",
+    
+                "iconSize": [ 32, 32 ],
+                "shadowSize": [ 16, 16 ],
+                "iconAnchor": [ 16, 16 ],
+                "shadowAnchor": [ 16, 16 ],
+                "popupAnchor": [ 0, 0 ],
+                "rotation": 0
+              }
+            },
+            {
+              "fieldValue": "Museum",
+              "style": {
+                "title": "Museums",
+                "iconUrl": "http://localhost:5248/icons/museum.png",
+               
+                "iconSize": [ 32, 32 ],
+                "shadowSize": [ 16, 16 ],
+                "iconAnchor": [ 16, 16 ],
+                "shadowAnchor": [ 16, 16 ],
+                "popupAnchor": [ 0, 0 ],
+                "rotation": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+
+<img width="1162" height="1198" alt="image" src="https://github.com/user-attachments/assets/980fd036-5c1c-4d96-9cfc-277ceea73214" />
+
+    
 **Key notes for devs:**
 
  - Matching is first-come, first-served: the first classes entry whose fieldValue matches wins.
