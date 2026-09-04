@@ -303,7 +303,7 @@ JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, c
       }
     }
 
-<img width="1162" height="1198" alt="image" src="https://github.com/user-attachments/assets/980fd036-5c1c-4d96-9cfc-277ceea73214" />
+<img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/980fd036-5c1c-4d96-9cfc-277ceea73214" />
 
     
 **Key notes for devs:**
