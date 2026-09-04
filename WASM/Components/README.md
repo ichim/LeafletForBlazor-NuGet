@@ -26,3 +26,6 @@ The component is placed as a child element of the <Map> component:
 
  - The legend positioning is absolute relative to the map container, so the left and top values ​​must be chosen carefully to avoid overlapping with other controls (zoom, assignment, etc.).
  - If dynamic repositioning is desired (e.g. for mobile devices), the values ​​can be passed via C# variables or custom CSS properties.
+
+
+[more about Legend component](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components/Legend#legend)
