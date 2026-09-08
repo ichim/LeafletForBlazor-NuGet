@@ -65,3 +65,6 @@ Configuring the created class:
         </FooterContent>
     </Legend>
 
+
+<img width="320" height="320" alt="image" src="https://github.com/user-attachments/assets/c8031faf-6cd9-46ab-a2c9-24b417a7174a" />
+
