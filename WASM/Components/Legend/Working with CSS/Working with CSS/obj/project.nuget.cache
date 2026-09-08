@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UboQCRRZxkE=",
+  "dgSpecHash": "r0RSisEA3w4=",
   "success": true,
-  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\QuarterGaugeScaleAndPercentChart\\QuarterGaugeScaleAndPercentChart\\QuarterGaugeScaleAndPercentChart.csproj",
+  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\Legend\\Working with CSS\\Working with CSS\\Working with CSS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.6.4\\leafletforblazor.4.0.6.4.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.11\\microsoft.aspnetcore.authorization.9.0.11.nupkg.sha512",
