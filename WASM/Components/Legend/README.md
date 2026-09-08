@@ -41,3 +41,27 @@ The component is placed as a child element of the <Map> component:
         </Legend>
      </Map>
 
+### Working with css
+
+Create a new class in app.css:
+
+    .legend-cheerful {
+        --legend-background-color: #FFFFE0;
+        --legend-border-color: #FFD700;
+        --legend-border-radius: 2px;
+        --legend-item-text-color: #808080;
+        --legend-header-text-color: #2F4F4F;
+        --legend-footer-text-color: #2F4F4F;
+    }
+
+Configuring the created class:
+
+    <Legend className="legend-cheerful" left="12px" top="80px">
+        <HeaderContent>
+            <h2 style="margin-block-start:0.20em;margin-block-end:0.20em">Legend</h2>
+        </HeaderContent>
+        <FooterContent>
+                <label style="font-size:8px;font-style:italic;font-weight:100">You can add explanations.</label>
+        </FooterContent>
+    </Legend>
+
