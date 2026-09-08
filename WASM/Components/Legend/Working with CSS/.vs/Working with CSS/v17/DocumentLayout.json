@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Working with CSS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A8534D7-2212-4C13-8373-E5F0CB661F53}|Working with CSS\\Working with CSS.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\working with css\\working with css\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A8534D7-2212-4C13-8373-E5F0CB661F53}|Working with CSS\\Working with CSS.csproj|solutionrelative:working with css\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A8534D7-2212-4C13-8373-E5F0CB661F53}|Working with CSS\\Working with CSS.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\working with css\\working with css\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8A8534D7-2212-4C13-8373-E5F0CB661F53}|Working with CSS\\Working with CSS.csproj|solutionrelative:working with css\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A8534D7-2212-4C13-8373-E5F0CB661F53}|Working with CSS\\Working with CSS.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\working with css\\working with css\\wwwroot\\data\\icons-points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8A8534D7-2212-4C13-8373-E5F0CB661F53}|Working with CSS\\Working with CSS.csproj|solutionrelative:working with css\\wwwroot\\data\\icons-points.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A8534D7-2212-4C13-8373-E5F0CB661F53}|Working with CSS\\Working with CSS.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\working with css\\working with css\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A8534D7-2212-4C13-8373-E5F0CB661F53}|Working with CSS\\Working with CSS.csproj|solutionrelative:working with css\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "app.css",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Working with CSS\\Working with CSS\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "Working with CSS\\wwwroot\\css\\app.css",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Working with CSS\\Working with CSS\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "Working with CSS\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-08T09:26:45.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "icons-points.json",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Working with CSS\\Working with CSS\\wwwroot\\data\\icons-points.json",
+              "RelativeDocumentMoniker": "Working with CSS\\wwwroot\\data\\icons-points.json",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Working with CSS\\Working with CSS\\wwwroot\\data\\icons-points.json",
+              "RelativeToolTip": "Working with CSS\\wwwroot\\data\\icons-points.json",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-08T09:17:53.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Working with CSS\\Working with CSS\\_Imports.razor",
+              "RelativeDocumentMoniker": "Working with CSS\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Working with CSS\\Working with CSS\\_Imports.razor",
+              "RelativeToolTip": "Working with CSS\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-08T09:14:58.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Working with CSS\\Working with CSS\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Working with CSS\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Working with CSS\\Working with CSS\\Pages\\Home.razor",
+              "RelativeToolTip": "Working with CSS\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-08T09:14:22.038Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
