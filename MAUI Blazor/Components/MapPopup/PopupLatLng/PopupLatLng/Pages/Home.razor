@@ -1,0 +1,51 @@
+﻿@page "/"
+
+
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 1rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded" >
+    <MapPopup @ref="mapPopup" className="popup-cheerful">
+        <HeaderContent>
+            <h3>Titlu Informativ</h3>
+        </HeaderContent>
+         <PopupContent>
+                <label>Latitude: @lat.</label><br>
+                <label>Longitude: @lng.</label>
+         </PopupContent>
+    </MapPopup>
+</Map>
+
+@code {
+    double lat = 0;
+    double lng = 0;
+
+    private Map? map = null;
+    private MapPopup? mapPopup;
+        LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()   
+        {
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
+            },
+
+        zoomLevel = 10
+    };
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        if (map?.Geometric?.Points != null)
+        {
+        
+            map.Geometric.Points.OnClick += (sender, args) =>
+            {
+                mapPopup?.Show(args, 200, 100);                     //MapPopup initialization
+                lat = Math.Round( args.geoid.xy[0],4);
+                lng = Math.Round( args.geoid.xy[1], 4);
+            };
+        }
+    }
+    
+}
