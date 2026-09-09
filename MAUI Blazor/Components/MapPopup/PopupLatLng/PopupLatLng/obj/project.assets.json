@@ -2289,11 +2289,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\GaugeChart\\GaugeChart\\GaugeChart.csproj",
-      "projectName": "GaugeChart",
-      "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\GaugeChart\\GaugeChart\\GaugeChart.csproj",
+      "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj",
+      "projectName": "PopupLatLng",
+      "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj",
       "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-      "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\StreamPoint\\Appearance\\GaugeChart\\GaugeChart\\obj\\",
+      "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\MAUI Blazor\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
