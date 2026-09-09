@@ -29,3 +29,8 @@ The component is placed as a child element of the <Map> component:
 
 
 [more about Legend component](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components/Legend#legend)
+
+
+# MapPopup
+
+
