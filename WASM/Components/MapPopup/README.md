@@ -1,6 +1,6 @@
 # MapPopup
 
-Contextual display driven by data source.
+Contextual display driven by data source with MapTooltip.
 
 
                   <Map
