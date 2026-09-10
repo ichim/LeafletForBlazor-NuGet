@@ -1,0 +1,141 @@
+﻿@page "/"
+@using Data.Input
+
+
+
+<Map
+     loadParameters="@loadParameters"
+     height="calc(100vh - 1rem)"
+     width="calc(100vw - 2rem)"
+     OnAfterMapLoaded="@OnAfterMapLoaded">
+    <MapPopup @ref="mapPopup">
+        <HeaderContent>
+            @if (points.Count != 0)
+            {
+                <h3>Attributes</h3>
+            }
+            else
+            {
+                <h3>Coordinates</h3>
+            }
+
+        </HeaderContent>
+        <PopupContent>
+            @{
+                @if (points.Count != 0)
+                    foreach (var point in points)
+                    {
+                        <label style="font-weight:800;color:darkblue">@point.type</label>
+            
+                        <br>
+                        @if (@point.value is string)
+                        {
+                            <label>@point.value</label>
+                            <br />
+                        }
+                        else if (point.value is DroneTrak)
+                        {
+                            var dtProps = point.value as DroneTrak;
+                            <label>Fuel: </label>
+                            <label>@dtProps?.fuel</label>
+
+                            <br />
+                            <label>Altitue: </label>
+                            <label>@dtProps?.altitude</label>
+
+                            <br />
+                            <label>Battery: </label>
+                            <label>@dtProps?.battery</label>
+                            <br />
+                            <label>Battery level: </label>
+                            <label>@dtProps?.battery</label>
+                            <br />
+                        }
+
+                    }
+                else
+                {
+                    <label>Latitude: </label>
+                    <label>@lat</label>
+
+                    <br />
+                    <label>Longitude: </label>
+                    <label>@lng</label>
+                }
+            }
+        </PopupContent>
+
+    </MapPopup>
+</Map>
+
+@code {
+    double lat = 0;
+    double lng = 0;
+    List<StreamPoint> points = new List<StreamPoint>();
+
+    private MapPopup? mapPopup;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                             
+        {
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
+        },
+
+        zoomLevel = 10,
+    };
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+
+        if (map?.Geometric?.Points != null)
+        {
+            map.Geometric.Points.OnClick += (sender, args) =>
+            {
+                points = args.points;
+                mapPopup?.Show(args, 200, 200);
+                lat = Math.Round(args.geoid.xy[0], 4);
+                lng = Math.Round(args.geoid.xy[1], 4);
+            };
+        }
+        await map.Geometric.Points.Add(new StreamPoints().points);
+        await map.Geometric.Points.Appearance(e => e.type == "SigmaDrone").SetStyle(new PointStyle()
+        {
+            color = "orange",
+            fillColor = "yellow",
+            weight = 1,
+            radius = 4,
+            visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+            title = "Sigma Drone"
+        });
+
+        await map.Geometric.Points.Appearance(e => e.type == "Industrial").SetStyle(new PointIcon()
+        {
+            iconUrl = "http://localhost:5175/icons/Industrial.png",
+            iconSize = new double[2] { 16, 16 },
+            iconAnchor = new double[2] { 8, 8 },
+            // rotation = 90,
+
+            title = "Industrial"
+        });
+        await map.Geometric.Points.Appearance(e => e.type == "Auto").SetStyle(new PointStyle()
+        {
+            color = "green",
+            fillColor = "indigo",
+            weight = 1,
+            radius = 4,
+            visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+            title = "Auto"
+        });
+        await map.Geometric.Points.Appearance(e => e.type == "Deposit").SetStyle(new PointStyle()
+        {
+            color = "black",
+            fillColor = "red",
+            weight = 1,
+            radius = 4,
+            visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 0, maxZoomLevel = 100 },
+            title = "Deposit"
+        });
+       
+    }
+}
