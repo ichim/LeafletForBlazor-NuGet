@@ -169,7 +169,7 @@ The ``@map.Geometric.From.Files`` class allows you to load data from files store
 | Description | Image |
 |-----------|-------|
 | The component displays a [Legend](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components#legend) on the map, allowing users to quickly understand the meaning of the symbols and colors applied to data layers. In the current version, the legend is only available for GeoJSON files and StreamPoint Collection. | ![Legend](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/Legend.png) |
-
+| Contextual display driven by data source with [MapPopup](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Components/MapPopup/README.md#mappopup) | ![MapPopup](https://private-user-images.githubusercontent.com/8348463/649277708-739fb3e3-aedf-46f7-a1cd-c570564661b9.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODkwNjQ3MjgsIm5iZiI6MTc4OTA2NDQyOCwicGF0aCI6Ii84MzQ4NDYzLzY0OTI3NzcwOC03MzlmYjNlMy1hZWRmLTQ2ZjctYTFjZC1jNTcwNTY0NjYxYjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDkxMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA5MTBUMTgyMDI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NWViYzg4NjM1YzU1ZjkzMzNiMDU1YWMxZTc2NzRkNmVlYWYyYTU4NGFkZjE1ZmNhM2ZjMTNmMWMzZjk3MDViNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.HAzNSoWlZxCIEQ-cPRuIAkcw2zqJMFITnaEyqPusc3Q) |
 
 
  _____________
