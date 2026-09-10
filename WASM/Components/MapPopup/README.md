@@ -18,3 +18,7 @@ Contextual display driven by data source.
                           </PopupContent>
                       </MapPopup>
                   </Map>
+
+
+|----|
+| <img width="569" height="585" alt="image" src="https://github.com/user-attachments/assets/135a34b9-339e-4b15-9559-0e5f55c4a13b" /> |
