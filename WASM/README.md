@@ -35,4 +35,6 @@ The @map.Geometric.From.Files class allows you to load data from files stored on
 
  [More about Legend](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components#legend)
 
+## MapPopup
 
+[more about MapPopup]()
