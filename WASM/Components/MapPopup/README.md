@@ -21,6 +21,8 @@ Contextual display driven by data source with MapPopup.
 
 | Sample 1 | Sample 2 | Sample 3 |
 |----|----|----|
-| <img width="536" height="551" alt="image" src="https://github.com/user-attachments/assets/135a34b9-339e-4b15-9559-0e5f55c4a13b" /> | <img width="536" height="551" alt="image" src="https://github.com/user-attachments/assets/739fb3e3-aedf-46f7-a1cd-c570564661b9" /> | <img width="536" height="551" alt="image" src="https://github.com/user-attachments/assets/f80f457d-7e1a-44a6-8872-6d5267e8237b" /> |
+| <img width="536" height="551" alt="image" src="https://github.com/user-attachments/assets/135a34b9-339e-4b15-9559-0e5f55c4a13b" /> | <img width="536" height="551" alt="image" src="https://github.com/user-attachments/assets/c9c93c7a-ee69-4e5a-822b-79e7f21b72db" />
+ | <img width="536" height="551" alt="image" src="https://github.com/user-attachments/assets/373232b9-89fb-42ea-9c66-29c9b0a8428a" />
+ |
 
 
