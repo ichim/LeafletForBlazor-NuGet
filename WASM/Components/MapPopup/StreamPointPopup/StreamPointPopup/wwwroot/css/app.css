@@ -86,3 +86,21 @@ code {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+.popup-cheerful {
+    --popup-background-color: white;
+    --popup-header-background: orange;
+    --popup-border-color: #FFD700;
+    --popup-border-radius: 8px;
+    --popup-header-text-color: white;
+    --popup-content-text-color: #2F4F4F;
+}
+
+.popup-coordinates {
+    --popup-background-color: #FFFFE0;
+    --popup-header-background: #008080;
+    --popup-border-color: #FFD700;
+    --popup-border-radius: 8px;
+    --popup-header-text-color: #F0FFF0;
+    --popup-content-text-color: #2F4F4F;
+}

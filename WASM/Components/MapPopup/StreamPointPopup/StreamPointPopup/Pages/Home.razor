@@ -8,51 +8,62 @@
      height="calc(100vh - 1rem)"
      width="calc(100vw - 2rem)"
      OnAfterMapLoaded="@OnAfterMapLoaded">
-    <MapPopup @ref="mapPopup">
+    <MapPopup @ref="mapPopup" className="@mapPopupClass">
         <HeaderContent>
             @if (points.Count != 0)
             {
-                <h3>Attributes</h3>
+                <h6 style="margin-top:0px;margin-bottom:0px;">Attributes</h6>
             }
             else
             {
-                <h3>Coordinates</h3>
+                <h6 style="margin-top:0px;margin-bottom:0px;">Coordinates</h6>
             }
 
         </HeaderContent>
         <PopupContent>
             @{
                 @if (points.Count != 0)
-                    foreach (var point in points)
-                    {
-                        <label style="font-weight:800;color:darkblue">@point.type</label>
-            
-                        <br>
-                        @if (@point.value is string)
+                {
+                    <div class="d-flex flex-wrap gap-3">
+                        @foreach (var point in points)
                         {
-                            <label>@point.value</label>
-                            <br />
+                            <label style="font-weight:800;color:darkblue">@point.type</label>
+                
+                           
+                                <div class="card-body">
+                                    @if (point.value is string)
+                                    {
+                                        <p class="card-text mb-0">@point.value</p>
+                                    }
+                                    else if (point.value is DroneTrak dtProps)
+                                    {
+                                    <table class="table table-sm" style="background-color:#FFFFE0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="fw-semibold">Fuel:</td>
+                                                    <td>@dtProps?.fuel</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-semibold">Altitude:</td>
+                                                    <td>@dtProps?.altitude</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-semibold">Battery:</td>
+                                                    <td>@dtProps?.battery</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-semibold">Battery level:</td>
+                                                    <td>@dtProps?.battery %</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    }
+                                </div>
+                            
                         }
-                        else if (point.value is DroneTrak)
-                        {
-                            var dtProps = point.value as DroneTrak;
-                            <label>Fuel: </label>
-                            <label>@dtProps?.fuel</label>
+                    </div>
+                }
 
-                            <br />
-                            <label>Altitue: </label>
-                            <label>@dtProps?.altitude</label>
-
-                            <br />
-                            <label>Battery: </label>
-                            <label>@dtProps?.battery</label>
-                            <br />
-                            <label>Battery level: </label>
-                            <label>@dtProps?.battery</label>
-                            <br />
-                        }
-
-                    }
                 else
                 {
                     <label>Latitude: </label>
@@ -74,6 +85,7 @@
     List<StreamPoint> points = new List<StreamPoint>();
 
     private MapPopup? mapPopup;
+    private string mapPopupClass = "popup-cheerful";
     LoadParameters loadParameters = new LoadParameters()
     {
         location = new Location()                                             
@@ -90,12 +102,21 @@
 
         if (map?.Geometric?.Points != null)
         {
+            
             map.Geometric.Points.OnClick += (sender, args) =>
             {
                 points = args.points;
                 mapPopup?.Show(args, 200, 200);
                 lat = Math.Round(args.geoid.xy[0], 4);
                 lng = Math.Round(args.geoid.xy[1], 4);
+                if (points.Count == 0)
+                {
+                    mapPopupClass = "popup-coordinates";
+                }
+                else
+                {
+                    mapPopupClass = "popup-cheerful";
+                }
             };
         }
         await map.Geometric.Points.Add(new StreamPoints().points);

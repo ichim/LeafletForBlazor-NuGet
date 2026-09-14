@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\StreamPointPopup\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FC318234-3211-49C5-B00F-F6F386658397}|StreamPointPopup\\StreamPointPopup.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\streampointpopup\\streampointpopup\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FC318234-3211-49C5-B00F-F6F386658397}|StreamPointPopup\\StreamPointPopup.csproj|solutionrelative:streampointpopup\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC318234-3211-49C5-B00F-F6F386658397}|StreamPointPopup\\StreamPointPopup.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\streampointpopup\\streampointpopup\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FC318234-3211-49C5-B00F-F6F386658397}|StreamPointPopup\\StreamPointPopup.csproj|solutionrelative:streampointpopup\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC318234-3211-49C5-B00F-F6F386658397}|StreamPointPopup\\StreamPointPopup.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\streampointpopup\\streampointpopup\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC318234-3211-49C5-B00F-F6F386658397}|StreamPointPopup\\StreamPointPopup.csproj|solutionrelative:streampointpopup\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC318234-3211-49C5-B00F-F6F386658397}|StreamPointPopup\\StreamPointPopup.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\streampointpopup\\streampointpopup\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,19 +31,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "app.css",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\StreamPointPopup\\StreamPointPopup\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "StreamPointPopup\\wwwroot\\css\\app.css",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\StreamPointPopup\\StreamPointPopup\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "StreamPointPopup\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAQwFoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-14T08:11:50.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\StreamPointPopup\\StreamPointPopup\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "StreamPointPopup\\wwwroot\\index.html",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\StreamPointPopup\\StreamPointPopup\\wwwroot\\index.html",
+              "RelativeToolTip": "StreamPointPopup\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-09-14T05:26:38.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Home.razor",
               "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\StreamPointPopup\\StreamPointPopup\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "StreamPointPopup\\Pages\\Home.razor",
               "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\StreamPointPopup\\StreamPointPopup\\Pages\\Home.razor",
               "RelativeToolTip": "StreamPointPopup\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAiwCcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-10T06:42:50.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "_Imports.razor",
               "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\StreamPointPopup\\StreamPointPopup\\_Imports.razor",
               "RelativeDocumentMoniker": "StreamPointPopup\\_Imports.razor",
