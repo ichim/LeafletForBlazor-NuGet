@@ -16,3 +16,10 @@ Where:
            public Coordinates geoid { get; set; }
            public Coordinates screen { get; set; }
         }
+
+# ToleranceSlopeForClickSelection
+
+Represents the slope of the relationship (slope * x + intercept) used to calculate the click search tolerance (degrees):
+
+            map.Geometric.Points.ToleranceSlopeForClickSelection = 0.0001;
+
