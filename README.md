@@ -170,6 +170,7 @@ The ``@map.Geometric.From.Files`` class allows you to load data from files store
 |-----------|-------|
 | The component displays a [Legend](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components#legend) on the map, allowing users to quickly understand the meaning of the symbols and colors applied to data layers. In the current version, the legend is only available for GeoJSON files and StreamPoint Collection. | ![Legend](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/Legend.png) |
 | Contextual display driven by data source with [MapPopup](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Components/MapPopup/README.md#mappopup) | ![MapPopup](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/MapPopupOliveTable.png) |
+| The [Toolbar](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components/Toolbar#toolbar) it is a map component that allows for expansion with various buttons and even tools.  | ![Toolbar](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/Toolbar.png) |
 
 
  _____________
