@@ -1,0 +1,52 @@
+﻿@page "/"
+
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh)"
+     width="calc(100vw)"
+ >
+        <Toolbar  left="48px" top="12px">
+        <button @onclick="@ZoomIn" title="Zoom in">＋</button>
+        <button @onclick="@ZoomOut" title="Zoom out">－</button>
+        <button @onclick="@ToggleLayer" title="Straturi">🗺</button>
+     
+    </Toolbar>
+ 
+</Map>
+
+@code {
+    Map? map = null;
+ 
+ 
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
+            },
+
+        zoomLevel = 10
+    };
+    private async Task ZoomIn()
+    {
+        if (map?.View != null)
+        {
+            var currentZoom = await map.View.getZoomLevelAsync();
+            map.View.SetZoomLevel(currentZoom + 1); 
+        }
+    }
+
+    private async Task ZoomOut()
+    {
+        if (map?.View != null)
+        {
+            var currentZoom = await map.View.getZoomLevelAsync();
+            map.View.SetZoomLevel(currentZoom - 1); 
+        }
+    }
+    private void ToggleLayer()
+    {
+
+    }
+}
