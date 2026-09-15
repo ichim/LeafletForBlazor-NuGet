@@ -34,3 +34,8 @@ The component is placed as a child element of the <Map> component:
 # MapPopup
 
 [more about MapPopup](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Components/MapPopup/README.md#mappopup)
+
+# Toolbar
+
+[more about Toolbar](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components/Toolbar#toolbar)
+
