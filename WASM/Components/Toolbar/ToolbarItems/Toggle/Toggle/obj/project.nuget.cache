@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IciBLShxt/E=",
+  "dgSpecHash": "oPYn+scZLAQ=",
   "success": true,
-  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Dashboard\\SigmaDroneChart\\SigmaDroneChart\\SigmaDroneChart.csproj",
+  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\Toolbar\\ToolbarItems\\Toggle\\Toggle\\Toggle.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.8.2\\leafletforblazor.4.0.8.2.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.11\\microsoft.aspnetcore.authorization.9.0.11.nupkg.sha512",
