@@ -18,3 +18,15 @@ A toggle is a check/uncheck component that can be hosted in a toolbar.
             isToggled = value;
         }  
     }
+
+A different kind of implementation:
+
+    <Map height="calc(100vh)" width="calc(100vw)">
+        <Toolbar left="48px" top="12px">
+            <Toggle @bind-Toggled="isToggled" />
+        </Toolbar>
+    </Map>
+    @code {
+      
+        private bool isToggled;
+    }
