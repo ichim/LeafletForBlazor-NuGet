@@ -1,0 +1,28 @@
+﻿@page "/"
+
+<Map loadParameters="@loadParameters" height="calc(100vh)" width="calc(100vw)">
+    <Toolbar left="48px" top="12px">
+        <Toggle @bind-Toggled="isToggled" />
+        <Toggle className="toggle-cheerful" Toggled="!isToggled" ToggledChanged="OnToggleChanged" />
+    </Toolbar>
+</Map>
+
+@code {
+  
+    private bool isToggled;
+    private void OnToggleChanged(bool value)
+    {
+        isToggled = value;
+    }
+   
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
+        },
+        zoomLevel = 10
+    };
+    
+}
