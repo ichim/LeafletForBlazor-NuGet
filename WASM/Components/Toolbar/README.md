@@ -21,3 +21,8 @@ Adding a button to the toolbar:
         {
         }
     }
+# Toolbar Items
+
+These are components that can be hosted by the Toolbar alongside HTML components.
+
+[more about Toolbar items](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Components/Toolbar/ToolbarItems/README.md#toolbar-items)
