@@ -3,6 +3,8 @@
 
 These are components that can be hosted by the Toolbar alongside HTML components.
 
+![Toggle](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/ToolbarButtons.png)
+
 ## Toggle
 
 A toggle is a check/uncheck component that can be hosted in a toolbar.
