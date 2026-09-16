@@ -33,4 +33,13 @@ The component is placed as a child element of the <Map> component:
 
 # MapPopup
 
+Contextual display driven by data source with MapPopup.
+
 [more about MapPopup](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Components/MapPopup/README.md#mappopup)
+
+# Toolbar
+
+The Toolbar it is a map component that allows for expansion with various buttons and even tools.
+
+[more about Toolbar](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components/Toolbar#toolbar)
+
