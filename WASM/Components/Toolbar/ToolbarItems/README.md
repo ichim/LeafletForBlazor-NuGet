@@ -1,6 +1,8 @@
 
 # Toolbar Items
 
+These are components that can be hosted by the Toolbar alongside HTML components.
+
 ## Toggle
 
 A toggle is a check/uncheck component that can be hosted in a toolbar.
