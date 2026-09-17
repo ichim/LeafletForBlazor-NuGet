@@ -27,5 +27,5 @@ Represents the slope of the relationship (slope * x + intercept) used to calcula
 
 You can use the MapPopup component to display data for a StreamPoint you have clicked on.
 
-
+[more about MapPopup and OnClick event](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Components/MapPopup/StreamPointPopup/README.md#-mappopup-component-and-onclick-event)
 
