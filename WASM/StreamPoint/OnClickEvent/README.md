@@ -17,9 +17,15 @@ Where:
            public Coordinates screen { get; set; }
         }
 
-# ToleranceSlopeForClickSelection
+# ⚖️ ToleranceSlopeForClickSelection
 
 Represents the slope of the relationship (slope * x + intercept) used to calculate the click search tolerance (degrees):
 
             map.Geometric.Points.ToleranceSlopeForClickSelection = 0.0001;
+
+# 🧾 MapPopup component and OnClick event
+
+You can use the MapPopup component to display data for a StreamPoint you have clicked on.
+
+[more about MapPopup and OnClick event](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Components/MapPopup/StreamPointPopup/README.md#-mappopup-component-and-onclick-event)
 
