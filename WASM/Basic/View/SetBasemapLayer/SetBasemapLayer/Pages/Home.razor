@@ -1,0 +1,77 @@
+﻿@page "/"
+<button class="btn btn-primary" @onclick="changeBaseMap">Topo</button>
+<button class="btn btn-primary" @onclick="changeBaseMap2">EsriImagery</button>
+<button class="btn btn-primary" @onclick="changeBaseMap4">DarkMap</button>
+<button class="btn btn-primary" @onclick="changeBaseMap6">OpenStreetMap</button>
+<Map @ref=map loadParameters="@loadParameters" height="calc(100vh - 4rem)" width="calc(100vw - 2rem)"/>
+
+@code {
+    Map? map;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
+        },
+
+        zoomLevel = 10,
+        mapControls = new MapControls()
+        {
+            layerList = new LayerList()
+            {
+                position = Position.topRight
+            },
+
+        },
+        basemapLayers = new List<BasemapLayer>()
+        {
+            new BasemapLayer()
+            {
+                 title = "Topo",
+                url = "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
+            },
+    new BasemapLayer()
+            {
+                 title = "EsriImagery",
+                url = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+            },
+  new BasemapLayer()
+            {
+                 title = "DarkMap",
+                url = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+            },
+        }
+    };
+
+    private void changeBaseMap()
+    {
+        if(map !=null)
+        {
+            map.View.SetBasemapLayer("Topo");
+        }
+    }
+    private void changeBaseMap2()
+    {
+        if (map != null)
+        {
+            map.View.SetBasemapLayer("EsriImagery");
+        }
+    }
+    private void changeBaseMap4()
+    {
+        if (map != null)
+        {
+            map.View.SetBasemapLayer("DarkMap");
+        }
+    }
+    private void changeBaseMap6()
+    {
+        if (map != null)
+        {
+            map.View.SetBasemapLayer("OpenStreetMap");
+        }
+    }
+
+}
