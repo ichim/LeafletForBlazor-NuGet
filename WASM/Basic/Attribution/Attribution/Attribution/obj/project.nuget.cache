@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "COQ2/3M4IMw=",
+  "dgSpecHash": "WgeStgi1VgE=",
   "success": true,
-  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\LoadParameters\\LoadParameters\\LoadParameters.csproj",
+  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Basic\\Attribution\\Attribution\\Attribution\\Attribution.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.0.8.6\\leafletforblazor.4.0.8.6.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.11\\microsoft.aspnetcore.authorization.9.0.11.nupkg.sha512",
