@@ -50,3 +50,15 @@ This method allows for the removal of the attribute referencing the map technolo
                 }
             }
 
+## SetPrefix
+
+Allows adding a prefix to attributionControl:
+
+            private async Task setPrefix()
+            {
+                if (map != null)
+                {
+                    await map.Attribution.SetPrefix("<img style='height: 14px;weight:14px;' src = 'http://localhost:5234/icons/leaflet.png'>LeafletForBlazor</img>");
+                }
+            }
+        
