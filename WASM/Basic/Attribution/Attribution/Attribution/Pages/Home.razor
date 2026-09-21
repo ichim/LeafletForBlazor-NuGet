@@ -1,0 +1,60 @@
+﻿@page "/"
+<button @onclick="removeAttribution">Remove Map Attribution Control</button>
+<button @onclick="addAttribution">Add Map Attribution</button>
+<button @onclick="removeAttributionItem">Remove Map Attribution Item</button>
+<button @onclick="removePrefix">Remove Prefix Attribution</button>
+<button @onclick="setPrefix">Set Prefix</button>
+<Map @ref=map loadParameters="@loadParameters" height="calc(100vh - 4rem)" width="calc(100vw - 2rem)">
+    
+</Map>
+
+@code {
+    Map? map;
+    LoadParameters loadParameters = new LoadParameters()
+    {
+
+        location = new Location()                                               //Center of the Map View
+        {
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
+        },
+
+        zoomLevel = 10,
+        showAttribution = true                                                 //show the attribution control on the map. For false value, the attribution control will be hidden.
+    };
+    private async Task removeAttribution()
+    {
+        if (map != null)
+        {
+            await map.Attribution.Remove();
+        }
+    }
+    private async Task addAttribution()
+    {
+        if (map != null)
+        {
+            await map.Attribution.Add("MyMap");
+        }
+    }
+    private async Task removeAttributionItem()
+    {
+        if (map != null)
+        {
+            await map.Attribution.Remove("MyMap");
+        }
+    }
+    private async Task removePrefix()
+    {
+        if (map != null)
+        {
+            await map.Attribution.RemovePrefix();
+        }
+    }
+    private async Task setPrefix()
+    {
+        if (map != null)
+        {
+            await map.Attribution.SetPrefix("<img style='height: 14px;weight:14px;' src = 'http://localhost:5234/icons/leaflet.png'>LeafletForBlazor</img>");
+        }
+    }
+}
