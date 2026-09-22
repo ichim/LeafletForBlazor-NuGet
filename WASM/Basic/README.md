@@ -27,10 +27,11 @@ The loadParameter parameter of the Map component allows you to configure the map
                 unitOfScaleBar = UnitOfScaleBar.metric
             },
 
-- Attribution. Management of map attributes:
+- ℹ️ Attribution. Management of map attributes:
 
       LoadParameters loadParameters = new LoadParameters()
       {
           showAttribution = false,    //true implicit. if set to false, attributionControl will not be displayed
       }
 
+[more about Attribution](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution)
