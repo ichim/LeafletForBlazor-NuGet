@@ -2,6 +2,9 @@
 
 The Attribution class provides the methods needed to interact with the map's attributionControl.
 
+<img width="605" height="77" alt="image" src="https://github.com/user-attachments/assets/7906f4a9-abfc-4c94-a2f6-6b0df4bc2bf5" />
+
+
 ## Remove
 
 The Remove method has two forms:
