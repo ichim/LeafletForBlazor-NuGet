@@ -43,6 +43,8 @@ Following specific development iterations, invokes were eliminated, LINQ structu
 
 A design pattern that allows code to be written in a readable way, similar to an English sentence. 
 
+![Diagram](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/diagrams/LeafletForBlazor.png)
+
 ## Access to map classes
 
 It is designed through a chain of already instantiated classes (objects) with a hierarchical and linguistic structure:
