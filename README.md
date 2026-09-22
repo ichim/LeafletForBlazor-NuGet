@@ -46,16 +46,9 @@ Using Visual Studio _interface_:
 
 To do this, add the following directives to the **_Imports.razor** file
 
-		@using LeafletForBlazor
-		@using static LeafletForBlazor.Map
-
-
-3. Configuring the Blazor page (which will host the Map control):
-
-The `@using` directive allows selecting the API for generating the map:
-
-	@using static LeafletForBlazor.techs.maps.Leaflet
-
+		@using LeafletForBlazor                             //working with package classes
+		@using static LeafletForBlazor.Map                  //working with Map class
+        @using static LeafletForBlazor.techs.maps.Leaflet   //working with Leaflet API
 
 
 ## 🗺️ Add Map
@@ -63,9 +56,6 @@ The `@using` directive allows selecting the API for generating the map:
 Adding the map to the blazor page:
 
 	<Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)"/>
-
-
-
 
 
 [More information](https://ichim.github.io/MapsForBlazor/)
@@ -88,16 +78,6 @@ The loadParameter parameter of the Map component allows you to configure the map
 					
 		zoomLevel = 12,
 
-- 🎛️ Configuring ``map controls``
-
-        mapControls = new MapControls()
-        {
-            layerList = new LayerList() { position = Position.topRight },
-            scaleBar = new ScaleBar()
-            {
-                position = Position.bottomRight,
-                unitOfScaleBar = UnitOfScaleBar.metric
-            },
 
 [more about Map Configuration - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic#-map-configuration)
 
