@@ -200,7 +200,15 @@ Example code:
                              }
 
                         });
-# 🎨 Appearance
+## 🛠️ Settings
+
+Here you can configure how the collection of points displayed on the map behaves.
+
+    map.Geometric.Points.settings = new LeafletForBlazor.techs.core.Geometry.Points.Settings(){};
+
+
+
+## 🎨 Appearance
 
 Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
 
