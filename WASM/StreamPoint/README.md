@@ -218,3 +218,9 @@ Appearance is a method that accepts Expression<Func<T, bool>> predicates and all
 [more about Appearance](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/Appearance/README.md#-appearance)
 
 
+## ⚡StreamPoint collection Events
+
+StreamPoint Collection Events.
+
+[more about events](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/OnClickEvent/README.md#-streampoint-collection-events)
+
