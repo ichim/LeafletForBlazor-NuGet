@@ -100,33 +100,16 @@ View is the class that allows you to control the visible area of ​​the map.
 
 `StreamPoint` collection provides *real-time map synchronization* - any property change (coordinates, appearance, timestamp) instantly updates the map visualization. Objects are cached for performance but remain fully dynamic.
 
-The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides operating functionalities with a predefined but hierarchically extensible root data structure.
+The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides you methods for handling predefined but hierarchically extensible root data structure:
+1. [Add()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#add), [Remove()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#remove), [Update()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#update) for collection handling; 
+1. [Appearance()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint/Appearance#-appearance) for point the aspect in the map;
+1. StreamPoint collection [events](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/OnClickEvent/README.md#-streampoint-collection-events);
+
 
 [more about StreamCollection - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#-streampoint-collection)
 
 [more about StreamCollection - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-streampoint)
 
-## 🎨 Appearance
-
-Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
-
-    await map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...);
-
-[more about Appearance - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint/Appearance#-appearance)
-
-[more about Appearance - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/MAUI%20Blazor/Appearance/README.md#-appearance)
-
-## 🛠️ Settings
-
-Here you can configure how the collection of points displayed on the map behaves.
-
-    map.Geometric.Points.settings = new LeafletForBlazor.techs.core.Geometry.Points.Settings(){};
-
-## ⚡StreamPoint collection Events
-
-StreamPoint Collection Events.
-
-[more about events](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/OnClickEvent/README.md#-streampoint-collection-events)
 
 # 📁 Working with Files
 
