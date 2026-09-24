@@ -118,6 +118,7 @@ The ``@map.Geometric.From.Files`` class allows you to load data from files store
 [more about working with files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files#files)
 
 
+
 # 📊 Dashboard
 
 ``StreamPoint`` collection can be used to monitor moving targets: vehicles, boats, aircraft, even fleets of vehicles, drones and so one. Both the map and the StreamPoint collection can be configured to create a Map Dashboard.
@@ -125,8 +126,25 @@ The ``@map.Geometric.From.Files`` class allows you to load data from files store
 
 [more about Map Dashboard](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Dashboard#-working-with-map-dashboard)
 
+# 🔌 Map plugins
+
+The Map component provides the MapPlugins slot (Plugin Framework), allowing you to extend LeafletForBlazor with additional Leaflet functionality. It enables the development of features in JavaScript and grants you access to the map (the Leaflet map instance) and the L object.
+
+        <Map>
+            <MapPlugins>
+            </MapPlugins>
+        </Map>
+
 
 # 📦 Map Components
+
+The Map component provides the MapComponents slot, allowing you to extend the LeafletForBlazor map with graphical interface elements.
+
+        <Map>
+            <MapComponents>
+            </MapComponents>
+        </Map>
+
 
 
 | Description | Image |
