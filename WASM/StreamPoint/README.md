@@ -200,7 +200,15 @@ Example code:
                              }
 
                         });
-# 🎨 Appearance
+## 🛠️ Settings
+
+Here you can configure how the collection of points displayed on the map behaves.
+
+    map.Geometric.Points.settings = new LeafletForBlazor.techs.core.Geometry.Points.Settings(){};
+
+
+
+## 🎨 Appearance
 
 Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
 
@@ -209,4 +217,10 @@ Appearance is a method that accepts Expression<Func<T, bool>> predicates and all
 
 [more about Appearance](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/Appearance/README.md#-appearance)
 
+
+## ⚡StreamPoint collection Events
+
+StreamPoint Collection Events.
+
+[more about events](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/OnClickEvent/README.md#-streampoint-collection-events)
 

@@ -46,16 +46,9 @@ Using Visual Studio _interface_:
 
 To do this, add the following directives to the **_Imports.razor** file
 
-		@using LeafletForBlazor
-		@using static LeafletForBlazor.Map
-
-
-3. Configuring the Blazor page (which will host the Map control):
-
-The `@using` directive allows selecting the API for generating the map:
-
-	@using static LeafletForBlazor.techs.maps.Leaflet
-
+		@using LeafletForBlazor                             //working with package classes
+		@using static LeafletForBlazor.Map                  //working with Map class
+        @using static LeafletForBlazor.techs.maps.Leaflet   //working with Leaflet API
 
 
 ## 🗺️ Add Map
@@ -63,9 +56,6 @@ The `@using` directive allows selecting the API for generating the map:
 Adding the map to the blazor page:
 
 	<Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)"/>
-
-
-
 
 
 [More information](https://ichim.github.io/MapsForBlazor/)
@@ -88,16 +78,6 @@ The loadParameter parameter of the Map component allows you to configure the map
 					
 		zoomLevel = 12,
 
-- 🎛️ Configuring ``map controls``
-
-        mapControls = new MapControls()
-        {
-            layerList = new LayerList() { position = Position.topRight },
-            scaleBar = new ScaleBar()
-            {
-                position = Position.bottomRight,
-                unitOfScaleBar = UnitOfScaleBar.metric
-            },
 
 [more about Map Configuration - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic#-map-configuration)
 
@@ -120,39 +100,23 @@ View is the class that allows you to control the visible area of ​​the map.
 
 `StreamPoint` collection provides *real-time map synchronization* - any property change (coordinates, appearance, timestamp) instantly updates the map visualization. Objects are cached for performance but remain fully dynamic.
 
-The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides operating functionalities with a predefined but hierarchically extensible root data structure.
+The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides you methods for handling predefined but hierarchically extensible root data structure:
+1. [Add()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#add), [Remove()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#remove), [Update()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#update) for collection handling; 
+1. [Appearance()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint/Appearance#-appearance) for point the aspect in the map;
+1. StreamPoint collection [events](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/OnClickEvent/README.md#-streampoint-collection-events);
+
 
 [more about StreamCollection - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#-streampoint-collection)
 
 [more about StreamCollection - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-streampoint)
 
-## 🎨 Appearance
-
-Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
-
-    await map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...);
-
-[more about Appearance - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint/Appearance#-appearance)
-
-[more about Appearance - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/MAUI%20Blazor/Appearance/README.md#-appearance)
-
-## 🛠️ Settings
-
-Here you can configure how the collection of points displayed on the map behaves.
-
-    map.Geometric.Points.settings = new LeafletForBlazor.techs.core.Geometry.Points.Settings(){};
-
-## ⚡StreamPoint collection Events
-
-StreamPoint Collection Events.
-
-[more about events](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/OnClickEvent/README.md#-streampoint-collection-events)
 
 # 📁 Working with Files
 
 The ``@map.Geometric.From.Files`` class allows you to load data from files stored on a web service host (_https://..._). Full `RFC 7946` Feature Support.
 
 [more about working with files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files#files)
+
 
 
 # 📊 Dashboard
@@ -162,8 +126,25 @@ The ``@map.Geometric.From.Files`` class allows you to load data from files store
 
 [more about Map Dashboard](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Dashboard#-working-with-map-dashboard)
 
+# 🔌 Map plugins
+
+The Map component provides the MapPlugins slot (Plugin Framework), allowing you to extend LeafletForBlazor with additional Leaflet functionality. It enables the development of features in JavaScript and grants you access to the map (the Leaflet map instance) and the L object.
+
+        <Map>
+            <MapPlugins>
+            </MapPlugins>
+        </Map>
+
 
 # 📦 Map Components
+
+The Map component provides the MapComponents slot, allowing you to extend the LeafletForBlazor map with graphical interface elements.
+
+        <Map>
+            <MapComponents>
+            </MapComponents>
+        </Map>
+
 
 
 | Description | Image |
