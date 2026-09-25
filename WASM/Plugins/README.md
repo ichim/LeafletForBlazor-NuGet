@@ -7,3 +7,12 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
             <MapPlugins>
             </MapPlugins>
         </Map>
+
+# Hello Plugin
+
+The minimal structure of a MapPlugins-type component is as follows:
+
+    [Parameter] public object? Map { get; set; }
+    [Parameter] public object? L { get; set; }
+
+The Blazor component must have the mandatory parameters `Map` and `L` (to enable the implementation of functionality).
