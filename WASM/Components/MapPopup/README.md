@@ -5,18 +5,20 @@ Contextual display driven by data source with MapPopup.
 
                   <Map
                        height="calc(100vh - 1rem)"
-                       width="calc(100vw - 2rem)"
-                      <MapPopup @ref="mapPopup">
-                          <HeaderContent>
-                                  <h3>Attributes</h3>
-                  
-                          </HeaderContent>
-                          <PopupContent>
-                              @{
-                                 //Content of popup
-                              }
-                          </PopupContent>
-                      </MapPopup>
+                       width="calc(100vw - 2rem)">
+                      <MapComponents>
+                          <MapPopup @ref="mapPopup">
+                              <HeaderContent>
+                                      <h3>Attributes</h3>
+                      
+                              </HeaderContent>
+                              <PopupContent>
+                                  @{
+                                     //Content of popup
+                                  }
+                              </PopupContent>
+                          </MapPopup>
+                      </MapComponents>
                   </Map>
 
 | Sample 1 | Sample 2 | Sample 3 |
