@@ -1,10 +1,12 @@
 ﻿@page "/"
 
 <Map loadParameters="@loadParameters" height="calc(100vh)" width="calc(100vw)">
-    <Toolbar left="48px" top="12px">
-        <Toggle @bind-Toggled="isToggled" />
-        <Toggle className="toggle-cheerful" Toggled="!isToggled" ToggledChanged="OnToggleChanged" />
-    </Toolbar>
+    <MapComponents>
+        <Toolbar left="48px" top="12px">
+            <Toggle @bind-Toggled="isToggled" />
+            <Toggle className="toggle-cheerful" Toggled="!isToggled" ToggledChanged="OnToggleChanged" />
+        </Toolbar>
+    </MapComponents>
 </Map>
 
 @code {

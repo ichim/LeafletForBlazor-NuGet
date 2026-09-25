@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Toggle\\",
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\Toolbar\\ToolbarItems\\Toggle\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{902A1157-BCF9-475C-947B-E4C170278A79}|Toggle\\Toggle.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\toggle\\toggle\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{902A1157-BCF9-475C-947B-E4C170278A79}|Toggle\\Toggle.csproj|solutionrelative:toggle\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{902A1157-BCF9-475C-947B-E4C170278A79}|Toggle\\Toggle.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\toggle\\toggle\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{902A1157-BCF9-475C-947B-E4C170278A79}|Toggle\\Toggle.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\wasm\\components\\toolbar\\toolbaritems\\toggle\\toggle\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{902A1157-BCF9-475C-947B-E4C170278A79}|Toggle\\Toggle.csproj|solutionrelative:toggle\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{902A1157-BCF9-475C-947B-E4C170278A79}|Toggle\\Toggle.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\toggle\\toggle\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{902A1157-BCF9-475C-947B-E4C170278A79}|Toggle\\Toggle.csproj|solutionrelative:toggle\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "app.css",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Toggle\\Toggle\\wwwroot\\css\\app.css",
-              "RelativeDocumentMoniker": "Toggle\\wwwroot\\css\\app.css",
-              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Toggle\\Toggle\\wwwroot\\css\\app.css",
-              "RelativeToolTip": "Toggle\\wwwroot\\css\\app.css",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-09-16T09:50:21.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Home.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Toggle\\Toggle\\Pages\\Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\Toolbar\\ToolbarItems\\Toggle\\Toggle\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Toggle\\Pages\\Home.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Toggle\\Toggle\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\Toolbar\\ToolbarItems\\Toggle\\Toggle\\Pages\\Home.razor",
               "RelativeToolTip": "Toggle\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-16T09:47:07.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Toggle\\Toggle\\_Imports.razor",
-              "RelativeDocumentMoniker": "Toggle\\_Imports.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Toggle\\Toggle\\_Imports.razor",
-              "RelativeToolTip": "Toggle\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-16T09:46:35.45Z",
               "EditorCaption": ""
             }
           ]
