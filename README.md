@@ -135,6 +135,7 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
             </MapPlugins>
         </Map>
 
+[more about MapPlugins](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins#-map-plugins)
 
 # 📦 Map Components
 
