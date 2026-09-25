@@ -43,7 +43,7 @@ Following specific development iterations, invokes were eliminated, LINQ structu
 
 A design pattern that allows code to be written in a readable way, similar to an English sentence. 
 
-![Diagram](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/diagrams/LeafletForBlazor.png)
+
 
 ## Access to map classes
 
@@ -53,6 +53,18 @@ For example, access to the map's point collection:
 
 
 	@map.Geometric.Points (.Add, .Remove, .Appearance etc)
+
+## API Struncture
+
+| Classes Structure | Blazor Slots Structure |
+|----|----|
+| ![Diagram](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/diagrams/LeafletForBlazor.png) | <img width="548" height="217" alt="image" src="https://github.com/user-attachments/assets/6dc844a9-e878-4fb3-b236-085188a6f3f3" />
+ |
+
+
+
+
+
 
 ## Working with files
 
