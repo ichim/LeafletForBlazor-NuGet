@@ -8,75 +8,76 @@
      height="calc(100vh - 1rem)"
      width="calc(100vw - 2rem)"
      OnAfterMapLoaded="@OnAfterMapLoaded">
-    <MapPopup @ref="mapPopup" className="@mapPopupClass">
-        <HeaderContent>
-            @if (points.Count != 0)
-            {
-                <h6 style="margin-top:0px;margin-bottom:0px;">Attributes</h6>
-            }
-            else
-            {
-                <h6 style="margin-top:0px;margin-bottom:0px;">Coordinates</h6>
-            }
-
-        </HeaderContent>
-        <PopupContent>
-            @{
+     <MapComponents>
+        <MapPopup @ref="mapPopup" className="@mapPopupClass">
+            <HeaderContent>
                 @if (points.Count != 0)
                 {
-                    <div class="d-flex flex-wrap gap-3">
-                        @foreach (var point in points)
-                        {
-                            <label style="font-weight:800;color:darkblue">@point.type</label>
-                
-                           
-                                <div class="card-body">
-                                    @if (point.value is string)
-                                    {
-                                        <p class="card-text mb-0">@point.value</p>
-                                    }
-                                    else if (point.value is DroneTrak dtProps)
-                                    {
-                                    <table class="table table-sm" style="background-color:#FFFFE0">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="fw-semibold">Fuel:</td>
-                                                    <td>@dtProps?.fuel</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-semibold">Altitude:</td>
-                                                    <td>@dtProps?.altitude</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-semibold">Battery:</td>
-                                                    <td>@dtProps?.battery</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-semibold">Battery level:</td>
-                                                    <td>@dtProps?.battery %</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    }
-                                </div>
-                            
-                        }
-                    </div>
+                    <h6 style="margin-top:0px;margin-bottom:0px;">Attributes</h6>
                 }
-
                 else
                 {
-                    <label>Latitude: </label>
-                    <label>@lat</label>
-
-                    <br />
-                    <label>Longitude: </label>
-                    <label>@lng</label>
+                    <h6 style="margin-top:0px;margin-bottom:0px;">Coordinates</h6>
                 }
-            }
-        </PopupContent>
 
-    </MapPopup>
+            </HeaderContent>
+            <PopupContent>
+                @{
+                    @if (points.Count != 0)
+                    {
+                        <div class="d-flex flex-wrap gap-3">
+                            @foreach (var point in points)
+                            {
+                                <label style="font-weight:800;color:darkblue">@point.type</label>
+                
+                           
+                                    <div class="card-body">
+                                        @if (point.value is string)
+                                        {
+                                            <p class="card-text mb-0">@point.value</p>
+                                        }
+                                        else if (point.value is DroneTrak dtProps)
+                                        {
+                                        <table class="table table-sm" style="background-color:#FFFFE0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fw-semibold">Fuel:</td>
+                                                        <td>@dtProps?.fuel</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-semibold">Altitude:</td>
+                                                        <td>@dtProps?.altitude</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-semibold">Battery:</td>
+                                                        <td>@dtProps?.battery</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-semibold">Battery level:</td>
+                                                        <td>@dtProps?.battery %</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        }
+                                    </div>
+                            
+                            }
+                        </div>
+                    }
+
+                    else
+                    {
+                        <label>Latitude: </label>
+                        <label>@lat</label>
+
+                        <br />
+                        <label>Longitude: </label>
+                        <label>@lng</label>
+                    }
+                }
+            </PopupContent>
+        </MapPopup>
+    </MapComponents>
 </Map>
 
 @code {

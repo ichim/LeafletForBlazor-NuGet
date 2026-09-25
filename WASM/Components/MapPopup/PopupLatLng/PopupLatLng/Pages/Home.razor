@@ -6,15 +6,17 @@
      height="calc(100vh - 1rem)"
      width="calc(100vw - 2rem)"
      OnAfterMapLoaded="@OnAfterMapLoaded" >
-    <MapPopup @ref="mapPopup" className="popup-cheerful">
-        <HeaderContent>
-            <h3>Titlu Informativ</h3>
-        </HeaderContent>
-         <PopupContent>
-                <label>Latitude: @lat.</label><br>
-                <label>Longitude: @lng.</label>
-         </PopupContent>
-    </MapPopup>
+     <MapComponents>
+        <MapPopup @ref="mapPopup" className="popup-cheerful">
+            <HeaderContent>
+                <h3>Titlu Informativ</h3>
+            </HeaderContent>
+             <PopupContent>
+                    <label>Latitude: @lat.</label><br>
+                    <label>Longitude: @lng.</label>
+             </PopupContent>
+        </MapPopup>
+    </MapComponents>
 </Map>
 
 @code {
