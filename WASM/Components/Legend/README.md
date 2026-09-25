@@ -35,14 +35,16 @@ The component is placed as a child element of the <Map> component:
 ### Configurable legend
 
     <Map @ref="map" height="calc(100vh - 2rem)" width="calc(100vw - 2rem)">
-        <Legend left="12px" top="80px">
-            <HeaderContent>
-                <h2>Legend</h2>  //title
-            </HeaderContent>
-            <FooterContent>
-                <label style="font-size:8px;font-style:italic;font-weight:100">You can add explanations.</label> //notes
-            </FooterContent>
-        </Legend>
+        <MapComponents>
+            <Legend left="12px" top="80px">
+                <HeaderContent>
+                    <h2>Legend</h2>  //title
+                </HeaderContent>
+                <FooterContent>
+                    <label style="font-size:8px;font-style:italic;font-weight:100">You can add explanations.</label> //notes
+                </FooterContent>
+            </Legend>
+        </MapComponents>
      </Map>
 
 ### Working with css
@@ -61,12 +63,14 @@ Create a new class in app.css:
 Configuring the created class:
 
     <Legend className="legend-cheerful" left="12px" top="80px">
-        <HeaderContent>
-            <h2 style="margin-block-start:0.20em;margin-block-end:0.20em">Legend</h2>
-        </HeaderContent>
-        <FooterContent>
-                <label style="font-size:8px;font-style:italic;font-weight:100">You can add explanations.</label>
-        </FooterContent>
+        <MapComponents>
+            <HeaderContent>
+                <h2 style="margin-block-start:0.20em;margin-block-end:0.20em">Legend</h2>
+            </HeaderContent>
+            <FooterContent>
+                    <label style="font-size:8px;font-style:italic;font-weight:100">You can add explanations.</label>
+            </FooterContent>
+        </MapComponents>
     </Legend>
 
 
