@@ -8,6 +8,8 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
             </MapPlugins>
         </Map>
 
+The MapPlagins context has two parameters: `Map` and `L`.
+
 # Hello Plugin
 
 A MapPlugins-type component requires the following minimal structure:
