@@ -3,15 +3,14 @@
 <Map @ref="map"
      loadParameters="@loadParameters"
      height="calc(100vh)"
-     width="calc(100vw)"
- >
-        <Toolbar  left="48px" top="12px">
-        <button @onclick="@ZoomIn" title="Zoom in">＋</button>
-        <button @onclick="@ZoomOut" title="Zoom out">－</button>
-        <button @onclick="@ToggleLayer" title="Straturi">🗺</button>
-     
-    </Toolbar>
- 
+     width="calc(100vw)">
+     <MapComponents>
+            <Toolbar  left="48px" top="12px">
+            <button @onclick="@ZoomIn" title="Zoom in">＋</button>
+            <button @onclick="@ZoomOut" title="Zoom out">－</button>
+            <button @onclick="@ToggleLayer" title="Straturi">🗺</button>
+        </Toolbar>
+     </MapComponents>
 </Map>
 
 @code {
