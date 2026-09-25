@@ -8,7 +8,13 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
             </MapPlugins>
         </Map>
 
-The MapPlagins context has two parameters: `Map` and `L`.
+The MapPlagins context has two parameters: `map` and `L`.
+Parameters `map` and `L` are passed to the customized component via the MapPlugins context:
+
+           <MapPlugins>
+                <CustomScript Map="@context.map" L="@context.L" />
+           </MapPlugins>
+
 
 # Hello Plugin
 
@@ -19,7 +25,7 @@ A MapPlugins-type component requires the following minimal structure:
 
 The Blazor component must declare the mandatory Map and L parameters. These parameters provide access to the map instance and the Leaflet object required to implement plugin functionality.
 
-Plugin functionality should be executed only after the component has finished rendering. At that point, the `Map` and `L` objects are available for use.
+Plugin functionality should be executed only after the component has finished rendering. At that point, the `map` and `L` objects are available for use.
 
         @inject IJSRuntime JS
         @code {
