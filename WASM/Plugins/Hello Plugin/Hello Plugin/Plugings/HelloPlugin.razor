@@ -1,0 +1,15 @@
+﻿@inject IJSRuntime JS
+
+@code {
+    [Parameter] public object? Map { get; set; }
+    [Parameter] public object? L { get; set; }
+    [Parameter] public string? Name { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("console.log", Map);
+        }
+    }
+}

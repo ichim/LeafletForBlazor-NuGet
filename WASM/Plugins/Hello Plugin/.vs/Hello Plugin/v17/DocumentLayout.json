@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Hello Plugin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86D762E8-9913-4373-88BD-2D1408A2B3C4}|Hello Plugin\\Hello Plugin.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\hello plugin\\hello plugin\\plugings\\helloplugin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86D762E8-9913-4373-88BD-2D1408A2B3C4}|Hello Plugin\\Hello Plugin.csproj|solutionrelative:hello plugin\\plugings\\helloplugin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86D762E8-9913-4373-88BD-2D1408A2B3C4}|Hello Plugin\\Hello Plugin.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\hello plugin\\hello plugin\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86D762E8-9913-4373-88BD-2D1408A2B3C4}|Hello Plugin\\Hello Plugin.csproj|solutionrelative:hello plugin\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86D762E8-9913-4373-88BD-2D1408A2B3C4}|Hello Plugin\\Hello Plugin.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\hello plugin\\hello plugin\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86D762E8-9913-4373-88BD-2D1408A2B3C4}|Hello Plugin\\Hello Plugin.csproj|solutionrelative:hello plugin\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Hello Plugin\\Hello Plugin\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Hello Plugin\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Hello Plugin\\Hello Plugin\\Pages\\Home.razor",
+              "RelativeToolTip": "Hello Plugin\\Pages\\Home.razor",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-25T05:27:59.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HelloPlugin.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Hello Plugin\\Hello Plugin\\Plugings\\HelloPlugin.razor",
+              "RelativeDocumentMoniker": "Hello Plugin\\Plugings\\HelloPlugin.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Hello Plugin\\Hello Plugin\\Plugings\\HelloPlugin.razor",
+              "RelativeToolTip": "Hello Plugin\\Plugings\\HelloPlugin.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-25T05:27:08.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Hello Plugin\\Hello Plugin\\_Imports.razor",
+              "RelativeDocumentMoniker": "Hello Plugin\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Hello Plugin\\Hello Plugin\\_Imports.razor",
+              "RelativeToolTip": "Hello Plugin\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-25T05:25:22.203Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
