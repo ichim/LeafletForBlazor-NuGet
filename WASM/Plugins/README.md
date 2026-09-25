@@ -25,6 +25,7 @@ A MapPlugins-type component requires the following minimal structure:
 
 The Blazor component must declare the mandatory Map and L parameters. These parameters provide access to the map instance and the Leaflet object required to implement plugin functionality.
 
+
 Plugin functionality should be executed only after the component has finished rendering. At that point, the `map` and `L` objects are available for use.
 
         @inject IJSRuntime JS
@@ -43,3 +44,11 @@ Plugin functionality should be executed only after the component has finished re
         }
 
 In the Hello Plugin example, the plugin functionality is intentionally minimal: it writes the Map object to the browser console after the component has rendered for the first time.
+
+Using the component in the host Blazor page:
+
+        <Map>
+           <MapPlugins>
+                <HelloPlugin Map="@context.map" Name="writeConsole" />
+           </MapPlugins>
+        </Map>
