@@ -61,6 +61,20 @@ For example, access to the map's point collection:
 | ![Diagram](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/diagrams/LeafletForBlazor.png) |  |
 
 
+Map
+├── View
+├── Controls
+│   ├── ZoomControl
+│   └── AttributionControl
+├── Layers
+│   ├── TileLayer
+│   ├── VectorLayer
+│   └── MarkerLayer
+├── Popups
+│   └── Popup
+└── Attribution
+
+
 ## Working with files
 
 Example fluent API:
