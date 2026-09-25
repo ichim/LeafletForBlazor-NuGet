@@ -58,21 +58,12 @@ For example, access to the map's point collection:
 
 | Classes Structure | Blazor Slots Structure |
 |----|----|
-| ![Diagram](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/diagrams/LeafletForBlazor.png) |  |
+| ![Diagram](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/diagrams/LeafletForBlazor.png) | <img width="548" height="217" alt="image" src="https://github.com/user-attachments/assets/6dc844a9-e878-4fb3-b236-085188a6f3f3" />
+ |
 
 
-Map
-├── View
-├── Controls
-│   ├── ZoomControl
-│   └── AttributionControl
-├── Layers
-│   ├── TileLayer
-│   ├── VectorLayer
-│   └── MarkerLayer
-├── Popups
-│   └── Popup
-└── Attribution
+
+
 
 
 ## Working with files
