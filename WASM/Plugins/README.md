@@ -57,6 +57,9 @@ Using the component in the host Blazor page:
 
 This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythasler/Leaflet.Geodesic) add-on developed by [Henry Thasler](https://github.com/henrythasler) for Leaflet.js.
 
+<img width="799" height="300" alt="image" src="https://github.com/user-attachments/assets/a82ddf86-a98b-4ae5-8b5e-236c1e1b3e4e" />
+
+
 ### About Wrapper
 
 1. The component assumes the external plugin defines L.Geodesic and follows the Leaflet layer convention (constructor accepting a coordinate array, exposing .addTo(map)).
