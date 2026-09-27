@@ -18,6 +18,7 @@
    	- [fluent API](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api), a design pattern that allows code to be written in a readable way, similar to an English sentence
 	- redusing size of the JavaScript code by removing unused code.
 	- Memory Cache
+1. [`Plugins framework`](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins) - By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor to be extended with already developed Leaflet.js add-ons.
 
 [More about Core Concept](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept)
 
@@ -134,6 +135,8 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
             <MapPlugins>
             </MapPlugins>
         </Map>
+
+By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor to be extended with already developed Leaflet.js add-ons.
 
 [more about MapPlugins](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins#-map-plugins)
 
