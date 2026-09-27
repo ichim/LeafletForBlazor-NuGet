@@ -123,3 +123,11 @@ This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythas
                                                          new { lat = _end!.Latitude, lng = _end!.Longitude }
                                                        );
             }
+
+
+## Leaflet.Fullscreen
+
+This plugin is a wrapper for the [Leaflet.Fullscreen](https://github.com/brunob/leaflet.fullscreen) plugin developed by [brunob](https://github.com/brunob) for Leaflet.js.
+
+<img width="392" height="271" alt="image" src="https://github.com/user-attachments/assets/d35ad896-f369-4909-85cf-e278adb0a0a2" />
+
