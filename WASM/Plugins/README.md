@@ -16,7 +16,7 @@ Parameters `map` and `L` are passed to the customized component via the MapPlugi
            </MapPlugins>
 
 
-# Hello Plugin
+## Hello Plugin
 
 A MapPlugins-type component requires the following minimal structure:
 
@@ -53,17 +53,17 @@ Using the component in the host Blazor page:
            </MapPlugins>
         </Map>
 
-# Leaflet.Geodesic
+## Leaflet.Geodesic
 
 This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythasler/Leaflet.Geodesic) add-on developed by [Henry Thasler](https://github.com/henrythasler) for Leaflet.js.
 
-## About Wrapper
+### About Wrapper
 
 1. The component assumes the external plugin defines L.Geodesic and follows the Leaflet layer convention (constructor accepting a coordinate array, exposing .addTo(map)).
 1. Static fields are used so the [JSInvokable] method can access per-instance state. This pattern is viable when only one instance of the component is active at a time. For multi-instance scenarios, consider passing a unique identifier or using instance-bound invocable methods via DotNetObjectReference.
 1. The script URL is loaded once per component lifecycle; subsequent renders do not re-inject the script.
 
-## Parameters
+### Parameters
 
 | Parameter | Type                  | Description                                    |
 | --------- | --------------------- | ---------------------------------------------- |
@@ -73,7 +73,7 @@ This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythas
 | `Start`   | `Coordinates?`        | Starting point of the geodesic line.           |
 | `End`     | `Coordinates?`        | Ending point of the geodesic line.             |
 
-## Execution
+### Execution
 
 1. On first render, the component captures the JS runtime, map, and coordinate references into static fields — making them available to the static [JSInvokable] callback that follows.
 
