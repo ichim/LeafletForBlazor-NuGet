@@ -3,12 +3,15 @@
 
 The Map component provides the MapPlugins slot (Plugin Framework), allowing you to extend LeafletForBlazor with additional Leaflet functionality. It enables the development of features in JavaScript and grants you access to the map (the Leaflet map instance) and the L object.
 
+By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor to be extended with already developed Leaflet.js add-ons.
+
+
         <Map>
             <MapPlugins>
             </MapPlugins>
         </Map>
 
-The MapPlagins context has two parameters: `map` and `L`.
+The MapPlugins context has two parameters: `map` and `L`.
 Parameters `map` and `L` are passed to the customized component via the MapPlugins context:
 
            <MapPlugins>
