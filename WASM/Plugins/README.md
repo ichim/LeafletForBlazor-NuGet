@@ -52,3 +52,35 @@ Using the component in the host Blazor page:
                 <HelloPlugin Map="@context.map" Name="writeConsole" />
            </MapPlugins>
         </Map>
+
+# Leaflet.Geodesic
+
+This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythasler/Leaflet.Geodesic) add-on developed by [Henry Thasler](https://github.com/henrythasler) for Leaflet.js.
+
+## About Wrapper
+
+1. The component assumes the external plugin defines L.Geodesic and follows the Leaflet layer convention (constructor accepting a coordinate array, exposing .addTo(map)).
+1. Static fields are used so the [JSInvokable] method can access per-instance state. This pattern is viable when only one instance of the component is active at a time. For multi-instance scenarios, consider passing a unique identifier or using instance-bound invocable methods via DotNetObjectReference.
+1. The script URL is loaded once per component lifecycle; subsequent renders do not re-inject the script.
+
+## Parameters
+
+| Parameter | Type                  | Description                                    |
+| --------- | --------------------- | ---------------------------------------------- |
+| `Map`     | `IJSObjectReference?` | Reference to the Leaflet map object (JS side). |
+| `L`       | `IJSObjectReference?` | Reference to the Leaflet factory (`L`).        |
+| `url`     | `string?`             | URL of the external plugin script to load.     |
+| `Start`   | `Coordinates?`        | Starting point of the geodesic line.           |
+| `End`     | `Coordinates?`        | Ending point of the geodesic line.             |
+
+## Execution
+
+1. On first render, the component captures the JS runtime, map, and coordinate references into static fields — making them available to the static [JSInvokable] callback that follows.
+
+1. Script injection — A <script> tag is created and appended to the DOM, pointing to the plugin URL. The onload handler fires a .NET static method invocation via DotNet.invokeMethodAsync, using the assembly name resolved at runtime from typeof(Program).Assembly.GetName().Name.
+
+1. OnScriptLoaded (static, JSInvokable) — Once the external script is ready:
+ - It defines window._drawGeodesic, a function that wraps new L.Geodesic([pointA, pointB]).addTo(map).
+ - It immediately invokes that function, passing the stored _map, _L, and anonymous objects representing the start and end coordinates ({ lat, lng }).
+
+
