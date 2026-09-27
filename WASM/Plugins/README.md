@@ -76,7 +76,7 @@ This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythas
 | `Start`   | `Coordinates?`        | Starting point of the geodesic line.           |
 | `End`     | `Coordinates?`        | Ending point of the geodesic line.             |
 
-### Execution
+### Creating wrapper functions
 
 1. On first render, the component captures the JS runtime, map, and coordinate references into static fields — making them available to the static [JSInvokable] callback that follows.
 
