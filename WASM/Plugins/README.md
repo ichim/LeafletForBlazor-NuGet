@@ -80,10 +80,43 @@ This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythas
 
 1. On first render, the component captures the JS runtime, map, and coordinate references into static fields — making them available to the static [JSInvokable] callback that follows.
 
+            protected override async Task OnAfterRenderAsync(bool firstRender)
+            {
+                if (firstRender)
+                {
+                    _js = JS;
+                    _map = Map;
+                    _L = L;
+                    _start = Start!;
+                    _end = End!;
+                    string? namespaceName = typeof(Program).Assembly.GetName().Name;
+                    await JS.InvokeVoidAsync("eval", $@"
+                                            const script = document.createElement('script');
+                                            script.src = '{url}';
+                                            script.onload = () => DotNet.invokeMethodAsync('{namespaceName}', 'OnScriptLoaded');
+                                            document.body.appendChild(script);
+                                           ");
+                }
+            }
+
 1. Script injection — A <script> tag is created and appended to the DOM, pointing to the plugin URL. The onload handler fires a .NET static method invocation via DotNet.invokeMethodAsync, using the assembly name resolved at runtime from typeof(Program).Assembly.GetName().Name.
 
 1. OnScriptLoaded (static, JSInvokable) — Once the external script is ready:
  - It defines window._drawGeodesic, a function that wraps new L.Geodesic([pointA, pointB]).addTo(map).
  - It immediately invokes that function, passing the stored _map, _L, and anonymous objects representing the start and end coordinates ({ lat, lng }).
 
-
+            [JSInvokable]
+            public static async Task OnScriptLoaded()
+            {
+                await _js!.InvokeVoidAsync("eval", @"
+                                                    window._drawGeodesic = function(map, L, pointA, pointB) {
+                                                        new L.Geodesic([pointA, pointB]).addTo(map);
+                                                    };
+                                                    ");
+                await _js!.InvokeVoidAsync("_drawGeodesic",
+                                                         _map,
+                                                         _L,
+                                                         new { lat = _start!.Latitude, lng = _start!.Longitude },
+                                                         new { lat = _end!.Latitude, lng = _end!.Longitude }
+                                                       );
+            }
