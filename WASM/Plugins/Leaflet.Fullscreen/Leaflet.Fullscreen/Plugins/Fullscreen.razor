@@ -1,0 +1,48 @@
+﻿@inject IJSRuntime JS
+
+@code {
+    [Parameter] public IJSObjectReference? Map { get; set; }
+    [Parameter] public IJSObjectReference? L { get; set; }
+    [Parameter] public string? url { get; set; }
+    [Parameter] public string? href { get; set; }
+    private static IJSRuntime? _js;
+    private static IJSObjectReference? _map;
+    private static IJSObjectReference? _L;
+   
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _js = JS;
+            _map = Map;
+            _L = L;
+         
+            string? namespaceName = typeof(Program).Assembly.GetName().Name;
+
+            await JS.InvokeVoidAsync("eval", $@"
+                                    const script = document.createElement('script');
+                                    script.src = '{url}';
+                                    script.onload = () => DotNet.invokeMethodAsync('{namespaceName}', 'OnScriptLoaded');
+                                    document.body.appendChild(script);
+                                    const link = document.createElement('link');
+                                    link.rel = 'stylesheet';
+                                    link.href = '{href}';
+                                    document.head.appendChild(link);
+");
+        }
+    }
+
+    [JSInvokable]
+    public static async Task OnScriptLoaded()
+    {
+        await _js!.InvokeVoidAsync("eval", @"
+                                            window._applyFullscreen = function(map, L) {
+                                                map.addControl(new L.Control.FullScreen());
+                                            };
+    ");
+        await _js!.InvokeVoidAsync("_applyFullscreen",
+         _map,
+         _L
+     );
+    }
+}
