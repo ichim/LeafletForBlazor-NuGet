@@ -1,0 +1,49 @@
+﻿@inject IJSRuntime JS
+
+@code {
+    [Parameter] public IJSObjectReference? Map { get; set; }
+    [Parameter] public IJSObjectReference? L { get; set; }
+    [Parameter] public string? url { get; set; }
+    [Parameter] public Coordinates? Start { get; set; }
+    [Parameter] public Coordinates? End { get; set; }
+    private static IJSRuntime? _js;
+    private static IJSObjectReference? _map;
+    private static IJSObjectReference? _L;
+    private static Coordinates? _start;
+    private static Coordinates? _end;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _js = JS;
+            _map = Map;
+            _L = L;
+            _start = Start!;
+            _end = End!;
+            string? namespaceName = typeof(Program).Assembly.GetName().Name;
+       
+            await JS.InvokeVoidAsync("eval", $@"
+                                    const script = document.createElement('script');
+                                    script.src = '{url}';
+                                    script.onload = () => DotNet.invokeMethodAsync('{namespaceName}', 'OnScriptLoaded');
+                                    document.body.appendChild(script);
+");
+        }
+    }
+
+    [JSInvokable]
+    public static async Task OnScriptLoaded()
+    {
+        await _js!.InvokeVoidAsync("eval", @"
+                                            window._drawGeodesic = function(map, L, pointA, pointB) {
+                                                new L.Geodesic([pointA, pointB]).addTo(map);
+                                            };
+    ");
+        await _js!.InvokeVoidAsync("_drawGeodesic",
+         _map,
+         _L,
+         new { lat = _start!.Latitude, lng = _start!.Longitude },
+         new { lat = _end!.Latitude, lng = _end!.Longitude }
+     );
+    }
+}

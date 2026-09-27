@@ -1,0 +1,31 @@
+﻿@page "/"
+
+@inject IJSRuntime JS
+
+<Map loadParameters="@loadParameters"
+     height="calc(100vh - 1rem)"
+     width="calc(100vw - 1rem)">
+   <MapPlugins>
+        <Leaflet.Geodesic.Plugins.LeafletGeodesic 
+                                        Map="@context.map" 
+                                        L="context.LeafletCore" 
+                                        url="https://cdn.jsdelivr.net/npm/leaflet.geodesic" 
+                                        Start="new Leaflet.Geodesic.Plugins.LeafletGeodesic.Coordinates(52.5, 13.35)" 
+                                        End="new Leaflet.Geodesic.Plugins.LeafletGeodesic.Coordinates(33.82, -118.38)" />
+   </MapPlugins>
+</Map>
+
+@code {
+  
+    LoadParameters loadParameters = new LoadParameters()
+    {
+
+        location = new Location() // Center of the Map View
+        {
+            latitude = 30.012926775232586, 
+            longitude = -57.057786658028114
+        },
+        zoomLevel = 2,
+    };
+   
+}

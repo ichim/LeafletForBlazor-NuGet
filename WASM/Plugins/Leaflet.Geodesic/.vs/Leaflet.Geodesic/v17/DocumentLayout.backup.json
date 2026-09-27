@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\leaflet.geodesic\\leaflet.geodesic\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|solutionrelative:leaflet.geodesic\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\leaflet.geodesic\\leaflet.geodesic\\plugins\\leafletgeodesic.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|solutionrelative:leaflet.geodesic\\plugins\\leafletgeodesic.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\leaflet.geodesic\\leaflet.geodesic\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|solutionrelative:leaflet.geodesic\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\leaflet.geodesic\\leaflet.geodesic\\plugins\\leafletgeodesic.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|solutionrelative:leaflet.geodesic\\plugins\\leafletgeodesic.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\leaflet.geodesic\\leaflet.geodesic\\leaflet.geodesic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|solutionrelative:leaflet.geodesic\\leaflet.geodesic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\leaflet.geodesic\\leaflet.geodesic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|solutionrelative:leaflet.geodesic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\leaflet.geodesic\\leaflet.geodesic\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|solutionrelative:leaflet.geodesic\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20260727\\leaflet.geodesic\\leaflet.geodesic\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{268A7D2B-4A8D-41AF-8582-45509BB2211E}|Leaflet.Geodesic\\Leaflet.Geodesic.csproj|solutionrelative:leaflet.geodesic\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Program.cs",
+              "RelativeDocumentMoniker": "Leaflet.Geodesic\\Program.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Program.cs",
+              "RelativeToolTip": "Leaflet.Geodesic\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T19:29:59.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Leaflet.Geodesic.csproj",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Leaflet.Geodesic.csproj",
+              "RelativeDocumentMoniker": "Leaflet.Geodesic\\Leaflet.Geodesic.csproj",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Leaflet.Geodesic.csproj",
+              "RelativeToolTip": "Leaflet.Geodesic\\Leaflet.Geodesic.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-25T19:29:43.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LeafletGeodesic.razor.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Plugins\\LeafletGeodesic.razor.cs",
+              "RelativeDocumentMoniker": "Leaflet.Geodesic\\Plugins\\LeafletGeodesic.razor.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Plugins\\LeafletGeodesic.razor.cs",
+              "RelativeToolTip": "Leaflet.Geodesic\\Plugins\\LeafletGeodesic.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T19:25:56.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Pages\\Home.razor.cs",
+              "RelativeDocumentMoniker": "Leaflet.Geodesic\\Pages\\Home.razor.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Pages\\Home.razor.cs",
+              "RelativeToolTip": "Leaflet.Geodesic\\Pages\\Home.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T19:22:05.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Leaflet.Geodesic\\wwwroot\\index.html",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\wwwroot\\index.html",
+              "RelativeToolTip": "Leaflet.Geodesic\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-09-25T19:21:40.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LeafletGeodesic.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Plugins\\LeafletGeodesic.razor",
+              "RelativeDocumentMoniker": "Leaflet.Geodesic\\Plugins\\LeafletGeodesic.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Plugins\\LeafletGeodesic.razor",
+              "RelativeToolTip": "Leaflet.Geodesic\\Plugins\\LeafletGeodesic.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-25T19:04:58.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Leaflet.Geodesic\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\Pages\\Home.razor",
+              "RelativeToolTip": "Leaflet.Geodesic\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-25T19:04:00.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\_Imports.razor",
+              "RelativeDocumentMoniker": "Leaflet.Geodesic\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20260727\\Leaflet.Geodesic\\Leaflet.Geodesic\\_Imports.razor",
+              "RelativeToolTip": "Leaflet.Geodesic\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-25T19:02:53.687Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
