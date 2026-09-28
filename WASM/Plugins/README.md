@@ -131,3 +131,59 @@ This plugin is a wrapper for the [Leaflet.Fullscreen](https://github.com/brunob/
 
 <img width="392" height="271" alt="image" src="https://github.com/user-attachments/assets/d35ad896-f369-4909-85cf-e278adb0a0a2" />
 
+### Parameters
+
+| Parameter | Type                  | Description                                    |
+| --------- | --------------------- | ---------------------------------------------- |
+| `Map`     | `IJSObjectReference?` | Reference to the Leaflet map object (JS side). |
+| `L`       | `IJSObjectReference?` | Reference to the Leaflet factory (`L`).        |
+| `url`     | `string?`             | URL of the external plugin script to load.     |
+| `href`    | `string?`             | href to css file.                              |
+
+### Creating wrapper functions
+
+1. On first render, the component captures the JS runtime, map, and coordinate references into static fields — making them available to the static [JSInvokable] callback that follows.
+
+
+            protected override async Task OnAfterRenderAsync(bool firstRender)
+            {
+                if (firstRender)
+                {
+                    _js = JS;
+                    _map = Map;
+                    _L = L;
+         
+                    string? namespaceName = typeof(Program).Assembly.GetName().Name;
+        
+                    await JS.InvokeVoidAsync("eval", $@"
+                                            const script = document.createElement('script');
+                                            script.src = '{url}';
+                                            script.onload = () => DotNet.invokeMethodAsync('{namespaceName}', 'OnScriptLoaded');
+                                            document.body.appendChild(script);
+                                            const link = document.createElement('link');
+                                            link.rel = 'stylesheet';
+                                            link.href = '{href}';
+                                            document.head.appendChild(link);
+                                            ");
+                }
+            }
+
+1. Script injection — A <script> tag is created and appended to the DOM, pointing to the plugin URL. The onload handler fires a .NET static method invocation via DotNet.invokeMethodAsync, using the assembly name resolved at runtime from typeof(Program).Assembly.GetName().Name.
+
+1. OnScriptLoaded (static, JSInvokable) — Once the external script is ready:
+ - It defines window._applyFullscreen, a function that wraps map.addControl(new L.Control.FullScreen()).
+ - It immediately invokes that function, passing the stored _map, _L.
+
+           [JSInvokable]
+           public static async Task OnScriptLoaded()
+           {
+               await _js!.InvokeVoidAsync("eval", @"
+                                                   window._applyFullscreen = function(map, L) {
+                                                       map.addControl(new L.Control.FullScreen());
+                                                                                           };
+                                                   ");
+                       await _js!.InvokeVoidAsync("_applyFullscreen",
+                        _map,
+                        _L
+                    );
+           }
