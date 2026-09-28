@@ -8,6 +8,17 @@ By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor
 
         <Map>
             <MapPlugins>
+                        <Fullscreen            
+                            Map="@context.map" 
+                            L="context.LeafletCore"
+                            url="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.umd.js"
+                            href="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.css" />
+                        <Leaflet.Geodesic.Plugins.LeafletGeodesic 
+                                Map="@context.map" 
+                                L="context.LeafletCore" 
+                                url="https://cdn.jsdelivr.net/npm/leaflet.geodesic" 
+                                Start="new Leaflet.Geodesic.Plugins.LeafletGeodesic.Coordinates(52.5, 13.35)" 
+                                End="new Leaflet.Geodesic.Plugins.LeafletGeodesic.Coordinates(33.82, -118.38)" />
             </MapPlugins>
         </Map>
 
