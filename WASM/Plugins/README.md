@@ -13,7 +13,7 @@ By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor
                             L="context.LeafletCore"
                             url="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.umd.js"
                             href="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.css" />
-                        <Leaflet.Geodesic.Plugins.LeafletGeodesic 
+                        <LeafletGeodesic 
                                 Map="@context.map" 
                                 L="context.LeafletCore" 
                                 url="https://cdn.jsdelivr.net/npm/leaflet.geodesic" 
