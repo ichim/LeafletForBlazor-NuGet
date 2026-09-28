@@ -133,6 +133,12 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
 
         <Map>
             <MapPlugins>
+                        <Fullscreen            
+                            Map="@context.map" 
+                            L="context.LeafletCore"
+                            url="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.umd.js"
+                            href="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.css" />
+
             </MapPlugins>
         </Map>
 
@@ -146,6 +152,7 @@ The Map component provides the MapComponents slot, allowing you to extend the Le
 
         <Map>
             <MapComponents>
+                <Toolbar/>
             </MapComponents>
         </Map>
 
