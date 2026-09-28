@@ -138,7 +138,7 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
                             L="context.LeafletCore"
                             url="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.umd.js"
                             href="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.css" />
-						@*   other plugins or custom functionality  *@
+						@*   [other plugins or custom functionality]()  *@
             </MapPlugins>
         </Map>
 
