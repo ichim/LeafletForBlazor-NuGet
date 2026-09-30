@@ -96,6 +96,13 @@ Advantages of LINQ Destructuring/Restructuring:
 
 ✅ For the future: Offline-capable after first load
 
+# 🔌 MapPlugins
+
+The Map component provides the MapPlugins slot (Plugin Framework), allowing you to extend LeafletForBlazor with additional Leaflet functionality. It enables the development of features in JavaScript and grants you access to the map (the Leaflet map instance) and the L object.
+
+By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor to be extended with already developed Leaflet.js add-ons.
+
+[more about MapPlugins](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Plugins/README.md#-map-plugins)
 
 
 
