@@ -24,7 +24,6 @@
 
 # 🚀 Quick Start
 
-
 ## 🔧 Project configuration
 
 🔵 **Add the Map component to your project in just 3 steps:**
