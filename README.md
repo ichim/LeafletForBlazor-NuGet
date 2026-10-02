@@ -144,7 +144,9 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
 
 By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor to be extended with already developed Leaflet.js add-ons.
 
-[more about MapPlugins](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins#-map-plugins)
+[more about MapPlugins and WASM](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins#-map-plugins)
+
+[more about MapPlugins and MAUI](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor/Plugins#-map-plugins)
 
 # 📦 Map Components
 
