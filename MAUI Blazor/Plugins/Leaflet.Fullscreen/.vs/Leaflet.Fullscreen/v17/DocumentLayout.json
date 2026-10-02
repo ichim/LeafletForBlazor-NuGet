@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Leaflet.Fullscreen\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FD403E8-6428-4AEF-9CDD-B282264C5A5F}|Leaflet.Fullscreen\\Leaflet.Fullscreen.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\leaflet.fullscreen\\leaflet.fullscreen\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FD403E8-6428-4AEF-9CDD-B282264C5A5F}|Leaflet.Fullscreen\\Leaflet.Fullscreen.csproj|solutionrelative:leaflet.fullscreen\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FD403E8-6428-4AEF-9CDD-B282264C5A5F}|Leaflet.Fullscreen\\Leaflet.Fullscreen.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\leaflet.fullscreen\\leaflet.fullscreen\\components\\plugins\\fullscreen.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FD403E8-6428-4AEF-9CDD-B282264C5A5F}|Leaflet.Fullscreen\\Leaflet.Fullscreen.csproj|solutionrelative:leaflet.fullscreen\\components\\plugins\\fullscreen.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FD403E8-6428-4AEF-9CDD-B282264C5A5F}|Leaflet.Fullscreen\\Leaflet.Fullscreen.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\leaflet.fullscreen\\leaflet.fullscreen\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FD403E8-6428-4AEF-9CDD-B282264C5A5F}|Leaflet.Fullscreen\\Leaflet.Fullscreen.csproj|solutionrelative:leaflet.fullscreen\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fullscreen.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Leaflet.Fullscreen\\Leaflet.Fullscreen\\Components\\Plugins\\Fullscreen.razor",
+              "RelativeDocumentMoniker": "Leaflet.Fullscreen\\Components\\Plugins\\Fullscreen.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Leaflet.Fullscreen\\Leaflet.Fullscreen\\Components\\Plugins\\Fullscreen.razor",
+              "RelativeToolTip": "Leaflet.Fullscreen\\Components\\Plugins\\Fullscreen.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-02T05:34:46.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Leaflet.Fullscreen\\Leaflet.Fullscreen\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Leaflet.Fullscreen\\Components\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Leaflet.Fullscreen\\Leaflet.Fullscreen\\Components\\_Imports.razor",
+              "RelativeToolTip": "Leaflet.Fullscreen\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-02T05:32:06.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Leaflet.Fullscreen\\Leaflet.Fullscreen\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Leaflet.Fullscreen\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Leaflet.Fullscreen\\Leaflet.Fullscreen\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Leaflet.Fullscreen\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-02T05:28:31.051Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
