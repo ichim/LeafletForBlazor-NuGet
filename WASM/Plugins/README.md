@@ -3,11 +3,25 @@
 
 The Map component provides the MapPlugins slot (Plugin Framework), allowing you to extend LeafletForBlazor with additional Leaflet functionality. It enables the development of features in JavaScript and grants you access to the map (the Leaflet map instance) and the L object.
 
+<img width="548" height="218" alt="image" src="https://github.com/user-attachments/assets/07e9ea0e-bdd0-4013-b258-9c1c8a3aa519" />
+
+
 By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor to be extended with already developed Leaflet.js add-ons.
 
 
         <Map>
             <MapPlugins>
+                        <Fullscreen            
+                            Map="@context.map" 
+                            L="context.LeafletCore"
+                            url="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.umd.js"
+                            href="https://unpkg.com/leaflet.fullscreen/dist/Control.FullScreen.css" />
+                        <LeafletGeodesic 
+                                Map="@context.map" 
+                                L="context.LeafletCore" 
+                                url="https://cdn.jsdelivr.net/npm/leaflet.geodesic" 
+                                Start="new Leaflet.Geodesic.Plugins.LeafletGeodesic.Coordinates(52.5, 13.35)" 
+                                End="new Leaflet.Geodesic.Plugins.LeafletGeodesic.Coordinates(33.82, -118.38)" />
             </MapPlugins>
         </Map>
 
@@ -123,3 +137,67 @@ This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythas
                                                          new { lat = _end!.Latitude, lng = _end!.Longitude }
                                                        );
             }
+
+
+## Leaflet.Fullscreen
+
+This plugin is a wrapper for the [Leaflet.Fullscreen](https://github.com/brunob/leaflet.fullscreen) plugin developed by [brunob](https://github.com/brunob) for Leaflet.js.
+
+<img width="392" height="271" alt="image" src="https://github.com/user-attachments/assets/d35ad896-f369-4909-85cf-e278adb0a0a2" />
+
+### Parameters
+
+| Parameter | Type                  | Description                                    |
+| --------- | --------------------- | ---------------------------------------------- |
+| `Map`     | `IJSObjectReference?` | Reference to the Leaflet map object (JS side). |
+| `L`       | `IJSObjectReference?` | Reference to the Leaflet factory (`L`).        |
+| `url`     | `string?`             | URL of the external plugin script to load.     |
+| `href`    | `string?`             | href to css file.                              |
+
+### Creating wrapper functions
+
+1. On first render, the component captures the JS runtime, map, and coordinate references into static fields — making them available to the static [JSInvokable] callback that follows.
+
+
+            protected override async Task OnAfterRenderAsync(bool firstRender)
+            {
+                if (firstRender)
+                {
+                    _js = JS;
+                    _map = Map;
+                    _L = L;
+         
+                    string? namespaceName = typeof(Program).Assembly.GetName().Name;
+        
+                    await JS.InvokeVoidAsync("eval", $@"
+                                            const script = document.createElement('script');
+                                            script.src = '{url}';
+                                            script.onload = () => DotNet.invokeMethodAsync('{namespaceName}', 'OnScriptLoaded');
+                                            document.body.appendChild(script);
+                                            const link = document.createElement('link');
+                                            link.rel = 'stylesheet';
+                                            link.href = '{href}';
+                                            document.head.appendChild(link);
+                                            ");
+                }
+            }
+
+1. Script injection — A <script> tag is created and appended to the DOM, pointing to the plugin URL. The onload handler fires a .NET static method invocation via DotNet.invokeMethodAsync, using the assembly name resolved at runtime from typeof(Program).Assembly.GetName().Name.
+
+1. OnScriptLoaded (static, JSInvokable) — Once the external script is ready:
+ - It defines window._applyFullscreen, a function that wraps map.addControl(new L.Control.FullScreen()).
+ - It immediately invokes that function, passing the stored _map, _L.
+
+           [JSInvokable]
+           public static async Task OnScriptLoaded()
+           {
+               await _js!.InvokeVoidAsync("eval", @"
+                                                   window._applyFullscreen = function(map, L) {
+                                                       map.addControl(new L.Control.FullScreen());
+                                                                                           };
+                                                   ");
+                       await _js!.InvokeVoidAsync("_applyFullscreen",
+                        _map,
+                        _L
+                    );
+           }
