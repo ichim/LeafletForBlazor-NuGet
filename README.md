@@ -10,7 +10,6 @@
 
 # ⚙️ Core Concepts
 
-
 1. ``No JavaScript or HTML specific configurations required``, no API script configurations, no CSS references, no HTML items etc.
 1. ``Optimized code`` through various solutions
    	- minimizing the number of calls to JavaScript;
