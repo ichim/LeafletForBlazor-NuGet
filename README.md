@@ -40,16 +40,16 @@
 
        NuGet\Install-Package LeafletForBlazor
  
-2. Add the required namespaces in _Imports.razor
+2. Add the required namespaces in `_Imports.razor`
 
-To do this, add the following directives to the **_Imports.razor** file
+To do this, add the following directives to the `_Imports.razor` file
 
 
         @using LeafletForBlazor                             //working with package classes
         @using static LeafletForBlazor.Map                  //working with Map class
         @using static LeafletForBlazor.techs.maps.Leaflet   //working with Leaflet API
 
-3. Use the Map component
+3. Use the `Map` component
 
         <Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)" />
 
