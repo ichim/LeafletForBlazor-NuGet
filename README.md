@@ -58,7 +58,7 @@ To do this, add the following directives to the **_Imports.razor** file
 Use the `loadParameters` property to set the initial map view:
 
 
-        ```razor
+        //razor
         <Map loadParameters="@loadParameters" 
              height="calc(100vh - 1rem)" 
              width="calc(100vw - 2rem)" />
@@ -82,9 +82,21 @@ C#
 
 [more about Map Configuration - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#net-maui-blazor-hybrid-app)
 
-# More about Map component
+# 🗺️ More about Map component
 
 ### ⚡ Map Events
+
+    //razor
+    <Map height="calc(100vh - 2rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+C#
+
+    private Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        Console.WriteLine($"lat: {args.centerOfView.latitude} long: {args.centerOfView.longitude}");
+        return Task.CompletedTask;
+    }
+
 
 [more about Map Events - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/MapLoadEvent#map-events)
 
