@@ -10,6 +10,7 @@
 
 # ⚙️ Core Concepts
 
+
 1. ``No JavaScript or HTML specific configurations required``, no API script configurations, no CSS references, no HTML items etc.
 1. ``Optimized code`` through various solutions
    	- minimizing the number of calls to JavaScript;
@@ -23,59 +24,58 @@
 
 # 🚀 Quick Start
 
-## 🔧 Project configuration
+
+## 🔧 Project setup
 
 🔵 **Add the Map component to your project in just 3 steps:**
 
-1. add LeafletForBlazor NuGet package:
+1. **Install the NuGet package**:
 
-Using Visual Studio _interface_:
-
- - Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution...
+ - From VS interface: *Tools* -> *NuGet Package Manager* -> *Manage NuGet Packages for Solution...*
  
- > Search for "LeafletForBlazor" and add the package to the project or solution.
+      > Search for "LeafletForBlazor" and add the package to the project or solution.
 
- Or using Visual Studio _console_:
 
- - Tools -> NuGet Package Manager -> Package Manager Console
+ - From Package Manager Console: *Tools* -> *NuGet Package Manager* -> *Package Manager Console*
 
        NuGet\Install-Package LeafletForBlazor
  
-2. add the LeafletForBlazor namespace to the project, using the @using directive
+2. Add the required namespaces in _Imports.razor
 
 To do this, add the following directives to the **_Imports.razor** file
 
-		@using LeafletForBlazor                             //working with package classes
-		@using static LeafletForBlazor.Map                  //working with Map class
+
+        @using LeafletForBlazor                             //working with package classes
+        @using static LeafletForBlazor.Map                  //working with Map class
         @using static LeafletForBlazor.techs.maps.Leaflet   //working with Leaflet API
 
+3. Use the Map component
 
-## 🗺️ Add Map
+        <Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)" />
 
-Adding the map to the blazor page:
+## 🗺️ Map and Default Configuration
 
-	<Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)"/>
-
-
-[More information](https://ichim.github.io/MapsForBlazor/)
+Use the `loadParameters` property to set the initial map view:
 
 
-## 🧭 Map configuration
+        ```razor
+        <Map loadParameters="@loadParameters" 
+             height="calc(100vh - 1rem)" 
+             width="calc(100vw - 2rem)" />
 
-The loadParameter parameter of the Map component allows you to configure the map at initialization. The initialization parameters are:
+C#
 
- - 📍 ``Location`` of the center of the displayed map (View of Map):
-	
-        location = new Location()
+    LoadParameters loadParameters = new()
+    {
+      
+        location = new Location()                                               //Center of the Map View
         {
-            latitude = 45.2831589721668,
-            longitude = 27.98740645063448
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
         },
+        zoomLevel = 10
+    };
 
-- 🔍 ``Zoom Level``
-
-					
-		zoomLevel = 12,
 
 
 [more about Map Configuration - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic#-map-configuration)
