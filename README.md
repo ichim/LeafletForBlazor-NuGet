@@ -82,13 +82,15 @@ C#
 
 [more about Map Configuration - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#net-maui-blazor-hybrid-app)
 
-## ⚡ Map Events
+# More about Map component
+
+### ⚡ Map Events
 
 [more about Map Events - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/MapLoadEvent#map-events)
 
 [more about Map Events - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-map-events)
 
-## 👁️ View class
+### 👁️ View class
 
 View is the class that allows you to control the visible area of ​​the map.
 
