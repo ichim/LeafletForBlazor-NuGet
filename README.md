@@ -104,12 +104,23 @@ C#
 
 ### 👁️ View class
 
-View is the class that allows you to control the visible area of ​​the map.
+`View` is the class that allows you to control the visible area of ​​the map.
 
 [more about View class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/View#view)
 
 
-# 📍 StreamPoint collection
+### ℹ️ Attribution class
+
+The `Attribution` class provides the methods needed to interact with the map's `attributionControl`.
+
+
+[more about Attribution class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution)
+
+### 📐 Geometric class
+
+The `Geometric` class contains classes that operate on geometries obtained from various sources.
+
+#### 📍 StreamPoint collection
 
 `StreamPoint` collection provides *real-time map synchronization* - any property change (coordinates, appearance, timestamp) instantly updates the map visualization. Objects are cached for performance but remain fully dynamic.
 
@@ -124,12 +135,11 @@ The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides
 [more about StreamCollection - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-streampoint)
 
 
-# 📁 Working with Files
+#### 📁 Working with Files
 
 The ``@map.Geometric.From.Files`` class allows you to load data from files stored on a web service host (_https://..._). Full `RFC 7946` Feature Support.
 
 [more about working with files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files#files)
-
 
 
 # 📊 Dashboard
