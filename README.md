@@ -25,79 +25,102 @@
 # 🚀 Quick Start
 
 
-## 🔧 Project configuration
+## 🔧 Project setup
 
 🔵 **Add the Map component to your project in just 3 steps:**
 
-1. add LeafletForBlazor NuGet package:
+1. **Install the NuGet package**:
 
-Using Visual Studio _interface_:
-
- - Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution...
+ - From VS interface: *Tools* -> *NuGet Package Manager* -> *Manage NuGet Packages for Solution...*
  
- > Search for "LeafletForBlazor" and add the package to the project or solution.
+      > Search for "LeafletForBlazor" and add the package to the project or solution.
 
- Or using Visual Studio _console_:
 
- - Tools -> NuGet Package Manager -> Package Manager Console
+ - From Package Manager Console: *Tools* -> *NuGet Package Manager* -> *Package Manager Console*
 
        NuGet\Install-Package LeafletForBlazor
  
-2. add the LeafletForBlazor namespace to the project, using the @using directive
+2. Add the required namespaces in `_Imports.razor`
 
-To do this, add the following directives to the **_Imports.razor** file
+To do this, add the following directives to the `_Imports.razor` file
 
-		@using LeafletForBlazor                             //working with package classes
-		@using static LeafletForBlazor.Map                  //working with Map class
+
+        @using LeafletForBlazor                             //working with package classes
+        @using static LeafletForBlazor.Map                  //working with Map class
         @using static LeafletForBlazor.techs.maps.Leaflet   //working with Leaflet API
 
+3. Use the `Map` component
 
-## 🗺️ Add Map
+        <Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)" />
 
-Adding the map to the blazor page:
+## 🗺️ Map and Default Configuration
 
-	<Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)"/>
-
-
-[More information](https://ichim.github.io/MapsForBlazor/)
+Use the `loadParameters` property to set the initial map view:
 
 
-## 🧭 Map configuration
+        //razor
+        <Map loadParameters="@loadParameters" 
+             height="calc(100vh - 1rem)" 
+             width="calc(100vw - 2rem)" />
 
-The loadParameter parameter of the Map component allows you to configure the map at initialization. The initialization parameters are:
+C#
 
- - 📍 ``Location`` of the center of the displayed map (View of Map):
-	
-        location = new Location()
+    LoadParameters loadParameters = new()
+    {
+      
+        location = new Location()                                               //Center of the Map View
         {
-            latitude = 45.2831589721668,
-            longitude = 27.98740645063448
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
         },
+        zoomLevel = 10
+    };
 
-- 🔍 ``Zoom Level``
-
-					
-		zoomLevel = 12,
 
 
 [more about Map Configuration - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic#-map-configuration)
 
 [more about Map Configuration - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#net-maui-blazor-hybrid-app)
 
-## ⚡ Map Events
+# 🗺️ More about Map component
+
+### ⚡ Map Events
+
+    //razor
+    <Map height="calc(100vh - 2rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@OnAfterMapLoaded" />
+
+C#
+
+    private Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        Console.WriteLine($"lat: {args.centerOfView.latitude} long: {args.centerOfView.longitude}");
+        return Task.CompletedTask;
+    }
+
 
 [more about Map Events - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/MapLoadEvent#map-events)
 
 [more about Map Events - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-map-events)
 
-## 👁️ View class
+### 👁️ View class
 
-View is the class that allows you to control the visible area of ​​the map.
+`View` is the class that allows you to control the visible area of ​​the map.
 
 [more about View class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/View#view)
 
 
-# 📍 StreamPoint collection
+### ℹ️ Attribution class
+
+The `Attribution` class provides the methods needed to interact with the map's `attributionControl`.
+
+
+[more about Attribution class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution)
+
+### 📐 Geometric class
+
+The `Geometric` class contains classes that operate on geometries obtained from various sources.
+
+#### 📍 StreamPoint collection
 
 `StreamPoint` collection provides *real-time map synchronization* - any property change (coordinates, appearance, timestamp) instantly updates the map visualization. Objects are cached for performance but remain fully dynamic.
 
@@ -112,12 +135,11 @@ The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides
 [more about StreamCollection - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-streampoint)
 
 
-# 📁 Working with Files
+#### 📁 Working with Files
 
 The ``@map.Geometric.From.Files`` class allows you to load data from files stored on a web service host (_https://..._). Full `RFC 7946` Feature Support.
 
 [more about working with files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files#files)
-
 
 
 # 📊 Dashboard
