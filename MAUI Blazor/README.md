@@ -283,4 +283,13 @@ Performance with Fluency:
 
 # Plugins
 
+The Map component provides the MapPlugins slot (Plugin Framework), allowing you to extend LeafletForBlazor with additional Leaflet functionality. It enables the development of features in JavaScript and grants you access to the map (the Leaflet map instance) and the L object.
 
+The MapPlugins context has two parameters: `map` and `L`.
+Parameters `map` and `L` are passed to the customized component via the MapPlugins context:
+
+           <MapPlugins>
+                <CustomScript Map="@context.map" L="@context.L" />
+           </MapPlugins>
+
+[more about Plugins](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor/Plugins#-map-plugins)
