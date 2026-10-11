@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "LeafletForBlazor/4.0.8.8": {
+      "LeafletForBlazor/4.0.8.82": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -583,7 +583,7 @@
       }
     },
     "net9.0/browser-wasm": {
-      "LeafletForBlazor/4.0.8.8": {
+      "LeafletForBlazor/4.0.8.82": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -1165,10 +1165,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/4.0.8.8": {
-      "sha512": "Uj5td3pxIZu7NPliZf63G4WUZn3xylf7IZRuY3KI9N1oKSwvuPrjrKpM6HhfZUj5DfkZSybIP6ZIEaLoZd0xjA==",
+    "LeafletForBlazor/4.0.8.82": {
+      "sha512": "GLOtfunemOvwOx3m/od177EIaMB9XEJbDYtVP0VZVxMV+QwbNFp0r1GlqIVKJJNy7B4K0eJQnSuTu/2mDqaxwg==",
       "type": "package",
-      "path": "leafletforblazor/4.0.8.8",
+      "path": "leafletforblazor/4.0.8.82",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1182,7 +1182,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net9.0/map_color.ico",
-        "leafletforblazor.4.0.8.8.nupkg.sha512",
+        "leafletforblazor.4.0.8.82.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net9.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -2281,7 +2281,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "LeafletForBlazor >= 4.0.8.8",
+      "LeafletForBlazor >= 4.0.8.82",
       "Microsoft.AspNetCore.Components.WebAssembly >= 9.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.11",
       "Microsoft.NET.ILLink.Tasks >= 9.0.11",
@@ -2341,7 +2341,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[4.0.8.8, )"
+            "version": "[4.0.8.82, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",

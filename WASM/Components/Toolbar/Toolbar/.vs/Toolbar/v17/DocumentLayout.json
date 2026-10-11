@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Toolbar\\Pages\\Home.razor",
               "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\Toolbar\\Toolbar\\Toolbar\\Pages\\Home.razor",
               "RelativeToolTip": "Toolbar\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-15T12:17:34.31Z",
               "EditorCaption": ""
@@ -41,9 +41,10 @@
               "RelativeDocumentMoniker": "Toolbar\\_Imports.razor",
               "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\Toolbar\\Toolbar\\Toolbar\\_Imports.razor",
               "RelativeToolTip": "Toolbar\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-15T12:16:35.351Z"
+              "WhenOpened": "2026-09-15T12:16:35.351Z",
+              "EditorCaption": ""
             }
           ]
         }
