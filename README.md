@@ -113,6 +113,9 @@ C#
 
 The `Attribution` class provides the methods needed to interact with the map's `attributionControl`.
 
+![attribtion control](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/attributionControl.png)
+
+    await map!.Attribution.Remove();
 
 [more about Attribution class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution)
 
