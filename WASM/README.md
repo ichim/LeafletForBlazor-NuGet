@@ -47,4 +47,3 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
 
 [more about working with Map Plugins](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins#-map-plugins)
  
-

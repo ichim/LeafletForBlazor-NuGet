@@ -293,3 +293,4 @@ Parameters `map` and `L` are passed to the customized component via the MapPlugi
            </MapPlugins>
 
 [more about Plugins](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor/Plugins#-map-plugins)
+
