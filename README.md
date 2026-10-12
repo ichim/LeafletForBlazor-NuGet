@@ -115,7 +115,7 @@ For example, you can use the `View` class to get the map's center:
 
 ### ℹ️ Attribution class
 
-The `Attribution` class provides the methods needed to interact with the map's `attributionControl`.
+The `Attribution` class provides the methods needed to interact with the map's `attributionControl`:
 
 ![attribtion control](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/attributionControl.png)
 
