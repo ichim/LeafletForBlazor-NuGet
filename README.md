@@ -106,6 +106,10 @@ C#
 
 `View` is the class that allows you to control the visible area of ​​the map.
 
+For example, you can use the `View` class to get the map's center:
+
+        var center = await map.View.getCenterAsync();
+
 [more about View class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/View#view)
 
 
