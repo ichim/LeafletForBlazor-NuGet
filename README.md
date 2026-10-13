@@ -106,13 +106,22 @@ C#
 
 `View` is the class that allows you to control the visible area of ​​the map.
 
+For example, you can use the `View` class to get the map's center:
+
+        var center = await map.View.getCenterAsync();
+
 [more about View class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/View#view)
 
 
 ### ℹ️ Attribution class
 
-The `Attribution` class provides the methods needed to interact with the map's `attributionControl`.
+The `Attribution` class provides the methods needed to interact with the map's `attributionControl`:
 
+![attribtion control](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/attributionControl.png)
+
+For example, you can completely remove the attributionControl:
+
+    await map!.Attribution.Remove();
 
 [more about Attribution class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution)
 
