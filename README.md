@@ -116,7 +116,6 @@ For example, you can use the `View` class to get the map's center:
 
 [more about View class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/View#view)
 
-
 ### ℹ️ Attribution class
 
 The `Attribution` class provides the methods needed to interact with the map's `attributionControl`:
@@ -125,7 +124,9 @@ The `Attribution` class provides the methods needed to interact with the map's `
 
 For example, you can completely remove the attributionControl:
 
-    await map!.Attribution.Remove();
+    await map!.Attribution.Remove();  
+    
+    //strongly discouraged from an ethical standpoint (Leaflet.js BSD 2 license)
 
 [more about Attribution class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution)
 
