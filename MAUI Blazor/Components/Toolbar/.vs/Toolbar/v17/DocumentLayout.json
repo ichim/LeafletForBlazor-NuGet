@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\MAUI\\Toolbar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF6954E3-1E40-4D21-BE74-A0F81E61EF13}|Toolbar\\Toolbar.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\maui\\toolbar\\toolbar\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF6954E3-1E40-4D21-BE74-A0F81E61EF13}|Toolbar\\Toolbar.csproj|solutionrelative:toolbar\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF6954E3-1E40-4D21-BE74-A0F81E61EF13}|Toolbar\\Toolbar.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\maui\\toolbar\\toolbar\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF6954E3-1E40-4D21-BE74-A0F81E61EF13}|Toolbar\\Toolbar.csproj|solutionrelative:toolbar\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\MAUI\\Toolbar\\Toolbar\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Toolbar\\Components\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\MAUI\\Toolbar\\Toolbar\\Components\\_Imports.razor",
+              "RelativeToolTip": "Toolbar\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T05:34:46.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\MAUI\\Toolbar\\Toolbar\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Toolbar\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\MAUI\\Toolbar\\Toolbar\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Toolbar\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T05:33:23.38Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
