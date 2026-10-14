@@ -67,14 +67,16 @@ Use the `loadParameters` property to set the initial map view:
 
     LoadParameters loadParameters = new()
     {
-        location = new Location()                                               //Center of the Map View
+        location = new Location()                                               //Default center of the Map View
         {
             latitude = 50.83112274500208,
             longitude = 4.407353347319803
         },
-        zoomLevel = 10
+        zoomLevel = 10                                                          //Default zoom level
     };
-
+    
+ 
+Additional default configurations are available, including [attribution control visibility](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution), map [basemap layers](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Basemaps#basemap-layers), and [map controls](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Basic/LoadParameters/README.md#map-controls) such as the scale control.
 
 
 [more about Map Configuration - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic#-map-configuration)
