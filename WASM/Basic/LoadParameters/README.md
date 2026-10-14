@@ -39,4 +39,6 @@ You can configure map controls (Leaflet.js) such as: the layer list and scale ba
 
 ## Basemap Layers
 
+Gets or sets the collection of basemap tile layers. Each layer is defined by a display title and a tile URL template containing {z}/{x}/{y} placeholders. Multiple layers enable runtime switching via the map's layer control.
+
 [more about Basemap Layers](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Basemaps#basemap-layers)
