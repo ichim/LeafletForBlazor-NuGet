@@ -51,7 +51,7 @@ To do this, add the following directives to the `_Imports.razor` file
 
 3. Use the `Map` component
 
-        <Map height="100vh" width="100vw" />
+        <Map height="100vh" width="100vw"/>
 
 ## 🗺️ Map and Default Configuration
 
@@ -59,15 +59,12 @@ Use the `loadParameters` property to set the initial map view:
 
 
         //razor
-        <Map loadParameters="@loadParameters" 
-             height="100vh" 
-             width="100vw" />
+        <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
 
 C#
 
     LoadParameters loadParameters = new()
     {
-      
         location = new Location()                                               //Center of the Map View
         {
             latitude = 50.83112274500208,
