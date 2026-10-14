@@ -4,12 +4,13 @@ Gets or sets the collection of basemap tile layers. Each layer is defined by a d
 
     LoadParameters loadParameters = new LoadParameters()
     {
-        location = new Location()                                               //Center of the Map View
+        location = new Location()                                               
         {
             latitude = 50.83112274500208,
             longitude = 4.407353347319803
         },
         zoomLevel = 10,
+        /* Default Basemap Layers */
         basemapLayers = new List<BasemapLayer>()
         {
               new BasemapLayer()
