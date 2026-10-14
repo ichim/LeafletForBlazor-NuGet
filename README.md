@@ -63,7 +63,7 @@ Use the `loadParameters` property to set the initial map view:
 
         <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
 
-**C#**
+**C# - Default Map Configuration**
 
     LoadParameters loadParameters = new()
     {
@@ -176,6 +176,7 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
 
         <Map>
             <MapPlugins>
+                        @* Custom Blazor Component - Leaflet.js Fullscreen plugin  *@
                         <Fullscreen            
                             Map="@context.map" 
                             L="context.LeafletCore"
