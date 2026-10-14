@@ -15,18 +15,18 @@ Gets or sets the collection of basemap tile layers. Each layer is defined by a d
         {
               new BasemapLayer()
               {
-                   title = "Topo",
+                  title = "Topo",
                   url = "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
               },
               new BasemapLayer()
-                      {
-                           title = "EsriImagery",
-                          url = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-                      },
-                new BasemapLayer()
-                      {
-                              title = "DarkMap",
-                          url = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-                      },
+              {
+                  title = "EsriImagery",
+                  url = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+              },
+              new BasemapLayer()
+              {
+                  title = "DarkMap",
+                  url = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+              },
           }
     };
