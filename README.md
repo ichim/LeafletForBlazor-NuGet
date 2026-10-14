@@ -51,7 +51,7 @@ To do this, add the following directives to the `_Imports.razor` file
 
 3. Use the `Map` component
 
-        <Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)" />
+        <Map height="100vh" width="100vw" />
 
 ## 🗺️ Map and Default Configuration
 
@@ -60,8 +60,8 @@ Use the `loadParameters` property to set the initial map view:
 
         //razor
         <Map loadParameters="@loadParameters" 
-             height="calc(100vh - 1rem)" 
-             width="calc(100vw - 2rem)" />
+             height="100vh" 
+             width="100vw" />
 
 C#
 
@@ -87,7 +87,7 @@ C#
 ### ⚡ Map Events
 
     //razor
-    <Map height="calc(100vh - 2rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@OnAfterMapLoaded" />
+    <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
 
 C#
 
@@ -115,6 +115,7 @@ For example, you can use the `View` class to get the map's center:
         map!.View.SetCenter(40.24, 5.48);
 
 [more about View class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/View#view)
+
 
 ### ℹ️ Attribution class
 
