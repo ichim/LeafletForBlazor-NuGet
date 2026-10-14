@@ -51,17 +51,19 @@ To do this, add the following directives to the `_Imports.razor` file
 
 3. Use the `Map` component
 
+**Razor**
+
         <Map height="100vh" width="100vw"/>
 
 ## 🗺️ Map and Default Configuration
 
 Use the `loadParameters` property to set the initial map view:
 
+**Razor**
 
-        //razor
         <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
 
-C#
+**C#**
 
     LoadParameters loadParameters = new()
     {
@@ -83,10 +85,15 @@ C#
 
 ### ⚡ Map Events
 
-    //razor
+#### OnAfterMapLoaded
+
+Fires after the Leaflet map instance has fully initialized on the client side. Use it to access the map's initial state or trigger post-load logic.
+
+**Razor**
+
     <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
 
-C#
+**C# - Handler signature**
 
     private Task OnAfterMapLoaded(MapEventArgs args)
     {
