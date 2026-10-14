@@ -22,3 +22,21 @@ Default configurations are available: the center of the current map view, zoom l
 
 ## Map Controls
 
+You can configure map controls (Leaflet.js) such as: the layer list and scale bar:
+
+        LoadParameters loadParameters = new LoadParameters()
+        {
+            mapControls = new MapControls()
+            {
+                layerList = new LayerList() { position = Position.topRight },       //Layer List Control
+                scaleBar = new ScaleBar()                                           //Map Scale Bar
+                {
+                    position = Position.bottomRight,
+                    unitOfScaleBar = UnitOfScaleBar.metric
+                },
+            }
+        };
+
+## Basemap Layers
+
+[more about Basemap Layers](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Basemaps#basemap-layers)
