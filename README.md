@@ -167,6 +167,7 @@ The ``@map.Geometric.From.Files`` class allows you to load data from files store
 
 ``StreamPoint`` collection can be used to monitor moving targets: vehicles, boats, aircraft, even fleets of vehicles, drones and so one. Both the map and the StreamPoint collection can be configured to create a Map Dashboard.
 
+![SigmaDrone](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/SigmaDrone%20Description.png)
 
 [more about Map Dashboard](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Dashboard#-working-with-map-dashboard)
 
