@@ -42,7 +42,6 @@ The `${propertyName}` syntax binds slice data to fields inside the `StreamPoint.
 Apply the style to a filtered set of points via `Appearance()`:
 
 ```csharp
-
               await map.Geometric.Points
                   .Appearance(e => e.type == "Market")
                   .SetStyle(new PieChart
@@ -59,7 +58,7 @@ Apply the style to a filtered set of points via `Appearance()`:
                       paramOrLabels  = "${texts}",
                       paramOrColors  = "${classes}"
                   });
-
+```
 
 ### Data Example
 
