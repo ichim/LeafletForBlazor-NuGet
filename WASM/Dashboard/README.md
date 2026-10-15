@@ -170,7 +170,7 @@ map.Geometric.Points.Appearance(
 
 ---
 
-### Expected StreamPoint Structure
+### Data Example
 
 The `StreamPoint` object bound to the gauge should include the relevant data fields referenced by the placeholders:
 
