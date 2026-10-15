@@ -27,6 +27,8 @@ A point-rendering style that displays a pie chart at each matching `StreamPoint`
 | `paramOrLabels` | `object` | `new string[0]` | Slice labels — literal `string[]` or `${field}` binding. |
 | `paramOrColors` | `object` | `new string[0]` | Slice colors — literal `string[]` or `${field}` binding. |
 
+
+
 ### Data Binding
 
 The `${propertyName}` syntax binds slice data to fields inside the `StreamPoint.value` object. At render time, each placeholder is resolved per-point:
@@ -59,6 +61,9 @@ Apply the style to a filtered set of points via `Appearance()`:
                       paramOrColors  = "${classes}"
                   });
 ```
+### Adding points to the map
+
+     await map.Geometric.Points.Add(new StreamPoints().points); //List<StreamPoint>
 
 ### Data Example
 
