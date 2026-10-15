@@ -10,6 +10,8 @@ Dashboard configuration is done by:
 
 A point-rendering style that displays a pie chart at each matching `StreamPoint` coordinate.
 
+![PieChart](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/PieChart.png)
+
 ### Properties
 
 | Property | Type | Default | Description |
