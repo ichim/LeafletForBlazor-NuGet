@@ -1,0 +1,57 @@
+﻿@page "/"
+@using Data.Input
+@using LeafletForBlazor.techs.core.Appearance
+
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 2rem)"
+     width="calc(100vw - 2rem)" OnAfterMapLoaded="OnAfterMapLoaded">
+</Map>
+
+@code {
+    Map? map = null;
+
+    LoadParameters loadParameters = new LoadParameters()
+    {
+
+        location = new Location() // Center of the Map View
+        {
+            latitude = 50.83112274500208,
+            longitude = 4.407353347319803
+        },
+        zoomLevel = 10,
+    };
+
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        // await map!.Geometric.Points.Appearance(e => e.type == "Industrial").SetStyle(new PieChart()
+        // {
+        //     dimension = 60,
+        //     scaling = 100,  
+        //     fontSize = 6,
+        //     opacity = 0.8,
+        //     expandedIndex = 1,
+        //     title = "Industrial",
+        //     visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 11, maxZoomLevel = 14 },
+        //     paramOrValues = "${production}",
+        //     paramOrColors = "${classes}",
+        //     paramOrLabels = "${texts}",
+            
+        // });
+        await map!.Geometric.Points.Add(new StreamPoints().points);
+        await map!.Geometric.Points.Appearance(e => e.type == "Market").SetStyle(new PieChart()
+        {
+            dimension = 40,
+            scaling = 100,
+            fontSize = 8,
+            opacity = 0.8,
+            expandedIndex = 1,
+            title = "Market",
+            visibilityZoomLevels = new VisibilityZoomLevels() { minZoomLevel = 8, maxZoomLevel = 10 },
+            paramOrValues = "${sale}",
+            paramOrColors = "${classes}",
+            paramOrLabels = "${texts}",
+
+        });
+    }
+}

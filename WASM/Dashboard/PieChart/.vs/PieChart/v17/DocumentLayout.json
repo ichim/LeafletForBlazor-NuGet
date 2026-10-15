@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\PieChart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E25DA89A-4C59-42C7-A103-7355083C09D4}|PieChart\\PieChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\piechart\\piechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25DA89A-4C59-42C7-A103-7355083C09D4}|PieChart\\PieChart.csproj|solutionrelative:piechart\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25DA89A-4C59-42C7-A103-7355083C09D4}|PieChart\\PieChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\piechart\\piechart\\input-data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25DA89A-4C59-42C7-A103-7355083C09D4}|PieChart\\PieChart.csproj|solutionrelative:piechart\\input-data\\streampoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25DA89A-4C59-42C7-A103-7355083C09D4}|PieChart\\PieChart.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\piechart\\piechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E25DA89A-4C59-42C7-A103-7355083C09D4}|PieChart\\PieChart.csproj|solutionrelative:piechart\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StreamPoints.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\PieChart\\PieChart\\input-data\\StreamPoints.cs",
+              "RelativeDocumentMoniker": "PieChart\\input-data\\StreamPoints.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\PieChart\\PieChart\\input-data\\StreamPoints.cs",
+              "RelativeToolTip": "PieChart\\input-data\\StreamPoints.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwEYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T08:06:29.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\PieChart\\PieChart\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "PieChart\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\PieChart\\PieChart\\Pages\\Home.razor",
+              "RelativeToolTip": "PieChart\\Pages\\Home.razor",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAwCcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-15T08:04:18.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\PieChart\\PieChart\\_Imports.razor",
+              "RelativeDocumentMoniker": "PieChart\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\PieChart\\PieChart\\_Imports.razor",
+              "RelativeToolTip": "PieChart\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-15T08:04:07.113Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
