@@ -168,6 +168,10 @@ The Remove() method on @map.Geometric.Points is async:
 
     await map.Geometric.Points.Remove();
 
+Or:
+
+    await map.Geometric.Points.Remove(new List<string>(){"00000000-0000-0000-0000-000000000001"});
+
 ## Update
 
 The Update() method on @map.Geometric.Points is async:
