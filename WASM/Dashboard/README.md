@@ -14,18 +14,18 @@ A point-rendering style that displays a pie chart at each matching `StreamPoint`
 
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| `title` | `string` | `"without title"` | Chart title displayed above the pie. |
-| `dimension` | `int` | — | Chart size. When `scaling = 100`, treated as a percentage. |
-| `scaling` | `int` | `100` | Scale factor applied to `dimension`. |
-| `opacity` | `double` | `1` | Chart opacity, from `0` (transparent) to `1` (opaque). |
-| `fontSize` | `int` | `6` | Font size for slice labels. |
-| `expandedIndex` | `int` | `-1` | Zero-based index of the exploded (offset) slice. `-1` means none. |
-| `increaseScaleFactorOnMouseover` | `double` | `0` | Scale multiplier applied on hover. `0` disables the effect. |
-| `visibilityZoomLevels` | `VisibilityZoomLevels` | unrestricted | Min/max zoom range where the chart is visible. |
-| `styles` | `PieStyle?` | `null` | Per-slice style overrides. `null` uses default styles. |
-| `paramOrValues` | `object` | `new double[0]` | Slice values — literal `double[]` or `${field}` binding. |
-| `paramOrLabels` | `object` | `new string[0]` | Slice labels — literal `string[]` or `${field}` binding. |
-| `paramOrColors` | `object` | `new string[0]` | Slice colors — literal `string[]` or `${field}` binding. |
+| title | string | "without title" | Chart title displayed above the pie. |
+| dimension | int | — | Chart size. When `scaling = 100`, treated as a percentage. |
+| scaling | int | 100 | Scale factor applied to `dimension`. |
+| opacity | double | 1 | Chart opacity, from `0` (transparent) to `1` (opaque). |
+| fontSize | int | 6 | Font size for slice labels. |
+| expandedIndex | int | -1 | Zero-based index of the exploded (offset) slice. `-1` means none. |
+| increaseScaleFactorOnMouseover | double | 0 | Scale multiplier applied on hover. `0` disables the effect. |
+| visibilityZoomLevels | VisibilityZoomLevels | unrestricted | Min/max zoom range where the chart is visible. |
+| styles | PieStyle? | null | Per-slice style overrides. `null` uses default styles. |
+| paramOrValues | object` | new double[0] | Slice values — literal `double[]` or `${field}` binding. |
+| paramOrLabels | object | new string[0] | Slice labels — literal `string[]` or `${field}` binding. |
+| paramOrColors | object | new string[0] | Slice colors — literal `string[]` or `${field}` binding. |
 
 
 
@@ -35,9 +35,19 @@ The `${propertyName}` syntax binds slice data to fields inside the `StreamPoint.
 
 | Placeholder | Resolves to |
 | :--- | :--- |
-| `${production}` | `StreamPoint.value` → `IndustrialValues.production` (`double[]`) |
-| `${texts}` | `StreamPoint.value` → `IndustrialValues.texts` (`string[]`) |
-| `${classes}` | `StreamPoint.value` → `IndustrialValues.classes` (`string[]`) |
+| ${production} | StreamPoint.value → IndustrialValues.production (`double[]`) |
+| ${texts} | StreamPoint.value → IndustrialValues.texts (`string[]`) |
+| ${classes} | StreamPoint.value → IndustrialValues.classes (`string[]`) |
+
+Where:
+
+    public class IndustrialValues
+    {
+        public double[]? production { get; set; }
+        public string[]? texts { get; set; }
+        public string[]? classes { get; set; }
+    }
+
 
 ### Usage
 
