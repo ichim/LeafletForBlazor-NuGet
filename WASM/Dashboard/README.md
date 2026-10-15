@@ -133,9 +133,9 @@ The `paramOrValueStart`, `paramOrValueStop`, and `paramOrValue` properties suppo
 **Example:**
 
 ```csharp
-gauge.paramOrValueStart = "${IndustrialValues.MinValue}";
-gauge.paramOrValueStop  = "${IndustrialValues.MaxValue}";
-gauge.paramOrValue      = "${IndustrialValues.CurrentValue}";
+gauge.paramOrValueStart = "${MinValue}";
+gauge.paramOrValueStop  = "${MaxValue}";
+gauge.paramOrValue      = "${CurrentValue}";
 ```
 
 At runtime, the map engine resolves each placeholder against the corresponding `StreamPoint` property and updates the gauge accordingly.
