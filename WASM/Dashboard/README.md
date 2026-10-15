@@ -97,10 +97,7 @@ Apply the style to a filtered set of points via `Appearance()`:
 
 ## GaugeChart Class
 
-**Namespace:** `LeafletForBlazor.Geometric.Points.Appearance`  
-**Interfaces:** `IGaugeChart`, `IChartPoint`  
-**Category:** Appearance  
-**Description:** Această clasă permite afișarea unui Gauge Chart simplu pe hartă, randat la coordonatele unui `StreamPoint`. Graficul este format dintr-o coroană circulară cu un indicator configurabil, suportând legarea (binding) valorilor din datele de flux.
+This class renders a simple Gauge Chart on the map at the coordinates of a `StreamPoint`. The gauge consists of a circular crown with a configurable indicator, supporting value binding from stream data.
 
 ---
 
@@ -108,32 +105,32 @@ Apply the style to a filtered set of points via `Appearance()`:
 
 | Property | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
-| title | string | "without title" | Titlul graficului gauge, afișat ca etichetă sau tooltip. |
-| visibilityZoomLevels | VisibilityZoomLevels | new VisibilityZoomLevels() | Definește intervalul de niveluri de zoom la care gauge-ul este vizibil pe hartă. |
-| increaseScaleFactorOnMouseover | double | 0 | Factorul cu care se mărește dimensiunea gauge-ului la hover. Setat la 0, nu există efect de scalare. |
-| dimension | int | 28 | Dimensiunea graficului gauge, exprimată ca procent relativ la viewport-ul hărții. |
-| paramOrValueStart | object | null | Valoarea de început a scalei gauge-ului. Acceptă valori numerice statice sau placeholder-uri de tip `${...}`. |
-| paramOrValueStop | object | null | Valoarea de sfârșit a scalei gauge-ului. Acceptă valori statice sau placeholder-uri. |
-| paramOrValue | object | null | Valoarea curentă indicată de acul gauge-ului. Acceptă valori statice sau placeholder-uri. |
-| label | string | null | Etichetă text afișată lângă sau în interiorul graficului gauge. |
-| colorStart | string | "white" | Culoarea de fundal a segmentului de început (limită inferioară) al coroanei circulare. Acceptă valori CSS. |
-| colorStop | string | "white" | Culoarea de fundal a segmentului de sfârșit (limită superioară) al coroanei circulare. Acceptă valori CSS. |
-| opacity | double | 1 | Opacitatea întregului grafic gauge, de la 0 (complet transparent) la 1 (complet opac). |
-| heightCircularCrown | int | 14 | Grosimea (înălțimea) arcului coroanei circulare, în pixeli. |
-| urlIndicator | string | null | URL către o imagine personalizată folosită ca indicator/ac al gauge-ului. Dacă nu este setat, se folosește indicatorul implicit. |
-| fontColorStart | string | "black" | Culoarea fontului pentru textul afișat la începutul scalei. |
-| fontColorMiddle | string | "black" | Culoarea fontului pentru textul afișat la mijlocul scalei. |
-| fontColorStop | string | "black" | Culoarea fontului pentru textul afișat la sfârșitul scalei. |
-| fontSize | int | 6 | Dimensiunea fontului (în pixeli) pentru toate etichetele text de pe graficul gauge. |
-| turnedAround | bool | false | Când este true, arcul gauge-ului este randat în direcția opusă (orientare oglindită). |
+| title | string | "without title" | Title of the gauge chart, displayed as a label or tooltip. |
+| visibilityZoomLevels | VisibilityZoomLevels | new VisibilityZoomLevels() | Defines the zoom level range at which the gauge is visible on the map. |
+| increaseScaleFactorOnMouseover | double | 0 | Factor by which the gauge size increases on mouse hover. Set to 0 for no scaling effect. |
+| dimension | int | 28 | Size of the gauge chart, expressed as a percentage relative to the map viewport. |
+| paramOrValueStart | object | null | The starting value of the gauge scale. Accepts static numeric values or `${...}` binding placeholders. |
+| paramOrValueStop | object | null | The ending value of the gauge scale. Accepts static values or binding placeholders. |
+| paramOrValue | object | null | The current value indicated by the gauge needle. Accepts static values or binding placeholders. |
+| label | string | null | Text label displayed alongside or inside the gauge chart. |
+| colorStart | string | "white" | Background color of the start (lower bound) segment of the circular crown. Accepts CSS color values. |
+| colorStop | string | "white" | Background color of the stop (upper bound) segment of the circular crown. Accepts CSS color values. |
+| opacity | double | 1 | Opacity of the entire gauge chart, from 0 (fully transparent) to 1 (fully opaque). |
+| heightCircularCrown | int | 14 | Thickness (height) of the circular crown arc, in pixels. |
+| urlIndicator | string | null | URL pointing to a custom image used as the gauge indicator/needle. If not set, the default built-in indicator is used. |
+| fontColorStart | string | "black" | Font color for the text displayed at the start of the gauge scale. |
+| fontColorMiddle | string | "black" | Font color for the text displayed at the middle of the gauge scale. |
+| fontColorStop | string | "black" | Font color for the text displayed at the stop of the gauge scale. |
+| fontSize | int | 6 | Font size (in pixels) for all text labels on the gauge chart. |
+| turnedAround | bool | false | When true, the gauge arc is rendered in the opposite direction (mirrored orientation). |
 
 ---
 
 ### Data Binding
 
-Proprietățile `paramOrValueStart`, `paramOrValueStop` și `paramOrValue` suportă legarea dinamică la câmpurile de date `StreamPoint` folosind sintaxa `${placeholder}`. Aceasta permite gauge-ului să reflecte valori în timp real fără a folosi numere statice.
+The `paramOrValueStart`, `paramOrValueStop`, and `paramOrValue` properties support dynamic binding to `StreamPoint` data fields using the `${placeholder}` syntax. This allows the gauge to reflect real-time stream values without hardcoding static numbers.
 
-**Exemplu:**
+**Example:**
 
 ```csharp
 gauge.paramOrValueStart = "${IndustrialValues.MinValue}";
@@ -141,7 +138,7 @@ gauge.paramOrValueStop  = "${IndustrialValues.MaxValue}";
 gauge.paramOrValue      = "${IndustrialValues.CurrentValue}";
 ```
 
-La runtime, motorul hărții rezolvă fiecare placeholder pe baza proprietății corespunzătoare din `StreamPoint` și actualizează gauge-ul.
+At runtime, the map engine resolves each placeholder against the corresponding `StreamPoint` property and updates the gauge accordingly.
 
 ---
 
@@ -152,7 +149,7 @@ map.Geometric.Points.Appearance(
     points: myStreamPoints,
     appearance: point => new GaugeChart
     {
-        title = "Temperatură",
+        title = "Temperature",
         dimension = 32,
         paramOrValueStart = 0,
         paramOrValueStop = 100,
@@ -175,7 +172,7 @@ map.Geometric.Points.Appearance(
 
 ### Expected StreamPoint Structure
 
-Obiectul `StreamPoint` legat de gauge trebuie să includă câmpurile de date relevante referite prin placeholder-uri:
+The `StreamPoint` object bound to the gauge should include the relevant data fields referenced by the placeholders:
 
 ```csharp
 public class IndustrialValues
@@ -197,7 +194,7 @@ public class StreamPoint
 
 ### Remarks
 
-- Dacă `paramOrValueStart`, `paramOrValueStop` sau `paramOrValue` sunt lăsate `null`, gauge-ul poate să nu se randeze corect — asigurați-vă că toate trei sunt setate.
-- Proprietatea `visibilityZoomLevels` controlează la ce niveluri de zoom apare gauge-ul, prevenind aglomerarea vizuală la scări nepotrivite.
-- O imagine indicator personalizată setată prin `urlIndicator` trebuie să fie un fișier grafic mic, accesibil web (recomandat PNG sau SVG). Dacă este omisă, se folosește indicatorul ac implicit.
+- If `paramOrValueStart`, `paramOrValueStop`, or `paramOrValue` are left as `null`, the gauge may not render correctly — ensure all three are set.
+- The `visibilityZoomLevels` property controls at which zoom levels the gauge appears, preventing visual clutter at inappropriate scales.
+- A custom indicator image set via `urlIndicator` should be a small, web-accessible graphic (PNG or SVG recommended). If omitted, the default needle indicator is used.
 
