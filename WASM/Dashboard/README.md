@@ -8,7 +8,7 @@ Dashboard configuration is done by:
 
 **Value or Dynamic Data Binding**
 
-Every property bearing the paramOr prefix supports dual input modes: you may supply a fixed value directly, or defer to runtime data by referencing a StreamPoint field through the ${placeholder} binding syntax.
+Every property bearing the `paramOr` prefix supports dual input modes: you may supply a fixed value directly, or defer to runtime data by referencing a StreamPoint field through the `${placeholder}` binding syntax.
 
 ## **PieChart** class
 
