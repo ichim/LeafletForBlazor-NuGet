@@ -6,6 +6,10 @@ Dashboard configuration is done by:
 1. using a point (location) display style appropriate to the type of tracking (Appearance method);
 2. setting the point collection according to the tracking needs
 
+**Value or Dynamic Data Binding**
+
+Every property bearing the paramOr prefix supports dual input modes: you may supply a fixed value directly, or defer to runtime data by referencing a StreamPoint field through the ${placeholder} binding syntax.
+
 ## **PieChart** class
 
 A point-rendering style that displays a pie chart at each matching `StreamPoint` coordinate.
