@@ -132,9 +132,9 @@ The `paramOrValueStart`, `paramOrValueStop`, and `paramOrValue` properties suppo
 **Example:**
 
 ```csharp
-gauge.paramOrValueStart = "${MinValue}";
-gauge.paramOrValueStop  = "${MaxValue}";
-gauge.paramOrValue      = "${CurrentValue}";
+paramOrValueStart = "${MinValue}";
+paramOrValueStop  = "${MaxValue}";
+paramOrValue      = "${CurrentValue}";
 ```
 
 At runtime, the map engine resolves each placeholder against the corresponding `StreamPoint` property and updates the gauge accordingly.
@@ -150,7 +150,7 @@ map.Geometric.Points.Appearance(e => e.type == "Industrial").SetStyle( new Gauge
         dimension = 32,
         paramOrValueStart = 0,
         paramOrValueStop = 100,
-        paramOrValue = "${IndustrialValues.Temperature}",
+        paramOrValue = "${Temperature}",
         label = "°C",
         colorStart = "#00ff00",
         colorStop = "#ff0000",
@@ -181,12 +181,21 @@ public class IndustrialValues
 }
 
 //StreamPoint with a class example
-public class StreamPoint
-{
-    public double Latitude { get; set; }
-    public double Longitude { get; set; }
-    public IndustrialValues IndustrialValues { get; set; }
-}
+        new StreamPoint
+        {
+            coordinates = new Coordinates
+            {
+                xy = new double[] { 50.8608, 4.2272 }
+            },
+            guid = new Guid("00000000-0000-0000-0000-000000000001"),
+            type = "Market",
+            value = new IndustrialValues
+            {
+                Temperature = 120,
+                MinValue = -20,
+                MaxValue = 1200
+            }
+        }
 ```
 
 ---
