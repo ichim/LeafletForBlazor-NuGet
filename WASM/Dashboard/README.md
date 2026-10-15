@@ -144,9 +144,7 @@ At runtime, the map engine resolves each placeholder against the corresponding `
 ### Implementation Example
 
 ```csharp
-map.Geometric.Points.Appearance(
-    points: myStreamPoints,
-    appearance: point => new GaugeChart
+map.Geometric.Points.Appearance(e => e.type == "Industrial").SetStyle( new GaugeChart
     {
         title = "Temperature",
         dimension = 32,
@@ -174,6 +172,7 @@ map.Geometric.Points.Appearance(
 The `StreamPoint` object bound to the gauge should include the relevant data fields referenced by the placeholders:
 
 ```csharp
+//Class example
 public class IndustrialValues
 {
     public double Temperature { get; set; }
@@ -181,6 +180,7 @@ public class IndustrialValues
     public double MaxValue { get; set; }
 }
 
+//StreamPoint with a class example
 public class StreamPoint
 {
     public double Latitude { get; set; }
