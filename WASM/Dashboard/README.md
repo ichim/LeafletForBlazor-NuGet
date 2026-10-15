@@ -6,7 +6,7 @@ Dashboard configuration is done by:
 1. using a point (location) display style appropriate to the type of tracking (Appearance method);
 2. setting the point collection according to the tracking needs
 
-## `PieChart` class
+## **PieChart** class
 
 A point-rendering style that displays a pie chart at each matching `StreamPoint` coordinate.
 
@@ -95,7 +95,7 @@ Apply the style to a filtered set of points via `Appearance()`:
 
 
 
-## GaugeChart Class
+## **GaugeChart** Class
 
 This class renders a simple Gauge Chart on the map at the coordinates of a `StreamPoint`. The gauge consists of a circular crown with a configurable indicator, supporting value binding from stream data.
 
