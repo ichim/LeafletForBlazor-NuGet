@@ -94,7 +94,6 @@ Apply the style to a filtered set of points via `Appearance()`:
         }
 
 
-
 ## **GaugeChart** Class
 
 This class renders a simple Gauge Chart on the map at the coordinates of a `StreamPoint`. The gauge consists of a circular crown with a configurable indicator, supporting value binding from stream data.
