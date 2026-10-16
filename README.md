@@ -2,7 +2,7 @@
 
 *Leaflet for Blazor* is a library that provides components for displaying maps in Blazor applications.  
 
-**🔑 KEYWORDS**: [`Pure C#`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept) - *Write map logic entirely in .NET / no JavaScript interop boilerplate*, [`LINQ Integration`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#destructuring-and-structuring-linq) - *Destructuring/Structuring LINQ expression*, [`Fluent API`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api) - *objects Hierarchical and Linguistic structure and Chain methods*, [`Plugins`](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins#-map-plugins) Framework - allows you to extend LeafletForBlazor, [`Zero JavaScript Config`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept) - *no script references and no css links etc*   
+**🔑 KEYWORDS**: [`Pure C#`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept) - *Write map logic entirely in .NET / no JavaScript interop boilerplate*, [`LINQ Integration`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#destructuring-and-structuring-linq) - *Destructuring/Structuring LINQ expression*, [`Fluent API`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api) - *objects Hierarchical and Linguistic structure and Chain methods*, [`Plugins`](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins#-map-plugins) Framework - allows you to extend LeafletForBlazor, [`Zero JavaScript Config`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept) for standard use - *no script references and no css links etc*   
 
 ![NuGet Version](https://img.shields.io/nuget/v/LeafletForBlazor?cacheSeconds=3600) ![NuGet Downloads](https://img.shields.io/nuget/dt/LeafletForBlazor?cacheSeconds=3600)![GitHub stars](https://img.shields.io/github/stars/ichim/LeafletForBlazor-nuget?cacheSeconds=3600) ![GitHub last commit](https://img.shields.io/github/last-commit/ichim/LeafletForBlazor-nuget?cacheSeconds=3600)[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/ichim/LeafletForBlazor-nuget/blob/main/LICENSE?cacheSeconds=3600)
 
@@ -99,6 +99,7 @@ Fires after the Leaflet map instance has fully initialized on the client side. U
 
 The event method returns a set of parameters useful for configuring the initial state of the map: Map, centerOfView and other.
 
+
     private Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
@@ -110,6 +111,7 @@ The event method returns a set of parameters useful for configuring the initial 
         return Task.CompletedTask;
     }
 
+>It is important to note that ``args.sender`` represents the Map class (the map functionality).
 
 [more about Map Events - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/MapLoadEvent#map-events)
 
@@ -181,15 +183,41 @@ For example, you can completely remove the attributionControl:
 
 The `Geometric` class contains classes that operate on geometries obtained from various sources.
 
+
 #### 📍 StreamPoint collection
 
 `StreamPoint` collection provides *real-time map synchronization* - any property change (coordinates, appearance, timestamp) instantly updates the map visualization. Objects are cached for performance but remain fully dynamic.
+
 
 The ``StreamPoint`` collection is hosted by `map.Geometric.Points` and provides you methods for handling predefined but hierarchically extensible root data structure:
 1. [Add()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#add), [Remove()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#remove), [Update()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#update) for collection handling; 
 1. [Appearance()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint/Appearance#-appearance) for point the aspect in the map;
 1. StreamPoint collection [events](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/OnClickEvent/README.md#-streampoint-collection-events);
 
+**Razor**
+```Razor 
+ <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
+ ```
+**C# - Example of adding a StreamPoint to the collection**
+```C#
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        var streamPoints = new List<StreamPoint>()
+        {
+                new StreamPoint()
+                {
+                    coordinates = new Coordinates()
+                    {
+                        xy = new double[2] { 50.86,  4.22 }
+                    },
+                    guid = new Guid("00000000-0000-0000-0000-000000000001"),
+                    type = "Industrial",
+                },
+        }
+        await map!.Geometric.Points.Add(streamPoint);
+    }
+```
 
 [more about StreamCollection - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#-streampoint-collection)
 
