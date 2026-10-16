@@ -228,6 +228,26 @@ The ``StreamPoint`` collection is hosted by `map.Geometric.Points` and provides 
 
 The ``map.Geometric.From.Files`` class allows you to load data from files stored on a web service host (_https://..._). Full `RFC 7946` Feature Support.
 
+**Razor**
+```Razor 
+ <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
+ ```
+
+ **C# - Example of loading data from files**
+ ```
+     private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        var path = "https://MyServer";
+       
+        await map!.Geometric.From.Files!.FetchAsync(
+                                                    new List<string> { $"{path}/data/infrastructure2.json"}, 
+                                                    PoolingDelay.Short
+                                                    );
+    }
+```
+
+
 [more about working with files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files#files)
 
 
