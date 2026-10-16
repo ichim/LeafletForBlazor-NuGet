@@ -241,7 +241,7 @@ The ``map.Geometric.From.Files`` class allows you to load data from files stored
         var path = "https://MyServer";
        
         await map!.Geometric.From.Files!.FetchAsync(
-                                                    new List<string> { $"{path}/data/infrastructure2.json"}, 
+                                                    new List<string> { $"{path}/data/infrastructure.json"}, 
                                                     PoolingDelay.Short
                                                     );
     }
