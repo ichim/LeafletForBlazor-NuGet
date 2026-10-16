@@ -105,7 +105,6 @@ The event method returns a set of parameters useful for configuring the initial 
         var map = args.sender as Map;
         
         Console.WriteLine($"Map loaded. Dimensions are - Height: {map!.height}, Map Width: {map!.width}");
-        //other post-load logic can be added here, such as setting the map center or zoom level, adding points, updating files or others.
         Console.WriteLine($"lat: {args.centerOfView.latitude} long: {args.centerOfView.longitude}");
         
         return Task.CompletedTask;
