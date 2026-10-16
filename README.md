@@ -83,14 +83,9 @@ Additional default configurations are available, including [attribution control 
 
 [more about Map Configuration - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#net-maui-blazor-hybrid-app)
 
-# 🗺️ More about Map component
+## 🌣 Map post-load logic
 
-### ⚡ Map Events
-
-#### OnAfterMapLoaded
-
-Fires after the Leaflet map instance has fully initialized on the client side. Use it to access the map's initial state or trigger post-load logic.
-
+After initializing the Leaflet map instance on the client side, you can modify map settings and load spatial data. The `OnAfterMapLoaded` event of the Map component can be used for operations that require an initialized map—for example, accessing the map's initial state, adding geometries, or loading data from files.
 **Razor**
 
     <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
