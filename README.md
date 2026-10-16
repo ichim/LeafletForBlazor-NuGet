@@ -111,7 +111,7 @@ The event method returns a set of parameters useful for configuring the initial 
 
 [more about Map Events - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-map-events)
 
-## 🌍 Working with the Map
+## 🌍 Map Interaction & UI
 
 ### 👁️ View class
 
@@ -164,16 +164,18 @@ For example, you can completely remove the attributionControl:
 **C#**
 
 ```C#
-    private async Task OnAfterMapLoaded(MapEventArgs args)
-    {
-        var map = args.sender as Map;
-        await map!.Attribution.Remove();  
-        //strongly discouraged from an ethical standpoint (Leaflet.js BSD 2 license)
-    }
+private async Task OnAfterMapLoaded(MapEventArgs args)
+{
+    var map = args.sender as Map;
+    await map.Attribution.SetPrefix("<img style='height: 14px;weight:14px;' src = 'http://localhost:5234/icons/leaflet.png'>LeafletForBlazor</img>");
+}
 ```
 
 
 [more about Attribution class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution)
+
+
+## 📍 Working with data
 
 ### 📐 Geometric class
 
