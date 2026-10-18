@@ -1,8 +1,8 @@
 # ![LeafletForBlazor](https://user-images.githubusercontent.com/8348463/224698821-8768d8af-46ea-462a-a603-a7adf9095594.png) Leaflet Map for Blazor
 
-*Leaflet for Blazor* is a library that provides components for displaying map in Blazor applications.  
+*Leaflet for Blazor* is a library that provides components for displaying maps in Blazor applications.  
 
-**🔑 KEYWORDS**: [`Pure C#`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept) - *Write map logic entirely in .NET / no JavaScript interop boilerplate*, [`LINQ Integration`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#destructuring-and-structuring-linq) - *Destructuring/Structuring LINQ expression*, [`Fluent API`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api) - *objects Hierarchical and Linguistic structure and Chain methods*, [`Plugins`](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins#-map-plugins) Framework - allows you to extend LeafletForBlazor, [`Zero JavaScript Config`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept) - *no script references and no css links etc*   
+**🔑 KEYWORDS**: [`Pure C#`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept) - *Write map logic entirely in .NET / no JavaScript interop boilerplate*, [`LINQ Integration`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#destructuring-and-structuring-linq) - *Destructuring/Structuring LINQ expression*, [`Fluent API`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api) - *objects Hierarchical and Linguistic structure and Chain methods*, [`Plugins`](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins#-map-plugins) Framework - allows you to extend LeafletForBlazor, [`Zero JavaScript Config`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept) for standard use - *no script references and no css links etc*   
 
 ![NuGet Version](https://img.shields.io/nuget/v/LeafletForBlazor?cacheSeconds=3600) ![NuGet Downloads](https://img.shields.io/nuget/dt/LeafletForBlazor?cacheSeconds=3600)![GitHub stars](https://img.shields.io/github/stars/ichim/LeafletForBlazor-nuget?cacheSeconds=3600) ![GitHub last commit](https://img.shields.io/github/last-commit/ichim/LeafletForBlazor-nuget?cacheSeconds=3600)[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/ichim/LeafletForBlazor-nuget/blob/main/LICENSE?cacheSeconds=3600)
 
@@ -83,30 +83,35 @@ Additional default configurations are available, including [attribution control 
 
 [more about Map Configuration - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#net-maui-blazor-hybrid-app)
 
-# 🗺️ More about Map component
+## 🌣 Map post-load logic
 
-### ⚡ Map Events
-
-#### OnAfterMapLoaded
-
-Fires after the Leaflet map instance has fully initialized on the client side. Use it to access the map's initial state or trigger post-load logic.
-
+After initializing the Leaflet map instance on the client side, you can modify map settings and load spatial data. The `OnAfterMapLoaded` event of the Map component can be used for operations that require an initialized map—for example, accessing the map's initial state, adding geometries, or loading data from files.
 **Razor**
 
     <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
 
 **C# - Handler signature**
 
+The event method returns a set of parameters useful for configuring the initial state of the map: Map, centerOfView and other.
+
+
     private Task OnAfterMapLoaded(MapEventArgs args)
     {
+        var map = args.sender as Map;
+        
+        Console.WriteLine($"Map loaded. Dimensions are - Height: {map!.height}, Map Width: {map!.width}");
         Console.WriteLine($"lat: {args.centerOfView.latitude} long: {args.centerOfView.longitude}");
+        
         return Task.CompletedTask;
     }
 
+>It is important to note that ``args.sender`` represents the Map class (the map functionality).
 
 [more about Map Events - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/MapLoadEvent#map-events)
 
 [more about Map Events - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-map-events)
+
+## 🌍 Map Interaction & UI
 
 ### 👁️ View class
 
@@ -114,11 +119,31 @@ Fires after the Leaflet map instance has fully initialized on the client side. U
 
 For example, you can use the `View` class to get the map's center:
 
+**Razor**
+
+```Razor 
+ <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
+ ```
+
+ **C#**
+
+```C#
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
         var center = await map!.View.getCenterAsync();
+    }
+```
 
-...setting the map center:
+...setting the map center - **C#**:
 
+```C#
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
         map!.View.SetCenter(40.24, 5.48);
+    }
+```
 
 [more about View class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/View#view)
 
@@ -131,25 +156,66 @@ The `Attribution` class provides the methods needed to interact with the map's `
 
 For example, you can completely remove the attributionControl:
 
-    await map!.Attribution.Remove();  
-    
-    //strongly discouraged from an ethical standpoint (Leaflet.js BSD 2 license)
+**Razor**
+
+```Razor 
+ <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
+ ```
+**C#**
+
+```C#
+private async Task OnAfterMapLoaded(MapEventArgs args)
+{
+    var map = args.sender as Map;
+    await map.Attribution.SetPrefix("<img style='height: 14px;weight:14px;' src = 'http://localhost:5234/icons/leaflet.png'>LeafletForBlazor</img>");
+}
+```
+
 
 [more about Attribution class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution)
+
+
+## 📍 Working with data
 
 ### 📐 Geometric class
 
 The `Geometric` class contains classes that operate on geometries obtained from various sources.
 
+
 #### 📍 StreamPoint collection
 
 `StreamPoint` collection provides *real-time map synchronization* - any property change (coordinates, appearance, timestamp) instantly updates the map visualization. Objects are cached for performance but remain fully dynamic.
 
-The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides you methods for handling predefined but hierarchically extensible root data structure:
+
+The ``StreamPoint`` collection is hosted by `map.Geometric.Points` and provides you methods for handling predefined but hierarchically extensible root data structure:
 1. [Add()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#add), [Remove()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#remove), [Update()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#update) for collection handling; 
 1. [Appearance()](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint/Appearance#-appearance) for point the aspect in the map;
 1. StreamPoint collection [events](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/OnClickEvent/README.md#-streampoint-collection-events);
 
+**Razor**
+```Razor 
+ <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
+ ```
+**C# - Example of adding a StreamPoint to the collection**
+```C#
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        var streamPoints = new List<StreamPoint>()
+        {
+                new StreamPoint()
+                {
+                    coordinates = new Coordinates()
+                    {
+                        xy = new double[2] { 50.86,  4.22 }
+                    },
+                    guid = new Guid("00000000-0000-0000-0000-000000000001"),
+                    type = "Industrial",
+                },
+        }
+        await map!.Geometric.Points.Add(streamPoint);
+    }
+```
 
 [more about StreamCollection - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/StreamPoint#-streampoint-collection)
 
@@ -158,7 +224,27 @@ The ``StreamPoint`` collection is hosted by `@map.Geometric.Points` and provides
 
 #### 📁 Working with Files
 
-The ``@map.Geometric.From.Files`` class allows you to load data from files stored on a web service host (_https://..._). Full `RFC 7946` Feature Support.
+The ``map.Geometric.From.Files`` class allows you to load data from files stored on a web service host (_https://..._). Full `RFC 7946` Feature Support.
+
+**Razor**
+```Razor 
+ <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
+ ```
+
+ **C# - Example of loading data from files**
+ ```
+     private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        var path = "https://MyServer";
+       
+        await map!.Geometric.From.Files!.FetchAsync(
+                                                    new List<string> { $"{path}/data/infrastructure.json"}, 
+                                                    PoolingDelay.Short
+                                                    );
+    }
+```
+
 
 [more about working with files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files#files)
 

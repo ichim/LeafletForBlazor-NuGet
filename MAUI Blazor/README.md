@@ -11,10 +11,7 @@ Adding to _Imports.razor
 
 Adding the Map component:
 
-    <Map
-         height="calc(100vh - 2rem)"
-         width="calc(100vw - 2rem)"
-         />
+    <Map height="100vh" width="100vw"/>
 
 Default configuration parameters:
 
@@ -46,15 +43,13 @@ Default configuration parameters:
 Settings Map parameters:
 
 
-    <Map loadParameters="@loadParameters"
-         height="calc(100vh - 4rem)"
-         width="calc(100vw - 2rem)" />
+    <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
 
 ## ⚡ Map events
 
 Blazor page:
 
-    <Map height="calc(100vh - 2rem)" width="calc(100vw - 2rem)" OnAfterMapLoaded="@OnAfterMapLoaded" />
+    <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
 
 
 Code block:
