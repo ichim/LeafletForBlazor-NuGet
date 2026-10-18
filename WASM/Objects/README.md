@@ -37,12 +37,9 @@ where:
       public List<double> coordinates { get; set; } = new List<double> { 26.098368, 44.4468244 };
   }
 
-## Removing data
-
-
-
   public class Properties
   {
       public string name { get; set; } = "Beautiful Memories Store";
   }
 ```
+## Removing data
