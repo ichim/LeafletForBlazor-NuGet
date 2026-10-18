@@ -55,7 +55,7 @@ To do this, add the following directives to the `_Imports.razor` file
 
         <Map height="100vh" width="100vw"/>
 
-## 🗺️ Map and Default Configuration
+## 🗺️ Default Map configuration
 
 Use the `loadParameters` property to set the initial map view:
 
@@ -231,7 +231,7 @@ The ``map.Geometric.From.Files`` class allows you to load data from files stored
  <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
  ```
 
- **C# - Example of loading data from files**
+ **C# - Example of fetching data from Files**
  ```
      private async Task OnAfterMapLoaded(MapEventArgs args)
     {
@@ -245,8 +245,34 @@ The ``map.Geometric.From.Files`` class allows you to load data from files stored
     }
 ```
 
-
 [more about working with files](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files#files)
+
+
+#### 📦 Working with Objects
+
+The ``map.Geometric.From.Objects`` class allows you to load data from objects. Full `RFC 7946` Feature Support.
+
+**Razor**
+```Razor 
+ <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
+ ```
+
+  **C# - Example of loading data from Objects**
+ ```
+     private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        int primaryKey = 0; 
+        var objects = new List<object>
+        {
+            new Feature()           //RFC 7946 class structure
+        };
+        await map!.Geometric.From.Objects!.LoadAsync(objects).WithKey(primaryKey);
+    }
+```
+
+[more about working with Objects](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Objects/README.md#objects)
+
+
 
 
 # 📊 Dashboard
