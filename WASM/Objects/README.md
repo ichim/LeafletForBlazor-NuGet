@@ -21,6 +21,22 @@ The ``map.Geometric.From.Objects`` class allows you to work with data from objec
         await map!.Geometric.From.Objects!.LoadAsync(objects).WithKey(primaryKey);
     }
 ```
+
+Or:
+
+```
+     private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        int primaryKey = 0; 
+        var objects = new List<object>
+        {
+            new Feature()           //RFC 7946 class structure
+        };
+        await map!.Geometric.From.Objects!.LoadAsync(objects, primaryKey);
+    }
+
+```
+
 where:
 
 ```
@@ -45,5 +61,13 @@ where:
 ## Removing data
 
 ```
-  await map!.Geometric.From.Objects.RemoveAsync(primaryKey);
+  int primaryKey = 0;
+  await map!.Geometric.From.Objects.RemoveAsync().WithKey(primaryKey);
+```
+
+Or:
+
+```
+  int primaryKey = 0;
+  await map!.Geometric.From.Objects.RemoveAsync(rpimaryKey);
 ```
