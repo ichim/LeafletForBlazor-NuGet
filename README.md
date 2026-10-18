@@ -25,7 +25,7 @@
 # 🚀 Quick Start
 
 
-## 🔧 Project setup
+## 🔧 1. Project setup
 
 🔵 **Add the Map component to your project in just 3 steps:**
 
@@ -59,7 +59,7 @@ To do this, add the following directives to the `_Imports.razor` file
         <Map height="100vh" width="100vw"/>
 ```
 
-## 🗺️ Default Map configuration
+## 🗺️ 2. Default Map configuration
 
 Use the `loadParameters` property to set the initial map view:
 
@@ -90,7 +90,7 @@ Additional default configurations are available, including [attribution control 
 
 [more about Map Configuration - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#net-maui-blazor-hybrid-app)
 
-## 🌣 Map post-load logic
+### 🌣 Map post-load logic
 
 After initializing the Leaflet map instance on the client side, you can modify map settings and load spatial data. The `OnAfterMapLoaded` event of the Map component can be used for operations that require an initialized map—for example, accessing the map's initial state, adding geometries, or loading data from files.
 
@@ -119,7 +119,7 @@ The event method returns a set of parameters useful for configuring the initial 
 
 [more about Map Events - .NET MAUI Blazor Hybrid App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor#-map-events)
 
-## 🌍 Map Interaction & UI
+## 🌍 3.  Map Interaction & UI
 
 ### 👁️ View class
 
@@ -183,7 +183,7 @@ private async Task OnAfterMapLoaded(MapEventArgs args)
 [more about Attribution class](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution)
 
 
-## 📍 Working with data
+## 📍 4.  Working with data
 
 ### 📐 Geometric class
 
