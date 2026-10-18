@@ -43,3 +43,7 @@ where:
   }
 ```
 ## Removing data
+
+```
+  await map!.Geometric.From.Objects.RemoveAsync(primaryKey);
+```
