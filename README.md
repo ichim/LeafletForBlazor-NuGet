@@ -238,7 +238,8 @@ The ``map.Geometric.From.Files`` class allows you to load data from files stored
  ```
 
  **C# - Example of fetching data from Files**
- ```
+ 
+ ```C#  
      private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
