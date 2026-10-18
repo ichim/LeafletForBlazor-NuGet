@@ -1,6 +1,8 @@
 # Objects
 
-The ``map.Geometric.From.Objects`` class allows you to load data from objects. Full `RFC 7946` Feature Support.
+The ``map.Geometric.From.Objects`` class allows you to work with data from objects. Full `RFC 7946` Feature Support.
+
+##  Loading data
 
 **Razor**
 ```Razor 
@@ -34,6 +36,10 @@ where:
       public string type { get; set; } = "Point";
       public List<double> coordinates { get; set; } = new List<double> { 26.098368, 44.4468244 };
   }
+
+## Removing data
+
+
 
   public class Properties
   {
