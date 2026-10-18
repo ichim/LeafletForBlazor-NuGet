@@ -44,10 +44,12 @@
 
 To do this, add the following directives to the `_Imports.razor` file
 
-
+```Razor   
         @using LeafletForBlazor                             //working with package classes
         @using static LeafletForBlazor.Map                  //working with Map class
         @using static LeafletForBlazor.techs.maps.Leaflet   //working with Leaflet API
+
+```
 
 3. Use the `Map` component
 
@@ -61,10 +63,13 @@ Use the `loadParameters` property to set the initial map view:
 
 **Razor**
 
+```Razor
         <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
+```
 
 **C# - Default Map Configuration**
 
+```C#
     LoadParameters loadParameters = new()
     {
         location = new Location()                                               //Default center of the Map View
@@ -74,7 +79,7 @@ Use the `loadParameters` property to set the initial map view:
         },
         zoomLevel = 10                                                          //Default zoom level
     };
-    
+``` 
  
 Additional default configurations are available, including [attribution control visibility](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution), map [basemap layers](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Basemaps#basemap-layers), and [map controls](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Basic/LoadParameters/README.md#map-controls) such as the scale control.
 
@@ -86,15 +91,16 @@ Additional default configurations are available, including [attribution control 
 ## 🌣 Map post-load logic
 
 After initializing the Leaflet map instance on the client side, you can modify map settings and load spatial data. The `OnAfterMapLoaded` event of the Map component can be used for operations that require an initialized map—for example, accessing the map's initial state, adding geometries, or loading data from files.
+
 **Razor**
-
+```Razor
     <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
-
+```
 **C# - Handler signature**
 
 The event method returns a set of parameters useful for configuring the initial state of the map: Map, centerOfView and other.
 
-
+```C#
     private Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
@@ -104,7 +110,7 @@ The event method returns a set of parameters useful for configuring the initial 
         
         return Task.CompletedTask;
     }
-
+```
 >It is important to note that ``args.sender`` represents the Map class (the map functionality).
 
 [more about Map Events - Blazor WebAssembly Standalone App](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/MapLoadEvent#map-events)
@@ -258,7 +264,7 @@ The ``map.Geometric.From.Objects`` class allows you to load data from objects. F
  ```
 
   **C# - Example of loading data from Objects**
- ```
+ ```C#
      private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         int primaryKey = 0; 
@@ -289,6 +295,7 @@ However, extending the NuGet package can only be implemented by adding JavaScrip
 
 The Map component provides the MapPlugins slot (Plugin Framework), allowing you to extend LeafletForBlazor with additional Leaflet functionality. It enables the development of features in JavaScript and grants you access to the map (the Leaflet map instance) and the L object.
 
+```Razor
         <Map>
             <MapPlugins>
                         @* Custom Blazor Component - Leaflet.js Fullscreen plugin  *@
@@ -300,6 +307,7 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
 						@*   other plugins or custom functionality  *@
             </MapPlugins>
         </Map>
+```
 
 By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor to be extended with already developed Leaflet.js add-ons.
 
@@ -311,14 +319,14 @@ By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor
 
 The Map component provides the MapComponents slot, allowing you to extend the LeafletForBlazor map with graphical interface elements.
 
+```Razor
         <Map>
             <MapComponents>
                 <Toolbar/>
 				@*   other MapComponents or html elements  *@
             </MapComponents>
         </Map>
-
-
+```
 
 | Description | Image |
 |-----------|-------|
