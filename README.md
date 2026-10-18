@@ -55,7 +55,9 @@ To do this, add the following directives to the `_Imports.razor` file
 
 **Razor**
 
+```Razor
         <Map height="100vh" width="100vw"/>
+```
 
 ## 🗺️ Default Map configuration
 
