@@ -38,8 +38,15 @@
 
  - From Package Manager Console: *Tools* -> *NuGet Package Manager* -> *Package Manager Console*
 
+ ```
        NuGet\Install-Package LeafletForBlazor
+ ```
+
+ - From PowerShell:
  
+ ```
+      dotnet add package LeafletForBlazor
+ ```
 2. Add the required namespaces in `_Imports.razor`
 
 To do this, add the following directives to the `_Imports.razor` file
