@@ -10,7 +10,9 @@ The <Legend/> component displays a legend on the map, allowing users to quickly 
 The component is placed as a child element of the <Map> component:
 ```Razor
     <Map height="calc(100vh - 1rem)" width="calc(100vw - 2rem)">
-        <Legend left="12px" top="80px"/>
+        <MapComponents>
+            <Legend left="12px" top="80px"/>
+        </MapComponents>
     </Map>
 ```
 ## Parameters
