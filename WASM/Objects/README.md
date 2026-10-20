@@ -10,7 +10,7 @@ The ``map.Geometric.From.Objects`` class allows you to work with data from objec
  ```
 
   **C# - Example of loading data from Objects**
- ```
+ ```C#
      private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         int primaryKey = 0; 
@@ -25,7 +25,7 @@ The ``map.Geometric.From.Objects`` class allows you to work with data from objec
 
 where:
 
-```
+```C#
   public class Feature
   {
       public string type { get; set; } = "Feature";
@@ -46,7 +46,7 @@ where:
 ```
 ## Removing data
 
-```
+```C#
   int primaryKey = 0;
   await map!.Geometric.From.Objects.RemoveAsync().WithKey(primaryKey);
   // await map!.Geometric.From.Objects.RemoveAsync(primaryKey); //it can also be written without WithKey()
