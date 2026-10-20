@@ -23,7 +23,7 @@ Supported Rich data objects GeoJSON Elements:
 The asynchronous `FetchAsync` method on the `@map.Geometric.From.Files` class allows you to retrieve data from files stored on a virtual folder of a web server.
 
 ## Basic Usage (No Pooling)
-
+```C#
     private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
@@ -31,7 +31,7 @@ The asynchronous `FetchAsync` method on the `@map.Geometric.From.Files` class al
             new List<string> { "http://example.com/data.json" }
         );
     }
-
+```
 ## Pooling (Auto-Refresh)
 
 Use PoolingDelay to periodically re-fetch the data. Available intervals:
@@ -42,7 +42,7 @@ Use PoolingDelay to periodically re-fetch the data. Available intervals:
 | Medium |	30 seconds |
 | Long |	60 seconds |
 | VeryLong |	120 seconds |
-
+```C#
     private async Task OnAfterMapLoaded(MapEventArgs args)
     {
         var map = args.sender as Map;
@@ -51,35 +51,35 @@ Use PoolingDelay to periodically re-fetch the data. Available intervals:
             PoolingDelay.Short
         );
     }
-
+```
 ## Cache Bypass
 
 To ensure fresh data on every fetch, cache is disabled by default:
-
+```C#
     DefaultRequestHeaders.CacheControl = new CacheControlHeaderValue
     {
         NoCache = true,
         NoStore = true,
         MustRevalidate = true
     };
-
+```
 For some browsers, you may also need to force-ignore cached reads:
-
+```C#
     map.Geometric.From.Files.forceCacheIgnore = true;
-
+```
 ## Events
 
 ### OnAfterFetchAsync
 
 Listen for fetch completions (fired after each pooling cycle):
-
+```C#
     map.Geometric.From.Files.OnAfterFetchAsync += (sender, args) =>
     {
         Console.WriteLine($"Files loaded: {args.layerId}");
     };
-
+```
  Where args is:
-
+```C#
       public class FileFetchingEventArgs : EventArgs
      {
          public string url { get; }
@@ -89,51 +89,51 @@ Listen for fetch completions (fired after each pooling cycle):
          public int? id { get; set; }
          public int[]? layerId { get; set; }
      }
-
+```
 ### OnClick
 
 This is triggered whenever a click is made on the map.
-
+```C#
      map.Geometric.From.Files.OnClick += (sender, args) =>
      {
          
      };
-
+```
  Where args is:
-
+```C#
         public class FilesItemsEventArgs : EventArgs
         {
             public List<ExpandoObject> geometriesFound { get; set; }
             public Coordinates geoid { get; set; }
             public Coordinates screen { get; set; }
         }
-
+```
 [more about OnClick](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files/events/OnClick#onclick-event)
 
 ## Stopping Pooling
 
 ``Important: Always call`` StopFetchingAsync before starting a new `FetchAsync`.
-
+```C#
     await map.Geometric.From.Files.StopFetchingAsync();
-
+```
 ## Clearing Content
 
 Each file maps to its own layer. You can clear all layers at once:
-
+```C#
     await map.Geometric.From.Files.ClearAsync();
-
+```
 Or target a specific file/layer:
-
+```C#
     await map.Geometric.From.Files
         .Where(file => file.Url == "http://example.com/data.json")
         .ClearAsync();
-
+```
 ## Removing All Layers
 
 To completely remove all Leaflet layers from the map:
-
+```C#
     await map.Geometric.From.Files.RemoveAsync();
-
+```
 ## Suggestions
 
  - Consider adding a small "Common Gotchas" section: calling FetchAsync without stopping previous pooling can lead to duplicate requests and `the threads may work improperly`.
@@ -148,7 +148,7 @@ Leaflet For Blazor can also work with other formats based on ... but to which ``
 ## JSON Object
 
 JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, contains an array in the format.
-
+```JSON
     {
       "data": [
         {
@@ -163,11 +163,11 @@ JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, c
         }
       ]
     }
-
+```
 ## JSON Object and Style
 
 JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, contains an array in the format.
-
+```JSON
     {
       "data": [
         {
@@ -193,11 +193,11 @@ JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, c
       ],
       "appearance": { "radius" : 10, "fillColor": "#ff0000", "color": "#000000", "weight": 2, "opacity": 0.8, "fillOpacity": 0.6 }
     }
-
+```
 ## JSON Object and Switch/Classes
 
 JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, contains an array in the format.
-
+```JSON
     {
       "data": [],
       "appearance": {
@@ -229,7 +229,7 @@ JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, c
         }
       }
     }
-
+```
 **Structure Overview**
 
  - `data` — an array of valid GeoJSON features (points, lines, or polygons).
@@ -241,7 +241,7 @@ JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, c
  - `default` — a fallback style applied when no fieldValue in classes matches the feature's property.
 
 ## Working with icons
-
+```JSON
     {
       "data": [
         {
@@ -302,7 +302,7 @@ JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, c
         }
       }
     }
-
+```
 <img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/980fd036-5c1c-4d96-9cfc-277ceea73214" />
 
     
