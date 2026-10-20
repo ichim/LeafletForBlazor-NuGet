@@ -44,7 +44,7 @@
 
  - From PowerShell:
  
- ```PowerShell
+ ```PS
       dotnet add package LeafletForBlazor
  ```
 2. Add the required namespaces in `_Imports.razor`
