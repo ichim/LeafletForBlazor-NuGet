@@ -43,7 +43,7 @@ The loadParameter parameter of the Map component allows you to configure the map
 	  };
 ```    
 
-- ℹ️ Attribution. Management of map attributes:
+- ℹ️ `Attribution`. Management of map attributes:
 ```C#
       LoadParameters loadParameters = new LoadParameters()
       {
@@ -51,3 +51,7 @@ The loadParameter parameter of the Map component allows you to configure the map
       }
 ```
 [more about Attribution](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Attribution#%E2%84%B9%EF%B8%8F-attribution)
+
+- Settings `Basemap` Layers
+
+[more about Basemap Layers](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Basemaps#basemap-layers)
