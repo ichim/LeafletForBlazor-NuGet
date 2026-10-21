@@ -224,7 +224,7 @@ The ``StreamPoint`` collection is hosted by `map.Geometric.Points` and provides 
                         xy = new double[2] { 50.86,  4.22 }
                     },
                     guid = new Guid("00000000-0000-0000-0000-000000000001"),
-                    type = "Industrial",
+                    type = "Industrial"
                 },
         }
         await map!.Geometric.Points.Add(streamPoint);
