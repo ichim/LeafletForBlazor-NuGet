@@ -26,7 +26,7 @@ The `StreamPoint` collection is hosted by @map.Geometric.Points and provides ope
 What does root data structure mean?
 
 ``StreamPoint`` has a predefined, mandatory structure without which these points cannot function correctly.
-
+```C#
     public class StreamPoint : IStreamPoint, IStreamType
     {
         public Guid guid { get; set; }                                            //unique identifier
@@ -35,13 +35,13 @@ What does root data structure mean?
         public DateTime timestamp { get; set; }                                   //data time, are often used in the MemoryCache mechanism
         public string? type { get; set; }                                         //allows for a classification of data. Often used for map appearance
     }
-
+```
 ### StreamPoint: a Flexible, Extensible Map Point Definition
 
 StreamPoint is a foundational data model designed for geographic information systems (GIS) in Blazor applications. It provides a standardized, yet extensible structure for representing dynamic map points with real-time synchronization capabilities.
 
 #### Core Architecture
-
+```C#
     public class StreamPoint : IStreamPoint, IStreamType
     {
         public Guid guid { get; set; }                    // Unique identifier for point tracking
@@ -50,7 +50,7 @@ StreamPoint is a foundational data model designed for geographic information sys
         public DateTime timestamp { get; set; }           // Temporal indexing and cache management
         public string? type { get; set; }                 // Classification for layered visualization
     }
-
+```
 Where:
 
 1. `guid` - Identity Management
@@ -90,7 +90,7 @@ Where:
     Design Pattern: Open/Closed Principle implementation
 
 To extend the StreamPoint class you need to create a new custom class:
-
+```C#
         public class VehicleTracking
         {
                 public double? speed { get; set; } = 0;
@@ -100,11 +100,11 @@ To extend the StreamPoint class you need to create a new custom class:
                 public double? altitude { get; set; } = 0;
                 public double timeSpent { get; set; } = 0;
         }
-
+```
 #### Extension Example: Vehicle Tracking System
 
 The value property enables seamless integration of domain-specific models:
-
+```C#
         public class VehicleTracking
         {
             public double? speed { get; set; }        // Velocity in km/h
@@ -135,7 +135,7 @@ The value property enables seamless integration of domain-specific models:
                 timeSpent = 45.5
             }
         };
-
+```
 #### Integration Benefits
 
 1. Map Visualization
@@ -165,21 +165,21 @@ The Add() method on @map.Geometric.Points is async:
 ## Remove
 
 The Remove() method on @map.Geometric.Points is async:
-
+```C#
     await map.Geometric.Points.Remove();
-
+```
 Or:
-
+```C#
     await map.Geometric.Points.Remove(new List<string>(){"00000000-0000-0000-0000-000000000001"});
-
+```
 ## Update
 
 The Update() method on @map.Geometric.Points is async:
-
+```C#
     await map.Geometric.Points.Update(new List<StreamPoint>(){});
-
+```
 Example code:
-
+```C#
          await map.Geometric.Points.Update(new List<StreamPoint>()
                      {
 
@@ -204,20 +204,21 @@ Example code:
                              }
 
                         });
+```
 ## 🛠️ Settings
 
 Here you can configure how the collection of points displayed on the map behaves.
-
+```C#
     map.Geometric.Points.settings = new LeafletForBlazor.techs.core.Geometry.Points.Settings(){};
-
+```
 
 
 ## 🎨 Appearance
 
 Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
-
+```C#
     await map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...);
-
+```
 
 [more about Appearance](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/StreamPoint/Appearance/README.md#-appearance)
 
