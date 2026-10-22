@@ -50,23 +50,30 @@ Settings Map parameters:
 
 [about basemap layers](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Basemaps#basemap-layers)
 
-## ⚡ Map events
+## 🌣 Map post-load logic
 
-Blazor page:
+After initializing the Leaflet map instance on the client side, you can modify map settings and load spatial data. The `OnAfterMapLoaded` event of the Map component can be used for operations that require an initialized map—for example, accessing the map's initial state, adding geometries, or loading data from files.
+
+**Razor**
 ```Razor
     <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
 ```
+**C# - Handler signature**
 
-Code block:
+The event method returns a set of parameters useful for configuring the initial state of the map: Map, centerOfView and other.
+
 ```C#
-    @code {
-        private Task OnAfterMapLoaded(MapEventArgs args)
-        {
-            Console.WriteLine($"lat: {args.centerOfView.latitude} long: {args.centerOfView.longitude}");
-            return Task.CompletedTask;
-        }
+    private Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        
+        Console.WriteLine($"Map loaded. Dimensions are - Height: {map!.height}, Map Width: {map!.width}");
+        Console.WriteLine($"lat: {args.centerOfView.latitude} long: {args.centerOfView.longitude}");
+        
+        return Task.CompletedTask;
     }
 ```
+>It is important to note that ``args.sender`` represents the Map class (the map functionality).
 
 ## 📍 StreamPoint
 
