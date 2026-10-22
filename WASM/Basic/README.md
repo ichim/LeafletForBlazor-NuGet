@@ -54,4 +54,19 @@ The loadParameter parameter of the Map component allows you to configure the map
 
 - Settings `Basemap` Layers
 
+```C#
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        /* Default Basemap Layers */
+        basemapLayers = new List<BasemapLayer>()
+        {
+              new BasemapLayer()
+              {
+                  title = "Topo",
+                  url = "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
+              }
+          }
+    };
+```
+
 [more about Basemap Layers](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Basemaps#basemap-layers)
