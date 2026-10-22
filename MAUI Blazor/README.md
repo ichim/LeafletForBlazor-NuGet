@@ -45,6 +45,11 @@ Settings Map parameters:
 ```Razor
     <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
 ```
+
+## Working with basemap layers
+
+[about basemap layers](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Basemaps#basemap-layers)
+
 ## ⚡ Map events
 
 Blazor page:
