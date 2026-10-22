@@ -262,20 +262,7 @@ Performance with Fluency:
             .SetStyle(complexStyle)               // Adds to config
             .SetLabel(labelFunction);             // More configuration
 ```
-1. Batch Operations
-```C#
-        // Multiple styles in single fluent chain
-        await map.Geometric.Points
-            .Appearance(p => p.type == "Market")
-            .SetStyle(marketStyle)
-            .SetLabel("Market");
-            //Add
-            .And(...)  // Chain continuation pattern
-            //Again
-            .Appearance(p => p.type == "Vehicle")
-            .SetStyle(vehicleStyle)
-            .SetLabel("Vehicle");
-```
+
 # Plugins
 
 The Map component provides the MapPlugins slot (Plugin Framework), allowing you to extend LeafletForBlazor with additional Leaflet functionality. It enables the development of features in JavaScript and grants you access to the map (the Leaflet map instance) and the L object.
