@@ -12,11 +12,12 @@
 
 1. For standard usage, ``no specific configurations for JavaScript or HTML are required``.
 1. ``Optimized code`` through various solutions
-   	- minimizing the number of calls to JavaScript;
-   	- collection searches by [`destructuring and structuring LINQ expressions`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#destructuring-and-structuring-linq);
-   	- [fluent API](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api), a design pattern that allows code to be written in a readable way, similar to an English sentence
-	- reducing size of the JavaScript code by removing unused code.
+   	- Minimizing the number of calls to JavaScript;
+   	- Minimizing JS Interop payload size through [`destructuring and structuring LINQ expressions`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#destructuring-and-structuring-linq);
+	- Reducing size of the JavaScript code by removing unused code.
 	- Memory Cache
+    - [Fluent API](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api), a design pattern that allows code to be written in a readable way, similar to an English sentence
+
 1. [`Plugins framework`](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Plugins) - By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor to be extended with already developed Leaflet.js plugins (add-ons) - [more about Leaflet.js Plugins](https://leafletjs.com/plugins.html).
 
 [More about Core Concept](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#core-concept)
