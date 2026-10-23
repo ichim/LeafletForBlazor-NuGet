@@ -277,6 +277,7 @@ The ``map.Geometric.From.Objects`` class allows you to load data from objects. F
  ```C#
      private async Task OnAfterMapLoaded(MapEventArgs args)
     {
+		var map = args.sender as Map;
         int primaryKey = 0; 
         var objects = new List<object>
         {
