@@ -84,7 +84,7 @@ Here method chaining is used: SetStyle, SetLabel etc:
 
 # 🔀λ Destructuring and Structuring LINQ
 
-To optimize data flow and improve package performance, data filtering is done separately: Both in C# and in JavaScript. This LINQ Destructuring/Structure mechanism avoids the repeated transmission of data collections, the transmission of large data collections.
+We reduced the JS Interop payload size to optimize data flow and improve package performance. To achieve this objective, data filtering is done separately: Both in C# and in JavaScript. This LINQ Destructuring/Structure mechanism avoids the repeated transmission of data collections, the transmission of large data collections.
 
 Advantages of LINQ Destructuring/Restructuring:
 
