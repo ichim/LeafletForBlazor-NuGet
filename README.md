@@ -13,7 +13,7 @@
 1. For standard usage, ``no specific configurations for JavaScript or HTML are required``.
 1. ``Optimized code`` through various solutions
    	- Minimizing the number of calls to JavaScript;
-   	- Minimizing JS Interop payload size through [`destructuring and structuring LINQ expressions`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#destructuring-and-structuring-linq);
+   	- Minimizing JS Interop payload size through [`destructuring and structuring LINQ expressions`](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#destructuring-and-structuring-linq) for the invokes C# -> JavaScript;
 	- Reducing size of the JavaScript code by removing unused code.
 	- Memory Cache
     - [Fluent API](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/Fundamentals.md#fluent-api), a design pattern that allows code to be written in a readable way, similar to an English sentence
