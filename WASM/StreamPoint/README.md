@@ -164,14 +164,16 @@ The Add() method on @map.Geometric.Points is async:
 
 ## Remove
 
-The Remove() method on @map.Geometric.Points is async:
+The Remove() method is async:
 ```C#
     await map.Geometric.Points.Remove();
 ```
+...to delete all items
 Or:
 ```C#
     await map.Geometric.Points.Remove(new List<string>(){"00000000-0000-0000-0000-000000000001"});
 ```
+...to delete one or more items
 ## Update
 
 The Update() method on @map.Geometric.Points is async:
