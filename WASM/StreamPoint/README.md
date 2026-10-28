@@ -169,7 +169,6 @@ The Remove() method is async:
     await map.Geometric.Points.Remove();
 ```
 ...to delete all items
-Or:
 ```C#
     await map.Geometric.Points.Remove(new List<string>(){"00000000-0000-0000-0000-000000000001"});
 ```
