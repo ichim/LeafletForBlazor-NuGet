@@ -6,7 +6,7 @@ The OnClick event is triggered whenever the user clicks (left button) on the map
        System.Diagnostics.Debug.WriteLine($"    Clicked point with count {args.points.Count()}");
    };
 ```
-## Quick Setup
+## 🚀 Quick Setup
 
 The `OnClick` event for the `StreamPoint` collection can only be initialized within the map's post-load logic (OnAfterMapLoaded Map event). Both the map and `L` must be initialized and functional.
 
