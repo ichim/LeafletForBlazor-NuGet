@@ -250,6 +250,7 @@ Where:
            public Coordinates screen { get; set; }
         }
 ```
+[more about StreamPoint collection events](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor/StreamPoint%20events#streampoint-collection-events)
 ### 🎨 Appearance
 
 Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
