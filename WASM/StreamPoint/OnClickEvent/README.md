@@ -5,7 +5,7 @@ The OnClick event is triggered whenever the user clicks (left button) on the map
 
         map.Geometric.Points.OnClick += async (object? sender, StreamPointEventArgs args) =>
        {
-           Console.WriteLine($"    Clicked point with count {args.points.Count()}");
+           Console.WriteLine($"    Clicked points count {args.points.Count()}");
        };
 
 Where:
