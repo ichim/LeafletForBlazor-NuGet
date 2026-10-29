@@ -27,17 +27,5 @@ Performance with Fluency:
             .SetStyle(complexStyle)               // Adds to config
             .SetLabel(labelFunction);             // More configuration
 
-1. Batch Operations
 
-        // Multiple styles in single fluent chain
-        await map.Geometric.Points
-            .Appearance(p => p.type == "Market")
-            .SetStyle(marketStyle)
-            .SetLabel("Market");
-            //Add
-            .And(...)  // Chain continuation pattern
-            //Again
-            .Appearance(p => p.type == "Vehicle")
-            .SetStyle(vehicleStyle)
-            .SetLabel("Vehicle");
 
