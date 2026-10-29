@@ -38,7 +38,7 @@ The `OnClick` event for the `StreamPoint` collection can only be initialized wit
          var map = args.sender as Map;
          map!.Geometric.Points.OnClick += async (object? sender, StreamPointEventArgs args) =>
          {
-             Console.WriteLine($"    Clicked point with count {args.points.Count()}");
+             Console.WriteLine($"    Clicked points count {args.points.Count()}");
          };  
          return Task.CompletedTask;
     }
