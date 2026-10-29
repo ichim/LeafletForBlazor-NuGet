@@ -17,7 +17,7 @@ Where:
            public Coordinates screen { get; set; }
         }
 
-## Quick Setup
+## 🚀 Quick Setup
 
 The `OnClick` event for the `StreamPoint` collection can only be initialized within the map's post-load logic (OnAfterMapLoaded Map event). Both the map and `L` must be initialized and functional.
 
