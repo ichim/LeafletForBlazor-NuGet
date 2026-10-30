@@ -32,3 +32,15 @@ The `OnClick` event for the `StreamPoint` collection can only be initialized wit
          return Task.CompletedTask;
     }
 ```
+
+### 3 ToleranceSlopeForClickSelection (optional)
+
+Represents the slope of the relationship (slope * x + intercept) used to calculate the click search tolerance (degrees):
+
+```C#
+    private Task OnAfterMapLoaded(MapEventArgs args)
+    {
+         var map = args.sender as Map;
+         map!.Geometric.Points.ToleranceSlopeForClickSelection = 0.0001;
+    }
+```      
