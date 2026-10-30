@@ -337,7 +337,7 @@ The Map component provides the MapComponents slot, allowing you to extend the Le
 				@*   other MapComponents or html elements  *@
             </MapComponents>
         </Map>
-        //This is an example of usage. You can find the complete implementation at the link below.
+        //This is an example of usage. You can find the complete implementation via the links in the table below.
 ```
 
 | Description | Image |
