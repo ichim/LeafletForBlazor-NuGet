@@ -112,7 +112,7 @@ The event method returns a set of parameters useful for configuring the initial 
 ```C#
     private Task OnAfterMapLoaded(MapEventArgs args)
     {
-        var map = args.sender as Map;
+        var map = args.sender as Map;  //allows access to the Map object
         
         Console.WriteLine($"Map loaded. Dimensions are - Height: {map!.height}, Map Width: {map!.width}");
         Console.WriteLine($"lat: {args.centerOfView.latitude} long: {args.centerOfView.longitude}");
@@ -277,7 +277,6 @@ The ``map.Geometric.From.Objects`` class allows you to load data from objects. F
  ```C#
      private async Task OnAfterMapLoaded(MapEventArgs args)
     {
-		var map = args.sender as Map;
         int primaryKey = 0; 
         var objects = new List<object>
         {
@@ -318,6 +317,7 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
 						@*   other plugins or custom functionality  *@
             </MapPlugins>
         </Map>
+        //This is an example of usage. You can find the complete implementation at the link below.
 ```
 
 By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor to be extended with already developed Leaflet.js add-ons.
@@ -337,6 +337,7 @@ The Map component provides the MapComponents slot, allowing you to extend the Le
 				@*   other MapComponents or html elements  *@
             </MapComponents>
         </Map>
+        //This is an example of usage. You can find the complete implementation at the link below.
 ```
 
 | Description | Image |
@@ -355,4 +356,3 @@ O-L I - ᶜ⁴ˡᵘ⁷ᵘ⁵ᵘᶠˡᵉ⁷⁸ᵘⁿ 🐕
 Thank you for choosing this package!
 
 Laurentiu Ichim
-
