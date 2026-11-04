@@ -3,6 +3,7 @@
 Default configurations are available: the center of the current map view, zoom level, visibility of the attribution control, base map layers, and map controls, such as the scale control.
 
 **Center of the current map view**
+
 **Razor**
 ```Razor
         <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
@@ -19,6 +20,7 @@ Default configurations are available: the center of the current map view, zoom l
     };
 ```
 **Zoom Level**
+
 **Razor**
 ```Razor
         <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
@@ -33,6 +35,7 @@ Default configurations are available: the center of the current map view, zoom l
 ## Map Controls
 
 You can configure map controls (Leaflet.js) such as: the layer list and scale bar:
+
 **Razor**
 ```Razor
         <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
