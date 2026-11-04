@@ -4,26 +4,38 @@ Default configurations are available: the center of the current map view, zoom l
 
 **Center of the current map view**
 
+```Razor
+        <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
+```
+
+```C#
     LoadParameters loadParameters = new()
     {
         location = new Location()                                               //Default center of the Map View
         {
             latitude = 50.83112274500208,
             longitude = 4.407353347319803
-        },
+        }
     };
-
+```
 **Zoom Level**
 
+```Razor
+        <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
+```
+```C#
     LoadParameters loadParameters = new()
     {
         zoomLevel = 10                                                          //Default zoom level
     };
-
+```
 ## Map Controls
 
 You can configure map controls (Leaflet.js) such as: the layer list and scale bar:
-
+```Razor
+        <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
+```
+```C#
         LoadParameters loadParameters = new LoadParameters()
         {
             mapControls = new MapControls()
@@ -36,7 +48,7 @@ You can configure map controls (Leaflet.js) such as: the layer list and scale ba
                 },
             }
         };
-
+```
 ## Basemap Layers
 
 Gets or sets the collection of basemap tile layers. Each layer is defined by a display title and a tile URL template containing {z}/{x}/{y} placeholders. Multiple layers enable runtime switching via the map's layer control.
