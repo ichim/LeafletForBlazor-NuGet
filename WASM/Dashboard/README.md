@@ -47,13 +47,14 @@ The `${propertyName}` syntax binds slice data to fields inside the `StreamPoint.
 
 Where:
 
+```C#
     public class IndustrialValues
     {
         public double[]? production { get; set; }
         public string[]? texts { get; set; }
         public string[]? classes { get; set; }
     }
-
+```
 
 ### Usage
 
@@ -78,11 +79,13 @@ Apply the style to a filtered set of points via `Appearance()`:
                   });
 ```
 ### Adding points to the map
-
+```C#
      await map.Geometric.Points.Add(new StreamPoints().points); //List<StreamPoint>
+```
 
 ### Data Example
 
+```C#
         new StreamPoint
         {
             coordinates = new Coordinates
@@ -98,7 +101,7 @@ Apply the style to a filtered set of points via `Appearance()`:
                 classes   = new string[] { "white", "yellow", "red", "gray" }
             }
         }
-
+```
 
 ## **GaugeChart** Class
 

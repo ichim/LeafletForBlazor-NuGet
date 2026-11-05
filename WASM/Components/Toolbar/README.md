@@ -1,14 +1,14 @@
 
 # Toolbar
 The Toolbar it is a map component that allows for expansion with various buttons and even tools.
- 
+ ```Razor
     <Map height="calc(100vh)" width="calc(100vw)">
         <MapComponents>
            <Toolbar  left="48px" top="12px">
            </Toolbar>
         </MapComponents>
     </Map>
-
+```
    Inside ``Map``, a ``Toolbar`` is placed as an absolute-positioned overlay at **left** and **top** relative to the map container.
 
 ## Toolbar parameters
@@ -22,7 +22,7 @@ The Toolbar it is a map component that allows for expansion with various buttons
 ## Configuring the toolbar
 
 Adding a button to the toolbar:
-
+```Razor
     <Map height="calc(100vh)" width="calc(100vw)">
         <MapComponents>
            <Toolbar  left="48px" top="12px">
@@ -30,11 +30,14 @@ Adding a button to the toolbar:
            </Toolbar>
         </MapComponents>
     </Map>
+```
+```C#
     @code {
         private async Task ZoomIn()
         {
         }
     }
+```
 # Toolbar Items
 
 These are components that can be hosted by the Toolbar alongside HTML components.

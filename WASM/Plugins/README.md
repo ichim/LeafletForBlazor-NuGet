@@ -8,7 +8,7 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
 
 By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor to be extended with already developed Leaflet.js add-ons.
 
-
+```Razor
         <Map>
             <MapPlugins>
                         <Fullscreen            
@@ -24,27 +24,27 @@ By writing simple wrapper code, the MapPlugins framework allows LeafletForBlazor
                                 End="new Leaflet.Geodesic.Plugins.LeafletGeodesic.Coordinates(33.82, -118.38)" />
             </MapPlugins>
         </Map>
-
+```
 The MapPlugins context has two parameters: `map` and `L`.
 Parameters `map` and `L` are passed to the customized component via the MapPlugins context:
-
+```Razor
            <MapPlugins>
                 <CustomScript Map="@context.map" L="@context.L" />
            </MapPlugins>
-
+```
 
 ## Hello Plugin
 
 A MapPlugins-type component requires the following minimal structure:
-
+```C#
     [Parameter] public object? Map { get; set; }
     [Parameter] public object? L { get; set; }
-
+```
 The Blazor component must declare the mandatory Map and L parameters. These parameters provide access to the map instance and the Leaflet object required to implement plugin functionality.
 
 
 Plugin functionality should be executed only after the component has finished rendering. At that point, the `map` and `L` objects are available for use.
-
+```C#
         @inject IJSRuntime JS
         @code {
             [Parameter] public object? Map { get; set; }
@@ -59,17 +59,17 @@ Plugin functionality should be executed only after the component has finished re
                 }
             }
         }
-
+```
 In the Hello Plugin example, the plugin functionality is intentionally minimal: it writes the Map object to the browser console after the component has rendered for the first time.
 
 Using the component in the host Blazor page:
-
+```Razor
         <Map>
            <MapPlugins>
                 <HelloPlugin Map="@context.map" Name="writeConsole" />
            </MapPlugins>
         </Map>
-
+```
 ## Leaflet.Geodesic
 
 This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythasler/Leaflet.Geodesic) add-on developed by [Henry Thasler](https://github.com/henrythasler) for Leaflet.js.
@@ -96,7 +96,7 @@ This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythas
 ### Creating wrapper functions
 
 1. On first render, the component captures the JS runtime, map, and coordinate references into static fields — making them available to the static [JSInvokable] callback that follows.
-
+```C#
             protected override async Task OnAfterRenderAsync(bool firstRender)
             {
                 if (firstRender)
@@ -115,13 +115,13 @@ This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythas
                                            ");
                 }
             }
-
+```
 1. Script injection — A <script> tag is created and appended to the DOM, pointing to the plugin URL. The onload handler fires a .NET static method invocation via DotNet.invokeMethodAsync, using the assembly name resolved at runtime from typeof(Program).Assembly.GetName().Name.
 
 1. OnScriptLoaded (static, JSInvokable) — Once the external script is ready:
  - It defines window._drawGeodesic, a function that wraps new L.Geodesic([pointA, pointB]).addTo(map).
  - It immediately invokes that function, passing the stored _map, _L, and anonymous objects representing the start and end coordinates ({ lat, lng }).
-
+```C#
             [JSInvokable]
             public static async Task OnScriptLoaded()
             {
@@ -138,7 +138,7 @@ This plugin is a wrapper for the [Leaflet.Geodesic](https://github.com/henrythas
                                                        );
             }
 
-
+```
 ## Leaflet.Fullscreen
 
 This plugin is a wrapper for the [Leaflet.Fullscreen](https://github.com/brunob/leaflet.fullscreen) plugin developed by [brunob](https://github.com/brunob) for Leaflet.js.
@@ -158,7 +158,7 @@ This plugin is a wrapper for the [Leaflet.Fullscreen](https://github.com/brunob/
 
 1. On first render, the component captures the JS runtime, map, and coordinate references into static fields — making them available to the static [JSInvokable] callback that follows.
 
-
+```C#
             protected override async Task OnAfterRenderAsync(bool firstRender)
             {
                 if (firstRender)
@@ -181,13 +181,13 @@ This plugin is a wrapper for the [Leaflet.Fullscreen](https://github.com/brunob/
                                             ");
                 }
             }
-
+```
 1. Script injection — A <script> tag is created and appended to the DOM, pointing to the plugin URL. The onload handler fires a .NET static method invocation via DotNet.invokeMethodAsync, using the assembly name resolved at runtime from typeof(Program).Assembly.GetName().Name.
 
 1. OnScriptLoaded (static, JSInvokable) — Once the external script is ready:
  - It defines window._applyFullscreen, a function that wraps map.addControl(new L.Control.FullScreen()).
  - It immediately invokes that function, passing the stored _map, _L.
-
+```C#
            [JSInvokable]
            public static async Task OnScriptLoaded()
            {
@@ -201,3 +201,4 @@ This plugin is a wrapper for the [Leaflet.Fullscreen](https://github.com/brunob/
                         _L
                     );
            }
+```

@@ -3,19 +3,19 @@
 ## Basic configuration
 
 Adding to _Imports.razor
-
+```C#
     @using LeafletForBlazor
     @using static LeafletForBlazor.Map
     @using static LeafletForBlazor.techs.maps.Leaflet
-
+```
 
 Adding the Map component:
-
+```Razor
     <Map height="100vh" width="100vw"/>
-
+```
 Default configuration parameters:
 
-
+```C#
     @code {
             LoadParameters loadParameters = new LoadParameters()
             {
@@ -39,29 +39,41 @@ Default configuration parameters:
                 }
             };
          }
-
+```
 Settings Map parameters:
 
-
+```Razor
     <Map loadParameters="@loadParameters" height="100vh" width="100vw"/>
+```
 
-## ⚡ Map events
+## Working with basemap layers
 
-Blazor page:
+[about basemap layers](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Basic/Basemaps#basemap-layers)
 
+## 🌣 Map post-load logic
+
+After initializing the Leaflet map instance on the client side, you can modify map settings and load spatial data. The `OnAfterMapLoaded` event of the Map component can be used for operations that require an initialized map—for example, accessing the map's initial state, adding geometries, or loading data from files.
+
+**Razor**
+```Razor
     <Map height="100vh" width="100vw" OnAfterMapLoaded="@OnAfterMapLoaded" />
+```
+**C# - Handler signature**
 
+The event method returns a set of parameters useful for configuring the initial state of the map: Map, centerOfView and other.
 
-Code block:
-
-    @code {
-        private Task OnAfterMapLoaded(MapEventArgs args)
-        {
-            Console.WriteLine($"lat: {args.centerOfView.latitude} long: {args.centerOfView.longitude}");
-            return Task.CompletedTask;
-        }
+```C#
+    private Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        var map = args.sender as Map;
+        
+        Console.WriteLine($"Map loaded. Dimensions are - Height: {map!.height}, Map Width: {map!.width}");
+        Console.WriteLine($"lat: {args.centerOfView.latitude} long: {args.centerOfView.longitude}");
+        
+        return Task.CompletedTask;
     }
-
+```
+>It is important to note that ``args.sender`` represents the Map class (the map functionality).
 
 ## 📍 StreamPoint
 
@@ -91,7 +103,7 @@ The `StreamPoint` collection is hosted by @map.Geometric.Points and provides ope
 What does root data structure mean?
 
 ``StreamPoint`` has a predefined, mandatory structure without which these points cannot function correctly.
-
+```C#
     public class StreamPoint : IStreamPoint, IStreamType
     {
         public Guid guid { get; set; }                                            //unique identifier
@@ -100,13 +112,13 @@ What does root data structure mean?
         public DateTime timestamp { get; set; }                                   //data time, are often used in the MemoryCache mechanism
         public string? type { get; set; }                                         //allows for a classification of data. Often used for map appearance
     }
-
+```
 ### StreamPoint: a Flexible, Extensible Map Point Definition
 
 StreamPoint is a foundational data model designed for geographic information systems (GIS) in Blazor applications. It provides a standardized, yet extensible structure for representing dynamic map points with real-time synchronization capabilities.
 
 #### Core Architecture
-
+```C#
     public class StreamPoint : IStreamPoint, IStreamType
     {
         public Guid guid { get; set; }                    // Unique identifier for point tracking
@@ -115,7 +127,7 @@ StreamPoint is a foundational data model designed for geographic information sys
         public DateTime timestamp { get; set; }           // Temporal indexing and cache management
         public string? type { get; set; }                 // Classification for layered visualization
     }
-
+```
 Where:
 
 1. `guid` - Identity Management
@@ -155,7 +167,7 @@ Where:
     Design Pattern: Open/Closed Principle implementation
 
 To extend the StreamPoint class you need to create a new custom class:
-
+```C#
         public class VehicleTracking
         {
                 public double? speed { get; set; } = 0;
@@ -165,11 +177,11 @@ To extend the StreamPoint class you need to create a new custom class:
                 public double? altitude { get; set; } = 0;
                 public double timeSpent { get; set; } = 0;
         }
-
+```
 #### Extension Example: Vehicle Tracking System
 
 The value property enables seamless integration of domain-specific models:
-
+```C#
         public class VehicleTracking
         {
             public double? speed { get; set; }        // Velocity in km/h
@@ -200,7 +212,7 @@ The value property enables seamless integration of domain-specific models:
                 timeSpent = 45.5
             }
         };
-
+```
 #### Integration Benefits
 
 1. Map Visualization
@@ -223,21 +235,22 @@ The value property enables seamless integration of domain-specific models:
 ### ⚡ StreamPoint collection events
 
 The OnClick event is triggered whenever the user clicks (left button) on the map. If there are points from the StreamPoint collection in the vicinity of the clicked point, they will be returned in the StreamPointEventArgs argument.
-
+```C#
         map.Geometric.Points.OnClick += async (object? sender, StreamPointEventArgs args) =>
        {
            Console.WriteLine($"    Clicked point with count {args.points.Count()}");
        };
-
+```
 Where:
-
+```C#
        public class StreamPointEventArgs : EventArgs
        {
            public List<StreamPoint> points { get; set; }
            public Coordinates geoid { get; set; }
            public Coordinates screen { get; set; }
         }
-
+```
+[more about StreamPoint collection events](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor/StreamPoint%20events#streampoint-collection-events)
 ### 🎨 Appearance
 
 Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
@@ -255,26 +268,13 @@ Fluent API:
 Performance with Fluency:
 
 1. Lazy Evaluation
-
+```C#
         // Chain builds configuration, execution happens once
         await map.Geometric.Points
             .Appearance(p => p.type == "Market")  // Builds filter
             .SetStyle(complexStyle)               // Adds to config
             .SetLabel(labelFunction);             // More configuration
-
-1. Batch Operations
-
-        // Multiple styles in single fluent chain
-        await map.Geometric.Points
-            .Appearance(p => p.type == "Market")
-            .SetStyle(marketStyle)
-            .SetLabel("Market");
-            //Add
-            .And(...)  // Chain continuation pattern
-            //Again
-            .Appearance(p => p.type == "Vehicle")
-            .SetStyle(vehicleStyle)
-            .SetLabel("Vehicle");
+```
 
 # Plugins
 
@@ -282,9 +282,9 @@ The Map component provides the MapPlugins slot (Plugin Framework), allowing you 
 
 The MapPlugins context has two parameters: `map` and `L`.
 Parameters `map` and `L` are passed to the customized component via the MapPlugins context:
-
+```Razor
            <MapPlugins>
                 <CustomScript Map="@context.map" L="@context.L" />
            </MapPlugins>
-
+```
 [more about Plugins](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor/Plugins#-map-plugins)
