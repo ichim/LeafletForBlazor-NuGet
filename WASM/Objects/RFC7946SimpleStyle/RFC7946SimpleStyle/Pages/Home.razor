@@ -1,0 +1,53 @@
+﻿@page "/"
+@using FromObjectsSwitch.data
+@using LeafletForBlazor.techs.core.Appearance
+@using System.Text.Json.Serialization
+@using System.Collections.Generic;
+@inject IJSRuntime JS
+<button class="btn btn-primary" @onclick="Remove">Remove key 0</button>
+
+<Map @ref="map"
+     loadParameters="@loadParameters"
+     height="calc(100vh - 4rem)"
+     width="calc(100vw - 2rem)" OnAfterMapLoaded="OnAfterMapLoaded">
+    <MapComponents>
+        <Legend left="12px" top="80px"><HeaderContent><h2 style="margin-block-start:0.20em;margin-block-end:0.20em">Legend</h2></HeaderContent><FooterContent><label style="font-size:8px;font-style:italic;font-weight:100">You can add explanations.</label></FooterContent></Legend>
+    </MapComponents>
+</Map>
+
+@code {
+    Map? map = null;
+
+    LoadParameters loadParameters = new LoadParameters()
+    {
+        location = new Location() // Center of the Map View
+        {
+            latitude = 44.4435381,
+            longitude = 26.0945783,
+        },
+        zoomLevel = 14,
+    };
+
+    private async Task OnAfterMapLoaded(MapEventArgs args)
+    {
+        //LeafletForBlazor.techs.maps.Leaflet? leaflet;
+        var map = args.sender as Map;
+    
+        InputData data = new InputData();
+        await map!.Geometric.From.Objects.LoadAsync(data.Get).WithKey(0);
+        await Task.CompletedTask;
+    }
+
+    private async Task Remove()
+    {
+        await map!.Geometric.From.Objects.RemoveAsync().WithKey(4);
+    }
+
+    
+
+
+
+
+}
+
+
