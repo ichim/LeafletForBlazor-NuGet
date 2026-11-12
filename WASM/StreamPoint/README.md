@@ -217,6 +217,12 @@ Here you can configure how the collection of points displayed on the map behaves
 ## 🎨 Appearance
 
 Appearance is a method that accepts Expression<Func<T, bool>> predicates and allows filtering and applying different styles to the elements displayed in the map:
+
+You must use the directive:
+```C#
+@using LeafletForBlazor.techs.core.Appearance
+```
+
 ```C#
     await map.Geometric.Points.Appearance(e.type => e.type == "Market").SetStyle(...).SetLabel(...);
 ```
