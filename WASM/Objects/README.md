@@ -19,7 +19,6 @@ The ``map.Geometric.From.Objects`` class allows you to work with data from objec
             new Feature()           //RFC 7946 class structure
         };
         await map!.Geometric.From.Objects!.LoadAsync(objects).WithKey(primaryKey);
-        // await map!.Geometric.From.Objects!.LoadAsync(objects, primaryKey); //it can also be written without WithKey()
     }
 ```
 
@@ -49,7 +48,6 @@ where:
 ```C#
   int primaryKey = 0;
   await map!.Geometric.From.Objects.RemoveAsync().WithKey(primaryKey);
-  // await map!.Geometric.From.Objects.RemoveAsync(primaryKey); //it can also be written without WithKey()
 ```
 
 
