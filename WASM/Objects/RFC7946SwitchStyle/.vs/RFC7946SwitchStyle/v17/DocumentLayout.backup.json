@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\RFC7946SwitchStyle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9A4FBB-7F25-423A-873F-5477FE12DB08}|RFC7946SwitchStyle\\RFC7946SwitchStyle.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\rfc7946switchstyle\\rfc7946switchstyle\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B9A4FBB-7F25-423A-873F-5477FE12DB08}|RFC7946SwitchStyle\\RFC7946SwitchStyle.csproj|solutionrelative:rfc7946switchstyle\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9A4FBB-7F25-423A-873F-5477FE12DB08}|RFC7946SwitchStyle\\RFC7946SwitchStyle.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\rfc7946switchstyle\\rfc7946switchstyle\\data\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9A4FBB-7F25-423A-873F-5477FE12DB08}|RFC7946SwitchStyle\\RFC7946SwitchStyle.csproj|solutionrelative:rfc7946switchstyle\\data\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9A4FBB-7F25-423A-873F-5477FE12DB08}|RFC7946SwitchStyle\\RFC7946SwitchStyle.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\rfc7946switchstyle\\rfc7946switchstyle\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3B9A4FBB-7F25-423A-873F-5477FE12DB08}|RFC7946SwitchStyle\\RFC7946SwitchStyle.csproj|solutionrelative:rfc7946switchstyle\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\RFC7946SwitchStyle\\RFC7946SwitchStyle\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "RFC7946SwitchStyle\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\RFC7946SwitchStyle\\RFC7946SwitchStyle\\Pages\\Home.razor",
+              "RelativeToolTip": "RFC7946SwitchStyle\\Pages\\Home.razor",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-12T14:52:01.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Input.cs",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\RFC7946SwitchStyle\\RFC7946SwitchStyle\\data\\Input.cs",
+              "RelativeDocumentMoniker": "RFC7946SwitchStyle\\data\\Input.cs",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\RFC7946SwitchStyle\\RFC7946SwitchStyle\\data\\Input.cs",
+              "RelativeToolTip": "RFC7946SwitchStyle\\data\\Input.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwFgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T14:50:55.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\RFC7946SwitchStyle\\RFC7946SwitchStyle\\_Imports.razor",
+              "RelativeDocumentMoniker": "RFC7946SwitchStyle\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\RFC7946SwitchStyle\\RFC7946SwitchStyle\\_Imports.razor",
+              "RelativeToolTip": "RFC7946SwitchStyle\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-12T14:50:23.573Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
