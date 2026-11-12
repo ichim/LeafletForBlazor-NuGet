@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "LeafletForBlazor/4.0.8.882": {
+      "LeafletForBlazor/4.0.8.8822": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -583,7 +583,7 @@
       }
     },
     "net9.0/browser-wasm": {
-      "LeafletForBlazor/4.0.8.882": {
+      "LeafletForBlazor/4.0.8.8822": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11",
@@ -1165,10 +1165,10 @@
     }
   },
   "libraries": {
-    "LeafletForBlazor/4.0.8.882": {
-      "sha512": "Hkemh7ka8kooR3x+DdW5rCCKZyO88QPGJ69K0aTMPvLNf5UN/C/anu3rpJUFP7IPxFEnHadzQB7Yl4fTqyw9cg==",
+    "LeafletForBlazor/4.0.8.8822": {
+      "sha512": "N8vSOcFjYp1XC8kyLr+aTvTEGI5bOPtRcMXFVjfGltrycYvk+hNFQCcB756D43J+7FlJ6Bd5bHkciGxGFjwSXw==",
       "type": "package",
-      "path": "leafletforblazor/4.0.8.882",
+      "path": "leafletforblazor/4.0.8.8822",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1182,7 +1182,7 @@
         "buildTransitive/LeafletForBlazor.props",
         "content/map_color.ico",
         "contentFiles/any/net9.0/map_color.ico",
-        "leafletforblazor.4.0.8.882.nupkg.sha512",
+        "leafletforblazor.4.0.8.8822.nupkg.sha512",
         "leafletforblazor.nuspec",
         "lib/net9.0/LeafletForBlazor.dll",
         "map_color.png",
@@ -2281,7 +2281,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "LeafletForBlazor >= 4.0.8.882",
+      "LeafletForBlazor >= 4.0.8.8822",
       "Microsoft.AspNetCore.Components.WebAssembly >= 9.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.11",
       "Microsoft.NET.ILLink.Tasks >= 9.0.11",
@@ -2341,7 +2341,7 @@
         "dependencies": {
           "LeafletForBlazor": {
             "target": "Package",
-            "version": "[4.0.8.882, )"
+            "version": "[4.0.8.8822, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
