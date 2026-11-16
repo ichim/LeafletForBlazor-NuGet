@@ -8,6 +8,7 @@ Configure Leaflet tooltip behavior in the JSON  style -> tooltip GeoJSON file. S
 
 Set interactive to allow pointer interaction with the tooltip, and className to apply a custom CSS class. The surrounding style properties configure the feature’s appearance, while style.tooltip defines the tooltip.
 
+Place the JSON item **tooltip** directly in the style
 ```JSON
           "style": {
             "title": "Comercial Area",
