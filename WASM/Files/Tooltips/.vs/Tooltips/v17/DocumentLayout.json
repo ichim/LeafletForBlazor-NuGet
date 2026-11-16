@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Tooltips\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7DFACDB-E16C-4431-A1E4-6C030B136931}|Tooltips\\Tooltips.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\tooltips\\tooltips\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7DFACDB-E16C-4431-A1E4-6C030B136931}|Tooltips\\Tooltips.csproj|solutionrelative:tooltips\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7DFACDB-E16C-4431-A1E4-6C030B136931}|Tooltips\\Tooltips.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\tooltips\\tooltips\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7DFACDB-E16C-4431-A1E4-6C030B136931}|Tooltips\\Tooltips.csproj|solutionrelative:tooltips\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Tooltips\\Tooltips\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Tooltips\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Tooltips\\Tooltips\\Pages\\Home.razor*",
+              "RelativeToolTip": "Tooltips\\Pages\\Home.razor*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwBgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-16T07:23:02.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Tooltips\\Tooltips\\_Imports.razor",
+              "RelativeDocumentMoniker": "Tooltips\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\Tooltips\\Tooltips\\_Imports.razor",
+              "RelativeToolTip": "Tooltips\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-16T07:22:40.843Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
