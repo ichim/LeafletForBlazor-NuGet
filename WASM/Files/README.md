@@ -304,10 +304,21 @@ JSON object based on the `RFC 7946` format. `"data"`, from the JSON structure, c
     }
 ```
 <img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/980fd036-5c1c-4d96-9cfc-277ceea73214" />
-
     
 **Key notes for devs:**
 
  - Matching is first-come, first-served: the first classes entry whose fieldValue matches wins.
  - The default style guarantees every feature gets rendered, even with unexpected or missing property values.
  - GeoJSON geometry types are honored as-is; additional geometry-type filtering would **require an optional appliesTo field (not yet implemented)**.
+
+# Workking with tooltips
+
+Configure Leaflet tooltip behavior in the JSON  style -> tooltip GeoJSON file. Set content to the HTML or text displayed in the tooltip, then use properties to pass Leaflet tooltip options: 
+1. **direction** controls its placement;
+2. **offset** adjusts its position;
+3. **permanent** keeps it visible;
+4. **sticky** makes it follow the cursor.
+
+Set interactive to allow pointer interaction with the tooltip, and className to apply a custom CSS class. The surrounding style properties configure the feature’s appearance, while style.tooltip defines the tooltip.
+
+
