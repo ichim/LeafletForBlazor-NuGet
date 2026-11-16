@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\",
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A6B1E83-0526-477C-9120-555744C15D7D}|PopupLatLng\\PopupLatLng.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\wasm\\components\\mappopup\\popuplatlng\\popuplatlng\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2A6B1E83-0526-477C-9120-555744C15D7D}|PopupLatLng\\PopupLatLng.csproj|c:\\users\\40720\\source\\repos\\mappopup\\popuplatlng\\popuplatlng\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2A6B1E83-0526-477C-9120-555744C15D7D}|PopupLatLng\\PopupLatLng.csproj|solutionrelative:popuplatlng\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A6B1E83-0526-477C-9120-555744C15D7D}|PopupLatLng\\PopupLatLng.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\wasm\\components\\mappopup\\popuplatlng\\popuplatlng\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2A6B1E83-0526-477C-9120-555744C15D7D}|PopupLatLng\\PopupLatLng.csproj|c:\\users\\40720\\source\\repos\\mappopup\\popuplatlng\\popuplatlng\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2A6B1E83-0526-477C-9120-555744C15D7D}|PopupLatLng\\PopupLatLng.csproj|solutionrelative:popuplatlng\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A6B1E83-0526-477C-9120-555744C15D7D}|PopupLatLng\\PopupLatLng.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\wasm\\components\\mappopup\\popuplatlng\\popuplatlng\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{2A6B1E83-0526-477C-9120-555744C15D7D}|PopupLatLng\\PopupLatLng.csproj|c:\\users\\40720\\source\\repos\\mappopup\\popuplatlng\\popuplatlng\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{2A6B1E83-0526-477C-9120-555744C15D7D}|PopupLatLng\\PopupLatLng.csproj|solutionrelative:popuplatlng\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -28,11 +28,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Home.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\Pages\\Home.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "PopupLatLng\\Pages\\Home.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\Pages\\Home.razor",
               "RelativeToolTip": "PopupLatLng\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAUwCYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-09T12:15:07.595Z",
               "EditorCaption": ""
@@ -41,9 +41,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "app.css",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\wwwroot\\css\\app.css",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\wwwroot\\css\\app.css",
               "RelativeDocumentMoniker": "PopupLatLng\\wwwroot\\css\\app.css",
-              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\wwwroot\\css\\app.css",
               "RelativeToolTip": "PopupLatLng\\wwwroot\\css\\app.css",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -53,9 +53,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\_Imports.razor",
               "RelativeDocumentMoniker": "PopupLatLng\\_Imports.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\_Imports.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\_Imports.razor",
               "RelativeToolTip": "PopupLatLng\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

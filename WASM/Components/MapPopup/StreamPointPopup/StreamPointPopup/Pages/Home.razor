@@ -3,10 +3,10 @@
 
 
 
-<Map
+<Map workingWithBootstrap="true"
      loadParameters="@loadParameters"
-     height="calc(100vh - 1rem)"
-     width="calc(100vw - 2rem)"
+     height="calc(100vh - 0rem)"
+     width="calc(100vw - 0rem)"
      OnAfterMapLoaded="@OnAfterMapLoaded">
      <MapComponents>
         <MapPopup @ref="mapPopup" className="@mapPopupClass">
@@ -98,7 +98,7 @@
         zoomLevel = 10,
     };
     private async Task OnAfterMapLoaded(MapEventArgs args)
-    {
+    {//Map post-logic after the map is loaded
         var map = args.sender as Map;
 
         if (map?.Geometric?.Points != null)

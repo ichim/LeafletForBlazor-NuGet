@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RPub949MhsQ=",
+  "dgSpecHash": "rA6opAFpIbI=",
   "success": true,
-  "projectFilePath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj",
+  "projectFilePath": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\40720\\.nuget\\packages\\leafletforblazor\\4.2.0.2\\leafletforblazor.4.2.0.2.nupkg.sha512",
     "C:\\Users\\40720\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.11\\microsoft.aspnetcore.authorization.9.0.11.nupkg.sha512",

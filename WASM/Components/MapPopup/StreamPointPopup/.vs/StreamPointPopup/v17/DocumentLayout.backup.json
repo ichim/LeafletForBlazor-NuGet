@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\StreamPointPopup\\",
+  "WorkspaceRootPath": "C:\\Users\\40720\\source\\repos\\MapPopup\\StreamPointPopup\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC318234-3211-49C5-B00F-F6F386658397}|StreamPointPopup\\StreamPointPopup.csproj|d:\\instruitre\\nugets\\github\\leafletforblazor\\repo\\leafletforblazor-nuget\\wasm\\components\\mappopup\\streampointpopup\\streampointpopup\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FC318234-3211-49C5-B00F-F6F386658397}|StreamPointPopup\\StreamPointPopup.csproj|c:\\users\\40720\\source\\repos\\mappopup\\streampointpopup\\streampointpopup\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FC318234-3211-49C5-B00F-F6F386658397}|StreamPointPopup\\StreamPointPopup.csproj|solutionrelative:streampointpopup\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Home.razor",
-              "DocumentMoniker": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\StreamPointPopup\\StreamPointPopup\\Pages\\Home.razor",
+              "DocumentMoniker": "C:\\Users\\40720\\source\\repos\\MapPopup\\StreamPointPopup\\StreamPointPopup\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "StreamPointPopup\\Pages\\Home.razor",
-              "ToolTip": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\StreamPointPopup\\StreamPointPopup\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\40720\\source\\repos\\MapPopup\\StreamPointPopup\\StreamPointPopup\\Pages\\Home.razor",
               "RelativeToolTip": "StreamPointPopup\\Pages\\Home.razor",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAE0AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-10T06:42:50.567Z",
               "EditorCaption": ""

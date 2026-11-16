@@ -9,7 +9,7 @@
      <MapComponents>
         <MapPopup @ref="mapPopup" className="popup-cheerful">
             <HeaderContent>
-                <h3>Titlu Informativ</h3>
+                <h3>WGS Coordinates</h3>
             </HeaderContent>
              <PopupContent>
                     <label>Latitude: @lat.</label><br>
@@ -25,7 +25,7 @@
 
     private Map? map = null;
     private MapPopup? mapPopup;
-        LoadParameters loadParameters = new LoadParameters()
+    LoadParameters loadParameters = new LoadParameters()
     {
         location = new Location()   
         {
@@ -35,19 +35,20 @@
 
         zoomLevel = 10
     };
-    private async Task OnAfterMapLoaded(MapEventArgs args)
-    {
+    private Task OnAfterMapLoaded(MapEventArgs args)
+    {//Map post-logic after map is loaded
         var map = args.sender as Map;
         if (map?.Geometric?.Points != null)
         {
         
             map.Geometric.Points.OnClick += (sender, args) =>
             {
-                mapPopup?.Show(args, 200, 100);                     //MapPopup initialization
+                mapPopup?.Show(args, 200, 160);                     //MapPopup initialization
                 lat = Math.Round( args.geoid.xy[0],4);
                 lng = Math.Round( args.geoid.xy[1], 4);
             };
         }
+        return Task.CompletedTask;
     }
     
 }
