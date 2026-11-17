@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Appearance.props" />
-</Project>

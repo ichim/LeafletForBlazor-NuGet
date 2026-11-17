@@ -1,2 +1,0 @@
-int[] styleable ViewPager2 { 0x10100c4 }
-int styleable ViewPager2_android_orientation 0

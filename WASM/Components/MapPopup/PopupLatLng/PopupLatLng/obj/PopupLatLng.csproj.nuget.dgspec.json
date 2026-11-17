@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj": {}
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj": {}
   },
   "projects": {
-    "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj": {
+    "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj",
+        "projectUniqueName": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj",
         "projectName": "PopupLatLng",
-        "projectPath": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj",
+        "projectPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\PopupLatLng.csproj",
         "packagesPath": "C:\\Users\\40720\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\40720\\source\\repos\\MapPopup\\PopupLatLng\\PopupLatLng\\obj\\",
+        "outputPath": "D:\\instruitre\\nugets\\github\\LeafletForBlazor\\repo\\LeafletForBlazor-NuGet\\WASM\\Components\\MapPopup\\PopupLatLng\\PopupLatLng\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,7 +53,7 @@
           "dependencies": {
             "LeafletForBlazor": {
               "target": "Package",
-              "version": "[4.2.0.2, )"
+              "version": "[4.2.0.4, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
