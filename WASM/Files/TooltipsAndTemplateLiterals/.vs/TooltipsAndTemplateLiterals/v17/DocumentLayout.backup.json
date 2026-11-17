@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\TooltipsAndTemplateLiterals\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{995F5B40-708C-4F82-A03E-EB13969908C4}|TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\tooltipsandtemplateliterals\\tooltipsandtemplateliterals\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{995F5B40-708C-4F82-A03E-EB13969908C4}|TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals.csproj|solutionrelative:tooltipsandtemplateliterals\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995F5B40-708C-4F82-A03E-EB13969908C4}|TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\tooltipsandtemplateliterals\\tooltipsandtemplateliterals\\wwwroot\\data\\appearance-polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{995F5B40-708C-4F82-A03E-EB13969908C4}|TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals.csproj|solutionrelative:tooltipsandtemplateliterals\\wwwroot\\data\\appearance-polygons.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995F5B40-708C-4F82-A03E-EB13969908C4}|TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals.csproj|d:\\instruitre\\nugets\\(nuget dev)\\leafletforblazor\\devs\\20261002\\tooltipsandtemplateliterals\\tooltipsandtemplateliterals\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{995F5B40-708C-4F82-A03E-EB13969908C4}|TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals.csproj|solutionrelative:tooltipsandtemplateliterals\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appearance-polygons.json",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals\\wwwroot\\data\\appearance-polygons.json",
+              "RelativeDocumentMoniker": "TooltipsAndTemplateLiterals\\wwwroot\\data\\appearance-polygons.json",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals\\wwwroot\\data\\appearance-polygons.json",
+              "RelativeToolTip": "TooltipsAndTemplateLiterals\\wwwroot\\data\\appearance-polygons.json",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAYwCIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-17T13:53:35.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "TooltipsAndTemplateLiterals\\Pages\\Home.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals\\Pages\\Home.razor",
+              "RelativeToolTip": "TooltipsAndTemplateLiterals\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T14:05:54.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals\\_Imports.razor",
+              "RelativeDocumentMoniker": "TooltipsAndTemplateLiterals\\_Imports.razor",
+              "ToolTip": "D:\\instruitre\\nugets\\(NuGet dev)\\LeafletForBlazor\\devs\\20261002\\TooltipsAndTemplateLiterals\\TooltipsAndTemplateLiterals\\_Imports.razor",
+              "RelativeToolTip": "TooltipsAndTemplateLiterals\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T13:46:16.812Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

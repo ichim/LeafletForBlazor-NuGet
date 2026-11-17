@@ -1,0 +1,156 @@
+﻿{
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [ 26.0931846, 44.4432512 ],
+            [ 26.0945783, 44.4435381 ],
+            [ 26.0959206, 44.4438006 ],
+            [ 26.0965448, 44.4439288 ],
+            [ 26.0979042, 44.4444598 ],
+            [ 26.0981265, 44.4439044 ],
+            [ 26.0976905, 44.4436419 ],
+            [ 26.0972459, 44.4431657 ],
+            [ 26.0963396, 44.4427384 ],
+            [ 26.0941508, 44.4420181 ],
+            [ 26.0931846, 44.4432512 ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Commercial",
+        "address": "123 Amzei Square St",
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/4/41/9_Strada_Biserica_Amzei%2C_Bucharest_%2801%29.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [ 26.098137023786094, 44.44390647536593 ],
+            [ 26.099005832808935, 44.442029346986246 ],
+            [ 26.09747214924861, 44.441937663551286 ],
+            [ 26.097336228701092, 44.442147243037184 ],
+            [ 26.09732110197425, 44.44257926209035 ],
+            [ 26.097292591431234, 44.44316899852827 ],
+            [ 26.097375431121, 44.443266669833854 ],
+            [ 26.09787754905328, 44.44373830737086 ],
+            [ 26.098137023786094, 44.44390647536593 ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Commercial",
+        "address": "124 Amzei Square St",
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Bucuresti%2C_Romania%2C_Piata_Romana_nr._6_%28ASE%29_%28detaliu_5%29%3B_B-II-m-B-19579.JPG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [26.09835836189222,  44.443920495124345 ],
+            [26.100763245715687, 44.44417071845811  ],
+            [26.10089088617469, 44.443326239852695  ],
+            [26.100828866752074,  44.44262451292494 ],
+            [26.099925527265622,  44.442666162088145 ],
+            [26.09890759901011, 44.44274167551158  ],
+            [26.09835836189222, 44.443920495124345  ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Commercial",
+        "address": "28 Arthur Verona St",
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Bucuresti%2C_Romania%2C_Piata_Romana_nr._6_%28ASE%29_%28detaliu_5%29%3B_B-II-m-B-19579.JPG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [ 26.097235848029676, 44.44316478725016 ],
+            [ 26.09633208661628, 44.44271975813515 ],
+            [ 26.09423069670424, 44.441993162649126 ],
+            [ 26.095637317464323, 44.44091584999522 ],
+            [ 26.096423785019127, 44.44126092612807 ],
+            [ 26.09733129728055, 44.44214588472592 ],
+            [ 26.097285844005754, 44.443051214900585 ],
+            [ 26.097235848029676, 44.44316478725016 ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Residential",
+        "address": "456 Amzei Ave",
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Bucharest_-_20-24_Strada_Biserica_Amzei.jpg"
+      }
+    }
+  ],
+
+  "appearance": {
+    "switch": {
+      "fieldName": "name",
+      "classes": [
+
+        {
+          "fieldValue": "Residential",
+          "style": {
+            "title": "Area",
+            "color": "green",
+            "fillColor": "yellow",
+            "weight": 4,
+            "opacity": 1,
+            "tooltip": {
+              "content": "<h8>${name} Area</h8></br><img src=${urlImage} width='80' height='90' alt=${name} Image />",
+              "properties": {
+                "direction": "top",
+                "offset": [ 0, -10 ],
+                "permanent": true,
+                "sticky": false,
+                "interactive": true,
+                "className": "info-tooltip"
+              }
+            }
+          }
+        },
+        {
+          "fieldValue": "Commercial",
+          "style": {
+            "title": "Area",
+            "color": "indigo",
+            "fillColor": "orange",
+            "weight": 2,
+            "opacity": 0.8,
+            "tooltip": {
+              "content": "<div style='min-width:180px;padding:4px;text-align:center;font-family:'Segoe UI',system-ui,sans-serif;'>    <div style='font-size:14px;font-weight:600;color:#1a1a2e;margin-bottom:6px;letter-spacing:0.3px;'>${name} Area</div>    <div style='font-size:12px;color:#666;margin-bottom:8px;line-height:1.4;'>${address}</div>    <img style='display:block;margin:0 auto;width:80px;height:90px;object-fit:cover;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.15);' src='${urlImage}' alt='${name}' /></div>",
+              "properties": {
+                "direction": "top",
+                "offset": [ 0, -10 ],
+                "permanent": true,
+                "sticky": false,
+                "interactive": true,
+                "className": "info-tooltip"
+              }
+            }
+          }
+        }
+      ],
+      "default": {
+        "title": "Other",
+        "color": "gray",
+        "weight": 2,
+        "opacity": 0.8
+      }
+    }
+  }
+}
