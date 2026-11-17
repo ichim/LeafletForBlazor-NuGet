@@ -29,7 +29,7 @@ Place the JSON item **tooltip** directly in the style:
             }
           }
 ```
-Additionally, the tooltip content allows for the configuration of `template literals` (JavaScript syntax, but without the "`" characters).
+Additionally, the tooltip **content** allows for the configuration of `template literals` (JavaScript syntax, but without the "`" characters).
 
 For example:
 
