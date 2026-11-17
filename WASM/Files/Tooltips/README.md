@@ -29,3 +29,49 @@ Place the JSON item **tooltip** directly in the style:
             }
           }
 ```
+Additionally, the tooltip content allows for the configuration of `template literals` (JavaScript syntax, but without the "`" characters).
+
+For example:
+
+```JSON
+          "style": {
+            "title": "Area",
+            "color": "green",
+            "fillColor": "yellow",
+            "weight": 4,
+            "opacity": 1,
+            "tooltip": {
+              "content": "<h8>${name} Area</h8></br><img src=${urlImage} width='80' height='90' alt=${name} Image />",
+              "properties": {
+                "direction": "top",
+                "offset": [ 0, -10 ],
+                "permanent": true,
+                "sticky": false,
+                "interactive": true,
+                "className": "info-tooltip"
+              }
+            }
+          }
+```
+Where name and urlImage are values ​​from properties:
+```JSON
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [26.09835836189222,  44.443920495124345 ],
+            ...
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Commercial",
+        "address": "28 Arthur Verona St",
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Bucuresti%2C_Romania%2C_Piata_Romana_nr._6_%28ASE%29_%28detaliu_5%29%3B_B-II-m-B-19579.JPG"
+      }
+    },
+```
+
+<img width="3795" height="2059" alt="image" src="https://github.com/user-attachments/assets/a44b54a9-b164-4639-8ed8-dcd00ad90e7b" />
