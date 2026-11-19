@@ -291,7 +291,7 @@ The ``map.Geometric.From.Objects`` class allows you to load data from objects. F
 
 ### Working with Template Literals
 
-The `content` parameter of the Tooltip element allows the use of Template Literals. The Template Literal definition, written in C# and passed via `Invoke` to the Leaflet.js functions, uses `"` instead of `` ` ``.
+The `content` parameter of the Tooltip element (Files and Objects JSON "appearance") allows the use of Template Literals. The Template Literal definition, written in C# and passed via `Invoke` to the Leaflet.js functions, uses `"` instead of `` ` ``.
 
 [more about Tooltips and Template Literals](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files/TooltipsAndTemplateLiterals#map-tooltip-and-template-literals)
 
