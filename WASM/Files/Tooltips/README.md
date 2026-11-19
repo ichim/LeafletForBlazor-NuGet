@@ -73,5 +73,15 @@ Where name and urlImage are values ​​from properties:
       }
     },
 ```
+In this example, the fields available for binding to tooltip.content are:
+ - "name": "Commercial",
+ - "address": "123 Amzei Square St",
+ - "urlImage": "https://upload.wikimedia.org/..."
+
+For example, the content in the tooltip could be:
+
+```JSON
+    "content": "<h8>${name} Area</h8></br><img src=${urlImage} width='80' height='90' alt=${name} Image />"
+```
 
 <img width="3795" height="2059" alt="image" src="https://github.com/user-attachments/assets/a44b54a9-b164-4639-8ed8-dcd00ad90e7b" />
