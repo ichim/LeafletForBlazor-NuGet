@@ -240,6 +240,7 @@ The ``StreamPoint`` collection is hosted by `map.Geometric.Points` and provides 
 #### 📁 Working with Files
 
 The ``map.Geometric.From.Files`` class allows you to load data from files stored on a web service host (_https://..._). Full `RFC 7946` Feature Support.
+In addition, extended RFC 7946 data formats allow for the assignment of different styles ([Appearance](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files#other-data-formats)) to spatial elements displayed on the map.
 
 **Razor**
 ```Razor 
@@ -288,7 +289,11 @@ The ``map.Geometric.From.Objects`` class allows you to load data from objects. F
 
 [more about working with Objects](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Objects/README.md#objects)
 
+### Working with Template Literals
 
+The `content` parameter of the Tooltip element allows the use of Template Literals. The Template Literal definition, written in C# and passed via `Invoke` to the Leaflet.js functions, uses `"` instead of `` ` ``.
+
+[more about Tooltips and Template Literals](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Files/TooltipsAndTemplateLiterals#map-tooltip-and-template-literals)
 
 
 # 📊 Dashboard
@@ -343,7 +348,7 @@ The Map component provides the MapComponents slot, allowing you to extend the Le
 | Description | Image |
 |-----------|-------|
 | The component displays a [Legend](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components#legend) on the map, allowing users to quickly understand the meaning of the symbols and colors applied to data layers. In the current version, the legend is only available for GeoJSON files and StreamPoint Collection. Legend can also be used in [.NET MAUI projects](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/MAUI%20Blazor/Components/Legend#legend).| ![Legend](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/Legend.png) |
-| Contextual display driven by data source with [MapPopup](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Components/MapPopup/README.md#mappopup) | ![MapPopup](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/MapPopupOliveTable.png) |
+| Contextual display driven by data source with [MapPopup](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Components/MapPopup/README.md#mappopup). GeoJSON File and [MapPopup](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Files/events/Popup%20Component/README.md#file-and-mappopup-component) Component | ![MapPopup](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/MapPopupOliveTable.png) |
 | The [Toolbar](https://github.com/ichim/LeafletForBlazor-NuGet/tree/main/WASM/Components/Toolbar#toolbar) it is a map component that allows for expansion with various buttons and even tools.  | ![Toolbar](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/Toolbar.png) |
 | A [Toggle](https://github.com/ichim/LeafletForBlazor-NuGet/blob/main/WASM/Components/Toolbar/ToolbarItems/README.md#toggle) is a check/uncheck component that can be hosted in a toolbar.  | ![Toggle](https://raw.githubusercontent.com/ichim/LeafletForBlazor-nuget/main/docs/images/ToolbarButtons.png) |
 
@@ -351,7 +356,7 @@ The Map component provides the MapComponents slot, allowing you to extend the Le
  _____________
 
 
-O-L I - ᶜ⁴ˡᵘ⁷ᵘ⁵ᵘᶠˡᵉ⁷⁸ᵘⁿ 🐕
+O-L I - ᶜ⁴ˡᵘ⁷ᵘ⁵ᵘᶠˡᵉ⁷⁸ᵘⁿ 🐕 c3z4r
 
 Thank you for choosing this package!
 
